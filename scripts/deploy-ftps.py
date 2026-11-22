@@ -1,0 +1,84 @@
+"""Manual, manifest-only upload confined to historica.online. Password stays in memory."""
+import ftplib
+import getpass
+import hashlib
+import io
+import json
+from pathlib import Path, PurePosixPath
+import ssl
+from datetime import datetime, timezone
+
+ROOT = "/dedicated-site-folder"
+HOST = 'ftp.example.com'
+USER = 'deployment-account@example.com'
+local = Path('docs')
+manifest = json.loads((local / 'release-manifest.json').read_text())
+files = manifest['files'] + [{'path':'release-manifest.json','sha256':hashlib.sha256((local/'release-manifest.json').read_bytes()).hexdigest()}]
+
+def remote(name=''):
+    p = PurePosixPath(name)
+    if p.is_absolute() or '..' in p.parts:
+        raise ValueError('Path outside approved folder')
+    return ROOT + ('/' + str(p) if name else '')
+
+for row in files:
+    remote(row['path'])
+    assert hashlib.sha256((local/row['path']).read_bytes()).hexdigest()==row['sha256'], 'Rebuild changed release assets'
+password = getpass.getpass('FTPS password (not saved): ')
+ftp = ftplib.FTP_TLS(context=ssl.create_default_context(), timeout=30)
+try:
+    ftp.connect(HOST,21)
+    ftp.auth()
+    ftp.login(USER,password)
+    password = None
+    ftp.prot_p()
+    ftp.set_pasv(True)
+    ftp.cwd(ROOT)
+    assert ftp.pwd().rstrip('/') == ROOT, 'Unexpected FTP path; stopping'
+    # List only the approved directory; never list or inspect the hosting root.
+    top = dict(ftp.mlsd(ROOT))
+    print('Verified target: '+ROOT, flush=True)
+    print('Existing target entries: '+', '.join(sorted(top)), flush=True)
+    if 'index.php' in top:
+        raise RuntimeError('Existing PHP entry point requires review; nothing uploaded')
+    directories = sorted({str(PurePosixPath(r['path']).parent) for r in files} - {'.'})
+    listings = {'.': top}
+    missing_dirs=[]
+    for directory in directories:
+        # Current release has only immediate subdirectories.
+        assert '/' not in directory, 'Nested directory needs explicit inspection'
+        if directory in top:
+            assert top[directory].get('type')=='dir', 'Refusing non-directory or symlink target'
+            listings[directory] = dict(ftp.mlsd(remote(directory)))
+        else:
+            missing_dirs.append(directory)
+            listings[directory]={}
+    backup = Path('release/backups')/datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    backup.mkdir(parents=True)
+    record={'host':HOST,'remoteRoot':ROOT,'files':files,'previouslyAbsent':[],'uploaded':[],'verified':[]}
+    # Complete all backups before any remote write.
+    for row in files:
+        name=row['path']; p=PurePosixPath(name)
+        existing=listings[str(p.parent)].get(p.name)
+        if existing:
+            assert existing.get('type')=='file', 'Refusing non-regular existing file'
+            content=io.BytesIO();ftp.retrbinary('RETR '+remote(name),content.write)
+            target=backup/name;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(content.getvalue())
+        else: record['previouslyAbsent'].append(name)
+    (backup/'deployment.json').write_text(json.dumps(record,indent=2))
+    print('Backups complete: '+str(backup),flush=True)
+    for directory in missing_dirs: ftp.mkd(remote(directory))
+    ordered=sorted(files,key=lambda r:(r['path']=='index.html',r['path'].endswith('.html'),r['path']))
+    for row in ordered:
+        name=row['path']
+        with (local/name).open('rb') as source: ftp.storbinary('STOR '+remote(name),source)
+        record['uploaded'].append(name)
+        content=io.BytesIO();ftp.retrbinary('RETR '+remote(name),content.write)
+        assert hashlib.sha256(content.getvalue()).hexdigest()==row['sha256'], 'Remote bytes differ: '+name
+        record['verified'].append(name)
+        (backup/'deployment.json').write_text(json.dumps(record,indent=2))
+        print('Uploaded and verified: '+name,flush=True)
+    print('FTPS deployment complete. No operations outside '+ROOT,flush=True)
+finally:
+    password=None
+    ftp.close()

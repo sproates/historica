@@ -6,3 +6,5 @@ node_modules/
 !.env.example
 
 release/
+
+__pycache__/

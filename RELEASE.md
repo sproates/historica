@@ -15,9 +15,16 @@ do not assume the account's primary public_html directory is the right target.
 Back up any existing site files before replacement. Upload only the static
 site, never the Git repository, research inputs, local configuration or keys.
 
-Hosting setup still requires the account's control-panel URL or server
-hostname, authenticated access, the domain's assigned document root and its
-hosting DNS target. Inspect the actual account before choosing DNS records.
+Story's docs/HOSTING.md records explicit FTPS at ftp.example.com:21,
+user deployment-account@example.com, with verified TLS, encrypted data and passive mode.
+The password was entered through a hidden prompt and was not saved. The FTP
+login root is /; /other-site-root serves sproates.net and must not be overwritten
+with historica. Preserve all existing sites, .htaccess and email configuration.
+
+Hosting setup still requires authenticated access and confirmation of
+historica.online's assigned document root and hosting DNS target. Do not infer
+that domain binding from an FTP directory name. Inspect the hosting account
+before choosing the upload destination or DNS records.
 Preserve unrelated mail and verification records at GoDaddy. Once the domain
 resolves to the hosting account, enable its HTTPS certificate and verify the
 home page, search, source links, coverage page and bookmarked views.
@@ -32,3 +39,33 @@ server. Socrates remains the default; URL fragments preserve exploration state.
 AI-assisted, not independent expert review. Original prototype fields still
 await claim-level review. No regional coverage package is claimed complete.
 Large gaps remain, including Oceania and much of Africa and the Americas.
+
+## Confirmed hosting configuration
+
+Ian created the separate domain root `/hosting-account/historica.online` and
+confirmed the shared website IP `192.0.2.1`. GoDaddy authoritative DNS
+returns that address for `historica.online`, TTL 600 seconds; `www` is a CNAME
+to the apex. The FTP folder is `/historica.online`.
+
+Run `python3 scripts/deploy-ftps.py` only for an authorised release. It prompts
+for the password without echo, verifies TLS, validates local release hashes,
+checks only the approved folder, backs up replacements under ignored
+`release/backups/`, uploads dependencies before HTML and verifies every file
+by FTPS. It never deletes or mirrors remote files. No credentials are stored.
+Run `python3 scripts/verify-hosted.py` afterwards to verify HTTPS asset bytes
+and JavaScript MIME types. Certificate validation is always enabled.
+
+## Initial upload — 22 November 2026
+
+Uploaded 28 website assets plus the release manifest to `/historica.online`.
+The folder initially contained only `cgi-bin`; it was left untouched. All 29
+uploaded files were retrieved and hash-verified over FTPS. All 28 website
+assets subsequently matched over HTTP, including JavaScript MIME checks.
+Local upload record: `release/backups/20261122T191722Z/deployment.json`.
+No remote file operation accessed a path outside `/historica.online`.
+
+HTTPS verification is pending: the server currently presents a certificate
+that does not cover historica.online. Ian has been asked to check this domain
+and www in cPanel SSL/TLS Status and run AutoSSL if available. Do not force
+HTTPS redirects until a valid certificate has been confirmed. No credentials
+were written to project files, scripts, backups or Git.
