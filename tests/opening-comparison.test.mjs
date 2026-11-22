@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {buildFocusData,initialFocus,rankedContext,relatedEntities} from '../web/focus-model.js';
-import {comparisonRecords,outsideVisiblePeriod} from '../web/comparison-model.js';
+import {comparisonRecords,comparisonLayout,outsideVisiblePeriod} from '../web/comparison-model.js';
 import {regionFor,timelineLayout} from '../web/swimlane-model.js';
 const read=p=>JSON.parse(fs.readFileSync(p));
 const data=buildFocusData(read('web/data/collection.json'),read('web/data/reviewed-exploration.json'));
@@ -34,4 +34,17 @@ test('introductory journeys answer Socrates and Caesar questions directly',()=>{
  const html=fs.readFileSync('web/index.html','utf8');
  assert.match(html,/data-focus="socrates">How did Socrates/);
  assert.match(html,/data-focus="julius-caesar" data-kind="person">Who/);
+});
+
+test('full comparison reveals different durations and retains the selected window',()=>{
+ const state=initialFocus(data,'alexander'),f=data.entities.find(e=>e.id===state.focus),picks=comparisonRecords(f,rankedContext(data,state),data,state);
+ const records=[f,...picks],shared=comparisonLayout(records,state),full=comparisonLayout(records,state,'full');
+ assert.ok(shared.items.every(e=>e.width===100));
+ assert.ok(full.items[0].width<full.items[1].width);assert.ok(full.items[1].width<full.items[2].width);
+ assert.equal(full.items[0].left,full.selectedLeft);assert.equal(full.items[0].width,full.selectedWidth);
+ assert.deepEqual([state.start,state.end],[-356,-323]);assert.ok(full.items.every(e=>!e.before&&!e.after));
+});
+test('comparison geometry handles single years and the BCE/CE boundary',()=>{
+ const full=comparisonLayout([{startYear:-1,endYear:1}],{start:-1,end:1},'full');assert.equal(full.items[0].width,100);
+ const point=comparisonLayout([{startYear:1,endYear:1}],{start:1,end:1},'full');assert.equal(point.items[0].left,50);assert.equal(point.items[0].width,0);
 });

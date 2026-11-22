@@ -8,6 +8,7 @@ export function encodeView(state,view,data){
  if(state.area!=='all')p.set('area',state.area);
  const defaults={x:0,y:0,w:720,borders:1};
  for(const k of Object.keys(defaults))if(view.map[k]!==defaults[k])p.set(k,String(view.map[k]));
+ if(view.comparison==='full')p.set('comparison','full');
  if(view.expanded)p.set('expanded','1');
  if(view.evidence)p.set('evidence','1');
  if(view.envelope.start!==Math.min(state.start,f.startYear))p.set('rangeFrom',view.envelope.start);
@@ -27,5 +28,5 @@ export function decodeView(address,data){
  const valid=y=>Number.isInteger(y)&&y!==0&&y>=-300000&&y<=2026;
  const start=n('rangeFrom',Math.min(state.start,f.startYear)),end=n('rangeTo',Math.max(state.end,f.endYear));
  const envelope={start:valid(start)?Math.min(start,state.start):Math.min(state.start,f.startYear),end:valid(end)?Math.max(end,state.end):Math.max(state.end,f.endYear)};
- return {state,view:{map,envelope,expanded:p.get('expanded')==='1',evidence:p.get('evidence')==='1'}};
+ return {state,view:{map,envelope,comparison:p.get('comparison')==='full'?'full':'shared',expanded:p.get('expanded')==='1',evidence:p.get('evidence')==='1'}};
 }

@@ -19,7 +19,7 @@
     },
     {
       "path": "comparison-model.js",
-      "sha256": "5a211e1f42e31d24264aa19fbe14fbceac86f87d6cae0f1f7d2f325da59e6b21"
+      "sha256": "bae9c754a5768990852b20e9e81a72a4daaa68eacdded754321e6c681120938b"
     },
     {
       "path": "coverage-app.js",
@@ -75,7 +75,7 @@
     },
     {
       "path": "focus-app.js",
-      "sha256": "b68cc5ebace845cb3c164fca37e0c0772fab28e4e62612ca03bab10c1cf46ebe"
+      "sha256": "c5c7f359c17684c55797927d187ab169c5e49fb2c8a3d3209b4e2ccc6961223b"
     },
     {
       "path": "focus-map.js",
@@ -87,11 +87,11 @@
     },
     {
       "path": "focus.css",
-      "sha256": "8cf60466832ee224ee9deb6f0fb4be5875b19f5f82c4a8240e97b409f41df3e8"
+      "sha256": "218d98ab7d02f0e4bde9f241c0ba81dc0f801c688b7e9ddf9851f8123cc290f5"
     },
     {
       "path": "index.html",
-      "sha256": "725ddfed2e123e69d47e052c0166ba1a51327242f7f51846fc94221e0b997bd6"
+      "sha256": "82c98579ba87ea02b1459d7f610cfe384b6b19c8e8f99a14c9138d4facac667e"
     },
     {
       "path": "model.js",
@@ -123,7 +123,7 @@
     },
     {
       "path": "view-url.js",
-      "sha256": "e617a751fd4d09fd5f6e1067ac3e6d327c7b8dc87ab379e9b2b9fa88db12d8cb"
+      "sha256": "08cc41f1dcc37bb0ae0201e99b40f7bebdf7078e4f6efb19570ed84184ad9b20"
     },
     {
       "path": "world-collection.js",

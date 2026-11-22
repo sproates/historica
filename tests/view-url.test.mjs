@@ -14,7 +14,7 @@ test('empty and unknown focus links open Alexander while older explicit links su
 });
 test('bookmark round trip includes map, borders, expanded list, evidence and slider bounds',()=>{
  const state={focus:'socrates',start:-450,end:-410,kind:'person',area:'athens'};
- const view={map:{x:350.25,y:80.125,w:100,borders:.35},expanded:true,evidence:true,envelope:{start:-500,end:-350}};
+ const view={comparison:'full',map:{x:350.25,y:80.125,w:100,borders:.35},expanded:true,evidence:true,envelope:{start:-500,end:-350}};
  assert.deepEqual(decodeView(encodeView(state,view,data),data),{state,view});
 });
 test('malformed bookmarks fall back to safe dates and bounded camera',()=>{
@@ -38,4 +38,11 @@ test('reported Khufu fragment becomes a clean path without losing its time windo
  const complete=buildFocusData(JSON.parse(fs.readFileSync('web/data/collection.json')),JSON.parse(fs.readFileSync('web/data/reviewed-exploration.json')));
  const old=decodeView('http://historica.online/#focus=khufu-reign&from=-2551&to=-2528&kind=all&area=all&v=1&x=0&y=0&w=720&borders=1&expanded=0&evidence=0&rangeFrom=-2551&rangeTo=-2528',complete);
  assert.equal(encodeView(old.state,old.view,complete),'/period/khufu-reign');
+});
+
+test('comparison scale is bookmarked without changing the selected years',()=>{
+ const original=decodeView('/person/alexander?comparison=full',data);
+ assert.equal(original.view.comparison,'full');assert.equal(original.state.start,-356);assert.equal(original.state.end,-323);
+ assert.equal(encodeView(original.state,original.view,data),'/person/alexander?comparison=full');
+ assert.equal(decodeView('/person/alexander?comparison=invalid',data).view.comparison,'shared');
 });

@@ -1,7 +1,7 @@
-import {comparisonRecords,comparisonExplanation,outsideVisiblePeriod} from './comparison-model.js';
+import {comparisonRecords,comparisonLayout,comparisonExplanation,outsideVisiblePeriod} from './comparison-model.js';
 import {timelineLayout,regionFor,laneView} from './swimlane-model.js';
 import {searchEntities} from './search-model.js';
-import {encodeView,decodeView} from './view-url.js?v=egypt-1';
+import {encodeView,decodeView} from './view-url.js?v=comparison-4';
 import {setupMap} from './focus-map.js?v=bookmarks-1';
 import {buildFocusData,temporalLabel,initialFocus,changeFocus,focusAssociations,rankedContext,relatedEntities,encodeFocus,decodeFocus} from './focus-model.js?v=egypt-1';
 import {ordinal,historical,position,windowAround,overlaps} from './timeline-model.js';
@@ -9,14 +9,14 @@ const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,
 const year=y=>`${Math.abs(y).toLocaleString()} ${y<0?'BCE':'CE'}`,dates=(a,b)=>a===b?year(a):`${year(a)} – ${year(b)}`;
 const load=async url=>{const r=await fetch(url);if(!r.ok)throw Error(url);return r.json();};
 let data,state,stack=[],land='',focusGeography=[],envelope,showAllContext=false,reviewedEvidence=null;
-let ready=false;
+let ready=false,comparisonMode='shared';
 const expandedLanes=new Set();
 const mapControls=setupMap($('focus-map'),()=>{if(ready)sync();}); 
 const xy=p=>[(p[0]+180)*2,180-p[1]*2];
 function geometry(g){const ring=r=>r.map((p,i)=>`${i?'L':'M'}${xy(p).join(',')}`).join('')+'Z';return g.type==='Polygon'?g.coordinates.map(ring).join(''):g.type==='MultiPolygon'?g.coordinates.flatMap(p=>p.map(ring)).join(''):'';}
-function snapshot(){return {state:{...state},view:{map:mapControls.getState(),envelope:{...envelope},expanded:showAllContext,evidence:document.querySelector('.geography details').open}};}
+function snapshot(){return {state:{...state},view:{comparison:comparisonMode,map:mapControls.getState(),envelope:{...envelope},expanded:showAllContext,evidence:document.querySelector('.geography details').open}};}
 function sync(){if(!ready)return;history.replaceState(null,'',encodeView(state,snapshot().view,data));}
-function restore(saved){state=saved.state;envelope=saved.view.envelope;showAllContext=saved.view.expanded;mapControls.restore(saved.view.map);document.querySelector('.geography details').open=saved.view.evidence;}
+function restore(saved){comparisonMode=saved.view.comparison||'shared';state=saved.state;envelope=saved.view.envelope;showAllContext=saved.view.expanded;mapControls.restore(saved.view.map);document.querySelector('.geography details').open=saved.view.evidence;}
 function setEnvelope(){const f=data.entities.find(e=>e.id===state.focus);envelope={start:Math.min(state.start,f.startYear),end:Math.max(state.end,f.endYear)};}
 function focus(id,kind='all'){stack.push(snapshot());showAllContext=false;state=changeFocus(data,state,id);state.kind=kind;setEnvelope();history.pushState(null,'',encodeView(state,snapshot().view,data));render();if(window.matchMedia('(max-width: 600px)').matches){$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:true});window.scrollTo({top:0,left:0,behavior:'instant'});}$('status').textContent=`Focused on ${data.entities.find(e=>e.id===state.focus).title}, ${dates(state.start,state.end)}`;}
 function band(e,isFocus=false){const a=Math.max(e.startYear,state.start),b=Math.min(e.endYear,state.end),single=state.start===state.end,valid=a<=b;const left=single?0:position(a,state.start,state.end)*100,width=single?100:Math.max(0,position(b,state.start,state.end)*100-left);const dot=e.startYear===e.endYear;
@@ -37,7 +37,11 @@ function renderComparison(f,ranked){
  $('comparison-range').textContent=dates(state.start,state.end);
  $('comparison-intro').textContent=comparisonExplanation(picks,state);
  const place=['area','state','city'].includes(f.type),first=place?{...f,startYear:state.start,endYear:state.end}:f;
- $('comparison-bars').innerHTML=`<div class="comparison-axis"><span>Visible years</span><div><span>${year(state.start)}</span><span>${year(state.end)}</span></div></div>`+[first,...picks].map((e,i)=>{const a=Math.max(e.startYear,state.start),b=Math.min(e.endYear,state.end),left=state.start===state.end?50:100*position(a,state.start,state.end),width=state.start===state.end?0:100*(position(b,state.start,state.end)-position(a,state.start,state.end));return `<div class="comparison-row"><button ${i===0?'disabled':`data-focus="${esc(e.id)}"`}><strong>${esc(e.title)}</strong><small>${i===0?'Your focus':esc(regionFor(e,data,state))} · ${dates(e.startYear,e.endYear)}</small></button><div class="comparison-track" aria-hidden="true">${a<=b?`<span style="left:${left}%;width:max(4px,${width}%)">${e.startYear<state.start?'<b class="comparison-before">‹</b>':''}${e.endYear>state.end?'<b class="comparison-after">›</b>':''}</span>`:''}</div></div>`;}).join('');
+ const layout=comparisonLayout([first,...picks],state,comparisonMode);
+ if(comparisonMode==='full'&&picks.length)$('comparison-intro').textContent='Compare the complete date ranges. Shading marks the selected years; the wider timeline below keeps those dates.';
+ $('comparison-shared').setAttribute('aria-pressed',String(comparisonMode==='shared'));
+ $('comparison-full').setAttribute('aria-pressed',String(comparisonMode==='full'));
+ $('comparison-bars').innerHTML=`<div class="comparison-axis"><span>${comparisonMode==='full'?'Full ranges':'Visible years'}</span><div><span>${year(layout.start)}</span><span>${year(layout.end)}</span></div></div>`+layout.items.map((e,i)=>`<div class="comparison-row"><button ${i===0?'disabled':`data-focus="${esc(e.id)}"`}><strong>${esc(e.title)}</strong><small>${i===0?'Your focus':esc(regionFor(e,data,state))} · ${dates(e.startYear,e.endYear)}</small></button><div class="comparison-track" aria-hidden="true">${comparisonMode==='full'?`<i class="comparison-selection" style="left:${layout.selectedLeft}%;width:max(3px,${layout.selectedWidth}%)"></i>`:''}${e.visible?`<span style="left:${e.left}%;width:max(4px,${e.width}%)">${e.before?'<b class="comparison-before">‹</b>':''}${e.after?'<b class="comparison-after">›</b>':''}</span>`:''}</div></div>`).join('');
  $('options-summary').textContent=`Adjust dates and filters${state.kind!=='all'||state.area!=='all'?' · Filters active':''}`;
  const checked=(reviewedEvidence?.claims||[]).filter(c=>c.status==='accepted'&&(c.subjectId===f.id||f.claimIds?.includes(c.id)));
  $('focus-trust').textContent=checked.length?`${checked.length} statements have been checked against linked sources with AI assistance. This is not independent expert review; coverage may still be incomplete.`:'This entry has research references, but its individual statements have not yet all been checked. Treat it as provisional.';
@@ -60,7 +64,7 @@ const related=relatedEntities(data,state).filter(e=>e.type!=='event');$('related
 renderMap(associations,f);
 const claims=(reviewedEvidence?.claims||[]).filter(c=>f.claimIds?.includes(c.id));
 $('regional-evidence').hidden=!f.contextual;
-$('regional-evidence').innerHTML=f.contextual?`<div class="section-heading"><h2>What the evidence shows</h2><span>AI-assisted source review</span></div><p class="muted">${f.type==='area'?'Explore the connected examples or read their evidence here.':'Date ranges may describe broad context or uncertainty about when something happened. They do not establish activity in every selected year.'}</p><div class="regional-cards">${claims.map(c=>`<article><p>${esc(c.statement)}</p><details><summary>Source and scope</summary>${c.evidenceIds.map(id=>{const e=reviewedEvidence.evidence.find(e=>e.id===id),s=reviewedEvidence.sources.find(s=>s.id===e.sourceId);return `<p><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a><br>${esc(s.creator)}<br>${esc(e.locator)}</p><p>${esc(e.note)}</p>`;}).join('')}</details></article>`).join('')}</div>${!claims.length?'<p>The regional overview is still incomplete. The connected examples have their own sources and limitations.</p>':''}`:'';
+$('regional-evidence').innerHTML=f.contextual?`<div class="section-heading"><h2>What the evidence shows</h2></div><p class="muted">${f.type==='area'?'Explore the connected examples or read their evidence here.':'Date ranges may describe broad context or uncertainty about when something happened. They do not establish activity in every selected year.'}</p><div class="regional-cards">${claims.map(c=>`<article><p>${esc(c.statement)}</p><details><summary>Source and scope</summary>${c.evidenceIds.map(id=>{const e=reviewedEvidence.evidence.find(e=>e.id===id),s=reviewedEvidence.sources.find(s=>s.id===e.sourceId);return `<p><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a><br>${esc(s.creator)}<br>${esc(e.locator)}</p><p>${esc(e.note)}</p>`;}).join('')}</details></article>`).join('')}</div>${!claims.length?'<p>The regional overview is still incomplete. The connected examples have their own sources and limitations.</p>':''}`:'';
 sync();}
 function renderMap(associations,f){const unique=[...new Map(associations.map(a=>[`${a.point.join(',')}:${a.label}`,a])).values()];let overlay='';if(associations.some(a=>a.place==='bactria'))overlay=`<path d="${geometry(data.collection.historicalOverlays[0].geometry)}" fill="#c49a4440" stroke="#a77527" stroke-dasharray="4 3" stroke-width="1.3"/>`;
 const region=f.id==='britain-ireland'?focusGeography:[];
@@ -89,6 +93,7 @@ $('search-results').onclick=e=>{const button=e.target.closest('[data-search-focu
 $('history-search').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key==='ArrowDown'){const first=$('search-results').querySelector('button');if(first){e.preventDefault();first.focus();}}});
 document.querySelector('.collection-search').addEventListener('keydown',e=>{if(e.key==='Escape'){clearSearch();$('history-search').focus();}});
 $('swimlanes').addEventListener('click',event=>{const button=event.target.closest('[data-lane]');if(!button)return;const key=button.dataset.lane;if(expandedLanes.has(key))expandedLanes.delete(key);else expandedLanes.add(key);renderSwimlanes(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));const replacement=[...$('swimlanes').querySelectorAll('[data-lane]')].find(b=>b.dataset.lane===key);replacement?.focus({preventScroll:true});});
+for(const mode of ['shared','full'])$('comparison-'+mode).onclick=()=>{comparisonMode=mode;renderComparison(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));sync();};
 $('jump-timeline').onclick=()=>{$('swim-heading').scrollIntoView({behavior:'smooth',block:'start'});$('swim-heading').setAttribute('tabindex','-1');$('swim-heading').focus({preventScroll:true});};
 $('focus-picker').onchange=e=>focus(e.target.value);document.querySelector('main').addEventListener('click',e=>{const button=e.target.closest('[data-focus],[data-filter]');if(!button||button.disabled)return;if(button.dataset.focus)focus(button.dataset.focus,button.dataset.kind||'all');else{state.area=button.dataset.filter;render();}});
 $('whole-period').onclick=()=>{focus('global-overview');state.start=-3000;state.end=200;setEnvelope();render();};

@@ -1,3 +1,4 @@
+import {position} from './timeline-model.js';
 import {regionFor} from './swimlane-model.js';
 // Suggestions use existing dated records and respect the current filters.
 const suggestions={alexander:['mencius','monte-alban'],stonehenge:['khufu-reign','liangzhu-city'],'stonehenge-stones':['khufu-reign','liangzhu-city'],'julius-caesar':['cleopatra-vii','augustus'],alcibiades:['socrates','eastern-zhou'],socrates:['peloponnesian-war','alcibiades'],'khufu-reign':['stonehenge','liangzhu-city']};
@@ -17,4 +18,14 @@ export function comparisonExplanation(picks,state){
  return picks.every(e=>e.startYear<=state.start&&e.endYear>=state.end)
  ? 'These histories overlap the whole window below. Their full dates differ; arrows show where they continue beyond this view.'
  : 'Bars show the shared years within this window. Full dates appear beside each bar; arrows mark histories that continue beyond the view.';
+}
+
+export function comparisonLayout(records,state,mode='shared'){
+ const start=mode==='full'?Math.min(state.start,...records.map(e=>e.startYear)):state.start;
+ const end=mode==='full'?Math.max(state.end,...records.map(e=>e.endYear)):state.end;
+ const pos=y=>start===end?50:100*position(y,start,end);
+ return {start,end,selectedLeft:pos(state.start),selectedWidth:pos(state.end)-pos(state.start),items:records.map(e=>{
+  const a=Math.max(e.startYear,start),b=Math.min(e.endYear,end);
+  return {...e,left:pos(a),width:pos(b)-pos(a),visible:a<=b,before:e.startYear<start,after:e.endYear>end};
+ })};
 }
