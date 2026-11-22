@@ -122,7 +122,7 @@ Hatched timeline bands and explicit labels distinguish uncertain dating from a c
 
 ## Broad overview batch
 
-The current collection has 110 entries and 93 source-checked statements.
+The current collection has 142 entries and 143 source-checked statements.
 The first overview batch added 21 historical entries and an editorial overview across
 seven regions, with ten linked institutional sources. It prioritises breadth
 over detailed accounts. Use **Ancient world · 3000 BCE–200 CE** to open the
@@ -154,3 +154,21 @@ fit their own dates. Search text is temporary and is not part of bookmarks.
 Use `npm run package:site` to produce the static upload archive for A Small
 Orange. See [release instructions](RELEASE.md). The GitHub repository remains
 private; no GitHub Pages or CI setup is required.
+
+## Egypt expansion and ancient connections
+
+The Egypt batch adds 24 entries: eight broad periods, twelve explicitly labelled
+reigns, Memphis and Egyptian Thebes, Aten-focused religious changes and the
+Deir el-Medina artisan community. Egypt's default study window is now 3100 BCE
+to 200 CE; entering from another focus still preserves the chosen dates.
+Reigns are period records rather than invented lifespans. City browsing windows
+and source-specific chronology differences are disclosed, including the Met's
+separate Amenhotep IV and Akhenaten phases and the ministry's broad Late Period.
+New city coordinates are omitted pending verification. Regional membership lets
+the Egypt filter include these entries without inventing map positions.
+
+A separate eight-entry batch adds Villanovan and Etruscan context, Parthia and
+Mithridates I's reign, early Jenne-jeno, Aksum, Sanchi and Black Sea Scythian
+communities. Aksum and Sanchi have sourced site-reference coordinates.
+Both packs include claim-level linked evidence and AI-assisted review records;
+neither certifies complete regional coverage or independent expert review.

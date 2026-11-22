@@ -1,0 +1,916 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {
+      "id": "villanovan-context",
+      "name": "Villanovan communities",
+      "type": "period"
+    },
+    {
+      "id": "etruscan-context",
+      "name": "Etruscan cities and crafts",
+      "type": "period"
+    },
+    {
+      "id": "parthian-context",
+      "name": "The Parthian Empire",
+      "type": "period"
+    },
+    {
+      "id": "mithridates-one-reign",
+      "name": "Mithridates I’s reign",
+      "type": "period"
+    },
+    {
+      "id": "jenne-jeno-early",
+      "name": "Early settlement at Jenne-jeno",
+      "type": "period"
+    },
+    {
+      "id": "aksum-context",
+      "name": "Aksum and Red Sea exchange",
+      "type": "period"
+    },
+    {
+      "id": "sanchi-early",
+      "name": "Early Buddhist Sanchi",
+      "type": "period"
+    },
+    {
+      "id": "scythian-black-sea",
+      "name": "Scythian communities around the Black Sea",
+      "type": "period"
+    }
+  ],
+  "sources": [
+    {
+      "id": "connections-etruria",
+      "title": "Etruscan Art",
+      "url": "https://www.metmuseum.org/essays/etruscan-art",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Opening prose paragraphs on Villanovan chronology, Etruscan culture and metalwork",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-parthia",
+      "title": "The Parthian Empire (247 BCE–224 CE)",
+      "url": "https://www.metmuseum.org/essays/the-parthian-empire-247-b-c-224-a-d",
+      "creator": "Blair Fowlkes-Childs and Department of Ancient Near Eastern Art, The Metropolitan Museum of Art",
+      "locatorHint": "History and Parthian Art sections",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-sahel",
+      "title": "Sahel: Art and Empires on the Shores of the Sahara",
+      "url": "https://www.metmuseum.org/exhibitions/sahel-art-empire-sahara/inside-the-exhibition",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Ancient Mali and Middle Niger Civilization; Archaeology",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-scythia",
+      "title": "Gold, Griffins, and Greeks: Scythian Art and Cultural Interactions in the Black Sea",
+      "url": "https://www.metmuseum.org/essays/scythian-art",
+      "creator": "Anatoly Grablevsky, The Metropolitan Museum of Art",
+      "locatorHint": "First four prose paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-aksum",
+      "title": "Aksum",
+      "url": "https://whc.unesco.org/en/list/15/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Brief Synthesis; site coordinate listing",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-sanchi",
+      "title": "Buddhist Monuments at Sanchi",
+      "url": "https://whc.unesco.org/en/list/524/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Brief synthesis and criterion (iii); site coordinate listing",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    }
+  ],
+  "claims": [
+    {
+      "id": "connections-villanovan-context-1",
+      "subjectId": "villanovan-context",
+      "predicate": "historical-context",
+      "statement": "The Met places Villanovan culture approximately between 900 and 500 BCE and identifies it as a predecessor of Etruscan culture.",
+      "value": {
+        "type": "text",
+        "text": "The Met places Villanovan culture approximately between 900 and 500 BCE and identifies it as a predecessor of Etruscan culture."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -900,
+          "latest": -900,
+          "original": "circa 900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "circa 500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-villanovan-context-1-evidence"
+      ],
+      "reviewId": "connections-villanovan-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-etruscan-context-1",
+      "subjectId": "etruscan-context",
+      "predicate": "historical-context",
+      "statement": "The Met describes an identifiable Etruscan language around 700 BCE and cultural flourishing through the end of the second century BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met describes an identifiable Etruscan language around 700 BCE and cultural flourishing through the end of the second century BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -700,
+          "latest": -700,
+          "original": "circa 700 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "circa 100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-etruscan-context-1-evidence"
+      ],
+      "reviewId": "connections-etruscan-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-etruscan-context-2",
+      "subjectId": "etruscan-context",
+      "predicate": "historical-context",
+      "statement": "Metal-rich Etruria supported skilled bronze workers whose products circulated around the Mediterranean.",
+      "value": {
+        "type": "text",
+        "text": "Metal-rich Etruria supported skilled bronze workers whose products circulated around the Mediterranean."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -700,
+          "latest": -700,
+          "original": "circa 700 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "circa 100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-etruscan-context-2-evidence"
+      ],
+      "reviewId": "connections-etruscan-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-parthian-context-1",
+      "subjectId": "parthian-context",
+      "predicate": "historical-context",
+      "statement": "The Met dates the Parthian imperial era to 247 BCE–224 CE.",
+      "value": {
+        "type": "text",
+        "text": "The Met dates the Parthian imperial era to 247 BCE–224 CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -247,
+          "latest": -247,
+          "original": "circa 247 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 224,
+          "latest": 224,
+          "original": "circa 224 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-parthian-context-1-evidence"
+      ],
+      "reviewId": "connections-parthian-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-parthian-context-2",
+      "subjectId": "parthian-context",
+      "predicate": "historical-context",
+      "statement": "Trade supported patronage of sculpture, metalwork, jewellery and ceramics, combining Hellenistic and earlier Near Eastern traditions.",
+      "value": {
+        "type": "text",
+        "text": "Trade supported patronage of sculpture, metalwork, jewellery and ceramics, combining Hellenistic and earlier Near Eastern traditions."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -247,
+          "latest": -247,
+          "original": "circa 247 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 224,
+          "latest": 224,
+          "original": "circa 224 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-parthian-context-2-evidence"
+      ],
+      "reviewId": "connections-parthian-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-mithridates-one-reign-1",
+      "subjectId": "mithridates-one-reign",
+      "predicate": "historical-context",
+      "statement": "The Met gives Mithridates I’s reign as approximately 171–138 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met gives Mithridates I’s reign as approximately 171–138 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -171,
+          "latest": -171,
+          "original": "circa 171 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -138,
+          "latest": -138,
+          "original": "circa 138 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-mithridates-one-reign-1-evidence"
+      ],
+      "reviewId": "connections-mithridates-one-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-jenne-jeno-early-1",
+      "subjectId": "jenne-jeno-early",
+      "predicate": "historical-context",
+      "statement": "The Met dates settlement at Jenne-jeno to the third century BCE, with its archaeological sequence beginning around 250 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met dates settlement at Jenne-jeno to the third century BCE, with its archaeological sequence beginning around 250 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -250,
+          "latest": -250,
+          "original": "circa 250 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "circa 200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-jenne-jeno-early-1-evidence"
+      ],
+      "reviewId": "connections-jenne-jeno-early-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-jenne-jeno-early-2",
+      "subjectId": "jenne-jeno-early",
+      "predicate": "historical-context",
+      "statement": "The settlement occupied the fertile Middle Niger floodplain in what is now Mali.",
+      "value": {
+        "type": "text",
+        "text": "The settlement occupied the fertile Middle Niger floodplain in what is now Mali."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -250,
+          "latest": -250,
+          "original": "circa 250 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "circa 200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-jenne-jeno-early-2-evidence"
+      ],
+      "reviewId": "connections-jenne-jeno-early-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-aksum-context-1",
+      "subjectId": "aksum-context",
+      "predicate": "historical-context",
+      "statement": "UNESCO describes the Aksumite kingdom in northern Ethiopia across the first to eighth centuries CE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO describes the Aksumite kingdom in northern Ethiopia across the first to eighth centuries CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "circa 1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 800,
+          "latest": 800,
+          "original": "circa 800 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-aksum-context-1-evidence"
+      ],
+      "reviewId": "connections-aksum-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-aksum-context-2",
+      "subjectId": "aksum-context",
+      "predicate": "historical-context",
+      "statement": "Its exchange networks linked inland northeastern Africa with the Red Sea through the port of Adulis.",
+      "value": {
+        "type": "text",
+        "text": "Its exchange networks linked inland northeastern Africa with the Red Sea through the port of Adulis."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "circa 1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 800,
+          "latest": 800,
+          "original": "circa 800 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-aksum-context-2-evidence"
+      ],
+      "reviewId": "connections-aksum-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-aksum-context-point",
+      "subjectId": "aksum-context",
+      "predicate": "site-reference",
+      "statement": "The map uses UNESCO’s reference position for Aksum and Red Sea exchange, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          38.718610000000005,
+          14.13019
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "circa 1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 800,
+          "latest": 800,
+          "original": "circa 800 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-aksum-context-point-evidence"
+      ],
+      "reviewId": "connections-aksum-context-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-sanchi-early-1",
+      "subjectId": "sanchi-early",
+      "predicate": "historical-context",
+      "statement": "UNESCO identifies Sanchi as a major Buddhist sanctuary from the third century BCE through the first century CE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO identifies Sanchi as a major Buddhist sanctuary from the third century BCE through the first century CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "circa 300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 100,
+          "latest": 100,
+          "original": "circa 100 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-sanchi-early-1-evidence"
+      ],
+      "reviewId": "connections-sanchi-early-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-sanchi-early-2",
+      "subjectId": "sanchi-early",
+      "predicate": "historical-context",
+      "statement": "Ashoka’s pillar and a brick stupa were followed by enlargement and ornamentation under later dynasties.",
+      "value": {
+        "type": "text",
+        "text": "Ashoka’s pillar and a brick stupa were followed by enlargement and ornamentation under later dynasties."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "circa 300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 100,
+          "latest": 100,
+          "original": "circa 100 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-sanchi-early-2-evidence"
+      ],
+      "reviewId": "connections-sanchi-early-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-sanchi-early-point",
+      "subjectId": "sanchi-early",
+      "predicate": "site-reference",
+      "statement": "The map uses UNESCO’s reference position for Early Buddhist Sanchi, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          77.73972,
+          23.479439999999997
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "circa 300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 100,
+          "latest": 100,
+          "original": "circa 100 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-sanchi-early-point-evidence"
+      ],
+      "reviewId": "connections-sanchi-early-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-scythian-black-sea-1",
+      "subjectId": "scythian-black-sea",
+      "predicate": "historical-context",
+      "statement": "The Met describes Scythian migration to the northern Black Sea region in the late eighth century BCE and substantial replacement by Sarmatian groups by the late second century BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met describes Scythian migration to the northern Black Sea region in the late eighth century BCE and substantial replacement by Sarmatian groups by the late second century BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -750,
+          "latest": -750,
+          "original": "circa 750 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "circa 100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-scythian-black-sea-1-evidence"
+      ],
+      "reviewId": "connections-scythian-black-sea-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-scythian-black-sea-2",
+      "subjectId": "scythian-black-sea",
+      "predicate": "historical-context",
+      "statement": "Politically diverse pastoral horse-riding communities traded and interacted with neighbouring Greek settlements.",
+      "value": {
+        "type": "text",
+        "text": "Politically diverse pastoral horse-riding communities traded and interacted with neighbouring Greek settlements."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -750,
+          "latest": -750,
+          "original": "circa 750 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "circa 100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-scythian-black-sea-2-evidence"
+      ],
+      "reviewId": "connections-scythian-black-sea-2-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "connections-villanovan-context-1-evidence",
+      "claimId": "connections-villanovan-context-1",
+      "sourceId": "connections-etruria",
+      "locator": "Opening prose paragraphs on Villanovan chronology, Etruscan culture and metalwork",
+      "note": "Approximate archaeological chronology, overlapping the emergence of Etruscan culture. These are not two successive states with a sharp boundary; map locations remain unresearched.",
+      "relation": "supports",
+      "reviewId": "connections-villanovan-context-1-review"
+    },
+    {
+      "id": "connections-etruscan-context-1-evidence",
+      "claimId": "connections-etruscan-context-1",
+      "sourceId": "connections-etruria",
+      "locator": "Opening prose paragraphs on Villanovan chronology, Etruscan culture and metalwork",
+      "note": "Broad cultural context, not the lifetime of a unified state or every Etruscan city. The end is a rounded century boundary from the source. No historical territory is reconstructed.",
+      "relation": "supports",
+      "reviewId": "connections-etruscan-context-1-review"
+    },
+    {
+      "id": "connections-etruscan-context-2-evidence",
+      "claimId": "connections-etruscan-context-2",
+      "sourceId": "connections-etruria",
+      "locator": "Opening prose paragraphs on Villanovan chronology, Etruscan culture and metalwork",
+      "note": "Broad cultural context, not the lifetime of a unified state or every Etruscan city. The end is a rounded century boundary from the source. No historical territory is reconstructed.",
+      "relation": "supports",
+      "reviewId": "connections-etruscan-context-2-review"
+    },
+    {
+      "id": "connections-parthian-context-1-evidence",
+      "claimId": "connections-parthian-context-1",
+      "sourceId": "connections-parthia",
+      "locator": "History and Parthian Art sections",
+      "note": "A broad imperial period, extending slightly beyond 200 CE. Artistic practices and frontiers changed over time; no fixed border or year-specific capital location is implied.",
+      "relation": "supports",
+      "reviewId": "connections-parthian-context-1-review"
+    },
+    {
+      "id": "connections-parthian-context-2-evidence",
+      "claimId": "connections-parthian-context-2",
+      "sourceId": "connections-parthia",
+      "locator": "History and Parthian Art sections",
+      "note": "A broad imperial period, extending slightly beyond 200 CE. Artistic practices and frontiers changed over time; no fixed border or year-specific capital location is implied.",
+      "relation": "supports",
+      "reviewId": "connections-parthian-context-2-review"
+    },
+    {
+      "id": "connections-mithridates-one-reign-1-evidence",
+      "claimId": "connections-mithridates-one-reign-1",
+      "sourceId": "connections-parthia",
+      "locator": "History and Parthian Art sections",
+      "note": "Reign dates, not a lifespan. The source describes expansion under this ruler and his successors collectively; individual campaigns are not dated here.",
+      "relation": "supports",
+      "reviewId": "connections-mithridates-one-reign-1-review"
+    },
+    {
+      "id": "connections-jenne-jeno-early-1-evidence",
+      "claimId": "connections-jenne-jeno-early-1",
+      "sourceId": "connections-sahel",
+      "locator": "Ancient Mali and Middle Niger Civilization; Archaeology",
+      "note": "An editorial early-history window ending at 200 CE, not the end of settlement. The source continues to about 1400 CE; its later urban walls, professional districts and medieval empires are not assigned to this early window. Precise site coordinates remain unverified.",
+      "relation": "supports",
+      "reviewId": "connections-jenne-jeno-early-1-review"
+    },
+    {
+      "id": "connections-jenne-jeno-early-2-evidence",
+      "claimId": "connections-jenne-jeno-early-2",
+      "sourceId": "connections-sahel",
+      "locator": "Ancient Mali and Middle Niger Civilization; Archaeology",
+      "note": "An editorial early-history window ending at 200 CE, not the end of settlement. The source continues to about 1400 CE; its later urban walls, professional districts and medieval empires are not assigned to this early window. Precise site coordinates remain unverified.",
+      "relation": "supports",
+      "reviewId": "connections-jenne-jeno-early-2-review"
+    },
+    {
+      "id": "connections-aksum-context-1-evidence",
+      "claimId": "connections-aksum-context-1",
+      "sourceId": "connections-aksum",
+      "locator": "Brief Synthesis; site coordinate listing",
+      "note": "Broad kingdom context with the full source period retained beyond 200 CE. Famous stelae date mainly to the third and fourth centuries and are not presented as first-century monuments. The marker locates Aksum, not Adulis or the kingdom’s borders.",
+      "relation": "supports",
+      "reviewId": "connections-aksum-context-1-review"
+    },
+    {
+      "id": "connections-aksum-context-2-evidence",
+      "claimId": "connections-aksum-context-2",
+      "sourceId": "connections-aksum",
+      "locator": "Brief Synthesis; site coordinate listing",
+      "note": "Broad kingdom context with the full source period retained beyond 200 CE. Famous stelae date mainly to the third and fourth centuries and are not presented as first-century monuments. The marker locates Aksum, not Adulis or the kingdom’s borders.",
+      "relation": "supports",
+      "reviewId": "connections-aksum-context-2-review"
+    },
+    {
+      "id": "connections-aksum-context-point-evidence",
+      "claimId": "connections-aksum-context-point",
+      "sourceId": "connections-aksum",
+      "locator": "Brief Synthesis; site coordinate listing",
+      "note": "Broad kingdom context with the full source period retained beyond 200 CE. Famous stelae date mainly to the third and fourth centuries and are not presented as first-century monuments. The marker locates Aksum, not Adulis or the kingdom’s borders.",
+      "relation": "supports",
+      "reviewId": "connections-aksum-context-point-review"
+    },
+    {
+      "id": "connections-sanchi-early-1-evidence",
+      "claimId": "connections-sanchi-early-1",
+      "sourceId": "connections-sanchi",
+      "locator": "Brief synthesis and criterion (iii); site coordinate listing",
+      "note": "An early sanctuary phase, not the full duration of Sanchi. Buildings and additions belong to different dates; the site continued long after 100 CE. The marker is UNESCO’s archaeological site reference.",
+      "relation": "supports",
+      "reviewId": "connections-sanchi-early-1-review"
+    },
+    {
+      "id": "connections-sanchi-early-2-evidence",
+      "claimId": "connections-sanchi-early-2",
+      "sourceId": "connections-sanchi",
+      "locator": "Brief synthesis and criterion (iii); site coordinate listing",
+      "note": "An early sanctuary phase, not the full duration of Sanchi. Buildings and additions belong to different dates; the site continued long after 100 CE. The marker is UNESCO’s archaeological site reference.",
+      "relation": "supports",
+      "reviewId": "connections-sanchi-early-2-review"
+    },
+    {
+      "id": "connections-sanchi-early-point-evidence",
+      "claimId": "connections-sanchi-early-point",
+      "sourceId": "connections-sanchi",
+      "locator": "Brief synthesis and criterion (iii); site coordinate listing",
+      "note": "An early sanctuary phase, not the full duration of Sanchi. Buildings and additions belong to different dates; the site continued long after 100 CE. The marker is UNESCO’s archaeological site reference.",
+      "relation": "supports",
+      "reviewId": "connections-sanchi-early-point-review"
+    },
+    {
+      "id": "connections-scythian-black-sea-1-evidence",
+      "claimId": "connections-scythian-black-sea-1",
+      "sourceId": "connections-scythia",
+      "locator": "First four prose paragraphs",
+      "note": "750–100 BCE is a rounded editorial envelope for the source’s late-century boundaries. It is not a precise migration date or the end of all Scythian communities. A mobile, diverse population is not represented by one point or a single state border.",
+      "relation": "supports",
+      "reviewId": "connections-scythian-black-sea-1-review"
+    },
+    {
+      "id": "connections-scythian-black-sea-2-evidence",
+      "claimId": "connections-scythian-black-sea-2",
+      "sourceId": "connections-scythia",
+      "locator": "First four prose paragraphs",
+      "note": "750–100 BCE is a rounded editorial envelope for the source’s late-century boundaries. It is not a precise migration date or the end of all Scythian communities. A mobile, diverse population is not represented by one point or a single state border.",
+      "relation": "supports",
+      "reviewId": "connections-scythian-black-sea-2-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "connections-villanovan-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-etruscan-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-etruscan-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-parthian-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-parthian-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-mithridates-one-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-jenne-jeno-early-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-jenne-jeno-early-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-aksum-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-aksum-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-aksum-context-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-sanchi-early-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-sanchi-early-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-sanchi-early-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-scythian-black-sea-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-scythian-black-sea-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    }
+  ],
+  "accounts": []
+}

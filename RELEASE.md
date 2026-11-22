@@ -35,7 +35,7 @@ server. Alexander is the default; Focus paths and optional query parameters pres
 
 ## Current content
 
-110 focus entries; 93 individually source-checked statements. Checks are
+142 focus entries; 143 individually source-checked statements. Checks are
 AI-assisted, not independent expert review. Original prototype fields still
 await claim-level review. No regional coverage package is claimed complete.
 Large gaps remain, including Oceania and much of Africa and the Americas.
@@ -111,3 +111,22 @@ the root default, search, new focus pages and linked claim evidence.
 FTPS changes were confined to `/historica.online`. Existing replacements were
 backed up before upload, and uploaded bytes verified. Deployment record:
 `release/backups/20261122T194400Z/deployment.json`. Credentials were not saved.
+
+## Egypt expansion and ancient connections — 22 November 2026
+
+Added 24 Egypt entries and eight wider-world entries, with 50 additional
+source-checked statements. Totals: 142 focus entries and 143 reviewed claims.
+Egypt now offers a 3100 BCE–200 CE study window; switching to it preserves
+incoming dates, while Fit study period restores the broad window. Alexander
+remains the default. Reigns are explicitly periods, not invented lifespans.
+
+All 60 tests passed. Live browser checks covered search, source links, Egypt's
+full window and preserving a selected reign's dates when changing focus.
+All earlier reviewed records were preserved. The coverage programme remains
+incomplete; introductory records do not certify complete regional accounts.
+
+Deployment backed up replaced files under
+`release/backups/20261122T195306Z/deployment.json`, then uploaded and verified
+changes only inside `/historica.online`. No credentials were saved.
+All 29 public assets matched the release hashes over validated HTTPS; all 32
+new public routes served the current app successfully.

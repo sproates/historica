@@ -1,4 +1,4 @@
-import {decodeFocus} from './focus-model.js?v=lifeways-1';
+import {decodeFocus} from './focus-model.js?v=egypt-1';
 export function encodeView(state,view,data){
  const f=data.entities.find(e=>e.id===state.focus);
  if(!f)throw new Error('Unknown focus');

@@ -220,6 +220,166 @@
       "id": "teotihuacan-context",
       "name": "Teotihuacán’s monumental city",
       "type": "period"
+    },
+    {
+      "id": "villanovan-context",
+      "name": "Villanovan communities",
+      "type": "period"
+    },
+    {
+      "id": "etruscan-context",
+      "name": "Etruscan cities and crafts",
+      "type": "period"
+    },
+    {
+      "id": "parthian-context",
+      "name": "The Parthian Empire",
+      "type": "period"
+    },
+    {
+      "id": "mithridates-one-reign",
+      "name": "Mithridates I’s reign",
+      "type": "period"
+    },
+    {
+      "id": "jenne-jeno-early",
+      "name": "Early settlement at Jenne-jeno",
+      "type": "period"
+    },
+    {
+      "id": "aksum-context",
+      "name": "Aksum and Red Sea exchange",
+      "type": "period"
+    },
+    {
+      "id": "sanchi-early",
+      "name": "Early Buddhist Sanchi",
+      "type": "period"
+    },
+    {
+      "id": "scythian-black-sea",
+      "name": "Scythian communities around the Black Sea",
+      "type": "period"
+    },
+    {
+      "id": "early-dynastic-egypt",
+      "name": "Early Dynastic Egypt",
+      "type": "period"
+    },
+    {
+      "id": "first-intermediate-egypt",
+      "name": "Egypt’s First Intermediate Period",
+      "type": "period"
+    },
+    {
+      "id": "middle-kingdom-egypt",
+      "name": "Egypt’s Middle Kingdom",
+      "type": "period"
+    },
+    {
+      "id": "second-intermediate-egypt",
+      "name": "Egypt’s Second Intermediate Period",
+      "type": "period"
+    },
+    {
+      "id": "third-intermediate-egypt",
+      "name": "Egypt’s Third Intermediate Period",
+      "type": "period"
+    },
+    {
+      "id": "late-period-egypt",
+      "name": "Egypt’s Late Period",
+      "type": "period"
+    },
+    {
+      "id": "macedonian-ptolemaic-egypt",
+      "name": "Macedonian and Ptolemaic Egypt",
+      "type": "period"
+    },
+    {
+      "id": "roman-egypt",
+      "name": "Egypt under Roman rule",
+      "type": "period"
+    },
+    {
+      "id": "snefru-reign",
+      "name": "Snefru’s reign",
+      "type": "period"
+    },
+    {
+      "id": "khafre-reign",
+      "name": "Khafre’s reign",
+      "type": "period"
+    },
+    {
+      "id": "menkaure-reign",
+      "name": "Menkaure’s reign",
+      "type": "period"
+    },
+    {
+      "id": "amenemhat-one-reign",
+      "name": "Amenemhat I’s reign",
+      "type": "period"
+    },
+    {
+      "id": "senwosret-three-reign",
+      "name": "Senwosret III’s reign",
+      "type": "period"
+    },
+    {
+      "id": "hatshepsut-reign",
+      "name": "Hatshepsut’s reign",
+      "type": "period"
+    },
+    {
+      "id": "thutmose-three-reign",
+      "name": "Thutmose III’s reign",
+      "type": "period"
+    },
+    {
+      "id": "amenhotep-three-reign",
+      "name": "Amenhotep III’s reign",
+      "type": "period"
+    },
+    {
+      "id": "akhenaten-reign",
+      "name": "Akhenaten’s reign",
+      "type": "period"
+    },
+    {
+      "id": "tutankhamun-reign",
+      "name": "Tutankhamun’s reign",
+      "type": "period"
+    },
+    {
+      "id": "seti-one-reign",
+      "name": "Seti I’s reign",
+      "type": "period"
+    },
+    {
+      "id": "ramesses-two-reign",
+      "name": "Ramesses II’s reign",
+      "type": "period"
+    },
+    {
+      "id": "memphis",
+      "name": "Memphis",
+      "type": "city"
+    },
+    {
+      "id": "thebes-egypt",
+      "name": "Thebes (Egypt)",
+      "type": "city"
+    },
+    {
+      "id": "amarna-religion",
+      "name": "Akhenaten’s religious changes",
+      "type": "period"
+    },
+    {
+      "id": "deir-el-medina-artisans",
+      "name": "The royal tomb workers of Deir el-Medina",
+      "type": "period"
     }
   ],
   "sources": [
@@ -502,6 +662,177 @@
       "url": "https://whc.unesco.org/en/list/414/",
       "creator": "UNESCO World Heritage Centre",
       "locatorHint": "English description; site coordinate listing",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-etruria",
+      "title": "Etruscan Art",
+      "url": "https://www.metmuseum.org/essays/etruscan-art",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Opening prose paragraphs on Villanovan chronology, Etruscan culture and metalwork",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-parthia",
+      "title": "The Parthian Empire (247 BCE–224 CE)",
+      "url": "https://www.metmuseum.org/essays/the-parthian-empire-247-b-c-224-a-d",
+      "creator": "Blair Fowlkes-Childs and Department of Ancient Near Eastern Art, The Metropolitan Museum of Art",
+      "locatorHint": "History and Parthian Art sections",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-sahel",
+      "title": "Sahel: Art and Empires on the Shores of the Sahara",
+      "url": "https://www.metmuseum.org/exhibitions/sahel-art-empire-sahara/inside-the-exhibition",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Ancient Mali and Middle Niger Civilization; Archaeology",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-scythia",
+      "title": "Gold, Griffins, and Greeks: Scythian Art and Cultural Interactions in the Black Sea",
+      "url": "https://www.metmuseum.org/essays/scythian-art",
+      "creator": "Anatoly Grablevsky, The Metropolitan Museum of Art",
+      "locatorHint": "First four prose paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-aksum",
+      "title": "Aksum",
+      "url": "https://whc.unesco.org/en/list/15/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Brief Synthesis; site coordinate listing",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connections-sanchi",
+      "title": "Buddhist Monuments at Sanchi",
+      "url": "https://whc.unesco.org/en/list/524/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Brief synthesis and criterion (iii); site coordinate listing",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-early-dynastic-period",
+      "title": "Early Dynastic Egypt",
+      "url": "https://egymonuments.gov.eg/en/historical-periods/early-dynastic-period",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Date heading and descriptive paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-first-intermediate-period",
+      "title": "Egypt’s First Intermediate Period",
+      "url": "https://egymonuments.gov.eg/en/historical-periods/first-intermediate-period",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Date heading and descriptive paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-middle-kingdom",
+      "title": "Egypt’s Middle Kingdom",
+      "url": "https://egymonuments.gov.eg/en/historical-periods/middle-kingdom",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Date heading and descriptive paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-second-intermediate-period",
+      "title": "Egypt’s Second Intermediate Period",
+      "url": "https://egymonuments.gov.eg/en/historical-periods/second-intermediate-period",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Date heading and descriptive paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-third-intermediate-period",
+      "title": "Egypt’s Third Intermediate Period",
+      "url": "https://egymonuments.gov.eg/en/historical-periods/third-intermediate-period",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Date heading and descriptive paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-late-period",
+      "title": "Egypt’s Late Period",
+      "url": "https://egymonuments.gov.eg/en/historical-periods/late-period",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Date heading and descriptive paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-ptolemaic-period",
+      "title": "Macedonian and Ptolemaic Egypt",
+      "url": "https://egymonuments.gov.eg/en/historical-periods/ptolemaic-period",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Date heading and descriptive paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-roman-period",
+      "title": "Egypt under Roman rule",
+      "url": "https://egymonuments.gov.eg/en/historical-periods/roman-period",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Date heading and descriptive paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-rulers",
+      "title": "List of Rulers of Ancient Egypt and Nubia",
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-memphis",
+      "title": "Memphis and its Necropolis",
+      "url": "https://egymonuments.gov.eg/world-heritage/memphis-and-its-necropolis",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Opening two paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-thebes",
+      "title": "Ancient Thebes with its Necropolis",
+      "url": "https://whc.unesco.org/en/list/87/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "English description, first paragraph",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-amarna",
+      "title": "Amarna",
+      "url": "https://egymonuments.gov.eg/en/collections/amarna/",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Paragraphs on Amenhotep IV, the new capital, city layout and abandonment",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "egypt-workers",
+      "title": "Egypt in the New Kingdom (ca. 1550–1070 BCE)",
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-new-kingdom-ca-1550-1070-b-c",
+      "creator": "Catharine H. Roehrig, The Metropolitan Museum of Art",
+      "locatorHint": "Paragraphs on royal tombs and the town of Deir el-Medina",
       "accessed": "2026-11-22",
       "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
     }
@@ -3448,6 +3779,1714 @@
       ],
       "reviewId": "lifeways-teotihuacan-context-point-review",
       "disputeNote": null
+    },
+    {
+      "id": "connections-villanovan-context-1",
+      "subjectId": "villanovan-context",
+      "predicate": "historical-context",
+      "statement": "The Met places Villanovan culture approximately between 900 and 500 BCE and identifies it as a predecessor of Etruscan culture.",
+      "value": {
+        "type": "text",
+        "text": "The Met places Villanovan culture approximately between 900 and 500 BCE and identifies it as a predecessor of Etruscan culture."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -900,
+          "latest": -900,
+          "original": "circa 900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "circa 500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-villanovan-context-1-evidence"
+      ],
+      "reviewId": "connections-villanovan-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-etruscan-context-1",
+      "subjectId": "etruscan-context",
+      "predicate": "historical-context",
+      "statement": "The Met describes an identifiable Etruscan language around 700 BCE and cultural flourishing through the end of the second century BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met describes an identifiable Etruscan language around 700 BCE and cultural flourishing through the end of the second century BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -700,
+          "latest": -700,
+          "original": "circa 700 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "circa 100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-etruscan-context-1-evidence"
+      ],
+      "reviewId": "connections-etruscan-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-etruscan-context-2",
+      "subjectId": "etruscan-context",
+      "predicate": "historical-context",
+      "statement": "Metal-rich Etruria supported skilled bronze workers whose products circulated around the Mediterranean.",
+      "value": {
+        "type": "text",
+        "text": "Metal-rich Etruria supported skilled bronze workers whose products circulated around the Mediterranean."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -700,
+          "latest": -700,
+          "original": "circa 700 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "circa 100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-etruscan-context-2-evidence"
+      ],
+      "reviewId": "connections-etruscan-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-parthian-context-1",
+      "subjectId": "parthian-context",
+      "predicate": "historical-context",
+      "statement": "The Met dates the Parthian imperial era to 247 BCE–224 CE.",
+      "value": {
+        "type": "text",
+        "text": "The Met dates the Parthian imperial era to 247 BCE–224 CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -247,
+          "latest": -247,
+          "original": "circa 247 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 224,
+          "latest": 224,
+          "original": "circa 224 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-parthian-context-1-evidence"
+      ],
+      "reviewId": "connections-parthian-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-parthian-context-2",
+      "subjectId": "parthian-context",
+      "predicate": "historical-context",
+      "statement": "Trade supported patronage of sculpture, metalwork, jewellery and ceramics, combining Hellenistic and earlier Near Eastern traditions.",
+      "value": {
+        "type": "text",
+        "text": "Trade supported patronage of sculpture, metalwork, jewellery and ceramics, combining Hellenistic and earlier Near Eastern traditions."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -247,
+          "latest": -247,
+          "original": "circa 247 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 224,
+          "latest": 224,
+          "original": "circa 224 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-parthian-context-2-evidence"
+      ],
+      "reviewId": "connections-parthian-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-mithridates-one-reign-1",
+      "subjectId": "mithridates-one-reign",
+      "predicate": "historical-context",
+      "statement": "The Met gives Mithridates I’s reign as approximately 171–138 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met gives Mithridates I’s reign as approximately 171–138 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -171,
+          "latest": -171,
+          "original": "circa 171 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -138,
+          "latest": -138,
+          "original": "circa 138 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-mithridates-one-reign-1-evidence"
+      ],
+      "reviewId": "connections-mithridates-one-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-jenne-jeno-early-1",
+      "subjectId": "jenne-jeno-early",
+      "predicate": "historical-context",
+      "statement": "The Met dates settlement at Jenne-jeno to the third century BCE, with its archaeological sequence beginning around 250 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met dates settlement at Jenne-jeno to the third century BCE, with its archaeological sequence beginning around 250 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -250,
+          "latest": -250,
+          "original": "circa 250 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "circa 200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-jenne-jeno-early-1-evidence"
+      ],
+      "reviewId": "connections-jenne-jeno-early-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-jenne-jeno-early-2",
+      "subjectId": "jenne-jeno-early",
+      "predicate": "historical-context",
+      "statement": "The settlement occupied the fertile Middle Niger floodplain in what is now Mali.",
+      "value": {
+        "type": "text",
+        "text": "The settlement occupied the fertile Middle Niger floodplain in what is now Mali."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -250,
+          "latest": -250,
+          "original": "circa 250 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "circa 200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-jenne-jeno-early-2-evidence"
+      ],
+      "reviewId": "connections-jenne-jeno-early-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-aksum-context-1",
+      "subjectId": "aksum-context",
+      "predicate": "historical-context",
+      "statement": "UNESCO describes the Aksumite kingdom in northern Ethiopia across the first to eighth centuries CE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO describes the Aksumite kingdom in northern Ethiopia across the first to eighth centuries CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "circa 1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 800,
+          "latest": 800,
+          "original": "circa 800 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-aksum-context-1-evidence"
+      ],
+      "reviewId": "connections-aksum-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-aksum-context-2",
+      "subjectId": "aksum-context",
+      "predicate": "historical-context",
+      "statement": "Its exchange networks linked inland northeastern Africa with the Red Sea through the port of Adulis.",
+      "value": {
+        "type": "text",
+        "text": "Its exchange networks linked inland northeastern Africa with the Red Sea through the port of Adulis."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "circa 1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 800,
+          "latest": 800,
+          "original": "circa 800 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-aksum-context-2-evidence"
+      ],
+      "reviewId": "connections-aksum-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-aksum-context-point",
+      "subjectId": "aksum-context",
+      "predicate": "site-reference",
+      "statement": "The map uses UNESCO’s reference position for Aksum and Red Sea exchange, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          38.718610000000005,
+          14.13019
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "circa 1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 800,
+          "latest": 800,
+          "original": "circa 800 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-aksum-context-point-evidence"
+      ],
+      "reviewId": "connections-aksum-context-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-sanchi-early-1",
+      "subjectId": "sanchi-early",
+      "predicate": "historical-context",
+      "statement": "UNESCO identifies Sanchi as a major Buddhist sanctuary from the third century BCE through the first century CE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO identifies Sanchi as a major Buddhist sanctuary from the third century BCE through the first century CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "circa 300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 100,
+          "latest": 100,
+          "original": "circa 100 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-sanchi-early-1-evidence"
+      ],
+      "reviewId": "connections-sanchi-early-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-sanchi-early-2",
+      "subjectId": "sanchi-early",
+      "predicate": "historical-context",
+      "statement": "Ashoka’s pillar and a brick stupa were followed by enlargement and ornamentation under later dynasties.",
+      "value": {
+        "type": "text",
+        "text": "Ashoka’s pillar and a brick stupa were followed by enlargement and ornamentation under later dynasties."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "circa 300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 100,
+          "latest": 100,
+          "original": "circa 100 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-sanchi-early-2-evidence"
+      ],
+      "reviewId": "connections-sanchi-early-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-sanchi-early-point",
+      "subjectId": "sanchi-early",
+      "predicate": "site-reference",
+      "statement": "The map uses UNESCO’s reference position for Early Buddhist Sanchi, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          77.73972,
+          23.479439999999997
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "circa 300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 100,
+          "latest": 100,
+          "original": "circa 100 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-sanchi-early-point-evidence"
+      ],
+      "reviewId": "connections-sanchi-early-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-scythian-black-sea-1",
+      "subjectId": "scythian-black-sea",
+      "predicate": "historical-context",
+      "statement": "The Met describes Scythian migration to the northern Black Sea region in the late eighth century BCE and substantial replacement by Sarmatian groups by the late second century BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met describes Scythian migration to the northern Black Sea region in the late eighth century BCE and substantial replacement by Sarmatian groups by the late second century BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -750,
+          "latest": -750,
+          "original": "circa 750 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "circa 100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-scythian-black-sea-1-evidence"
+      ],
+      "reviewId": "connections-scythian-black-sea-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connections-scythian-black-sea-2",
+      "subjectId": "scythian-black-sea",
+      "predicate": "historical-context",
+      "statement": "Politically diverse pastoral horse-riding communities traded and interacted with neighbouring Greek settlements.",
+      "value": {
+        "type": "text",
+        "text": "Politically diverse pastoral horse-riding communities traded and interacted with neighbouring Greek settlements."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -750,
+          "latest": -750,
+          "original": "circa 750 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "circa 100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connections-scythian-black-sea-2-evidence"
+      ],
+      "reviewId": "connections-scythian-black-sea-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-early-dynastic-egypt-1",
+      "subjectId": "early-dynastic-egypt",
+      "predicate": "historical-context",
+      "statement": "The ministry dates this period to approximately 3100 BCE–2686 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The ministry dates this period to approximately 3100 BCE–2686 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2686,
+          "latest": -2686,
+          "original": "circa 2686 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-early-dynastic-egypt-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-early-dynastic-egypt-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-early-dynastic-egypt-2",
+      "subjectId": "early-dynastic-egypt",
+      "predicate": "historical-context",
+      "statement": "The first two dynasties followed the formation of a united Egyptian kingdom.",
+      "value": {
+        "type": "text",
+        "text": "The first two dynasties followed the formation of a united Egyptian kingdom."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2686,
+          "latest": -2686,
+          "original": "circa 2686 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-early-dynastic-egypt-2-evidence"
+      ],
+      "reviewId": "egypt-expansion-early-dynastic-egypt-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-first-intermediate-egypt-1",
+      "subjectId": "first-intermediate-egypt",
+      "predicate": "historical-context",
+      "statement": "The ministry dates this period to approximately 2181 BCE–2055 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The ministry dates this period to approximately 2181 BCE–2055 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2181,
+          "latest": -2181,
+          "original": "circa 2181 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2055,
+          "latest": -2055,
+          "original": "circa 2055 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-first-intermediate-egypt-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-first-intermediate-egypt-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-first-intermediate-egypt-2",
+      "subjectId": "first-intermediate-egypt",
+      "predicate": "historical-context",
+      "statement": "Provincial governors gained independence as central royal control weakened.",
+      "value": {
+        "type": "text",
+        "text": "Provincial governors gained independence as central royal control weakened."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2181,
+          "latest": -2181,
+          "original": "circa 2181 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2055,
+          "latest": -2055,
+          "original": "circa 2055 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-first-intermediate-egypt-2-evidence"
+      ],
+      "reviewId": "egypt-expansion-first-intermediate-egypt-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-middle-kingdom-egypt-1",
+      "subjectId": "middle-kingdom-egypt",
+      "predicate": "historical-context",
+      "statement": "The ministry dates this period to approximately 2055 BCE–1650 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The ministry dates this period to approximately 2055 BCE–1650 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2055,
+          "latest": -2055,
+          "original": "circa 2055 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1650,
+          "latest": -1650,
+          "original": "circa 1650 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-middle-kingdom-egypt-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-middle-kingdom-egypt-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-middle-kingdom-egypt-2",
+      "subjectId": "middle-kingdom-egypt",
+      "predicate": "historical-context",
+      "statement": "Royal reunification was followed by construction, trade, agricultural projects and literary innovation.",
+      "value": {
+        "type": "text",
+        "text": "Royal reunification was followed by construction, trade, agricultural projects and literary innovation."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2055,
+          "latest": -2055,
+          "original": "circa 2055 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1650,
+          "latest": -1650,
+          "original": "circa 1650 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-middle-kingdom-egypt-2-evidence"
+      ],
+      "reviewId": "egypt-expansion-middle-kingdom-egypt-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-second-intermediate-egypt-1",
+      "subjectId": "second-intermediate-egypt",
+      "predicate": "historical-context",
+      "statement": "The ministry dates this period to approximately 1650 BCE–1550 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The ministry dates this period to approximately 1650 BCE–1550 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1650,
+          "latest": -1650,
+          "original": "circa 1650 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1550,
+          "latest": -1550,
+          "original": "circa 1550 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-second-intermediate-egypt-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-second-intermediate-egypt-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-second-intermediate-egypt-2",
+      "subjectId": "second-intermediate-egypt",
+      "predicate": "historical-context",
+      "statement": "Hyksos power in the northeastern Delta coexisted with Egyptian rulers farther south.",
+      "value": {
+        "type": "text",
+        "text": "Hyksos power in the northeastern Delta coexisted with Egyptian rulers farther south."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1650,
+          "latest": -1650,
+          "original": "circa 1650 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1550,
+          "latest": -1550,
+          "original": "circa 1550 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-second-intermediate-egypt-2-evidence"
+      ],
+      "reviewId": "egypt-expansion-second-intermediate-egypt-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-third-intermediate-egypt-1",
+      "subjectId": "third-intermediate-egypt",
+      "predicate": "historical-context",
+      "statement": "The ministry dates this period to approximately 1069 BCE–747 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The ministry dates this period to approximately 1069 BCE–747 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1069,
+          "latest": -1069,
+          "original": "circa 1069 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -747,
+          "latest": -747,
+          "original": "circa 747 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-third-intermediate-egypt-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-third-intermediate-egypt-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-third-intermediate-egypt-2",
+      "subjectId": "third-intermediate-egypt",
+      "predicate": "historical-context",
+      "statement": "Kings based at Tanis shared power with increasingly autonomous authorities in Upper Egypt.",
+      "value": {
+        "type": "text",
+        "text": "Kings based at Tanis shared power with increasingly autonomous authorities in Upper Egypt."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1069,
+          "latest": -1069,
+          "original": "circa 1069 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -747,
+          "latest": -747,
+          "original": "circa 747 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-third-intermediate-egypt-2-evidence"
+      ],
+      "reviewId": "egypt-expansion-third-intermediate-egypt-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-late-period-egypt-1",
+      "subjectId": "late-period-egypt",
+      "predicate": "historical-context",
+      "statement": "The ministry dates this period to approximately 747 BCE–332 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The ministry dates this period to approximately 747 BCE–332 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -747,
+          "latest": -747,
+          "original": "circa 747 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -332,
+          "latest": -332,
+          "original": "circa 332 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-late-period-egypt-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-late-period-egypt-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-late-period-egypt-2",
+      "subjectId": "late-period-egypt",
+      "predicate": "historical-context",
+      "statement": "Kushite, Saite and Persian phases form part of this broad period of changing rule.",
+      "value": {
+        "type": "text",
+        "text": "Kushite, Saite and Persian phases form part of this broad period of changing rule."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -747,
+          "latest": -747,
+          "original": "circa 747 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -332,
+          "latest": -332,
+          "original": "circa 332 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-late-period-egypt-2-evidence"
+      ],
+      "reviewId": "egypt-expansion-late-period-egypt-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-macedonian-ptolemaic-egypt-1",
+      "subjectId": "macedonian-ptolemaic-egypt",
+      "predicate": "historical-context",
+      "statement": "The ministry dates this period to approximately 332 BCE–30 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The ministry dates this period to approximately 332 BCE–30 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -332,
+          "latest": -332,
+          "original": "circa 332 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -30,
+          "latest": -30,
+          "original": "circa 30 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-macedonian-ptolemaic-egypt-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-macedonian-ptolemaic-egypt-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-macedonian-ptolemaic-egypt-2",
+      "subjectId": "macedonian-ptolemaic-egypt",
+      "predicate": "historical-context",
+      "statement": "Alexander’s conquest was followed by rule under Ptolemy and his successors.",
+      "value": {
+        "type": "text",
+        "text": "Alexander’s conquest was followed by rule under Ptolemy and his successors."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -332,
+          "latest": -332,
+          "original": "circa 332 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -30,
+          "latest": -30,
+          "original": "circa 30 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-macedonian-ptolemaic-egypt-2-evidence"
+      ],
+      "reviewId": "egypt-expansion-macedonian-ptolemaic-egypt-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-roman-egypt-1",
+      "subjectId": "roman-egypt",
+      "predicate": "historical-context",
+      "statement": "The ministry dates this period to approximately 30 BCE–395 CE.",
+      "value": {
+        "type": "text",
+        "text": "The ministry dates this period to approximately 30 BCE–395 CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -30,
+          "latest": -30,
+          "original": "circa 30 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 395,
+          "latest": 395,
+          "original": "circa 395 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-roman-egypt-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-roman-egypt-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-roman-egypt-2",
+      "subjectId": "roman-egypt",
+      "predicate": "historical-context",
+      "statement": "Egypt became a Roman province; agriculture and production served the imperial economy.",
+      "value": {
+        "type": "text",
+        "text": "Egypt became a Roman province; agriculture and production served the imperial economy."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -30,
+          "latest": -30,
+          "original": "circa 30 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 395,
+          "latest": 395,
+          "original": "circa 395 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-roman-egypt-2-evidence"
+      ],
+      "reviewId": "egypt-expansion-roman-egypt-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-snefru-reign-1",
+      "subjectId": "snefru-reign",
+      "predicate": "historical-context",
+      "statement": "Snefru: approximately 2575–2551 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Snefru: approximately 2575–2551 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2575,
+          "latest": -2575,
+          "original": "circa 2575 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2551,
+          "latest": -2551,
+          "original": "circa 2551 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-snefru-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-snefru-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-khafre-reign-1",
+      "subjectId": "khafre-reign",
+      "predicate": "historical-context",
+      "statement": "Khafre: approximately 2520–2494 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Khafre: approximately 2520–2494 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2520,
+          "latest": -2520,
+          "original": "circa 2520 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2494,
+          "latest": -2494,
+          "original": "circa 2494 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-khafre-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-khafre-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-menkaure-reign-1",
+      "subjectId": "menkaure-reign",
+      "predicate": "historical-context",
+      "statement": "Menkaure: approximately 2490–2472 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Menkaure: approximately 2490–2472 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2490,
+          "latest": -2490,
+          "original": "circa 2490 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2472,
+          "latest": -2472,
+          "original": "circa 2472 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-menkaure-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-menkaure-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-amenemhat-one-reign-1",
+      "subjectId": "amenemhat-one-reign",
+      "predicate": "historical-context",
+      "statement": "Amenemhat I: approximately 1981–1952 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Amenemhat I: approximately 1981–1952 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1981,
+          "latest": -1981,
+          "original": "circa 1981 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1952,
+          "latest": -1952,
+          "original": "circa 1952 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-amenemhat-one-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-amenemhat-one-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-senwosret-three-reign-1",
+      "subjectId": "senwosret-three-reign",
+      "predicate": "historical-context",
+      "statement": "Senwosret III: approximately 1878–1840 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Senwosret III: approximately 1878–1840 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1878,
+          "latest": -1878,
+          "original": "circa 1878 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1840,
+          "latest": -1840,
+          "original": "circa 1840 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-senwosret-three-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-senwosret-three-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-hatshepsut-reign-1",
+      "subjectId": "hatshepsut-reign",
+      "predicate": "historical-context",
+      "statement": "Hatshepsut: approximately 1473–1458 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Hatshepsut: approximately 1473–1458 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1473,
+          "latest": -1473,
+          "original": "circa 1473 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1458,
+          "latest": -1458,
+          "original": "circa 1458 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-hatshepsut-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-hatshepsut-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-thutmose-three-reign-1",
+      "subjectId": "thutmose-three-reign",
+      "predicate": "historical-context",
+      "statement": "Thutmose III: approximately 1479–1425 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Thutmose III: approximately 1479–1425 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1479,
+          "latest": -1479,
+          "original": "circa 1479 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1425,
+          "latest": -1425,
+          "original": "circa 1425 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-thutmose-three-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-thutmose-three-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-amenhotep-three-reign-1",
+      "subjectId": "amenhotep-three-reign",
+      "predicate": "historical-context",
+      "statement": "Amenhotep III: approximately 1390–1352 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Amenhotep III: approximately 1390–1352 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1390,
+          "latest": -1390,
+          "original": "circa 1390 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1352,
+          "latest": -1352,
+          "original": "circa 1352 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-amenhotep-three-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-amenhotep-three-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-akhenaten-reign-1",
+      "subjectId": "akhenaten-reign",
+      "predicate": "historical-context",
+      "statement": "Akhenaten: approximately 1349–1336 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Akhenaten: approximately 1349–1336 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1349,
+          "latest": -1349,
+          "original": "circa 1349 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1336,
+          "latest": -1336,
+          "original": "circa 1336 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-akhenaten-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-akhenaten-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-tutankhamun-reign-1",
+      "subjectId": "tutankhamun-reign",
+      "predicate": "historical-context",
+      "statement": "Tutankhamun: approximately 1336–1327 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Tutankhamun: approximately 1336–1327 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1336,
+          "latest": -1336,
+          "original": "circa 1336 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1327,
+          "latest": -1327,
+          "original": "circa 1327 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-tutankhamun-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-tutankhamun-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-seti-one-reign-1",
+      "subjectId": "seti-one-reign",
+      "predicate": "historical-context",
+      "statement": "Seti I: approximately 1294–1279 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Seti I: approximately 1294–1279 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1294,
+          "latest": -1294,
+          "original": "circa 1294 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1279,
+          "latest": -1279,
+          "original": "circa 1279 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-seti-one-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-seti-one-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-ramesses-two-reign-1",
+      "subjectId": "ramesses-two-reign",
+      "predicate": "historical-context",
+      "statement": "Ramesses II: approximately 1279–1213 BCE (Met reign chronology).",
+      "value": {
+        "type": "text",
+        "text": "Ramesses II: approximately 1279–1213 BCE (Met reign chronology)."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1279,
+          "latest": -1279,
+          "original": "circa 1279 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1213,
+          "latest": -1213,
+          "original": "circa 1213 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-ramesses-two-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-ramesses-two-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-memphis-1",
+      "subjectId": "memphis",
+      "predicate": "historical-context",
+      "statement": "Memphis, near modern Mit Rahina, was a capital during the Early Dynastic Period and Old Kingdom.",
+      "value": {
+        "type": "text",
+        "text": "Memphis, near modern Mit Rahina, was a capital during the Early Dynastic Period and Old Kingdom."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "circa 200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-memphis-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-memphis-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-memphis-2",
+      "subjectId": "memphis",
+      "predicate": "historical-context",
+      "statement": "The city was an important centre for the worship of Ptah.",
+      "value": {
+        "type": "text",
+        "text": "The city was an important centre for the worship of Ptah."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "circa 200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-memphis-2-evidence"
+      ],
+      "reviewId": "egypt-expansion-memphis-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-thebes-egypt-1",
+      "subjectId": "thebes-egypt",
+      "predicate": "historical-context",
+      "statement": "Thebes was a capital in the Middle and New Kingdoms and a major centre of Amun worship.",
+      "value": {
+        "type": "text",
+        "text": "Thebes was a capital in the Middle and New Kingdoms and a major centre of Amun worship."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2055,
+          "latest": -2055,
+          "original": "circa 2055 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "circa 200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-thebes-egypt-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-thebes-egypt-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-amarna-religion-1",
+      "subjectId": "amarna-religion",
+      "predicate": "historical-context",
+      "statement": "The ministry dates Amenhotep IV/Akhenaten’s rule to approximately 1352–1336 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The ministry dates Amenhotep IV/Akhenaten’s rule to approximately 1352–1336 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1352,
+          "latest": -1352,
+          "original": "circa 1352 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1336,
+          "latest": -1336,
+          "original": "circa 1336 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-amarna-religion-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-amarna-religion-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-amarna-religion-2",
+      "subjectId": "amarna-religion",
+      "predicate": "historical-context",
+      "statement": "The king promoted Aten worship and founded a new capital, Akhetaten, in Middle Egypt.",
+      "value": {
+        "type": "text",
+        "text": "The king promoted Aten worship and founded a new capital, Akhetaten, in Middle Egypt."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1352,
+          "latest": -1352,
+          "original": "circa 1352 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1336,
+          "latest": -1336,
+          "original": "circa 1336 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-amarna-religion-2-evidence"
+      ],
+      "reviewId": "egypt-expansion-amarna-religion-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-deir-el-medina-artisans-1",
+      "subjectId": "deir-el-medina-artisans",
+      "predicate": "historical-context",
+      "statement": "At Deir el-Medina in western Thebes, a community of artists and craftspeople created royal tombs and left evidence of everyday life.",
+      "value": {
+        "type": "text",
+        "text": "At Deir el-Medina in western Thebes, a community of artists and craftspeople created royal tombs and left evidence of everyday life."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1550,
+          "latest": -1550,
+          "original": "circa 1550 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1070,
+          "latest": -1070,
+          "original": "circa 1070 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-deir-el-medina-artisans-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-deir-el-medina-artisans-1-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -4296,6 +6335,456 @@
       "note": "The full source period extends beyond 200 CE. Monuments belong to different phases; this does not imply all were present in the first century or that settlement began in 1 CE. The map marker locates the archaeological site.",
       "relation": "supports",
       "reviewId": "lifeways-teotihuacan-context-point-review"
+    },
+    {
+      "id": "connections-villanovan-context-1-evidence",
+      "claimId": "connections-villanovan-context-1",
+      "sourceId": "connections-etruria",
+      "locator": "Opening prose paragraphs on Villanovan chronology, Etruscan culture and metalwork",
+      "note": "Approximate archaeological chronology, overlapping the emergence of Etruscan culture. These are not two successive states with a sharp boundary; map locations remain unresearched.",
+      "relation": "supports",
+      "reviewId": "connections-villanovan-context-1-review"
+    },
+    {
+      "id": "connections-etruscan-context-1-evidence",
+      "claimId": "connections-etruscan-context-1",
+      "sourceId": "connections-etruria",
+      "locator": "Opening prose paragraphs on Villanovan chronology, Etruscan culture and metalwork",
+      "note": "Broad cultural context, not the lifetime of a unified state or every Etruscan city. The end is a rounded century boundary from the source. No historical territory is reconstructed.",
+      "relation": "supports",
+      "reviewId": "connections-etruscan-context-1-review"
+    },
+    {
+      "id": "connections-etruscan-context-2-evidence",
+      "claimId": "connections-etruscan-context-2",
+      "sourceId": "connections-etruria",
+      "locator": "Opening prose paragraphs on Villanovan chronology, Etruscan culture and metalwork",
+      "note": "Broad cultural context, not the lifetime of a unified state or every Etruscan city. The end is a rounded century boundary from the source. No historical territory is reconstructed.",
+      "relation": "supports",
+      "reviewId": "connections-etruscan-context-2-review"
+    },
+    {
+      "id": "connections-parthian-context-1-evidence",
+      "claimId": "connections-parthian-context-1",
+      "sourceId": "connections-parthia",
+      "locator": "History and Parthian Art sections",
+      "note": "A broad imperial period, extending slightly beyond 200 CE. Artistic practices and frontiers changed over time; no fixed border or year-specific capital location is implied.",
+      "relation": "supports",
+      "reviewId": "connections-parthian-context-1-review"
+    },
+    {
+      "id": "connections-parthian-context-2-evidence",
+      "claimId": "connections-parthian-context-2",
+      "sourceId": "connections-parthia",
+      "locator": "History and Parthian Art sections",
+      "note": "A broad imperial period, extending slightly beyond 200 CE. Artistic practices and frontiers changed over time; no fixed border or year-specific capital location is implied.",
+      "relation": "supports",
+      "reviewId": "connections-parthian-context-2-review"
+    },
+    {
+      "id": "connections-mithridates-one-reign-1-evidence",
+      "claimId": "connections-mithridates-one-reign-1",
+      "sourceId": "connections-parthia",
+      "locator": "History and Parthian Art sections",
+      "note": "Reign dates, not a lifespan. The source describes expansion under this ruler and his successors collectively; individual campaigns are not dated here.",
+      "relation": "supports",
+      "reviewId": "connections-mithridates-one-reign-1-review"
+    },
+    {
+      "id": "connections-jenne-jeno-early-1-evidence",
+      "claimId": "connections-jenne-jeno-early-1",
+      "sourceId": "connections-sahel",
+      "locator": "Ancient Mali and Middle Niger Civilization; Archaeology",
+      "note": "An editorial early-history window ending at 200 CE, not the end of settlement. The source continues to about 1400 CE; its later urban walls, professional districts and medieval empires are not assigned to this early window. Precise site coordinates remain unverified.",
+      "relation": "supports",
+      "reviewId": "connections-jenne-jeno-early-1-review"
+    },
+    {
+      "id": "connections-jenne-jeno-early-2-evidence",
+      "claimId": "connections-jenne-jeno-early-2",
+      "sourceId": "connections-sahel",
+      "locator": "Ancient Mali and Middle Niger Civilization; Archaeology",
+      "note": "An editorial early-history window ending at 200 CE, not the end of settlement. The source continues to about 1400 CE; its later urban walls, professional districts and medieval empires are not assigned to this early window. Precise site coordinates remain unverified.",
+      "relation": "supports",
+      "reviewId": "connections-jenne-jeno-early-2-review"
+    },
+    {
+      "id": "connections-aksum-context-1-evidence",
+      "claimId": "connections-aksum-context-1",
+      "sourceId": "connections-aksum",
+      "locator": "Brief Synthesis; site coordinate listing",
+      "note": "Broad kingdom context with the full source period retained beyond 200 CE. Famous stelae date mainly to the third and fourth centuries and are not presented as first-century monuments. The marker locates Aksum, not Adulis or the kingdom’s borders.",
+      "relation": "supports",
+      "reviewId": "connections-aksum-context-1-review"
+    },
+    {
+      "id": "connections-aksum-context-2-evidence",
+      "claimId": "connections-aksum-context-2",
+      "sourceId": "connections-aksum",
+      "locator": "Brief Synthesis; site coordinate listing",
+      "note": "Broad kingdom context with the full source period retained beyond 200 CE. Famous stelae date mainly to the third and fourth centuries and are not presented as first-century monuments. The marker locates Aksum, not Adulis or the kingdom’s borders.",
+      "relation": "supports",
+      "reviewId": "connections-aksum-context-2-review"
+    },
+    {
+      "id": "connections-aksum-context-point-evidence",
+      "claimId": "connections-aksum-context-point",
+      "sourceId": "connections-aksum",
+      "locator": "Brief Synthesis; site coordinate listing",
+      "note": "Broad kingdom context with the full source period retained beyond 200 CE. Famous stelae date mainly to the third and fourth centuries and are not presented as first-century monuments. The marker locates Aksum, not Adulis or the kingdom’s borders.",
+      "relation": "supports",
+      "reviewId": "connections-aksum-context-point-review"
+    },
+    {
+      "id": "connections-sanchi-early-1-evidence",
+      "claimId": "connections-sanchi-early-1",
+      "sourceId": "connections-sanchi",
+      "locator": "Brief synthesis and criterion (iii); site coordinate listing",
+      "note": "An early sanctuary phase, not the full duration of Sanchi. Buildings and additions belong to different dates; the site continued long after 100 CE. The marker is UNESCO’s archaeological site reference.",
+      "relation": "supports",
+      "reviewId": "connections-sanchi-early-1-review"
+    },
+    {
+      "id": "connections-sanchi-early-2-evidence",
+      "claimId": "connections-sanchi-early-2",
+      "sourceId": "connections-sanchi",
+      "locator": "Brief synthesis and criterion (iii); site coordinate listing",
+      "note": "An early sanctuary phase, not the full duration of Sanchi. Buildings and additions belong to different dates; the site continued long after 100 CE. The marker is UNESCO’s archaeological site reference.",
+      "relation": "supports",
+      "reviewId": "connections-sanchi-early-2-review"
+    },
+    {
+      "id": "connections-sanchi-early-point-evidence",
+      "claimId": "connections-sanchi-early-point",
+      "sourceId": "connections-sanchi",
+      "locator": "Brief synthesis and criterion (iii); site coordinate listing",
+      "note": "An early sanctuary phase, not the full duration of Sanchi. Buildings and additions belong to different dates; the site continued long after 100 CE. The marker is UNESCO’s archaeological site reference.",
+      "relation": "supports",
+      "reviewId": "connections-sanchi-early-point-review"
+    },
+    {
+      "id": "connections-scythian-black-sea-1-evidence",
+      "claimId": "connections-scythian-black-sea-1",
+      "sourceId": "connections-scythia",
+      "locator": "First four prose paragraphs",
+      "note": "750–100 BCE is a rounded editorial envelope for the source’s late-century boundaries. It is not a precise migration date or the end of all Scythian communities. A mobile, diverse population is not represented by one point or a single state border.",
+      "relation": "supports",
+      "reviewId": "connections-scythian-black-sea-1-review"
+    },
+    {
+      "id": "connections-scythian-black-sea-2-evidence",
+      "claimId": "connections-scythian-black-sea-2",
+      "sourceId": "connections-scythia",
+      "locator": "First four prose paragraphs",
+      "note": "750–100 BCE is a rounded editorial envelope for the source’s late-century boundaries. It is not a precise migration date or the end of all Scythian communities. A mobile, diverse population is not represented by one point or a single state border.",
+      "relation": "supports",
+      "reviewId": "connections-scythian-black-sea-2-review"
+    },
+    {
+      "id": "egypt-expansion-early-dynastic-egypt-1-evidence",
+      "claimId": "egypt-expansion-early-dynastic-egypt-1",
+      "sourceId": "egypt-early-dynastic-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-early-dynastic-egypt-1-review"
+    },
+    {
+      "id": "egypt-expansion-early-dynastic-egypt-2-evidence",
+      "claimId": "egypt-expansion-early-dynastic-egypt-2",
+      "sourceId": "egypt-early-dynastic-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-early-dynastic-egypt-2-review"
+    },
+    {
+      "id": "egypt-expansion-first-intermediate-egypt-1-evidence",
+      "claimId": "egypt-expansion-first-intermediate-egypt-1",
+      "sourceId": "egypt-first-intermediate-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-first-intermediate-egypt-1-review"
+    },
+    {
+      "id": "egypt-expansion-first-intermediate-egypt-2-evidence",
+      "claimId": "egypt-expansion-first-intermediate-egypt-2",
+      "sourceId": "egypt-first-intermediate-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-first-intermediate-egypt-2-review"
+    },
+    {
+      "id": "egypt-expansion-middle-kingdom-egypt-1-evidence",
+      "claimId": "egypt-expansion-middle-kingdom-egypt-1",
+      "sourceId": "egypt-middle-kingdom",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-middle-kingdom-egypt-1-review"
+    },
+    {
+      "id": "egypt-expansion-middle-kingdom-egypt-2-evidence",
+      "claimId": "egypt-expansion-middle-kingdom-egypt-2",
+      "sourceId": "egypt-middle-kingdom",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-middle-kingdom-egypt-2-review"
+    },
+    {
+      "id": "egypt-expansion-second-intermediate-egypt-1-evidence",
+      "claimId": "egypt-expansion-second-intermediate-egypt-1",
+      "sourceId": "egypt-second-intermediate-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-second-intermediate-egypt-1-review"
+    },
+    {
+      "id": "egypt-expansion-second-intermediate-egypt-2-evidence",
+      "claimId": "egypt-expansion-second-intermediate-egypt-2",
+      "sourceId": "egypt-second-intermediate-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-second-intermediate-egypt-2-review"
+    },
+    {
+      "id": "egypt-expansion-third-intermediate-egypt-1-evidence",
+      "claimId": "egypt-expansion-third-intermediate-egypt-1",
+      "sourceId": "egypt-third-intermediate-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-third-intermediate-egypt-1-review"
+    },
+    {
+      "id": "egypt-expansion-third-intermediate-egypt-2-evidence",
+      "claimId": "egypt-expansion-third-intermediate-egypt-2",
+      "sourceId": "egypt-third-intermediate-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-third-intermediate-egypt-2-review"
+    },
+    {
+      "id": "egypt-expansion-late-period-egypt-1-evidence",
+      "claimId": "egypt-expansion-late-period-egypt-1",
+      "sourceId": "egypt-late-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened. The source heading begins in 747 BCE, while its prose also uses the narrower Saite starting point of 664 BCE.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-late-period-egypt-1-review"
+    },
+    {
+      "id": "egypt-expansion-late-period-egypt-2-evidence",
+      "claimId": "egypt-expansion-late-period-egypt-2",
+      "sourceId": "egypt-late-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened. The source heading begins in 747 BCE, while its prose also uses the narrower Saite starting point of 664 BCE.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-late-period-egypt-2-review"
+    },
+    {
+      "id": "egypt-expansion-macedonian-ptolemaic-egypt-1-evidence",
+      "claimId": "egypt-expansion-macedonian-ptolemaic-egypt-1",
+      "sourceId": "egypt-ptolemaic-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened. The 332 BCE start includes Macedonian rule before Ptolemy became king.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-macedonian-ptolemaic-egypt-1-review"
+    },
+    {
+      "id": "egypt-expansion-macedonian-ptolemaic-egypt-2-evidence",
+      "claimId": "egypt-expansion-macedonian-ptolemaic-egypt-2",
+      "sourceId": "egypt-ptolemaic-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened. The 332 BCE start includes Macedonian rule before Ptolemy became king.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-macedonian-ptolemaic-egypt-2-review"
+    },
+    {
+      "id": "egypt-expansion-roman-egypt-1-evidence",
+      "claimId": "egypt-expansion-roman-egypt-1",
+      "sourceId": "egypt-roman-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened. The full source period extends beyond the initial 200 CE study window.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-roman-egypt-1-review"
+    },
+    {
+      "id": "egypt-expansion-roman-egypt-2-evidence",
+      "claimId": "egypt-expansion-roman-egypt-2",
+      "sourceId": "egypt-roman-period",
+      "locator": "Date heading and descriptive paragraphs",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened. The full source period extends beyond the initial 200 CE study window.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-roman-egypt-2-review"
+    },
+    {
+      "id": "egypt-expansion-snefru-reign-1-evidence",
+      "claimId": "egypt-expansion-snefru-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-snefru-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-khafre-reign-1-evidence",
+      "claimId": "egypt-expansion-khafre-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-khafre-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-menkaure-reign-1-evidence",
+      "claimId": "egypt-expansion-menkaure-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-menkaure-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-amenemhat-one-reign-1-evidence",
+      "claimId": "egypt-expansion-amenemhat-one-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-amenemhat-one-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-senwosret-three-reign-1-evidence",
+      "claimId": "egypt-expansion-senwosret-three-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-senwosret-three-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-hatshepsut-reign-1-evidence",
+      "claimId": "egypt-expansion-hatshepsut-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty. This records kingship, following an earlier regency (1479–1473 BCE in the source).",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-hatshepsut-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-thutmose-three-reign-1-evidence",
+      "claimId": "egypt-expansion-thutmose-three-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-thutmose-three-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-amenhotep-three-reign-1-evidence",
+      "claimId": "egypt-expansion-amenhotep-three-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-amenhotep-three-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-akhenaten-reign-1-evidence",
+      "claimId": "egypt-expansion-akhenaten-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty. The Met separates his earlier name Amenhotep IV (1353–1349 BCE); this entry shows the Akhenaten phase only.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-akhenaten-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-tutankhamun-reign-1-evidence",
+      "claimId": "egypt-expansion-tutankhamun-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-tutankhamun-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-seti-one-reign-1-evidence",
+      "claimId": "egypt-expansion-seti-one-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-seti-one-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-ramesses-two-reign-1-evidence",
+      "claimId": "egypt-expansion-ramesses-two-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Named rulers in Dynasties 4, 12, 18 and 19",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-ramesses-two-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-memphis-1-evidence",
+      "claimId": "egypt-expansion-memphis-1",
+      "sourceId": "egypt-memphis",
+      "locator": "Opening two paragraphs",
+      "note": "Editorial browsing window 3100 BCE–200 CE, not the city’s complete lifespan. The traditional foundation story is not treated as a precisely dated event. A city-specific map position remains to be checked.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-memphis-1-review"
+    },
+    {
+      "id": "egypt-expansion-memphis-2-evidence",
+      "claimId": "egypt-expansion-memphis-2",
+      "sourceId": "egypt-memphis",
+      "locator": "Opening two paragraphs",
+      "note": "Editorial browsing window 3100 BCE–200 CE, not the city’s complete lifespan. The traditional foundation story is not treated as a precisely dated event. A city-specific map position remains to be checked.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-memphis-2-review"
+    },
+    {
+      "id": "egypt-expansion-thebes-egypt-1-evidence",
+      "claimId": "egypt-expansion-thebes-egypt-1",
+      "sourceId": "egypt-thebes",
+      "locator": "English description, first paragraph",
+      "note": "Editorial browsing window from the Middle Kingdom through 200 CE; neither the city’s founding nor its abandonment. The site includes multiple temples and necropolises; no unchecked central point is assigned. This is Egyptian Thebes, distinct from the Greek city.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-thebes-egypt-1-review"
+    },
+    {
+      "id": "egypt-expansion-amarna-religion-1-evidence",
+      "claimId": "egypt-expansion-amarna-religion-1",
+      "sourceId": "egypt-amarna",
+      "locator": "Paragraphs on Amenhotep IV, the new capital, city layout and abandonment",
+      "note": "Reign-sized context, not an exact date for every reform or the founding of the city. This ministry chronology differs slightly from the Met’s name-specific reign entries.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-amarna-religion-1-review"
+    },
+    {
+      "id": "egypt-expansion-amarna-religion-2-evidence",
+      "claimId": "egypt-expansion-amarna-religion-2",
+      "sourceId": "egypt-amarna",
+      "locator": "Paragraphs on Amenhotep IV, the new capital, city layout and abandonment",
+      "note": "Reign-sized context, not an exact date for every reform or the founding of the city. This ministry chronology differs slightly from the Met’s name-specific reign entries.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-amarna-religion-2-review"
+    },
+    {
+      "id": "egypt-expansion-deir-el-medina-artisans-1-evidence",
+      "claimId": "egypt-expansion-deir-el-medina-artisans-1",
+      "sourceId": "egypt-workers",
+      "locator": "Paragraphs on royal tombs and the town of Deir el-Medina",
+      "note": "Shown within broad New Kingdom context from the source, not as exact settlement foundation and abandonment dates. A site-specific map reference has not yet been checked.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-deir-el-medina-artisans-1-review"
     }
   ],
   "reviews": [
@@ -4945,6 +7434,356 @@
     },
     {
       "id": "lifeways-teotihuacan-context-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-villanovan-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-etruscan-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-etruscan-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-parthian-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-parthian-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-mithridates-one-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-jenne-jeno-early-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-jenne-jeno-early-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-aksum-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-aksum-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-aksum-context-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-sanchi-early-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-sanchi-early-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-sanchi-early-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-scythian-black-sea-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "connections-scythian-black-sea-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-early-dynastic-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-early-dynastic-egypt-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-first-intermediate-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-first-intermediate-egypt-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-middle-kingdom-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-middle-kingdom-egypt-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-second-intermediate-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-second-intermediate-egypt-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-third-intermediate-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-third-intermediate-egypt-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-late-period-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-late-period-egypt-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-macedonian-ptolemaic-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-macedonian-ptolemaic-egypt-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-roman-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-roman-egypt-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-snefru-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-khafre-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-menkaure-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-amenemhat-one-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-senwosret-three-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-hatshepsut-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-thutmose-three-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-amenhotep-three-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-akhenaten-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-tutankhamun-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-seti-one-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-ramesses-two-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-memphis-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-memphis-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-thebes-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-amarna-religion-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-amarna-religion-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-deir-el-medina-artisans-1-review",
       "reviewer": "AI-assisted source inspection; not independent expert review",
       "date": "2026-11-22",
       "decision": "verified",

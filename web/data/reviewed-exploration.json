@@ -910,6 +910,654 @@
       "dateLabel": "Broad context · approximate chronology",
       "region": "Mesoamerica",
       "regionIds": []
+    },
+    {
+      "id": "villanovan-context",
+      "title": "Villanovan communities",
+      "type": "period",
+      "startYear": -900,
+      "endYear": -500,
+      "description": "The Met places Villanovan culture approximately between 900 and 500 BCE and identifies it as a predecessor of Etruscan culture.",
+      "note": "Approximate archaeological chronology, overlapping the emergence of Etruscan culture. These are not two successive states with a sharp boundary; map locations remain unresearched.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/etruscan-art",
+      "contextual": true,
+      "claimIds": [
+        "connections-villanovan-context-1"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Italy",
+      "regionIds": []
+    },
+    {
+      "id": "etruscan-context",
+      "title": "Etruscan cities and crafts",
+      "type": "period",
+      "startYear": -700,
+      "endYear": -100,
+      "description": "Metal-rich Etruria supported skilled bronze workers whose products circulated around the Mediterranean.",
+      "note": "Broad cultural context, not the lifetime of a unified state or every Etruscan city. The end is a rounded century boundary from the source. No historical territory is reconstructed.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/etruscan-art",
+      "contextual": true,
+      "claimIds": [
+        "connections-etruscan-context-1",
+        "connections-etruscan-context-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Italy",
+      "regionIds": []
+    },
+    {
+      "id": "parthian-context",
+      "title": "The Parthian Empire",
+      "type": "period",
+      "startYear": -247,
+      "endYear": 224,
+      "description": "Trade supported patronage of sculpture, metalwork, jewellery and ceramics, combining Hellenistic and earlier Near Eastern traditions.",
+      "note": "A broad imperial period, extending slightly beyond 200 CE. Artistic practices and frontiers changed over time; no fixed border or year-specific capital location is implied.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/the-parthian-empire-247-b-c-224-a-d",
+      "contextual": true,
+      "claimIds": [
+        "connections-parthian-context-1",
+        "connections-parthian-context-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Iran and Mesopotamia",
+      "regionIds": []
+    },
+    {
+      "id": "mithridates-one-reign",
+      "title": "Mithridates I’s reign",
+      "type": "period",
+      "startYear": -171,
+      "endYear": -138,
+      "description": "The Met gives Mithridates I’s reign as approximately 171–138 BCE.",
+      "note": "Reign dates, not a lifespan. The source describes expansion under this ruler and his successors collectively; individual campaigns are not dated here.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/the-parthian-empire-247-b-c-224-a-d",
+      "contextual": true,
+      "claimIds": [
+        "connections-mithridates-one-reign-1"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Iran and Mesopotamia",
+      "regionIds": []
+    },
+    {
+      "id": "jenne-jeno-early",
+      "title": "Early settlement at Jenne-jeno",
+      "type": "period",
+      "startYear": -250,
+      "endYear": 200,
+      "description": "The settlement occupied the fertile Middle Niger floodplain in what is now Mali.",
+      "note": "An editorial early-history window ending at 200 CE, not the end of settlement. The source continues to about 1400 CE; its later urban walls, professional districts and medieval empires are not assigned to this early window. Precise site coordinates remain unverified.",
+      "point": null,
+      "url": "https://www.metmuseum.org/exhibitions/sahel-art-empire-sahara/inside-the-exhibition",
+      "contextual": true,
+      "claimIds": [
+        "connections-jenne-jeno-early-1",
+        "connections-jenne-jeno-early-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "West Africa",
+      "regionIds": []
+    },
+    {
+      "id": "aksum-context",
+      "title": "Aksum and Red Sea exchange",
+      "type": "period",
+      "startYear": 1,
+      "endYear": 800,
+      "description": "Its exchange networks linked inland northeastern Africa with the Red Sea through the port of Adulis.",
+      "note": "Broad kingdom context with the full source period retained beyond 200 CE. Famous stelae date mainly to the third and fourth centuries and are not presented as first-century monuments. The marker locates Aksum, not Adulis or the kingdom’s borders.",
+      "point": [
+        38.718610000000005,
+        14.13019
+      ],
+      "url": "https://whc.unesco.org/en/list/15/",
+      "contextual": true,
+      "claimIds": [
+        "connections-aksum-context-1",
+        "connections-aksum-context-2",
+        "connections-aksum-context-point"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Northeast Africa",
+      "regionIds": []
+    },
+    {
+      "id": "sanchi-early",
+      "title": "Early Buddhist Sanchi",
+      "type": "period",
+      "startYear": -300,
+      "endYear": 100,
+      "description": "Ashoka’s pillar and a brick stupa were followed by enlargement and ornamentation under later dynasties.",
+      "note": "An early sanctuary phase, not the full duration of Sanchi. Buildings and additions belong to different dates; the site continued long after 100 CE. The marker is UNESCO’s archaeological site reference.",
+      "point": [
+        77.73972,
+        23.479439999999997
+      ],
+      "url": "https://whc.unesco.org/en/list/524/",
+      "contextual": true,
+      "claimIds": [
+        "connections-sanchi-early-1",
+        "connections-sanchi-early-2",
+        "connections-sanchi-early-point"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "South Asia",
+      "regionIds": []
+    },
+    {
+      "id": "scythian-black-sea",
+      "title": "Scythian communities around the Black Sea",
+      "type": "period",
+      "startYear": -750,
+      "endYear": -100,
+      "description": "Politically diverse pastoral horse-riding communities traded and interacted with neighbouring Greek settlements.",
+      "note": "750–100 BCE is a rounded editorial envelope for the source’s late-century boundaries. It is not a precise migration date or the end of all Scythian communities. A mobile, diverse population is not represented by one point or a single state border.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/scythian-art",
+      "contextual": true,
+      "claimIds": [
+        "connections-scythian-black-sea-1",
+        "connections-scythian-black-sea-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Black Sea and steppe",
+      "regionIds": []
+    },
+    {
+      "id": "early-dynastic-egypt",
+      "title": "Early Dynastic Egypt",
+      "type": "period",
+      "startYear": -3100,
+      "endYear": -2686,
+      "description": "The first two dynasties followed the formation of a united Egyptian kingdom.",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/early-dynastic-period",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-early-dynastic-egypt-1",
+        "egypt-expansion-early-dynastic-egypt-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "first-intermediate-egypt",
+      "title": "Egypt’s First Intermediate Period",
+      "type": "period",
+      "startYear": -2181,
+      "endYear": -2055,
+      "description": "Provincial governors gained independence as central royal control weakened.",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/first-intermediate-period",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-first-intermediate-egypt-1",
+        "egypt-expansion-first-intermediate-egypt-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "middle-kingdom-egypt",
+      "title": "Egypt’s Middle Kingdom",
+      "type": "period",
+      "startYear": -2055,
+      "endYear": -1650,
+      "description": "Royal reunification was followed by construction, trade, agricultural projects and literary innovation.",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/middle-kingdom",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-middle-kingdom-egypt-1",
+        "egypt-expansion-middle-kingdom-egypt-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "second-intermediate-egypt",
+      "title": "Egypt’s Second Intermediate Period",
+      "type": "period",
+      "startYear": -1650,
+      "endYear": -1550,
+      "description": "Hyksos power in the northeastern Delta coexisted with Egyptian rulers farther south.",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/second-intermediate-period",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-second-intermediate-egypt-1",
+        "egypt-expansion-second-intermediate-egypt-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "third-intermediate-egypt",
+      "title": "Egypt’s Third Intermediate Period",
+      "type": "period",
+      "startYear": -1069,
+      "endYear": -747,
+      "description": "Kings based at Tanis shared power with increasingly autonomous authorities in Upper Egypt.",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/third-intermediate-period",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-third-intermediate-egypt-1",
+        "egypt-expansion-third-intermediate-egypt-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "late-period-egypt",
+      "title": "Egypt’s Late Period",
+      "type": "period",
+      "startYear": -747,
+      "endYear": -332,
+      "description": "Kushite, Saite and Persian phases form part of this broad period of changing rule.",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened. The source heading begins in 747 BCE, while its prose also uses the narrower Saite starting point of 664 BCE.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/late-period",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-late-period-egypt-1",
+        "egypt-expansion-late-period-egypt-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "macedonian-ptolemaic-egypt",
+      "title": "Macedonian and Ptolemaic Egypt",
+      "type": "period",
+      "startYear": -332,
+      "endYear": -30,
+      "description": "Alexander’s conquest was followed by rule under Ptolemy and his successors.",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened. The 332 BCE start includes Macedonian rule before Ptolemy became king.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/ptolemaic-period",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-macedonian-ptolemaic-egypt-1",
+        "egypt-expansion-macedonian-ptolemaic-egypt-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "roman-egypt",
+      "title": "Egypt under Roman rule",
+      "type": "period",
+      "startYear": -30,
+      "endYear": 395,
+      "description": "Egypt became a Roman province; agriculture and production served the imperial economy.",
+      "note": "Approximate period boundaries follow the Egyptian ministry. Other entries use museum chronologies, so boundaries can overlap or leave small gaps; these are dating differences, not evidence that nothing happened. The full source period extends beyond the initial 200 CE study window.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/roman-period",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-roman-egypt-1",
+        "egypt-expansion-roman-egypt-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "snefru-reign",
+      "title": "Snefru’s reign",
+      "type": "period",
+      "startYear": -2575,
+      "endYear": -2551,
+      "description": "Snefru: approximately 2575–2551 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-snefru-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "khafre-reign",
+      "title": "Khafre’s reign",
+      "type": "period",
+      "startYear": -2520,
+      "endYear": -2494,
+      "description": "Khafre: approximately 2520–2494 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-khafre-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "menkaure-reign",
+      "title": "Menkaure’s reign",
+      "type": "period",
+      "startYear": -2490,
+      "endYear": -2472,
+      "description": "Menkaure: approximately 2490–2472 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-menkaure-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "amenemhat-one-reign",
+      "title": "Amenemhat I’s reign",
+      "type": "period",
+      "startYear": -1981,
+      "endYear": -1952,
+      "description": "Amenemhat I: approximately 1981–1952 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-amenemhat-one-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "senwosret-three-reign",
+      "title": "Senwosret III’s reign",
+      "type": "period",
+      "startYear": -1878,
+      "endYear": -1840,
+      "description": "Senwosret III: approximately 1878–1840 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-senwosret-three-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "hatshepsut-reign",
+      "title": "Hatshepsut’s reign",
+      "type": "period",
+      "startYear": -1473,
+      "endYear": -1458,
+      "description": "Hatshepsut: approximately 1473–1458 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty. This records kingship, following an earlier regency (1479–1473 BCE in the source).",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-hatshepsut-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "thutmose-three-reign",
+      "title": "Thutmose III’s reign",
+      "type": "period",
+      "startYear": -1479,
+      "endYear": -1425,
+      "description": "Thutmose III: approximately 1479–1425 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-thutmose-three-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "amenhotep-three-reign",
+      "title": "Amenhotep III’s reign",
+      "type": "period",
+      "startYear": -1390,
+      "endYear": -1352,
+      "description": "Amenhotep III: approximately 1390–1352 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-amenhotep-three-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "akhenaten-reign",
+      "title": "Akhenaten’s reign",
+      "type": "period",
+      "startYear": -1349,
+      "endYear": -1336,
+      "description": "Akhenaten: approximately 1349–1336 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty. The Met separates his earlier name Amenhotep IV (1353–1349 BCE); this entry shows the Akhenaten phase only.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-akhenaten-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "tutankhamun-reign",
+      "title": "Tutankhamun’s reign",
+      "type": "period",
+      "startYear": -1336,
+      "endYear": -1327,
+      "description": "Tutankhamun: approximately 1336–1327 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-tutankhamun-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "seti-one-reign",
+      "title": "Seti I’s reign",
+      "type": "period",
+      "startYear": -1294,
+      "endYear": -1279,
+      "description": "Seti I: approximately 1294–1279 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-seti-one-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "ramesses-two-reign",
+      "title": "Ramesses II’s reign",
+      "type": "period",
+      "startYear": -1279,
+      "endYear": -1213,
+      "description": "Ramesses II: approximately 1279–1213 BCE (Met reign chronology).",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-ramesses-two-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "memphis",
+      "title": "Memphis",
+      "type": "city",
+      "startYear": -3100,
+      "endYear": 200,
+      "description": "The city was an important centre for the worship of Ptah.",
+      "note": "Editorial browsing window 3100 BCE–200 CE, not the city’s complete lifespan. The traditional foundation story is not treated as a precisely dated event. A city-specific map position remains to be checked.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/world-heritage/memphis-and-its-necropolis",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-memphis-1",
+        "egypt-expansion-memphis-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "thebes-egypt",
+      "title": "Thebes (Egypt)",
+      "type": "city",
+      "startYear": -2055,
+      "endYear": 200,
+      "description": "Thebes was a capital in the Middle and New Kingdoms and a major centre of Amun worship.",
+      "note": "Editorial browsing window from the Middle Kingdom through 200 CE; neither the city’s founding nor its abandonment. The site includes multiple temples and necropolises; no unchecked central point is assigned. This is Egyptian Thebes, distinct from the Greek city.",
+      "point": null,
+      "url": "https://whc.unesco.org/en/list/87/",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-thebes-egypt-1"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "amarna-religion",
+      "title": "Akhenaten’s religious changes",
+      "type": "period",
+      "startYear": -1352,
+      "endYear": -1336,
+      "description": "The king promoted Aten worship and founded a new capital, Akhetaten, in Middle Egypt.",
+      "note": "Reign-sized context, not an exact date for every reform or the founding of the city. This ministry chronology differs slightly from the Met’s name-specific reign entries.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/collections/amarna/",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-amarna-religion-1",
+        "egypt-expansion-amarna-religion-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "deir-el-medina-artisans",
+      "title": "The royal tomb workers of Deir el-Medina",
+      "type": "period",
+      "startYear": -1550,
+      "endYear": -1070,
+      "description": "At Deir el-Medina in western Thebes, a community of artists and craftspeople created royal tombs and left evidence of everyday life.",
+      "note": "Shown within broad New Kingdom context from the source, not as exact settlement foundation and abandonment dates. A site-specific map reference has not yet been checked.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-new-kingdom-ca-1550-1070-b-c",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-deir-el-medina-artisans-1"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
     }
   ],
   "associations": [
@@ -1128,6 +1776,42 @@
         "lifeways-teotihuacan-context-point"
       ],
       "contextual": true
+    },
+    {
+      "subject": "aksum-context",
+      "place": "aksum-context",
+      "startYear": 1,
+      "endYear": 800,
+      "label": "Aksum and Red Sea exchange · archaeological site reference",
+      "point": [
+        38.718610000000005,
+        14.13019
+      ],
+      "source": "https://whc.unesco.org/en/list/15/",
+      "claimIds": [
+        "connections-aksum-context-1",
+        "connections-aksum-context-2",
+        "connections-aksum-context-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "sanchi-early",
+      "place": "sanchi-early",
+      "startYear": -300,
+      "endYear": 100,
+      "label": "Early Buddhist Sanchi · archaeological site reference",
+      "point": [
+        77.73972,
+        23.479439999999997
+      ],
+      "source": "https://whc.unesco.org/en/list/524/",
+      "claimIds": [
+        "connections-sanchi-early-1",
+        "connections-sanchi-early-2",
+        "connections-sanchi-early-point"
+      ],
+      "contextual": true
     }
   ],
   "relationships": [
@@ -1270,6 +1954,366 @@
       "a": "northern-jomon",
       "b": "sannai-maruyama",
       "label": "Explore a settlement"
+    },
+    {
+      "a": "global-overview",
+      "b": "villanovan-context",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "etruscan-context",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "parthian-context",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "mithridates-one-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "jenne-jeno-early",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "aksum-context",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "sanchi-early",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "scythian-black-sea",
+      "label": "Explore this period"
+    },
+    {
+      "a": "villanovan-context",
+      "b": "etruscan-context",
+      "label": "Related cultural development"
+    },
+    {
+      "a": "parthian-context",
+      "b": "mithridates-one-reign",
+      "label": "Explore a ruler’s reign"
+    },
+    {
+      "a": "global-overview",
+      "b": "early-dynastic-egypt",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "first-intermediate-egypt",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "middle-kingdom-egypt",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "second-intermediate-egypt",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "third-intermediate-egypt",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "late-period-egypt",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "macedonian-ptolemaic-egypt",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "roman-egypt",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "snefru-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "old-kingdom",
+      "b": "snefru-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "khafre-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "old-kingdom",
+      "b": "khafre-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "menkaure-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "old-kingdom",
+      "b": "menkaure-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "amenemhat-one-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "middle-kingdom-egypt",
+      "b": "amenemhat-one-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "senwosret-three-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "middle-kingdom-egypt",
+      "b": "senwosret-three-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "hatshepsut-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "new-kingdom",
+      "b": "hatshepsut-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "thutmose-three-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "new-kingdom",
+      "b": "thutmose-three-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "amenhotep-three-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "new-kingdom",
+      "b": "amenhotep-three-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "akhenaten-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "new-kingdom",
+      "b": "akhenaten-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "tutankhamun-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "new-kingdom",
+      "b": "tutankhamun-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "seti-one-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "new-kingdom",
+      "b": "seti-one-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "ramesses-two-reign",
+      "label": "Explore this period"
+    },
+    {
+      "a": "new-kingdom",
+      "b": "ramesses-two-reign",
+      "label": "Reign within this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "memphis",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "thebes-egypt",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "amarna-religion",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "deir-el-medina-artisans",
+      "label": "Explore this period"
+    },
+    {
+      "a": "egypt",
+      "b": "early-dynastic-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "first-intermediate-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "middle-kingdom-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "second-intermediate-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "third-intermediate-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "late-period-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "macedonian-ptolemaic-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "roman-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "snefru-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "khafre-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "menkaure-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "amenemhat-one-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "senwosret-three-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "hatshepsut-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "thutmose-three-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "amenhotep-three-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "akhenaten-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "tutankhamun-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "seti-one-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "ramesses-two-reign",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "memphis",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "thebes-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "amarna-religion",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "egypt",
+      "b": "deir-el-medina-artisans",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "thebes-egypt",
+      "b": "deir-el-medina-artisans",
+      "label": "Community in western Thebes"
+    },
+    {
+      "a": "akhenaten-reign",
+      "b": "amarna-religion",
+      "label": "Religious changes"
     }
   ]
 }

@@ -1,14 +1,15 @@
 import fs from 'node:fs';
+import {buildFocusData} from '../web/focus-model.js';
 import {validateEvidence} from './lib/evidence.js';
 const read=path=>JSON.parse(fs.readFileSync(path,'utf8'));
-const packs=['socrates','britain-ireland','global-overview','world-lifeways'].map(name=>read(`research/evidence/${name}-reviewed.json`));
+const packs=['socrates','britain-ireland','global-overview','world-lifeways','ancient-connections','egypt-expansion'].map(name=>read(`research/evidence/${name}-reviewed.json`));
 const pack={schemaVersion:'1.0'};
 for(const key of ['entities','sources','claims','evidence','reviews','accounts']) pack[key]=packs.flatMap(p=>p[key]);
-const adapters=['britain-ireland','global-overview','world-lifeways'].map(name=>read(`research/evidence/${name}-exploration.json`));
+const adapters=['britain-ireland','global-overview','world-lifeways','ancient-connections','egypt-expansion'].map(name=>read(`research/evidence/${name}-exploration.json`));
 const exploration=Object.fromEntries(['entities','associations','relationships'].map(key=>[key,adapters.flatMap(a=>a[key])]));
 const errors=validateEvidence(pack,{release:true});
 const claims=new Map(pack.claims.map(c=>[c.id,c]));
-const ids=new Set(exploration.entities.map(e=>e.id));
+const ids=new Set(buildFocusData(read('web/data/collection.json'),exploration).entities.map(e=>e.id));
 for(const e of exploration.entities){
  if(!pack.entities.some(x=>x.id===e.id)) errors.push(`Unknown exploration entity: ${e.id}`);
  if(e.type!=='area'&&!e.claimIds.length) errors.push(`Missing exploration evidence: ${e.id}`);

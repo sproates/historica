@@ -1,7 +1,7 @@
 import {searchEntities} from './search-model.js';
-import {encodeView,decodeView} from './view-url.js?v=lifeways-1';
+import {encodeView,decodeView} from './view-url.js?v=egypt-1';
 import {setupMap} from './focus-map.js?v=bookmarks-1';
-import {buildFocusData,temporalLabel,initialFocus,changeFocus,focusAssociations,rankedContext,relatedEntities,encodeFocus,decodeFocus} from './focus-model.js?v=lifeways-1';
+import {buildFocusData,temporalLabel,initialFocus,changeFocus,focusAssociations,rankedContext,relatedEntities,encodeFocus,decodeFocus} from './focus-model.js?v=egypt-1';
 import {ordinal,historical,position,windowAround,overlaps} from './timeline-model.js';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const year=y=>`${Math.abs(y).toLocaleString()} ${y<0?'BCE':'CE'}`,dates=(a,b)=>a===b?year(a):`${year(a)} – ${year(b)}`;
