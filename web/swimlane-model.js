@@ -37,3 +37,8 @@ export function timelineLayout(focus,records,data,state){
  const ticks=span===0?[state.start]:[...new Set(Array.from({length:6},(_,i)=>historical(Math.round(ordinal(state.start)+span*i/5))))];
  return {lanes,ticks};
 }
+
+export function laneView(lane,expanded=false){
+ const compact=!lane.focus&&lane.rows>3&&!expanded;
+ return {...lane,items:compact?lane.items.filter(e=>e.row<3):lane.items,rows:compact?3:lane.rows,canCollapse:!lane.focus&&lane.rows>3,expanded:!compact,total:lane.items.length};
+}

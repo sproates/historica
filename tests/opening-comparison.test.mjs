@@ -26,3 +26,12 @@ test('Alexander lanes combine Macedonia and use already recorded geography',()=>
  for(const id of ['philip-reign','chaeronea','ptolemy-egypt','ptolemy-rule'])assert.notEqual(regionFor(data.entities.find(e=>e.id===id),data,s),'Location still being researched');
  assert.equal(regionFor({id:'unknown'},data,s),'Location still being researched');
 });
+test('introductory journeys answer Socrates and Caesar questions directly',()=>{
+ for(const [id,expected,kind] of [['socrates',['peloponnesian-war','alcibiades'],'all'],['julius-caesar',['cleopatra-vii','augustus'],'person']]){
+  const state={...initialFocus(data,id),kind},f=data.entities.find(e=>e.id===id);
+  assert.deepEqual(comparisonRecords(f,rankedContext(data,state),data,state).map(e=>e.id),expected);
+ }
+ const html=fs.readFileSync('web/index.html','utf8');
+ assert.match(html,/data-focus="socrates">How did Socrates/);
+ assert.match(html,/data-focus="julius-caesar" data-kind="person">Who/);
+});

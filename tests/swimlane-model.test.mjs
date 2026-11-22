@@ -18,3 +18,10 @@ test('single-year windows and area focus remain visible',()=>{
  const {lanes,ticks}=timelineLayout({...f,type:'area'},[{...f,id:'event',type:'event',startYear:1,endYear:1}],data,{start:1,end:1});
  assert.deepEqual(ticks,[1]);assert.equal(lanes[0].items[0].left,50);assert.equal(lanes[1].items[0].point,true);
 });
+test('crowded lanes show three rows and can reveal every entry',async()=>{
+ const {laneView}=await import('../web/swimlane-model.js');
+ const lane={name:'Athens',rows:9,items:Array.from({length:9},(_,row)=>({id:String(row),row}))};
+ const compact=laneView(lane);assert.equal(compact.rows,3);assert.equal(compact.items.length,3);assert.equal(compact.total,9);assert.equal(compact.expanded,false);
+ assert.deepEqual(laneView(lane,true).items,lane.items);
+ assert.equal(laneView({...lane,focus:true}).items.length,9);
+});
