@@ -1,12 +1,18 @@
 import {ordinal,historical,position} from './timeline-model.js';
 
 // Lane membership describes recorded regional context, not an exact personal location.
+const canonical=name=>({'Warring States China':'China','Kingdom of Macedonia':'Macedonia','Britain':'Britain and Ireland','Early Monte Albán':'Oaxaca','Achaemenid Persia':'Persia'}[name]||name);
+const explicitRegions={'philip-reign':'Macedonia','philip-king':'Macedonia',chaeronea:'Greece','ptolemy-egypt':'Egypt','ptolemy-rule':'Egypt','ptolemy-king':'Egypt',demosthenes:'Athens','world-400-250':'Across regions',period:'Across regions','global-overview':'Across regions'};
 export function regionFor(entity,data,state){
- if(entity.region)return entity.region;
- const names=(entity.regionIds||[]).map(id=>data.entities.find(e=>e.id===id)?.title).filter(Boolean);
- if(names.length)return names.join(' / ');
- const places=[...new Set(data.associations.filter(a=>a.subject===entity.id&&a.startYear<=state.end&&a.endYear>=state.start).map(a=>data.entities.find(e=>e.id===a.place)?.title).filter(Boolean))];
- return places.length>1?'Across regions':places[0]||'Region not recorded';
+ if(explicitRegions[entity.id])return explicitRegions[entity.id];
+ if(entity.region)return canonical(entity.region);
+ const names=(entity.regionIds||[]).map(id=>data.entities.find(e=>e.id===id)?.title).filter(Boolean).map(canonical);
+ if(names.length)return [...new Set(names)].join(' / ');
+ const places=[...new Set(data.associations.filter(a=>a.subject===entity.id&&a.startYear<=state.end&&a.endYear>=state.start).map(a=>data.entities.find(e=>e.id===a.place)?.title).filter(Boolean).map(canonical))];
+ if(places.length)return places.length>1?'Across regions':places[0];
+ // Reuse only an identical reference point; do not infer ancient regions from proximity.
+ const known=entity.point&&data.entities.find(e=>e.id!==entity.id&&e.point&&e.point[0]===entity.point[0]&&e.point[1]===entity.point[1]&&(e.region||['area','city','state'].includes(e.type)));
+ return known?canonical(known.region||known.title):'Location still being researched';
 }
 export function timelineLayout(focus,records,data,state){
  const focusedRegion=regionFor(focus,data,state),groups=new Map();

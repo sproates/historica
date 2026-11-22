@@ -14,7 +14,7 @@ function detail(id) {
   $('research-findings').innerHTML = batch ? `<p class="eyebrow">RESEARCH IN PROGRESS</p><h2>What this batch found</h2>${batch.batch.reviewedRelease?`<p class="release-note"><a href="${esc(batch.batch.reviewedRelease.url)}">Explore ${batch.batch.reviewedRelease.statementCount} reviewed statements in the timeline</a><br>${esc(batch.batch.reviewedRelease.note)}</p>`:''}<p>${batch.claims.length} candidate statements from ${batch.sources.length} inspected sources. These are drafts, not accepted timeline facts. Broad period evidence is not proof of what happened in a single year.</p><div class="findings-grid">${batch.claims.map(c=>`<article><h3>${esc(c.statement)}</h3>${c.evidenceIds.map(eid=>{const e=batch.evidence.find(e=>e.id===eid);const source=batch.sources.find(s=>s.id===e.sourceId);return `<p><a href="${esc(source.url)}">${esc(source.title)}</a><br><small>${esc(source.creator)} · ${esc(e.locator)}</small></p><p class="muted">${e.relation==='contradicts'?'Alternative chronology: ':''}${esc(e.note)}</p>`;}).join('')}</article>`).join('')}</div><p>Review: AI-assisted passage inspection; chronological and regional checks remain outstanding. Not independent expert review.</p>` : '';
   save();
 }
-function save() { const q = new URLSearchParams({package:selected || '', group:$('group').value, workflow:$('workflow').value, evidence:$('evidence-filter').value, pilot:$('pilot').checked?'1':'0'}); history.replaceState(null,'',`#${q}`); }
+function save() { if(!document.querySelector('.research-plan').open){history.replaceState(null,'',location.pathname);return;} const q = new URLSearchParams({package:selected || '', group:$('group').value, workflow:$('workflow').value, evidence:$('evidence-filter').value, pilot:$('pilot').checked?'1':'0'}); history.replaceState(null,'',`${location.pathname}?${q}`); }
 function render() {
   const stats = overview(data);
   const matching = stats.active.filter(p => {
@@ -35,18 +35,22 @@ function render() {
 async function init() {
   const response = await fetch('data/coverage.json'); if (!response.ok) throw new Error('Coverage registry could not be loaded.'); data = await response.json();
   const research = await fetch('data/coverage-research.json'); if (!research.ok) throw new Error('Research batches could not be loaded.'); batches = await research.json();
+  const evidenceResponse=await fetch('data/reviewed-evidence.json');
+  if(evidenceResponse.ok){const evidence=await evidenceResponse.json();$('checked-total').textContent=`${evidence.claims.filter(c=>c.status==='accepted').length} statements currently have recorded source checks.`;}
   const stats = overview(data);
   $('totals').innerHTML = [[stats.substantive,'Accepted · substantive'],[stats.limited,'Accepted · evidence limited'],[stats.awaiting,'Drafted or awaiting review'],[stats.unresearched,'Not yet researched']].map(([n,label])=>`<div class="total"><strong>${n}</strong><span>${label}</span></div>`).join('');
   $('revision').textContent = `Queue revision ${data.queueRevision || 1} · ${stats.completeOriginal} / ${stats.originalTotal} original region–period packages complete · ${stats.active.length} active packages after subdivisions. Parent completion requires every child. Egyptian introduction tracked separately.`;
   for (const group of new Set(data.regions.map(r=>r.group))) $('group').add(new Option(group,group));
   for (const w of workflows) $('workflow').add(new Option(w[0].toUpperCase()+w.slice(1),w));
   for (const e of evidenceStates) $('evidence-filter').add(new Option(e[0].toUpperCase()+e.slice(1),e));
-  const params = new URLSearchParams(location.hash.slice(1));
+  const params = new URLSearchParams(location.search.slice(1)||location.hash.slice(1));
+  if(params.has('package'))document.querySelector('.research-plan').open=true;
   for (const [id,key] of [['group','group'],['workflow','workflow'],['evidence-filter','evidence']]) if ([...$(id).options].some(o=>o.value===params.get(key))) $(id).value=params.get(key);
   $('pilot').checked = params.get('pilot') === '1';
   $('supplementary').innerHTML = `<h2>Before the worldwide window</h2><p>Predynastic Egypt provides an earlier introduction. It is excluded from the 364 original worldwide packages.</p>${data.supplementaryPackages.map(p=>`<button data-package="${p.id}">Egyptian introduction · ${windowLabel(p)}<br>${p.workflow} · evidence ${p.evidenceStatus}</button>`).join('')}`;
   detail([...data.packages,...data.supplementaryPackages].some(p=>p.id===params.get('package')) ? params.get('package') : 'britain-ireland__bce-500-251');
   render();
+  document.querySelector('.research-plan').addEventListener('toggle',save);
   for (const id of ['group','workflow','evidence-filter','pilot']) $(id).addEventListener('change',render);
   document.addEventListener('click',event=>{const b=event.target.closest('[data-package]');if(b) detail(b.dataset.package);});
 }

@@ -18,8 +18,12 @@
       "sha256": "3f97946c82a78b701991bf2ff2d515efcea6d86358a6bff15f498f9008dc16fa"
     },
     {
+      "path": "comparison-model.js",
+      "sha256": "834c3ec756bf5dd6a18de40ba609c23451216f43a3e4074c0b5ac65a7f91a54d"
+    },
+    {
       "path": "coverage-app.js",
-      "sha256": "57166814fc52c23896daa2f4e666d02d6d73665da8fe84ff2de877a86d83bb7a"
+      "sha256": "6c5d46fee25770625cd9d5aed4c93fb122f6975d6a1ef3b69cf3bf7f5bb8c7d4"
     },
     {
       "path": "coverage-model.js",
@@ -27,11 +31,11 @@
     },
     {
       "path": "coverage.css",
-      "sha256": "cdabd9b4ccbd5d269cdff531713209ab6ee5b13eab58fd070afdb04529881fe0"
+      "sha256": "d5ea389d37b547ac104b0a0c59e4f1cc581a9e58629d60eeaac2137eafe6e4c2"
     },
     {
       "path": "coverage.html",
-      "sha256": "0d438e0b39f3c0d7851f295857a23ae959869ea51a63b692812b91a28f6183e7"
+      "sha256": "d6757f2d8105c7cff41d3e66db4a9069143fb3a37f1280bc201a5fa1fa07adb7"
     },
     {
       "path": "data/collection.json",
@@ -71,7 +75,7 @@
     },
     {
       "path": "focus-app.js",
-      "sha256": "a5b536d9b4d25a9f6f6ba83a5180b23ea51e1e2a6a32096e1cb1cbb63f2c7aa6"
+      "sha256": "0cf3a0278e2b9a5e0b5397684a7c6e9c774abbd23913e8279a7c1efc695b1828"
     },
     {
       "path": "focus-map.js",
@@ -83,11 +87,11 @@
     },
     {
       "path": "focus.css",
-      "sha256": "7fa87ee54921c3bb1cfac6b81810c2b16efdd541cc5da91416e9d4f44b6bad01"
+      "sha256": "d6b506521d068704468f41312ae23ce06ffa9919ce8a8660d327a82573895471"
     },
     {
       "path": "index.html",
-      "sha256": "1da54d7be4399fb7004f5531402dd1d6df34c3f7825cf5d96f91d449fd4499ad"
+      "sha256": "31e63823487b2d9c065ece4e189b90fb3d3458724a6b0540625ccb3d4b0fee86"
     },
     {
       "path": "model.js",
@@ -103,7 +107,7 @@
     },
     {
       "path": "swimlane-model.js",
-      "sha256": "34550049847e6fda8fc3a0aa108bf2c4c8fe5a61822877d1295b054af8cf62b7"
+      "sha256": "a11b9b30fee7c4bed34035f0334b49cdf18c79d4c70fc73f4f90f1589e7493a5"
     },
     {
       "path": "timeline-model.js",
