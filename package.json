@@ -10,6 +10,7 @@
     "audit:prototype": "node scripts/audit-prototype.mjs",
     "build:evidence": "node scripts/build-evidence.mjs",
     "build:coverage": "node scripts/build-coverage.mjs",
-    "build:site": "npm run build:evidence && npm run build:coverage && npm test && node scripts/build-site.mjs"
+    "build:site": "npm run build:evidence && npm run build:coverage && npm test && node scripts/build-site.mjs",
+    "package:site": "npm run build:site && python3 scripts/package-site.py"
   }
 }

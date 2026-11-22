@@ -1,3 +1,4 @@
+import {searchEntities} from './search-model.js';
 import {encodeView,decodeView} from './view-url.js?v=bookmarks-1';
 import {setupMap} from './focus-map.js?v=bookmarks-1';
 import {buildFocusData,temporalLabel,initialFocus,changeFocus,focusAssociations,rankedContext,relatedEntities,encodeFocus,decodeFocus} from './focus-model.js?v=global-2';
@@ -41,6 +42,16 @@ function zoom(factor){const width=ordinal(state.end)-ordinal(state.start),mid=hi
 try{const [collection,countries,reviewed,exploration]=await Promise.all([load('data/collection.json'),load('data/ne_50m_admin_0_countries.json'),load('data/reviewed-evidence.json').catch(()=>null),load('data/reviewed-exploration.json')]);reviewedEvidence=reviewed;data=buildFocusData(collection,exploration);restore(decodeView(location.hash,data));ready=true;land=countries.features.map(f=>`<path d="${geometry(f.geometry)}"/>`).join('');
 $('area').innerHTML='<option value="all">Everywhere</option>'+data.entities.filter(e=>e.id!=='global-overview'&&['area','state','city'].includes(e.type)).map(e=>`<option value="${esc(e.id)}">${esc(e.title)}</option>`).join('');
 $('focus-picker').innerHTML=['person','area','state','city','period','event'].map(type=>`<optgroup label="${type}">${data.entities.filter(e=>e.type===type).map(e=>`<option value="${esc(e.id)}">${esc(e.title)}</option>`).join('')}</optgroup>`).join('');
+function clearSearch(){ $('history-search').value='';$('search-panel').hidden=true;$('search-clear').hidden=true;$('search-results').innerHTML='';$('search-count').textContent=''; }
+function renderSearch(){const query=$('history-search').value.trim();$('search-panel').hidden=!query;$('search-clear').hidden=!query;if(!query){clearSearch();return;}
+const matches=searchEntities(data.entities,query);
+$('search-count').textContent=matches.length?`${matches.length} results across all dates. Choose one to change focus.`:'No matches in this collection yet. Try another name or a broader term.';
+$('search-results').innerHTML=matches.map(e=>`<li><button type="button" data-search-focus="${esc(e.id)}"><span><strong>${esc(e.title)}</strong><small>${esc(e.type==='state'?'State / kingdom':e.type)} · ${dates(e.startYear,e.endYear)}</small></span><span class="search-description">${esc(e.description)}</span></button></li>`).join('');}
+$('history-search').addEventListener('input',renderSearch);
+$('search-clear').onclick=()=>{clearSearch();$('history-search').focus();};
+$('search-results').onclick=e=>{const button=e.target.closest('[data-search-focus]');if(!button)return;focus(button.dataset.searchFocus);clearSearch();$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus();};
+$('history-search').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key==='ArrowDown'){const first=$('search-results').querySelector('button');if(first){e.preventDefault();first.focus();}}});
+document.querySelector('.collection-search').addEventListener('keydown',e=>{if(e.key==='Escape'){clearSearch();$('history-search').focus();}});
 $('focus-picker').onchange=e=>focus(e.target.value);document.querySelector('main').addEventListener('click',e=>{const button=e.target.closest('[data-focus],[data-filter]');if(!button||button.disabled)return;if(button.dataset.focus)focus(button.dataset.focus);else{state.area=button.dataset.filter;render();}});
 $('whole-period').onclick=()=>{focus('global-overview');state.start=-3000;state.end=200;setEnvelope();render();};
 $('more-context').onclick=()=>{showAllContext=!showAllContext;render();};

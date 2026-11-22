@@ -49,14 +49,14 @@ filter and navigation checks.
 
 The product is **historica**, previously called Timeline. The repository is
 [github.com/sproates/historica](https://github.com/sproates/historica) and stays
-private while the prototype develops. The planned public address is
-**historica.online**, registered with GoDaddy. When the prototype is ready,
-make the repository public and configure GitHub Pages and the custom domain.
+private. The planned public address is
+**historica.online**, registered with GoDaddy. The site will be published on A Small Orange hosting, while the repository
+remains private.
 Hosting and DNS are not configured by this change.
 
 Builds and verification run manually on the Mac. Do not add GitHub Actions or
 CI workflows at this stage. Run `npm run build:site` to generate the evidence and coverage assets, run
-tests and package `docs/` for branch-based GitHub Pages. Check the browser
+tests and package `docs/` for static hosting. Check the browser
 flows before publishing. See [manual release instructions](RELEASE.md). Keep the beta label visible during this phase.
 
 ## Bookmark URLs
@@ -66,7 +66,7 @@ bookmark the address or use **Copy this view** to return to those settings on
 another visit or device. For example, `/#focus=socrates&from=-469&to=-399`
 opens his lifespan. Full links also contain map and display settings and a
 `v=1` format marker. Compatibility with previous prototype links is not a release requirement. Hash routing works
-with a static host, including the planned GitHub Pages deployment. Browser
+with a static host, including the planned A Small Orange deployment. Browser
 scroll position and the in-session navigation stack are not part of the bookmark.
 
 ## Evidence foundation
@@ -126,3 +126,16 @@ claim-level review. Coverage packages are not marked complete by this batch.
 
 `npm run build:site` prepares the static release in `docs/`; publication is a
 separate step. No CI configuration has been added.
+
+## Search
+
+Search history finds people, places, periods and events across all dates,
+including records outside the current time window and filters. Titles rank
+ahead of description matches; search ignores case and accents. Results show
+type, date range and a short description. Tab and Enter select results; Escape
+clears search. Place results preserve the visible dates; people and periods
+fit their own dates. Search text is temporary and is not part of bookmarks.
+
+Use `npm run package:site` to produce the static upload archive for A Small
+Orange. See [release instructions](RELEASE.md). The GitHub repository remains
+private; no GitHub Pages or CI setup is required.
