@@ -735,6 +735,51 @@
       "id": "alexander-taxila",
       "name": "Alexander enters Taxila",
       "type": "event"
+    },
+    {
+      "id": "qin-shi-huang",
+      "name": "Qin Shi Huang",
+      "type": "person"
+    },
+    {
+      "id": "qin-empire",
+      "name": "The Qin Empire",
+      "type": "period"
+    },
+    {
+      "id": "qin-unification",
+      "name": "Qin unifies the competing states",
+      "type": "event"
+    },
+    {
+      "id": "qin-mausoleum",
+      "name": "The First Emperor’s mausoleum",
+      "type": "area"
+    },
+    {
+      "id": "terracotta-army",
+      "name": "Making the terracotta army",
+      "type": "period"
+    },
+    {
+      "id": "han-changan",
+      "name": "Chang’an under the Western Han",
+      "type": "city"
+    },
+    {
+      "id": "shiji-history",
+      "name": "Sima Qian’s Historical Records",
+      "type": "period"
+    },
+    {
+      "id": "ban-chao",
+      "name": "Ban Chao",
+      "type": "person"
+    },
+    {
+      "id": "han-luoyang",
+      "name": "Luoyang under the Eastern Han",
+      "type": "city"
     }
   ],
   "sources": [
@@ -1683,6 +1728,42 @@
       "url": "https://whc.unesco.org/en/list/0139/maps/",
       "creator": "UNESCO World Heritage Centre",
       "locatorHint": "Component 139-003 Bhir Mound, N33 44 38.2 E72 49 9.59",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "qin-han-era-qin",
+      "title": "Qin Dynasty (221–206 B.C.)",
+      "url": "https://www.metmuseum.org/essays/qin-dynasty-221-206-b-c",
+      "creator": "The Metropolitan Museum of Art, Department of Asian Art",
+      "locatorHint": "Main essay: Ying Zheng’s lifespan, conquests and administration",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "qin-han-era-han",
+      "title": "Han Dynasty (206 B.C.–220 A.D.)",
+      "url": "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d",
+      "creator": "The Metropolitan Museum of Art, Department of Asian Art",
+      "locatorHint": "Main essay: capitals, historical writing and Ban Chao",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "qin-han-era-mausoleum",
+      "title": "Mausoleum of the First Qin Emperor",
+      "url": "https://whc.unesco.org/en/list/441/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Brief synthesis and criteria: construction from 246 BCE, death in 210 BCE, unification in 221 BCE",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "qin-han-era-map",
+      "title": "Mausoleum of the First Qin Emperor: geographical data",
+      "url": "https://whc.unesco.org/en/list/0441/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Components 441-001 (mausoleum) and 441-002 (terracotta army pits)",
       "accessed": "2026-11-22",
       "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
     }
@@ -11162,6 +11243,694 @@
       ],
       "reviewId": "maurya-era-alexander-taxila-point-review",
       "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-qin-shi-huang-history",
+      "subjectId": "qin-shi-huang",
+      "predicate": "historical-context",
+      "statement": "Ying Zheng conquered the remaining rival states and became the First Emperor. His government imposed common systems of writing, money and measurement. His burial complex, with its terracotta army, gives a different view of the resources his rule could command.",
+      "value": {
+        "type": "text",
+        "text": "Ying Zheng conquered the remaining rival states and became the First Emperor. His government imposed common systems of writing, money and measurement. His burial complex, with its terracotta army, gives a different view of the resources his rule could command."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -259,
+          "latest": -259,
+          "original": "259 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -210,
+          "latest": -210,
+          "original": "210 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-qin-shi-huang-history-qin"
+      ],
+      "reviewId": "qin-han-era-qin-shi-huang-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-qin-shi-huang-chronology",
+      "subjectId": "qin-shi-huang",
+      "predicate": "historical-context",
+      "statement": "Qin Shi Huang: 259 BCE to 210 BCE. Lifespan follows the Met. The point associated with his death is his tomb, not a location for every year of his life.",
+      "value": {
+        "type": "text",
+        "text": "Qin Shi Huang: 259 BCE to 210 BCE. Lifespan follows the Met. The point associated with his death is his tomb, not a location for every year of his life."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -259,
+          "latest": -259,
+          "original": "259 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -210,
+          "latest": -210,
+          "original": "210 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-qin-shi-huang-chronology-qin"
+      ],
+      "reviewId": "qin-han-era-qin-shi-huang-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-qin-empire-history",
+      "subjectId": "qin-empire",
+      "predicate": "historical-context",
+      "statement": "Qin’s conquests brought the competing states under one emperor. Officials administered the new empire through commanderies and prefectures. The dynasty was short-lived, but its administrative arrangements influenced later governments.",
+      "value": {
+        "type": "text",
+        "text": "Qin’s conquests brought the competing states under one emperor. Officials administered the new empire through commanderies and prefectures. The dynasty was short-lived, but its administrative arrangements influenced later governments."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -221,
+          "latest": -221,
+          "original": "221 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -206,
+          "latest": -206,
+          "original": "206 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-qin-empire-history-qin"
+      ],
+      "reviewId": "qin-han-era-qin-empire-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-qin-empire-chronology",
+      "subjectId": "qin-empire",
+      "predicate": "historical-context",
+      "statement": "The Qin Empire: 221 BCE to 206 BCE. Dynastic period, distinct from the earlier state of Qin. No fixed territorial outline is implied.",
+      "value": {
+        "type": "text",
+        "text": "The Qin Empire: 221 BCE to 206 BCE. Dynastic period, distinct from the earlier state of Qin. No fixed territorial outline is implied."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -221,
+          "latest": -221,
+          "original": "221 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -206,
+          "latest": -206,
+          "original": "206 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-qin-empire-chronology-qin"
+      ],
+      "reviewId": "qin-han-era-qin-empire-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-qin-unification-history",
+      "subjectId": "qin-unification",
+      "predicate": "historical-context",
+      "statement": "In 221 BCE, Qin’s conquests established a unified empire under the First Emperor. This marks a change in government across the conquered states, rather than the beginning of Chinese history.",
+      "value": {
+        "type": "text",
+        "text": "In 221 BCE, Qin’s conquests established a unified empire under the First Emperor. This marks a change in government across the conquered states, rather than the beginning of Chinese history."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -221,
+          "latest": -221,
+          "original": "221 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -221,
+          "latest": -221,
+          "original": "221 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-qin-unification-history-mausoleum"
+      ],
+      "reviewId": "qin-han-era-qin-unification-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-qin-unification-chronology",
+      "subjectId": "qin-unification",
+      "predicate": "historical-context",
+      "statement": "Qin unifies the competing states: 221 BCE to 221 BCE. Year follows UNESCO. Unification refers to the contemporary competing states, not the borders of modern China.",
+      "value": {
+        "type": "text",
+        "text": "Qin unifies the competing states: 221 BCE to 221 BCE. Year follows UNESCO. Unification refers to the contemporary competing states, not the borders of modern China."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -221,
+          "latest": -221,
+          "original": "221 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -221,
+          "latest": -221,
+          "original": "221 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-qin-unification-chronology-mausoleum"
+      ],
+      "reviewId": "qin-han-era-qin-unification-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-qin-mausoleum-history",
+      "subjectId": "qin-mausoleum",
+      "predicate": "historical-context",
+      "statement": "Work on the First Emperor’s burial complex began in 246 BCE. Its layout echoed the capital, Xianyang. The tomb mound, surrounding pits and terracotta army formed parts of a much larger funerary landscape near present-day Xi’an.",
+      "value": {
+        "type": "text",
+        "text": "Work on the First Emperor’s burial complex began in 246 BCE. Its layout echoed the capital, Xianyang. The tomb mound, surrounding pits and terracotta army formed parts of a much larger funerary landscape near present-day Xi’an."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -246,
+          "latest": -246,
+          "original": "246 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -210,
+          "latest": -210,
+          "original": "210 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-qin-mausoleum-history-mausoleum"
+      ],
+      "reviewId": "qin-han-era-qin-mausoleum-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-qin-mausoleum-chronology",
+      "subjectId": "qin-mausoleum",
+      "predicate": "historical-context",
+      "statement": "The First Emperor’s mausoleum: 246 BCE to 210 BCE. Construction study window ends with the emperor’s death. It does not date every feature or imply the site ceased to exist.",
+      "value": {
+        "type": "text",
+        "text": "The First Emperor’s mausoleum: 246 BCE to 210 BCE. Construction study window ends with the emperor’s death. It does not date every feature or imply the site ceased to exist."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -246,
+          "latest": -246,
+          "original": "246 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -210,
+          "latest": -210,
+          "original": "210 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-qin-mausoleum-chronology-mausoleum"
+      ],
+      "reviewId": "qin-han-era-qin-mausoleum-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-terracotta-army-history",
+      "subjectId": "terracotta-army",
+      "predicate": "historical-context",
+      "statement": "The First Emperor’s burial complex contained thousands of clay soldiers and horses, alongside weapons and bronze chariots. Their surviving details provide evidence of military equipment and the work of potters and metalworkers.",
+      "value": {
+        "type": "text",
+        "text": "The First Emperor’s burial complex contained thousands of clay soldiers and horses, alongside weapons and bronze chariots. Their surviving details provide evidence of military equipment and the work of potters and metalworkers."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -246,
+          "latest": -246,
+          "original": "246 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -210,
+          "latest": -210,
+          "original": "210 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-terracotta-army-history-mausoleum"
+      ],
+      "reviewId": "qin-han-era-terracotta-army-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-terracotta-army-chronology",
+      "subjectId": "terracotta-army",
+      "predicate": "historical-context",
+      "statement": "Making the terracotta army: 246 BCE to 210 BCE. Broad mausoleum construction window, not independently established start and finish dates for the statues. The point marks the army pits.",
+      "value": {
+        "type": "text",
+        "text": "Making the terracotta army: 246 BCE to 210 BCE. Broad mausoleum construction window, not independently established start and finish dates for the statues. The point marks the army pits."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -246,
+          "latest": -246,
+          "original": "246 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -210,
+          "latest": -210,
+          "original": "210 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-terracotta-army-chronology-mausoleum"
+      ],
+      "reviewId": "qin-han-era-terracotta-army-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-han-changan-history",
+      "subjectId": "han-changan",
+      "predicate": "historical-context",
+      "statement": "Chang’an was the Western Han capital. Palaces, residential districts and markets occupied a city organised along a north–south axis. It provides an urban setting for the dynasty’s rulers, writers and trade.",
+      "value": {
+        "type": "text",
+        "text": "Chang’an was the Western Han capital. Palaces, residential districts and markets occupied a city organised along a north–south axis. It provides an urban setting for the dynasty’s rulers, writers and trade."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -206,
+          "latest": -206,
+          "original": "206 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 9,
+          "latest": 9,
+          "original": "9 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-han-changan-history-han"
+      ],
+      "reviewId": "qin-han-era-han-changan-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-han-changan-chronology",
+      "subjectId": "han-changan",
+      "predicate": "historical-context",
+      "statement": "Chang’an under the Western Han: 206 BCE to 9 CE. Western Han study window, not foundation dates or an assertion that it was the capital from the first year. Precise geographic reference not yet checked.",
+      "value": {
+        "type": "text",
+        "text": "Chang’an under the Western Han: 206 BCE to 9 CE. Western Han study window, not foundation dates or an assertion that it was the capital from the first year. Precise geographic reference not yet checked."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -206,
+          "latest": -206,
+          "original": "206 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 9,
+          "latest": 9,
+          "original": "9 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-han-changan-chronology-han"
+      ],
+      "reviewId": "qin-han-era-han-changan-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-shiji-history-history",
+      "subjectId": "shiji-history",
+      "predicate": "historical-context",
+      "statement": "Sima Qian’s Shiji became a model for later Chinese histories. It also described peoples beyond the empire’s borders. Those descriptions preserve the historian’s perspective as well as information about the people he discussed.",
+      "value": {
+        "type": "text",
+        "text": "Sima Qian’s Shiji became a model for later Chinese histories. It also described peoples beyond the empire’s borders. Those descriptions preserve the historian’s perspective as well as information about the people he discussed."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -141,
+          "latest": -141,
+          "original": "141 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -87,
+          "latest": -87,
+          "original": "87 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-shiji-history-history-han"
+      ],
+      "reviewId": "qin-han-era-shiji-history-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-shiji-history-chronology",
+      "subjectId": "shiji-history",
+      "predicate": "historical-context",
+      "statement": "Sima Qian’s Historical Records: 141 BCE to 87 BCE. Editorial window uses Emperor Wu’s reign. These are not the start and completion dates of the work or Sima Qian’s lifespan.",
+      "value": {
+        "type": "text",
+        "text": "Sima Qian’s Historical Records: 141 BCE to 87 BCE. Editorial window uses Emperor Wu’s reign. These are not the start and completion dates of the work or Sima Qian’s lifespan."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -141,
+          "latest": -141,
+          "original": "141 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -87,
+          "latest": -87,
+          "original": "87 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-shiji-history-chronology-han"
+      ],
+      "reviewId": "qin-han-era-shiji-history-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-ban-chao-history",
+      "subjectId": "ban-chao",
+      "predicate": "historical-context",
+      "statement": "Ban Chao was a Han general from a literary family. Between 73 and 94 CE he reasserted Han control in Central Asia. His career connects the Eastern Han with the routes and communities to its west.",
+      "value": {
+        "type": "text",
+        "text": "Ban Chao was a Han general from a literary family. Between 73 and 94 CE he reasserted Han control in Central Asia. His career connects the Eastern Han with the routes and communities to its west."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 32,
+          "latest": 32,
+          "original": "32 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 102,
+          "latest": 102,
+          "original": "102 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-ban-chao-history-han"
+      ],
+      "reviewId": "qin-han-era-ban-chao-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-ban-chao-chronology",
+      "subjectId": "ban-chao",
+      "predicate": "historical-context",
+      "statement": "Ban Chao: 32 CE to 102 CE. Lifespan follows the Met. The campaign range does not supply a year-by-year itinerary.",
+      "value": {
+        "type": "text",
+        "text": "Ban Chao: 32 CE to 102 CE. Lifespan follows the Met. The campaign range does not supply a year-by-year itinerary."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 32,
+          "latest": 32,
+          "original": "32 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 102,
+          "latest": 102,
+          "original": "102 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-ban-chao-chronology-han"
+      ],
+      "reviewId": "qin-han-era-ban-chao-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-han-luoyang-history",
+      "subjectId": "han-luoyang",
+      "predicate": "historical-context",
+      "statement": "The Eastern Han ruled from Luoyang, east of the earlier capital at Chang’an. Two large palace complexes dominated the city. Caravans and visiting envoys connected the capital with places beyond the empire.",
+      "value": {
+        "type": "text",
+        "text": "The Eastern Han ruled from Luoyang, east of the earlier capital at Chang’an. Two large palace complexes dominated the city. Caravans and visiting envoys connected the capital with places beyond the empire."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 25,
+          "latest": 25,
+          "original": "25 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 220,
+          "latest": 220,
+          "original": "220 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-han-luoyang-history-han"
+      ],
+      "reviewId": "qin-han-era-han-luoyang-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-han-luoyang-chronology",
+      "subjectId": "han-luoyang",
+      "predicate": "historical-context",
+      "statement": "Luoyang under the Eastern Han: 25 CE to 220 CE. Eastern Han study window, not the foundation or end of the city. Precise geographic reference not yet checked.",
+      "value": {
+        "type": "text",
+        "text": "Luoyang under the Eastern Han: 25 CE to 220 CE. Eastern Han study window, not the foundation or end of the city. Precise geographic reference not yet checked."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 25,
+          "latest": 25,
+          "original": "25 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 220,
+          "latest": 220,
+          "original": "220 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-han-luoyang-chronology-han"
+      ],
+      "reviewId": "qin-han-era-han-luoyang-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-qin-mausoleum-point",
+      "subjectId": "qin-mausoleum",
+      "predicate": "geographic-reference",
+      "statement": "UNESCO component reference; not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          109.25366666666666,
+          34.38141666666667
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -246,
+          "latest": -246,
+          "original": "246 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -210,
+          "latest": -210,
+          "original": "210 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-qin-mausoleum-point-map"
+      ],
+      "reviewId": "qin-han-era-qin-mausoleum-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "qin-han-era-terracotta-army-point",
+      "subjectId": "terracotta-army",
+      "predicate": "geographic-reference",
+      "statement": "UNESCO component reference; not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          109.27344444444445,
+          34.385194444444444
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -246,
+          "latest": -246,
+          "original": "246 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -210,
+          "latest": -210,
+          "original": "210 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "qin-han-era-terracotta-army-point-map"
+      ],
+      "reviewId": "qin-han-era-terracotta-army-point-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -13819,6 +14588,186 @@
       "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
       "relation": "supports",
       "reviewId": "maurya-era-alexander-taxila-point-review"
+    },
+    {
+      "id": "qin-han-era-qin-shi-huang-history-qin",
+      "claimId": "qin-han-era-qin-shi-huang-history",
+      "sourceId": "qin-han-era-qin",
+      "locator": "Main essay: Ying Zheng’s lifespan, conquests and administration",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-qin-shi-huang-history-review"
+    },
+    {
+      "id": "qin-han-era-qin-shi-huang-chronology-qin",
+      "claimId": "qin-han-era-qin-shi-huang-chronology",
+      "sourceId": "qin-han-era-qin",
+      "locator": "Main essay: Ying Zheng’s lifespan, conquests and administration",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-qin-shi-huang-chronology-review"
+    },
+    {
+      "id": "qin-han-era-qin-empire-history-qin",
+      "claimId": "qin-han-era-qin-empire-history",
+      "sourceId": "qin-han-era-qin",
+      "locator": "Main essay: Ying Zheng’s lifespan, conquests and administration",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-qin-empire-history-review"
+    },
+    {
+      "id": "qin-han-era-qin-empire-chronology-qin",
+      "claimId": "qin-han-era-qin-empire-chronology",
+      "sourceId": "qin-han-era-qin",
+      "locator": "Main essay: Ying Zheng’s lifespan, conquests and administration",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-qin-empire-chronology-review"
+    },
+    {
+      "id": "qin-han-era-qin-unification-history-mausoleum",
+      "claimId": "qin-han-era-qin-unification-history",
+      "sourceId": "qin-han-era-mausoleum",
+      "locator": "Brief synthesis and criteria: construction from 246 BCE, death in 210 BCE, unification in 221 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-qin-unification-history-review"
+    },
+    {
+      "id": "qin-han-era-qin-unification-chronology-mausoleum",
+      "claimId": "qin-han-era-qin-unification-chronology",
+      "sourceId": "qin-han-era-mausoleum",
+      "locator": "Brief synthesis and criteria: construction from 246 BCE, death in 210 BCE, unification in 221 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-qin-unification-chronology-review"
+    },
+    {
+      "id": "qin-han-era-qin-mausoleum-history-mausoleum",
+      "claimId": "qin-han-era-qin-mausoleum-history",
+      "sourceId": "qin-han-era-mausoleum",
+      "locator": "Brief synthesis and criteria: construction from 246 BCE, death in 210 BCE, unification in 221 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-qin-mausoleum-history-review"
+    },
+    {
+      "id": "qin-han-era-qin-mausoleum-chronology-mausoleum",
+      "claimId": "qin-han-era-qin-mausoleum-chronology",
+      "sourceId": "qin-han-era-mausoleum",
+      "locator": "Brief synthesis and criteria: construction from 246 BCE, death in 210 BCE, unification in 221 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-qin-mausoleum-chronology-review"
+    },
+    {
+      "id": "qin-han-era-terracotta-army-history-mausoleum",
+      "claimId": "qin-han-era-terracotta-army-history",
+      "sourceId": "qin-han-era-mausoleum",
+      "locator": "Brief synthesis and criteria: construction from 246 BCE, death in 210 BCE, unification in 221 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-terracotta-army-history-review"
+    },
+    {
+      "id": "qin-han-era-terracotta-army-chronology-mausoleum",
+      "claimId": "qin-han-era-terracotta-army-chronology",
+      "sourceId": "qin-han-era-mausoleum",
+      "locator": "Brief synthesis and criteria: construction from 246 BCE, death in 210 BCE, unification in 221 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-terracotta-army-chronology-review"
+    },
+    {
+      "id": "qin-han-era-han-changan-history-han",
+      "claimId": "qin-han-era-han-changan-history",
+      "sourceId": "qin-han-era-han",
+      "locator": "Main essay: capitals, historical writing and Ban Chao",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-han-changan-history-review"
+    },
+    {
+      "id": "qin-han-era-han-changan-chronology-han",
+      "claimId": "qin-han-era-han-changan-chronology",
+      "sourceId": "qin-han-era-han",
+      "locator": "Main essay: capitals, historical writing and Ban Chao",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-han-changan-chronology-review"
+    },
+    {
+      "id": "qin-han-era-shiji-history-history-han",
+      "claimId": "qin-han-era-shiji-history-history",
+      "sourceId": "qin-han-era-han",
+      "locator": "Main essay: capitals, historical writing and Ban Chao",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-shiji-history-history-review"
+    },
+    {
+      "id": "qin-han-era-shiji-history-chronology-han",
+      "claimId": "qin-han-era-shiji-history-chronology",
+      "sourceId": "qin-han-era-han",
+      "locator": "Main essay: capitals, historical writing and Ban Chao",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-shiji-history-chronology-review"
+    },
+    {
+      "id": "qin-han-era-ban-chao-history-han",
+      "claimId": "qin-han-era-ban-chao-history",
+      "sourceId": "qin-han-era-han",
+      "locator": "Main essay: capitals, historical writing and Ban Chao",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-ban-chao-history-review"
+    },
+    {
+      "id": "qin-han-era-ban-chao-chronology-han",
+      "claimId": "qin-han-era-ban-chao-chronology",
+      "sourceId": "qin-han-era-han",
+      "locator": "Main essay: capitals, historical writing and Ban Chao",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-ban-chao-chronology-review"
+    },
+    {
+      "id": "qin-han-era-han-luoyang-history-han",
+      "claimId": "qin-han-era-han-luoyang-history",
+      "sourceId": "qin-han-era-han",
+      "locator": "Main essay: capitals, historical writing and Ban Chao",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-han-luoyang-history-review"
+    },
+    {
+      "id": "qin-han-era-han-luoyang-chronology-han",
+      "claimId": "qin-han-era-han-luoyang-chronology",
+      "sourceId": "qin-han-era-han",
+      "locator": "Main essay: capitals, historical writing and Ban Chao",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-han-luoyang-chronology-review"
+    },
+    {
+      "id": "qin-han-era-qin-mausoleum-point-map",
+      "claimId": "qin-han-era-qin-mausoleum-point",
+      "sourceId": "qin-han-era-map",
+      "locator": "Components 441-001 (mausoleum) and 441-002 (terracotta army pits)",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-qin-mausoleum-point-review"
+    },
+    {
+      "id": "qin-han-era-terracotta-army-point-map",
+      "claimId": "qin-han-era-terracotta-army-point",
+      "sourceId": "qin-han-era-map",
+      "locator": "Components 441-001 (mausoleum) and 441-002 (terracotta army pits)",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "qin-han-era-terracotta-army-point-review"
     }
   ],
   "reviews": [
@@ -15784,6 +16733,146 @@
     },
     {
       "id": "maurya-era-alexander-taxila-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-qin-shi-huang-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-qin-shi-huang-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-qin-empire-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-qin-empire-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-qin-unification-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-qin-unification-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-qin-mausoleum-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-qin-mausoleum-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-terracotta-army-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-terracotta-army-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-han-changan-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-han-changan-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-shiji-history-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-shiji-history-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-ban-chao-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-ban-chao-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-han-luoyang-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-han-luoyang-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-qin-mausoleum-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "qin-han-era-terracotta-army-point-review",
       "reviewer": "AI-assisted source inspection; not independent expert review",
       "date": "2026-11-22",
       "decision": "verified",

@@ -208,5 +208,14 @@
   "/area/lumbini",
   "/event/ashoka-lumbini",
   "/city/taxila",
-  "/event/alexander-taxila"
+  "/event/alexander-taxila",
+  "/person/qin-shi-huang",
+  "/period/qin-empire",
+  "/event/qin-unification",
+  "/area/qin-mausoleum",
+  "/period/terracotta-army",
+  "/city/han-changan",
+  "/period/shiji-history",
+  "/person/ban-chao",
+  "/city/han-luoyang"
 ]

@@ -3,7 +3,7 @@
   "files": [
     {
       "path": ".htaccess",
-      "sha256": "c41be62cc1ceb857558acf9b77e26b5a3d01c38caa85924f5c66d02acd0a9c1c"
+      "sha256": "0004b35fc7a54cab7ec714c6ec4f6f2212ef38698efdedb77d2f7bd9237e0b63"
     },
     {
       "path": "about.html",
@@ -67,15 +67,15 @@
     },
     {
       "path": "data/reviewed-evidence.json",
-      "sha256": "fe22f5c661820979d94cd56bb9efea0f6b25561430b082d1b07e4a3d3f37bc41"
+      "sha256": "f73682bd8c71d0f600c03e90397faf1366720d777a8f55f2feb6a6c85c05df5d"
     },
     {
       "path": "data/reviewed-exploration.json",
-      "sha256": "8cdb4b3461f148986b378df4476f70b6a1b4bb0763cac79e53e976041304a42d"
+      "sha256": "a234ce4b0387f3b5b9592cd2d64852902ab34763625d85d3bf6bc92e7cd7337c"
     },
     {
       "path": "data/routes.json",
-      "sha256": "a366519557ba0ed832cc4fb685137ca8d01b110d2f5eb5e60b0f926214e1e629"
+      "sha256": "5521796f87cbee4e22c896d64dd1966aed65af5a21068b8f3d47a33f92c5fe7e"
     },
     {
       "path": "focus-app.js",
@@ -236,6 +236,10 @@
     {
       "path": "pages/badarian-culture.html",
       "sha256": "bb23a49c7205530b1c5a01822b2aab4b329437c3354800303a0dd9cfd1003d93"
+    },
+    {
+      "path": "pages/ban-chao.html",
+      "sha256": "b1de864ab3dc94982a0b75c16e2aa1b3b5ed6c5dd14c5aec1d9606688d034907"
     },
     {
       "path": "pages/bindusara-reign.html",
@@ -432,6 +436,14 @@
     {
       "path": "pages/global-overview.html",
       "sha256": "18e37df8512bb7f661886834b57a362a27c6cb9d631f5f0a3090bffd50e92685"
+    },
+    {
+      "path": "pages/han-changan.html",
+      "sha256": "294b9b0b1f5417723156c81325560dd1cd3b46de5ecfd5975d1208ea89ddcf65"
+    },
+    {
+      "path": "pages/han-luoyang.html",
+      "sha256": "04df043efa8a01b0d21699a282875bcd2a6a1009519c95ad87cf05811f3a670e"
     },
     {
       "path": "pages/han-wu-reign.html",
@@ -714,8 +726,24 @@
       "sha256": "c9701add5441c4e6ed9f73d746eb10ef2c1af379609c69315af26f92ddd1ef0f"
     },
     {
+      "path": "pages/qin-empire.html",
+      "sha256": "080b72b6dacca51ad7dbf31dd67ad0252c6a6f8c9a44b7ef8cd41878c0dce54a"
+    },
+    {
+      "path": "pages/qin-mausoleum.html",
+      "sha256": "ea5f6d0a57be55e0308e35556315860d222adf430f5affa96fb6b6dc14398c19"
+    },
+    {
       "path": "pages/qin-reforms.html",
       "sha256": "1c056260a408a067544a04ad6aaa590330b12ba3292de85f8949aacf484b7caa"
+    },
+    {
+      "path": "pages/qin-shi-huang.html",
+      "sha256": "ce1d2b5b631618e659a74ac0d1070adade3e67d64ba2a22b06fb0135582477f2"
+    },
+    {
+      "path": "pages/qin-unification.html",
+      "sha256": "54b196d058c935eefae97caf22fa112d65f3be2a1b797e1366957a6fcf66cbb7"
     },
     {
       "path": "pages/qin.html",
@@ -780,6 +808,10 @@
     {
       "path": "pages/shang-context.html",
       "sha256": "499e5894a665850f29e1e1548c05b1d9d2d116f13a3fb231a21d3d26f581dbf1"
+    },
+    {
+      "path": "pages/shiji-history.html",
+      "sha256": "fc7db816a3343f0be7d8f262c49b90ace80d18b9069f6a6d11be91f3867954de"
     },
     {
       "path": "pages/sicilian-expedition.html",
@@ -894,6 +926,10 @@
       "sha256": "5b782152871329307df377433a7d5df53f4746def9e62eed7a7fcfa33afe7548"
     },
     {
+      "path": "pages/terracotta-army.html",
+      "sha256": "6b4fb5a1ec844b8690aa1f5ecb07560f9461077bee3e3dfc63e783a0f27b4e09"
+    },
+    {
       "path": "pages/thebes-egypt.html",
       "sha256": "4a18536639914469c7b0c203c542209aabd185a94ce0abfc4d103a2b5cf311f7"
     },
@@ -963,7 +999,7 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "df159dd3c114b5ad34f4ce3b5fad4ce2f14bc7b7b98be7aabc41fb27d0a4b782"
+      "sha256": "b7f41d172632ad6deabdb60844514ceb892a34bc64c71c2486373646fe515996"
     },
     {
       "path": "style.css",
