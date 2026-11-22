@@ -2319,6 +2319,460 @@
       "dateLabel": "Year-level chronology",
       "region": "South Asia",
       "regionIds": []
+    },
+    {
+      "id": "alcibiades",
+      "title": "Alcibiades",
+      "type": "person",
+      "startYear": -450,
+      "endYear": -404,
+      "description": "Alcibiades was an Athenian politician and commander whose career crossed the divisions of the Peloponnesian War. Brought up under Pericles’ guardianship, he became closely associated with Socrates.\n\nHe helped persuade Athens to send its great expedition to Sicily, then fled to Sparta after being recalled for trial. His later return to Athenian service makes his life a useful way through the war’s changing alliances.",
+      "note": "Approximate lifespan: sources give 451/450–404/403 BCE. The timeline uses 450–404, so age comparisons are approximate.",
+      "point": null,
+      "url": "https://www.livius.org/articles/person/alcibiades/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-alcibiades-history",
+        "alcibiades-era-alcibiades-association-sparta",
+        "alcibiades-era-alcibiades-reference-sparta",
+        "alcibiades-era-alcibiades-association-athens",
+        "alcibiades-era-alcibiades-reference-athens"
+      ],
+      "dateLabel": "Approximate lifespan",
+      "region": "Athens and the Aegean",
+      "regionIds": []
+    },
+    {
+      "id": "pericles",
+      "title": "Pericles",
+      "type": "person",
+      "startYear": -495,
+      "endYear": -429,
+      "description": "Pericles was an Athenian politician and commander, born around 495 BCE. His career belonged to the period when Athens became a dominant power in the Greek world.\n\nHe was still leading the city at the beginning of the Peloponnesian War. He died during the epidemic in 429 BCE, early in a conflict that would continue for another quarter of a century.",
+      "note": "Approximate birth year; lifespan, not a reign. Athens was a democracy, and Pericles was not its monarch.",
+      "point": null,
+      "url": "https://www.iranicaonline.org/articles/pericles/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-pericles-history",
+        "alcibiades-era-pericles-association-athens",
+        "alcibiades-era-pericles-reference-athens"
+      ],
+      "dateLabel": "Approximate lifespan",
+      "region": "Athens",
+      "regionIds": []
+    },
+    {
+      "id": "nicias",
+      "title": "Nicias",
+      "type": "person",
+      "startYear": -470,
+      "endYear": -413,
+      "description": "Nicias was an Athenian commander and politician who favoured peace with Sparta. The treaty negotiated in 421 BCE bears his name.\n\nHe opposed the proposed expedition to Sicily but nevertheless became one of its commanders alongside Alcibiades and Lamachus. His career ended with the expedition’s defeat in 413 BCE.",
+      "note": "Born around 470 BCE; died in 413 BCE. The opening decades of his life are poorly documented.",
+      "point": null,
+      "url": "https://www.livius.org/articles/person/nicias/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-nicias-history",
+        "alcibiades-era-nicias-association-syracuse",
+        "alcibiades-era-nicias-reference-syracuse"
+      ],
+      "dateLabel": "Approximate lifespan",
+      "region": "Athens and Sicily",
+      "regionIds": []
+    },
+    {
+      "id": "sparta",
+      "title": "Sparta",
+      "type": "city",
+      "startYear": -450,
+      "endYear": -404,
+      "description": "Sparta led the coalition fighting Athens in the Peloponnesian War. Its victory in 404 BCE forced Athens to give up its empire.\n\nAlcibiades’ connection takes you inside that rivalry: after leaving Athenian service, he sought refuge with the Spartans and advised them against his own city.",
+      "note": "450–404 BCE is this entry’s study window, not the founding or end of Sparta. The point locates the city, not Spartan territory. Getty city reference for Sparta, not Spartan territory.",
+      "point": [
+        22.4297,
+        37.0733
+      ],
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-sparta-history",
+        "alcibiades-era-sparta-point"
+      ],
+      "dateLabel": "Editorial study window",
+      "region": "Greece",
+      "regionIds": []
+    },
+    {
+      "id": "syracuse",
+      "title": "Syracuse",
+      "type": "city",
+      "startYear": -415,
+      "endYear": -413,
+      "description": "Syracuse was the principal target of the Athenian expedition to Sicily. Its defenders, aided by the Spartan commander Gylippus, resisted the siege.\n\nThe Athenian expedition was destroyed in 413 BCE. Syracuse’s connections show this part of the war from the city being attacked, rather than only from Athens.",
+      "note": "415–413 BCE is an editorial campaign window, not the lifespan of the city. The marker uses Ortygia’s UNESCO reference point. UNESCO Ortygia reference for Syracuse, not a siege position.",
+      "point": [
+        15.293055555555556,
+        37.059444444444445
+      ],
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/sicilian-expedition/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-syracuse-history",
+        "alcibiades-era-syracuse-point"
+      ],
+      "dateLabel": "Editorial study window",
+      "region": "Sicily",
+      "regionIds": []
+    },
+    {
+      "id": "peloponnesian-war",
+      "title": "The Peloponnesian War",
+      "type": "period",
+      "startYear": -431,
+      "endYear": -404,
+      "description": "The Peloponnesian War set Athens and its allies against Sparta and its coalition. It ran from 431 to 404 BCE, with a negotiated peace interrupting the main conflict.\n\nFighting extended well beyond the two cities. The Sicilian expedition and Persian involvement are part of the same history. Athens eventually surrendered and lost its empire.",
+      "note": "Overall war chronology. This span does not mean uninterrupted fighting in every region.",
+      "point": null,
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-peloponnesian-war-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Greece and the Aegean",
+      "regionIds": []
+    },
+    {
+      "id": "athens-plague",
+      "title": "The epidemic at Athens",
+      "type": "period",
+      "startYear": -430,
+      "endYear": -426,
+      "description": "A severe epidemic struck Athens during the early years of the war. People had crowded into the city for protection, and the disease killed soldiers and civilians, including Pericles in 429 BCE.\n\nThucydides survived it and described what he saw. The illness is conventionally called the plague of Athens, but its precise cause remains uncertain.",
+      "note": "Outbreaks between 430 and 426 BCE, not a claim of constant intensity. No modern diagnosis is presented as settled. Acropolis reference for Athens, not the exact event location.",
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21560771/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-athens-plague-history",
+        "alcibiades-era-athens-plague-point"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Athens",
+      "regionIds": []
+    },
+    {
+      "id": "potidaea-service",
+      "title": "Socrates and Alcibiades at Potidaea",
+      "type": "event",
+      "startYear": -432,
+      "endYear": -432,
+      "description": "Socrates and Alcibiades were deployed to Potidaea in 432 BCE. Socrates served as a hoplite, an infantry soldier.\n\nThe episode places their relationship in military service as well as philosophical conversation.",
+      "note": "Deployment year. The campaign and siege continued afterwards; this entry does not date every episode associated with them.",
+      "point": null,
+      "url": "https://plato.stanford.edu/entries/socrates/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-potidaea-service-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Northern Greece",
+      "regionIds": []
+    },
+    {
+      "id": "delium",
+      "title": "The battle of Delium",
+      "type": "event",
+      "startYear": -424,
+      "endYear": -424,
+      "description": "Socrates fought at Delium in 424 BCE, when the Athenian army was defeated.\n\nPlato’s dialogues later present Alcibiades and Laches praising his conduct during the retreat. These are literary accounts of the event, not transcripts made on the battlefield.",
+      "note": "Battle year; testimony about Socrates is identified as coming through Plato.",
+      "point": null,
+      "url": "https://plato.stanford.edu/entries/socrates/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-delium-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Boeotia",
+      "regionIds": []
+    },
+    {
+      "id": "peace-of-nicias",
+      "title": "The Peace of Nicias",
+      "type": "event",
+      "startYear": -421,
+      "endYear": -421,
+      "description": "Athens and Sparta agreed to peace in 421 BCE after ten years of war. Nicias was closely associated with the negotiations.\n\nThe settlement did not resolve the rivalries between the cities and their allies. The later Sicilian expedition and renewed war show how limited the peace proved.",
+      "note": "Treaty concluded in March 421 BCE; not the final end of the Peloponnesian War.",
+      "point": null,
+      "url": "https://www.livius.org/articles/person/nicias/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-peace-of-nicias-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Greece",
+      "regionIds": []
+    },
+    {
+      "id": "sicilian-expedition",
+      "title": "The Sicilian expedition",
+      "type": "period",
+      "startYear": -415,
+      "endYear": -413,
+      "description": "Athens sent a major expedition to Sicily in 415 BCE. Alcibiades, Nicias and Lamachus shared the initial command.\n\nAlcibiades was recalled, and the remaining commanders pursued the campaign against Syracuse. Despite reinforcements, the expedition ended in disaster in 413 BCE. Many survivors became prisoners.",
+      "note": "Campaign dates. The Syracuse marker represents a principal target, not every landing or battle in Sicily. UNESCO Ortygia reference for Syracuse, not a siege position.",
+      "point": [
+        15.293055555555556,
+        37.059444444444445
+      ],
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/sicilian-expedition/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-sicilian-expedition-history",
+        "alcibiades-era-sicilian-expedition-point"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Sicily",
+      "regionIds": []
+    },
+    {
+      "id": "herms-scandal",
+      "title": "The mutilation of the herms",
+      "type": "event",
+      "startYear": -415,
+      "endYear": -415,
+      "description": "Just before the fleet sailed for Sicily, sacred stone figures called herms were mutilated across Athens. The attack provoked an investigation into sacrilege.\n\nAlcibiades became caught up in accusations concerning religious offences. Accusations against him should not be read as proof that he personally damaged the herms.",
+      "note": "415 BCE. The herm mutilations and accusations concerning the Mysteries were connected investigations, not identical charges. Acropolis reference for Athens, not the exact event location.",
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "url": "https://plato.stanford.edu/entries/socrates/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-herms-scandal-history",
+        "alcibiades-era-herms-scandal-point"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Athens",
+      "regionIds": []
+    },
+    {
+      "id": "alcibiades-sparta",
+      "title": "Alcibiades turns to Sparta",
+      "type": "period",
+      "startYear": -415,
+      "endYear": -412,
+      "description": "Recalled from Sicily for trial in 415 BCE, Alcibiades escaped to Sparta. He advised Athens’ enemies as the war widened.\n\nBy 412 BCE he was helping Spartan operations in Ionia. This was a changing political allegiance, not an uninterrupted stay in the city of Sparta.",
+      "note": "Broad phase of Spartan cooperation, 415–412 BCE. The city marker indicates his refuge, not his location in every year. Getty city reference for Sparta, not Spartan territory.",
+      "point": [
+        22.4297,
+        37.0733
+      ],
+      "url": "https://www.livius.org/articles/person/alcibiades/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-alcibiades-sparta-history",
+        "alcibiades-era-alcibiades-sparta-point"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Greece",
+      "regionIds": []
+    },
+    {
+      "id": "athens-four-hundred",
+      "title": "The coup of the Four Hundred",
+      "type": "event",
+      "startYear": -411,
+      "endYear": -411,
+      "description": "An oligarchic coup replaced Athenian democracy with the government of the Four Hundred in 411 BCE. Hopes of obtaining Persian support formed part of the political manoeuvring.\n\nAlcibiades was involved in proposals linking a change of government to his own return. The new regime was divided from the start.",
+      "note": "Coup year. The Four Hundred were a different regime from the Thirty of 404 BCE. Acropolis reference for Athens, not the exact event location.",
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/decelean-war/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-athens-four-hundred-history",
+        "alcibiades-era-athens-four-hundred-point"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Athens",
+      "regionIds": []
+    },
+    {
+      "id": "alcibiades-return",
+      "title": "Alcibiades returns to Athens",
+      "type": "event",
+      "startYear": -407,
+      "endYear": -407,
+      "description": "Alcibiades returned to Athens in 407 BCE after years away from the city.\n\nHis return belongs to the war’s final phase. It did not end the conflict, which continued until Athens’ defeat in 404 BCE.",
+      "note": "Return to the city, distinct from his earlier return to command of Athenian forces. Acropolis reference for Athens, not the exact event location.",
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/chronology/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-alcibiades-return-history",
+        "alcibiades-era-alcibiades-return-point"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Athens",
+      "regionIds": []
+    },
+    {
+      "id": "arginusae-trial",
+      "title": "The generals’ trial after Arginusae",
+      "type": "event",
+      "startYear": -406,
+      "endYear": -406,
+      "description": "After the naval victory at Arginusae in 406 BCE, Athens prosecuted the commanders over the failure to recover men and bodies from the sea.\n\nSocrates opposed the unlawful collective proceedings. Six generals were executed.",
+      "note": "Trial in Athens, not a marker for the battle at sea. This is distinct from Socrates’ own trial in 399 BCE. Acropolis reference for Athens, not the exact event location.",
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "url": "https://plato.stanford.edu/entries/socrates/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-arginusae-trial-history",
+        "alcibiades-era-arginusae-trial-point"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Athens",
+      "regionIds": []
+    },
+    {
+      "id": "aegospotami",
+      "title": "The battle of Aegospotami",
+      "type": "event",
+      "startYear": -405,
+      "endYear": -405,
+      "description": "Lysander defeated the Athenian fleet at Aegospotami in 405 BCE.\n\nThe defeat was followed by the siege of Athens. The city surrendered the following year.",
+      "note": "Naval defeat in 405 BCE. No precise battlefield coordinates are asserted.",
+      "point": null,
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/chronology/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-aegospotami-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Hellespont",
+      "regionIds": []
+    },
+    {
+      "id": "athens-surrender",
+      "title": "Athens surrenders to Sparta",
+      "type": "event",
+      "startYear": -404,
+      "endYear": -404,
+      "description": "Athens surrendered in 404 BCE, ending the Peloponnesian War. Its Long Walls were demolished.\n\nPeace did not immediately restore political stability. The government of the Thirty and a civil conflict followed.",
+      "note": "Surrender in spring 404 BCE, displayed at year resolution. Acropolis reference for Athens, not the exact event location.",
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/chronology/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-athens-surrender-history",
+        "alcibiades-era-athens-surrender-point"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Athens",
+      "regionIds": []
+    },
+    {
+      "id": "thirty-athens",
+      "title": "The Thirty rule Athens",
+      "type": "period",
+      "startYear": -404,
+      "endYear": -403,
+      "description": "After Athens’ defeat, an oligarchic government known as the Thirty took power with Spartan backing. Opposition to its rule developed into civil war.\n\nThe regime was short-lived. Democratic forces recovered ground, and a settlement in 403 BCE restored democracy.",
+      "note": "Government of 404–403 BCE, not a lifespan. Its aftermath provides context for Socrates’ later trial without claiming a single cause for his prosecution. Acropolis reference for Athens, not the exact event location.",
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/aftermath/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-thirty-athens-history",
+        "alcibiades-era-thirty-athens-point"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Athens",
+      "regionIds": []
+    },
+    {
+      "id": "athens-democracy-restored",
+      "title": "Democracy returns to Athens",
+      "type": "event",
+      "startYear": -403,
+      "endYear": -403,
+      "description": "A settlement in 403 BCE restored Athenian democracy after the rule of the Thirty and the fighting that followed. The Spartan king Pausanias intervened in the reconciliation.\n\nSocrates’ trial belongs to this restored democracy, four years later. The two events should not be collapsed into one.",
+      "note": "Restoration in 403 BCE. Socrates’ separate trial entry is dated 399 BCE. Acropolis reference for Athens, not the exact event location.",
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/aftermath/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-athens-democracy-restored-history",
+        "alcibiades-era-athens-democracy-restored-point"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Athens",
+      "regionIds": []
+    },
+    {
+      "id": "darius-ii-reign",
+      "title": "The reign of Darius II",
+      "type": "period",
+      "startYear": -423,
+      "endYear": -404,
+      "description": "Darius II ruled the Persian Empire during the later years of the Peloponnesian War. His officials negotiated with Sparta, and Persian money helped support its fleet.\n\nThis places the war within a wider struggle over influence in the Aegean and western Anatolia. Persia was an active participant, not just a distant background.",
+      "note": "Reign, not lifespan. The displayed 423–404 BCE follows Livius; the accession falls across 424/423 BCE.",
+      "point": null,
+      "url": "https://www.livius.org/articles/person/darius-ii-nothus/",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-darius-ii-reign-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Persia",
+      "regionIds": []
+    },
+    {
+      "id": "amyrtaeus-accession",
+      "title": "Amyrtaeus challenges Persian rule in Egypt",
+      "type": "event",
+      "startYear": -404,
+      "endYear": -404,
+      "description": "Around 404 BCE, Amyrtaeus established himself as an Egyptian ruler and began consolidating independence from Persia. He was the sole king of the Twenty-eighth Dynasty.\n\nThe change did not happen everywhere at once. Documents from Elephantine still recognised the Persian king as late as 401 BCE. This is a gradual political transition, despite the single date on the timeline.",
+      "note": "Approximate accession date, not the instant liberation of all Egypt. The end of his reign is outside this entry’s scope.",
+      "point": null,
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-ancient-history/egypt-404332-bc/7B70F72C3389EB2B29D646F7BAA6318D",
+      "contextual": true,
+      "claimIds": [
+        "alcibiades-era-amyrtaeus-accession-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
     }
   ],
   "associations": [
@@ -2843,6 +3297,244 @@
       "source": "https://asi.nic.in/pages/WorldHeritageBuddhistMonumentsatSanchi",
       "claimIds": [
         "caesar-era-sanchi-gateways-association-sanchi-early100"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "athens-plague",
+      "place": "athens",
+      "startYear": -430,
+      "endYear": -426,
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "label": "Acropolis reference for Athens, not the exact event location",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/21560771/",
+      "claimIds": [
+        "alcibiades-era-athens-plague-history",
+        "alcibiades-era-athens-plague-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "sicilian-expedition",
+      "place": "syracuse",
+      "startYear": -415,
+      "endYear": -413,
+      "point": [
+        15.293055555555556,
+        37.059444444444445
+      ],
+      "label": "UNESCO Ortygia reference for Syracuse, not a siege position",
+      "source": "https://www.livius.org/articles/concept/peloponnesian-war/sicilian-expedition/",
+      "claimIds": [
+        "alcibiades-era-sicilian-expedition-history",
+        "alcibiades-era-sicilian-expedition-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "herms-scandal",
+      "place": "athens",
+      "startYear": -415,
+      "endYear": -415,
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "label": "Acropolis reference for Athens, not the exact event location",
+      "source": "https://plato.stanford.edu/entries/socrates/",
+      "claimIds": [
+        "alcibiades-era-herms-scandal-history",
+        "alcibiades-era-herms-scandal-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "alcibiades-sparta",
+      "place": "sparta",
+      "startYear": -415,
+      "endYear": -412,
+      "point": [
+        22.4297,
+        37.0733
+      ],
+      "label": "Getty city reference for Sparta, not Spartan territory",
+      "source": "https://www.livius.org/articles/person/alcibiades/",
+      "claimIds": [
+        "alcibiades-era-alcibiades-sparta-history",
+        "alcibiades-era-alcibiades-sparta-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "athens-four-hundred",
+      "place": "athens",
+      "startYear": -411,
+      "endYear": -411,
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "label": "Acropolis reference for Athens, not the exact event location",
+      "source": "https://www.livius.org/articles/concept/peloponnesian-war/decelean-war/",
+      "claimIds": [
+        "alcibiades-era-athens-four-hundred-history",
+        "alcibiades-era-athens-four-hundred-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "alcibiades-return",
+      "place": "athens",
+      "startYear": -407,
+      "endYear": -407,
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "label": "Acropolis reference for Athens, not the exact event location",
+      "source": "https://www.livius.org/articles/concept/peloponnesian-war/chronology/",
+      "claimIds": [
+        "alcibiades-era-alcibiades-return-history",
+        "alcibiades-era-alcibiades-return-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "arginusae-trial",
+      "place": "athens",
+      "startYear": -406,
+      "endYear": -406,
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "label": "Acropolis reference for Athens, not the exact event location",
+      "source": "https://plato.stanford.edu/entries/socrates/",
+      "claimIds": [
+        "alcibiades-era-arginusae-trial-history",
+        "alcibiades-era-arginusae-trial-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "athens-surrender",
+      "place": "athens",
+      "startYear": -404,
+      "endYear": -404,
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "label": "Acropolis reference for Athens, not the exact event location",
+      "source": "https://www.livius.org/articles/concept/peloponnesian-war/chronology/",
+      "claimIds": [
+        "alcibiades-era-athens-surrender-history",
+        "alcibiades-era-athens-surrender-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "thirty-athens",
+      "place": "athens",
+      "startYear": -404,
+      "endYear": -403,
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "label": "Acropolis reference for Athens, not the exact event location",
+      "source": "https://www.livius.org/articles/concept/peloponnesian-war/aftermath/",
+      "claimIds": [
+        "alcibiades-era-thirty-athens-history",
+        "alcibiades-era-thirty-athens-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "athens-democracy-restored",
+      "place": "athens",
+      "startYear": -403,
+      "endYear": -403,
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "label": "Acropolis reference for Athens, not the exact event location",
+      "source": "https://www.livius.org/articles/concept/peloponnesian-war/aftermath/",
+      "claimIds": [
+        "alcibiades-era-athens-democracy-restored-history",
+        "alcibiades-era-athens-democracy-restored-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "alcibiades",
+      "place": "sparta",
+      "startYear": -415,
+      "endYear": -415,
+      "point": [
+        22.4297,
+        37.0733
+      ],
+      "label": "Flight to Sparta in 415 BCE · city reference",
+      "source": "https://www.livius.org/articles/concept/peloponnesian-war/chronology/",
+      "claimIds": [
+        "alcibiades-era-alcibiades-association-sparta",
+        "alcibiades-era-alcibiades-reference-sparta"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "alcibiades",
+      "place": "athens",
+      "startYear": -407,
+      "endYear": -407,
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "label": "Return to Athens in 407 BCE · city reference",
+      "source": "https://www.livius.org/articles/concept/peloponnesian-war/chronology/",
+      "claimIds": [
+        "alcibiades-era-alcibiades-association-athens",
+        "alcibiades-era-alcibiades-reference-athens"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "nicias",
+      "place": "syracuse",
+      "startYear": -414,
+      "endYear": -413,
+      "point": [
+        15.293055555555556,
+        37.059444444444445
+      ],
+      "label": "Campaign against Syracuse · target city reference, not exact position",
+      "source": "https://www.livius.org/articles/concept/peloponnesian-war/sicilian-expedition/",
+      "claimIds": [
+        "alcibiades-era-nicias-association-syracuse",
+        "alcibiades-era-nicias-reference-syracuse"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "pericles",
+      "place": "athens",
+      "startYear": -431,
+      "endYear": -429,
+      "point": [
+        23.7257,
+        37.9715
+      ],
+      "label": "Athenian leadership at the start of the war · city reference",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/21560771/",
+      "claimIds": [
+        "alcibiades-era-pericles-association-athens",
+        "alcibiades-era-pericles-reference-athens"
       ],
       "contextual": true
     }
@@ -3722,6 +4414,295 @@
       "a": "sanchi-gateways",
       "b": "sanchi-early",
       "label": "Longer history of the sanctuary"
+    },
+    {
+      "a": "alcibiades",
+      "b": "socrates",
+      "label": "Teacher and close associate",
+      "labelFromA": "Teacher and close associate",
+      "labelFromB": "Associate and political figure"
+    },
+    {
+      "a": "alcibiades",
+      "b": "pericles",
+      "label": "Guardian",
+      "labelFromA": "Guardian",
+      "labelFromB": "Ward"
+    },
+    {
+      "a": "alcibiades",
+      "b": "nicias",
+      "label": "Fellow commander and political opponent"
+    },
+    {
+      "a": "alcibiades",
+      "b": "athens",
+      "label": "Home city"
+    },
+    {
+      "a": "alcibiades",
+      "b": "sparta",
+      "label": "Refuge and temporary ally"
+    },
+    {
+      "a": "alcibiades",
+      "b": "peloponnesian-war",
+      "label": "War that shaped his career",
+      "labelFromA": "War that shaped his career",
+      "labelFromB": "Commander and politician"
+    },
+    {
+      "a": "alcibiades",
+      "b": "potidaea-service",
+      "label": "Military service with Socrates",
+      "labelFromA": "Military service with Socrates",
+      "labelFromB": "Alcibiades"
+    },
+    {
+      "a": "alcibiades",
+      "b": "delium",
+      "label": "Campaign with Socrates",
+      "labelFromA": "Campaign with Socrates",
+      "labelFromB": "Alcibiades"
+    },
+    {
+      "a": "alcibiades",
+      "b": "sicilian-expedition",
+      "label": "Initial commander",
+      "labelFromA": "Initial commander",
+      "labelFromB": "Initial commander"
+    },
+    {
+      "a": "alcibiades",
+      "b": "herms-scandal",
+      "label": "Religious accusations",
+      "labelFromA": "Religious accusations",
+      "labelFromB": "Accused politician"
+    },
+    {
+      "a": "alcibiades",
+      "b": "alcibiades-sparta",
+      "label": "Spartan cooperation",
+      "labelFromA": "Spartan cooperation",
+      "labelFromB": "Alcibiades"
+    },
+    {
+      "a": "alcibiades",
+      "b": "athens-four-hundred",
+      "label": "Political manoeuvring",
+      "labelFromA": "Political manoeuvring",
+      "labelFromB": "Alcibiades"
+    },
+    {
+      "a": "alcibiades",
+      "b": "alcibiades-return",
+      "label": "Return to Athens",
+      "labelFromA": "Return to Athens",
+      "labelFromB": "Alcibiades"
+    },
+    {
+      "a": "socrates",
+      "b": "potidaea-service",
+      "label": "Military service",
+      "labelFromA": "Military service",
+      "labelFromB": "Socrates"
+    },
+    {
+      "a": "socrates",
+      "b": "delium",
+      "label": "Military service",
+      "labelFromA": "Military service",
+      "labelFromB": "Socrates"
+    },
+    {
+      "a": "socrates",
+      "b": "arginusae-trial",
+      "label": "Opposed collective proceedings",
+      "labelFromA": "Opposed collective proceedings",
+      "labelFromB": "Socrates"
+    },
+    {
+      "a": "socrates",
+      "b": "peloponnesian-war",
+      "label": "Wartime setting",
+      "labelFromA": "Wartime setting",
+      "labelFromB": "Soldier and philosopher"
+    },
+    {
+      "a": "pericles",
+      "b": "athens-plague",
+      "label": "Died during the epidemic",
+      "labelFromA": "Died during the epidemic",
+      "labelFromB": "Pericles"
+    },
+    {
+      "a": "pericles",
+      "b": "athens",
+      "label": "Political career"
+    },
+    {
+      "a": "nicias",
+      "b": "peace-of-nicias",
+      "label": "Peace negotiations",
+      "labelFromA": "Peace negotiations",
+      "labelFromB": "Nicias"
+    },
+    {
+      "a": "nicias",
+      "b": "sicilian-expedition",
+      "label": "Commander",
+      "labelFromA": "Commander",
+      "labelFromB": "Nicias"
+    },
+    {
+      "a": "nicias",
+      "b": "syracuse",
+      "label": "Final campaign"
+    },
+    {
+      "a": "syracuse",
+      "b": "sicilian-expedition",
+      "label": "Defence against Athens",
+      "labelFromA": "Defence against Athens",
+      "labelFromB": "Principal target"
+    },
+    {
+      "a": "sparta",
+      "b": "peloponnesian-war",
+      "label": "War against Athens",
+      "labelFromA": "War against Athens",
+      "labelFromB": "Sparta"
+    },
+    {
+      "a": "athens",
+      "b": "peloponnesian-war",
+      "label": "War against Sparta",
+      "labelFromA": "War against Sparta",
+      "labelFromB": "Athens"
+    },
+    {
+      "a": "darius-ii-reign",
+      "b": "persia",
+      "label": "Persian Empire"
+    },
+    {
+      "a": "darius-ii-reign",
+      "b": "peloponnesian-war",
+      "label": "Persian involvement",
+      "labelFromA": "Persian involvement",
+      "labelFromB": "Persian king’s reign"
+    },
+    {
+      "a": "darius-ii-reign",
+      "b": "amyrtaeus-accession",
+      "label": "Egyptian transition near the end of his reign",
+      "labelFromA": "Egyptian transition near the end of his reign",
+      "labelFromB": "Contemporary Persian reign"
+    },
+    {
+      "a": "amyrtaeus-accession",
+      "b": "egypt",
+      "label": "Egypt"
+    },
+    {
+      "a": "amyrtaeus-accession",
+      "b": "late-period-egypt",
+      "label": "Wider Egyptian period"
+    },
+    {
+      "a": "amyrtaeus-accession",
+      "b": "persia",
+      "label": "Challenge to Persian authority"
+    },
+    {
+      "a": "thirty-athens",
+      "b": "athens-democracy-restored",
+      "label": "Following settlement",
+      "labelFromA": "Following settlement",
+      "labelFromB": "Previous regime"
+    },
+    {
+      "a": "athens-democracy-restored",
+      "b": "socrates-trial",
+      "label": "Later event in the restored democracy",
+      "labelFromA": "Later event in the restored democracy",
+      "labelFromB": "Earlier political restoration"
+    },
+    {
+      "a": "thirty-athens",
+      "b": "socrates",
+      "label": "Contemporary philosopher"
+    },
+    {
+      "a": "peloponnesian-war",
+      "b": "athens-plague",
+      "label": "Wartime episode",
+      "labelFromA": "Wartime episode",
+      "labelFromB": "Peloponnesian War"
+    },
+    {
+      "a": "peloponnesian-war",
+      "b": "peace-of-nicias",
+      "label": "Wartime episode",
+      "labelFromA": "Wartime episode",
+      "labelFromB": "Peloponnesian War"
+    },
+    {
+      "a": "peloponnesian-war",
+      "b": "sicilian-expedition",
+      "label": "Wartime episode",
+      "labelFromA": "Wartime episode",
+      "labelFromB": "Peloponnesian War"
+    },
+    {
+      "a": "peloponnesian-war",
+      "b": "athens-four-hundred",
+      "label": "Wartime episode",
+      "labelFromA": "Wartime episode",
+      "labelFromB": "Peloponnesian War"
+    },
+    {
+      "a": "peloponnesian-war",
+      "b": "arginusae-trial",
+      "label": "Wartime episode",
+      "labelFromA": "Wartime episode",
+      "labelFromB": "Peloponnesian War"
+    },
+    {
+      "a": "peloponnesian-war",
+      "b": "aegospotami",
+      "label": "Wartime episode",
+      "labelFromA": "Wartime episode",
+      "labelFromB": "Peloponnesian War"
+    },
+    {
+      "a": "peloponnesian-war",
+      "b": "athens-surrender",
+      "label": "Wartime episode",
+      "labelFromA": "Wartime episode",
+      "labelFromB": "Peloponnesian War"
+    },
+    {
+      "a": "athens-surrender",
+      "b": "thirty-athens",
+      "label": "Political aftermath",
+      "labelFromA": "Political aftermath",
+      "labelFromB": "Following Athens’ defeat"
+    },
+    {
+      "a": "athens-surrender",
+      "b": "sparta",
+      "label": "Victorious opponent"
+    },
+    {
+      "a": "peace-of-nicias",
+      "b": "sparta",
+      "label": "Treaty participant"
+    },
+    {
+      "a": "peace-of-nicias",
+      "b": "athens",
+      "label": "Treaty participant"
     }
   ]
 }

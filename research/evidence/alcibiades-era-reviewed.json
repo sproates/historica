@@ -1,0 +1,2472 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {
+      "id": "alcibiades",
+      "name": "Alcibiades",
+      "type": "person"
+    },
+    {
+      "id": "pericles",
+      "name": "Pericles",
+      "type": "person"
+    },
+    {
+      "id": "nicias",
+      "name": "Nicias",
+      "type": "person"
+    },
+    {
+      "id": "sparta",
+      "name": "Sparta",
+      "type": "city"
+    },
+    {
+      "id": "syracuse",
+      "name": "Syracuse",
+      "type": "city"
+    },
+    {
+      "id": "peloponnesian-war",
+      "name": "The Peloponnesian War",
+      "type": "period"
+    },
+    {
+      "id": "athens-plague",
+      "name": "The epidemic at Athens",
+      "type": "period"
+    },
+    {
+      "id": "potidaea-service",
+      "name": "Socrates and Alcibiades at Potidaea",
+      "type": "event"
+    },
+    {
+      "id": "delium",
+      "name": "The battle of Delium",
+      "type": "event"
+    },
+    {
+      "id": "peace-of-nicias",
+      "name": "The Peace of Nicias",
+      "type": "event"
+    },
+    {
+      "id": "sicilian-expedition",
+      "name": "The Sicilian expedition",
+      "type": "period"
+    },
+    {
+      "id": "herms-scandal",
+      "name": "The mutilation of the herms",
+      "type": "event"
+    },
+    {
+      "id": "alcibiades-sparta",
+      "name": "Alcibiades turns to Sparta",
+      "type": "period"
+    },
+    {
+      "id": "athens-four-hundred",
+      "name": "The coup of the Four Hundred",
+      "type": "event"
+    },
+    {
+      "id": "alcibiades-return",
+      "name": "Alcibiades returns to Athens",
+      "type": "event"
+    },
+    {
+      "id": "arginusae-trial",
+      "name": "The generals’ trial after Arginusae",
+      "type": "event"
+    },
+    {
+      "id": "aegospotami",
+      "name": "The battle of Aegospotami",
+      "type": "event"
+    },
+    {
+      "id": "athens-surrender",
+      "name": "Athens surrenders to Sparta",
+      "type": "event"
+    },
+    {
+      "id": "thirty-athens",
+      "name": "The Thirty rule Athens",
+      "type": "period"
+    },
+    {
+      "id": "athens-democracy-restored",
+      "name": "Democracy returns to Athens",
+      "type": "event"
+    },
+    {
+      "id": "darius-ii-reign",
+      "name": "The reign of Darius II",
+      "type": "period"
+    },
+    {
+      "id": "amyrtaeus-accession",
+      "name": "Amyrtaeus challenges Persian rule in Egypt",
+      "type": "event"
+    }
+  ],
+  "sources": [
+    {
+      "id": "alcibiades-era-alcibiades",
+      "title": "Alcibiades",
+      "url": "https://www.livius.org/articles/person/alcibiades/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "Biographical chronology; interpretation of Socrates’ trial in the closing paragraph is not adopted",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-alcibiades-oxford",
+      "title": "Alcibiades, 451/450–404/403 BCE",
+      "url": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548069405?login=false",
+      "creator": "Oxford Classical Dictionary",
+      "locatorHint": "Public indexed heading and abstract: dates, Pericles as guardian and relationship with Socrates; full text not accessed",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-pericles",
+      "title": "Pericles",
+      "url": "https://www.iranicaonline.org/articles/pericles/",
+      "creator": "Ernst Badian / Encyclopaedia Iranica",
+      "locatorHint": "Biographical introduction and political career",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-nicias",
+      "title": "Nicias",
+      "url": "https://www.livius.org/articles/person/nicias/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "Life dates, peace negotiations and Sicilian command",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-war",
+      "title": "Peloponnesian War",
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "Opening summary and sources",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-chronology",
+      "title": "Peloponnesian War: Chronology",
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/chronology/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "Entries for 415, 411, 407, 405 and 404 BCE",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-sicily",
+      "title": "Sicilian Expedition",
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/sicilian-expedition/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "Campaign 415–413 BCE, siege of Syracuse and destruction of the expedition",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-ionian",
+      "title": "Decelean War",
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/decelean-war/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "Persian support, the Four Hundred and Alcibiades",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-aftermath",
+      "title": "Aftermath of the Peloponnesian War",
+      "url": "https://www.livius.org/articles/concept/peloponnesian-war/aftermath/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "The Thirty, civil war and restoration of democracy",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-socrates",
+      "title": "Socrates",
+      "url": "https://plato.stanford.edu/entries/socrates/",
+      "creator": "Debra Nails / Stanford Encyclopedia of Philosophy",
+      "locatorHint": "Section 3: chronology, Potidaea, Delium and the Arginusae trial",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-plague",
+      "title": "The great plague of Athens 430 BC",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21560771/",
+      "creator": "Anders Frøland / Dansk Medicinhistorisk Årbog",
+      "locatorHint": "Public English abstract: 430–426 BCE, death of Pericles, uncertainty about the disease",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-darius",
+      "title": "Darius II Nothus",
+      "url": "https://www.livius.org/articles/person/darius-ii-nothus/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "Reign chronology, accession 424/423 and Persian support for Sparta",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-egypt",
+      "title": "Egypt, 404–332 B.C.",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-ancient-history/egypt-404332-bc/7B70F72C3389EB2B29D646F7BAA6318D",
+      "creator": "The Cambridge Ancient History / Cambridge University Press",
+      "locatorHint": "Public chapter summary: Amyrtaeus’ accession and gradual recognition in southern Egypt",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-athens-point",
+      "title": "Acropolis of Athens, TGN 8712059",
+      "url": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&subjectid=8712059",
+      "creator": "Getty Research Institute",
+      "locatorHint": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-sparta-point",
+      "title": "Sparta, TGN 7011065",
+      "url": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&subjectid=7011065",
+      "creator": "Getty Research Institute",
+      "locatorHint": "Coordinates: 37.0733 N, 22.4297 E; inhabited place reference",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "alcibiades-era-syracuse-point",
+      "title": "Syracuse and the Rocky Necropolis of Pantalica: nomination",
+      "url": "https://whc.unesco.org/uploads/nominations/1200.pdf",
+      "creator": "Italian nomination / UNESCO World Heritage Centre",
+      "locatorHint": "Printed p. 5, Identification of property: Ortygia 37°03′34″ N, 15°17′35″ E; indexed page inspected, full large PDF unavailable",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    }
+  ],
+  "claims": [
+    {
+      "id": "alcibiades-era-alcibiades-history",
+      "subjectId": "alcibiades",
+      "predicate": "historical-context",
+      "statement": "Alcibiades was an Athenian politician and commander whose career crossed the divisions of the Peloponnesian War. Brought up under Pericles’ guardianship, he became closely associated with Socrates. He helped persuade Athens to send its great expedition to Sicily, then fled to Sparta after being recalled for trial. His later return to Athenian service makes his life a useful way through the war’s changing alliances.",
+      "value": {
+        "type": "text",
+        "text": "Alcibiades was an Athenian politician and commander whose career crossed the divisions of the Peloponnesian War. Brought up under Pericles’ guardianship, he became closely associated with Socrates. He helped persuade Athens to send its great expedition to Sicily, then fled to Sparta after being recalled for trial. His later return to Athenian service makes his life a useful way through the war’s changing alliances."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -450,
+          "latest": -450,
+          "original": "450 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-alcibiades-history-alcibiades",
+        "alcibiades-era-alcibiades-history-alcibiades-oxford"
+      ],
+      "reviewId": "alcibiades-era-alcibiades-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-pericles-history",
+      "subjectId": "pericles",
+      "predicate": "historical-context",
+      "statement": "Pericles was an Athenian politician and commander, born around 495 BCE. His career belonged to the period when Athens became a dominant power in the Greek world. He was still leading the city at the beginning of the Peloponnesian War. He died during the epidemic in 429 BCE, early in a conflict that would continue for another quarter of a century.",
+      "value": {
+        "type": "text",
+        "text": "Pericles was an Athenian politician and commander, born around 495 BCE. His career belonged to the period when Athens became a dominant power in the Greek world. He was still leading the city at the beginning of the Peloponnesian War. He died during the epidemic in 429 BCE, early in a conflict that would continue for another quarter of a century."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -495,
+          "latest": -495,
+          "original": "495 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -429,
+          "latest": -429,
+          "original": "429 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-pericles-history-pericles",
+        "alcibiades-era-pericles-history-plague"
+      ],
+      "reviewId": "alcibiades-era-pericles-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-nicias-history",
+      "subjectId": "nicias",
+      "predicate": "historical-context",
+      "statement": "Nicias was an Athenian commander and politician who favoured peace with Sparta. The treaty negotiated in 421 BCE bears his name. He opposed the proposed expedition to Sicily but nevertheless became one of its commanders alongside Alcibiades and Lamachus. His career ended with the expedition’s defeat in 413 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Nicias was an Athenian commander and politician who favoured peace with Sparta. The treaty negotiated in 421 BCE bears his name. He opposed the proposed expedition to Sicily but nevertheless became one of its commanders alongside Alcibiades and Lamachus. His career ended with the expedition’s defeat in 413 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -470,
+          "latest": -470,
+          "original": "470 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -413,
+          "latest": -413,
+          "original": "413 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-nicias-history-nicias"
+      ],
+      "reviewId": "alcibiades-era-nicias-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-sparta-history",
+      "subjectId": "sparta",
+      "predicate": "historical-context",
+      "statement": "Sparta led the coalition fighting Athens in the Peloponnesian War. Its victory in 404 BCE forced Athens to give up its empire. Alcibiades’ connection takes you inside that rivalry: after leaving Athenian service, he sought refuge with the Spartans and advised them against his own city.",
+      "value": {
+        "type": "text",
+        "text": "Sparta led the coalition fighting Athens in the Peloponnesian War. Its victory in 404 BCE forced Athens to give up its empire. Alcibiades’ connection takes you inside that rivalry: after leaving Athenian service, he sought refuge with the Spartans and advised them against his own city."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -450,
+          "latest": -450,
+          "original": "450 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-sparta-history-war",
+        "alcibiades-era-sparta-history-alcibiades"
+      ],
+      "reviewId": "alcibiades-era-sparta-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-sparta-point",
+      "subjectId": "sparta",
+      "predicate": "site-reference",
+      "statement": "Getty city reference for Sparta, not Spartan territory",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          22.4297,
+          37.0733
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -450,
+          "latest": -450,
+          "original": "450 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-sparta-point-sparta-point"
+      ],
+      "reviewId": "alcibiades-era-sparta-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-syracuse-history",
+      "subjectId": "syracuse",
+      "predicate": "historical-context",
+      "statement": "Syracuse was the principal target of the Athenian expedition to Sicily. Its defenders, aided by the Spartan commander Gylippus, resisted the siege. The Athenian expedition was destroyed in 413 BCE. Syracuse’s connections show this part of the war from the city being attacked, rather than only from Athens.",
+      "value": {
+        "type": "text",
+        "text": "Syracuse was the principal target of the Athenian expedition to Sicily. Its defenders, aided by the Spartan commander Gylippus, resisted the siege. The Athenian expedition was destroyed in 413 BCE. Syracuse’s connections show this part of the war from the city being attacked, rather than only from Athens."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -413,
+          "latest": -413,
+          "original": "413 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-syracuse-history-sicily"
+      ],
+      "reviewId": "alcibiades-era-syracuse-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-syracuse-point",
+      "subjectId": "syracuse",
+      "predicate": "site-reference",
+      "statement": "UNESCO Ortygia reference for Syracuse, not a siege position",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          15.293055555555556,
+          37.059444444444445
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -413,
+          "latest": -413,
+          "original": "413 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-syracuse-point-syracuse-point"
+      ],
+      "reviewId": "alcibiades-era-syracuse-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-peloponnesian-war-history",
+      "subjectId": "peloponnesian-war",
+      "predicate": "historical-context",
+      "statement": "The Peloponnesian War set Athens and its allies against Sparta and its coalition. It ran from 431 to 404 BCE, with a negotiated peace interrupting the main conflict. Fighting extended well beyond the two cities. The Sicilian expedition and Persian involvement are part of the same history. Athens eventually surrendered and lost its empire.",
+      "value": {
+        "type": "text",
+        "text": "The Peloponnesian War set Athens and its allies against Sparta and its coalition. It ran from 431 to 404 BCE, with a negotiated peace interrupting the main conflict. Fighting extended well beyond the two cities. The Sicilian expedition and Persian involvement are part of the same history. Athens eventually surrendered and lost its empire."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -431,
+          "latest": -431,
+          "original": "431 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-peloponnesian-war-history-war"
+      ],
+      "reviewId": "alcibiades-era-peloponnesian-war-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-athens-plague-history",
+      "subjectId": "athens-plague",
+      "predicate": "historical-context",
+      "statement": "A severe epidemic struck Athens during the early years of the war. People had crowded into the city for protection, and the disease killed soldiers and civilians, including Pericles in 429 BCE. Thucydides survived it and described what he saw. The illness is conventionally called the plague of Athens, but its precise cause remains uncertain.",
+      "value": {
+        "type": "text",
+        "text": "A severe epidemic struck Athens during the early years of the war. People had crowded into the city for protection, and the disease killed soldiers and civilians, including Pericles in 429 BCE. Thucydides survived it and described what he saw. The illness is conventionally called the plague of Athens, but its precise cause remains uncertain."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -430,
+          "latest": -430,
+          "original": "430 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -426,
+          "latest": -426,
+          "original": "426 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-athens-plague-history-plague"
+      ],
+      "reviewId": "alcibiades-era-athens-plague-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-athens-plague-point",
+      "subjectId": "athens-plague",
+      "predicate": "site-reference",
+      "statement": "Acropolis reference for Athens, not the exact event location",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -430,
+          "latest": -430,
+          "original": "430 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -426,
+          "latest": -426,
+          "original": "426 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-athens-plague-point-athens-point"
+      ],
+      "reviewId": "alcibiades-era-athens-plague-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-potidaea-service-history",
+      "subjectId": "potidaea-service",
+      "predicate": "historical-context",
+      "statement": "Socrates and Alcibiades were deployed to Potidaea in 432 BCE. Socrates served as a hoplite, an infantry soldier. The episode places their relationship in military service as well as philosophical conversation.",
+      "value": {
+        "type": "text",
+        "text": "Socrates and Alcibiades were deployed to Potidaea in 432 BCE. Socrates served as a hoplite, an infantry soldier. The episode places their relationship in military service as well as philosophical conversation."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -432,
+          "latest": -432,
+          "original": "432 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -432,
+          "latest": -432,
+          "original": "432 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-potidaea-service-history-socrates"
+      ],
+      "reviewId": "alcibiades-era-potidaea-service-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-delium-history",
+      "subjectId": "delium",
+      "predicate": "historical-context",
+      "statement": "Socrates fought at Delium in 424 BCE, when the Athenian army was defeated. Plato’s dialogues later present Alcibiades and Laches praising his conduct during the retreat. These are literary accounts of the event, not transcripts made on the battlefield.",
+      "value": {
+        "type": "text",
+        "text": "Socrates fought at Delium in 424 BCE, when the Athenian army was defeated. Plato’s dialogues later present Alcibiades and Laches praising his conduct during the retreat. These are literary accounts of the event, not transcripts made on the battlefield."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -424,
+          "latest": -424,
+          "original": "424 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -424,
+          "latest": -424,
+          "original": "424 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-delium-history-socrates"
+      ],
+      "reviewId": "alcibiades-era-delium-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-peace-of-nicias-history",
+      "subjectId": "peace-of-nicias",
+      "predicate": "historical-context",
+      "statement": "Athens and Sparta agreed to peace in 421 BCE after ten years of war. Nicias was closely associated with the negotiations. The settlement did not resolve the rivalries between the cities and their allies. The later Sicilian expedition and renewed war show how limited the peace proved.",
+      "value": {
+        "type": "text",
+        "text": "Athens and Sparta agreed to peace in 421 BCE after ten years of war. Nicias was closely associated with the negotiations. The settlement did not resolve the rivalries between the cities and their allies. The later Sicilian expedition and renewed war show how limited the peace proved."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -421,
+          "latest": -421,
+          "original": "421 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -421,
+          "latest": -421,
+          "original": "421 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-peace-of-nicias-history-nicias"
+      ],
+      "reviewId": "alcibiades-era-peace-of-nicias-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-sicilian-expedition-history",
+      "subjectId": "sicilian-expedition",
+      "predicate": "historical-context",
+      "statement": "Athens sent a major expedition to Sicily in 415 BCE. Alcibiades, Nicias and Lamachus shared the initial command. Alcibiades was recalled, and the remaining commanders pursued the campaign against Syracuse. Despite reinforcements, the expedition ended in disaster in 413 BCE. Many survivors became prisoners.",
+      "value": {
+        "type": "text",
+        "text": "Athens sent a major expedition to Sicily in 415 BCE. Alcibiades, Nicias and Lamachus shared the initial command. Alcibiades was recalled, and the remaining commanders pursued the campaign against Syracuse. Despite reinforcements, the expedition ended in disaster in 413 BCE. Many survivors became prisoners."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -413,
+          "latest": -413,
+          "original": "413 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-sicilian-expedition-history-sicily"
+      ],
+      "reviewId": "alcibiades-era-sicilian-expedition-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-sicilian-expedition-point",
+      "subjectId": "sicilian-expedition",
+      "predicate": "site-reference",
+      "statement": "UNESCO Ortygia reference for Syracuse, not a siege position",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          15.293055555555556,
+          37.059444444444445
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -413,
+          "latest": -413,
+          "original": "413 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-sicilian-expedition-point-syracuse-point"
+      ],
+      "reviewId": "alcibiades-era-sicilian-expedition-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-herms-scandal-history",
+      "subjectId": "herms-scandal",
+      "predicate": "historical-context",
+      "statement": "Just before the fleet sailed for Sicily, sacred stone figures called herms were mutilated across Athens. The attack provoked an investigation into sacrilege. Alcibiades became caught up in accusations concerning religious offences. Accusations against him should not be read as proof that he personally damaged the herms.",
+      "value": {
+        "type": "text",
+        "text": "Just before the fleet sailed for Sicily, sacred stone figures called herms were mutilated across Athens. The attack provoked an investigation into sacrilege. Alcibiades became caught up in accusations concerning religious offences. Accusations against him should not be read as proof that he personally damaged the herms."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-herms-scandal-history-socrates"
+      ],
+      "reviewId": "alcibiades-era-herms-scandal-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-herms-scandal-point",
+      "subjectId": "herms-scandal",
+      "predicate": "site-reference",
+      "statement": "Acropolis reference for Athens, not the exact event location",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-herms-scandal-point-athens-point"
+      ],
+      "reviewId": "alcibiades-era-herms-scandal-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-alcibiades-sparta-history",
+      "subjectId": "alcibiades-sparta",
+      "predicate": "historical-context",
+      "statement": "Recalled from Sicily for trial in 415 BCE, Alcibiades escaped to Sparta. He advised Athens’ enemies as the war widened. By 412 BCE he was helping Spartan operations in Ionia. This was a changing political allegiance, not an uninterrupted stay in the city of Sparta.",
+      "value": {
+        "type": "text",
+        "text": "Recalled from Sicily for trial in 415 BCE, Alcibiades escaped to Sparta. He advised Athens’ enemies as the war widened. By 412 BCE he was helping Spartan operations in Ionia. This was a changing political allegiance, not an uninterrupted stay in the city of Sparta."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -412,
+          "latest": -412,
+          "original": "412 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-alcibiades-sparta-history-alcibiades",
+        "alcibiades-era-alcibiades-sparta-history-chronology"
+      ],
+      "reviewId": "alcibiades-era-alcibiades-sparta-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-alcibiades-sparta-point",
+      "subjectId": "alcibiades-sparta",
+      "predicate": "site-reference",
+      "statement": "Getty city reference for Sparta, not Spartan territory",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          22.4297,
+          37.0733
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -412,
+          "latest": -412,
+          "original": "412 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-alcibiades-sparta-point-sparta-point"
+      ],
+      "reviewId": "alcibiades-era-alcibiades-sparta-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-athens-four-hundred-history",
+      "subjectId": "athens-four-hundred",
+      "predicate": "historical-context",
+      "statement": "An oligarchic coup replaced Athenian democracy with the government of the Four Hundred in 411 BCE. Hopes of obtaining Persian support formed part of the political manoeuvring. Alcibiades was involved in proposals linking a change of government to his own return. The new regime was divided from the start.",
+      "value": {
+        "type": "text",
+        "text": "An oligarchic coup replaced Athenian democracy with the government of the Four Hundred in 411 BCE. Hopes of obtaining Persian support formed part of the political manoeuvring. Alcibiades was involved in proposals linking a change of government to his own return. The new regime was divided from the start."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -411,
+          "latest": -411,
+          "original": "411 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -411,
+          "latest": -411,
+          "original": "411 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-athens-four-hundred-history-ionian"
+      ],
+      "reviewId": "alcibiades-era-athens-four-hundred-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-athens-four-hundred-point",
+      "subjectId": "athens-four-hundred",
+      "predicate": "site-reference",
+      "statement": "Acropolis reference for Athens, not the exact event location",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -411,
+          "latest": -411,
+          "original": "411 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -411,
+          "latest": -411,
+          "original": "411 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-athens-four-hundred-point-athens-point"
+      ],
+      "reviewId": "alcibiades-era-athens-four-hundred-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-alcibiades-return-history",
+      "subjectId": "alcibiades-return",
+      "predicate": "historical-context",
+      "statement": "Alcibiades returned to Athens in 407 BCE after years away from the city. His return belongs to the war’s final phase. It did not end the conflict, which continued until Athens’ defeat in 404 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Alcibiades returned to Athens in 407 BCE after years away from the city. His return belongs to the war’s final phase. It did not end the conflict, which continued until Athens’ defeat in 404 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -407,
+          "latest": -407,
+          "original": "407 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -407,
+          "latest": -407,
+          "original": "407 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-alcibiades-return-history-chronology"
+      ],
+      "reviewId": "alcibiades-era-alcibiades-return-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-alcibiades-return-point",
+      "subjectId": "alcibiades-return",
+      "predicate": "site-reference",
+      "statement": "Acropolis reference for Athens, not the exact event location",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -407,
+          "latest": -407,
+          "original": "407 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -407,
+          "latest": -407,
+          "original": "407 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-alcibiades-return-point-athens-point"
+      ],
+      "reviewId": "alcibiades-era-alcibiades-return-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-arginusae-trial-history",
+      "subjectId": "arginusae-trial",
+      "predicate": "historical-context",
+      "statement": "After the naval victory at Arginusae in 406 BCE, Athens prosecuted the commanders over the failure to recover men and bodies from the sea. Socrates opposed the unlawful collective proceedings. Six generals were executed.",
+      "value": {
+        "type": "text",
+        "text": "After the naval victory at Arginusae in 406 BCE, Athens prosecuted the commanders over the failure to recover men and bodies from the sea. Socrates opposed the unlawful collective proceedings. Six generals were executed."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -406,
+          "latest": -406,
+          "original": "406 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -406,
+          "latest": -406,
+          "original": "406 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-arginusae-trial-history-socrates"
+      ],
+      "reviewId": "alcibiades-era-arginusae-trial-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-arginusae-trial-point",
+      "subjectId": "arginusae-trial",
+      "predicate": "site-reference",
+      "statement": "Acropolis reference for Athens, not the exact event location",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -406,
+          "latest": -406,
+          "original": "406 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -406,
+          "latest": -406,
+          "original": "406 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-arginusae-trial-point-athens-point"
+      ],
+      "reviewId": "alcibiades-era-arginusae-trial-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-aegospotami-history",
+      "subjectId": "aegospotami",
+      "predicate": "historical-context",
+      "statement": "Lysander defeated the Athenian fleet at Aegospotami in 405 BCE. The defeat was followed by the siege of Athens. The city surrendered the following year.",
+      "value": {
+        "type": "text",
+        "text": "Lysander defeated the Athenian fleet at Aegospotami in 405 BCE. The defeat was followed by the siege of Athens. The city surrendered the following year."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -405,
+          "latest": -405,
+          "original": "405 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -405,
+          "latest": -405,
+          "original": "405 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-aegospotami-history-chronology"
+      ],
+      "reviewId": "alcibiades-era-aegospotami-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-athens-surrender-history",
+      "subjectId": "athens-surrender",
+      "predicate": "historical-context",
+      "statement": "Athens surrendered in 404 BCE, ending the Peloponnesian War. Its Long Walls were demolished. Peace did not immediately restore political stability. The government of the Thirty and a civil conflict followed.",
+      "value": {
+        "type": "text",
+        "text": "Athens surrendered in 404 BCE, ending the Peloponnesian War. Its Long Walls were demolished. Peace did not immediately restore political stability. The government of the Thirty and a civil conflict followed."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-athens-surrender-history-chronology"
+      ],
+      "reviewId": "alcibiades-era-athens-surrender-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-athens-surrender-point",
+      "subjectId": "athens-surrender",
+      "predicate": "site-reference",
+      "statement": "Acropolis reference for Athens, not the exact event location",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-athens-surrender-point-athens-point"
+      ],
+      "reviewId": "alcibiades-era-athens-surrender-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-thirty-athens-history",
+      "subjectId": "thirty-athens",
+      "predicate": "historical-context",
+      "statement": "After Athens’ defeat, an oligarchic government known as the Thirty took power with Spartan backing. Opposition to its rule developed into civil war. The regime was short-lived. Democratic forces recovered ground, and a settlement in 403 BCE restored democracy.",
+      "value": {
+        "type": "text",
+        "text": "After Athens’ defeat, an oligarchic government known as the Thirty took power with Spartan backing. Opposition to its rule developed into civil war. The regime was short-lived. Democratic forces recovered ground, and a settlement in 403 BCE restored democracy."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -403,
+          "latest": -403,
+          "original": "403 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-thirty-athens-history-aftermath"
+      ],
+      "reviewId": "alcibiades-era-thirty-athens-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-thirty-athens-point",
+      "subjectId": "thirty-athens",
+      "predicate": "site-reference",
+      "statement": "Acropolis reference for Athens, not the exact event location",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -403,
+          "latest": -403,
+          "original": "403 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-thirty-athens-point-athens-point"
+      ],
+      "reviewId": "alcibiades-era-thirty-athens-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-athens-democracy-restored-history",
+      "subjectId": "athens-democracy-restored",
+      "predicate": "historical-context",
+      "statement": "A settlement in 403 BCE restored Athenian democracy after the rule of the Thirty and the fighting that followed. The Spartan king Pausanias intervened in the reconciliation. Socrates’ trial belongs to this restored democracy, four years later. The two events should not be collapsed into one.",
+      "value": {
+        "type": "text",
+        "text": "A settlement in 403 BCE restored Athenian democracy after the rule of the Thirty and the fighting that followed. The Spartan king Pausanias intervened in the reconciliation. Socrates’ trial belongs to this restored democracy, four years later. The two events should not be collapsed into one."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -403,
+          "latest": -403,
+          "original": "403 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -403,
+          "latest": -403,
+          "original": "403 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-athens-democracy-restored-history-aftermath"
+      ],
+      "reviewId": "alcibiades-era-athens-democracy-restored-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-athens-democracy-restored-point",
+      "subjectId": "athens-democracy-restored",
+      "predicate": "site-reference",
+      "statement": "Acropolis reference for Athens, not the exact event location",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -403,
+          "latest": -403,
+          "original": "403 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -403,
+          "latest": -403,
+          "original": "403 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-athens-democracy-restored-point-athens-point"
+      ],
+      "reviewId": "alcibiades-era-athens-democracy-restored-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-darius-ii-reign-history",
+      "subjectId": "darius-ii-reign",
+      "predicate": "historical-context",
+      "statement": "Darius II ruled the Persian Empire during the later years of the Peloponnesian War. His officials negotiated with Sparta, and Persian money helped support its fleet. This places the war within a wider struggle over influence in the Aegean and western Anatolia. Persia was an active participant, not just a distant background.",
+      "value": {
+        "type": "text",
+        "text": "Darius II ruled the Persian Empire during the later years of the Peloponnesian War. His officials negotiated with Sparta, and Persian money helped support its fleet. This places the war within a wider struggle over influence in the Aegean and western Anatolia. Persia was an active participant, not just a distant background."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -423,
+          "latest": -423,
+          "original": "423 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-darius-ii-reign-history-darius"
+      ],
+      "reviewId": "alcibiades-era-darius-ii-reign-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-amyrtaeus-accession-history",
+      "subjectId": "amyrtaeus-accession",
+      "predicate": "historical-context",
+      "statement": "Around 404 BCE, Amyrtaeus established himself as an Egyptian ruler and began consolidating independence from Persia. He was the sole king of the Twenty-eighth Dynasty. The change did not happen everywhere at once. Documents from Elephantine still recognised the Persian king as late as 401 BCE. This is a gradual political transition, despite the single date on the timeline.",
+      "value": {
+        "type": "text",
+        "text": "Around 404 BCE, Amyrtaeus established himself as an Egyptian ruler and began consolidating independence from Persia. He was the sole king of the Twenty-eighth Dynasty. The change did not happen everywhere at once. Documents from Elephantine still recognised the Persian king as late as 401 BCE. This is a gradual political transition, despite the single date on the timeline."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -404,
+          "latest": -404,
+          "original": "404 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-amyrtaeus-accession-history-egypt"
+      ],
+      "reviewId": "alcibiades-era-amyrtaeus-accession-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-alcibiades-association-sparta",
+      "subjectId": "alcibiades",
+      "predicate": "historical-context",
+      "statement": "Flight to Sparta in 415 BCE · city reference",
+      "value": {
+        "type": "text",
+        "text": "Flight to Sparta in 415 BCE · city reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-alcibiades-association-sparta-chronology"
+      ],
+      "reviewId": "alcibiades-era-alcibiades-association-sparta-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-alcibiades-reference-sparta",
+      "subjectId": "alcibiades",
+      "predicate": "site-reference",
+      "statement": "Getty city reference for Sparta, not Spartan territory",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          22.4297,
+          37.0733
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -415,
+          "latest": -415,
+          "original": "415 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-alcibiades-reference-sparta-sparta-point"
+      ],
+      "reviewId": "alcibiades-era-alcibiades-reference-sparta-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-alcibiades-association-athens",
+      "subjectId": "alcibiades",
+      "predicate": "historical-context",
+      "statement": "Return to Athens in 407 BCE · city reference",
+      "value": {
+        "type": "text",
+        "text": "Return to Athens in 407 BCE · city reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -407,
+          "latest": -407,
+          "original": "407 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -407,
+          "latest": -407,
+          "original": "407 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-alcibiades-association-athens-chronology"
+      ],
+      "reviewId": "alcibiades-era-alcibiades-association-athens-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-alcibiades-reference-athens",
+      "subjectId": "alcibiades",
+      "predicate": "site-reference",
+      "statement": "Acropolis reference for Athens, not the exact event location",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -407,
+          "latest": -407,
+          "original": "407 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -407,
+          "latest": -407,
+          "original": "407 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-alcibiades-reference-athens-athens-point"
+      ],
+      "reviewId": "alcibiades-era-alcibiades-reference-athens-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-nicias-association-syracuse",
+      "subjectId": "nicias",
+      "predicate": "historical-context",
+      "statement": "Campaign against Syracuse · target city reference, not exact position",
+      "value": {
+        "type": "text",
+        "text": "Campaign against Syracuse · target city reference, not exact position"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -414,
+          "latest": -414,
+          "original": "414 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -413,
+          "latest": -413,
+          "original": "413 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-nicias-association-syracuse-sicily"
+      ],
+      "reviewId": "alcibiades-era-nicias-association-syracuse-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-nicias-reference-syracuse",
+      "subjectId": "nicias",
+      "predicate": "site-reference",
+      "statement": "UNESCO Ortygia reference for Syracuse, not a siege position",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          15.293055555555556,
+          37.059444444444445
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -414,
+          "latest": -414,
+          "original": "414 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -413,
+          "latest": -413,
+          "original": "413 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-nicias-reference-syracuse-syracuse-point"
+      ],
+      "reviewId": "alcibiades-era-nicias-reference-syracuse-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-pericles-association-athens",
+      "subjectId": "pericles",
+      "predicate": "historical-context",
+      "statement": "Athenian leadership at the start of the war · city reference",
+      "value": {
+        "type": "text",
+        "text": "Athenian leadership at the start of the war · city reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -431,
+          "latest": -431,
+          "original": "431 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -429,
+          "latest": -429,
+          "original": "429 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-pericles-association-athens-plague"
+      ],
+      "reviewId": "alcibiades-era-pericles-association-athens-review",
+      "disputeNote": null
+    },
+    {
+      "id": "alcibiades-era-pericles-reference-athens",
+      "subjectId": "pericles",
+      "predicate": "site-reference",
+      "statement": "Acropolis reference for Athens, not the exact event location",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -431,
+          "latest": -431,
+          "original": "431 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -429,
+          "latest": -429,
+          "original": "429 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "alcibiades-era-pericles-reference-athens-athens-point"
+      ],
+      "reviewId": "alcibiades-era-pericles-reference-athens-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "alcibiades-era-alcibiades-history-alcibiades",
+      "claimId": "alcibiades-era-alcibiades-history",
+      "sourceId": "alcibiades-era-alcibiades",
+      "locator": "Biographical chronology; interpretation of Socrates’ trial in the closing paragraph is not adopted",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-history-review"
+    },
+    {
+      "id": "alcibiades-era-alcibiades-history-alcibiades-oxford",
+      "claimId": "alcibiades-era-alcibiades-history",
+      "sourceId": "alcibiades-era-alcibiades-oxford",
+      "locator": "Public indexed heading and abstract: dates, Pericles as guardian and relationship with Socrates; full text not accessed",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-history-review"
+    },
+    {
+      "id": "alcibiades-era-pericles-history-pericles",
+      "claimId": "alcibiades-era-pericles-history",
+      "sourceId": "alcibiades-era-pericles",
+      "locator": "Biographical introduction and political career",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-pericles-history-review"
+    },
+    {
+      "id": "alcibiades-era-pericles-history-plague",
+      "claimId": "alcibiades-era-pericles-history",
+      "sourceId": "alcibiades-era-plague",
+      "locator": "Public English abstract: 430–426 BCE, death of Pericles, uncertainty about the disease",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-pericles-history-review"
+    },
+    {
+      "id": "alcibiades-era-nicias-history-nicias",
+      "claimId": "alcibiades-era-nicias-history",
+      "sourceId": "alcibiades-era-nicias",
+      "locator": "Life dates, peace negotiations and Sicilian command",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-nicias-history-review"
+    },
+    {
+      "id": "alcibiades-era-sparta-history-war",
+      "claimId": "alcibiades-era-sparta-history",
+      "sourceId": "alcibiades-era-war",
+      "locator": "Opening summary and sources",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-sparta-history-review"
+    },
+    {
+      "id": "alcibiades-era-sparta-history-alcibiades",
+      "claimId": "alcibiades-era-sparta-history",
+      "sourceId": "alcibiades-era-alcibiades",
+      "locator": "Biographical chronology; interpretation of Socrates’ trial in the closing paragraph is not adopted",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-sparta-history-review"
+    },
+    {
+      "id": "alcibiades-era-sparta-point-sparta-point",
+      "claimId": "alcibiades-era-sparta-point",
+      "sourceId": "alcibiades-era-sparta-point",
+      "locator": "Coordinates: 37.0733 N, 22.4297 E; inhabited place reference",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-sparta-point-review"
+    },
+    {
+      "id": "alcibiades-era-syracuse-history-sicily",
+      "claimId": "alcibiades-era-syracuse-history",
+      "sourceId": "alcibiades-era-sicily",
+      "locator": "Campaign 415–413 BCE, siege of Syracuse and destruction of the expedition",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-syracuse-history-review"
+    },
+    {
+      "id": "alcibiades-era-syracuse-point-syracuse-point",
+      "claimId": "alcibiades-era-syracuse-point",
+      "sourceId": "alcibiades-era-syracuse-point",
+      "locator": "Printed p. 5, Identification of property: Ortygia 37°03′34″ N, 15°17′35″ E; indexed page inspected, full large PDF unavailable",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-syracuse-point-review"
+    },
+    {
+      "id": "alcibiades-era-peloponnesian-war-history-war",
+      "claimId": "alcibiades-era-peloponnesian-war-history",
+      "sourceId": "alcibiades-era-war",
+      "locator": "Opening summary and sources",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-peloponnesian-war-history-review"
+    },
+    {
+      "id": "alcibiades-era-athens-plague-history-plague",
+      "claimId": "alcibiades-era-athens-plague-history",
+      "sourceId": "alcibiades-era-plague",
+      "locator": "Public English abstract: 430–426 BCE, death of Pericles, uncertainty about the disease",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-athens-plague-history-review"
+    },
+    {
+      "id": "alcibiades-era-athens-plague-point-athens-point",
+      "claimId": "alcibiades-era-athens-plague-point",
+      "sourceId": "alcibiades-era-athens-point",
+      "locator": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-athens-plague-point-review"
+    },
+    {
+      "id": "alcibiades-era-potidaea-service-history-socrates",
+      "claimId": "alcibiades-era-potidaea-service-history",
+      "sourceId": "alcibiades-era-socrates",
+      "locator": "Section 3: chronology, Potidaea, Delium and the Arginusae trial",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-potidaea-service-history-review"
+    },
+    {
+      "id": "alcibiades-era-delium-history-socrates",
+      "claimId": "alcibiades-era-delium-history",
+      "sourceId": "alcibiades-era-socrates",
+      "locator": "Section 3: chronology, Potidaea, Delium and the Arginusae trial",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-delium-history-review"
+    },
+    {
+      "id": "alcibiades-era-peace-of-nicias-history-nicias",
+      "claimId": "alcibiades-era-peace-of-nicias-history",
+      "sourceId": "alcibiades-era-nicias",
+      "locator": "Life dates, peace negotiations and Sicilian command",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-peace-of-nicias-history-review"
+    },
+    {
+      "id": "alcibiades-era-sicilian-expedition-history-sicily",
+      "claimId": "alcibiades-era-sicilian-expedition-history",
+      "sourceId": "alcibiades-era-sicily",
+      "locator": "Campaign 415–413 BCE, siege of Syracuse and destruction of the expedition",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-sicilian-expedition-history-review"
+    },
+    {
+      "id": "alcibiades-era-sicilian-expedition-point-syracuse-point",
+      "claimId": "alcibiades-era-sicilian-expedition-point",
+      "sourceId": "alcibiades-era-syracuse-point",
+      "locator": "Printed p. 5, Identification of property: Ortygia 37°03′34″ N, 15°17′35″ E; indexed page inspected, full large PDF unavailable",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-sicilian-expedition-point-review"
+    },
+    {
+      "id": "alcibiades-era-herms-scandal-history-socrates",
+      "claimId": "alcibiades-era-herms-scandal-history",
+      "sourceId": "alcibiades-era-socrates",
+      "locator": "Section 3: chronology, Potidaea, Delium and the Arginusae trial",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-herms-scandal-history-review"
+    },
+    {
+      "id": "alcibiades-era-herms-scandal-point-athens-point",
+      "claimId": "alcibiades-era-herms-scandal-point",
+      "sourceId": "alcibiades-era-athens-point",
+      "locator": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-herms-scandal-point-review"
+    },
+    {
+      "id": "alcibiades-era-alcibiades-sparta-history-alcibiades",
+      "claimId": "alcibiades-era-alcibiades-sparta-history",
+      "sourceId": "alcibiades-era-alcibiades",
+      "locator": "Biographical chronology; interpretation of Socrates’ trial in the closing paragraph is not adopted",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-sparta-history-review"
+    },
+    {
+      "id": "alcibiades-era-alcibiades-sparta-history-chronology",
+      "claimId": "alcibiades-era-alcibiades-sparta-history",
+      "sourceId": "alcibiades-era-chronology",
+      "locator": "Entries for 415, 411, 407, 405 and 404 BCE",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-sparta-history-review"
+    },
+    {
+      "id": "alcibiades-era-alcibiades-sparta-point-sparta-point",
+      "claimId": "alcibiades-era-alcibiades-sparta-point",
+      "sourceId": "alcibiades-era-sparta-point",
+      "locator": "Coordinates: 37.0733 N, 22.4297 E; inhabited place reference",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-sparta-point-review"
+    },
+    {
+      "id": "alcibiades-era-athens-four-hundred-history-ionian",
+      "claimId": "alcibiades-era-athens-four-hundred-history",
+      "sourceId": "alcibiades-era-ionian",
+      "locator": "Persian support, the Four Hundred and Alcibiades",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-athens-four-hundred-history-review"
+    },
+    {
+      "id": "alcibiades-era-athens-four-hundred-point-athens-point",
+      "claimId": "alcibiades-era-athens-four-hundred-point",
+      "sourceId": "alcibiades-era-athens-point",
+      "locator": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-athens-four-hundred-point-review"
+    },
+    {
+      "id": "alcibiades-era-alcibiades-return-history-chronology",
+      "claimId": "alcibiades-era-alcibiades-return-history",
+      "sourceId": "alcibiades-era-chronology",
+      "locator": "Entries for 415, 411, 407, 405 and 404 BCE",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-return-history-review"
+    },
+    {
+      "id": "alcibiades-era-alcibiades-return-point-athens-point",
+      "claimId": "alcibiades-era-alcibiades-return-point",
+      "sourceId": "alcibiades-era-athens-point",
+      "locator": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-return-point-review"
+    },
+    {
+      "id": "alcibiades-era-arginusae-trial-history-socrates",
+      "claimId": "alcibiades-era-arginusae-trial-history",
+      "sourceId": "alcibiades-era-socrates",
+      "locator": "Section 3: chronology, Potidaea, Delium and the Arginusae trial",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-arginusae-trial-history-review"
+    },
+    {
+      "id": "alcibiades-era-arginusae-trial-point-athens-point",
+      "claimId": "alcibiades-era-arginusae-trial-point",
+      "sourceId": "alcibiades-era-athens-point",
+      "locator": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-arginusae-trial-point-review"
+    },
+    {
+      "id": "alcibiades-era-aegospotami-history-chronology",
+      "claimId": "alcibiades-era-aegospotami-history",
+      "sourceId": "alcibiades-era-chronology",
+      "locator": "Entries for 415, 411, 407, 405 and 404 BCE",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-aegospotami-history-review"
+    },
+    {
+      "id": "alcibiades-era-athens-surrender-history-chronology",
+      "claimId": "alcibiades-era-athens-surrender-history",
+      "sourceId": "alcibiades-era-chronology",
+      "locator": "Entries for 415, 411, 407, 405 and 404 BCE",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-athens-surrender-history-review"
+    },
+    {
+      "id": "alcibiades-era-athens-surrender-point-athens-point",
+      "claimId": "alcibiades-era-athens-surrender-point",
+      "sourceId": "alcibiades-era-athens-point",
+      "locator": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-athens-surrender-point-review"
+    },
+    {
+      "id": "alcibiades-era-thirty-athens-history-aftermath",
+      "claimId": "alcibiades-era-thirty-athens-history",
+      "sourceId": "alcibiades-era-aftermath",
+      "locator": "The Thirty, civil war and restoration of democracy",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-thirty-athens-history-review"
+    },
+    {
+      "id": "alcibiades-era-thirty-athens-point-athens-point",
+      "claimId": "alcibiades-era-thirty-athens-point",
+      "sourceId": "alcibiades-era-athens-point",
+      "locator": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-thirty-athens-point-review"
+    },
+    {
+      "id": "alcibiades-era-athens-democracy-restored-history-aftermath",
+      "claimId": "alcibiades-era-athens-democracy-restored-history",
+      "sourceId": "alcibiades-era-aftermath",
+      "locator": "The Thirty, civil war and restoration of democracy",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-athens-democracy-restored-history-review"
+    },
+    {
+      "id": "alcibiades-era-athens-democracy-restored-point-athens-point",
+      "claimId": "alcibiades-era-athens-democracy-restored-point",
+      "sourceId": "alcibiades-era-athens-point",
+      "locator": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-athens-democracy-restored-point-review"
+    },
+    {
+      "id": "alcibiades-era-darius-ii-reign-history-darius",
+      "claimId": "alcibiades-era-darius-ii-reign-history",
+      "sourceId": "alcibiades-era-darius",
+      "locator": "Reign chronology, accession 424/423 and Persian support for Sparta",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-darius-ii-reign-history-review"
+    },
+    {
+      "id": "alcibiades-era-amyrtaeus-accession-history-egypt",
+      "claimId": "alcibiades-era-amyrtaeus-accession-history",
+      "sourceId": "alcibiades-era-egypt",
+      "locator": "Public chapter summary: Amyrtaeus’ accession and gradual recognition in southern Egypt",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-amyrtaeus-accession-history-review"
+    },
+    {
+      "id": "alcibiades-era-alcibiades-association-sparta-chronology",
+      "claimId": "alcibiades-era-alcibiades-association-sparta",
+      "sourceId": "alcibiades-era-chronology",
+      "locator": "Entries for 415, 411, 407, 405 and 404 BCE",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-association-sparta-review"
+    },
+    {
+      "id": "alcibiades-era-alcibiades-reference-sparta-sparta-point",
+      "claimId": "alcibiades-era-alcibiades-reference-sparta",
+      "sourceId": "alcibiades-era-sparta-point",
+      "locator": "Coordinates: 37.0733 N, 22.4297 E; inhabited place reference",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-reference-sparta-review"
+    },
+    {
+      "id": "alcibiades-era-alcibiades-association-athens-chronology",
+      "claimId": "alcibiades-era-alcibiades-association-athens",
+      "sourceId": "alcibiades-era-chronology",
+      "locator": "Entries for 415, 411, 407, 405 and 404 BCE",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-association-athens-review"
+    },
+    {
+      "id": "alcibiades-era-alcibiades-reference-athens-athens-point",
+      "claimId": "alcibiades-era-alcibiades-reference-athens",
+      "sourceId": "alcibiades-era-athens-point",
+      "locator": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-alcibiades-reference-athens-review"
+    },
+    {
+      "id": "alcibiades-era-nicias-association-syracuse-sicily",
+      "claimId": "alcibiades-era-nicias-association-syracuse",
+      "sourceId": "alcibiades-era-sicily",
+      "locator": "Campaign 415–413 BCE, siege of Syracuse and destruction of the expedition",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-nicias-association-syracuse-review"
+    },
+    {
+      "id": "alcibiades-era-nicias-reference-syracuse-syracuse-point",
+      "claimId": "alcibiades-era-nicias-reference-syracuse",
+      "sourceId": "alcibiades-era-syracuse-point",
+      "locator": "Printed p. 5, Identification of property: Ortygia 37°03′34″ N, 15°17′35″ E; indexed page inspected, full large PDF unavailable",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-nicias-reference-syracuse-review"
+    },
+    {
+      "id": "alcibiades-era-pericles-association-athens-plague",
+      "claimId": "alcibiades-era-pericles-association-athens",
+      "sourceId": "alcibiades-era-plague",
+      "locator": "Public English abstract: 430–426 BCE, death of Pericles, uncertainty about the disease",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-pericles-association-athens-review"
+    },
+    {
+      "id": "alcibiades-era-pericles-reference-athens-athens-point",
+      "claimId": "alcibiades-era-pericles-reference-athens",
+      "sourceId": "alcibiades-era-athens-point",
+      "locator": "Coordinates: 37.9715 N, 23.7257 E; city orientation reference only",
+      "note": "Year-level chronology; approximations and editorial windows are stated in the entry. Geographic points are orientation references.",
+      "relation": "supports",
+      "reviewId": "alcibiades-era-pericles-reference-athens-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "alcibiades-era-alcibiades-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-pericles-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-nicias-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-sparta-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-sparta-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-syracuse-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-syracuse-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-peloponnesian-war-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-athens-plague-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-athens-plague-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-potidaea-service-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-delium-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-peace-of-nicias-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-sicilian-expedition-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-sicilian-expedition-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-herms-scandal-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-herms-scandal-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-alcibiades-sparta-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-alcibiades-sparta-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-athens-four-hundred-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-athens-four-hundred-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-alcibiades-return-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-alcibiades-return-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-arginusae-trial-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-arginusae-trial-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-aegospotami-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-athens-surrender-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-athens-surrender-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-thirty-athens-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-thirty-athens-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-athens-democracy-restored-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-athens-democracy-restored-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-darius-ii-reign-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-amyrtaeus-accession-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-alcibiades-association-sparta-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-alcibiades-reference-sparta-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-alcibiades-association-athens-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-alcibiades-reference-athens-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-nicias-association-syracuse-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-nicias-reference-syracuse-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-pericles-association-athens-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    },
+    {
+      "id": "alcibiades-era-pericles-reference-athens-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage or explicitly identified public abstract. Distinguished historical dates, literary testimony and approximate map references."
+    }
+  ],
+  "accounts": []
+}
