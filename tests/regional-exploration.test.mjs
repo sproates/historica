@@ -14,7 +14,7 @@ test('Socrates can lead to Britain and Ireland without changing the visible date
  const filtered=rankedContext(data,{...state,area:'britain-ireland'});
  assert.deepEqual(filtered.map(e=>e.id).sort(),['broxmouth','danebury-life','doogarrymore-wheels','henllys-community','ireland-iron-age']);
  assert.ok(focusAssociations(data,state).some(a=>a.place==='danebury'));
- assert.deepEqual(decodeView(encodeView(state,decodeView('',data).view),data).state,state);
+ assert.deepEqual(decodeView(encodeView(state,decodeView('',data).view,data),data).state,state);
 });
 test('regional archaeology preserves uncertain dates and does not become exact-year events',()=>{
  for(const e of exploration.entities.filter(e=>e.type==='period')) {assert.equal(e.contextual,true);assert.ok(e.note);assert.ok(e.claimIds.length);}

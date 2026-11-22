@@ -61,13 +61,19 @@ flows before publishing. See [manual release instructions](RELEASE.md). Keep the
 
 ## Bookmark URLs
 
-The root URL opens Socrates. The app updates the URL fragment as you explore;
-bookmark the address or use **Copy this view** to return to those settings on
-another visit or device. For example, `/#focus=socrates&from=-469&to=-399`
-opens his lifespan. Full links also contain map and display settings and a
-`v=1` format marker. Compatibility with previous prototype links is not a release requirement. Hash routing works
-with a static host, including the planned A Small Orange deployment. Browser
-scroll position and the in-session navigation stack are not part of the bookmark.
+The root opens Socrates at `/person/socrates`. Every focus has a proper path,
+such as `/person/alexander`, `/area/egypt` or `/event/socrates-trial`.
+Only changed settings appear in the query string: for example,
+`/area/egypt?from=-356&to=-323` keeps Alexander’s lifespan while viewing Egypt.
+Default filters, world-map position and collapsed panels add nothing to URLs.
+Custom dates, filters, map position, border opacity and expanded panels remain
+bookmarkable. Browser Back and Forward navigate focus changes. Old fragment
+links are read and replaced with the corresponding canonical path.
+
+`build-routes.mjs` generates explicit routes for the collection into a scoped
+Apache `.htaccess`; unrecognised paths and missing assets remain 404s. The
+local preview server supports the same routes. The app loads assets from the
+site root so direct visits and reloads work at nested URLs.
 
 ## Evidence foundation
 

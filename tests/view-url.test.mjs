@@ -14,11 +14,21 @@ test('empty and unknown focus links open Socrates while older explicit links sur
 test('bookmark round trip includes map, borders, expanded list, evidence and slider bounds',()=>{
  const state={focus:'socrates',start:-450,end:-410,kind:'person',area:'athens'};
  const view={map:{x:350.25,y:80.125,w:100,borders:.35},expanded:true,evidence:true,envelope:{start:-500,end:-350}};
- assert.deepEqual(decodeView(encodeView(state,view),data),{state,view});
+ assert.deepEqual(decodeView(encodeView(state,view,data),data),{state,view});
 });
 test('malformed bookmarks fall back to safe dates and bounded camera',()=>{
  const result=decodeView('#focus=socrates&from=0&to=Infinity&w=-3&x=Infinity&y=999&borders=9&rangeFrom=NaN&rangeTo=0',data);
  assert.deepEqual([result.state.start,result.state.end],[-469,-399]);
  assert.deepEqual(result.view.map,{w:30,x:0,y:345,borders:1});
  assert.deepEqual(result.view.envelope,{start:-469,end:-399});
+});
+
+test('canonical paths omit every default and preserve changed dates',()=>{
+ const original=decodeView('/person/alexander',data);
+ assert.equal(original.state.focus,'alexander');
+ assert.equal(encodeView(original.state,original.view,data),'/person/alexander');
+ const changed=decodeView('/person/alexander?from=-340&to=-330',data);
+ assert.deepEqual([changed.state.start,changed.state.end],[-340,-330]);
+ assert.equal(encodeView(changed.state,changed.view,data),'/person/alexander?from=-340&to=-330');
+ for(const e of data.entities){const path=`/${e.type}/${e.id}`;const decoded=decodeView(path,data);assert.equal(decoded.state.focus,e.id);assert.equal(encodeView(decoded.state,decoded.view,data),path);}
 });

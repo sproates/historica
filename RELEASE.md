@@ -31,7 +31,7 @@ home page, search, source links, coverage page and bookmarked views.
 
 The source of truth is `web/`; do not edit generated files in `docs/`.
 The site requires static file serving only, with no database or application
-server. Socrates remains the default; URL fragments preserve exploration state.
+server. Socrates remains the default; Focus paths and optional query parameters preserve exploration state.
 
 ## Current content
 
@@ -69,3 +69,27 @@ that does not cover historica.online. Ian has been asked to check this domain
 and www in cPanel SSL/TLS Status and run AutoSSL if available. Do not force
 HTTPS redirects until a valid certificate has been confirmed. No credentials
 were written to project files, scripts, backups or Git.
+
+## Proper focus paths
+
+The release now includes a domain-local `.htaccess` generated from the
+collection’s explicit routes. It rewrites recognised person, area, state,
+city, period and event URLs to the app entry point without redirecting the
+browser to index.html. Existing files/directories pass through; unknown URLs
+remain 404s. Only `/historica.online/.htaccess` is in scope. The uploader refuses
+to replace an unfamiliar existing routing file without review.
+
+Local checks cover all 100 canonical paths, compact default URLs, customised
+bookmark round-trips, invalid parameters, direct HTTP loads, unknown-route
+404s and browser Back/Forward plus reload. No HTTPS redirect is added here.
+
+### Deployment verification — 22 November 2026
+
+Deployed the path routing release only inside `/historica.online`; backup and
+upload record: `release/backups/20261122T193617Z/deployment.json`.
+All changed files were retrieved and hash-verified over FTPS. All 29 public
+assets matched over both HTTP and HTTPS. ASO's certificate is now valid for
+historica.online; HTTPS verification succeeded without bypassing validation.
+Live person, area with custom dates, and event paths returned 200; an unknown
+person path returned 404. Browser navigation Alexander → Egypt preserved
+356–323 BCE, and Back, Forward and reload restored the correct focus.

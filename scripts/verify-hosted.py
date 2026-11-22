@@ -8,6 +8,7 @@ from pathlib import Path
 base=sys.argv[1] if len(sys.argv)>1 else 'https://historica.online/'
 assert base in ('http://historica.online/','https://historica.online/','http://www.historica.online/','https://www.historica.online/')
 files=json.loads(Path('docs/release-manifest.json').read_text())['files']
+files=[row for row in files if not row['path'].startswith('.')]
 def check(row):
     with urllib.request.urlopen(urllib.request.Request(base+row['path'],headers={'User-Agent':'Mozilla/5.0 (historica release verification)'}),timeout=30) as response:
         content=response.read()

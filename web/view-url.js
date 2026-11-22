@@ -1,13 +1,25 @@
-import {encodeFocus,decodeFocus} from './focus-model.js?v=bookmarks-1';
-export function encodeView(state,view){
- const p=new URLSearchParams(encodeFocus(state).slice(1));p.set('v','1');
- for(const k of ['x','y','w','borders'])p.set(k,String(view.map[k]));
- p.set('expanded',view.expanded?'1':'0');p.set('evidence',view.evidence?'1':'0');
- p.set('rangeFrom',String(view.envelope.start));p.set('rangeTo',String(view.envelope.end));
- return '#'+p;
+import {decodeFocus} from './focus-model.js?v=global-2';
+export function encodeView(state,view,data){
+ const f=data.entities.find(e=>e.id===state.focus);
+ if(!f)throw new Error('Unknown focus');
+ const p=new URLSearchParams();
+ if(state.start!==f.startYear||state.end!==f.endYear){p.set('from',state.start);p.set('to',state.end);}
+ if(state.kind!=='all')p.set('kind',state.kind);
+ if(state.area!=='all')p.set('area',state.area);
+ const defaults={x:0,y:0,w:720,borders:1};
+ for(const k of Object.keys(defaults))if(view.map[k]!==defaults[k])p.set(k,String(view.map[k]));
+ if(view.expanded)p.set('expanded','1');
+ if(view.evidence)p.set('evidence','1');
+ if(view.envelope.start!==Math.min(state.start,f.startYear))p.set('rangeFrom',view.envelope.start);
+ if(view.envelope.end!==Math.max(state.end,f.endYear))p.set('rangeTo',view.envelope.end);
+ return `/${f.type}/${encodeURIComponent(f.id)}`+(p.size?'?'+p:'');
 }
-export function decodeView(hash,data){
- const state=decodeFocus(hash,data),p=new URLSearchParams(hash.replace(/^#/,''));
+export function decodeView(address,data){
+ const url=new URL(address||'/', 'https://historica.online');
+ const legacy=url.hash.startsWith('#focus=');
+ const p=new URLSearchParams(legacy?url.hash.slice(1):url.search);
+ if(!legacy){const parts=url.pathname.split('/').filter(Boolean);const entity=data.entities.find(e=>e.type===parts[0]&&e.id===parts[1]);p.set('focus',entity?.id||'socrates');}
+ const state=decodeFocus('#'+p,data);
  const n=(k,f)=>p.has(k)&&p.get(k).trim()!==''&&Number.isFinite(Number(p.get(k)))?Number(p.get(k)):f;
  const w=Math.max(30,Math.min(720,n('w',720)));
  const map={w,x:Math.max(0,Math.min(720-w,n('x',0))),y:Math.max(0,Math.min(360-w/2,n('y',0))),borders:Math.max(0,Math.min(1,n('borders',1)))};
