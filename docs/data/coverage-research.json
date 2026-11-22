@@ -1,0 +1,622 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "entities": [
+      {
+        "id": "britain-ireland",
+        "name": "Britain and Ireland",
+        "type": "area"
+      },
+      {
+        "id": "ireland",
+        "name": "Ireland",
+        "type": "area"
+      },
+      {
+        "id": "danebury",
+        "name": "Danebury",
+        "type": "area"
+      },
+      {
+        "id": "doogarrymore",
+        "name": "Doogarrymore",
+        "type": "area"
+      }
+    ],
+    "sources": [
+      {
+        "id": "ps-hillforts",
+        "title": "Iron Age factsheet 3: Hillforts",
+        "creator": "Lindsey Büster, The Prehistoric Society",
+        "url": "https://prehistoricsociety.org/sites/prehistoricsociety.org/files/resources/ps-intros-ia-3-hillforts.pdf",
+        "locatorHint": "Pages 1–2",
+        "published": "2019",
+        "accessed": "2026-11-22",
+        "reuse": "Original paraphrases with citations; source text and images not reproduced."
+      },
+      {
+        "id": "hants-danebury",
+        "title": "Danebury Iron Age Hill Fort",
+        "creator": "Hampshire County Council",
+        "url": "https://www.hants.gov.uk/thingstodo/countryside/finder/danebury",
+        "locatorHint": "Life at Danebury; Excavations",
+        "published": null,
+        "accessed": "2026-11-22",
+        "reuse": "Original paraphrases with citations; source text and images not reproduced."
+      },
+      {
+        "id": "ford-saunders-danebury",
+        "title": "Archaeological investigations at Danebury hillfort, 1995",
+        "creator": "Ben Ford and M. John Saunders, Hampshire Studies 54",
+        "url": "https://www.hantsfieldclub.org.uk/publications/hampshirestudies/digital/1990s/vol54/Ford%26Saunders.pdf",
+        "locatorHint": "Page 180, Introduction",
+        "published": "1999",
+        "accessed": "2026-11-22",
+        "reuse": "Original paraphrases with citations; source text and images not reproduced."
+      },
+      {
+        "id": "nmi-bronze",
+        "title": "The Bronze Age in Ireland",
+        "creator": "National Museum of Ireland",
+        "url": "https://microsites.museum.ie/bronzeagehandlingbox/bronze-age.html",
+        "locatorHint": "Introduction; Late Bronze Age",
+        "published": null,
+        "accessed": "2026-11-22",
+        "reuse": "Original paraphrases with citations; source text and images not reproduced."
+      },
+      {
+        "id": "nmi-guide",
+        "title": "Guide to the National Museum of Ireland: Archaeology",
+        "creator": "Eamonn P. Kelly, National Museum of Ireland",
+        "url": "https://www.museum.ie/getmedia/a3ebbb22-2057-4200-aae8-cd958854d89f/ks_guide_web_en-%281%29.pdf",
+        "locatorHint": "Printed pages 14 and 48",
+        "published": "2007",
+        "accessed": "2026-11-22",
+        "reuse": "Original paraphrases with citations; source text and images not reproduced."
+      },
+      {
+        "id": "nmi-kingship",
+        "title": "Kingship and Sacrifice",
+        "creator": "National Museum of Ireland",
+        "url": "https://source.museum.ie/en-IE/Museums/Archaeology/Exhibitions/Kingship-and-Sacrifice",
+        "locatorHint": "Exhibition introduction",
+        "published": null,
+        "accessed": "2026-11-22",
+        "reuse": "Original paraphrases with citations; source text and images not reproduced."
+      }
+    ],
+    "claims": [
+      {
+        "id": "bi-01-danebury-date",
+        "subjectId": "danebury",
+        "predicate": "change-continuity",
+        "statement": "The Prehistoric Society dates construction of Danebury to around 470 BCE.",
+        "value": {
+          "type": "text",
+          "text": "The Prehistoric Society dates construction of Danebury to around 470 BCE."
+        },
+        "validity": null,
+        "scopeIds": [
+          "danebury"
+        ],
+        "status": "draft",
+        "certainty": "disputed",
+        "disputeNote": "Date disputed: Ford and Saunders (1999), p. 180, describe the site as lasting from 550 to 100 BCE. Reconcile chronologies before choosing a timeline start.",
+        "evidenceIds": [
+          "bi-01-danebury-date-evidence",
+          "bi-01-danebury-date-alternative"
+        ],
+        "reviewId": "bi-01-danebury-date-review"
+      },
+      {
+        "id": "bi-01-danebury-houses",
+        "subjectId": "danebury",
+        "predicate": "settlement-mobility",
+        "statement": "Excavations at Danebury revealed roundhouses.",
+        "value": {
+          "type": "text",
+          "text": "Excavations at Danebury revealed roundhouses."
+        },
+        "validity": null,
+        "scopeIds": [
+          "danebury"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-danebury-houses-evidence"
+        ],
+        "reviewId": "bi-01-danebury-houses-review"
+      },
+      {
+        "id": "bi-01-danebury-grain",
+        "subjectId": "danebury",
+        "predicate": "livelihoods-technology-exchange",
+        "statement": "At Danebury, grain was kept in storage buildings and sealed pits.",
+        "value": {
+          "type": "text",
+          "text": "At Danebury, grain was kept in storage buildings and sealed pits."
+        },
+        "validity": null,
+        "scopeIds": [
+          "danebury"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-danebury-grain-evidence"
+        ],
+        "reviewId": "bi-01-danebury-grain-review"
+      },
+      {
+        "id": "bi-01-danebury-livestock",
+        "subjectId": "danebury",
+        "predicate": "livelihoods-technology-exchange",
+        "statement": "Danebury’s farming community kept sheep and cattle.",
+        "value": {
+          "type": "text",
+          "text": "Danebury’s farming community kept sheep and cattle."
+        },
+        "validity": null,
+        "scopeIds": [
+          "danebury"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-danebury-livestock-evidence"
+        ],
+        "reviewId": "bi-01-danebury-livestock-review"
+      },
+      {
+        "id": "bi-01-danebury-crafts",
+        "subjectId": "danebury",
+        "predicate": "livelihoods-technology-exchange",
+        "statement": "Evidence at Danebury includes cereal processing, weaving, leatherworking and metalworking.",
+        "value": {
+          "type": "text",
+          "text": "Evidence at Danebury includes cereal processing, weaving, leatherworking and metalworking."
+        },
+        "validity": null,
+        "scopeIds": [
+          "danebury"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-danebury-crafts-evidence"
+        ],
+        "reviewId": "bi-01-danebury-crafts-review"
+      },
+      {
+        "id": "bi-01-danebury-exchange",
+        "subjectId": "danebury",
+        "predicate": "external-connections",
+        "statement": "Danebury obtained materials including metals and salt through exchange with other areas.",
+        "value": {
+          "type": "text",
+          "text": "Danebury obtained materials including metals and salt through exchange with other areas."
+        },
+        "validity": null,
+        "scopeIds": [
+          "danebury"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-danebury-exchange-evidence"
+        ],
+        "reviewId": "bi-01-danebury-exchange-review"
+      },
+      {
+        "id": "bi-01-danebury-shrines",
+        "subjectId": "danebury",
+        "predicate": "beliefs-knowledge-arts",
+        "statement": "Four rectangular structures at Danebury have been interpreted as shrines.",
+        "value": {
+          "type": "text",
+          "text": "Four rectangular structures at Danebury have been interpreted as shrines."
+        },
+        "validity": null,
+        "scopeIds": [
+          "danebury"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-danebury-shrines-evidence"
+        ],
+        "reviewId": "bi-01-danebury-shrines-review"
+      },
+      {
+        "id": "bi-01-hillfort-roles",
+        "subjectId": "britain-ireland",
+        "predicate": "social-political-organisation",
+        "statement": "Hillforts had varied roles; a purely defensive interpretation is insufficient.",
+        "value": {
+          "type": "text",
+          "text": "Hillforts had varied roles; a purely defensive interpretation is insufficient."
+        },
+        "validity": null,
+        "scopeIds": [
+          "britain-ireland"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-hillfort-roles-evidence"
+        ],
+        "reviewId": "bi-01-hillfort-roles-review"
+      },
+      {
+        "id": "bi-01-ireland-transition",
+        "subjectId": "ireland",
+        "predicate": "change-continuity",
+        "statement": "The National Museum of Ireland places the end of the Irish Bronze Age at approximately 500 BCE.",
+        "value": {
+          "type": "text",
+          "text": "The National Museum of Ireland places the end of the Irish Bronze Age at approximately 500 BCE."
+        },
+        "validity": null,
+        "scopeIds": [
+          "ireland"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-ireland-transition-evidence"
+        ],
+        "reviewId": "bi-01-ireland-transition-review"
+      },
+      {
+        "id": "bi-01-ireland-farmsteads",
+        "subjectId": "ireland",
+        "predicate": "settlement-mobility",
+        "statement": "Individual farmsteads with houses are evidenced in Ireland by the Late Bronze Age.",
+        "value": {
+          "type": "text",
+          "text": "Individual farmsteads with houses are evidenced in Ireland by the Late Bronze Age."
+        },
+        "validity": null,
+        "scopeIds": [
+          "ireland"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-ireland-farmsteads-evidence"
+        ],
+        "reviewId": "bi-01-ireland-farmsteads-review"
+      },
+      {
+        "id": "bi-01-ireland-cart-wheels",
+        "subjectId": "doogarrymore",
+        "predicate": "external-connections",
+        "statement": "Two wooden cart wheels from Doogarrymore are dated to the fourth century BCE in the museum guide.",
+        "value": {
+          "type": "text",
+          "text": "Two wooden cart wheels from Doogarrymore are dated to the fourth century BCE in the museum guide."
+        },
+        "validity": null,
+        "scopeIds": [
+          "doogarrymore"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-ireland-cart-wheels-evidence"
+        ],
+        "reviewId": "bi-01-ireland-cart-wheels-review"
+      },
+      {
+        "id": "bi-01-ireland-bog-bodies",
+        "subjectId": "ireland",
+        "predicate": "beliefs-knowledge-arts",
+        "statement": "The museum guide places Clonycavan Man and Oldcroghan Man broadly around 400–200 BCE.",
+        "value": {
+          "type": "text",
+          "text": "The museum guide places Clonycavan Man and Oldcroghan Man broadly around 400–200 BCE."
+        },
+        "validity": null,
+        "scopeIds": [
+          "ireland"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-ireland-bog-bodies-evidence"
+        ],
+        "reviewId": "bi-01-ireland-bog-bodies-review"
+      },
+      {
+        "id": "bi-01-ireland-kingship",
+        "subjectId": "ireland",
+        "predicate": "social-political-organisation",
+        "statement": "The museum presents a theory linking some Iron Age bog deaths with sovereignty and kingship rituals.",
+        "value": {
+          "type": "text",
+          "text": "The museum presents a theory linking some Iron Age bog deaths with sovereignty and kingship rituals."
+        },
+        "validity": null,
+        "scopeIds": [
+          "ireland"
+        ],
+        "status": "draft",
+        "certainty": "unknown",
+        "disputeNote": null,
+        "evidenceIds": [
+          "bi-01-ireland-kingship-evidence"
+        ],
+        "reviewId": "bi-01-ireland-kingship-review"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "bi-01-danebury-date-evidence",
+        "claimId": "bi-01-danebury-date",
+        "sourceId": "ps-hillforts",
+        "locator": "Page 1, paragraph on simple hillforts",
+        "note": "Date disputed: Ford and Saunders (1999), p. 180, describe the site as lasting from 550 to 100 BCE. Reconcile chronologies before choosing a timeline start.",
+        "relation": "supports",
+        "reviewId": "bi-01-danebury-date-review"
+      },
+      {
+        "id": "bi-01-danebury-houses-evidence",
+        "claimId": "bi-01-danebury-houses",
+        "sourceId": "hants-danebury",
+        "locator": "Excavations, first paragraph",
+        "note": "Finds span the site’s occupation; not all houses were contemporary.",
+        "relation": "supports",
+        "reviewId": "bi-01-danebury-houses-review"
+      },
+      {
+        "id": "bi-01-danebury-grain-evidence",
+        "claimId": "bi-01-danebury-grain",
+        "sourceId": "hants-danebury",
+        "locator": "Excavations, second paragraph",
+        "note": "Site-level Iron Age context; phase-specific dating remains to be checked.",
+        "relation": "supports",
+        "reviewId": "bi-01-danebury-grain-review"
+      },
+      {
+        "id": "bi-01-danebury-livestock-evidence",
+        "claimId": "bi-01-danebury-livestock",
+        "sourceId": "hants-danebury",
+        "locator": "Life at Danebury, first paragraph",
+        "note": "Site-level context, not a description of every community in Britain.",
+        "relation": "supports",
+        "reviewId": "bi-01-danebury-livestock-review"
+      },
+      {
+        "id": "bi-01-danebury-crafts-evidence",
+        "claimId": "bi-01-danebury-crafts",
+        "sourceId": "ps-hillforts",
+        "locator": "Page 1, paragraph beginning Though geophysical survey",
+        "note": "Activities are not yet assigned to individual occupation phases.",
+        "relation": "supports",
+        "reviewId": "bi-01-danebury-crafts-review"
+      },
+      {
+        "id": "bi-01-danebury-exchange-evidence",
+        "claimId": "bi-01-danebury-exchange",
+        "sourceId": "hants-danebury",
+        "locator": "Life at Danebury, first paragraph",
+        "note": "The inspected account does not identify all trading partners or dates.",
+        "relation": "supports",
+        "reviewId": "bi-01-danebury-exchange-review"
+      },
+      {
+        "id": "bi-01-danebury-shrines-evidence",
+        "claimId": "bi-01-danebury-shrines",
+        "sourceId": "ps-hillforts",
+        "locator": "Page 1, final main paragraph",
+        "note": "An interpretation of structures, not certain identification of religious practice in a particular year.",
+        "relation": "supports",
+        "reviewId": "bi-01-danebury-shrines-review"
+      },
+      {
+        "id": "bi-01-hillfort-roles-evidence",
+        "claimId": "bi-01-hillfort-roles",
+        "sourceId": "ps-hillforts",
+        "locator": "Pages 1–2, discussion of defensive, economic and communal interpretations",
+        "note": "Broad interpretive context; do not infer a particular political system for the entire region.",
+        "relation": "supports",
+        "reviewId": "bi-01-hillfort-roles-review"
+      },
+      {
+        "id": "bi-01-ireland-transition-evidence",
+        "claimId": "bi-01-ireland-transition",
+        "sourceId": "nmi-bronze",
+        "locator": "Introduction to the Bronze Age in Ireland, first paragraph",
+        "note": "A period convention, not a single transition event across the island.",
+        "relation": "supports",
+        "reviewId": "bi-01-ireland-transition-review"
+      },
+      {
+        "id": "bi-01-ireland-farmsteads-evidence",
+        "claimId": "bi-01-ireland-farmsteads",
+        "sourceId": "nmi-bronze",
+        "locator": "Late Bronze Age, paragraph beginning By the Late Bronze Age",
+        "note": "Earlier background: this passage alone does not establish continuity throughout 500–251 BCE.",
+        "relation": "supports",
+        "reviewId": "bi-01-ireland-farmsteads-review"
+      },
+      {
+        "id": "bi-01-ireland-cart-wheels-evidence",
+        "claimId": "bi-01-ireland-cart-wheels",
+        "sourceId": "nmi-guide",
+        "locator": "Printed page 14 (PDF page 9), paragraph ending with Doogarrymore",
+        "note": "The date range is 400–301 BCE; it does not establish a precise year or long-distance trade.",
+        "relation": "supports",
+        "reviewId": "bi-01-ireland-cart-wheels-review"
+      },
+      {
+        "id": "bi-01-ireland-bog-bodies-evidence",
+        "claimId": "bi-01-ireland-bog-bodies",
+        "sourceId": "nmi-guide",
+        "locator": "Printed page 48 (PDF page 26), Kingship and Sacrifice",
+        "note": "A broad overview date, not their lifespans. Do not present either as a confirmed contemporary of Socrates.",
+        "relation": "supports",
+        "reviewId": "bi-01-ireland-bog-bodies-review"
+      },
+      {
+        "id": "bi-01-ireland-kingship-evidence",
+        "claimId": "bi-01-ireland-kingship",
+        "sourceId": "nmi-kingship",
+        "locator": "Exhibition introduction, first heading",
+        "note": "Explicitly a theory; dates and geographical extent must be kept separate from the interpretation.",
+        "relation": "supports",
+        "reviewId": "bi-01-ireland-kingship-review"
+      },
+      {
+        "id": "bi-01-danebury-date-alternative",
+        "claimId": "bi-01-danebury-date",
+        "sourceId": "ford-saunders-danebury",
+        "locator": "Page 180, Introduction, site lifespan 550–100 BCE",
+        "note": "Different chronology from the circa 470 BCE construction date. Retain both and investigate what each dates.",
+        "relation": "contradicts",
+        "reviewId": null
+      }
+    ],
+    "reviews": [
+      {
+        "id": "bi-01-danebury-date-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. Date disputed: Ford and Saunders (1999), p. 180, describe the site as lasting from 550 to 100 BCE. Reconcile chronologies before choosing a timeline start.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-danebury-houses-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. Finds span the site’s occupation; not all houses were contemporary.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-danebury-grain-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. Site-level Iron Age context; phase-specific dating remains to be checked.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-danebury-livestock-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. Site-level context, not a description of every community in Britain.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-danebury-crafts-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. Activities are not yet assigned to individual occupation phases.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-danebury-exchange-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. The inspected account does not identify all trading partners or dates.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-danebury-shrines-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. An interpretation of structures, not certain identification of religious practice in a particular year.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-hillfort-roles-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. Broad interpretive context; do not infer a particular political system for the entire region.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-ireland-transition-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. A period convention, not a single transition event across the island.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-ireland-farmsteads-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. Earlier background: this passage alone does not establish continuity throughout 500–251 BCE.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-ireland-cart-wheels-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. The date range is 400–301 BCE; it does not establish a precise year or long-distance trade.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-ireland-bog-bodies-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. A broad overview date, not their lifespans. Do not present either as a confirmed contemporary of Socrates.",
+        "decision": "needs-review"
+      },
+      {
+        "id": "bi-01-ireland-kingship-review",
+        "reviewer": "AI-assisted source inspection; not independent expert review",
+        "date": "2026-11-22",
+        "reason": "Passage inspected. Explicitly a theory; dates and geographical extent must be kept separate from the interpretation.",
+        "decision": "needs-review"
+      }
+    ],
+    "accounts": [],
+    "batch": {
+      "id": "britain-ireland-500-251-01",
+      "packageId": "britain-ireland__bce-500-251",
+      "status": "drafted",
+      "date": "2026-11-22",
+      "method": "Manual batch with AI-assisted source inspection. Candidate statements remain drafts pending chronological and regional review.",
+      "inspectedSources": 6,
+      "failedSources": [
+        {
+          "url": "https://www.britishmuseum.org/sites/default/files/2019-09/visit-resource_prehistoric-britain-KS2.pdf",
+          "reason": "403 on retrieval; not used as supporting evidence."
+        }
+      ],
+      "gaps": [
+        "Most British material concerns one Hampshire site; Scotland, Wales, northern and western Britain still need research.",
+        "Irish settlement and livelihoods within 500–251 BCE need direct support; earlier Bronze Age evidence is background only.",
+        "Reconcile Danebury construction dates and date its activities by phase.",
+        "Broad archaeological date ranges do not prove contemporaneity with Socrates."
+      ],
+      "next": "Add excavation-based accounts for other subregions and narrow the candidate dates before timeline publication.",
+      "reviewedRelease": {
+        "statementCount": 22,
+        "url": "./#focus=britain-ireland&from=-469&to=-399&kind=all&area=all",
+        "note": "The regional collection now includes 22 reviewed statements across British and Irish examples, including later Corlea context. Original candidates remain for traceability. Neither regional work package has a complete overview.",
+        "claimMappings": {
+          "bi-01-danebury-houses": "bi-reviewed-danebury-houses",
+          "bi-01-danebury-grain": "bi-reviewed-danebury-grain",
+          "bi-01-danebury-livestock": "bi-reviewed-danebury-livestock",
+          "bi-01-danebury-crafts": "bi-reviewed-danebury-crafts",
+          "bi-01-danebury-exchange": "bi-reviewed-danebury-exchange",
+          "bi-01-danebury-shrines": "bi-reviewed-danebury-shrines",
+          "bi-01-danebury-date": "bi-reviewed-danebury-chronology"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "id": "britain-ireland-followup-02",
+  "date": "2026-11-22",
+  "status": "reviewed-extracts-not-complete-overview",
+  "sourceIds": [
+    "atlas-henllys",
+    "nmi-guide",
+    "corlea-excavation",
+    "corlea-geology"
+  ],
+  "acceptedClaimIds": [
+    "bi02-henllys-start",
+    "bi02-henllys-end",
+    "bi02-henllys-work",
+    "bi02-henllys-point",
+    "bi02-doogarrymore-wheels",
+    "bi02-corlea-date",
+    "bi02-corlea-dendro",
+    "bi02-corlea-purpose",
+    "bi02-corlea-point"
+  ],
+  "packageIds": [
+    "britain-ireland__bce-500-251",
+    "britain-ireland__bce-250-1"
+  ],
+  "notes": [
+    "Welsh site chronology and fourth-century Irish transport evidence supplement the first pilot.",
+    "Corlea is later context in the 250–1 BCE window, not coverage of Socrates’ lifetime.",
+    "The six-theme regional account remains incomplete."
+  ]
+}

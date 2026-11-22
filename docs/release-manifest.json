@@ -1,0 +1,113 @@
+{
+  "format": 1,
+  "files": [
+    {
+      "path": "app.js",
+      "sha256": "5106c2b21b09b8973dbc74df72b7af615c9a69a37dcb727f966e43000f41840d"
+    },
+    {
+      "path": "branding.css",
+      "sha256": "0f0aad168af19b8c992d373a21ec007d27572bdf1265146b911d6b6e04947e1f"
+    },
+    {
+      "path": "campaign.html",
+      "sha256": "3f97946c82a78b701991bf2ff2d515efcea6d86358a6bff15f498f9008dc16fa"
+    },
+    {
+      "path": "coverage-app.js",
+      "sha256": "57166814fc52c23896daa2f4e666d02d6d73665da8fe84ff2de877a86d83bb7a"
+    },
+    {
+      "path": "coverage-model.js",
+      "sha256": "fd5b1b333b04ecc18e3820f593106ff8c16b00e35d6e5f96fa670ac3a4aa4764"
+    },
+    {
+      "path": "coverage.css",
+      "sha256": "cdabd9b4ccbd5d269cdff531713209ab6ee5b13eab58fd070afdb04529881fe0"
+    },
+    {
+      "path": "coverage.html",
+      "sha256": "0d438e0b39f3c0d7851f295857a23ae959869ea51a63b692812b91a28f6183e7"
+    },
+    {
+      "path": "data/collection.json",
+      "sha256": "6d9d7549367379ba0d396b8806652995c52f37fa9a802ffc70738ac83eef8983"
+    },
+    {
+      "path": "data/coverage-research.json",
+      "sha256": "06d02a9d8f8d6b724a0c9660cd267d58f18bc40c667581386b6560be3b9ac274"
+    },
+    {
+      "path": "data/coverage.json",
+      "sha256": "05f995c6ee6dae08c7e4c7e1376391099dd8f7771db960b18b9460027823f298"
+    },
+    {
+      "path": "data/map-sources.json",
+      "sha256": "96a6923497a48d2091eddee67d860571e6a1c609f27a65943256ad42fa995eb9"
+    },
+    {
+      "path": "data/ne_50m_admin_0_countries.json",
+      "sha256": "388d4596b6f161d1b985c06df5156bfc6a69fd76702ab21e8aa68c065a7e44cc"
+    },
+    {
+      "path": "data/ne_50m_rivers_lake_centerlines.json",
+      "sha256": "30fcec0917f13f18d330bb221c76235b924b51220599208545d55dd1fff60682"
+    },
+    {
+      "path": "data/reviewed-evidence.json",
+      "sha256": "de87074ac0666f3c1738e2145a644821fb7d89cd7cde1422c98e97905f3cd21f"
+    },
+    {
+      "path": "data/reviewed-exploration.json",
+      "sha256": "658e675485f58cea6a4a1806b4fab20be1fecb3147de29fc0a9262dda5fbc041"
+    },
+    {
+      "path": "focus-app.js",
+      "sha256": "5205fa9ac67aae3956a08878a37d305621bc77b48e1019a8848133193882881a"
+    },
+    {
+      "path": "focus-map.js",
+      "sha256": "b15c7e1cc81842038c1f9746818b57a6d7b3db456c05487221a5a36af826c34b"
+    },
+    {
+      "path": "focus-model.js",
+      "sha256": "453da9d5b5bcb7fe1ade179105b2fe5892784faa5befa93d93365d3f98739c8c"
+    },
+    {
+      "path": "focus.css",
+      "sha256": "878c7b17d6c8ea11add24738c682b784c44a7608ed8c89dd81f729d1c1641b01"
+    },
+    {
+      "path": "index.html",
+      "sha256": "5ab7e14fff378efd9997ef6178b36db807a5518636e063dac4d8a38d532294a4"
+    },
+    {
+      "path": "model.js",
+      "sha256": "bec9c9571efc3ae508e5f77f370cd7c16f9fe3b28ea744e12760d22f35f9d7ea"
+    },
+    {
+      "path": "style.css",
+      "sha256": "b231af5ebae16320026ee5a55e2960d142aad808bf403e09e68aa79fa6152d5e"
+    },
+    {
+      "path": "timeline-model.js",
+      "sha256": "53ab547729bd2dc3ac46400f00973da9780d8e4ad9a0f2f2c13175d349a16ed1"
+    },
+    {
+      "path": "timeline.css",
+      "sha256": "af0d1f0bf601f5113a70456a575c9fab229301badb904410c3131d931e3554d7"
+    },
+    {
+      "path": "timeline.js",
+      "sha256": "d99466c5e6389f1a2bf48653c3a3d1c616e07054b22727d138a0f6edf7c22ca6"
+    },
+    {
+      "path": "view-url.js",
+      "sha256": "1d7981b1a837dc64273da3fe058008b3eebf44ff32b9474101fe1d1925dfd71e"
+    },
+    {
+      "path": "world-collection.js",
+      "sha256": "50b849cb3ec9cf95a70d6510a36e948692a1f538b6065fbe38da16eaaf6fe937"
+    }
+  ]
+}

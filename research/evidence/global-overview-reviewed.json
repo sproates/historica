@@ -1,0 +1,2368 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {
+      "id": "predynastic-egypt",
+      "name": "Predynastic Egypt",
+      "type": "period"
+    },
+    {
+      "id": "badarian-culture",
+      "name": "Badarian communities",
+      "type": "period"
+    },
+    {
+      "id": "maadi-culture",
+      "name": "Maadi cultural complex",
+      "type": "period"
+    },
+    {
+      "id": "naqada-one",
+      "name": "Naqada I communities",
+      "type": "period"
+    },
+    {
+      "id": "old-kingdom",
+      "name": "Egypt’s Old Kingdom",
+      "type": "period"
+    },
+    {
+      "id": "djoser-reign",
+      "name": "Djoser’s reign and Step Pyramid",
+      "type": "period"
+    },
+    {
+      "id": "khufu-reign",
+      "name": "Khufu and the Great Pyramid",
+      "type": "period"
+    },
+    {
+      "id": "new-kingdom",
+      "name": "Egypt’s New Kingdom",
+      "type": "period"
+    },
+    {
+      "id": "uruk-urban",
+      "name": "Urban life at Uruk",
+      "type": "period"
+    },
+    {
+      "id": "mesopotamian-city-states",
+      "name": "Mesopotamian city-states",
+      "type": "period"
+    },
+    {
+      "id": "indus-urban",
+      "name": "Indus urban communities",
+      "type": "period"
+    },
+    {
+      "id": "shang-context",
+      "name": "Shang China",
+      "type": "period"
+    },
+    {
+      "id": "western-zhou",
+      "name": "Western Zhou",
+      "type": "period"
+    },
+    {
+      "id": "eastern-zhou",
+      "name": "Eastern Zhou",
+      "type": "period"
+    },
+    {
+      "id": "western-han",
+      "name": "Western Han",
+      "type": "period"
+    },
+    {
+      "id": "eastern-han",
+      "name": "Eastern Han",
+      "type": "period"
+    },
+    {
+      "id": "han-wu-reign",
+      "name": "Emperor Wu’s reign",
+      "type": "period"
+    },
+    {
+      "id": "olmec-gulf",
+      "name": "Olmec Gulf Coast communities",
+      "type": "period"
+    },
+    {
+      "id": "la-venta-context",
+      "name": "Monumental La Venta",
+      "type": "period"
+    },
+    {
+      "id": "caral-context",
+      "name": "Caral and the Supe Valley",
+      "type": "period"
+    },
+    {
+      "id": "kush-overview",
+      "name": "Kush and the Meroe region",
+      "type": "period"
+    },
+    {
+      "id": "global-overview",
+      "name": "Ancient world overview",
+      "type": "area"
+    }
+  ],
+  "sources": [
+    {
+      "id": "global-predynastic",
+      "title": "Predynastic Period",
+      "url": "https://egymonuments.gov.eg/en/historical-periods/predynastic-period",
+      "creator": "Egypt Ministry of Tourism and Antiquities",
+      "locatorHint": "Date heading and paragraphs on Badarian, Maadi and Naqada cultures",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "global-old",
+      "title": "Egypt in the Old Kingdom (ca. 2649–2130 BCE)",
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-old-kingdom-ca-2649-2150-b-c",
+      "creator": "Tara Prakash, The Metropolitan Museum of Art",
+      "locatorHint": "Introduction and Dynasty 3 / Dynasty 4 sections",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "global-new",
+      "title": "Egypt in the New Kingdom (ca. 1550–1070 BCE)",
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-new-kingdom-ca-1550-1070-b-c",
+      "creator": "Catharine H. Roehrig, The Metropolitan Museum of Art",
+      "locatorHint": "Title and opening three prose paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "global-uruk",
+      "title": "Uruk: The First City",
+      "url": "https://www.metmuseum.org/essays/uruk-the-first-city",
+      "creator": "Department of Ancient Near Eastern Art, The Metropolitan Museum of Art",
+      "locatorHint": "Opening three prose paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "global-indus",
+      "title": "South Asia, 8000–2000 BCE",
+      "url": "https://www.metmuseum.org/toah/ht/02/ssa",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Timeline and Key Events: ca. 2600–1900 BCE",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "global-bronze-china",
+      "title": "Shang and Zhou Dynasties: The Bronze Age of China",
+      "url": "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china",
+      "creator": "Department of Asian Art, The Metropolitan Museum of Art",
+      "locatorHint": "Paragraphs on Shang, Western Zhou and Eastern Zhou",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "global-han",
+      "title": "Han Dynasty (206 BCE–220 CE)",
+      "url": "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d",
+      "creator": "Department of Asian Art, The Metropolitan Museum of Art",
+      "locatorHint": "Opening paragraph; Chang’an; Emperor Wu; Eastern Han and diplomacy paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "global-olmec",
+      "title": "Olmec Art",
+      "url": "https://www.metmuseum.org/essays/olmec-art",
+      "creator": "James Doyle, The Metropolitan Museum of Art",
+      "locatorHint": "Opening prose and paragraphs beginning “After about 900 B.C.” and “Large stone sculpture at La Venta”",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "global-caral",
+      "title": "Sacred City of Caral-Supe",
+      "url": "https://whc.unesco.org/en/list/1269/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Description; Integrity and Authenticity; coordinate listing",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "global-kush",
+      "title": "Archaeological Sites of the Island of Meroe",
+      "url": "https://whc.unesco.org/en/list/1336/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "English description, first two paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    }
+  ],
+  "claims": [
+    {
+      "id": "global-predynastic-egypt-1",
+      "subjectId": "predynastic-egypt",
+      "predicate": "historical-context",
+      "statement": "The Egyptian Ministry’s overview dates the Predynastic period to about 5500–3100 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Egyptian Ministry’s overview dates the Predynastic period to about 5500–3100 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -5500,
+          "latest": -5500,
+          "original": "circa 5500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-predynastic-egypt-1-evidence"
+      ],
+      "reviewId": "global-predynastic-egypt-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-predynastic-egypt-2",
+      "subjectId": "predynastic-egypt",
+      "predicate": "historical-context",
+      "statement": "Nile Valley communities developed distinct regional cultures before Egyptian political unification.",
+      "value": {
+        "type": "text",
+        "text": "Nile Valley communities developed distinct regional cultures before Egyptian political unification."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -5500,
+          "latest": -5500,
+          "original": "circa 5500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-predynastic-egypt-2-evidence"
+      ],
+      "reviewId": "global-predynastic-egypt-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-badarian-culture-1",
+      "subjectId": "badarian-culture",
+      "predicate": "historical-context",
+      "statement": "The ministry places Badarian culture around 5500–4000 BCE near modern Asyut.",
+      "value": {
+        "type": "text",
+        "text": "The ministry places Badarian culture around 5500–4000 BCE near modern Asyut."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -5500,
+          "latest": -5500,
+          "original": "circa 5500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -4000,
+          "latest": -4000,
+          "original": "circa 4000 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-badarian-culture-1-evidence"
+      ],
+      "reviewId": "global-badarian-culture-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-maadi-culture-1",
+      "subjectId": "maadi-culture",
+      "predicate": "historical-context",
+      "statement": "The Maadi cultural complex developed near modern Cairo around 4000–3100 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Maadi cultural complex developed near modern Cairo around 4000–3100 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -4000,
+          "latest": -4000,
+          "original": "circa 4000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-maadi-culture-1-evidence"
+      ],
+      "reviewId": "global-maadi-culture-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-naqada-one-1",
+      "subjectId": "naqada-one",
+      "predicate": "historical-context",
+      "statement": "Naqada I is dated around 4000–3500 BCE in Upper Egypt.",
+      "value": {
+        "type": "text",
+        "text": "Naqada I is dated around 4000–3500 BCE in Upper Egypt."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -4000,
+          "latest": -4000,
+          "original": "circa 4000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3500,
+          "latest": -3500,
+          "original": "circa 3500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-naqada-one-1-evidence"
+      ],
+      "reviewId": "global-naqada-one-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-naqada-one-2",
+      "subjectId": "naqada-one",
+      "predicate": "historical-context",
+      "statement": "The ministry describes increasing social differentiation towards the period’s end.",
+      "value": {
+        "type": "text",
+        "text": "The ministry describes increasing social differentiation towards the period’s end."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -4000,
+          "latest": -4000,
+          "original": "circa 4000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3500,
+          "latest": -3500,
+          "original": "circa 3500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-naqada-one-2-evidence"
+      ],
+      "reviewId": "global-naqada-one-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-old-kingdom-1",
+      "subjectId": "old-kingdom",
+      "predicate": "historical-context",
+      "statement": "The Met dates the Old Kingdom to approximately 2649–2130 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met dates the Old Kingdom to approximately 2649–2130 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2649,
+          "latest": -2649,
+          "original": "circa 2649 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2130,
+          "latest": -2130,
+          "original": "circa 2130 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-old-kingdom-1-evidence"
+      ],
+      "reviewId": "global-old-kingdom-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-old-kingdom-2",
+      "subjectId": "old-kingdom",
+      "predicate": "historical-context",
+      "statement": "Much of the surviving evidence for material culture comes from funerary contexts.",
+      "value": {
+        "type": "text",
+        "text": "Much of the surviving evidence for material culture comes from funerary contexts."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2649,
+          "latest": -2649,
+          "original": "circa 2649 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2130,
+          "latest": -2130,
+          "original": "circa 2130 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-old-kingdom-2-evidence"
+      ],
+      "reviewId": "global-old-kingdom-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-djoser-reign-1",
+      "subjectId": "djoser-reign",
+      "predicate": "historical-context",
+      "statement": "Djoser’s reign is dated approximately 2649–2630 BCE in this chronology.",
+      "value": {
+        "type": "text",
+        "text": "Djoser’s reign is dated approximately 2649–2630 BCE in this chronology."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2649,
+          "latest": -2649,
+          "original": "circa 2649 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2630,
+          "latest": -2630,
+          "original": "circa 2630 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-djoser-reign-1-evidence"
+      ],
+      "reviewId": "global-djoser-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-djoser-reign-2",
+      "subjectId": "djoser-reign",
+      "predicate": "historical-context",
+      "statement": "His Saqqara funerary complex included Egypt’s first pyramid.",
+      "value": {
+        "type": "text",
+        "text": "His Saqqara funerary complex included Egypt’s first pyramid."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2649,
+          "latest": -2649,
+          "original": "circa 2649 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2630,
+          "latest": -2630,
+          "original": "circa 2630 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-djoser-reign-2-evidence"
+      ],
+      "reviewId": "global-djoser-reign-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-khufu-reign-1",
+      "subjectId": "khufu-reign",
+      "predicate": "historical-context",
+      "statement": "The Met places Khufu’s reign around 2551–2528 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met places Khufu’s reign around 2551–2528 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2551,
+          "latest": -2551,
+          "original": "circa 2551 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2528,
+          "latest": -2528,
+          "original": "circa 2528 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-khufu-reign-1-evidence"
+      ],
+      "reviewId": "global-khufu-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-khufu-reign-2",
+      "subjectId": "khufu-reign",
+      "predicate": "historical-context",
+      "statement": "The Great Pyramid at Giza belongs to Khufu.",
+      "value": {
+        "type": "text",
+        "text": "The Great Pyramid at Giza belongs to Khufu."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2551,
+          "latest": -2551,
+          "original": "circa 2551 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2528,
+          "latest": -2528,
+          "original": "circa 2528 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-khufu-reign-2-evidence"
+      ],
+      "reviewId": "global-khufu-reign-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-new-kingdom-1",
+      "subjectId": "new-kingdom",
+      "predicate": "historical-context",
+      "statement": "The New Kingdom is dated approximately 1550–1070 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The New Kingdom is dated approximately 1550–1070 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1550,
+          "latest": -1550,
+          "original": "circa 1550 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1070,
+          "latest": -1070,
+          "original": "circa 1070 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-new-kingdom-1-evidence"
+      ],
+      "reviewId": "global-new-kingdom-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-new-kingdom-2",
+      "subjectId": "new-kingdom",
+      "predicate": "historical-context",
+      "statement": "Theban royal tombs and mortuary temples supported elaborate funerary traditions.",
+      "value": {
+        "type": "text",
+        "text": "Theban royal tombs and mortuary temples supported elaborate funerary traditions."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1550,
+          "latest": -1550,
+          "original": "circa 1550 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1070,
+          "latest": -1070,
+          "original": "circa 1070 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-new-kingdom-2-evidence"
+      ],
+      "reviewId": "global-new-kingdom-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-new-kingdom-3",
+      "subjectId": "new-kingdom",
+      "predicate": "historical-context",
+      "statement": "A settlement in western Thebes housed artists who made royal tombs.",
+      "value": {
+        "type": "text",
+        "text": "A settlement in western Thebes housed artists who made royal tombs."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1550,
+          "latest": -1550,
+          "original": "circa 1550 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1070,
+          "latest": -1070,
+          "original": "circa 1070 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-new-kingdom-3-evidence"
+      ],
+      "reviewId": "global-new-kingdom-3-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-uruk-urban-1",
+      "subjectId": "uruk-urban",
+      "predicate": "historical-context",
+      "statement": "Around 3200 BCE, Uruk was a major city in southern Mesopotamia.",
+      "value": {
+        "type": "text",
+        "text": "Around 3200 BCE, Uruk was a major city in southern Mesopotamia."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3200,
+          "latest": -3200,
+          "original": "circa 3200 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-uruk-urban-1-evidence"
+      ],
+      "reviewId": "global-uruk-urban-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-uruk-urban-2",
+      "subjectId": "uruk-urban",
+      "predicate": "historical-context",
+      "statement": "Clay pictographs recorded goods and workers’ rations, preceding later cuneiform.",
+      "value": {
+        "type": "text",
+        "text": "Clay pictographs recorded goods and workers’ rations, preceding later cuneiform."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3200,
+          "latest": -3200,
+          "original": "circa 3200 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-uruk-urban-2-evidence"
+      ],
+      "reviewId": "global-uruk-urban-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-mesopotamian-city-states-1",
+      "subjectId": "mesopotamian-city-states",
+      "predicate": "historical-context",
+      "statement": "The Met dates the Early Dynastic period to 2900–2350 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met dates the Early Dynastic period to 2900–2350 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2900,
+          "latest": -2900,
+          "original": "circa 2900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2350,
+          "latest": -2350,
+          "original": "circa 2350 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-mesopotamian-city-states-1-evidence"
+      ],
+      "reviewId": "global-mesopotamian-city-states-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-mesopotamian-city-states-2",
+      "subjectId": "mesopotamian-city-states",
+      "predicate": "historical-context",
+      "statement": "City rulers acquired luxury materials through trade and conquest.",
+      "value": {
+        "type": "text",
+        "text": "City rulers acquired luxury materials through trade and conquest."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2900,
+          "latest": -2900,
+          "original": "circa 2900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2350,
+          "latest": -2350,
+          "original": "circa 2350 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-mesopotamian-city-states-2-evidence"
+      ],
+      "reviewId": "global-mesopotamian-city-states-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-indus-urban-1",
+      "subjectId": "indus-urban",
+      "predicate": "historical-context",
+      "statement": "The Met dates the flourishing urban Indus civilization to approximately 2600–1900 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met dates the flourishing urban Indus civilization to approximately 2600–1900 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2600,
+          "latest": -2600,
+          "original": "circa 2600 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1900,
+          "latest": -1900,
+          "original": "circa 1900 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-indus-urban-1-evidence"
+      ],
+      "reviewId": "global-indus-urban-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-indus-urban-2",
+      "subjectId": "indus-urban",
+      "predicate": "historical-context",
+      "statement": "Harappa and Mohenjo Daro were large settlements connected with western trading partners.",
+      "value": {
+        "type": "text",
+        "text": "Harappa and Mohenjo Daro were large settlements connected with western trading partners."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2600,
+          "latest": -2600,
+          "original": "circa 2600 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1900,
+          "latest": -1900,
+          "original": "circa 1900 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-indus-urban-2-evidence"
+      ],
+      "reviewId": "global-indus-urban-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-indus-urban-3",
+      "subjectId": "indus-urban",
+      "predicate": "historical-context",
+      "statement": "Seals preserve writing that remains undeciphered.",
+      "value": {
+        "type": "text",
+        "text": "Seals preserve writing that remains undeciphered."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2600,
+          "latest": -2600,
+          "original": "circa 2600 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1900,
+          "latest": -1900,
+          "original": "circa 1900 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-indus-urban-3-evidence"
+      ],
+      "reviewId": "global-indus-urban-3-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-shang-context-1",
+      "subjectId": "shang-context",
+      "predicate": "historical-context",
+      "statement": "The Shang dynasty is dated approximately 1600–1046 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Shang dynasty is dated approximately 1600–1046 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1600,
+          "latest": -1600,
+          "original": "circa 1600 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1046,
+          "latest": -1046,
+          "original": "circa 1046 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-shang-context-1-evidence"
+      ],
+      "reviewId": "global-shang-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-shang-context-2",
+      "subjectId": "shang-context",
+      "predicate": "historical-context",
+      "statement": "Its political centre lay along the Yellow River in present-day Henan.",
+      "value": {
+        "type": "text",
+        "text": "Its political centre lay along the Yellow River in present-day Henan."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1600,
+          "latest": -1600,
+          "original": "circa 1600 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1046,
+          "latest": -1046,
+          "original": "circa 1046 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-shang-context-2-evidence"
+      ],
+      "reviewId": "global-shang-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-western-zhou-1",
+      "subjectId": "western-zhou",
+      "predicate": "historical-context",
+      "statement": "The Western Zhou period is dated 1046–771 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Western Zhou period is dated 1046–771 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1046,
+          "latest": -1046,
+          "original": "circa 1046 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -771,
+          "latest": -771,
+          "original": "circa 771 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-western-zhou-1-evidence"
+      ],
+      "reviewId": "global-western-zhou-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-western-zhou-2",
+      "subjectId": "western-zhou",
+      "predicate": "historical-context",
+      "statement": "Zhou rulers exercised authority across much of central China.",
+      "value": {
+        "type": "text",
+        "text": "Zhou rulers exercised authority across much of central China."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1046,
+          "latest": -1046,
+          "original": "circa 1046 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -771,
+          "latest": -771,
+          "original": "circa 771 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-western-zhou-2-evidence"
+      ],
+      "reviewId": "global-western-zhou-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-eastern-zhou-1",
+      "subjectId": "eastern-zhou",
+      "predicate": "historical-context",
+      "statement": "The Eastern Zhou period is dated 770–256 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Eastern Zhou period is dated 770–256 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -770,
+          "latest": -770,
+          "original": "circa 770 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -256,
+          "latest": -256,
+          "original": "circa 256 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-eastern-zhou-1-evidence"
+      ],
+      "reviewId": "global-eastern-zhou-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-eastern-zhou-2",
+      "subjectId": "eastern-zhou",
+      "predicate": "historical-context",
+      "statement": "After the capital moved to Luoyang, regional states became increasingly autonomous.",
+      "value": {
+        "type": "text",
+        "text": "After the capital moved to Luoyang, regional states became increasingly autonomous."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -770,
+          "latest": -770,
+          "original": "circa 770 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -256,
+          "latest": -256,
+          "original": "circa 256 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-eastern-zhou-2-evidence"
+      ],
+      "reviewId": "global-eastern-zhou-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-western-han-1",
+      "subjectId": "western-han",
+      "predicate": "historical-context",
+      "statement": "The Western Han period lasted from 206 BCE to 9 CE.",
+      "value": {
+        "type": "text",
+        "text": "The Western Han period lasted from 206 BCE to 9 CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -206,
+          "latest": -206,
+          "original": "circa 206 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 9,
+          "latest": 9,
+          "original": "circa 9 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-western-han-1-evidence"
+      ],
+      "reviewId": "global-western-han-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-western-han-2",
+      "subjectId": "western-han",
+      "predicate": "historical-context",
+      "statement": "Chang’an was its capital, with palaces, residential wards and market areas.",
+      "value": {
+        "type": "text",
+        "text": "Chang’an was its capital, with palaces, residential wards and market areas."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -206,
+          "latest": -206,
+          "original": "circa 206 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 9,
+          "latest": 9,
+          "original": "circa 9 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-western-han-2-evidence"
+      ],
+      "reviewId": "global-western-han-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-eastern-han-1",
+      "subjectId": "eastern-han",
+      "predicate": "historical-context",
+      "statement": "The Eastern Han period lasted from 25 to 220 CE.",
+      "value": {
+        "type": "text",
+        "text": "The Eastern Han period lasted from 25 to 220 CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 25,
+          "latest": 25,
+          "original": "circa 25 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 220,
+          "latest": 220,
+          "original": "circa 220 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-eastern-han-1-evidence"
+      ],
+      "reviewId": "global-eastern-han-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-eastern-han-2",
+      "subjectId": "eastern-han",
+      "predicate": "historical-context",
+      "statement": "Its capital was Luoyang; diplomacy and long-distance exchange expanded.",
+      "value": {
+        "type": "text",
+        "text": "Its capital was Luoyang; diplomacy and long-distance exchange expanded."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 25,
+          "latest": 25,
+          "original": "circa 25 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 220,
+          "latest": 220,
+          "original": "circa 220 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-eastern-han-2-evidence"
+      ],
+      "reviewId": "global-eastern-han-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-han-wu-reign-1",
+      "subjectId": "han-wu-reign",
+      "predicate": "historical-context",
+      "statement": "Emperor Wu ruled during 141–87 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Emperor Wu ruled during 141–87 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -141,
+          "latest": -141,
+          "original": "circa 141 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -87,
+          "latest": -87,
+          "original": "circa 87 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-han-wu-reign-1-evidence"
+      ],
+      "reviewId": "global-han-wu-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-han-wu-reign-2",
+      "subjectId": "han-wu-reign",
+      "predicate": "historical-context",
+      "statement": "His reign promoted Confucian learning in official conduct and education.",
+      "value": {
+        "type": "text",
+        "text": "His reign promoted Confucian learning in official conduct and education."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -141,
+          "latest": -141,
+          "original": "circa 141 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -87,
+          "latest": -87,
+          "original": "circa 87 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-han-wu-reign-2-evidence"
+      ],
+      "reviewId": "global-han-wu-reign-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-olmec-gulf-1",
+      "subjectId": "olmec-gulf",
+      "predicate": "historical-context",
+      "statement": "Olmec cultural and artistic activity flourished around 1200–400 BCE in Veracruz and Tabasco.",
+      "value": {
+        "type": "text",
+        "text": "Olmec cultural and artistic activity flourished around 1200–400 BCE in Veracruz and Tabasco."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1200,
+          "latest": -1200,
+          "original": "circa 1200 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -400,
+          "latest": -400,
+          "original": "circa 400 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-olmec-gulf-1-evidence"
+      ],
+      "reviewId": "global-olmec-gulf-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-olmec-gulf-2",
+      "subjectId": "olmec-gulf",
+      "predicate": "historical-context",
+      "statement": "Sculptors used imported volcanic stone and jade.",
+      "value": {
+        "type": "text",
+        "text": "Sculptors used imported volcanic stone and jade."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1200,
+          "latest": -1200,
+          "original": "circa 1200 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -400,
+          "latest": -400,
+          "original": "circa 400 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-olmec-gulf-2-evidence"
+      ],
+      "reviewId": "global-olmec-gulf-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-la-venta-context-1",
+      "subjectId": "la-venta-context",
+      "predicate": "historical-context",
+      "statement": "After about 900 BCE, La Venta developed platforms and a major pyramid.",
+      "value": {
+        "type": "text",
+        "text": "After about 900 BCE, La Venta developed platforms and a major pyramid."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -900,
+          "latest": -900,
+          "original": "circa 900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -400,
+          "latest": -400,
+          "original": "circa 400 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-la-venta-context-1-evidence"
+      ],
+      "reviewId": "global-la-venta-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-la-venta-context-2",
+      "subjectId": "la-venta-context",
+      "predicate": "historical-context",
+      "statement": "Monumental building and carving there ceased after about 400 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Monumental building and carving there ceased after about 400 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -900,
+          "latest": -900,
+          "original": "circa 900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -400,
+          "latest": -400,
+          "original": "circa 400 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-la-venta-context-2-evidence"
+      ],
+      "reviewId": "global-la-venta-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-caral-context-1",
+      "subjectId": "caral-context",
+      "predicate": "historical-context",
+      "statement": "UNESCO reports Caral’s development between approximately 3000 and 1800 BCE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO reports Caral’s development between approximately 3000 and 1800 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1800,
+          "latest": -1800,
+          "original": "circa 1800 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-caral-context-1-evidence"
+      ],
+      "reviewId": "global-caral-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-caral-context-2",
+      "subjectId": "caral-context",
+      "predicate": "historical-context",
+      "statement": "Its architecture includes large platform mounds and sunken circular courts.",
+      "value": {
+        "type": "text",
+        "text": "Its architecture includes large platform mounds and sunken circular courts."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1800,
+          "latest": -1800,
+          "original": "circa 1800 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-caral-context-2-evidence"
+      ],
+      "reviewId": "global-caral-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-caral-context-point",
+      "subjectId": "caral-context",
+      "predicate": "site-reference",
+      "statement": "UNESCO’s reference position places Caral in Peru’s Supe Valley.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -77.5213888888889,
+          -10.891666666666666
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1800,
+          "latest": -1800,
+          "original": "circa 1800 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-caral-context-point-evidence"
+      ],
+      "reviewId": "global-caral-context-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-kush-overview-1",
+      "subjectId": "kush-overview",
+      "predicate": "historical-context",
+      "statement": "UNESCO describes Kush as a major power from the eighth century BCE to the fourth century CE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO describes Kush as a major power from the eighth century BCE to the fourth century CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -800,
+          "latest": -800,
+          "original": "circa 800 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 400,
+          "latest": 400,
+          "original": "circa 400 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-kush-overview-1-evidence"
+      ],
+      "reviewId": "global-kush-overview-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-kush-overview-2",
+      "subjectId": "kush-overview",
+      "predicate": "historical-context",
+      "statement": "The Meroe region preserves royal, religious, domestic and water-management remains.",
+      "value": {
+        "type": "text",
+        "text": "The Meroe region preserves royal, religious, domestic and water-management remains."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -800,
+          "latest": -800,
+          "original": "circa 800 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 400,
+          "latest": 400,
+          "original": "circa 400 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-kush-overview-2-evidence"
+      ],
+      "reviewId": "global-kush-overview-2-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "global-predynastic-egypt-1-evidence",
+      "claimId": "global-predynastic-egypt-1",
+      "sourceId": "global-predynastic",
+      "locator": "Date heading and paragraphs on Badarian, Maadi and Naqada cultures",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-predynastic-egypt-1-review"
+    },
+    {
+      "id": "global-predynastic-egypt-2-evidence",
+      "claimId": "global-predynastic-egypt-2",
+      "sourceId": "global-predynastic",
+      "locator": "Date heading and paragraphs on Badarian, Maadi and Naqada cultures",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-predynastic-egypt-2-review"
+    },
+    {
+      "id": "global-badarian-culture-1-evidence",
+      "claimId": "global-badarian-culture-1",
+      "sourceId": "global-predynastic",
+      "locator": "Date heading and paragraphs on Badarian, Maadi and Naqada cultures",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-badarian-culture-1-review"
+    },
+    {
+      "id": "global-maadi-culture-1-evidence",
+      "claimId": "global-maadi-culture-1",
+      "sourceId": "global-predynastic",
+      "locator": "Date heading and paragraphs on Badarian, Maadi and Naqada cultures",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-maadi-culture-1-review"
+    },
+    {
+      "id": "global-naqada-one-1-evidence",
+      "claimId": "global-naqada-one-1",
+      "sourceId": "global-predynastic",
+      "locator": "Date heading and paragraphs on Badarian, Maadi and Naqada cultures",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-naqada-one-1-review"
+    },
+    {
+      "id": "global-naqada-one-2-evidence",
+      "claimId": "global-naqada-one-2",
+      "sourceId": "global-predynastic",
+      "locator": "Date heading and paragraphs on Badarian, Maadi and Naqada cultures",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-naqada-one-2-review"
+    },
+    {
+      "id": "global-old-kingdom-1-evidence",
+      "claimId": "global-old-kingdom-1",
+      "sourceId": "global-old",
+      "locator": "Introduction and Dynasty 3 / Dynasty 4 sections",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-old-kingdom-1-review"
+    },
+    {
+      "id": "global-old-kingdom-2-evidence",
+      "claimId": "global-old-kingdom-2",
+      "sourceId": "global-old",
+      "locator": "Introduction and Dynasty 3 / Dynasty 4 sections",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-old-kingdom-2-review"
+    },
+    {
+      "id": "global-djoser-reign-1-evidence",
+      "claimId": "global-djoser-reign-1",
+      "sourceId": "global-old",
+      "locator": "Introduction and Dynasty 3 / Dynasty 4 sections",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-djoser-reign-1-review"
+    },
+    {
+      "id": "global-djoser-reign-2-evidence",
+      "claimId": "global-djoser-reign-2",
+      "sourceId": "global-old",
+      "locator": "Introduction and Dynasty 3 / Dynasty 4 sections",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-djoser-reign-2-review"
+    },
+    {
+      "id": "global-khufu-reign-1-evidence",
+      "claimId": "global-khufu-reign-1",
+      "sourceId": "global-old",
+      "locator": "Introduction and Dynasty 3 / Dynasty 4 sections",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-khufu-reign-1-review"
+    },
+    {
+      "id": "global-khufu-reign-2-evidence",
+      "claimId": "global-khufu-reign-2",
+      "sourceId": "global-old",
+      "locator": "Introduction and Dynasty 3 / Dynasty 4 sections",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-khufu-reign-2-review"
+    },
+    {
+      "id": "global-new-kingdom-1-evidence",
+      "claimId": "global-new-kingdom-1",
+      "sourceId": "global-new",
+      "locator": "Title and opening three prose paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-new-kingdom-1-review"
+    },
+    {
+      "id": "global-new-kingdom-2-evidence",
+      "claimId": "global-new-kingdom-2",
+      "sourceId": "global-new",
+      "locator": "Title and opening three prose paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-new-kingdom-2-review"
+    },
+    {
+      "id": "global-new-kingdom-3-evidence",
+      "claimId": "global-new-kingdom-3",
+      "sourceId": "global-new",
+      "locator": "Title and opening three prose paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-new-kingdom-3-review"
+    },
+    {
+      "id": "global-uruk-urban-1-evidence",
+      "claimId": "global-uruk-urban-1",
+      "sourceId": "global-uruk",
+      "locator": "Opening three prose paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-uruk-urban-1-review"
+    },
+    {
+      "id": "global-uruk-urban-2-evidence",
+      "claimId": "global-uruk-urban-2",
+      "sourceId": "global-uruk",
+      "locator": "Opening three prose paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-uruk-urban-2-review"
+    },
+    {
+      "id": "global-mesopotamian-city-states-1-evidence",
+      "claimId": "global-mesopotamian-city-states-1",
+      "sourceId": "global-uruk",
+      "locator": "Opening three prose paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-mesopotamian-city-states-1-review"
+    },
+    {
+      "id": "global-mesopotamian-city-states-2-evidence",
+      "claimId": "global-mesopotamian-city-states-2",
+      "sourceId": "global-uruk",
+      "locator": "Opening three prose paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-mesopotamian-city-states-2-review"
+    },
+    {
+      "id": "global-indus-urban-1-evidence",
+      "claimId": "global-indus-urban-1",
+      "sourceId": "global-indus",
+      "locator": "Timeline and Key Events: ca. 2600–1900 BCE",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-indus-urban-1-review"
+    },
+    {
+      "id": "global-indus-urban-2-evidence",
+      "claimId": "global-indus-urban-2",
+      "sourceId": "global-indus",
+      "locator": "Timeline and Key Events: ca. 2600–1900 BCE",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-indus-urban-2-review"
+    },
+    {
+      "id": "global-indus-urban-3-evidence",
+      "claimId": "global-indus-urban-3",
+      "sourceId": "global-indus",
+      "locator": "Timeline and Key Events: ca. 2600–1900 BCE",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-indus-urban-3-review"
+    },
+    {
+      "id": "global-shang-context-1-evidence",
+      "claimId": "global-shang-context-1",
+      "sourceId": "global-bronze-china",
+      "locator": "Paragraphs on Shang, Western Zhou and Eastern Zhou",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-shang-context-1-review"
+    },
+    {
+      "id": "global-shang-context-2-evidence",
+      "claimId": "global-shang-context-2",
+      "sourceId": "global-bronze-china",
+      "locator": "Paragraphs on Shang, Western Zhou and Eastern Zhou",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-shang-context-2-review"
+    },
+    {
+      "id": "global-western-zhou-1-evidence",
+      "claimId": "global-western-zhou-1",
+      "sourceId": "global-bronze-china",
+      "locator": "Paragraphs on Shang, Western Zhou and Eastern Zhou",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-western-zhou-1-review"
+    },
+    {
+      "id": "global-western-zhou-2-evidence",
+      "claimId": "global-western-zhou-2",
+      "sourceId": "global-bronze-china",
+      "locator": "Paragraphs on Shang, Western Zhou and Eastern Zhou",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-western-zhou-2-review"
+    },
+    {
+      "id": "global-eastern-zhou-1-evidence",
+      "claimId": "global-eastern-zhou-1",
+      "sourceId": "global-bronze-china",
+      "locator": "Paragraphs on Shang, Western Zhou and Eastern Zhou",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-eastern-zhou-1-review"
+    },
+    {
+      "id": "global-eastern-zhou-2-evidence",
+      "claimId": "global-eastern-zhou-2",
+      "sourceId": "global-bronze-china",
+      "locator": "Paragraphs on Shang, Western Zhou and Eastern Zhou",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-eastern-zhou-2-review"
+    },
+    {
+      "id": "global-western-han-1-evidence",
+      "claimId": "global-western-han-1",
+      "sourceId": "global-han",
+      "locator": "Opening paragraph; Chang’an; Emperor Wu; Eastern Han and diplomacy paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-western-han-1-review"
+    },
+    {
+      "id": "global-western-han-2-evidence",
+      "claimId": "global-western-han-2",
+      "sourceId": "global-han",
+      "locator": "Opening paragraph; Chang’an; Emperor Wu; Eastern Han and diplomacy paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-western-han-2-review"
+    },
+    {
+      "id": "global-eastern-han-1-evidence",
+      "claimId": "global-eastern-han-1",
+      "sourceId": "global-han",
+      "locator": "Opening paragraph; Chang’an; Emperor Wu; Eastern Han and diplomacy paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-eastern-han-1-review"
+    },
+    {
+      "id": "global-eastern-han-2-evidence",
+      "claimId": "global-eastern-han-2",
+      "sourceId": "global-han",
+      "locator": "Opening paragraph; Chang’an; Emperor Wu; Eastern Han and diplomacy paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-eastern-han-2-review"
+    },
+    {
+      "id": "global-han-wu-reign-1-evidence",
+      "claimId": "global-han-wu-reign-1",
+      "sourceId": "global-han",
+      "locator": "Opening paragraph; Chang’an; Emperor Wu; Eastern Han and diplomacy paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-han-wu-reign-1-review"
+    },
+    {
+      "id": "global-han-wu-reign-2-evidence",
+      "claimId": "global-han-wu-reign-2",
+      "sourceId": "global-han",
+      "locator": "Opening paragraph; Chang’an; Emperor Wu; Eastern Han and diplomacy paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-han-wu-reign-2-review"
+    },
+    {
+      "id": "global-olmec-gulf-1-evidence",
+      "claimId": "global-olmec-gulf-1",
+      "sourceId": "global-olmec",
+      "locator": "Opening prose and paragraphs beginning “After about 900 B.C.” and “Large stone sculpture at La Venta”",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-olmec-gulf-1-review"
+    },
+    {
+      "id": "global-olmec-gulf-2-evidence",
+      "claimId": "global-olmec-gulf-2",
+      "sourceId": "global-olmec",
+      "locator": "Opening prose and paragraphs beginning “After about 900 B.C.” and “Large stone sculpture at La Venta”",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-olmec-gulf-2-review"
+    },
+    {
+      "id": "global-la-venta-context-1-evidence",
+      "claimId": "global-la-venta-context-1",
+      "sourceId": "global-olmec",
+      "locator": "Opening prose and paragraphs beginning “After about 900 B.C.” and “Large stone sculpture at La Venta”",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-la-venta-context-1-review"
+    },
+    {
+      "id": "global-la-venta-context-2-evidence",
+      "claimId": "global-la-venta-context-2",
+      "sourceId": "global-olmec",
+      "locator": "Opening prose and paragraphs beginning “After about 900 B.C.” and “Large stone sculpture at La Venta”",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-la-venta-context-2-review"
+    },
+    {
+      "id": "global-caral-context-1-evidence",
+      "claimId": "global-caral-context-1",
+      "sourceId": "global-caral",
+      "locator": "Description; Integrity and Authenticity; coordinate listing",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-caral-context-1-review"
+    },
+    {
+      "id": "global-caral-context-2-evidence",
+      "claimId": "global-caral-context-2",
+      "sourceId": "global-caral",
+      "locator": "Description; Integrity and Authenticity; coordinate listing",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-caral-context-2-review"
+    },
+    {
+      "id": "global-caral-context-point-evidence",
+      "claimId": "global-caral-context-point",
+      "sourceId": "global-caral",
+      "locator": "Description; Integrity and Authenticity; coordinate listing",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-caral-context-point-review"
+    },
+    {
+      "id": "global-kush-overview-1-evidence",
+      "claimId": "global-kush-overview-1",
+      "sourceId": "global-kush",
+      "locator": "English description, first two paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-kush-overview-1-review"
+    },
+    {
+      "id": "global-kush-overview-2-evidence",
+      "claimId": "global-kush-overview-2",
+      "sourceId": "global-kush",
+      "locator": "English description, first two paragraphs",
+      "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
+      "relation": "supports",
+      "reviewId": "global-kush-overview-2-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "global-predynastic-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-predynastic-egypt-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-badarian-culture-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-maadi-culture-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-naqada-one-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-naqada-one-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-old-kingdom-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-old-kingdom-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-djoser-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-djoser-reign-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-khufu-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-khufu-reign-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-new-kingdom-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-new-kingdom-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-new-kingdom-3-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-uruk-urban-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-uruk-urban-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-mesopotamian-city-states-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-mesopotamian-city-states-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-indus-urban-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-indus-urban-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-indus-urban-3-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-shang-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-shang-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-western-zhou-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-western-zhou-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-eastern-zhou-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-eastern-zhou-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-western-han-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-western-han-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-eastern-han-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-eastern-han-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-han-wu-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-han-wu-reign-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-olmec-gulf-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-olmec-gulf-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-la-venta-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-la-venta-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-caral-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-caral-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-caral-context-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-kush-overview-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-kush-overview-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    }
+  ],
+  "accounts": []
+}

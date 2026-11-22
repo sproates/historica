@@ -1,0 +1,15 @@
+{
+  "name": "historica",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --bind 127.0.0.1 --directory web",
+    "test": "node --test tests/*.test.mjs",
+    "start:lan": "python3 -m http.server 4173 --bind 0.0.0.0 --directory web",
+    "validate:research": "node scripts/validate-evidence.mjs",
+    "audit:prototype": "node scripts/audit-prototype.mjs",
+    "build:evidence": "node scripts/build-evidence.mjs",
+    "build:coverage": "node scripts/build-coverage.mjs",
+    "build:site": "npm run build:evidence && npm run build:coverage && npm test && node scripts/build-site.mjs"
+  }
+}

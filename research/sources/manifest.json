@@ -1,0 +1,164 @@
+[
+  {
+    "file": "pleiades-961886.json",
+    "retrieved": "2026-11-22",
+    "download_url": "https://raw.githubusercontent.com/isawnyu/pleiades.datasets/main/data/json/9/6/1/8/961886.json",
+    "canonical_url": "https://pleiades.stoa.org/places/961886",
+    "sha256": "9802679b007f8c97bc78d94760639da451c6d1a364e0fe8314261eed9cf47d9c",
+    "licence": "CC-BY-3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "creators": [
+      {
+        "name": "St J. Simpson",
+        "username": null
+      },
+      {
+        "name": "F. Hiebert",
+        "username": null
+      },
+      {
+        "name": "P.L. Kohl",
+        "username": null
+      }
+    ],
+    "contributors": [
+      {
+        "homepage": null,
+        "name": "Brady Kiesling",
+        "uri": "https://pleiades.stoa.org/author/bkiesling",
+        "username": "bkiesling"
+      },
+      {
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies",
+        "username": "sgillies"
+      },
+      {
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker",
+        "username": "jbecker"
+      },
+      {
+        "name": "Wikidata contributors",
+        "username": null
+      },
+      {
+        "name": "H. Kopp",
+        "username": null
+      },
+      {
+        "homepage": null,
+        "name": "Andy Meadows",
+        "uri": "https://pleiades.stoa.org/author/ameadows",
+        "username": "ameadows"
+      },
+      {
+        "name": "World Historical Gazetteer",
+        "username": null
+      },
+      {
+        "name": "B. Siewert-Mayer",
+        "username": null
+      },
+      {
+        "name": "WHG",
+        "username": null
+      },
+      {
+        "name": "R. Talbert",
+        "username": null
+      },
+      {
+        "name": "Ethan Gruber",
+        "username": null
+      },
+      {
+        "name": "W. Röllig",
+        "username": null
+      },
+      {
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase",
+        "username": "thomase"
+      },
+      {
+        "name": "DARMC",
+        "username": null
+      },
+      {
+        "homepage": null,
+        "name": "Sebastian Heath",
+        "uri": "https://pleiades.stoa.org/author/sebs",
+        "username": "sebs"
+      },
+      {
+        "homepage": null,
+        "name": "Eric Kansa",
+        "uri": "https://pleiades.stoa.org/author/ekansa",
+        "username": "ekansa"
+      },
+      {
+        "homepage": null,
+        "name": "Francis Deblauwe",
+        "uri": "https://pleiades.stoa.org/author/fdeblauwe",
+        "username": "fdeblauwe"
+      },
+      {
+        "homepage": null,
+        "name": "Enes Yılandiloğlu",
+        "uri": "https://pleiades.stoa.org/author/enesy",
+        "username": "enesy"
+      }
+    ],
+    "modifications": "None",
+    "use_status": "Research input; underlying location provenance needs review before application import."
+  },
+  {
+    "file": "pleiades-971705.json",
+    "retrieved": "2026-11-22",
+    "download_url": "https://raw.githubusercontent.com/isawnyu/pleiades.datasets/main/data/json/9/7/1/7/971705.json",
+    "canonical_url": "https://pleiades.stoa.org/places/971705",
+    "sha256": "cc7407a61ba96c4bf3e3de99772931b8b74d7d20b82e3480c7e2ebf527ecba7d",
+    "licence": "CC-BY-3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "creators": [
+      {
+        "name": "F.T. Hiebert",
+        "username": null
+      },
+      {
+        "name": "P.L. Kohl",
+        "username": null
+      }
+    ],
+    "contributors": [
+      {
+        "homepage": null,
+        "name": "Sean Gillies",
+        "uri": "https://pleiades.stoa.org/author/sgillies",
+        "username": "sgillies"
+      },
+      {
+        "homepage": null,
+        "name": "Jeffrey Becker",
+        "uri": "https://pleiades.stoa.org/author/jbecker",
+        "username": "jbecker"
+      },
+      {
+        "name": "R. Talbert",
+        "username": null
+      },
+      {
+        "homepage": null,
+        "name": "Tom Elliott",
+        "uri": "https://pleiades.stoa.org/author/thomase",
+        "username": "thomase"
+      }
+    ],
+    "modifications": "None",
+    "use_status": "Research input; underlying location provenance needs review before application import."
+  }
+]

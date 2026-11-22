@@ -1,0 +1,942 @@
+{
+  "entities": [
+    {
+      "id": "britain-ireland",
+      "type": "area",
+      "title": "Britain and Ireland",
+      "startYear": -500,
+      "endYear": -251,
+      "description": "Explore selected archaeological evidence from Britain and Ireland alongside the wider world.",
+      "note": "500–251 BCE is an editorial research window, not the start or end of these places. Coverage is partial; the examples below do not represent every community.",
+      "point": null,
+      "url": "https://prehistoricsociety.org/sites/prehistoricsociety.org/files/resources/ps-intros-ia-3-hillforts.pdf",
+      "contextual": true,
+      "claimIds": [],
+      "dateLabel": "Research window",
+      "regionIds": [
+        "britain-ireland"
+      ]
+    },
+    {
+      "id": "danebury",
+      "type": "area",
+      "title": "Danebury",
+      "startYear": -550,
+      "endYear": -100,
+      "description": "A hillfort in Hampshire with evidence of houses, food storage and crafts.",
+      "note": "The study range follows an older 550–100 BCE chronology; another account dates construction around 470 BCE. Start dates remain disputed. The map marks the site, not a territory.",
+      "point": [
+        -1.53973,
+        51.13671
+      ],
+      "url": "https://hillforts.arch.ox.ac.uk/records/EN3828.html",
+      "contextual": true,
+      "claimIds": [
+        "bi-reviewed-danebury-houses",
+        "bi-reviewed-danebury-grain",
+        "bi-reviewed-danebury-livestock",
+        "bi-reviewed-danebury-crafts",
+        "bi-reviewed-danebury-exchange",
+        "bi-reviewed-danebury-shrines",
+        "bi-reviewed-danebury-chronology",
+        "bi-reviewed-danebury-location"
+      ],
+      "dateLabel": "Research window",
+      "regionIds": [
+        "britain-ireland"
+      ]
+    },
+    {
+      "id": "danebury-life",
+      "type": "period",
+      "title": "Life at Danebury",
+      "startYear": -550,
+      "endYear": -100,
+      "description": "Archaeology reveals roundhouses, grain storage and craft activities at this Hampshire hillfort.",
+      "note": "Broad site history, not year-by-year activity. Construction is variously dated around 550 or 470 BCE; individual buildings and activities need phase-specific dating.",
+      "point": [
+        -1.53973,
+        51.13671
+      ],
+      "url": "https://www.hants.gov.uk/thingstodo/countryside/finder/danebury",
+      "contextual": true,
+      "claimIds": [
+        "bi-reviewed-danebury-houses",
+        "bi-reviewed-danebury-grain",
+        "bi-reviewed-danebury-livestock",
+        "bi-reviewed-danebury-crafts",
+        "bi-reviewed-danebury-exchange",
+        "bi-reviewed-danebury-shrines",
+        "bi-reviewed-danebury-chronology",
+        "bi-reviewed-danebury-location"
+      ],
+      "dateLabel": "Broad archaeological context",
+      "regionIds": [
+        "britain-ireland"
+      ]
+    },
+    {
+      "id": "broxmouth",
+      "type": "period",
+      "title": "Broxmouth’s changing settlement",
+      "startYear": -640,
+      "endYear": 210,
+      "description": "A Scottish settlement changed between enclosed and unenclosed forms over a long Iron Age sequence.",
+      "note": "Modelled start: 640–570 BCE; abandonment: 155–210 CE, each at 68% probability. The band uses the outer limits of those estimates, not exact dates or a confidence interval for every year. No precise map point is included yet.",
+      "point": null,
+      "url": "https://eprints.gla.ac.uk/106441/1/106441.pdf",
+      "contextual": true,
+      "claimIds": [
+        "bi-reviewed-broxmouth-start",
+        "bi-reviewed-broxmouth-end",
+        "bi-reviewed-broxmouth-sequence"
+      ],
+      "dateLabel": "Broad archaeological context",
+      "regionIds": [
+        "britain-ireland"
+      ]
+    },
+    {
+      "id": "ireland-iron-age",
+      "type": "period",
+      "title": "Ireland’s Iron Age landscape",
+      "startYear": -500,
+      "endYear": 400,
+      "description": "Older monuments were reused during Ireland’s Iron Age.",
+      "note": "Broad context for the source’s conventional 500 BCE–400 CE period. It does not establish the date of each reuse, or what happened specifically in 399 BCE.",
+      "point": null,
+      "url": "https://heritageireland.ie/articles/mesolithic-iron-age-8000bc-400ad/",
+      "contextual": true,
+      "claimIds": [
+        "bi-reviewed-ireland-period",
+        "bi-reviewed-ireland-reuse"
+      ],
+      "dateLabel": "Broad archaeological context",
+      "regionIds": [
+        "britain-ireland"
+      ]
+    },
+    {
+      "id": "castell-henllys",
+      "type": "area",
+      "title": "Castell Henllys",
+      "startYear": -410,
+      "endYear": -190,
+      "description": "A Pembrokeshire hillfort with evidence of farming and metalworking.",
+      "note": "Reported start estimates span about 410–375 BCE and end estimates about 380–190 BCE. The outer plotted range is not proof of occupation in every year. In 399 BCE the overlap is possible, not certain.",
+      "url": "https://hillforts.arch.ox.ac.uk/records/WA1888.html",
+      "point": [
+        -4.74533,
+        52.01781
+      ],
+      "contextual": true,
+      "claimIds": [
+        "bi02-henllys-start",
+        "bi02-henllys-end",
+        "bi02-henllys-work",
+        "bi02-henllys-point"
+      ],
+      "dateLabel": "Broad archaeological context",
+      "regionIds": [
+        "britain-ireland"
+      ],
+      "uncertainty": {
+        "start": [
+          -410,
+          -375
+        ],
+        "end": [
+          -380,
+          -190
+        ]
+      }
+    },
+    {
+      "id": "henllys-community",
+      "type": "period",
+      "title": "The Castell Henllys community",
+      "startYear": -410,
+      "endYear": -190,
+      "description": "A Pembrokeshire hillfort with evidence of farming and metalworking.",
+      "note": "Reported start estimates span about 410–375 BCE and end estimates about 380–190 BCE. The outer plotted range is not proof of occupation in every year. In 399 BCE the overlap is possible, not certain.",
+      "url": "https://hillforts.arch.ox.ac.uk/records/WA1888.html",
+      "point": [
+        -4.74533,
+        52.01781
+      ],
+      "contextual": true,
+      "claimIds": [
+        "bi02-henllys-start",
+        "bi02-henllys-end",
+        "bi02-henllys-work",
+        "bi02-henllys-point"
+      ],
+      "dateLabel": "Broad archaeological context",
+      "regionIds": [
+        "britain-ireland"
+      ],
+      "uncertainty": {
+        "start": [
+          -410,
+          -375
+        ],
+        "end": [
+          -380,
+          -190
+        ]
+      }
+    },
+    {
+      "id": "doogarrymore-wheels",
+      "type": "period",
+      "title": "Wheeled transport at Doogarrymore",
+      "startYear": -400,
+      "endYear": -301,
+      "description": "Two wooden cart wheels found with a trackway provide evidence of wheeled transport in County Roscommon.",
+      "note": "The museum guide dates the cart’s use to the fourth century BCE. This is dating uncertainty, not evidence of continuous use for a century, and does not establish use in 399 BCE. No precise findspot is mapped yet.",
+      "url": "https://www.museum.ie/getmedia/a3ebbb22-2057-4200-aae8-cd958854d89f/ks_guide_web_en-%281%29.pdf",
+      "point": null,
+      "contextual": true,
+      "claimIds": [
+        "bi02-doogarrymore-wheels"
+      ],
+      "dateLabel": "Evidence dated within this range",
+      "regionIds": [
+        "britain-ireland"
+      ],
+      "temporalKind": "dated-evidence"
+    },
+    {
+      "id": "corlea",
+      "type": "area",
+      "title": "Corlea",
+      "startYear": -148,
+      "endYear": -147,
+      "description": "An Irish bogland site where an oak-plank roadway was built in the second century BCE.",
+      "note": "This view concerns Corlea 1, one of several trackways. The construction estimate is 148–147 BCE, not a two-year duration. The marker is the excavation report’s site reference, not a route outline.",
+      "url": "https://excavations.ie/report/1986/Longford/0000690/",
+      "point": [
+        -7.857195,
+        53.615129
+      ],
+      "contextual": true,
+      "claimIds": [
+        "bi02-corlea-date",
+        "bi02-corlea-dendro",
+        "bi02-corlea-purpose",
+        "bi02-corlea-point"
+      ],
+      "dateLabel": "Broad archaeological context",
+      "regionIds": [
+        "britain-ireland"
+      ]
+    },
+    {
+      "id": "corlea-construction",
+      "type": "event",
+      "title": "Building the Corlea roadway",
+      "startYear": -148,
+      "endYear": -147,
+      "description": "An oak-plank roadway was built at Corlea; its construction is dated to 148–147 BCE.",
+      "note": "A single construction year within this two-year estimate. It is centuries later than Socrates. Its precise purpose remains uncertain.",
+      "url": "https://gsi.geodata.gov.ie/downloads/Geoheritage/Reports/LD006_Corlea_Trackway.pdf",
+      "point": [
+        -7.857195,
+        53.615129
+      ],
+      "contextual": true,
+      "claimIds": [
+        "bi02-corlea-date",
+        "bi02-corlea-dendro",
+        "bi02-corlea-purpose",
+        "bi02-corlea-point"
+      ],
+      "dateLabel": "Construction dated within this range",
+      "regionIds": [
+        "britain-ireland"
+      ],
+      "temporalKind": "dated-evidence"
+    },
+    {
+      "id": "predynastic-egypt",
+      "title": "Predynastic Egypt",
+      "type": "period",
+      "startYear": -5500,
+      "endYear": -3100,
+      "description": "Nile Valley communities developed distinct regional cultures before Egyptian political unification.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/predynastic-period",
+      "contextual": true,
+      "claimIds": [
+        "global-predynastic-egypt-1",
+        "global-predynastic-egypt-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "badarian-culture",
+      "title": "Badarian communities",
+      "type": "period",
+      "startYear": -5500,
+      "endYear": -4000,
+      "description": "The ministry places Badarian culture around 5500–4000 BCE near modern Asyut.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/predynastic-period",
+      "contextual": true,
+      "claimIds": [
+        "global-badarian-culture-1"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "maadi-culture",
+      "title": "Maadi cultural complex",
+      "type": "period",
+      "startYear": -4000,
+      "endYear": -3100,
+      "description": "The Maadi cultural complex developed near modern Cairo around 4000–3100 BCE.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/predynastic-period",
+      "contextual": true,
+      "claimIds": [
+        "global-maadi-culture-1"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "naqada-one",
+      "title": "Naqada I communities",
+      "type": "period",
+      "startYear": -4000,
+      "endYear": -3500,
+      "description": "The ministry describes increasing social differentiation towards the period’s end.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://egymonuments.gov.eg/en/historical-periods/predynastic-period",
+      "contextual": true,
+      "claimIds": [
+        "global-naqada-one-1",
+        "global-naqada-one-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "old-kingdom",
+      "title": "Egypt’s Old Kingdom",
+      "type": "period",
+      "startYear": -2649,
+      "endYear": -2130,
+      "description": "Much of the surviving evidence for material culture comes from funerary contexts.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-old-kingdom-ca-2649-2150-b-c",
+      "contextual": true,
+      "claimIds": [
+        "global-old-kingdom-1",
+        "global-old-kingdom-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "djoser-reign",
+      "title": "Djoser’s reign and Step Pyramid",
+      "type": "period",
+      "startYear": -2649,
+      "endYear": -2630,
+      "description": "His Saqqara funerary complex included Egypt’s first pyramid.",
+      "note": "Reign dates, not a lifespan or precise construction interval. Chronologies vary; this follows the Met.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-old-kingdom-ca-2649-2150-b-c",
+      "contextual": true,
+      "claimIds": [
+        "global-djoser-reign-1",
+        "global-djoser-reign-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "khufu-reign",
+      "title": "Khufu and the Great Pyramid",
+      "type": "period",
+      "startYear": -2551,
+      "endYear": -2528,
+      "description": "The Great Pyramid at Giza belongs to Khufu.",
+      "note": "Reign dates, not a lifespan or precise construction interval. This follows the Met’s chronology.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-old-kingdom-ca-2649-2150-b-c",
+      "contextual": true,
+      "claimIds": [
+        "global-khufu-reign-1",
+        "global-khufu-reign-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "new-kingdom",
+      "title": "Egypt’s New Kingdom",
+      "type": "period",
+      "startYear": -1550,
+      "endYear": -1070,
+      "description": "A settlement in western Thebes housed artists who made royal tombs.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-new-kingdom-ca-1550-1070-b-c",
+      "contextual": true,
+      "claimIds": [
+        "global-new-kingdom-1",
+        "global-new-kingdom-2",
+        "global-new-kingdom-3"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "uruk-urban",
+      "title": "Urban life at Uruk",
+      "type": "period",
+      "startYear": -3200,
+      "endYear": -3000,
+      "description": "Clay pictographs recorded goods and workers’ rations, preceding later cuneiform.",
+      "note": "3200–3000 BCE is an editorial window around the source’s early urban context, not the lifespan of Uruk. The city continued afterwards.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/uruk-the-first-city",
+      "contextual": true,
+      "claimIds": [
+        "global-uruk-urban-1",
+        "global-uruk-urban-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Mesopotamia",
+      "regionIds": []
+    },
+    {
+      "id": "mesopotamian-city-states",
+      "title": "Mesopotamian city-states",
+      "type": "period",
+      "startYear": -2900,
+      "endYear": -2350,
+      "description": "City rulers acquired luxury materials through trade and conquest.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/uruk-the-first-city",
+      "contextual": true,
+      "claimIds": [
+        "global-mesopotamian-city-states-1",
+        "global-mesopotamian-city-states-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Mesopotamia",
+      "regionIds": []
+    },
+    {
+      "id": "indus-urban",
+      "title": "Indus urban communities",
+      "type": "period",
+      "startYear": -2600,
+      "endYear": -1900,
+      "description": "Seals preserve writing that remains undeciphered.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/ht/02/ssa",
+      "contextual": true,
+      "claimIds": [
+        "global-indus-urban-1",
+        "global-indus-urban-2",
+        "global-indus-urban-3"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "shang-context",
+      "title": "Shang China",
+      "type": "period",
+      "startYear": -1600,
+      "endYear": -1046,
+      "description": "Its political centre lay along the Yellow River in present-day Henan.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china",
+      "contextual": true,
+      "claimIds": [
+        "global-shang-context-1",
+        "global-shang-context-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "China",
+      "regionIds": [
+        "china"
+      ]
+    },
+    {
+      "id": "western-zhou",
+      "title": "Western Zhou",
+      "type": "period",
+      "startYear": -1046,
+      "endYear": -771,
+      "description": "Zhou rulers exercised authority across much of central China.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china",
+      "contextual": true,
+      "claimIds": [
+        "global-western-zhou-1",
+        "global-western-zhou-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "China",
+      "regionIds": [
+        "china"
+      ]
+    },
+    {
+      "id": "eastern-zhou",
+      "title": "Eastern Zhou",
+      "type": "period",
+      "startYear": -770,
+      "endYear": -256,
+      "description": "After the capital moved to Luoyang, regional states became increasingly autonomous.",
+      "note": "Dynastic context overlaps Spring and Autumn and Warring States. Their boundary dates vary between chronologies; this is not an additional separate dynasty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china",
+      "contextual": true,
+      "claimIds": [
+        "global-eastern-zhou-1",
+        "global-eastern-zhou-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "China",
+      "regionIds": [
+        "china"
+      ]
+    },
+    {
+      "id": "western-han",
+      "title": "Western Han",
+      "type": "period",
+      "startYear": -206,
+      "endYear": 9,
+      "description": "Chang’an was its capital, with palaces, residential wards and market areas.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d",
+      "contextual": true,
+      "claimIds": [
+        "global-western-han-1",
+        "global-western-han-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "China",
+      "regionIds": [
+        "china"
+      ]
+    },
+    {
+      "id": "eastern-han",
+      "title": "Eastern Han",
+      "type": "period",
+      "startYear": 25,
+      "endYear": 220,
+      "description": "Its capital was Luoyang; diplomacy and long-distance exchange expanded.",
+      "note": "Shown through 220 CE to preserve the source’s full period, slightly beyond the initial 200 CE collection scope. The gap after Western Han is intentional.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d",
+      "contextual": true,
+      "claimIds": [
+        "global-eastern-han-1",
+        "global-eastern-han-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "China",
+      "regionIds": [
+        "china"
+      ]
+    },
+    {
+      "id": "han-wu-reign",
+      "title": "Emperor Wu’s reign",
+      "type": "period",
+      "startYear": -141,
+      "endYear": -87,
+      "description": "His reign promoted Confucian learning in official conduct and education.",
+      "note": "These are reign dates, not the emperor’s lifespan.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d",
+      "contextual": true,
+      "claimIds": [
+        "global-han-wu-reign-1",
+        "global-han-wu-reign-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "China",
+      "regionIds": [
+        "china"
+      ]
+    },
+    {
+      "id": "olmec-gulf",
+      "title": "Olmec Gulf Coast communities",
+      "type": "period",
+      "startYear": -1200,
+      "endYear": -400,
+      "description": "Sculptors used imported volcanic stone and jade.",
+      "note": "Approximate, source-specific period boundaries. This is a broad introduction, not a year-by-year account. Map location is not yet researched.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/olmec-art",
+      "contextual": true,
+      "claimIds": [
+        "global-olmec-gulf-1",
+        "global-olmec-gulf-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Mesoamerica",
+      "regionIds": []
+    },
+    {
+      "id": "la-venta-context",
+      "title": "Monumental La Venta",
+      "type": "period",
+      "startYear": -900,
+      "endYear": -400,
+      "description": "Monumental building and carving there ceased after about 400 BCE.",
+      "note": "Approximate overview of monumental activity, not the dates of every building or all occupation.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/olmec-art",
+      "contextual": true,
+      "claimIds": [
+        "global-la-venta-context-1",
+        "global-la-venta-context-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Mesoamerica",
+      "regionIds": []
+    },
+    {
+      "id": "caral-context",
+      "title": "Caral and the Supe Valley",
+      "type": "period",
+      "startYear": -3000,
+      "endYear": -1800,
+      "description": "Its architecture includes large platform mounds and sunken circular courts.",
+      "note": "Broad archaeological context. The map marker is UNESCO’s site reference, not a territorial boundary.",
+      "point": [
+        -77.5213888888889,
+        -10.891666666666666
+      ],
+      "url": "https://whc.unesco.org/en/list/1269/",
+      "contextual": true,
+      "claimIds": [
+        "global-caral-context-1",
+        "global-caral-context-2",
+        "global-caral-context-point"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Andes",
+      "regionIds": []
+    },
+    {
+      "id": "kush-overview",
+      "title": "Kush and the Meroe region",
+      "type": "period",
+      "startYear": -800,
+      "endYear": 400,
+      "description": "The Meroe region preserves royal, religious, domestic and water-management remains.",
+      "note": "Broad regional context across many phases. Dates represent whole centuries and do not date each monument. This extends beyond 200 CE for context; borders and year-specific locations remain unresearched.",
+      "point": null,
+      "url": "https://whc.unesco.org/en/list/1336/",
+      "contextual": true,
+      "claimIds": [
+        "global-kush-overview-1",
+        "global-kush-overview-2"
+      ],
+      "dateLabel": "Broad context · approximate chronology",
+      "region": "Northeast Africa",
+      "regionIds": []
+    },
+    {
+      "id": "global-overview",
+      "type": "area",
+      "title": "Ancient world overview",
+      "startYear": -3000,
+      "endYear": 200,
+      "description": "Compare selected histories across Africa, Asia, Europe and the Americas.",
+      "note": "An editorial browsing window, 3000 BCE–200 CE. Use Fit study period to see the whole range; selecting this area preserves your current dates. Predynastic context extends earlier. This is a growing sample, not complete world coverage.",
+      "point": null,
+      "url": "coverage.html",
+      "contextual": true,
+      "claimIds": [],
+      "dateLabel": "Editorial study window",
+      "regionIds": []
+    }
+  ],
+  "associations": [
+    {
+      "subject": "danebury-life",
+      "place": "danebury",
+      "startYear": -550,
+      "endYear": -100,
+      "label": "Site context; broad, disputed chronology",
+      "point": [
+        -1.53973,
+        51.13671
+      ],
+      "source": "https://hillforts.arch.ox.ac.uk/records/EN3828.html",
+      "claimIds": [
+        "bi-reviewed-danebury-location",
+        "bi-reviewed-danebury-chronology"
+      ]
+    },
+    {
+      "subject": "britain-ireland",
+      "place": "danebury",
+      "startYear": -550,
+      "endYear": -100,
+      "label": "Danebury: one researched site, not regional coverage",
+      "point": [
+        -1.53973,
+        51.13671
+      ],
+      "source": "https://hillforts.arch.ox.ac.uk/records/EN3828.html",
+      "claimIds": [
+        "bi-reviewed-danebury-location",
+        "bi-reviewed-danebury-chronology"
+      ]
+    },
+    {
+      "subject": "henllys-community",
+      "place": "castell-henllys",
+      "startYear": -410,
+      "endYear": -190,
+      "label": "Castell Henllys site; possible occupation within uncertain dates",
+      "point": [
+        -4.74533,
+        52.01781
+      ],
+      "source": "https://hillforts.arch.ox.ac.uk/records/WA1888.html",
+      "claimIds": [
+        "bi02-henllys-start",
+        "bi02-henllys-end",
+        "bi02-henllys-work",
+        "bi02-henllys-point"
+      ],
+      "uncertainty": {
+        "start": [
+          -410,
+          -375
+        ],
+        "end": [
+          -380,
+          -190
+        ]
+      }
+    },
+    {
+      "subject": "britain-ireland",
+      "place": "castell-henllys",
+      "startYear": -410,
+      "endYear": -190,
+      "label": "Castell Henllys site; possible occupation within uncertain dates",
+      "point": [
+        -4.74533,
+        52.01781
+      ],
+      "source": "https://hillforts.arch.ox.ac.uk/records/WA1888.html",
+      "claimIds": [
+        "bi02-henllys-start",
+        "bi02-henllys-end",
+        "bi02-henllys-work",
+        "bi02-henllys-point"
+      ],
+      "uncertainty": {
+        "start": [
+          -410,
+          -375
+        ],
+        "end": [
+          -380,
+          -190
+        ]
+      }
+    },
+    {
+      "subject": "corlea-construction",
+      "place": "corlea",
+      "startYear": -148,
+      "endYear": -147,
+      "label": "Corlea construction; one year within 148–147 BCE",
+      "point": [
+        -7.857195,
+        53.615129
+      ],
+      "source": "https://excavations.ie/report/1986/Longford/0000690/",
+      "claimIds": [
+        "bi02-corlea-date",
+        "bi02-corlea-dendro",
+        "bi02-corlea-purpose",
+        "bi02-corlea-point"
+      ],
+      "temporalKind": "dated-evidence"
+    },
+    {
+      "subject": "britain-ireland",
+      "place": "corlea",
+      "startYear": -148,
+      "endYear": -147,
+      "label": "Corlea construction; one year within 148–147 BCE",
+      "point": [
+        -7.857195,
+        53.615129
+      ],
+      "source": "https://excavations.ie/report/1986/Longford/0000690/",
+      "claimIds": [
+        "bi02-corlea-date",
+        "bi02-corlea-dendro",
+        "bi02-corlea-purpose",
+        "bi02-corlea-point"
+      ],
+      "temporalKind": "dated-evidence"
+    },
+    {
+      "subject": "caral-context",
+      "place": "caral-context",
+      "startYear": -3000,
+      "endYear": -1800,
+      "label": "Caral · archaeological site reference",
+      "point": [
+        -77.5213888888889,
+        -10.891666666666666
+      ],
+      "source": "https://whc.unesco.org/en/list/1269/",
+      "claimIds": [
+        "global-caral-context-1",
+        "global-caral-context-2",
+        "global-caral-context-point"
+      ],
+      "contextual": true
+    }
+  ],
+  "relationships": [
+    {
+      "a": "britain-ireland",
+      "b": "danebury",
+      "label": "Regional example · partial coverage"
+    },
+    {
+      "a": "britain-ireland",
+      "b": "danebury-life",
+      "label": "Regional example · partial coverage"
+    },
+    {
+      "a": "britain-ireland",
+      "b": "broxmouth",
+      "label": "Regional example · partial coverage"
+    },
+    {
+      "a": "britain-ireland",
+      "b": "ireland-iron-age",
+      "label": "Regional example · partial coverage"
+    },
+    {
+      "a": "britain-ireland",
+      "b": "castell-henllys",
+      "label": "Regional example · partial coverage"
+    },
+    {
+      "a": "britain-ireland",
+      "b": "henllys-community",
+      "label": "Regional example · partial coverage"
+    },
+    {
+      "a": "britain-ireland",
+      "b": "doogarrymore-wheels",
+      "label": "Regional example · partial coverage"
+    },
+    {
+      "a": "britain-ireland",
+      "b": "corlea",
+      "label": "Regional example · partial coverage"
+    },
+    {
+      "a": "britain-ireland",
+      "b": "corlea-construction",
+      "label": "Regional example · partial coverage"
+    },
+    {
+      "a": "global-overview",
+      "b": "predynastic-egypt",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "old-kingdom",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "uruk-urban",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "indus-urban",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "eastern-zhou",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "olmec-gulf",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "caral-context",
+      "label": "Explore this period"
+    },
+    {
+      "a": "global-overview",
+      "b": "kush-overview",
+      "label": "Explore this period"
+    }
+  ]
+}

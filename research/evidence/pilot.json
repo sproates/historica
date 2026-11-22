@@ -1,0 +1,458 @@
+{
+  "schemaVersion": "1.0",
+  "description": "P01 structural fixtures only. Not accepted historical content. Empty research is not evidence of historical inactivity.",
+  "entities": [
+    {
+      "id": "socrates",
+      "name": "Socrates",
+      "type": "person"
+    },
+    {
+      "id": "plato",
+      "name": "Plato",
+      "type": "person"
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "type": "city"
+    },
+    {
+      "id": "bactria",
+      "name": "Bactria",
+      "type": "area"
+    },
+    {
+      "id": "britain-ireland",
+      "name": "Britain and Ireland",
+      "type": "area"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sep-socrates",
+      "title": "Socrates",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/socrates/",
+      "locatorHint": "Biography and trial sections; exact claim locators to audit",
+      "accessed": "2026-11-22",
+      "reuse": "Citation and original summary only; source text not redistributed"
+    }
+  ],
+  "claims": [
+    {
+      "id": "socrates-death",
+      "subjectId": "socrates",
+      "predicate": "death-date",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "exact",
+          "earliest": -399,
+          "latest": -399,
+          "original": "399 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "statement": "Socrates died in 399 BCE.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "socrates-death-lead"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "socrates-birth",
+      "subjectId": "socrates",
+      "predicate": "birth-date",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "approximate",
+          "earliest": -470,
+          "latest": -469,
+          "original": "470 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "statement": "Socrates was born about 470 or 469 BCE.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "disputed",
+      "evidenceIds": [
+        "socrates-birth-lead"
+      ],
+      "reviewId": null,
+      "disputeNote": "Prototype preserves two conventional years; source-specific alternatives need review before acceptance."
+    },
+    {
+      "id": "socrates-plato",
+      "subjectId": "socrates",
+      "predicate": "teacher-of",
+      "value": {
+        "type": "entity",
+        "entityId": "plato"
+      },
+      "statement": "Socrates influenced Plato as a teacher.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "socrates-plato-lead"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "socrates-athens",
+      "subjectId": "socrates",
+      "predicate": "associated-place",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.73,
+          37.98
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Athens is a regional reference for Socrates, not a continuous itinerary.",
+      "validity": {
+        "start": {
+          "precision": "exact",
+          "earliest": -469,
+          "latest": -469,
+          "original": "469 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "exact",
+          "earliest": -399,
+          "latest": -399,
+          "original": "399 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [
+        "athens"
+      ],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "socrates-unknown-location",
+      "subjectId": "socrates",
+      "predicate": "location-date-unknown",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Unknown",
+          "calendar": "BCE/CE"
+        }
+      },
+      "statement": "Fixture for a location observation whose date has not been established.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "bactria-outline",
+      "subjectId": "bactria",
+      "predicate": "approximate-heartland",
+      "value": {
+        "type": "geometry",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                65.1,
+                37.95
+              ],
+              [
+                65.5,
+                37.68
+              ],
+              [
+                66.1,
+                37.42
+              ],
+              [
+                66.8,
+                37.37
+              ],
+              [
+                67.1,
+                37.33
+              ],
+              [
+                67.5,
+                37.27
+              ],
+              [
+                67.8,
+                37.1
+              ],
+              [
+                68.1,
+                36.96
+              ],
+              [
+                68.5,
+                37.13
+              ],
+              [
+                68.9,
+                37.21
+              ],
+              [
+                69.25,
+                37.13
+              ],
+              [
+                69.4,
+                37.25
+              ],
+              [
+                69.45,
+                37.5
+              ],
+              [
+                69.8,
+                37.6
+              ],
+              [
+                70.15,
+                37.55
+              ],
+              [
+                70.3,
+                37.85
+              ],
+              [
+                70.65,
+                38.25
+              ],
+              [
+                71.05,
+                38.35
+              ],
+              [
+                71.35,
+                38.05
+              ],
+              [
+                71.45,
+                37.7
+              ],
+              [
+                71.4,
+                37.15
+              ],
+              [
+                71.6,
+                36.8
+              ],
+              [
+                71.2,
+                36.4
+              ],
+              [
+                70.6,
+                36.05
+              ],
+              [
+                70.0,
+                35.75
+              ],
+              [
+                69.4,
+                35.6
+              ],
+              [
+                68.9,
+                35.3
+              ],
+              [
+                68.25,
+                35.35
+              ],
+              [
+                67.55,
+                35.25
+              ],
+              [
+                66.8,
+                35.35
+              ],
+              [
+                66.0,
+                35.5
+              ],
+              [
+                65.2,
+                35.7
+              ],
+              [
+                64.7,
+                35.95
+              ],
+              [
+                64.45,
+                36.5
+              ],
+              [
+                64.7,
+                37.2
+              ],
+              [
+                65.1,
+                37.95
+              ]
+            ]
+          ]
+        },
+        "licence": "Prototype editorial geometry; reuse declaration requires audit",
+        "method": "Existing prototype sketch, pending historical review",
+        "interpretation": "Approximate southern heartland; not a political frontier"
+      },
+      "statement": "The prototype outline represents an editorial interpretation of southern Bactria.",
+      "validity": {
+        "start": {
+          "precision": "exact",
+          "earliest": -330,
+          "latest": -330,
+          "original": "330 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "exact",
+          "earliest": -326,
+          "latest": -326,
+          "original": "326 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [
+        "bactria"
+      ],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [],
+      "reviewId": null,
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "socrates-death-lead",
+      "claimId": "socrates-death",
+      "sourceId": "sep-socrates",
+      "locator": "Biography (exact passage to verify)",
+      "note": "Migrated prototype claim; source support and wording have not passed the new review process.",
+      "relation": "context",
+      "reviewId": null
+    },
+    {
+      "id": "socrates-birth-lead",
+      "claimId": "socrates-birth",
+      "sourceId": "sep-socrates",
+      "locator": "Biography (exact passage to verify)",
+      "note": "Migrated prototype claim; source support and wording have not passed the new review process.",
+      "relation": "context",
+      "reviewId": null
+    },
+    {
+      "id": "socrates-plato-lead",
+      "claimId": "socrates-plato",
+      "sourceId": "sep-socrates",
+      "locator": "Biography (exact passage to verify)",
+      "note": "Migrated prototype claim; source support and wording have not passed the new review process.",
+      "relation": "context",
+      "reviewId": null
+    }
+  ],
+  "reviews": [],
+  "accounts": [
+    {
+      "id": "britain-ireland-socrates-pilot",
+      "regionId": "britain-ireland",
+      "start": {
+        "precision": "exact",
+        "earliest": -469,
+        "latest": -469,
+        "original": "469 BCE",
+        "calendar": "BCE/CE"
+      },
+      "end": {
+        "precision": "exact",
+        "earliest": -399,
+        "latest": -399,
+        "original": "399 BCE",
+        "calendar": "BCE/CE"
+      },
+      "status": "draft",
+      "sentences": [],
+      "themes": [
+        {
+          "id": "settlement-mobility",
+          "status": "unresearched",
+          "claimIds": [],
+          "sourceIds": [],
+          "note": null
+        },
+        {
+          "id": "livelihoods-technology-exchange",
+          "status": "unresearched",
+          "claimIds": [],
+          "sourceIds": [],
+          "note": null
+        },
+        {
+          "id": "social-political-organisation",
+          "status": "unresearched",
+          "claimIds": [],
+          "sourceIds": [],
+          "note": null
+        },
+        {
+          "id": "beliefs-knowledge-arts",
+          "status": "unresearched",
+          "claimIds": [],
+          "sourceIds": [],
+          "note": null
+        },
+        {
+          "id": "change-continuity",
+          "status": "unresearched",
+          "claimIds": [],
+          "sourceIds": [],
+          "note": null
+        },
+        {
+          "id": "external-connections",
+          "status": "unresearched",
+          "claimIds": [],
+          "sourceIds": [],
+          "note": null
+        }
+      ],
+      "reviewId": null
+    }
+  ]
+}

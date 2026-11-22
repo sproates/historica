@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "0.1-draft",
+  "status": "research fixture",
+  "id": "alexander-bactria",
+  "title": "Alexander in Bactria",
+  "browseWindow": {
+    "start": {
+      "year": 329,
+      "era": "BCE"
+    },
+    "end": {
+      "year": 327,
+      "era": "BCE"
+    },
+    "sourceId": "minardi-2023",
+    "meaning": "Scenario window, not continuous personal presence"
+  },
+  "sources": [
+    {
+      "id": "iranica-bessos",
+      "title": "Michael Weiskopf, Bessos, Encyclopaedia Iranica",
+      "url": "https://www.iranicaonline.org/articles/bessos-satrap-of-bactria/",
+      "locator": "Passage on the invasion in spring 329, citing Arrian 3.28–29",
+      "use": "Evidence for original factual summary; no article text imported"
+    },
+    {
+      "id": "minardi-2023",
+      "title": "Michele Minardi, The Northeastern Regions of the Persian Empire, 2023",
+      "url": "https://academic.oup.com/book/45753/chapter/398242062",
+      "locator": "Abstract"
+    },
+    {
+      "id": "pleiades-bactria",
+      "url": "https://pleiades.stoa.org/places/971705",
+      "snapshot": "sources/pleiades-971705.json"
+    },
+    {
+      "id": "pleiades-bactra",
+      "url": "https://pleiades.stoa.org/places/961886",
+      "snapshot": "sources/pleiades-961886.json"
+    }
+  ],
+  "people": [
+    {
+      "id": "alexander",
+      "name": "Alexander the Great",
+      "birth": null,
+      "death": null,
+      "locationObservations": [],
+      "note": "Biographical dates and precise location observations not yet researched in this fixture."
+    }
+  ],
+  "places": [
+    {
+      "id": "bactria",
+      "name": "Bactria",
+      "type": "historical-region",
+      "sourceIds": [
+        "pleiades-bactria"
+      ],
+      "geometry": null,
+      "geometryStatus": "No dated regional polygon in inspected export"
+    },
+    {
+      "id": "bactra",
+      "name": "Bactra",
+      "modernName": "Balkh",
+      "type": "city",
+      "sourceIds": [
+        "pleiades-bactra",
+        "iranica-bessos"
+      ],
+      "geometry": null,
+      "geometryStatus": "Upstream OSM-derived geometry retained in research snapshot; application import pending provenance review"
+    }
+  ],
+  "events": [
+    {
+      "id": "alexander-enters-bactria",
+      "title": "Alexander enters Bactria",
+      "date": {
+        "year": 329,
+        "era": "BCE",
+        "season": "spring",
+        "precision": "season"
+      },
+      "displayDate": "Spring 329 BCE",
+      "duration": null,
+      "personIds": [
+        "alexander"
+      ],
+      "placeIds": [
+        "bactria"
+      ],
+      "sourceIds": [
+        "iranica-bessos"
+      ],
+      "description": "Alexander invades Bactria in pursuit of Bessos.",
+      "locationPrecision": "region",
+      "personalPointLocation": null
+    }
+  ],
+  "historicalOverlays": [],
+  "modernOverlay": {
+    "provider": "Natural Earth",
+    "dataset": "Admin 0 countries, 1:50m",
+    "candidateVersion": "5.1.1",
+    "status": "Candidate, not yet imported",
+    "url": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
+    "terms": "https://www.naturalearthdata.com/about/terms-of-use/"
+  }
+}

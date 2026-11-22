@@ -1,0 +1,738 @@
+{
+  "schemaVersion": "0.2",
+  "status": "research fixture",
+  "id": "alexander-bactria",
+  "title": "Alexander and his world",
+  "browseWindow": {
+    "start": {
+      "year": 336,
+      "era": "BCE"
+    },
+    "end": {
+      "year": 323,
+      "era": "BCE"
+    },
+    "meaning": "Accession through death; main stages, not an exhaustive itinerary."
+  },
+  "sources": [
+    {
+      "id": "iranica-bessos",
+      "title": "Michael Weiskopf, Bessos, Encyclopaedia Iranica",
+      "url": "https://www.iranicaonline.org/articles/bessos-satrap-of-bactria/",
+      "locator": "Passage on the invasion in spring 329, citing Arrian 3.28–29",
+      "use": "Evidence for original factual summary; no article text imported"
+    },
+    {
+      "id": "minardi-2023",
+      "title": "Michele Minardi, The Northeastern Regions of the Persian Empire, 2023",
+      "url": "https://academic.oup.com/book/45753/chapter/398242062",
+      "locator": "Abstract"
+    },
+    {
+      "id": "pleiades-bactria",
+      "url": "https://pleiades.stoa.org/places/971705",
+      "snapshot": "sources/pleiades-971705.json",
+      "title": "Pleiades · Bactria"
+    },
+    {
+      "id": "pleiades-bactra",
+      "url": "https://pleiades.stoa.org/places/961886",
+      "snapshot": "sources/pleiades-961886.json",
+      "title": "Pleiades · Bactra / Zariaspa"
+    },
+    {
+      "id": "barrington-98-commentary",
+      "title": "Barrington Atlas · Merv–Bactra commentary, pp. 1359–1360",
+      "url": "https://assets.press.princeton.edu/B_ATLAS/BATL098_.pdf",
+      "locator": "Heartland south of the Oxus; discussion of northern Bactria and disputed extent."
+    },
+    {
+      "id": "iranica-satrapies",
+      "title": "Bruno Jacobs · Achaemenid Satrapies, section 7.1.1",
+      "url": "https://www.iranicaonline.org/articles/achaemenid-satrapies/",
+      "locator": "Bactrian boundaries and their uncertainty."
+    },
+    {
+      "id": "alexander-chronology",
+      "title": "Cambridge University Press · Alexander’s campaign chronology",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA5F32E13E20CAFF2ACE09749527E515/9781009408981chr_xiv-xvii.pdf/chronology.pdf",
+      "use": "Evidence for original concise summary, not imported publication text."
+    },
+    {
+      "id": "archaeology-alexander",
+      "title": "Mark Rose · Alexander chronology, Archaeological Institute of America",
+      "url": "https://archive.archaeology.org/online/features/alexander/whoswho.html",
+      "use": "Evidence for original concise summary, not imported publication text."
+    },
+    {
+      "id": "getty-warring",
+      "title": "Getty Research Institute · Warring States",
+      "url": "https://www.getty.edu/vow/AATFullDisplay?find=300264024&logic=AND&note=&subjectid=300018378",
+      "use": "Evidence for original concise summary, not imported publication text."
+    },
+    {
+      "id": "rome-frank",
+      "title": "Tenney Frank · A History of Rome, chapter IV (1923)",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/FRAAHR/4*.html",
+      "use": "Evidence for original concise summary, not imported publication text."
+    },
+    {
+      "id": "monte-alban-inah",
+      "title": "Secretaría de Cultura / INAH · Monte Albán",
+      "url": "https://sic.cultura.gob.mx/ficha.php?table=zona_arqueologica&table_id=76",
+      "use": "Evidence for original concise summary, not imported publication text."
+    }
+  ],
+  "people": [
+    {
+      "id": "alexander",
+      "name": "Alexander the Great",
+      "birth": {
+        "year": 356,
+        "era": "BCE",
+        "precision": "year",
+        "sourceIds": [
+          "archaeology-alexander"
+        ]
+      },
+      "death": {
+        "year": 323,
+        "era": "BCE",
+        "precision": "year",
+        "sourceIds": [
+          "alexander-chronology"
+        ]
+      },
+      "locationObservations": [],
+      "note": "Age shown as an approximate year-level range; no birthday is assumed."
+    }
+  ],
+  "places": [
+    {
+      "id": "bactria",
+      "name": "Bactria",
+      "type": "historical-region",
+      "sourceIds": [
+        "barrington-98-commentary",
+        "iranica-satrapies",
+        "pleiades-bactria"
+      ],
+      "geometry": null,
+      "geometryStatus": "No dated regional polygon in inspected export"
+    },
+    {
+      "id": "bactra",
+      "name": "Bactra",
+      "modernName": "Balkh",
+      "type": "city",
+      "sourceIds": [
+        "pleiades-bactra",
+        "iranica-bessos"
+      ],
+      "geometry": null,
+      "geometryStatus": "Upstream OSM-derived geometry retained in research snapshot; application import pending provenance review",
+      "referencePoint": {
+        "longitude": 66.9,
+        "latitude": 36.77,
+        "precision": "Approximate city reference point",
+        "provenance": "Rounded from Pleiades 961886 representative point; the underlying location credits OpenStreetMap contributors."
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "bessos-claims-kingship",
+      "title": "Bessos claims the kingship",
+      "date": {
+        "year": 330,
+        "era": "BCE",
+        "season": "autumn",
+        "precision": "season"
+      },
+      "displayDate": "Autumn 330 BCE",
+      "description": "At Bactra, Bessos assumes the royal name Artaxerxes V.",
+      "precisionNote": "The source places this episode in autumn. The map marks the city, not a precise location within it.",
+      "placeIds": [
+        "bactra"
+      ],
+      "sourceIds": [
+        "iranica-bessos"
+      ]
+    },
+    {
+      "id": "alexander-enters-bactria",
+      "title": "Alexander enters Bactria",
+      "date": {
+        "year": 329,
+        "era": "BCE",
+        "season": "spring",
+        "precision": "season"
+      },
+      "displayDate": "Spring 329 BCE",
+      "duration": null,
+      "personIds": [
+        "alexander"
+      ],
+      "placeIds": [
+        "bactria"
+      ],
+      "sourceIds": [
+        "iranica-bessos"
+      ],
+      "description": "Alexander invades Bactria in pursuit of Bessos.",
+      "locationPrecision": "region",
+      "personalPointLocation": null,
+      "precisionNote": "The evidence gives a season, not an exact date. Alexander’s location is known at regional level here; no personal position is plotted."
+    },
+    {
+      "id": "bactra-falls",
+      "title": "Bactra falls to Alexander’s forces",
+      "date": {
+        "year": 329,
+        "era": "BCE",
+        "precision": "year"
+      },
+      "displayDate": "329 BCE",
+      "description": "Bessos retreats across the Oxus into Sogdia, and his capital, Bactra, falls.",
+      "precisionNote": "This event is associated with the invasion of 329 BCE. No exact day is asserted.",
+      "placeIds": [
+        "bactra"
+      ],
+      "sourceIds": [
+        "iranica-bessos"
+      ]
+    }
+  ],
+  "historicalOverlays": [
+    {
+      "id": "bactria-heartland",
+      "placeId": "bactria",
+      "label": "Bactria",
+      "subtitle": "Approximate heartland",
+      "kind": "editorial-regional-sketch",
+      "status": "draft interpretation; not independently reviewed",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              65.1,
+              37.95
+            ],
+            [
+              65.5,
+              37.68
+            ],
+            [
+              66.1,
+              37.42
+            ],
+            [
+              66.8,
+              37.37
+            ],
+            [
+              67.1,
+              37.33
+            ],
+            [
+              67.5,
+              37.27
+            ],
+            [
+              67.8,
+              37.1
+            ],
+            [
+              68.1,
+              36.96
+            ],
+            [
+              68.5,
+              37.13
+            ],
+            [
+              68.9,
+              37.21
+            ],
+            [
+              69.25,
+              37.13
+            ],
+            [
+              69.4,
+              37.25
+            ],
+            [
+              69.45,
+              37.5
+            ],
+            [
+              69.8,
+              37.6
+            ],
+            [
+              70.15,
+              37.55
+            ],
+            [
+              70.3,
+              37.85
+            ],
+            [
+              70.65,
+              38.25
+            ],
+            [
+              71.05,
+              38.35
+            ],
+            [
+              71.35,
+              38.05
+            ],
+            [
+              71.45,
+              37.7
+            ],
+            [
+              71.4,
+              37.15
+            ],
+            [
+              71.6,
+              36.8
+            ],
+            [
+              71.2,
+              36.4
+            ],
+            [
+              70.6,
+              36.05
+            ],
+            [
+              70.0,
+              35.75
+            ],
+            [
+              69.4,
+              35.6
+            ],
+            [
+              68.9,
+              35.3
+            ],
+            [
+              68.25,
+              35.35
+            ],
+            [
+              67.55,
+              35.25
+            ],
+            [
+              66.8,
+              35.35
+            ],
+            [
+              66.0,
+              35.5
+            ],
+            [
+              65.2,
+              35.7
+            ],
+            [
+              64.7,
+              35.95
+            ],
+            [
+              64.45,
+              36.5
+            ],
+            [
+              64.7,
+              37.2
+            ],
+            [
+              65.1,
+              37.95
+            ]
+          ]
+        ]
+      },
+      "labelPoint": [
+        68.5,
+        35.9
+      ],
+      "displayWindow": {
+        "startYear": -330,
+        "endYear": -326,
+        "meaning": "Prototype presentation window, not proof of unchanged boundaries in each year."
+      },
+      "sourceIds": [
+        "barrington-98-commentary",
+        "iranica-satrapies"
+      ],
+      "licence": "CC0-1.0",
+      "method": "Original coarse orientation sketch of the southern heartland. Northern edge loosely follows the modern Amu Darya/Panj reference; southern edge approximates the Hindu Kush. East and west edges are illustrative closures. Not traced from a published historical map.",
+      "limitations": "Not the complete satrapy, a surveyed frontier, or a reconstruction for a particular day. Northern Bactria beyond the river is omitted. Ancient river courses and the limits of the region are uncertain."
+    }
+  ],
+  "modernOverlay": {
+    "provider": "Natural Earth",
+    "dataset": "Admin 0 countries, 1:50m",
+    "candidateVersion": "5.1.1",
+    "status": "Candidate, not yet imported",
+    "url": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
+    "terms": "https://www.naturalearthdata.com/about/terms-of-use/"
+  },
+  "campaign": [
+    {
+      "id": "stage-macedonia",
+      "kind": "campaign",
+      "startYear": -336,
+      "endYear": -336,
+      "title": "Alexander becomes king",
+      "region": "Macedonia",
+      "point": [
+        22.5,
+        40.75
+      ],
+      "displayDate": "336 BCE",
+      "description": "Alexander succeeds Philip II.",
+      "sourceIds": [
+        "archaeology-alexander"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-thebes",
+      "kind": "campaign",
+      "startYear": -335,
+      "endYear": -335,
+      "title": "The destruction of Thebes",
+      "region": "Greece",
+      "point": [
+        23.3,
+        38.3
+      ],
+      "displayDate": "335 BCE",
+      "description": "Alexander takes Thebes; its inhabitants are killed or enslaved.",
+      "sourceIds": [
+        "archaeology-alexander"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-asia-minor",
+      "kind": "campaign",
+      "startYear": -334,
+      "endYear": -334,
+      "title": "Crossing into Asia",
+      "region": "Asia Minor",
+      "point": [
+        27.3,
+        40.3
+      ],
+      "displayDate": "334 BCE",
+      "description": "The campaign begins with victory at the Granicus.",
+      "sourceIds": [
+        "alexander-chronology"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-issus",
+      "kind": "campaign",
+      "startYear": -333,
+      "endYear": -333,
+      "title": "Battle of Issus",
+      "region": "Cilicia",
+      "point": [
+        36.2,
+        36.9
+      ],
+      "displayDate": "333 BCE",
+      "description": "Alexander defeats Darius III.",
+      "sourceIds": [
+        "alexander-chronology"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-tyre",
+      "kind": "campaign",
+      "startYear": -332,
+      "endYear": -332,
+      "title": "Tyre and Gaza",
+      "region": "The Levant",
+      "point": [
+        35.2,
+        33.3
+      ],
+      "displayDate": "332 BCE",
+      "description": "Sieges carry the campaign down the eastern Mediterranean.",
+      "sourceIds": [
+        "alexander-chronology"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-egypt",
+      "kind": "campaign",
+      "startYear": -331,
+      "endYear": -331,
+      "title": "The foundation of Alexandria",
+      "region": "Egypt",
+      "point": [
+        29.9,
+        31.2
+      ],
+      "displayDate": "331 BCE",
+      "description": "Alexandria is founded in Egypt.",
+      "sourceIds": [
+        "archaeology-alexander"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-gaugamela",
+      "kind": "campaign",
+      "startYear": -331,
+      "endYear": -331,
+      "title": "Battle of Gaugamela",
+      "region": "Mesopotamia",
+      "point": [
+        43.4,
+        36.6
+      ],
+      "displayDate": "331 BCE",
+      "description": "Victory opens the way to Babylon and Susa.",
+      "sourceIds": [
+        "archaeology-alexander"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-persepolis",
+      "kind": "campaign",
+      "startYear": -330,
+      "endYear": -330,
+      "title": "Persepolis and the Persian heartland",
+      "region": "Persia",
+      "point": [
+        52.9,
+        29.9
+      ],
+      "displayDate": "330 BCE",
+      "description": "Alexander reaches Persepolis and Ecbatana; Darius III dies.",
+      "sourceIds": [
+        "alexander-chronology"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-bactria",
+      "kind": "campaign",
+      "startYear": -329,
+      "endYear": -329,
+      "title": "Across the Hindu Kush",
+      "region": "Bactria",
+      "point": [
+        66.9,
+        36.77
+      ],
+      "displayDate": "329 BCE",
+      "description": "Alexander enters Bactria in spring.",
+      "sourceIds": [
+        "iranica-bessos"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-sogdiana",
+      "kind": "campaign",
+      "startYear": -328,
+      "endYear": -327,
+      "title": "Campaigns in Central Asia",
+      "region": "Sogdiana and Bactria",
+      "point": [
+        67.0,
+        39.2
+      ],
+      "displayDate": "328–327 BCE",
+      "description": "Resistance continues in the eastern territories.",
+      "sourceIds": [
+        "alexander-chronology"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-hydaspes",
+      "kind": "campaign",
+      "startYear": -326,
+      "endYear": -326,
+      "title": "The Hydaspes and the limit eastwards",
+      "region": "Punjab",
+      "point": [
+        73.5,
+        32.8
+      ],
+      "displayDate": "326 BCE",
+      "description": "Battle against Porus; the army later refuses to advance at the Hyphasis.",
+      "sourceIds": [
+        "alexander-chronology"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-indus",
+      "kind": "campaign",
+      "startYear": -325,
+      "endYear": -325,
+      "title": "Down the Indus",
+      "region": "The Indus valley",
+      "point": [
+        68.4,
+        25.4
+      ],
+      "displayDate": "325 BCE",
+      "description": "The army reaches the coast after travelling downriver.",
+      "sourceIds": [
+        "archaeology-alexander"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-gedrosia",
+      "kind": "campaign",
+      "startYear": -325,
+      "endYear": -325,
+      "title": "The desert crossing",
+      "region": "Gedrosia",
+      "point": [
+        62.5,
+        26.0
+      ],
+      "displayDate": "325 BCE",
+      "description": "Alexander crosses the Gedrosian desert.",
+      "sourceIds": [
+        "alexander-chronology"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-susa",
+      "kind": "campaign",
+      "startYear": -324,
+      "endYear": -324,
+      "title": "Return to Susa",
+      "region": "Susiana",
+      "point": [
+        48.3,
+        32.2
+      ],
+      "displayDate": "324 BCE",
+      "description": "Alexander returns to Susa; a dispute with the army follows at Opis.",
+      "sourceIds": [
+        "alexander-chronology"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    },
+    {
+      "id": "stage-babylon",
+      "kind": "campaign",
+      "startYear": -323,
+      "endYear": -323,
+      "title": "Death at Babylon",
+      "region": "Babylonia",
+      "point": [
+        44.4,
+        32.5
+      ],
+      "displayDate": "323 BCE",
+      "description": "Alexander dies in Babylon.",
+      "sourceIds": [
+        "alexander-chronology"
+      ],
+      "precisionNote": "Year-level campaign stage. The point locates the named area approximately; it is not a precise personal position. Connecting lines show stage order, not travelled paths."
+    }
+  ],
+  "contexts": [
+    {
+      "id": "china-warring",
+      "kind": "context",
+      "startYear": -403,
+      "endYear": -221,
+      "title": "China’s competing states",
+      "region": "China",
+      "point": [
+        112,
+        34
+      ],
+      "displayDate": "403–221 BCE · broad period",
+      "description": "Rival states compete within the Zhou world. Courtly patronage and craftsmanship flourish alongside political fragmentation.",
+      "precisionNote": "Period context, not an event dated to the selected year. Some chronologies begin the Warring States period in 475 BCE. The marker is a regional reference, not a capital or border.",
+      "sourceIds": [
+        "getty-warring"
+      ]
+    },
+    {
+      "id": "italy-settlement",
+      "kind": "context",
+      "startYear": -338,
+      "endYear": -327,
+      "title": "Rome after the Latin War",
+      "region": "Italy",
+      "point": [
+        12.5,
+        41.9
+      ],
+      "displayDate": "After 338 BCE · context for this period",
+      "description": "Rome reorganises its relationships with the Latin communities after the Latin War.",
+      "precisionNote": "Background to the selected year, not a separate annual event. The end of this display interval is editorial: the collection switches to the Samnite War in 326 BCE.",
+      "sourceIds": [
+        "rome-frank"
+      ]
+    },
+    {
+      "id": "samnite-war",
+      "kind": "context",
+      "startYear": -326,
+      "endYear": -304,
+      "title": "Rome and the Samnites at war",
+      "region": "Italy",
+      "point": [
+        14.3,
+        41.0
+      ],
+      "displayDate": "326–304 BCE · war period",
+      "description": "Rome and the Samnites struggle for power in central and southern Italy.",
+      "precisionNote": "Conventional date range for the Second Samnite War. The marker locates the broad theatre, not a battle on the selected date.",
+      "sourceIds": [
+        "rome-frank"
+      ]
+    },
+    {
+      "id": "monte-alban",
+      "kind": "context",
+      "startYear": -500,
+      "endYear": -100,
+      "title": "Early Monte Albán",
+      "region": "Oaxaca · Mesoamerica",
+      "point": [
+        -96.77,
+        17.04
+      ],
+      "displayDate": "c. 500–100 BCE · archaeological phase",
+      "description": "A Zapotec centre develops in the Oaxaca valley, with building programmes, specialised crafts and carved monuments.",
+      "precisionNote": "Archaeological period context. These developments are not individually dated to the selected year. This single site does not represent all the Americas.",
+      "sourceIds": [
+        "monte-alban-inah"
+      ]
+    }
+  ],
+  "routeNote": "Original schematic connections between approximate stage reference points. Not a historical road, a continuous GPS track or an empire boundary."
+}

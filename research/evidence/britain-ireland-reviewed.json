@@ -1,0 +1,1074 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {
+      "id": "britain-ireland",
+      "type": "area",
+      "name": "Britain and Ireland"
+    },
+    {
+      "id": "danebury",
+      "type": "area",
+      "name": "Danebury"
+    },
+    {
+      "id": "danebury-life",
+      "type": "period",
+      "name": "Life at Danebury"
+    },
+    {
+      "id": "broxmouth",
+      "type": "period",
+      "name": "Broxmouth’s changing settlement"
+    },
+    {
+      "id": "ireland-iron-age",
+      "type": "period",
+      "name": "Ireland’s Iron Age landscape"
+    },
+    {
+      "id": "castell-henllys",
+      "type": "area",
+      "name": "Castell Henllys"
+    },
+    {
+      "id": "henllys-community",
+      "type": "period",
+      "name": "The Castell Henllys community"
+    },
+    {
+      "id": "doogarrymore-wheels",
+      "type": "period",
+      "name": "Wheeled transport at Doogarrymore"
+    },
+    {
+      "id": "corlea",
+      "type": "area",
+      "name": "Corlea"
+    },
+    {
+      "id": "corlea-construction",
+      "type": "event",
+      "name": "Building the Corlea roadway"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ps-hillforts",
+      "title": "Iron Age factsheet 3: Hillforts",
+      "creator": "Lindsey Büster, The Prehistoric Society",
+      "url": "https://prehistoricsociety.org/sites/prehistoricsociety.org/files/resources/ps-intros-ia-3-hillforts.pdf",
+      "locatorHint": "Pages 1–2",
+      "published": "2019",
+      "accessed": "2026-11-22",
+      "reuse": "Original paraphrases with citations; source text and images not reproduced."
+    },
+    {
+      "id": "hants-danebury",
+      "title": "Danebury Iron Age Hill Fort",
+      "creator": "Hampshire County Council",
+      "url": "https://www.hants.gov.uk/thingstodo/countryside/finder/danebury",
+      "locatorHint": "Life at Danebury; Excavations",
+      "published": null,
+      "accessed": "2026-11-22",
+      "reuse": "Original paraphrases with citations; source text and images not reproduced."
+    },
+    {
+      "id": "ford-saunders-danebury",
+      "title": "Archaeological investigations at Danebury hillfort, 1995",
+      "creator": "Ben Ford and M. John Saunders, Hampshire Studies 54",
+      "url": "https://www.hantsfieldclub.org.uk/publications/hampshirestudies/digital/1990s/vol54/Ford%26Saunders.pdf",
+      "locatorHint": "Page 180, Introduction",
+      "published": "1999",
+      "accessed": "2026-11-22",
+      "reuse": "Original paraphrases with citations; source text and images not reproduced."
+    },
+    {
+      "id": "atlas-danebury",
+      "title": "Danebury Hill Camp (EN3828)",
+      "creator": "Atlas of Hillforts of Britain and Ireland",
+      "url": "https://hillforts.arch.ox.ac.uk/records/EN3828.html",
+      "locatorHint": "Location and Summary",
+      "accessed": "2026-11-22",
+      "reuse": "Original paraphrases and factual reference data with citations; no source images copied."
+    },
+    {
+      "id": "hamilton-chronologies",
+      "title": "The impact of Bayesian chronologies on the British Iron Age",
+      "creator": "William Derek Hamilton, Colin Haselgrove and Chris Gosden (2015)",
+      "url": "https://eprints.gla.ac.uk/106441/1/106441.pdf",
+      "locatorHint": "Printed pages 5–6, Broxmouth",
+      "accessed": "2026-11-22",
+      "reuse": "Source CC BY 4.0; original paraphrases with author attribution and link."
+    },
+    {
+      "id": "heritage-ireland",
+      "title": "Mesolithic – Iron Age",
+      "creator": "Office of Public Works, Heritage Ireland",
+      "url": "https://heritageireland.ie/articles/mesolithic-iron-age-8000bc-400ad/",
+      "locatorHint": "The Iron Age, 500BC–400AD",
+      "accessed": "2026-11-22",
+      "reuse": "Original paraphrases and factual reference data with citations; no source images copied."
+    },
+    {
+      "id": "atlas-henllys",
+      "title": "Castell Henllys (WA1888)",
+      "creator": "Atlas of Hillforts of Britain and Ireland",
+      "url": "https://hillforts.arch.ox.ac.uk/records/WA1888.html",
+      "locatorHint": "Summary, Location and Dating Evidence",
+      "accessed": "2026-11-22",
+      "reuse": "Original paraphrases and factual reference coordinates with citation; no source text or images reproduced."
+    },
+    {
+      "id": "nmi-guide",
+      "title": "Guide to the National Museum of Ireland: Archaeology",
+      "creator": "Eamonn P. Kelly, National Museum of Ireland (2007)",
+      "url": "https://www.museum.ie/getmedia/a3ebbb22-2057-4200-aae8-cd958854d89f/ks_guide_web_en-%281%29.pdf",
+      "locatorHint": "Printed page 14 (PDF page 9)",
+      "accessed": "2026-11-22",
+      "reuse": "Original paraphrases and factual reference coordinates with citation; no source text or images reproduced."
+    },
+    {
+      "id": "corlea-excavation",
+      "title": "1986:62 – Corlea Bog, Cloonbreany, Longford",
+      "creator": "Barry Raftery, University College Dublin, Excavations.ie",
+      "url": "https://excavations.ie/report/1986/Longford/0000690/",
+      "locatorHint": "Site coordinates; Corlea 1; Chronology",
+      "accessed": "2026-11-22",
+      "reuse": "Original paraphrases and factual reference coordinates with citation; no source text or images reproduced."
+    },
+    {
+      "id": "corlea-geology",
+      "title": "Longford County Geological Site Report: Corlea Trackway",
+      "creator": "Geological Survey Ireland",
+      "url": "https://gsi.geodata.gov.ie/downloads/Geoheritage/Reports/LD006_Corlea_Trackway.pdf",
+      "locatorHint": "Page 1, site description and geological interest",
+      "accessed": "2026-11-22",
+      "reuse": "Original paraphrases and factual reference coordinates with citation; no source text or images reproduced."
+    }
+  ],
+  "claims": [
+    {
+      "id": "bi-reviewed-danebury-houses",
+      "subjectId": "danebury",
+      "predicate": "context",
+      "statement": "Excavations at Danebury revealed roundhouses.",
+      "value": {
+        "type": "text",
+        "text": "Excavations at Danebury revealed roundhouses."
+      },
+      "validity": null,
+      "scopeIds": [
+        "danebury"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-danebury-houses-evidence"
+      ],
+      "reviewId": "bi-reviewed-danebury-houses-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-grain",
+      "subjectId": "danebury",
+      "predicate": "context",
+      "statement": "At Danebury, grain was kept in storage buildings and sealed pits.",
+      "value": {
+        "type": "text",
+        "text": "At Danebury, grain was kept in storage buildings and sealed pits."
+      },
+      "validity": null,
+      "scopeIds": [
+        "danebury"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-danebury-grain-evidence"
+      ],
+      "reviewId": "bi-reviewed-danebury-grain-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-livestock",
+      "subjectId": "danebury",
+      "predicate": "context",
+      "statement": "Danebury’s farming community kept sheep and cattle.",
+      "value": {
+        "type": "text",
+        "text": "Danebury’s farming community kept sheep and cattle."
+      },
+      "validity": null,
+      "scopeIds": [
+        "danebury"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-danebury-livestock-evidence"
+      ],
+      "reviewId": "bi-reviewed-danebury-livestock-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-crafts",
+      "subjectId": "danebury",
+      "predicate": "context",
+      "statement": "Evidence at Danebury includes cereal processing, weaving, leatherworking and metalworking.",
+      "value": {
+        "type": "text",
+        "text": "Evidence at Danebury includes cereal processing, weaving, leatherworking and metalworking."
+      },
+      "validity": null,
+      "scopeIds": [
+        "danebury"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-danebury-crafts-evidence"
+      ],
+      "reviewId": "bi-reviewed-danebury-crafts-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-exchange",
+      "subjectId": "danebury",
+      "predicate": "context",
+      "statement": "Danebury obtained materials including metals and salt through exchange with other areas.",
+      "value": {
+        "type": "text",
+        "text": "Danebury obtained materials including metals and salt through exchange with other areas."
+      },
+      "validity": null,
+      "scopeIds": [
+        "danebury"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-danebury-exchange-evidence"
+      ],
+      "reviewId": "bi-reviewed-danebury-exchange-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-shrines",
+      "subjectId": "danebury",
+      "predicate": "context",
+      "statement": "Four rectangular structures at Danebury have been interpreted as shrines.",
+      "value": {
+        "type": "text",
+        "text": "Four rectangular structures at Danebury have been interpreted as shrines."
+      },
+      "validity": null,
+      "scopeIds": [
+        "danebury"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-danebury-shrines-evidence"
+      ],
+      "reviewId": "bi-reviewed-danebury-shrines-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-chronology",
+      "subjectId": "danebury",
+      "predicate": "context",
+      "statement": "Published accounts differ: Ford and Saunders use 550–100 BCE for Danebury, while Büster dates its construction around 470 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Published accounts differ: Ford and Saunders use 550–100 BCE for Danebury, while Büster dates its construction around 470 BCE."
+      },
+      "validity": null,
+      "scopeIds": [
+        "danebury"
+      ],
+      "status": "accepted",
+      "certainty": "disputed",
+      "disputeNote": "Chronologies differ; no averaged or exact foundation date is inferred.",
+      "evidenceIds": [
+        "bi-reviewed-danebury-chronology-evidence",
+        "bi-reviewed-danebury-chronology-alternative"
+      ],
+      "reviewId": "bi-reviewed-danebury-chronology-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-location",
+      "subjectId": "danebury",
+      "predicate": "reference-location",
+      "statement": "The Danebury map marker uses the Atlas of Hillforts site reference.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -1.53973,
+          51.13671
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "range",
+          "earliest": -550,
+          "latest": -470,
+          "original": "Published construction chronologies: 550 or around 470 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "100 BCE in Ford and Saunders",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [
+        "danebury"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-danebury-location-evidence"
+      ],
+      "reviewId": "bi-reviewed-danebury-location-review"
+    },
+    {
+      "id": "bi-reviewed-broxmouth-start",
+      "subjectId": "broxmouth",
+      "predicate": "date",
+      "statement": "Broxmouth’s modelled occupation start is 640–570 BCE at 68% probability.",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "range",
+          "earliest": -640,
+          "latest": -570,
+          "original": "640–570 cal. BC (68 per cent probability)",
+          "calendar": "BCE/CE"
+        }
+      },
+      "validity": null,
+      "scopeIds": [
+        "broxmouth"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-broxmouth-start-evidence"
+      ],
+      "reviewId": "bi-reviewed-broxmouth-start-review"
+    },
+    {
+      "id": "bi-reviewed-broxmouth-end",
+      "subjectId": "broxmouth",
+      "predicate": "date",
+      "statement": "Broxmouth’s modelled abandonment is 155–210 CE at 68% probability.",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "range",
+          "earliest": 155,
+          "latest": 210,
+          "original": "cal. AD 155–210 (68 per cent probability)",
+          "calendar": "BCE/CE"
+        }
+      },
+      "validity": null,
+      "scopeIds": [
+        "broxmouth"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-broxmouth-end-evidence"
+      ],
+      "reviewId": "bi-reviewed-broxmouth-end-review"
+    },
+    {
+      "id": "bi-reviewed-broxmouth-sequence",
+      "subjectId": "broxmouth",
+      "predicate": "context",
+      "statement": "Broxmouth’s occupation sequence includes both enclosed and unenclosed settlement phases.",
+      "value": {
+        "type": "text",
+        "text": "Broxmouth’s occupation sequence includes both enclosed and unenclosed settlement phases."
+      },
+      "validity": null,
+      "scopeIds": [
+        "broxmouth"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-broxmouth-sequence-evidence"
+      ],
+      "reviewId": "bi-reviewed-broxmouth-sequence-review"
+    },
+    {
+      "id": "bi-reviewed-ireland-period",
+      "subjectId": "ireland-iron-age",
+      "predicate": "context",
+      "statement": "Heritage Ireland uses 500 BCE–400 CE as its Iron Age overview period.",
+      "value": {
+        "type": "text",
+        "text": "Heritage Ireland uses 500 BCE–400 CE as its Iron Age overview period."
+      },
+      "validity": null,
+      "scopeIds": [
+        "ireland-iron-age"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-ireland-period-evidence"
+      ],
+      "reviewId": "bi-reviewed-ireland-period-review"
+    },
+    {
+      "id": "bi-reviewed-ireland-reuse",
+      "subjectId": "ireland-iron-age",
+      "predicate": "context",
+      "statement": "Older monuments continued to be repurposed during the Irish Iron Age.",
+      "value": {
+        "type": "text",
+        "text": "Older monuments continued to be repurposed during the Irish Iron Age."
+      },
+      "validity": null,
+      "scopeIds": [
+        "ireland-iron-age"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi-reviewed-ireland-reuse-evidence"
+      ],
+      "reviewId": "bi-reviewed-ireland-reuse-review"
+    },
+    {
+      "id": "bi02-henllys-start",
+      "subjectId": "castell-henllys",
+      "predicate": "dating",
+      "statement": "The Atlas reports a start estimate of about 410–375 BCE for Castell Henllys.",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "range",
+          "earliest": -410,
+          "latest": -375,
+          "original": "c. 410 BC to 375 BC",
+          "calendar": "BCE/CE"
+        }
+      },
+      "validity": null,
+      "scopeIds": [
+        "castell-henllys"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi02-henllys-start-evidence"
+      ],
+      "reviewId": "bi02-henllys-start-review"
+    },
+    {
+      "id": "bi02-henllys-end",
+      "subjectId": "castell-henllys",
+      "predicate": "dating",
+      "statement": "The Atlas reports an end estimate of about 380–190 BCE for this hillfort phase.",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "range",
+          "earliest": -380,
+          "latest": -190,
+          "original": "c. 380 BC to 190 BC",
+          "calendar": "BCE/CE"
+        }
+      },
+      "validity": null,
+      "scopeIds": [
+        "castell-henllys"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi02-henllys-end-evidence"
+      ],
+      "reviewId": "bi02-henllys-end-review"
+    },
+    {
+      "id": "bi02-henllys-work",
+      "subjectId": "castell-henllys",
+      "predicate": "context",
+      "statement": "The Atlas describes evidence of metalworking and interprets Castell Henllys as probably supporting a wealthy farming community.",
+      "value": {
+        "type": "text",
+        "text": "The Atlas describes evidence of metalworking and interprets Castell Henllys as probably supporting a wealthy farming community."
+      },
+      "validity": null,
+      "scopeIds": [
+        "castell-henllys"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi02-henllys-work-evidence"
+      ],
+      "reviewId": "bi02-henllys-work-review"
+    },
+    {
+      "id": "bi02-henllys-point",
+      "subjectId": "castell-henllys",
+      "predicate": "reference-location",
+      "statement": "The map uses the Atlas site reference for Castell Henllys in Pembrokeshire.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -4.74533,
+          52.01781
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "range",
+          "earliest": -410,
+          "latest": -375,
+          "original": "c. 410–375 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "range",
+          "earliest": -380,
+          "latest": -190,
+          "original": "c. 380–190 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [
+        "castell-henllys"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi02-henllys-point-evidence"
+      ],
+      "reviewId": "bi02-henllys-point-review"
+    },
+    {
+      "id": "bi02-doogarrymore-wheels",
+      "subjectId": "doogarrymore-wheels",
+      "predicate": "dating",
+      "statement": "The museum guide describes two wooden wheels from a cart used in the fourth century BCE at Doogarrymore, associated with a trackway.",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "range",
+          "earliest": -400,
+          "latest": -301,
+          "original": "fourth century B.C.",
+          "calendar": "BCE/CE"
+        }
+      },
+      "validity": null,
+      "scopeIds": [
+        "doogarrymore-wheels"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi02-doogarrymore-wheels-evidence"
+      ],
+      "reviewId": "bi02-doogarrymore-wheels-review"
+    },
+    {
+      "id": "bi02-corlea-date",
+      "subjectId": "corlea",
+      "predicate": "dating",
+      "statement": "The Geological Survey Ireland report dates the oak-plank trackway to 148–147 BCE and says it was built in a single year.",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "range",
+          "earliest": -148,
+          "latest": -147,
+          "original": "148–147 BC; constructed in a single year",
+          "calendar": "BCE/CE"
+        }
+      },
+      "validity": null,
+      "scopeIds": [
+        "corlea"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi02-corlea-date-evidence"
+      ],
+      "reviewId": "bi02-corlea-date-review"
+    },
+    {
+      "id": "bi02-corlea-dendro",
+      "subjectId": "corlea",
+      "predicate": "context",
+      "statement": "Raftery’s excavation report dates Corlea 1 to 148 BCE using dendrochronological analysis.",
+      "value": {
+        "type": "text",
+        "text": "Raftery’s excavation report dates Corlea 1 to 148 BCE using dendrochronological analysis."
+      },
+      "validity": null,
+      "scopeIds": [
+        "corlea"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi02-corlea-dendro-evidence"
+      ],
+      "reviewId": "bi02-corlea-dendro-review"
+    },
+    {
+      "id": "bi02-corlea-purpose",
+      "subjectId": "corlea",
+      "predicate": "context",
+      "statement": "The purpose of the Corlea trackway is uncertain; the geological report discusses a possible ritual use.",
+      "value": {
+        "type": "text",
+        "text": "The purpose of the Corlea trackway is uncertain; the geological report discusses a possible ritual use."
+      },
+      "validity": null,
+      "scopeIds": [
+        "corlea"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi02-corlea-purpose-evidence"
+      ],
+      "reviewId": "bi02-corlea-purpose-review"
+    },
+    {
+      "id": "bi02-corlea-point",
+      "subjectId": "corlea",
+      "predicate": "reference-location",
+      "statement": "The Corlea map marker uses the excavation report’s site coordinates.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -7.857195,
+          53.615129
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "range",
+          "earliest": -148,
+          "latest": -147,
+          "original": "148–147 BCE construction estimate",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "range",
+          "earliest": -148,
+          "latest": -147,
+          "original": "148–147 BCE construction estimate",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [
+        "corlea"
+      ],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "disputeNote": null,
+      "evidenceIds": [
+        "bi02-corlea-point-evidence"
+      ],
+      "reviewId": "bi02-corlea-point-review"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "bi-reviewed-danebury-houses-evidence",
+      "claimId": "bi-reviewed-danebury-houses",
+      "sourceId": "hants-danebury",
+      "locator": "Excavations, first paragraph",
+      "note": "Finds span the site’s occupation; not all houses were contemporary.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-danebury-houses-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-grain-evidence",
+      "claimId": "bi-reviewed-danebury-grain",
+      "sourceId": "hants-danebury",
+      "locator": "Excavations, second paragraph",
+      "note": "Site-level Iron Age context; phase-specific dating remains to be checked.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-danebury-grain-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-livestock-evidence",
+      "claimId": "bi-reviewed-danebury-livestock",
+      "sourceId": "hants-danebury",
+      "locator": "Life at Danebury, first paragraph",
+      "note": "Site-level context, not a description of every community in Britain.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-danebury-livestock-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-crafts-evidence",
+      "claimId": "bi-reviewed-danebury-crafts",
+      "sourceId": "ps-hillforts",
+      "locator": "Page 1, paragraph beginning Though geophysical survey",
+      "note": "Activities are not yet assigned to individual occupation phases.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-danebury-crafts-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-exchange-evidence",
+      "claimId": "bi-reviewed-danebury-exchange",
+      "sourceId": "hants-danebury",
+      "locator": "Life at Danebury, first paragraph",
+      "note": "The inspected account does not identify all trading partners or dates.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-danebury-exchange-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-shrines-evidence",
+      "claimId": "bi-reviewed-danebury-shrines",
+      "sourceId": "ps-hillforts",
+      "locator": "Page 1, final main paragraph",
+      "note": "An interpretation of structures, not certain identification of religious practice in a particular year.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-danebury-shrines-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-chronology-evidence",
+      "claimId": "bi-reviewed-danebury-chronology",
+      "sourceId": "ford-saunders-danebury",
+      "locator": "Page 180, Introduction",
+      "note": "The two chronologies are retained. This review does not select a definitive construction year.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-danebury-chronology-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-chronology-alternative",
+      "claimId": "bi-reviewed-danebury-chronology",
+      "sourceId": "ps-hillforts",
+      "locator": "Page 1, paragraph on simple hillforts",
+      "note": "Construction around 470 BCE; retained alongside the older chronology.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-danebury-chronology-review"
+    },
+    {
+      "id": "bi-reviewed-danebury-location-evidence",
+      "claimId": "bi-reviewed-danebury-location",
+      "sourceId": "atlas-danebury",
+      "locator": "Location: EPSG:4326 longitude and latitude",
+      "note": "Rounded to five decimal places. A site reference, not a person’s whereabouts or a territorial boundary.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-danebury-location-review"
+    },
+    {
+      "id": "bi-reviewed-broxmouth-start-evidence",
+      "claimId": "bi-reviewed-broxmouth-start",
+      "sourceId": "hamilton-chronologies",
+      "locator": "Printed page 6 (PDF page 9), first paragraph",
+      "note": "Bayesian model of calibrated radiocarbon dates; not an exact founding year.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-broxmouth-start-review"
+    },
+    {
+      "id": "bi-reviewed-broxmouth-end-evidence",
+      "claimId": "bi-reviewed-broxmouth-end",
+      "sourceId": "hamilton-chronologies",
+      "locator": "Printed page 6 (PDF page 9), first paragraph",
+      "note": "Probability applies to the modelled abandonment estimate.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-broxmouth-end-review"
+    },
+    {
+      "id": "bi-reviewed-broxmouth-sequence-evidence",
+      "claimId": "bi-reviewed-broxmouth-sequence",
+      "sourceId": "hamilton-chronologies",
+      "locator": "Printed pages 5–6, Broxmouth discussion",
+      "note": "Changes occurred at different times; the full sequence is not simultaneous.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-broxmouth-sequence-review"
+    },
+    {
+      "id": "bi-reviewed-ireland-period-evidence",
+      "claimId": "bi-reviewed-ireland-period",
+      "sourceId": "heritage-ireland",
+      "locator": "The Iron Age, heading",
+      "note": "A conventional period definition rather than a precisely dated nationwide transition.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-ireland-period-review"
+    },
+    {
+      "id": "bi-reviewed-ireland-reuse-evidence",
+      "claimId": "bi-reviewed-ireland-reuse",
+      "sourceId": "heritage-ireland",
+      "locator": "The Iron Age, paragraph beginning While the building",
+      "note": "Broad period context; this passage does not assign each instance to Socrates’ lifetime.",
+      "relation": "supports",
+      "reviewId": "bi-reviewed-ireland-reuse-review"
+    },
+    {
+      "id": "bi02-henllys-start-evidence",
+      "claimId": "bi02-henllys-start",
+      "sourceId": "atlas-henllys",
+      "locator": "Dating Evidence: 18 radiocarbon dates",
+      "note": "Source summary gives no probability level. The estimate is retained without selecting a founding year.",
+      "relation": "supports",
+      "reviewId": "bi02-henllys-start-review"
+    },
+    {
+      "id": "bi02-henllys-end-evidence",
+      "claimId": "bi02-henllys-end",
+      "sourceId": "atlas-henllys",
+      "locator": "Dating Evidence",
+      "note": "This does not date all later activity: the Atlas also records Romano-British and later evidence.",
+      "relation": "supports",
+      "reviewId": "bi02-henllys-end-review"
+    },
+    {
+      "id": "bi02-henllys-work-evidence",
+      "claimId": "bi02-henllys-work",
+      "sourceId": "atlas-henllys",
+      "locator": "Summary, paragraph on radiocarbon dates and daily functions",
+      "note": "The community interpretation remains qualified; individual activities are not assigned to 399 BCE.",
+      "relation": "supports",
+      "reviewId": "bi02-henllys-work-review"
+    },
+    {
+      "id": "bi02-henllys-point-evidence",
+      "claimId": "bi02-henllys-point",
+      "sourceId": "atlas-henllys",
+      "locator": "Location: EPSG:4326",
+      "note": "Rounded coordinates identify the site, not its territory.",
+      "relation": "supports",
+      "reviewId": "bi02-henllys-point-review"
+    },
+    {
+      "id": "bi02-doogarrymore-wheels-evidence",
+      "claimId": "bi02-doogarrymore-wheels",
+      "sourceId": "nmi-guide",
+      "locator": "Printed page 14 (PDF page 9), final paragraph",
+      "note": "Dating retained at century precision: 400–301 BCE. The source does not establish a lifespan or continuous use.",
+      "relation": "supports",
+      "reviewId": "bi02-doogarrymore-wheels-review"
+    },
+    {
+      "id": "bi02-corlea-date-evidence",
+      "claimId": "bi02-corlea-date",
+      "sourceId": "corlea-geology",
+      "locator": "Page 1, Outline Site Description and Main Geological Interest",
+      "note": "Retain both candidate years; this is not a claim of two years of construction.",
+      "relation": "supports",
+      "reviewId": "bi02-corlea-date-review"
+    },
+    {
+      "id": "bi02-corlea-dendro-evidence",
+      "claimId": "bi02-corlea-dendro",
+      "sourceId": "corlea-excavation",
+      "locator": "Chronology",
+      "note": "The earlier report gives 148 BCE; the displayed range also accommodates the Geological Survey report.",
+      "relation": "supports",
+      "reviewId": "bi02-corlea-dendro-review"
+    },
+    {
+      "id": "bi02-corlea-purpose-evidence",
+      "claimId": "bi02-corlea-purpose",
+      "sourceId": "corlea-geology",
+      "locator": "Page 1, paragraph beginning The Corlea Trackway was approximately",
+      "note": "Possible purpose is distinguished from an established function.",
+      "relation": "supports",
+      "reviewId": "bi02-corlea-purpose-review"
+    },
+    {
+      "id": "bi02-corlea-point-evidence",
+      "claimId": "bi02-corlea-point",
+      "sourceId": "corlea-excavation",
+      "locator": "Latitude, Longitude (decimal degrees)",
+      "note": "This reference covers the excavation site, not the full trackway or the visitor centre.",
+      "relation": "supports",
+      "reviewId": "bi02-corlea-point-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "bi-reviewed-danebury-houses-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-danebury-grain-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-danebury-livestock-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-danebury-crafts-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-danebury-exchange-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-danebury-shrines-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-danebury-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-danebury-location-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-broxmouth-start-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-broxmouth-end-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-broxmouth-sequence-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-ireland-period-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi-reviewed-ireland-reuse-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the cited passage. Acceptance is limited to the wording and scope shown; archaeological context does not date each activity to every year in its range."
+    },
+    {
+      "id": "bi02-henllys-start-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Source passage inspected. Retained date ranges and site-specific scope; no exact contemporaneity inferred from a possible overlap."
+    },
+    {
+      "id": "bi02-henllys-end-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Source passage inspected. Retained date ranges and site-specific scope; no exact contemporaneity inferred from a possible overlap."
+    },
+    {
+      "id": "bi02-henllys-work-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Source passage inspected. Retained date ranges and site-specific scope; no exact contemporaneity inferred from a possible overlap."
+    },
+    {
+      "id": "bi02-henllys-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Source passage inspected. Retained date ranges and site-specific scope; no exact contemporaneity inferred from a possible overlap."
+    },
+    {
+      "id": "bi02-doogarrymore-wheels-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Source passage inspected. Retained date ranges and site-specific scope; no exact contemporaneity inferred from a possible overlap."
+    },
+    {
+      "id": "bi02-corlea-date-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Source passage inspected. Retained date ranges and site-specific scope; no exact contemporaneity inferred from a possible overlap."
+    },
+    {
+      "id": "bi02-corlea-dendro-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Source passage inspected. Retained date ranges and site-specific scope; no exact contemporaneity inferred from a possible overlap."
+    },
+    {
+      "id": "bi02-corlea-purpose-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Source passage inspected. Retained date ranges and site-specific scope; no exact contemporaneity inferred from a possible overlap."
+    },
+    {
+      "id": "bi02-corlea-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Source passage inspected. Retained date ranges and site-specific scope; no exact contemporaneity inferred from a possible overlap."
+    }
+  ],
+  "accounts": []
+}

@@ -1,0 +1,185 @@
+{
+  "entities": [
+    {
+      "id": "socrates",
+      "name": "Socrates",
+      "type": "person"
+    },
+    {
+      "id": "socrates-trial",
+      "name": "Trial and execution of Socrates",
+      "type": "event"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sep-socrates",
+      "title": "Socrates",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/socrates/",
+      "locatorHint": "Introduction and section 3",
+      "accessed": "2026-11-22",
+      "reuse": "Original paraphrases and citations only; no source text or images copied."
+    }
+  ],
+  "claims": [
+    {
+      "id": "socrates-reviewed-death-year",
+      "subjectId": "socrates",
+      "predicate": "death-date",
+      "statement": "Socrates died in 399 BCE.",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "exact",
+          "earliest": -399,
+          "latest": -399,
+          "original": "399 B.C.E.",
+          "calendar": "BCE/CE"
+        }
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "socrates-reviewed-death-year-evidence"
+      ],
+      "reviewId": "socrates-reviewed-death-year-review",
+      "disputeNote": null
+    },
+    {
+      "id": "socrates-reviewed-no-writings",
+      "subjectId": "socrates",
+      "predicate": "writings",
+      "statement": "Socrates left no writings of his own.",
+      "value": {
+        "type": "text",
+        "text": "Socrates left no writings of his own."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "socrates-reviewed-no-writings-evidence"
+      ],
+      "reviewId": "socrates-reviewed-no-writings-review",
+      "disputeNote": null
+    },
+    {
+      "id": "socrates-reviewed-trial-year",
+      "subjectId": "socrates-trial",
+      "predicate": "event-date",
+      "statement": "Socrates was tried in Athens in 399 BCE.",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "exact",
+          "earliest": -399,
+          "latest": -399,
+          "original": "May\u2013June 399",
+          "calendar": "BCE/CE"
+        }
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "socrates-reviewed-trial-year-evidence"
+      ],
+      "reviewId": "socrates-reviewed-trial-year-review",
+      "disputeNote": null
+    },
+    {
+      "id": "socrates-reviewed-conviction",
+      "subjectId": "socrates-trial",
+      "predicate": "verdict",
+      "statement": "The Athenian jury found Socrates guilty.",
+      "value": {
+        "type": "text",
+        "text": "The Athenian jury found Socrates guilty."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "socrates-reviewed-conviction-evidence"
+      ],
+      "reviewId": "socrates-reviewed-conviction-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "socrates-reviewed-death-year-evidence",
+      "claimId": "socrates-reviewed-death-year",
+      "sourceId": "sep-socrates",
+      "locator": "Introduction, first paragraph; section 3, chronology for 399 BCE",
+      "note": "Wording checked against the identified passage; acceptance applies only to this statement.",
+      "relation": "supports",
+      "reviewId": "socrates-reviewed-death-year-review"
+    },
+    {
+      "id": "socrates-reviewed-no-writings-evidence",
+      "claimId": "socrates-reviewed-no-writings",
+      "sourceId": "sep-socrates",
+      "locator": "Introduction, first paragraph",
+      "note": "Wording checked against the identified passage; acceptance applies only to this statement.",
+      "relation": "supports",
+      "reviewId": "socrates-reviewed-no-writings-review"
+    },
+    {
+      "id": "socrates-reviewed-trial-year-evidence",
+      "claimId": "socrates-reviewed-trial-year",
+      "sourceId": "sep-socrates",
+      "locator": "Section 3, paragraph beginning \u201cIn the month of Thargelion\u201d",
+      "note": "Wording checked against the identified passage; acceptance applies only to this statement.",
+      "relation": "supports",
+      "reviewId": "socrates-reviewed-trial-year-review"
+    },
+    {
+      "id": "socrates-reviewed-conviction-evidence",
+      "claimId": "socrates-reviewed-conviction",
+      "sourceId": "sep-socrates",
+      "locator": "Section 3, paragraph beginning \u201cSocrates three times took up the charge\u201d",
+      "note": "Wording checked against the identified passage; acceptance applies only to this statement.",
+      "relation": "supports",
+      "reviewId": "socrates-reviewed-conviction-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "socrates-reviewed-death-year-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "reason": "Inspected the cited passage and limited the claim to its explicit support. Date claims use year precision.",
+      "decision": "verified"
+    },
+    {
+      "id": "socrates-reviewed-no-writings-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "reason": "Inspected the cited passage and limited the claim to its explicit support. Date claims use year precision.",
+      "decision": "verified"
+    },
+    {
+      "id": "socrates-reviewed-trial-year-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "reason": "Inspected the cited passage and limited the claim to its explicit support. Date claims use year precision.",
+      "decision": "verified"
+    },
+    {
+      "id": "socrates-reviewed-conviction-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "reason": "Inspected the cited passage and limited the claim to its explicit support. Date claims use year precision.",
+      "decision": "verified"
+    }
+  ],
+  "accounts": [],
+  "schemaVersion": "1.0"
+}

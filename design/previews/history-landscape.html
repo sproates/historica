@@ -1,0 +1,69 @@
+<div id="history-landscape">
+<style>
+#history-landscape{--bg:light-dark(#f3efe4,#19231f);--fg:light-dark(#243b30,#ece9dc);--muted:light-dark(#637264,#aab9ad);--rule:light-dark(#d2d7c9,#3b4b40);--surface:light-dark(#faf8f1,#223027);--gold:light-dark(#94642f,#d9b477);--sage:light-dark(#557d67,#8fb79a);--clay:light-dark(#aa6956,#d9987c);--blue:light-dark(#5d7e8d,#93b8c9);background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,sans-serif;padding:28px 32px;border-radius:4px;overflow:hidden}
+#history-landscape *{box-sizing:border-box}#history-landscape header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-right:65px}#history-landscape .brand{letter-spacing:.24em;font-size:12px;font-weight:600}#history-landscape .quiet{color:var(--muted)}#history-landscape small{font-size:11px;color:var(--muted);letter-spacing:.03em}#history-landscape h1{font:400 clamp(32px,5vw,58px)/1.08 Georgia,serif;margin:26px 0 10px;letter-spacing:-.04em}#history-landscape h2{font:400 25px/1.2 Georgia,serif;margin:4px 0 10px}#history-landscape p{margin:0}
+#history-landscape .hero-bottom,#history-landscape .tools,#history-landscape .controls{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}#history-landscape .controls{justify-content:flex-start;gap:5px}#history-landscape .tools{padding:18px 0;border-bottom:1px solid var(--rule);margin-top:16px}
+#history-landscape button{font:inherit;color:var(--fg);background:transparent;border:1px solid var(--rule);border-radius:25px;padding:7px 13px;cursor:pointer}#history-landscape button:hover{background:var(--surface)}#history-landscape button:disabled{opacity:.4;cursor:default}#history-landscape button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+#history-landscape .ruler{display:grid;grid-template-columns:145px 1fr;gap:16px;margin-top:18px;align-items:center}#history-landscape .ticks{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}#history-landscape .lanes{position:relative;margin-top:10px}#history-landscape .lane{display:grid;grid-template-columns:145px 1fr;gap:16px;min-height:83px;border-top:1px solid var(--rule);align-items:center}#history-landscape .lane-name{font:400 18px/1.2 Georgia,serif}#history-landscape .lane-name small{display:block;margin-top:5px;font:11px/1.4 system-ui,sans-serif}
+#history-landscape .field{position:relative;min-width:0;padding:12px 0}#history-landscape .caption{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;position:relative;z-index:2}#history-landscape .caption button{font-size:13px;border:0;border-radius:3px;padding:0;text-align:left;background:var(--bg)}#history-landscape .band-space{height:18px;position:relative;margin-top:9px}#history-landscape .band{position:absolute;top:2px;height:13px;background:var(--sage);border-radius:2px;transition:left .45s,width .45s;opacity:.68}#history-landscape .band.life{top:7px;height:3px;opacity:1}#history-landscape .dot{position:absolute;width:8px;height:8px;top:4px;transform:translateX(-50%) rotate(45deg);background:var(--gold)}
+#history-landscape .sight{position:absolute;left:161px;right:0;top:0;bottom:0;pointer-events:none;z-index:1}#history-landscape .needle{position:absolute;top:0;bottom:0;width:1px;background:var(--gold);transition:left .2s}#history-landscape .needle:before{content:'';position:absolute;top:-6px;left:-3px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+#history-landscape .scrubber{display:grid;grid-template-columns:145px 1fr;gap:16px;align-items:center;padding:14px 0;border-top:1px solid var(--rule)}#history-landscape input{width:100%;accent-color:var(--gold);margin:0}#history-landscape .detail{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:22px 0 12px;border-top:1px solid var(--rule)}#history-landscape .detail .controls{margin-top:15px}#history-landscape .simultaneous{border-left:1px solid var(--rule);padding-left:24px}#history-landscape .simultaneous p{margin-top:8px}#history-landscape a{color:var(--fg)}#history-landscape footer{border-top:1px solid var(--rule);padding-top:13px;margin-top:14px;font-size:11px;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){#history-landscape .band,#history-landscape .needle{transition:none}}
+@media(max-width:600px){#history-landscape{padding:20px 16px}#history-landscape .ruler,#history-landscape .lane,#history-landscape .scrubber{grid-template-columns:85px 1fr;gap:10px}#history-landscape .sight{left:95px}#history-landscape .lane-name{font-size:15px}#history-landscape .caption small{display:none}#history-landscape .detail{grid-template-columns:1fr;gap:16px}#history-landscape .simultaneous{border-left:0;padding-left:0}#history-landscape header{padding-right:0}#history-landscape .ticks .mid{display:none}}
+</style>
+<header><span class="brand">TIMELINE</span><small>AN ATLAS OF SHARED TIME</small></header>
+<h1 id="hl-title">One world.<br>Many histories.</h1>
+<div class="hero-bottom"><span class="quiet" id="hl-subtitle">A century seen from different places.</span><span id="hl-range"></span></div>
+<div class="tools"><div class="controls"><button id="hl-all">All history</button><button id="hl-fit">Alexander’s whole story</button></div><div class="controls"><button id="hl-out" aria-label="Zoom out">−</button><span id="hl-scale"></span><button id="hl-in" aria-label="Zoom in">+</button></div></div>
+<div class="ruler"><small>PLACE / LIFE</small><div id="hl-ticks" class="ticks"></div></div>
+<div class="lanes" id="hl-lanes"></div>
+<div class="scrubber"><span id="hl-moment"></span><input id="hl-slider" type="range" aria-label="Move the shared time marker"></div>
+<section class="detail" aria-live="polite"><div><small id="hl-type"></small><h2 id="hl-detail-title"></h2><p id="hl-description"></p><div class="controls"><button id="hl-close-in">Explore this span →</button><a id="hl-source" target="_blank" rel="noreferrer">Source ↗</a></div></div><div class="simultaneous"><small id="hl-alongside-label"></small><div id="hl-alongside"></div></div></section>
+<footer>Interactive design study · selected coverage only · bands show time, not power or population · deep-time boundaries approximate</footer>
+</div>
+<script>
+(()=>{
+const root=document.getElementById('history-landscape'),q=s=>root.querySelector(s);
+const levels=[[-300000,2026,'All history'],[-10000,2026,'Millennia'],[-1000,500,'An era'],[-400,-300,'A century'],[-336,-323,'A campaign'],[-329,-329,'A year']];
+const records=[
+{id:'origins',place:'Human origins',sub:'Africa → the world',name:'Homo sapiens',a:-300000,b:2026,color:'sage',description:'Our species emerged in Africa about 300,000 years ago. This span provides the deep-time backdrop; it does not date occupation of every region.',source:'https://humanorigins.si.edu/evidence/human-fossils/species/homo-sapiens'},
+{id:'food',place:'Ways of living',sub:'Different regional paths',name:'Food-producing societies',a:-10000,b:2026,color:'clay',description:'Food production developed within roughly the past 12,000 years, at different times in different places. This is a broad overview, not a single global transition.',source:'https://humanorigins.si.edu/human-characteristics/humans-change-world'},
+{id:'alex',place:'Alexander',sub:'A life, not a territory',name:'Alexander the Great',a:-356,b:-323,life:true,color:'gold',description:'A life overlapping Aristotle’s and the Warring States period in China. The darker segment below marks the campaign collection, 336–323 BCE.',source:'https://archive.archaeology.org/online/features/alexander/whoswho.html'},
+{id:'aristotle',place:'Aristotle',sub:'A contemporary life',name:'Aristotle',a:-384,b:-322,life:true,color:'gold',description:'Aristotle and Alexander were alive at the same time. Move the shared marker to compare their approximate ages.',source:'https://plato.stanford.edu/entries/aristotle/'},
+{id:'china',place:'East Asia',sub:'China',name:'Warring States',a:-403,b:-221,color:'sage',description:'Competing states within the Zhou world. These boundaries follow one chronology; others begin the period in 475 BCE.',source:'https://www.getty.edu/vow/AATFullDisplay?find=300264024&logic=AND&note=&subjectid=300018378'},
+{id:'italy',place:'Mediterranean',sub:'Italy',name:'Second Samnite War',a:-326,b:-304,color:'blue',description:'This war begins near the end of Alexander’s life. At 329 BCE it still lies ahead, visibly to the right of the shared marker.',source:'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/FRAAHR/4*.html'},
+{id:'monte',place:'The Americas',sub:'Oaxaca',name:'Early Monte Albán',a:-500,b:-100,color:'clay',description:'An archaeological phase at Monte Albán, approximately 500–100 BCE. A long period of activity, not an event assigned to the selected year.',source:'https://sic.cultura.gob.mx/ficha.php?table=zona_arqueologica&table_id=76'}
+];
+let state={level:3,year:-329,selected:'alex'};
+function restore(s){const v=s?.modelContent;if(v&&Number.isInteger(v.level)&&v.level>=0&&v.level<6&&Number.isInteger(v.year)&&v.year>=-300000&&v.year<=2026&&records.some(r=>r.id===v.selected))state={level:v.level,year:v.year,selected:v.selected};}
+restore(window.openai?.widgetState);
+const fmt=y=>y<0?`${Math.abs(y).toLocaleString('en-GB')} BCE`:`${y===0?1:y} CE`;
+const save=()=>window.openai?.setWidgetState?.({modelContent:state,privateContent:null})?.catch(()=>{});
+function view(){return state.level===5?[state.year,state.year,'A year']:levels[state.level];}
+function render(){
+let [a,b,scale]=view();state.year=Math.min(b,Math.max(a,state.year));const span=b-a||1,x=y=>100*(y-a)/span;
+q('#hl-range').textContent=a===b?fmt(a):`${fmt(a)} — ${fmt(b)}`;q('#hl-scale').textContent=scale;
+q('#hl-subtitle').textContent=state.level<2?'Deep time, with a small window onto recorded history.':'Lives and places, aligned on the same timeline.';
+q('#hl-out').disabled=state.level===0;q('#hl-in').disabled=state.level===5;
+q('#hl-all').setAttribute('aria-pressed',state.level===0);q('#hl-fit').setAttribute('aria-pressed',state.level===4);
+q('#hl-ticks').innerHTML=a===b?`<span>${fmt(a)}</span>`:[a,Math.round(a+span/2),b].map((v,i)=>`<span class="${i===1?'mid':''}">${fmt(v)}</span>`).join('');
+const visible=state.level<2?records.filter(r=>['origins','food','alex'].includes(r.id)):records.filter(r=>!['origins','food'].includes(r.id));
+q('#hl-lanes').innerHTML=visible.map(r=>{
+ const l=Math.max(a,r.a),end=Math.min(b,r.b),active=end>=l,left=x(l),width=a===b?100:Math.max(0,x(end)-left);
+ const label=state.level<2&&r.id==='alex'?'Alexander · a tiny moment in deep time':r.name;
+ return `<div class="lane"><div class="lane-name">${r.place}<small>${r.sub}</small></div><div class="field"><div class="caption"><button data-id="${r.id}" aria-pressed="${state.selected===r.id}">${label}</button><small>${fmt(r.a)} – ${fmt(r.b)}</small></div><div class="band-space">${active?`<span class="band ${r.life?'life':''}" style="left:${left}%;width:${width}%;background:var(--${r.color})"></span>`:''}${r.id==='alex'&&a<=-323&&b>=-336?`<span class="band" style="left:${Math.max(0,x(-336))}%;width:${Math.max(0,Math.min(100,x(-323))-Math.max(0,x(-336)))}%;background:var(--gold)"></span>`:''}${r.id==='alex'&&a<=-329&&b>=-329&&state.level>=3?`<span class="dot" style="left:${x(-329)}%" aria-label="329 BCE: Bactria"></span>`:''}</div></div></div>`;
+}).join('')+`<div class="sight"><div class="needle" style="left:${a===b?50:x(state.year)}%"></div></div>`;
+const slider=q('#hl-slider');slider.min=a;slider.max=b;slider.value=state.year;slider.disabled=a===b;q('#hl-moment').textContent=fmt(state.year);
+const r=records.find(r=>r.id===state.selected);q('#hl-type').textContent=r.life?'AN OVERLAPPING LIFE':'A SPAN OF HISTORY';q('#hl-detail-title').textContent=r.name;q('#hl-description').textContent=r.description;q('#hl-source').href=r.source;
+q('#hl-close-in').textContent=r.id==='alex'?'Fit Alexander’s whole story →':'Explore this span →';
+q('#hl-alongside-label').textContent=`AT THE SAME MOMENT · ${fmt(state.year)}`;
+const lives=records.filter(r=>r.life&&r.a<=state.year&&r.b>=state.year).map(r=>`${r.name} · about ${Math.max(0,state.year-r.a-1)}–${state.year-r.a} years old${state.year===r.b?' · final year':''}`);
+const contexts=records.filter(r=>!r.life&&!['origins','food'].includes(r.id)&&r.a<=state.year&&r.b>=state.year).map(r=>r.name);
+q('#hl-alongside').innerHTML=[...lives,...contexts].map(s=>`<p>${s}</p>`).join('')||'<p class="quiet">No detailed contemporary stories in this sample at the selected moment.</p>';
+}
+function changeLevel(n){state.level=Math.min(5,Math.max(0,n));const [a,b]=view();state.year=Math.max(a,Math.min(b,state.year));render();save();}
+root.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.id){state.selected=b.dataset.id;render();save();return;}if(b.id==='hl-in')changeLevel(state.level+1);if(b.id==='hl-out')changeLevel(state.level-1);if(b.id==='hl-all')changeLevel(0);if(b.id==='hl-fit'){state.year=-329;state.selected='alex';changeLevel(4);}if(b.id==='hl-close-in'){const r=records.find(r=>r.id===state.selected);state.year=r.id==='origins'?-329:Math.round((r.a+r.b)/2);changeLevel(r.id==='origins'?0:r.id==='food'?1:r.id==='alex'?4:r.id==='monte'||r.id==='china'?2:3);}});
+q('#hl-slider').addEventListener('input',e=>{state.year=Number(e.target.value);if(state.year===0)state.year=1;render();});q('#hl-slider').addEventListener('change',save);
+window.addEventListener('openai:set_globals',e=>{restore(e.detail?.globals?.widgetState);render();});render();
+})();
+</script>

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "planning-1",
+  "status": "specification-not-executable",
+  "enabled": false,
+  "schedule": null,
+  "pilotLimits": {
+    "packagesPerRun": 1,
+    "inspectedSourcesPerRun": 20,
+    "candidateClaimsPerRun": 40,
+    "paidServiceBudget": null,
+    "requireBudgetBeforePaidUnattendedRun": true
+  },
+  "selection": "Rotate broad groups; prioritise unresearched overview packages before deepening accepted ones. Pilot packages first.",
+  "requiredOutputs": [
+    "source-manifest",
+    "draft-claims",
+    "evidence-links",
+    "entity-matches",
+    "regional-account-draft",
+    "validation-report",
+    "review-issues",
+    "checkpoint",
+    "usage-report"
+  ],
+  "acceptance": {
+    "pilot": "Every candidate reviewed before acceptance",
+    "unsupportedClaims": "remain-draft",
+    "conflicts": "preserve-and-queue",
+    "publicPublication": "not-configured"
+  },
+  "rerunPolicy": "Stable IDs, cached provenance, deduplication and resumable checkpoints; never overwrite accepted claims without a recorded revision."
+}
