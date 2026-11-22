@@ -176,3 +176,9 @@ Both packs include claim-level linked evidence and AI-assisted review records;
 neither certifies complete regional coverage or independent expert review.
 
 Refresh the persistent preview after edits with `npm run preview:sync`. Files are copied to `~/Library/Application Support/Historica/preview/` so the background service does not depend on access to the Documents folder. This command never changes production.
+
+## Search and sharing metadata
+
+`build-metadata.mjs` generates static HTML for each focus under `web/pages/`, including a title, description, canonical URL, Open Graph and social-card tags. Public focus routes serve those files; the interactive app still restores bookmarked state. The build also generates `sitemap.xml` and `robots.txt`. The source template remains `web/focus.html`. Do not edit generated focus pages directly.
+
+The 1200×630 sharing image is `web/share-historica.png`; regenerate it on the Mac with `swift scripts/build-share-image.swift`. Search engines and messaging services choose when to recrawl and may display their own snippets or cached previews.

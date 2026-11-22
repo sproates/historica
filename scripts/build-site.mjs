@@ -10,7 +10,7 @@ function copy(dir=''){
   if(item.name.startsWith('.')&&item.name!=='.htaccess')continue;
   const relative=path.join(dir,item.name),source=path.join('web',relative),target=path.join(output,relative);
   if(item.isDirectory()){fs.mkdirSync(target,{recursive:true});copy(relative);}
-  else if(item.name==='.htaccess'||/\.(html|css|js|json|svg|png|jpg|webp|ico|txt)$/.test(item.name)){
+  else if(item.name==='.htaccess'||/\.(html|css|js|json|svg|png|jpg|webp|ico|txt|xml)$/.test(item.name)){
    fs.copyFileSync(source,target);files.push({path:relative,sha256:crypto.createHash('sha256').update(fs.readFileSync(source)).digest('hex')});
   }
  }
