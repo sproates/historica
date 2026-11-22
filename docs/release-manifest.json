@@ -71,7 +71,7 @@
     },
     {
       "path": "focus-app.js",
-      "sha256": "32b13477d276cef058417015859d77656f6b6463c8e500dd31505083233cd04e"
+      "sha256": "80135dad13cf89e62d1c8b5cb50bdd5d3e7340ae0d417ed1337a9beae5df20ea"
     },
     {
       "path": "focus-map.js",
@@ -87,7 +87,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "71d20e908a46bbabf083e79c4e37c18d12e883ac70890950692a7d0f85bd3ccd"
+      "sha256": "a2f4a70ea7c733b9129b5351ff351cf128c525ae7268fab819e36d98b84218ea"
     },
     {
       "path": "model.js",
