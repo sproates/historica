@@ -1,4 +1,5 @@
 """Manual, manifest-only upload confined to historica.online. Password stays in memory."""
+import concurrent.futures
 import ftplib
 import getpass
 import hashlib
@@ -30,7 +31,6 @@ try:
     ftp.connect(HOST,21)
     ftp.auth()
     ftp.login(USER,password)
-    password = None
     ftp.prot_p()
     ftp.set_pasv(True)
     ftp.cwd(ROOT)
@@ -72,15 +72,41 @@ try:
     print('Backups complete: '+str(backup),flush=True)
     for directory in missing_dirs: ftp.mkd(remote(directory))
     ordered=sorted(files,key=lambda r:(r['path']=='index.html',r['path']=='.htaccess',r['path'].endswith('.html'),r['path']))
-    for row in ordered:
+    def upload(connection, row):
         name=row['path']
-        if name in record['unchanged']:continue
-        with (local/name).open('rb') as source: ftp.storbinary('STOR '+remote(name),source)
-        record['uploaded'].append(name)
-        content=io.BytesIO();ftp.retrbinary('RETR '+remote(name),content.write)
+        with (local/name).open('rb') as source: connection.storbinary('STOR '+remote(name),source)
+        content=io.BytesIO();connection.retrbinary('RETR '+remote(name),content.write)
         assert hashlib.sha256(content.getvalue()).hexdigest()==row['sha256'], 'Remote bytes differ: '+name
+        return name
+
+    def save_uploaded(name):
+        record['uploaded'].append(name)
         record['verified'].append(name)
         (backup/'deployment.json').write_text(json.dumps(record,indent=2))
+
+    # Independent generated pages can transfer together, before routing changes.
+    page_rows=[r for r in ordered if r['path'].startswith('pages/') and r['path'] not in record['unchanged']]
+    def upload_batch(rows):
+        connection=ftplib.FTP_TLS(context=ssl.create_default_context(),timeout=30)
+        completed=[]
+        try:
+            connection.connect(HOST,21);connection.auth();connection.login(USER,password)
+            connection.prot_p();connection.set_pasv(True);connection.cwd(ROOT)
+            assert connection.pwd().rstrip('/')==ROOT
+            for row in rows: completed.append(upload(connection,row))
+            return completed
+        finally: connection.close()
+    if page_rows:
+        print(f'Uploading {len(page_rows)} history pages across four verified FTPS connections.',flush=True)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+            futures=[pool.submit(upload_batch,page_rows[i::4]) for i in range(4) if page_rows[i::4]]
+            for future in concurrent.futures.as_completed(futures):
+                for name in future.result(): save_uploaded(name)
+                print(f"Verified {len(record['verified'])}/{len(page_rows)} history pages.",flush=True)
+    for row in ordered:
+        name=row['path']
+        if name in record['unchanged'] or name in record['verified']:continue
+        save_uploaded(upload(ftp,row))
         print('Uploaded and verified: '+name,flush=True)
     print('FTPS deployment complete. No operations outside '+ROOT,flush=True)
 finally:
