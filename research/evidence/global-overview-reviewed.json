@@ -583,10 +583,10 @@
       "id": "global-khufu-reign-2",
       "subjectId": "khufu-reign",
       "predicate": "historical-context",
-      "statement": "The Great Pyramid at Giza belongs to Khufu.",
+      "statement": "Khufu’s Great Pyramid at Giza was built as his tomb and is the largest Egyptian pyramid.",
       "value": {
         "type": "text",
-        "text": "The Great Pyramid at Giza belongs to Khufu."
+        "text": "Khufu’s Great Pyramid at Giza was built as his tomb and is the largest Egyptian pyramid."
       },
       "validity": {
         "start": {
@@ -1670,6 +1670,74 @@
       ],
       "reviewId": "global-kush-overview-2-review",
       "disputeNote": null
+    },
+    {
+      "id": "global-khufu-reign-3",
+      "subjectId": "khufu-reign",
+      "predicate": "historical-context",
+      "statement": "Khufu succeeded his father Snefru in the Fourth Dynasty. Snefru commissioned three large pyramids and developed the smooth-sided pyramid form.",
+      "value": {
+        "type": "text",
+        "text": "Khufu succeeded his father Snefru in the Fourth Dynasty. Snefru commissioned three large pyramids and developed the smooth-sided pyramid form."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2551,
+          "latest": -2551,
+          "original": "circa 2551 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2528,
+          "latest": -2528,
+          "original": "circa 2528 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-khufu-reign-3-evidence"
+      ],
+      "reviewId": "global-khufu-reign-3-review",
+      "disputeNote": null
+    },
+    {
+      "id": "global-khufu-reign-4",
+      "subjectId": "khufu-reign",
+      "predicate": "historical-context",
+      "statement": "Fourth Dynasty pyramid complexes included temples and a causeway. State-planned cemeteries for officials surrounded Khufu’s pyramid, and senior officials were often relatives of the king in a highly centralised administration.",
+      "value": {
+        "type": "text",
+        "text": "Fourth Dynasty pyramid complexes included temples and a causeway. State-planned cemeteries for officials surrounded Khufu’s pyramid, and senior officials were often relatives of the king in a highly centralised administration."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2551,
+          "latest": -2551,
+          "original": "circa 2551 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2528,
+          "latest": -2528,
+          "original": "circa 2528 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "global-khufu-reign-4-evidence"
+      ],
+      "reviewId": "global-khufu-reign-4-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -2059,6 +2127,24 @@
       "note": "Broad source-level context. This does not establish activity in every year or reconstruct political borders. Approximate period boundaries follow this source.",
       "relation": "supports",
       "reviewId": "global-kush-overview-2-review"
+    },
+    {
+      "id": "global-khufu-reign-3-evidence",
+      "claimId": "global-khufu-reign-3",
+      "sourceId": "global-old",
+      "locator": "Dynasty 4 section, paragraphs on Snefru, pyramid complexes and royal administration",
+      "note": "Context for Khufu’s reign; Snefru’s building projects preceded it. This does not date individual construction stages.",
+      "relation": "supports",
+      "reviewId": "global-khufu-reign-3-review"
+    },
+    {
+      "id": "global-khufu-reign-4-evidence",
+      "claimId": "global-khufu-reign-4",
+      "sourceId": "global-old",
+      "locator": "Dynasty 4 section, paragraphs on Snefru, pyramid complexes and royal administration",
+      "note": "Context for Khufu’s reign; Snefru’s building projects preceded it. This does not date individual construction stages.",
+      "relation": "supports",
+      "reviewId": "global-khufu-reign-4-review"
     }
   ],
   "reviews": [
@@ -2362,6 +2448,20 @@
       "date": "2026-11-22",
       "decision": "verified",
       "reason": "Inspected the linked passage. The paraphrase and displayed date scope follow the source; wider regional coverage remains incomplete."
+    },
+    {
+      "id": "global-khufu-reign-3-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the Dynasty 4 section against the expanded reader-facing account, including succession, pyramid development and royal administration."
+    },
+    {
+      "id": "global-khufu-reign-4-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the Dynasty 4 section against the expanded reader-facing account, including succession, pyramid development and royal administration."
     }
   ],
   "accounts": []
