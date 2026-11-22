@@ -1,0 +1,638 @@
+{
+  "entities": [
+    {
+      "id": "julius-caesar",
+      "title": "Julius Caesar",
+      "type": "person",
+      "startYear": -100,
+      "endYear": -44,
+      "description": "Julius Caesar lived from 100 to 44 BCE, during the final decades of the Roman Republic. His rise ended in dictatorship and assassination.\n\nHis death did not restore political stability. His heir Octavian, later known as Augustus, eventually emerged as Rome’s first emperor. The connections below follow the people and conflicts that link Caesar’s lifetime to that change.",
+      "note": "Lifespan, using the conventional birth year of 100 BCE. Some chronologies give 102 BCE; age comparisons here follow 100.",
+      "point": null,
+      "url": "https://academic.oup.com/oxford-dictionary-of-national-biography/reference/63486/reference-article-abstract/579736904",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-julius-caesar-history",
+        "caesar-era-julius-caesar-association-rome59",
+        "caesar-era-julius-caesar-association-rome44",
+        "caesar-era-julius-caesar-association-egypt48"
+      ],
+      "dateLabel": "Lifespan",
+      "region": "Rome",
+      "regionIds": []
+    },
+    {
+      "id": "cleopatra-vii",
+      "title": "Cleopatra VII",
+      "type": "person",
+      "startYear": -69,
+      "endYear": -30,
+      "description": "Cleopatra VII lived from 69 to 30 BCE and was the last queen of the Ptolemaic dynasty. Her position joined the politics of Egypt to the struggles for power in Rome.\n\nHer relationships with Caesar and then Mark Antony were also political alliances. In Egypt, she drew on established traditions of royal authority while adapting them to her own circumstances.",
+      "note": "Lifespan. Her reign is a separate entry, beginning in 51 BCE.",
+      "point": null,
+      "url": "https://www.getty.edu/publications/egypt-classical-world/04/",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-cleopatra-vii-history",
+        "caesar-era-cleopatra-vii-association-egypt51"
+      ],
+      "dateLabel": "Lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "pompey",
+      "title": "Pompey",
+      "type": "person",
+      "startYear": -106,
+      "endYear": -48,
+      "description": "Pompey lived from 106 to 48 BCE. He first worked with Caesar in a political alliance, then fought against him in civil war.\n\nDefeat at Pharsalus drove him to Egypt, where he was killed.",
+      "note": "Lifespan. The map does not imply that he remained in Rome throughout it.",
+      "point": null,
+      "url": "https://museum.classics.cam.ac.uk/collections/casts/pompey-gnaeus-pompeius-magnus",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-pompey-history"
+      ],
+      "dateLabel": "Lifespan",
+      "region": "Rome",
+      "regionIds": []
+    },
+    {
+      "id": "cicero",
+      "title": "Cicero",
+      "type": "person",
+      "startYear": -106,
+      "endYear": -43,
+      "description": "Cicero was a Roman politician, lawyer and philosophical writer. His speeches and letters give us a particularly close view of the Republic’s final decades.\n\nAs consul in 63 BCE, he suppressed Catiline’s conspiracy. He later watched the struggle between Caesar and Pompey turn into civil war. Caesar’s assassination brought only a brief respite: Cicero was killed on Mark Antony’s orders in 43 BCE.",
+      "note": "Lifespan, 106–43 BCE.",
+      "point": null,
+      "url": "https://plato.stanford.edu/entries/cicero/",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-cicero-history",
+        "caesar-era-cicero-association-rome63"
+      ],
+      "dateLabel": "Lifespan",
+      "region": "Rome",
+      "regionIds": []
+    },
+    {
+      "id": "mark-antony",
+      "title": "Mark Antony",
+      "type": "person",
+      "startYear": -83,
+      "endYear": -30,
+      "description": "Mark Antony fought for Caesar and became one of the central figures in the struggle after his death. He and Octavian were allies before becoming rivals.\n\nHis alliance with Cleopatra tied his future to Ptolemaic Egypt. Octavian defeated their forces at Actium in 31 BCE. Antony died the following year.",
+      "note": "Lifespan, using 83–30 BCE. Regional labels describe his wider career, not a continuous location.",
+      "point": null,
+      "url": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548072126",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-mark-antony-history"
+      ],
+      "dateLabel": "Lifespan",
+      "region": "Rome and Egypt",
+      "regionIds": []
+    },
+    {
+      "id": "augustus",
+      "title": "Augustus (Octavian)",
+      "type": "person",
+      "startYear": -63,
+      "endYear": 14,
+      "description": "Born in 63 BCE, Octavian became Caesar’s heir after the assassination in 44 BCE. He was still a young man when he entered the struggle for power that followed.\n\nVictory over Antony and Cleopatra at Actium removed his principal rivals. In 27 BCE, the Senate granted him the title Augustus. He died in 14 CE; his lifespan and his years as emperor are shown separately.",
+      "note": "Lifespan. Octavian and Augustus are the same person; Augustus is the title granted in 27 BCE.",
+      "point": null,
+      "url": "https://ancientromelive.org/augustus/",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-augustus-history"
+      ],
+      "dateLabel": "Lifespan",
+      "region": "Rome",
+      "regionIds": []
+    },
+    {
+      "id": "cleopatra-vii-reign",
+      "title": "Cleopatra’s reign",
+      "type": "period",
+      "startYear": -51,
+      "endYear": -30,
+      "description": "Cleopatra ruled Egypt from 51 to 30 BCE. She belonged to the dynasty established by Ptolemy I, one of Alexander’s successors.\n\nHer reign brought that long history into direct contact with Caesar, Antony and Octavian. The links here lead back into Ptolemaic Egypt and forward to Roman rule.",
+      "note": "Reign dates, not a lifespan. Co-rulers and interruptions are not yet represented as separate phases.",
+      "point": null,
+      "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/cleopatravii.html",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-cleopatra-vii-reign-history"
+      ],
+      "dateLabel": "Reign",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "caesar-consul",
+      "title": "Caesar becomes consul",
+      "type": "event",
+      "startYear": -59,
+      "endYear": -59,
+      "description": "Caesar became consul in 59 BCE with the support of Pompey and Crassus.\n\nThe alliance helped secure his command in Gaul after his year in office.",
+      "note": "First consulship; Caesar held the office again later.",
+      "point": null,
+      "url": "https://www.vroma.org/vromans/bmcmanus/caesar.html",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-caesar-consul-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Rome",
+      "regionIds": []
+    },
+    {
+      "id": "caesar-gallic-wars",
+      "title": "Caesar’s campaigns in Gaul",
+      "type": "period",
+      "startYear": -58,
+      "endYear": -50,
+      "description": "Caesar campaigned in Gaul from 58 to 50 BCE. During these years, his armies also crossed the Channel into Britain.\n\nThe two British expeditions belong within this wider series of campaigns. They did not establish lasting Roman occupation of Britain.",
+      "note": "Campaign window follows English Heritage. It includes the closing phase after the principal conquest; fighting was not continuous everywhere.",
+      "point": null,
+      "url": "https://www.english-heritage.org.uk/learn/story-of-england/romans/introduction/",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-caesar-gallic-wars-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Gaul",
+      "regionIds": []
+    },
+    {
+      "id": "caesar-britain",
+      "title": "Caesar’s expeditions to Britain",
+      "type": "period",
+      "startYear": -55,
+      "endYear": -54,
+      "description": "Caesar crossed to Britain twice, in 55 and 54 BCE. The second expedition was the larger attack, directed against communities in the south-east.\n\nHis troops withdrew. Diplomatic and trading relationships continued across the Channel, but permanent Roman occupation came much later.",
+      "note": "Two separate expeditions, not two years of continuous occupation.",
+      "point": null,
+      "url": "https://www.english-heritage.org.uk/learn/story-of-england/romans/introduction/",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-caesar-britain-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Britain",
+      "regionIds": [
+        "britain-ireland"
+      ]
+    },
+    {
+      "id": "caesar-rubicon",
+      "title": "Caesar crosses the Rubicon",
+      "type": "event",
+      "startYear": -49,
+      "endYear": -49,
+      "description": "In 49 BCE, Caesar led his army across the Rubicon into Italy.\n\nThis crossing began open civil war with Pompey and his allies.",
+      "note": "Year-level event; the marker does not specify a disputed crossing site.",
+      "point": null,
+      "url": "https://www.vroma.org/vromans/bmcmanus/caesar.html",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-caesar-rubicon-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Italy",
+      "regionIds": []
+    },
+    {
+      "id": "pharsalus",
+      "title": "The battle of Pharsalus",
+      "type": "event",
+      "startYear": -48,
+      "endYear": -48,
+      "description": "Caesar defeated Pompey at Pharsalus in 48 BCE.\n\nPompey escaped to Egypt. Caesar followed, bringing the Roman conflict into the struggle over Egypt’s throne.",
+      "note": "Battle year. This was not the end of the civil war.",
+      "point": null,
+      "url": "https://www.vroma.org/vromans/bmcmanus/caesar.html",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-pharsalus-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Greece",
+      "regionIds": []
+    },
+    {
+      "id": "caesar-alexandria",
+      "title": "Caesar and Cleopatra in Alexandria",
+      "type": "period",
+      "startYear": -48,
+      "endYear": -47,
+      "description": "Caesar arrived in Alexandria in 48 BCE and supported Cleopatra’s claim to the throne.\n\nFighting kept him in Egypt into 47 BCE. He left Cleopatra in power, supported by Roman troops.",
+      "note": "Episode spanning parts of 48 and 47 BCE, not two complete years. The map uses Egypt’s existing regional reference, not a palace location.",
+      "point": null,
+      "url": "https://www.vroma.org/vromans/bmcmanus/caesar.html",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-caesar-alexandria-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "caesar-assassination",
+      "title": "The assassination of Caesar",
+      "type": "event",
+      "startYear": -44,
+      "endYear": -44,
+      "description": "Caesar was assassinated on 15 March 44 BCE. His concentration of power had made the survival of republican government a central issue.\n\nHis death opened another struggle for control. Octavian, his heir, eventually became Augustus.",
+      "note": "15 March 44 BCE, displayed at year resolution.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/the-roman-republic",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-caesar-assassination-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Rome",
+      "regionIds": []
+    },
+    {
+      "id": "actium",
+      "title": "The battle of Actium",
+      "type": "event",
+      "startYear": -31,
+      "endYear": -31,
+      "description": "On 2 September 31 BCE, Octavian defeated the forces of Antony and Cleopatra at Actium.\n\nFollow their connections to see how this Roman conflict also became the final crisis of Ptolemaic Egypt.",
+      "note": "Battle date, displayed at year resolution. Egypt’s annexation followed in 30 BCE.",
+      "point": null,
+      "url": "https://ancientromelive.org/augustus/",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-actium-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Greece",
+      "regionIds": []
+    },
+    {
+      "id": "egypt-roman-annexation",
+      "title": "Egypt comes under Roman rule",
+      "type": "event",
+      "startYear": -30,
+      "endYear": -30,
+      "description": "Roman rule began in Egypt in 30 BCE, after Cleopatra’s death. The Ptolemaic dynasty, established by Ptolemy I in 305 BCE, had ended.\n\nThis is the point where the Ptolemaic and Roman Egypt entries meet. It marks a change in government, not an end to Egyptian society or its traditions.",
+      "note": "Political transition in 30 BCE. The wider Roman Egypt entry covers the subsequent period.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-ptolemaic-period",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-egypt-roman-annexation-history"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "augustus-reign",
+      "title": "The reign of Augustus",
+      "type": "period",
+      "startYear": -27,
+      "endYear": 14,
+      "description": "In 27 BCE, the Senate granted Octavian the title Augustus. This entry follows his rule from that settlement to his death in 14 CE.\n\nHis separate life entry begins in 63 BCE, allowing you to compare his age with Caesar, Cleopatra and Antony.",
+      "note": "Conventional imperial reign, 27 BCE–14 CE. His rise to sole power began before the title was granted.",
+      "point": null,
+      "url": "https://ancientromelive.org/augustus/",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-augustus-reign-history"
+      ],
+      "dateLabel": "Reign",
+      "region": "Rome",
+      "regionIds": []
+    },
+    {
+      "id": "sanchi-gateways",
+      "title": "Sanchi’s carved gateways",
+      "type": "period",
+      "startYear": -100,
+      "endYear": -1,
+      "description": "In the first century BCE, elaborate stone gateways were added to the Great Stupa at Sanchi. The Archaeological Survey of India associates this work with the Andhra-Satavahanas.\n\nThe carvings tell stories from the Buddha’s life and the Jatakas. Alongside the wars around the Mediterranean, the timeline shows a community investing in a Buddhist sanctuary with a much longer history.",
+      "note": "First-century BCE construction window, not continuous work over a hundred years. Individual gateways are not dated separately here.",
+      "point": null,
+      "url": "https://asi.nic.in/pages/WorldHeritageBuddhistMonumentsatSanchi",
+      "contextual": true,
+      "claimIds": [
+        "caesar-era-sanchi-gateways-history",
+        "caesar-era-sanchi-gateways-association-sanchi-early100"
+      ],
+      "dateLabel": "Year-level chronology",
+      "region": "South Asia",
+      "regionIds": []
+    }
+  ],
+  "associations": [
+    {
+      "subject": "julius-caesar",
+      "place": "rome",
+      "startYear": -59,
+      "endYear": -59,
+      "point": [
+        12.5,
+        41.9
+      ],
+      "label": "Consulship in Rome · city reference",
+      "source": "https://www.vroma.org/vromans/bmcmanus/caesar.html",
+      "claimIds": [
+        "caesar-era-julius-caesar-association-rome59"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "julius-caesar",
+      "place": "rome",
+      "startYear": -44,
+      "endYear": -44,
+      "point": [
+        12.5,
+        41.9
+      ],
+      "label": "Final year in Rome · city reference",
+      "source": "https://www.vroma.org/vromans/bmcmanus/caesar.html",
+      "claimIds": [
+        "caesar-era-julius-caesar-association-rome44"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "julius-caesar",
+      "place": "egypt",
+      "startYear": -48,
+      "endYear": -47,
+      "point": [
+        30,
+        27
+      ],
+      "label": "Egyptian campaign · regional reference, not exact whereabouts",
+      "source": "https://www.vroma.org/vromans/bmcmanus/caesar.html",
+      "claimIds": [
+        "caesar-era-julius-caesar-association-egypt48"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "cleopatra-vii",
+      "place": "egypt",
+      "startYear": -51,
+      "endYear": -30,
+      "point": [
+        30,
+        27
+      ],
+      "label": "Kingdom ruled · regional association, not continuous residence",
+      "source": "https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/cleopatravii.html",
+      "claimIds": [
+        "caesar-era-cleopatra-vii-association-egypt51"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "cicero",
+      "place": "rome",
+      "startYear": -63,
+      "endYear": -63,
+      "point": [
+        12.5,
+        41.9
+      ],
+      "label": "Consulship in Rome · city reference",
+      "source": "https://plato.stanford.edu/entries/cicero/",
+      "claimIds": [
+        "caesar-era-cicero-association-rome63"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "sanchi-gateways",
+      "place": "sanchi-early",
+      "startYear": -100,
+      "endYear": -1,
+      "point": [
+        77.73972,
+        23.479439999999997
+      ],
+      "label": "Sanchi · existing archaeological site reference",
+      "source": "https://asi.nic.in/pages/WorldHeritageBuddhistMonumentsatSanchi",
+      "claimIds": [
+        "caesar-era-sanchi-gateways-association-sanchi-early100"
+      ],
+      "contextual": true
+    }
+  ],
+  "relationships": [
+    {
+      "a": "julius-caesar",
+      "b": "pompey",
+      "label": "Ally, then opponent"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "cicero",
+      "label": "Political contemporary"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "mark-antony",
+      "label": "Supporter and general"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "augustus",
+      "label": "Heir"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "cleopatra-vii",
+      "label": "Egyptian ally"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "caesar-consul",
+      "label": "Episode in Caesar’s life",
+      "labelFromA": "Episode in Caesar’s life",
+      "labelFromB": "Julius Caesar"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "caesar-gallic-wars",
+      "label": "Episode in Caesar’s life",
+      "labelFromA": "Episode in Caesar’s life",
+      "labelFromB": "Julius Caesar"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "caesar-britain",
+      "label": "Episode in Caesar’s life",
+      "labelFromA": "Episode in Caesar’s life",
+      "labelFromB": "Julius Caesar"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "caesar-rubicon",
+      "label": "Episode in Caesar’s life",
+      "labelFromA": "Episode in Caesar’s life",
+      "labelFromB": "Julius Caesar"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "pharsalus",
+      "label": "Episode in Caesar’s life",
+      "labelFromA": "Episode in Caesar’s life",
+      "labelFromB": "Julius Caesar"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "caesar-alexandria",
+      "label": "Episode in Caesar’s life",
+      "labelFromA": "Episode in Caesar’s life",
+      "labelFromB": "Julius Caesar"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "caesar-assassination",
+      "label": "Episode in Caesar’s life",
+      "labelFromA": "Episode in Caesar’s life",
+      "labelFromB": "Julius Caesar"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "egypt",
+      "label": "Egyptian campaign"
+    },
+    {
+      "a": "julius-caesar",
+      "b": "rome",
+      "label": "Roman politics"
+    },
+    {
+      "a": "cleopatra-vii",
+      "b": "cleopatra-vii-reign",
+      "label": "Reign"
+    },
+    {
+      "a": "cleopatra-vii",
+      "b": "macedonian-ptolemaic-egypt",
+      "label": "Ptolemaic dynasty"
+    },
+    {
+      "a": "cleopatra-vii",
+      "b": "egypt",
+      "label": "Kingdom"
+    },
+    {
+      "a": "cleopatra-vii",
+      "b": "mark-antony",
+      "label": "Political and personal alliance"
+    },
+    {
+      "a": "cleopatra-vii",
+      "b": "caesar-alexandria",
+      "label": "Struggle for the throne"
+    },
+    {
+      "a": "cleopatra-vii",
+      "b": "actium",
+      "label": "Defeat at Actium"
+    },
+    {
+      "a": "cleopatra-vii",
+      "b": "egypt-roman-annexation",
+      "label": "End of Ptolemaic rule"
+    },
+    {
+      "a": "cleopatra-vii-reign",
+      "b": "macedonian-ptolemaic-egypt",
+      "label": "Dynasty"
+    },
+    {
+      "a": "cleopatra-vii-reign",
+      "b": "egypt",
+      "label": "Egypt"
+    },
+    {
+      "a": "pompey",
+      "b": "pharsalus",
+      "label": "Defeat"
+    },
+    {
+      "a": "mark-antony",
+      "b": "cicero",
+      "label": "Ordered Cicero’s killing"
+    },
+    {
+      "a": "mark-antony",
+      "b": "augustus",
+      "label": "Ally, then rival"
+    },
+    {
+      "a": "mark-antony",
+      "b": "actium",
+      "label": "Defeat"
+    },
+    {
+      "a": "augustus",
+      "b": "actium",
+      "label": "Victory"
+    },
+    {
+      "a": "augustus",
+      "b": "augustus-reign",
+      "label": "Imperial reign"
+    },
+    {
+      "a": "augustus",
+      "b": "egypt-roman-annexation",
+      "label": "Roman expansion"
+    },
+    {
+      "a": "egypt-roman-annexation",
+      "b": "roman-egypt",
+      "label": "Following period"
+    },
+    {
+      "a": "egypt-roman-annexation",
+      "b": "macedonian-ptolemaic-egypt",
+      "label": "Previous dynasty"
+    },
+    {
+      "a": "egypt-roman-annexation",
+      "b": "egypt",
+      "label": "Egypt"
+    },
+    {
+      "a": "caesar-britain",
+      "b": "britain-ireland",
+      "label": "British context"
+    },
+    {
+      "a": "caesar-gallic-wars",
+      "b": "caesar-britain",
+      "label": "Expeditions during the campaigns"
+    },
+    {
+      "a": "sanchi-gateways",
+      "b": "sanchi-early",
+      "label": "Longer history of the sanctuary"
+    }
+  ]
+}

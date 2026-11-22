@@ -1,0 +1,1462 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {
+      "id": "julius-caesar",
+      "name": "Julius Caesar",
+      "type": "person"
+    },
+    {
+      "id": "cleopatra-vii",
+      "name": "Cleopatra VII",
+      "type": "person"
+    },
+    {
+      "id": "pompey",
+      "name": "Pompey",
+      "type": "person"
+    },
+    {
+      "id": "cicero",
+      "name": "Cicero",
+      "type": "person"
+    },
+    {
+      "id": "mark-antony",
+      "name": "Mark Antony",
+      "type": "person"
+    },
+    {
+      "id": "augustus",
+      "name": "Augustus (Octavian)",
+      "type": "person"
+    },
+    {
+      "id": "cleopatra-vii-reign",
+      "name": "Cleopatra’s reign",
+      "type": "period"
+    },
+    {
+      "id": "caesar-consul",
+      "name": "Caesar becomes consul",
+      "type": "event"
+    },
+    {
+      "id": "caesar-gallic-wars",
+      "name": "Caesar’s campaigns in Gaul",
+      "type": "period"
+    },
+    {
+      "id": "caesar-britain",
+      "name": "Caesar’s expeditions to Britain",
+      "type": "period"
+    },
+    {
+      "id": "caesar-rubicon",
+      "name": "Caesar crosses the Rubicon",
+      "type": "event"
+    },
+    {
+      "id": "pharsalus",
+      "name": "The battle of Pharsalus",
+      "type": "event"
+    },
+    {
+      "id": "caesar-alexandria",
+      "name": "Caesar and Cleopatra in Alexandria",
+      "type": "period"
+    },
+    {
+      "id": "caesar-assassination",
+      "name": "The assassination of Caesar",
+      "type": "event"
+    },
+    {
+      "id": "actium",
+      "name": "The battle of Actium",
+      "type": "event"
+    },
+    {
+      "id": "egypt-roman-annexation",
+      "name": "Egypt comes under Roman rule",
+      "type": "event"
+    },
+    {
+      "id": "augustus-reign",
+      "name": "The reign of Augustus",
+      "type": "period"
+    },
+    {
+      "id": "sanchi-gateways",
+      "name": "Sanchi’s carved gateways",
+      "type": "period"
+    }
+  ],
+  "sources": [
+    {
+      "id": "caesar-era-caesar",
+      "title": "Julius Caesar: Historical Background",
+      "url": "https://www.vroma.org/vromans/bmcmanus/caesar.html",
+      "creator": "Barbara F. McManus / VRoma",
+      "locatorHint": "Chronological entries, 60–44 BCE",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-republic",
+      "title": "The Roman Republic",
+      "url": "https://www.metmuseum.org/essays/the-roman-republic",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Final paragraphs: civil war, assassination and Augustus",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-caesar-dates",
+      "title": "Caesar, Gaius Julius (100–44 BC)",
+      "url": "https://academic.oup.com/oxford-dictionary-of-national-biography/reference/63486/reference-article-abstract/579736904",
+      "creator": "Oxford Dictionary of National Biography",
+      "locatorHint": "Public indexed biographical heading and abstract; full text not accessed",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-cleopatra",
+      "title": "The Creation of New Cultural Codes in Ptolemaic Egypt",
+      "url": "https://www.getty.edu/publications/egypt-classical-world/04/",
+      "creator": "Martina Minas-Nerpel / Getty Publications",
+      "locatorHint": "Introduction; Cleopatra VII and Ptolemaic royal ideology",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-cleopatra-reign",
+      "title": "Cleopatra VII",
+      "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/cleopatravii.html",
+      "creator": "UCL Digital Egypt",
+      "locatorHint": "Heading: 51–30 BC only; Actium chronology in body is not used",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-ptolemaic",
+      "title": "Egypt in the Ptolemaic Period",
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-ptolemaic-period",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Dynasty established in 305 BCE; Roman takeover in 30 BCE",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-pompey",
+      "title": "Pompey (Gnaeus Pompeius Magnus)",
+      "url": "https://museum.classics.cam.ac.uk/collections/casts/pompey-gnaeus-pompeius-magnus",
+      "creator": "Museum of Classical Archaeology, Cambridge",
+      "locatorHint": "Public indexed collection description: 106–48 BCE; full page unavailable",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-cicero",
+      "title": "Cicero",
+      "url": "https://plato.stanford.edu/entries/cicero/",
+      "creator": "Stanford Encyclopedia of Philosophy",
+      "locatorHint": "Introduction and section 1, Cicero’s Life and Times",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-antony",
+      "title": "Antonius, Marcus (2), Roman consul and triumvir, 83–30 BCE",
+      "url": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548072126",
+      "creator": "Oxford Classical Dictionary",
+      "locatorHint": "Public indexed heading and abstract; full text not accessed",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-augustus",
+      "title": "Augustus",
+      "url": "https://ancientromelive.org/augustus/",
+      "creator": "American Institute for Roman Culture",
+      "locatorHint": "Key information and dated entries for 44, 42, 31 and 27 BCE",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-britain",
+      "title": "An introduction to Roman Britain",
+      "url": "https://www.english-heritage.org.uk/learn/story-of-england/romans/introduction/",
+      "creator": "English Heritage",
+      "locatorHint": "Prelude to invasion",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "caesar-era-sanchi",
+      "title": "Buddhist Monuments at Sanchi",
+      "url": "https://asi.nic.in/pages/WorldHeritageBuddhistMonumentsatSanchi",
+      "creator": "Archaeological Survey of India",
+      "locatorHint": "First-century BC gateways to Stupa 1",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    }
+  ],
+  "claims": [
+    {
+      "id": "caesar-era-julius-caesar-history",
+      "subjectId": "julius-caesar",
+      "predicate": "historical-context",
+      "statement": "Julius Caesar lived from 100 to 44 BCE, during the final decades of the Roman Republic. His rise ended in dictatorship and assassination. His death did not restore political stability. His heir Octavian, later known as Augustus, eventually emerged as Rome’s first emperor. The connections below follow the people and conflicts that link Caesar’s lifetime to that change.",
+      "value": {
+        "type": "text",
+        "text": "Julius Caesar lived from 100 to 44 BCE, during the final decades of the Roman Republic. His rise ended in dictatorship and assassination. His death did not restore political stability. His heir Octavian, later known as Augustus, eventually emerged as Rome’s first emperor. The connections below follow the people and conflicts that link Caesar’s lifetime to that change."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -44,
+          "latest": -44,
+          "original": "44 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-julius-caesar-history-caesar-dates",
+        "caesar-era-julius-caesar-history-republic"
+      ],
+      "reviewId": "caesar-era-julius-caesar-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-cleopatra-vii-history",
+      "subjectId": "cleopatra-vii",
+      "predicate": "historical-context",
+      "statement": "Cleopatra VII lived from 69 to 30 BCE and was the last queen of the Ptolemaic dynasty. Her position joined the politics of Egypt to the struggles for power in Rome. Her relationships with Caesar and then Mark Antony were also political alliances. In Egypt, she drew on established traditions of royal authority while adapting them to her own circumstances.",
+      "value": {
+        "type": "text",
+        "text": "Cleopatra VII lived from 69 to 30 BCE and was the last queen of the Ptolemaic dynasty. Her position joined the politics of Egypt to the struggles for power in Rome. Her relationships with Caesar and then Mark Antony were also political alliances. In Egypt, she drew on established traditions of royal authority while adapting them to her own circumstances."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -69,
+          "latest": -69,
+          "original": "69 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -30,
+          "latest": -30,
+          "original": "30 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-cleopatra-vii-history-cleopatra"
+      ],
+      "reviewId": "caesar-era-cleopatra-vii-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-pompey-history",
+      "subjectId": "pompey",
+      "predicate": "historical-context",
+      "statement": "Pompey lived from 106 to 48 BCE. He first worked with Caesar in a political alliance, then fought against him in civil war. Defeat at Pharsalus drove him to Egypt, where he was killed.",
+      "value": {
+        "type": "text",
+        "text": "Pompey lived from 106 to 48 BCE. He first worked with Caesar in a political alliance, then fought against him in civil war. Defeat at Pharsalus drove him to Egypt, where he was killed."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -106,
+          "latest": -106,
+          "original": "106 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -48,
+          "latest": -48,
+          "original": "48 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-pompey-history-pompey",
+        "caesar-era-pompey-history-caesar"
+      ],
+      "reviewId": "caesar-era-pompey-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-cicero-history",
+      "subjectId": "cicero",
+      "predicate": "historical-context",
+      "statement": "Cicero was a Roman politician, lawyer and philosophical writer. His speeches and letters give us a particularly close view of the Republic’s final decades. As consul in 63 BCE, he suppressed Catiline’s conspiracy. He later watched the struggle between Caesar and Pompey turn into civil war. Caesar’s assassination brought only a brief respite: Cicero was killed on Mark Antony’s orders in 43 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Cicero was a Roman politician, lawyer and philosophical writer. His speeches and letters give us a particularly close view of the Republic’s final decades. As consul in 63 BCE, he suppressed Catiline’s conspiracy. He later watched the struggle between Caesar and Pompey turn into civil war. Caesar’s assassination brought only a brief respite: Cicero was killed on Mark Antony’s orders in 43 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -106,
+          "latest": -106,
+          "original": "106 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -43,
+          "latest": -43,
+          "original": "43 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-cicero-history-cicero"
+      ],
+      "reviewId": "caesar-era-cicero-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-mark-antony-history",
+      "subjectId": "mark-antony",
+      "predicate": "historical-context",
+      "statement": "Mark Antony fought for Caesar and became one of the central figures in the struggle after his death. He and Octavian were allies before becoming rivals. His alliance with Cleopatra tied his future to Ptolemaic Egypt. Octavian defeated their forces at Actium in 31 BCE. Antony died the following year.",
+      "value": {
+        "type": "text",
+        "text": "Mark Antony fought for Caesar and became one of the central figures in the struggle after his death. He and Octavian were allies before becoming rivals. His alliance with Cleopatra tied his future to Ptolemaic Egypt. Octavian defeated their forces at Actium in 31 BCE. Antony died the following year."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -83,
+          "latest": -83,
+          "original": "83 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -30,
+          "latest": -30,
+          "original": "30 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-mark-antony-history-antony",
+        "caesar-era-mark-antony-history-cleopatra",
+        "caesar-era-mark-antony-history-augustus"
+      ],
+      "reviewId": "caesar-era-mark-antony-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-augustus-history",
+      "subjectId": "augustus",
+      "predicate": "historical-context",
+      "statement": "Born in 63 BCE, Octavian became Caesar’s heir after the assassination in 44 BCE. He was still a young man when he entered the struggle for power that followed. Victory over Antony and Cleopatra at Actium removed his principal rivals. In 27 BCE, the Senate granted him the title Augustus. He died in 14 CE; his lifespan and his years as emperor are shown separately.",
+      "value": {
+        "type": "text",
+        "text": "Born in 63 BCE, Octavian became Caesar’s heir after the assassination in 44 BCE. He was still a young man when he entered the struggle for power that followed. Victory over Antony and Cleopatra at Actium removed his principal rivals. In 27 BCE, the Senate granted him the title Augustus. He died in 14 CE; his lifespan and his years as emperor are shown separately."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -63,
+          "latest": -63,
+          "original": "63 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 14,
+          "latest": 14,
+          "original": "14 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-augustus-history-augustus"
+      ],
+      "reviewId": "caesar-era-augustus-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-cleopatra-vii-reign-history",
+      "subjectId": "cleopatra-vii-reign",
+      "predicate": "historical-context",
+      "statement": "Cleopatra ruled Egypt from 51 to 30 BCE. She belonged to the dynasty established by Ptolemy I, one of Alexander’s successors. Her reign brought that long history into direct contact with Caesar, Antony and Octavian. The links here lead back into Ptolemaic Egypt and forward to Roman rule.",
+      "value": {
+        "type": "text",
+        "text": "Cleopatra ruled Egypt from 51 to 30 BCE. She belonged to the dynasty established by Ptolemy I, one of Alexander’s successors. Her reign brought that long history into direct contact with Caesar, Antony and Octavian. The links here lead back into Ptolemaic Egypt and forward to Roman rule."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -51,
+          "latest": -51,
+          "original": "51 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -30,
+          "latest": -30,
+          "original": "30 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-cleopatra-vii-reign-history-cleopatra-reign",
+        "caesar-era-cleopatra-vii-reign-history-cleopatra"
+      ],
+      "reviewId": "caesar-era-cleopatra-vii-reign-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-caesar-consul-history",
+      "subjectId": "caesar-consul",
+      "predicate": "historical-context",
+      "statement": "Caesar became consul in 59 BCE with the support of Pompey and Crassus. The alliance helped secure his command in Gaul after his year in office.",
+      "value": {
+        "type": "text",
+        "text": "Caesar became consul in 59 BCE with the support of Pompey and Crassus. The alliance helped secure his command in Gaul after his year in office."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -59,
+          "latest": -59,
+          "original": "59 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -59,
+          "latest": -59,
+          "original": "59 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-caesar-consul-history-caesar"
+      ],
+      "reviewId": "caesar-era-caesar-consul-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-caesar-gallic-wars-history",
+      "subjectId": "caesar-gallic-wars",
+      "predicate": "historical-context",
+      "statement": "Caesar campaigned in Gaul from 58 to 50 BCE. During these years, his armies also crossed the Channel into Britain. The two British expeditions belong within this wider series of campaigns. They did not establish lasting Roman occupation of Britain.",
+      "value": {
+        "type": "text",
+        "text": "Caesar campaigned in Gaul from 58 to 50 BCE. During these years, his armies also crossed the Channel into Britain. The two British expeditions belong within this wider series of campaigns. They did not establish lasting Roman occupation of Britain."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -58,
+          "latest": -58,
+          "original": "58 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -50,
+          "latest": -50,
+          "original": "50 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-caesar-gallic-wars-history-britain"
+      ],
+      "reviewId": "caesar-era-caesar-gallic-wars-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-caesar-britain-history",
+      "subjectId": "caesar-britain",
+      "predicate": "historical-context",
+      "statement": "Caesar crossed to Britain twice, in 55 and 54 BCE. The second expedition was the larger attack, directed against communities in the south-east. His troops withdrew. Diplomatic and trading relationships continued across the Channel, but permanent Roman occupation came much later.",
+      "value": {
+        "type": "text",
+        "text": "Caesar crossed to Britain twice, in 55 and 54 BCE. The second expedition was the larger attack, directed against communities in the south-east. His troops withdrew. Diplomatic and trading relationships continued across the Channel, but permanent Roman occupation came much later."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -55,
+          "latest": -55,
+          "original": "55 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -54,
+          "latest": -54,
+          "original": "54 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-caesar-britain-history-britain"
+      ],
+      "reviewId": "caesar-era-caesar-britain-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-caesar-rubicon-history",
+      "subjectId": "caesar-rubicon",
+      "predicate": "historical-context",
+      "statement": "In 49 BCE, Caesar led his army across the Rubicon into Italy. This crossing began open civil war with Pompey and his allies.",
+      "value": {
+        "type": "text",
+        "text": "In 49 BCE, Caesar led his army across the Rubicon into Italy. This crossing began open civil war with Pompey and his allies."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -49,
+          "latest": -49,
+          "original": "49 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -49,
+          "latest": -49,
+          "original": "49 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-caesar-rubicon-history-caesar"
+      ],
+      "reviewId": "caesar-era-caesar-rubicon-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-pharsalus-history",
+      "subjectId": "pharsalus",
+      "predicate": "historical-context",
+      "statement": "Caesar defeated Pompey at Pharsalus in 48 BCE. Pompey escaped to Egypt. Caesar followed, bringing the Roman conflict into the struggle over Egypt’s throne.",
+      "value": {
+        "type": "text",
+        "text": "Caesar defeated Pompey at Pharsalus in 48 BCE. Pompey escaped to Egypt. Caesar followed, bringing the Roman conflict into the struggle over Egypt’s throne."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -48,
+          "latest": -48,
+          "original": "48 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -48,
+          "latest": -48,
+          "original": "48 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-pharsalus-history-caesar"
+      ],
+      "reviewId": "caesar-era-pharsalus-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-caesar-alexandria-history",
+      "subjectId": "caesar-alexandria",
+      "predicate": "historical-context",
+      "statement": "Caesar arrived in Alexandria in 48 BCE and supported Cleopatra’s claim to the throne. Fighting kept him in Egypt into 47 BCE. He left Cleopatra in power, supported by Roman troops.",
+      "value": {
+        "type": "text",
+        "text": "Caesar arrived in Alexandria in 48 BCE and supported Cleopatra’s claim to the throne. Fighting kept him in Egypt into 47 BCE. He left Cleopatra in power, supported by Roman troops."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -48,
+          "latest": -48,
+          "original": "48 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -47,
+          "latest": -47,
+          "original": "47 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-caesar-alexandria-history-caesar"
+      ],
+      "reviewId": "caesar-era-caesar-alexandria-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-caesar-assassination-history",
+      "subjectId": "caesar-assassination",
+      "predicate": "historical-context",
+      "statement": "Caesar was assassinated on 15 March 44 BCE. His concentration of power had made the survival of republican government a central issue. His death opened another struggle for control. Octavian, his heir, eventually became Augustus.",
+      "value": {
+        "type": "text",
+        "text": "Caesar was assassinated on 15 March 44 BCE. His concentration of power had made the survival of republican government a central issue. His death opened another struggle for control. Octavian, his heir, eventually became Augustus."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -44,
+          "latest": -44,
+          "original": "44 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -44,
+          "latest": -44,
+          "original": "44 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-caesar-assassination-history-republic"
+      ],
+      "reviewId": "caesar-era-caesar-assassination-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-actium-history",
+      "subjectId": "actium",
+      "predicate": "historical-context",
+      "statement": "On 2 September 31 BCE, Octavian defeated the forces of Antony and Cleopatra at Actium. Follow their connections to see how this Roman conflict also became the final crisis of Ptolemaic Egypt.",
+      "value": {
+        "type": "text",
+        "text": "On 2 September 31 BCE, Octavian defeated the forces of Antony and Cleopatra at Actium. Follow their connections to see how this Roman conflict also became the final crisis of Ptolemaic Egypt."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -31,
+          "latest": -31,
+          "original": "31 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -31,
+          "latest": -31,
+          "original": "31 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-actium-history-augustus"
+      ],
+      "reviewId": "caesar-era-actium-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-egypt-roman-annexation-history",
+      "subjectId": "egypt-roman-annexation",
+      "predicate": "historical-context",
+      "statement": "Roman rule began in Egypt in 30 BCE, after Cleopatra’s death. The Ptolemaic dynasty, established by Ptolemy I in 305 BCE, had ended. This is the point where the Ptolemaic and Roman Egypt entries meet. It marks a change in government, not an end to Egyptian society or its traditions.",
+      "value": {
+        "type": "text",
+        "text": "Roman rule began in Egypt in 30 BCE, after Cleopatra’s death. The Ptolemaic dynasty, established by Ptolemy I in 305 BCE, had ended. This is the point where the Ptolemaic and Roman Egypt entries meet. It marks a change in government, not an end to Egyptian society or its traditions."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -30,
+          "latest": -30,
+          "original": "30 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -30,
+          "latest": -30,
+          "original": "30 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-egypt-roman-annexation-history-ptolemaic"
+      ],
+      "reviewId": "caesar-era-egypt-roman-annexation-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-augustus-reign-history",
+      "subjectId": "augustus-reign",
+      "predicate": "historical-context",
+      "statement": "In 27 BCE, the Senate granted Octavian the title Augustus. This entry follows his rule from that settlement to his death in 14 CE. His separate life entry begins in 63 BCE, allowing you to compare his age with Caesar, Cleopatra and Antony.",
+      "value": {
+        "type": "text",
+        "text": "In 27 BCE, the Senate granted Octavian the title Augustus. This entry follows his rule from that settlement to his death in 14 CE. His separate life entry begins in 63 BCE, allowing you to compare his age with Caesar, Cleopatra and Antony."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -27,
+          "latest": -27,
+          "original": "27 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 14,
+          "latest": 14,
+          "original": "14 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-augustus-reign-history-augustus"
+      ],
+      "reviewId": "caesar-era-augustus-reign-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-sanchi-gateways-history",
+      "subjectId": "sanchi-gateways",
+      "predicate": "historical-context",
+      "statement": "In the first century BCE, elaborate stone gateways were added to the Great Stupa at Sanchi. The Archaeological Survey of India associates this work with the Andhra-Satavahanas. The carvings tell stories from the Buddha’s life and the Jatakas. Alongside the wars around the Mediterranean, the timeline shows a community investing in a Buddhist sanctuary with a much longer history.",
+      "value": {
+        "type": "text",
+        "text": "In the first century BCE, elaborate stone gateways were added to the Great Stupa at Sanchi. The Archaeological Survey of India associates this work with the Andhra-Satavahanas. The carvings tell stories from the Buddha’s life and the Jatakas. Alongside the wars around the Mediterranean, the timeline shows a community investing in a Buddhist sanctuary with a much longer history."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1,
+          "latest": -1,
+          "original": "1 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-sanchi-gateways-history-sanchi"
+      ],
+      "reviewId": "caesar-era-sanchi-gateways-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-julius-caesar-association-rome59",
+      "subjectId": "julius-caesar",
+      "predicate": "historical-context",
+      "statement": "Consulship in Rome · city reference",
+      "value": {
+        "type": "text",
+        "text": "Consulship in Rome · city reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -59,
+          "latest": -59,
+          "original": "59 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -59,
+          "latest": -59,
+          "original": "59 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-julius-caesar-association-rome59-caesar"
+      ],
+      "reviewId": "caesar-era-julius-caesar-association-rome59-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-julius-caesar-association-rome44",
+      "subjectId": "julius-caesar",
+      "predicate": "historical-context",
+      "statement": "Final year in Rome · city reference",
+      "value": {
+        "type": "text",
+        "text": "Final year in Rome · city reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -44,
+          "latest": -44,
+          "original": "44 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -44,
+          "latest": -44,
+          "original": "44 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-julius-caesar-association-rome44-caesar"
+      ],
+      "reviewId": "caesar-era-julius-caesar-association-rome44-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-julius-caesar-association-egypt48",
+      "subjectId": "julius-caesar",
+      "predicate": "historical-context",
+      "statement": "Egyptian campaign · regional reference, not exact whereabouts",
+      "value": {
+        "type": "text",
+        "text": "Egyptian campaign · regional reference, not exact whereabouts"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -48,
+          "latest": -48,
+          "original": "48 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -47,
+          "latest": -47,
+          "original": "47 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-julius-caesar-association-egypt48-caesar"
+      ],
+      "reviewId": "caesar-era-julius-caesar-association-egypt48-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-cleopatra-vii-association-egypt51",
+      "subjectId": "cleopatra-vii",
+      "predicate": "historical-context",
+      "statement": "Kingdom ruled · regional association, not continuous residence",
+      "value": {
+        "type": "text",
+        "text": "Kingdom ruled · regional association, not continuous residence"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -51,
+          "latest": -51,
+          "original": "51 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -30,
+          "latest": -30,
+          "original": "30 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-cleopatra-vii-association-egypt51-cleopatra-reign"
+      ],
+      "reviewId": "caesar-era-cleopatra-vii-association-egypt51-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-cicero-association-rome63",
+      "subjectId": "cicero",
+      "predicate": "historical-context",
+      "statement": "Consulship in Rome · city reference",
+      "value": {
+        "type": "text",
+        "text": "Consulship in Rome · city reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -63,
+          "latest": -63,
+          "original": "63 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -63,
+          "latest": -63,
+          "original": "63 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-cicero-association-rome63-cicero"
+      ],
+      "reviewId": "caesar-era-cicero-association-rome63-review",
+      "disputeNote": null
+    },
+    {
+      "id": "caesar-era-sanchi-gateways-association-sanchi-early100",
+      "subjectId": "sanchi-gateways",
+      "predicate": "historical-context",
+      "statement": "Sanchi · existing archaeological site reference",
+      "value": {
+        "type": "text",
+        "text": "Sanchi · existing archaeological site reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -100,
+          "latest": -100,
+          "original": "100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1,
+          "latest": -1,
+          "original": "1 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "caesar-era-sanchi-gateways-association-sanchi-early100-sanchi"
+      ],
+      "reviewId": "caesar-era-sanchi-gateways-association-sanchi-early100-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "caesar-era-julius-caesar-history-caesar-dates",
+      "claimId": "caesar-era-julius-caesar-history",
+      "sourceId": "caesar-era-caesar-dates",
+      "locator": "Public indexed biographical heading and abstract; full text not accessed",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-julius-caesar-history-review"
+    },
+    {
+      "id": "caesar-era-julius-caesar-history-republic",
+      "claimId": "caesar-era-julius-caesar-history",
+      "sourceId": "caesar-era-republic",
+      "locator": "Final paragraphs: civil war, assassination and Augustus",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-julius-caesar-history-review"
+    },
+    {
+      "id": "caesar-era-cleopatra-vii-history-cleopatra",
+      "claimId": "caesar-era-cleopatra-vii-history",
+      "sourceId": "caesar-era-cleopatra",
+      "locator": "Introduction; Cleopatra VII and Ptolemaic royal ideology",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-cleopatra-vii-history-review"
+    },
+    {
+      "id": "caesar-era-pompey-history-pompey",
+      "claimId": "caesar-era-pompey-history",
+      "sourceId": "caesar-era-pompey",
+      "locator": "Public indexed collection description: 106–48 BCE; full page unavailable",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-pompey-history-review"
+    },
+    {
+      "id": "caesar-era-pompey-history-caesar",
+      "claimId": "caesar-era-pompey-history",
+      "sourceId": "caesar-era-caesar",
+      "locator": "Chronological entries, 60–44 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-pompey-history-review"
+    },
+    {
+      "id": "caesar-era-cicero-history-cicero",
+      "claimId": "caesar-era-cicero-history",
+      "sourceId": "caesar-era-cicero",
+      "locator": "Introduction and section 1, Cicero’s Life and Times",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-cicero-history-review"
+    },
+    {
+      "id": "caesar-era-mark-antony-history-antony",
+      "claimId": "caesar-era-mark-antony-history",
+      "sourceId": "caesar-era-antony",
+      "locator": "Public indexed heading and abstract; full text not accessed",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-mark-antony-history-review"
+    },
+    {
+      "id": "caesar-era-mark-antony-history-cleopatra",
+      "claimId": "caesar-era-mark-antony-history",
+      "sourceId": "caesar-era-cleopatra",
+      "locator": "Introduction; Cleopatra VII and Ptolemaic royal ideology",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-mark-antony-history-review"
+    },
+    {
+      "id": "caesar-era-mark-antony-history-augustus",
+      "claimId": "caesar-era-mark-antony-history",
+      "sourceId": "caesar-era-augustus",
+      "locator": "Key information and dated entries for 44, 42, 31 and 27 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-mark-antony-history-review"
+    },
+    {
+      "id": "caesar-era-augustus-history-augustus",
+      "claimId": "caesar-era-augustus-history",
+      "sourceId": "caesar-era-augustus",
+      "locator": "Key information and dated entries for 44, 42, 31 and 27 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-augustus-history-review"
+    },
+    {
+      "id": "caesar-era-cleopatra-vii-reign-history-cleopatra-reign",
+      "claimId": "caesar-era-cleopatra-vii-reign-history",
+      "sourceId": "caesar-era-cleopatra-reign",
+      "locator": "Heading: 51–30 BC only; Actium chronology in body is not used",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-cleopatra-vii-reign-history-review"
+    },
+    {
+      "id": "caesar-era-cleopatra-vii-reign-history-cleopatra",
+      "claimId": "caesar-era-cleopatra-vii-reign-history",
+      "sourceId": "caesar-era-cleopatra",
+      "locator": "Introduction; Cleopatra VII and Ptolemaic royal ideology",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-cleopatra-vii-reign-history-review"
+    },
+    {
+      "id": "caesar-era-caesar-consul-history-caesar",
+      "claimId": "caesar-era-caesar-consul-history",
+      "sourceId": "caesar-era-caesar",
+      "locator": "Chronological entries, 60–44 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-caesar-consul-history-review"
+    },
+    {
+      "id": "caesar-era-caesar-gallic-wars-history-britain",
+      "claimId": "caesar-era-caesar-gallic-wars-history",
+      "sourceId": "caesar-era-britain",
+      "locator": "Prelude to invasion",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-caesar-gallic-wars-history-review"
+    },
+    {
+      "id": "caesar-era-caesar-britain-history-britain",
+      "claimId": "caesar-era-caesar-britain-history",
+      "sourceId": "caesar-era-britain",
+      "locator": "Prelude to invasion",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-caesar-britain-history-review"
+    },
+    {
+      "id": "caesar-era-caesar-rubicon-history-caesar",
+      "claimId": "caesar-era-caesar-rubicon-history",
+      "sourceId": "caesar-era-caesar",
+      "locator": "Chronological entries, 60–44 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-caesar-rubicon-history-review"
+    },
+    {
+      "id": "caesar-era-pharsalus-history-caesar",
+      "claimId": "caesar-era-pharsalus-history",
+      "sourceId": "caesar-era-caesar",
+      "locator": "Chronological entries, 60–44 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-pharsalus-history-review"
+    },
+    {
+      "id": "caesar-era-caesar-alexandria-history-caesar",
+      "claimId": "caesar-era-caesar-alexandria-history",
+      "sourceId": "caesar-era-caesar",
+      "locator": "Chronological entries, 60–44 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-caesar-alexandria-history-review"
+    },
+    {
+      "id": "caesar-era-caesar-assassination-history-republic",
+      "claimId": "caesar-era-caesar-assassination-history",
+      "sourceId": "caesar-era-republic",
+      "locator": "Final paragraphs: civil war, assassination and Augustus",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-caesar-assassination-history-review"
+    },
+    {
+      "id": "caesar-era-actium-history-augustus",
+      "claimId": "caesar-era-actium-history",
+      "sourceId": "caesar-era-augustus",
+      "locator": "Key information and dated entries for 44, 42, 31 and 27 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-actium-history-review"
+    },
+    {
+      "id": "caesar-era-egypt-roman-annexation-history-ptolemaic",
+      "claimId": "caesar-era-egypt-roman-annexation-history",
+      "sourceId": "caesar-era-ptolemaic",
+      "locator": "Dynasty established in 305 BCE; Roman takeover in 30 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-egypt-roman-annexation-history-review"
+    },
+    {
+      "id": "caesar-era-augustus-reign-history-augustus",
+      "claimId": "caesar-era-augustus-reign-history",
+      "sourceId": "caesar-era-augustus",
+      "locator": "Key information and dated entries for 44, 42, 31 and 27 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-augustus-reign-history-review"
+    },
+    {
+      "id": "caesar-era-sanchi-gateways-history-sanchi",
+      "claimId": "caesar-era-sanchi-gateways-history",
+      "sourceId": "caesar-era-sanchi",
+      "locator": "First-century BC gateways to Stupa 1",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-sanchi-gateways-history-review"
+    },
+    {
+      "id": "caesar-era-julius-caesar-association-rome59-caesar",
+      "claimId": "caesar-era-julius-caesar-association-rome59",
+      "sourceId": "caesar-era-caesar",
+      "locator": "Chronological entries, 60–44 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-julius-caesar-association-rome59-review"
+    },
+    {
+      "id": "caesar-era-julius-caesar-association-rome44-caesar",
+      "claimId": "caesar-era-julius-caesar-association-rome44",
+      "sourceId": "caesar-era-caesar",
+      "locator": "Chronological entries, 60–44 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-julius-caesar-association-rome44-review"
+    },
+    {
+      "id": "caesar-era-julius-caesar-association-egypt48-caesar",
+      "claimId": "caesar-era-julius-caesar-association-egypt48",
+      "sourceId": "caesar-era-caesar",
+      "locator": "Chronological entries, 60–44 BCE",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-julius-caesar-association-egypt48-review"
+    },
+    {
+      "id": "caesar-era-cleopatra-vii-association-egypt51-cleopatra-reign",
+      "claimId": "caesar-era-cleopatra-vii-association-egypt51",
+      "sourceId": "caesar-era-cleopatra-reign",
+      "locator": "Heading: 51–30 BC only; Actium chronology in body is not used",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-cleopatra-vii-association-egypt51-review"
+    },
+    {
+      "id": "caesar-era-cicero-association-rome63-cicero",
+      "claimId": "caesar-era-cicero-association-rome63",
+      "sourceId": "caesar-era-cicero",
+      "locator": "Introduction and section 1, Cicero’s Life and Times",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-cicero-association-rome63-review"
+    },
+    {
+      "id": "caesar-era-sanchi-gateways-association-sanchi-early100-sanchi",
+      "claimId": "caesar-era-sanchi-gateways-association-sanchi-early100",
+      "sourceId": "caesar-era-sanchi",
+      "locator": "First-century BC gateways to Stupa 1",
+      "note": "Year-level chronology. See source locator for the inspected passage and any access limitation.",
+      "relation": "supports",
+      "reviewId": "caesar-era-sanchi-gateways-association-sanchi-early100-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "caesar-era-julius-caesar-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-cleopatra-vii-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-pompey-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-cicero-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-mark-antony-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-augustus-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-cleopatra-vii-reign-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-caesar-consul-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-caesar-gallic-wars-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-caesar-britain-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-caesar-rubicon-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-pharsalus-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-caesar-alexandria-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-caesar-assassination-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-actium-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-egypt-roman-annexation-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-augustus-reign-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-sanchi-gateways-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-julius-caesar-association-rome59-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-julius-caesar-association-rome44-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-julius-caesar-association-egypt48-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-cleopatra-vii-association-egypt51-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-cicero-association-rome63-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    },
+    {
+      "id": "caesar-era-sanchi-gateways-association-sanchi-early100-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the stated facts against the cited passage or explicitly identified public indexed abstract. Lifespans, reigns and editorial windows are distinguished."
+    }
+  ],
+  "accounts": []
+}
