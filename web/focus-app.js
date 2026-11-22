@@ -1,3 +1,4 @@
+import {timelineLayout} from './swimlane-model.js';
 import {searchEntities} from './search-model.js';
 import {encodeView,decodeView} from './view-url.js?v=egypt-1';
 import {setupMap} from './focus-map.js?v=bookmarks-1';
@@ -30,9 +31,17 @@ function renderDescription(f){
   target.innerHTML=paragraph(paragraphs[0])+`<details class="description-more"><summary><span class="read-more">Read more</span><span class="read-less">Read less</span></summary>${paragraphs.slice(1).map(paragraph).join('')}</details>`;
  }else target.innerHTML=paragraphs.map(paragraph).join('');
 }
+function renderSwimlanes(f,ranked){
+ const records=ranked,layout=timelineLayout(f,records,data,state);
+ const tickPosition=y=>state.start===state.end?50:position(y,state.start,state.end)*100;
+ const lines=layout.ticks.map(y=>`<i class="swim-gridline" style="left:${tickPosition(y)}%"></i>`).join('');
+ $('swimlanes').innerHTML=`<div class="swim-axis"><div class="swim-label">REGION</div><div class="swim-dates">${layout.ticks.map((y,i)=>`<span style="left:${tickPosition(y)}%" class="${i===0?'first':i===layout.ticks.length-1?'last':''}">${year(y)}</span>`).join('')}</div></div>`+layout.lanes.map(l=>`<section class="swim-lane ${l.focus?'swim-focus':''}" aria-label="${esc(l.name)}"><h3 class="swim-label">${esc(l.name)}</h3><div class="swim-track" style="height:${l.rows*64+12}px">${lines}${l.items.map(e=>`<button class="swim-item ${e.type==='person'?'swim-life':''} ${e.point||e.single?'swim-point':''}" ${l.focus?'disabled':`data-focus="${esc(e.id)}"`} style="top:${e.row*64+8}px;--left:${e.left}%;--width:${e.width}%;--label-left:${e.labelLeft}%" title="${esc(e.title)} · ${dates(e.startYear,e.endYear)}${e.note?' · '+esc(e.note):''}" aria-label="${esc(e.title)}, ${dates(e.startYear,e.endYear)}${l.focus?', current focus':''}"><span class="swim-caption">${esc(e.title)}</span><span class="swim-bar ${e.contextual||e.uncertainty?'swim-approximate':''}">${e.continuesBefore?'<b class="swim-before">‹</b>':''}${e.continuesAfter?'<b class="swim-after">›</b>':''}</span></button>`).join('')}${l.items.length?'':'<p class="swim-outside">Outside this window</p>'}</div></section>`).join('');
+ $('swim-count').textContent=`${records.length} of ${ranked.length} matching entries`;
+}
 function render(){const f=data.entities.find(e=>e.id===state.focus),associations=focusAssociations(data,state),ranked=rankedContext(data,state);$('back').disabled=!stack.length;$('focus-picker').value=f.id;$('focus-type').textContent=`FOCUS · ${f.type==='state'?'STATE / KINGDOM':f.type.toUpperCase()}`;$('focus-title').textContent=f.title;document.title=`${f.title} · historica beta`;renderDescription(f);$('focus-note').textContent=f.note||'';$('range-title').textContent=dates(state.start,state.end);$('fit').textContent=f.type==='person'?'Full lifespan':'Fit study period';$('kind').value=state.kind;$('area').value=state.area;
 for(const [id,val]of [['start',state.start],['end',state.end]]){const s=$(id);s.min=ordinal(envelope.start);s.max=ordinal(envelope.end);s.value=ordinal(val);s.setAttribute('aria-valuetext',year(val));$(id+'-label').textContent=year(val);}
 $('zoom-in').disabled=state.start===state.end;$('zoom-out').disabled=state.start===-300000&&state.end===2026;
+renderSwimlanes(f,ranked);
 $('ticks').innerHTML=[state.start,state.end].map(y=>`<span>${year(y)}</span>`).join('');
 $('lanes').innerHTML=band(['area','state','city'].includes(f.type)?{...f,startYear:state.start,endYear:state.end}:f,true)+(showAllContext?ranked:ranked.slice(0,18)).map(e=>band(e)).join('')+(ranked.length?'':'<p class="empty">No context records match this window and these filters.</p>');
 $('more-context').hidden=ranked.length<=18;$('more-context').textContent=showAllContext?'Show fewer items':`Show all ${ranked.length} items`;$('context-count').textContent=`${ranked.length} matching lives, events and periods`;

@@ -71,7 +71,7 @@
     },
     {
       "path": "focus-app.js",
-      "sha256": "80135dad13cf89e62d1c8b5cb50bdd5d3e7340ae0d417ed1337a9beae5df20ea"
+      "sha256": "a5b536d9b4d25a9f6f6ba83a5180b23ea51e1e2a6a32096e1cb1cbb63f2c7aa6"
     },
     {
       "path": "focus-map.js",
@@ -83,11 +83,11 @@
     },
     {
       "path": "focus.css",
-      "sha256": "8268a2c2764b7bdcce542d4711c479dc0aec6918e03296a0b25b7fc06e95e945"
+      "sha256": "7fa87ee54921c3bb1cfac6b81810c2b16efdd541cc5da91416e9d4f44b6bad01"
     },
     {
       "path": "index.html",
-      "sha256": "a2f4a70ea7c733b9129b5351ff351cf128c525ae7268fab819e36d98b84218ea"
+      "sha256": "1da54d7be4399fb7004f5531402dd1d6df34c3f7825cf5d96f91d449fd4499ad"
     },
     {
       "path": "model.js",
@@ -100,6 +100,10 @@
     {
       "path": "style.css",
       "sha256": "b231af5ebae16320026ee5a55e2960d142aad808bf403e09e68aa79fa6152d5e"
+    },
+    {
+      "path": "swimlane-model.js",
+      "sha256": "34550049847e6fda8fc3a0aa108bf2c4c8fe5a61822877d1295b054af8cf62b7"
     },
     {
       "path": "timeline-model.js",
