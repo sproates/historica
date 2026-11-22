@@ -3,7 +3,7 @@
   "files": [
     {
       "path": ".htaccess",
-      "sha256": "0004b35fc7a54cab7ec714c6ec4f6f2212ef38698efdedb77d2f7bd9237e0b63"
+      "sha256": "691b94f429a2eb5b711746d92f5c3c7325564956e15dc9aae507d49b1dbffc70"
     },
     {
       "path": "about.html",
@@ -67,15 +67,15 @@
     },
     {
       "path": "data/reviewed-evidence.json",
-      "sha256": "e83a1ef2f067af221fcf8603a11255610939a2b30ccd628ba38ea1288d218a35"
+      "sha256": "9975f9a19e54170b2f067d6f2f904165aa1bb788380f9eed99db89abea045c7c"
     },
     {
       "path": "data/reviewed-exploration.json",
-      "sha256": "abb9c0cbc0d9c325b5db2d011eb8ca953ea06de7da128cb6fb9ac002acff475f"
+      "sha256": "13e82ff24912c4599061062915c9be64f7b3e078506e137a82c0aee1fb095c91"
     },
     {
       "path": "data/routes.json",
-      "sha256": "5521796f87cbee4e22c896d64dd1966aed65af5a21068b8f3d47a33f92c5fe7e"
+      "sha256": "603b41b75ac742200e5ccb037edbe8d98a1601e6a1a5ef1bc017509a625e8d99"
     },
     {
       "path": "focus-app.js",
@@ -240,6 +240,14 @@
     {
       "path": "pages/ban-chao.html",
       "sha256": "b1de864ab3dc94982a0b75c16e2aa1b3b5ed6c5dd14c5aec1d9606688d034907"
+    },
+    {
+      "path": "pages/ban-zhao-lessons.html",
+      "sha256": "41f45f832681f8b1600ffdeaca43612c6bda27caa61a5442a5d9663f3d44a164"
+    },
+    {
+      "path": "pages/ban-zhao.html",
+      "sha256": "5b5150d9e39ebfaae5ef6f93f21b1b78fb4c0f9d7501ec0fe49f27a9f67daa72"
     },
     {
       "path": "pages/bindusara-reign.html",
@@ -534,6 +542,14 @@
       "sha256": "8b4c91444c67ddec06fca8727b97aeb45bffe4d0fc8b71e7b941e0c6c41f307b"
     },
     {
+      "path": "pages/livia-marriage.html",
+      "sha256": "0cbe016effee3e4372a039b7ebfa354f6aefde79a7d5789b5b4da1ce799da43f"
+    },
+    {
+      "path": "pages/livia.html",
+      "sha256": "f9c73d186b04c74497250f061a191697def986e6eb7677a0999a9127863794fb"
+    },
+    {
       "path": "pages/lumbini.html",
       "sha256": "511ee777fe640c39d7c4157e9f2c8498ef2817cced045fc3ad44160ee7e020f9"
     },
@@ -624,6 +640,14 @@
     {
       "path": "pages/oaxaca.html",
       "sha256": "f1d0e1beb2a8283f1755dc38b2a36babcdae06f0500b5523050e8dd0e249dc47"
+    },
+    {
+      "path": "pages/octavia-athens.html",
+      "sha256": "923bbfaf15d154fe34023edc78c349766e956d52c954525a59147d2881475513"
+    },
+    {
+      "path": "pages/octavia-minor.html",
+      "sha256": "0198716528f8a13a349fef061c6c79d6819d2938fddbc7036ffae8f8eb8622f2"
     },
     {
       "path": "pages/old-kingdom.html",
@@ -999,7 +1023,7 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "b7f41d172632ad6deabdb60844514ceb892a34bc64c71c2486373646fe515996"
+      "sha256": "8270c2d7cdf09078c101129b660999d83ae369dc85bb10579d6bcc85ffc223a3"
     },
     {
       "path": "style.css",

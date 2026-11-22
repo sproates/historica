@@ -19,3 +19,13 @@ Memphis now uses UNESCO component 86-001. Egyptian Thebes uses the Karnak compon
 5. Historical areas: source reusable geometry with date ranges and explicit limits. Do not derive ancient territory from modern country polygons.
 
 This release changes data and generated pages only. New comparison controls, relationship presentation or map interaction would require a local design preview before publication.
+
+## Second pass: connected lives, 23 November 2026
+
+Added Octavia the Younger, Livia Drusilla and Ban Zhao as biographies, plus Octavia’s arrival at Athens, Livia’s marriage and Ban Zhao’s Lessons for Women. These allow lifespan comparisons with existing Roman and Han people and connect family, political, educational and household history.
+
+Octavia’s 35 BCE arrival follows Plutarch, Antony 53.1–2, with the Loeb editorial date in footnote 45. UNESCO’s Acropolis coordinate is explicitly only an Athens orientation reference, not evidence she visited the monument. Her geographic association exists only for that year. Livius’s earlier winter-in-Athens chronology was not adopted. No route or continuous residence has been inferred.
+
+Ban Zhao’s plotted lifespan follows Columbia’s c.48–c.116 CE; Pang-White’s Cambridge chapter summary gives c.45–117. Both readings are retained in structured evidence and the visible note. The Lessons entry is approximately 100 CE, not a precise publication year. Octavia’s death also retains the 11/10 BCE alternative. Livia’s dates and marriage follow the named scholars’ Store norske leksikon entry.
+
+This adds data for visual lifespan comparisons. It does not add a relative-age calculator or change comparison controls. Date uncertainty must be respected when those features are implemented. The geographic tasks for the Han capitals and Pataliputra remain open.

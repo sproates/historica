@@ -1,0 +1,792 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {
+      "id": "octavia-minor",
+      "name": "Octavia the Younger",
+      "type": "person"
+    },
+    {
+      "id": "livia",
+      "name": "Livia Drusilla",
+      "type": "person"
+    },
+    {
+      "id": "ban-zhao",
+      "name": "Ban Zhao",
+      "type": "person"
+    },
+    {
+      "id": "octavia-athens",
+      "name": "Octavia brings support to Athens",
+      "type": "event"
+    },
+    {
+      "id": "livia-marriage",
+      "name": "Livia marries the future Augustus",
+      "type": "event"
+    },
+    {
+      "id": "ban-zhao-lessons",
+      "name": "Ban Zhao’s Lessons for Women",
+      "type": "period"
+    }
+  ],
+  "sources": [
+    {
+      "id": "connected-lives-octavia",
+      "title": "Octavia Minor",
+      "url": "https://www.livius.org/articles/person/octavia-minor/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "Biography: lifespan, marriage, mediation and care of Antony’s children; winter chronology not adopted",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "connected-lives-livia",
+      "title": "Livia Drusilla",
+      "url": "https://snl.no/Livia_Drusilla",
+      "creator": "Øivind Andersen and Jon Wikene Iddeng / Store norske leksikon",
+      "locatorHint": "Lifespan factbox; marriage in 38 BCE; advisory role and later influence",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "connected-lives-ban",
+      "title": "Excerpts from Admonitions for Women, by Ban Zhao",
+      "url": "https://afe.easia.columbia.edu/main_pop/ps/ps_china-banzhao-admonitions.htm",
+      "creator": "Asia for Educators, Columbia University",
+      "locatorHint": "Introduction: c.48–c.116 CE, historical scholarship and teaching; translated excerpts",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "connected-lives-lessons",
+      "title": "Reappraising Ban Zhao",
+      "url": "https://www.cambridge.org/core/books/abs/ancient-women-philosophers/reappraising-ban-zhao/CB84B98EA5ED8E2769742CF4C5C4537E",
+      "creator": "Ann A. Pang-White / Cambridge University Press",
+      "locatorHint": "Public chapter summary: c.45–117 CE; Lessons for Women composed around 100 CE; gender politics",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "connected-lives-visit",
+      "title": "Life of Antony, chapter 53",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53",
+      "creator": "Plutarch; Bernadotte Perrin translation, Loeb Classical Library, hosted by Bill Thayer",
+      "locatorHint": "53.1–2: Octavia reaches Athens with supplies and soldiers; editorial footnote 45 gives 35 BCE",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "connected-lives-athens-map",
+      "title": "Acropolis, Athens: geographical data",
+      "url": "https://whc.unesco.org/en/list/404/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Property 404 coordinates N37 58 15.132 E23 43 34.248; orientation reference within Athens",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    }
+  ],
+  "claims": [
+    {
+      "id": "connected-lives-octavia-minor-history",
+      "subjectId": "octavia-minor",
+      "predicate": "historical-context",
+      "statement": "Octavia was Augustus’ sister and married Mark Antony. She tried to mediate between the two men as their alliance deteriorated. After Antony’s death, she brought up children from his marriages and his relationship with Cleopatra alongside her own family. Her household became part of the dynasty Augustus was building.",
+      "value": {
+        "type": "text",
+        "text": "Octavia was Augustus’ sister and married Mark Antony. She tried to mediate between the two men as their alliance deteriorated. After Antony’s death, she brought up children from his marriages and his relationship with Cleopatra alongside her own family. Her household became part of the dynasty Augustus was building."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -69,
+          "latest": -69,
+          "original": "69 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -11,
+          "latest": -11,
+          "original": "11 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-octavia-minor-history-octavia"
+      ],
+      "reviewId": "connected-lives-octavia-minor-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-octavia-minor-chronology",
+      "subjectId": "octavia-minor",
+      "predicate": "historical-context",
+      "statement": "Octavia the Younger: 69 BCE to 11 BCE. Approximate lifespan. The plotted dates follow Livius’s 69 BCE birth and use 11 BCE from its alternative death dates of 11 or 10 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Octavia the Younger: 69 BCE to 11 BCE. Approximate lifespan. The plotted dates follow Livius’s 69 BCE birth and use 11 BCE from its alternative death dates of 11 or 10 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -69,
+          "latest": -69,
+          "original": "69 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -11,
+          "latest": -10,
+          "original": "11 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-octavia-minor-chronology-octavia"
+      ],
+      "reviewId": "connected-lives-octavia-minor-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-livia-history",
+      "subjectId": "livia",
+      "predicate": "historical-context",
+      "statement": "Livia married the future Augustus in 38 BCE and became an important adviser. Her son Tiberius eventually succeeded him. She continued to exercise influence after Augustus’ death. Hostile stories about her role in the family’s deaths should not be treated as established fact.",
+      "value": {
+        "type": "text",
+        "text": "Livia married the future Augustus in 38 BCE and became an important adviser. Her son Tiberius eventually succeeded him. She continued to exercise influence after Augustus’ death. Hostile stories about her role in the family’s deaths should not be treated as established fact."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -58,
+          "latest": -58,
+          "original": "58 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 29,
+          "latest": 29,
+          "original": "29 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-livia-history-livia"
+      ],
+      "reviewId": "connected-lives-livia-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-livia-chronology",
+      "subjectId": "livia",
+      "predicate": "historical-context",
+      "statement": "Livia Drusilla: 58 BCE to 29 CE. Lifespan follows Store norske leksikon: 58 BCE–29 CE. Dates are at year resolution; there is no year zero. No continuous personal location is inferred.",
+      "value": {
+        "type": "text",
+        "text": "Livia Drusilla: 58 BCE to 29 CE. Lifespan follows Store norske leksikon: 58 BCE–29 CE. Dates are at year resolution; there is no year zero. No continuous personal location is inferred."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -58,
+          "latest": -58,
+          "original": "58 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 29,
+          "latest": 29,
+          "original": "29 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-livia-chronology-livia"
+      ],
+      "reviewId": "connected-lives-livia-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-ban-zhao-history",
+      "subjectId": "ban-zhao",
+      "predicate": "historical-context",
+      "statement": "Ban Zhao was a scholar and teacher at the Eastern Han court. She helped complete the history of the Western Han after her brother Ban Gu died. Her writing also addressed women’s education and conduct. It gives us a named woman’s argument about family life, rather than a neutral account of how every household worked.",
+      "value": {
+        "type": "text",
+        "text": "Ban Zhao was a scholar and teacher at the Eastern Han court. She helped complete the history of the Western Han after her brother Ban Gu died. Her writing also addressed women’s education and conduct. It gives us a named woman’s argument about family life, rather than a neutral account of how every household worked."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 48,
+          "latest": 48,
+          "original": "48 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 116,
+          "latest": 116,
+          "original": "116 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-ban-zhao-history-ban",
+        "connected-lives-ban-zhao-history-lessons"
+      ],
+      "reviewId": "connected-lives-ban-zhao-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-ban-zhao-chronology",
+      "subjectId": "ban-zhao",
+      "predicate": "historical-context",
+      "statement": "Ban Zhao: 48 CE to 116 CE. Approximate lifespan follows Columbia: c.48–c.116 CE. Pang-White’s Cambridge summary gives c.45–117. These are uncertain endpoints, not exact ages.",
+      "value": {
+        "type": "text",
+        "text": "Ban Zhao: 48 CE to 116 CE. Approximate lifespan follows Columbia: c.48–c.116 CE. Pang-White’s Cambridge summary gives c.45–117. These are uncertain endpoints, not exact ages."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 45,
+          "latest": 48,
+          "original": "48 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 116,
+          "latest": 117,
+          "original": "116 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "disputed",
+      "evidenceIds": [
+        "connected-lives-ban-zhao-chronology-ban",
+        "connected-lives-ban-zhao-chronology-lessons"
+      ],
+      "reviewId": "connected-lives-ban-zhao-chronology-review",
+      "disputeNote": "Published summaries differ: Columbia c.48–c.116; Pang-White c.45–117. Plot uses Columbia, with approximate dates disclosed."
+    },
+    {
+      "id": "connected-lives-octavia-athens-history",
+      "subjectId": "octavia-athens",
+      "predicate": "historical-context",
+      "statement": "Plutarch describes Octavia arriving in Athens with money, clothing and soldiers for Antony. He told her to remain there. This records a particular journey in the breakdown of their marriage and political alliance. It does not provide a complete itinerary.",
+      "value": {
+        "type": "text",
+        "text": "Plutarch describes Octavia arriving in Athens with money, clothing and soldiers for Antony. He told her to remain there. This records a particular journey in the breakdown of their marriage and political alliance. It does not provide a complete itinerary."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -35,
+          "latest": -35,
+          "original": "35 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -35,
+          "latest": -35,
+          "original": "35 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-octavia-athens-history-visit"
+      ],
+      "reviewId": "connected-lives-octavia-athens-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-octavia-athens-chronology",
+      "subjectId": "octavia-athens",
+      "predicate": "historical-context",
+      "statement": "Octavia brings support to Athens: 35 BCE to 35 BCE. The Loeb edition’s footnote dates the arrival to 35 BCE. The map uses the Acropolis to locate Athens, not to claim that Octavia visited that monument.",
+      "value": {
+        "type": "text",
+        "text": "Octavia brings support to Athens: 35 BCE to 35 BCE. The Loeb edition’s footnote dates the arrival to 35 BCE. The map uses the Acropolis to locate Athens, not to claim that Octavia visited that monument."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -35,
+          "latest": -35,
+          "original": "35 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -35,
+          "latest": -35,
+          "original": "35 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-octavia-athens-chronology-visit"
+      ],
+      "reviewId": "connected-lives-octavia-athens-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-livia-marriage-history",
+      "subjectId": "livia-marriage",
+      "predicate": "historical-context",
+      "statement": "Livia married Octavian, the future Augustus, in 38 BCE after her divorce from Tiberius Claudius Nero. Their marriage joined the family of her sons Tiberius and Drusus with the man who would become Rome’s first emperor.",
+      "value": {
+        "type": "text",
+        "text": "Livia married Octavian, the future Augustus, in 38 BCE after her divorce from Tiberius Claudius Nero. Their marriage joined the family of her sons Tiberius and Drusus with the man who would become Rome’s first emperor."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -38,
+          "latest": -38,
+          "original": "38 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -38,
+          "latest": -38,
+          "original": "38 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-livia-marriage-history-livia"
+      ],
+      "reviewId": "connected-lives-livia-marriage-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-livia-marriage-chronology",
+      "subjectId": "livia-marriage",
+      "predicate": "historical-context",
+      "statement": "Livia marries the future Augustus: 38 BCE to 38 BCE. Year follows Store norske leksikon. No wedding location is assigned.",
+      "value": {
+        "type": "text",
+        "text": "Livia marries the future Augustus: 38 BCE to 38 BCE. Year follows Store norske leksikon. No wedding location is assigned."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -38,
+          "latest": -38,
+          "original": "38 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -38,
+          "latest": -38,
+          "original": "38 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-livia-marriage-chronology-livia"
+      ],
+      "reviewId": "connected-lives-livia-marriage-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-ban-zhao-lessons-history",
+      "subjectId": "ban-zhao-lessons",
+      "predicate": "historical-context",
+      "statement": "Ban Zhao’s Lessons for Women discussed education, marriage and conduct. It combined an argument for women’s learning with expectations of obedience within the household. Read as advice, the text reveals the standards its author wanted women to follow. It cannot tell us how all women actually lived.",
+      "value": {
+        "type": "text",
+        "text": "Ban Zhao’s Lessons for Women discussed education, marriage and conduct. It combined an argument for women’s learning with expectations of obedience within the household. Read as advice, the text reveals the standards its author wanted women to follow. It cannot tell us how all women actually lived."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 100,
+          "latest": 100,
+          "original": "100 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 100,
+          "latest": 100,
+          "original": "100 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-ban-zhao-lessons-history-lessons",
+        "connected-lives-ban-zhao-lessons-history-ban"
+      ],
+      "reviewId": "connected-lives-ban-zhao-lessons-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-ban-zhao-lessons-chronology",
+      "subjectId": "ban-zhao-lessons",
+      "predicate": "historical-context",
+      "statement": "Ban Zhao’s Lessons for Women: 100 CE to 100 CE. Approximately 100 CE, following Pang-White’s public chapter summary. The single plotted year is an approximate date, not an exact publication year.",
+      "value": {
+        "type": "text",
+        "text": "Ban Zhao’s Lessons for Women: 100 CE to 100 CE. Approximately 100 CE, following Pang-White’s public chapter summary. The single plotted year is an approximate date, not an exact publication year."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 100,
+          "latest": 100,
+          "original": "100 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 100,
+          "latest": 100,
+          "original": "100 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-ban-zhao-lessons-chronology-lessons",
+        "connected-lives-ban-zhao-lessons-chronology-ban"
+      ],
+      "reviewId": "connected-lives-ban-zhao-lessons-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-lives-octavia-athens-point",
+      "subjectId": "octavia-athens",
+      "predicate": "geographic-reference",
+      "statement": "Acropolis reference within Athens; not evidence of a visit to the monument.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          23.72618,
+          37.970870000000005
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -35,
+          "latest": -35,
+          "original": "35 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -35,
+          "latest": -35,
+          "original": "35 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-lives-octavia-athens-point-athens-map"
+      ],
+      "reviewId": "connected-lives-octavia-athens-point-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "connected-lives-octavia-minor-history-octavia",
+      "claimId": "connected-lives-octavia-minor-history",
+      "sourceId": "connected-lives-octavia",
+      "locator": "Biography: lifespan, marriage, mediation and care of Antony’s children; winter chronology not adopted",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-octavia-minor-history-review"
+    },
+    {
+      "id": "connected-lives-octavia-minor-chronology-octavia",
+      "claimId": "connected-lives-octavia-minor-chronology",
+      "sourceId": "connected-lives-octavia",
+      "locator": "Biography: lifespan, marriage, mediation and care of Antony’s children; winter chronology not adopted",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-octavia-minor-chronology-review"
+    },
+    {
+      "id": "connected-lives-livia-history-livia",
+      "claimId": "connected-lives-livia-history",
+      "sourceId": "connected-lives-livia",
+      "locator": "Lifespan factbox; marriage in 38 BCE; advisory role and later influence",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-livia-history-review"
+    },
+    {
+      "id": "connected-lives-livia-chronology-livia",
+      "claimId": "connected-lives-livia-chronology",
+      "sourceId": "connected-lives-livia",
+      "locator": "Lifespan factbox; marriage in 38 BCE; advisory role and later influence",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-livia-chronology-review"
+    },
+    {
+      "id": "connected-lives-ban-zhao-history-ban",
+      "claimId": "connected-lives-ban-zhao-history",
+      "sourceId": "connected-lives-ban",
+      "locator": "Introduction: c.48–c.116 CE, historical scholarship and teaching; translated excerpts",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-ban-zhao-history-review"
+    },
+    {
+      "id": "connected-lives-ban-zhao-history-lessons",
+      "claimId": "connected-lives-ban-zhao-history",
+      "sourceId": "connected-lives-lessons",
+      "locator": "Public chapter summary: c.45–117 CE; Lessons for Women composed around 100 CE; gender politics",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-ban-zhao-history-review"
+    },
+    {
+      "id": "connected-lives-ban-zhao-chronology-ban",
+      "claimId": "connected-lives-ban-zhao-chronology",
+      "sourceId": "connected-lives-ban",
+      "locator": "Introduction: c.48–c.116 CE, historical scholarship and teaching; translated excerpts",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-ban-zhao-chronology-review"
+    },
+    {
+      "id": "connected-lives-ban-zhao-chronology-lessons",
+      "claimId": "connected-lives-ban-zhao-chronology",
+      "sourceId": "connected-lives-lessons",
+      "locator": "Public chapter summary: c.45–117 CE; Lessons for Women composed around 100 CE; gender politics",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-ban-zhao-chronology-review"
+    },
+    {
+      "id": "connected-lives-octavia-athens-history-visit",
+      "claimId": "connected-lives-octavia-athens-history",
+      "sourceId": "connected-lives-visit",
+      "locator": "53.1–2: Octavia reaches Athens with supplies and soldiers; editorial footnote 45 gives 35 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-octavia-athens-history-review"
+    },
+    {
+      "id": "connected-lives-octavia-athens-chronology-visit",
+      "claimId": "connected-lives-octavia-athens-chronology",
+      "sourceId": "connected-lives-visit",
+      "locator": "53.1–2: Octavia reaches Athens with supplies and soldiers; editorial footnote 45 gives 35 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-octavia-athens-chronology-review"
+    },
+    {
+      "id": "connected-lives-livia-marriage-history-livia",
+      "claimId": "connected-lives-livia-marriage-history",
+      "sourceId": "connected-lives-livia",
+      "locator": "Lifespan factbox; marriage in 38 BCE; advisory role and later influence",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-livia-marriage-history-review"
+    },
+    {
+      "id": "connected-lives-livia-marriage-chronology-livia",
+      "claimId": "connected-lives-livia-marriage-chronology",
+      "sourceId": "connected-lives-livia",
+      "locator": "Lifespan factbox; marriage in 38 BCE; advisory role and later influence",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-livia-marriage-chronology-review"
+    },
+    {
+      "id": "connected-lives-ban-zhao-lessons-history-lessons",
+      "claimId": "connected-lives-ban-zhao-lessons-history",
+      "sourceId": "connected-lives-lessons",
+      "locator": "Public chapter summary: c.45–117 CE; Lessons for Women composed around 100 CE; gender politics",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-ban-zhao-lessons-history-review"
+    },
+    {
+      "id": "connected-lives-ban-zhao-lessons-history-ban",
+      "claimId": "connected-lives-ban-zhao-lessons-history",
+      "sourceId": "connected-lives-ban",
+      "locator": "Introduction: c.48–c.116 CE, historical scholarship and teaching; translated excerpts",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-ban-zhao-lessons-history-review"
+    },
+    {
+      "id": "connected-lives-ban-zhao-lessons-chronology-lessons",
+      "claimId": "connected-lives-ban-zhao-lessons-chronology",
+      "sourceId": "connected-lives-lessons",
+      "locator": "Public chapter summary: c.45–117 CE; Lessons for Women composed around 100 CE; gender politics",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-ban-zhao-lessons-chronology-review"
+    },
+    {
+      "id": "connected-lives-ban-zhao-lessons-chronology-ban",
+      "claimId": "connected-lives-ban-zhao-lessons-chronology",
+      "sourceId": "connected-lives-ban",
+      "locator": "Introduction: c.48–c.116 CE, historical scholarship and teaching; translated excerpts",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-ban-zhao-lessons-chronology-review"
+    },
+    {
+      "id": "connected-lives-octavia-athens-point-athens-map",
+      "claimId": "connected-lives-octavia-athens-point",
+      "sourceId": "connected-lives-athens-map",
+      "locator": "Property 404 coordinates N37 58 15.132 E23 43 34.248; orientation reference within Athens",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "connected-lives-octavia-athens-point-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "connected-lives-octavia-minor-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-octavia-minor-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-livia-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-livia-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-ban-zhao-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-ban-zhao-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-octavia-athens-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-octavia-athens-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-livia-marriage-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-livia-marriage-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-ban-zhao-lessons-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-ban-zhao-lessons-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "connected-lives-octavia-athens-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    }
+  ],
+  "accounts": []
+}

@@ -3244,6 +3244,136 @@
       "regionIds": [
         "china"
       ]
+    },
+    {
+      "id": "octavia-minor",
+      "type": "person",
+      "title": "Octavia the Younger",
+      "startYear": -69,
+      "endYear": -11,
+      "description": "Octavia was Augustus’ sister and married Mark Antony. She tried to mediate between the two men as their alliance deteriorated.\n\nAfter Antony’s death, she brought up children from his marriages and his relationship with Cleopatra alongside her own family. Her household became part of the dynasty Augustus was building.",
+      "note": "Approximate lifespan. The plotted dates follow Livius’s 69 BCE birth and use 11 BCE from its alternative death dates of 11 or 10 BCE.",
+      "point": null,
+      "url": "https://www.livius.org/articles/person/octavia-minor/",
+      "contextual": true,
+      "claimIds": [
+        "connected-lives-octavia-minor-history",
+        "connected-lives-octavia-minor-chronology"
+      ],
+      "dateLabel": "Approximate lifespan",
+      "region": "Rome",
+      "regionIds": [
+        "rome"
+      ]
+    },
+    {
+      "id": "livia",
+      "type": "person",
+      "title": "Livia Drusilla",
+      "startYear": -58,
+      "endYear": 29,
+      "description": "Livia married the future Augustus in 38 BCE and became an important adviser. Her son Tiberius eventually succeeded him.\n\nShe continued to exercise influence after Augustus’ death. Hostile stories about her role in the family’s deaths should not be treated as established fact.",
+      "note": "Lifespan follows Store norske leksikon: 58 BCE–29 CE. Dates are at year resolution; there is no year zero. No continuous personal location is inferred.",
+      "point": null,
+      "url": "https://snl.no/Livia_Drusilla",
+      "contextual": true,
+      "claimIds": [
+        "connected-lives-livia-history",
+        "connected-lives-livia-chronology"
+      ],
+      "dateLabel": "Lifespan",
+      "region": "Rome",
+      "regionIds": [
+        "rome"
+      ]
+    },
+    {
+      "id": "ban-zhao",
+      "type": "person",
+      "title": "Ban Zhao",
+      "startYear": 48,
+      "endYear": 116,
+      "description": "Ban Zhao was a scholar and teacher at the Eastern Han court. She helped complete the history of the Western Han after her brother Ban Gu died.\n\nHer writing also addressed women’s education and conduct. It gives us a named woman’s argument about family life, rather than a neutral account of how every household worked.",
+      "note": "Approximate lifespan follows Columbia: c.48–c.116 CE. Pang-White’s Cambridge summary gives c.45–117. These are uncertain endpoints, not exact ages.",
+      "point": null,
+      "url": "https://afe.easia.columbia.edu/main_pop/ps/ps_china-banzhao-admonitions.htm",
+      "contextual": true,
+      "claimIds": [
+        "connected-lives-ban-zhao-history",
+        "connected-lives-ban-zhao-chronology"
+      ],
+      "dateLabel": "Approximate lifespan",
+      "region": "China",
+      "regionIds": [
+        "china"
+      ]
+    },
+    {
+      "id": "octavia-athens",
+      "type": "event",
+      "title": "Octavia brings support to Athens",
+      "startYear": -35,
+      "endYear": -35,
+      "description": "Plutarch describes Octavia arriving in Athens with money, clothing and soldiers for Antony. He told her to remain there.\n\nThis records a particular journey in the breakdown of their marriage and political alliance. It does not provide a complete itinerary.",
+      "note": "The Loeb edition’s footnote dates the arrival to 35 BCE. The map uses the Acropolis to locate Athens, not to claim that Octavia visited that monument.",
+      "point": [
+        23.72618,
+        37.970870000000005
+      ],
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53",
+      "contextual": true,
+      "claimIds": [
+        "connected-lives-octavia-athens-history",
+        "connected-lives-octavia-athens-chronology",
+        "connected-lives-octavia-athens-point"
+      ],
+      "dateLabel": "Year-level event",
+      "region": "Greece",
+      "regionIds": [
+        "athens"
+      ]
+    },
+    {
+      "id": "livia-marriage",
+      "type": "event",
+      "title": "Livia marries the future Augustus",
+      "startYear": -38,
+      "endYear": -38,
+      "description": "Livia married Octavian, the future Augustus, in 38 BCE after her divorce from Tiberius Claudius Nero.\n\nTheir marriage joined the family of her sons Tiberius and Drusus with the man who would become Rome’s first emperor.",
+      "note": "Year follows Store norske leksikon. No wedding location is assigned.",
+      "point": null,
+      "url": "https://snl.no/Livia_Drusilla",
+      "contextual": true,
+      "claimIds": [
+        "connected-lives-livia-marriage-history",
+        "connected-lives-livia-marriage-chronology"
+      ],
+      "dateLabel": "Year-level event",
+      "region": "Rome",
+      "regionIds": [
+        "rome"
+      ]
+    },
+    {
+      "id": "ban-zhao-lessons",
+      "type": "period",
+      "title": "Ban Zhao’s Lessons for Women",
+      "startYear": 100,
+      "endYear": 100,
+      "description": "Ban Zhao’s Lessons for Women discussed education, marriage and conduct. It combined an argument for women’s learning with expectations of obedience within the household.\n\nRead as advice, the text reveals the standards its author wanted women to follow. It cannot tell us how all women actually lived.",
+      "note": "Approximately 100 CE, following Pang-White’s public chapter summary. The single plotted year is an approximate date, not an exact publication year.",
+      "point": null,
+      "url": "https://www.cambridge.org/core/books/abs/ancient-women-philosophers/reappraising-ban-zhao/CB84B98EA5ED8E2769742CF4C5C4537E",
+      "contextual": true,
+      "claimIds": [
+        "connected-lives-ban-zhao-lessons-history",
+        "connected-lives-ban-zhao-lessons-chronology"
+      ],
+      "dateLabel": "Approximate composition date",
+      "region": "China",
+      "regionIds": [
+        "china"
+      ]
     }
   ],
   "associations": [
@@ -4200,6 +4330,42 @@
         "qin-han-era-qin-mausoleum-history",
         "qin-han-era-qin-mausoleum-chronology",
         "qin-han-era-qin-mausoleum-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "octavia-athens",
+      "place": "athens",
+      "startYear": -35,
+      "endYear": -35,
+      "point": [
+        23.72618,
+        37.970870000000005
+      ],
+      "label": "Octavia’s recorded arrival in Athens; city reference only",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53",
+      "claimIds": [
+        "connected-lives-octavia-athens-history",
+        "connected-lives-octavia-athens-chronology",
+        "connected-lives-octavia-athens-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "octavia-minor",
+      "place": "athens",
+      "startYear": -35,
+      "endYear": -35,
+      "point": [
+        23.72618,
+        37.970870000000005
+      ],
+      "label": "Octavia’s recorded arrival in Athens; city reference only",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53",
+      "claimIds": [
+        "connected-lives-octavia-athens-history",
+        "connected-lives-octavia-athens-chronology",
+        "connected-lives-octavia-athens-point"
       ],
       "contextual": true
     }
@@ -5857,6 +6023,138 @@
       "label": "Regional context",
       "labelFromA": "Regional context",
       "labelFromB": "Connected history"
+    },
+    {
+      "a": "octavia-minor",
+      "b": "augustus",
+      "label": "Brother",
+      "labelFromA": "Brother",
+      "labelFromB": "Sister",
+      "sourceUrls": [
+        "https://www.livius.org/articles/person/octavia-minor/"
+      ]
+    },
+    {
+      "a": "octavia-minor",
+      "b": "mark-antony",
+      "label": "Husband, later divorced",
+      "labelFromA": "Husband, later divorced",
+      "labelFromB": "Wife, later divorced",
+      "sourceUrls": [
+        "https://www.livius.org/articles/person/octavia-minor/"
+      ]
+    },
+    {
+      "a": "octavia-minor",
+      "b": "cleopatra-vii",
+      "label": "Raised her children after her death",
+      "labelFromA": "Raised her children after her death",
+      "labelFromB": "Her children’s later guardian",
+      "sourceUrls": [
+        "https://www.livius.org/articles/person/octavia-minor/"
+      ]
+    },
+    {
+      "a": "octavia-minor",
+      "b": "octavia-athens",
+      "label": "Recorded journey",
+      "labelFromA": "Recorded journey",
+      "labelFromB": "Traveller",
+      "sourceUrls": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53"
+      ]
+    },
+    {
+      "a": "octavia-athens",
+      "b": "athens",
+      "label": "Place of the arrival",
+      "labelFromA": "Place of the arrival",
+      "labelFromB": "Recorded visit",
+      "sourceUrls": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53"
+      ]
+    },
+    {
+      "a": "octavia-athens",
+      "b": "mark-antony",
+      "label": "Intended recipient of support",
+      "labelFromA": "Intended recipient of support",
+      "labelFromB": "Supplies brought by Octavia",
+      "sourceUrls": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53"
+      ]
+    },
+    {
+      "a": "livia",
+      "b": "augustus",
+      "label": "Husband",
+      "labelFromA": "Husband",
+      "labelFromB": "Wife and adviser",
+      "sourceUrls": [
+        "https://snl.no/Livia_Drusilla"
+      ]
+    },
+    {
+      "a": "livia",
+      "b": "livia-marriage",
+      "label": "Marriage in 38 BCE",
+      "labelFromA": "Marriage in 38 BCE",
+      "labelFromB": "Bride",
+      "sourceUrls": [
+        "https://snl.no/Livia_Drusilla"
+      ]
+    },
+    {
+      "a": "livia-marriage",
+      "b": "augustus",
+      "label": "Bridegroom",
+      "labelFromA": "Bridegroom",
+      "labelFromB": "Marriage to Livia",
+      "sourceUrls": [
+        "https://snl.no/Livia_Drusilla"
+      ]
+    },
+    {
+      "a": "ban-zhao",
+      "b": "eastern-han",
+      "label": "Dynastic context",
+      "labelFromA": "Dynastic context",
+      "labelFromB": "Scholar and court teacher",
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-banzhao-admonitions.htm"
+      ]
+    },
+    {
+      "a": "ban-zhao",
+      "b": "western-han",
+      "label": "Dynasty whose history she helped complete",
+      "labelFromA": "Dynasty whose history she helped complete",
+      "labelFromB": "Later historian",
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-banzhao-admonitions.htm"
+      ]
+    },
+    {
+      "a": "ban-zhao",
+      "b": "ban-zhao-lessons",
+      "label": "Work on women’s education and conduct",
+      "labelFromA": "Work on women’s education and conduct",
+      "labelFromB": "Author",
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-banzhao-admonitions.htm",
+        "https://www.cambridge.org/core/books/abs/ancient-women-philosophers/reappraising-ban-zhao/CB84B98EA5ED8E2769742CF4C5C4537E"
+      ]
+    },
+    {
+      "a": "ban-zhao-lessons",
+      "b": "eastern-han",
+      "label": "Period of composition",
+      "labelFromA": "Period of composition",
+      "labelFromB": "Writing on women’s lives",
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-banzhao-admonitions.htm",
+        "https://www.cambridge.org/core/books/abs/ancient-women-philosophers/reappraising-ban-zhao/CB84B98EA5ED8E2769742CF4C5C4537E"
+      ]
     }
   ]
 }
