@@ -410,6 +410,71 @@
       "id": "stonehenge-later-changes",
       "name": "Stonehenge’s later changes",
       "type": "period"
+    },
+    {
+      "id": "ubaid-communities",
+      "name": "Ubaid villages and towns",
+      "type": "period"
+    },
+    {
+      "id": "uruk-period",
+      "name": "Mesopotamia’s Uruk period",
+      "type": "period"
+    },
+    {
+      "id": "avebury-building",
+      "name": "Building Avebury",
+      "type": "period"
+    },
+    {
+      "id": "skara-brae",
+      "name": "Village life at Skara Brae",
+      "type": "period"
+    },
+    {
+      "id": "boyne-passage-tombs",
+      "name": "Building Newgrange and the Boyne tombs",
+      "type": "period"
+    },
+    {
+      "id": "yangshao-communities",
+      "name": "Yangshao communities",
+      "type": "period"
+    },
+    {
+      "id": "liangzhu-city",
+      "name": "Liangzhu’s city and waterworks",
+      "type": "period"
+    },
+    {
+      "id": "malta-temple-building",
+      "name": "Malta’s megalithic temples",
+      "type": "period"
+    },
+    {
+      "id": "pre-kerma",
+      "name": "Communities before the kingdom of Kerma",
+      "type": "period"
+    },
+    {
+      "id": "kerma-kingdom",
+      "name": "The kingdom of Kerma",
+      "type": "period"
+    },
+    {
+      "id": "kuk-mound-cultivation",
+      "name": "Early cultivation at Kuk",
+      "type": "period"
+    },
+    {
+      "id": "kuk-ditched-cultivation",
+      "name": "Ditched cultivation at Kuk",
+      "type": "period"
+    },
+    {
+      "id": "watson-brake",
+      "name": "Watson Brake’s mound builders",
+      "type": "period"
     }
   ],
   "sources": [
@@ -881,6 +946,168 @@
       "url": "https://historicengland.org.uk/listing/heritage-gateway/results/record/5079bd59-b1b8-4237-b20f-3bc281dbc435/MWI12515",
       "creator": "Historic England / Wiltshire & Swindon Historic Environment Record",
       "locatorHint": "Location: latitude / longitude",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-ubaid",
+      "title": "The Ubaid Period (5500–4000 B.C.)",
+      "url": "https://www.metmuseum.org/essays/the-ubaid-period-5500-4000-b-c",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Main essay, paragraphs 1–4",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-uruk",
+      "title": "Mesopotamia, 8000–2000 B.C.",
+      "url": "https://www.metmuseum.org/toah/ht/02/wam",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Uruk period timeline and key events, ca. 4000–3100 BCE",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-avebury",
+      "title": "History of Avebury Henge and Stone Circles",
+      "url": "https://www.english-heritage.org.uk/visit/places/avebury/history/",
+      "creator": "English Heritage",
+      "locatorHint": "Introduction and History of Construction",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-skara-dates",
+      "title": "Heart of Neolithic Orkney Management Plan 2008–13",
+      "url": "https://whc.unesco.org/document/101862",
+      "creator": "Historic Scotland",
+      "locatorHint": "Section 1.3.4.12–13, printed page 9",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-skara",
+      "title": "Skara Brae: history and stories",
+      "url": "https://www.historicenvironment.scot/visit/all/skara-brae/history-and-stories/",
+      "creator": "Historic Environment Scotland",
+      "locatorHint": "Village houses and furniture; Artefacts and remains; End of village life",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-boyne",
+      "title": "Brú na Bóinne: Newgrange, Knowth and Dowth",
+      "url": "https://heritageireland.ie/places-to-visit/bru-na-boinne-visitor-centre-newgrange-knowth-and-dowth/",
+      "creator": "Office of Public Works, Heritage Ireland",
+      "locatorHint": "Opening historical description",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-yangshao",
+      "title": "Ancient China: Prehistoric Times",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/gudai/en/detail1.html",
+      "creator": "National Museum of China",
+      "locatorHint": "Yangshao object labels: knives, mortar, pottery, spindle whorl and needles",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-liangzhu",
+      "title": "Archaeological Ruins of Liangzhu City",
+      "url": "https://whc.unesco.org/en/list/1592/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Description and Outstanding Universal Value",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-malta",
+      "title": "Megalithic Temples of Malta",
+      "url": "https://whc.unesco.org/en/list/132/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Outstanding Universal Value: brief synthesis",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-kerma",
+      "title": "History of Kerma",
+      "url": "https://kerma.ch/en/history/",
+      "creator": "Kerma archaeological mission",
+      "locatorHint": "Pre-Kerma settlement; The kingdom of Kerma",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-kuk",
+      "title": "Origins of agriculture at Kuk Swamp in the highlands of New Guinea",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12817084/",
+      "creator": "Tim Denham and colleagues, Science (2003)",
+      "locatorHint": "Abstract: phases 2 and 3, calibrated years BP",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-watson",
+      "title": "Watson Brake, a Middle Archaic Mound Complex in Northeast Louisiana",
+      "url": "https://doi.org/10.2307/40035868",
+      "creator": "Joe W. Saunders and colleagues, American Antiquity (2005)",
+      "locatorHint": "Abstract: construction sequence and subsistence",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-watson-range",
+      "title": "Watson Brake Archaeological Site",
+      "url": "https://64parishes.org/entry/watson-brake-archaeological-site",
+      "creator": "Louisiana Endowment for the Humanities, 64 Parishes",
+      "locatorHint": "Site date range, 3500–2800 BCE",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-avebury-map",
+      "title": "Avebury and associated monuments reference",
+      "url": "https://whc.unesco.org/en/list/373/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Component 373bis-002",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-orkney-map",
+      "title": "Skara Brae site reference",
+      "url": "https://whc.unesco.org/en/list/514/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Component 514bis-004",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-boyne-map",
+      "title": "Brú na Bóinne landscape reference",
+      "url": "https://whc.unesco.org/en/list/659/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Property 659, landscape reference rather than one tomb",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-liangzhu-map",
+      "title": "Liangzhu city site reference",
+      "url": "https://whc.unesco.org/en/list/1592/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Component 1592-004",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "early-world-kuk-map",
+      "title": "Kuk archaeological site reference",
+      "url": "https://whc.unesco.org/en/list/887/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Property coordinates",
       "accessed": "2026-11-22",
       "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
     }
@@ -5959,6 +6186,1118 @@
       ],
       "reviewId": "stonehenge-later-changes-point-review",
       "disputeNote": null
+    },
+    {
+      "id": "early-world-ubaid-communities-dates",
+      "subjectId": "ubaid-communities",
+      "predicate": "historical-context",
+      "statement": "Ubaid villages and towns: approximately 5500–4000 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Ubaid villages and towns: approximately 5500–4000 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -5500,
+          "latest": -5500,
+          "original": "circa 5500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -4000,
+          "latest": -4000,
+          "original": "circa 4000 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-ubaid-communities-dates-evidence"
+      ],
+      "reviewId": "early-world-ubaid-communities-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-ubaid-communities-context",
+      "subjectId": "ubaid-communities",
+      "predicate": "historical-context",
+      "statement": "Ubaid communities used irrigation and fishing; some villages grew into towns centred on monumental buildings, including Eridu and Uruk.",
+      "value": {
+        "type": "text",
+        "text": "Ubaid communities used irrigation and fishing; some villages grew into towns centred on monumental buildings, including Eridu and Uruk."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -5500,
+          "latest": -5500,
+          "original": "circa 5500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -4000,
+          "latest": -4000,
+          "original": "circa 4000 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-ubaid-communities-context-evidence"
+      ],
+      "reviewId": "early-world-ubaid-communities-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-uruk-period-dates",
+      "subjectId": "uruk-period",
+      "predicate": "historical-context",
+      "statement": "Mesopotamia’s Uruk period: approximately 4000–3100 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Mesopotamia’s Uruk period: approximately 4000–3100 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -4000,
+          "latest": -4000,
+          "original": "circa 4000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-uruk-period-dates-evidence"
+      ],
+      "reviewId": "early-world-uruk-period-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-uruk-period-context",
+      "subjectId": "uruk-period",
+      "predicate": "historical-context",
+      "statement": "Cities developed around monumental mud-brick temples; administrative practices changed with writing on clay and the use of cylinder seals.",
+      "value": {
+        "type": "text",
+        "text": "Cities developed around monumental mud-brick temples; administrative practices changed with writing on clay and the use of cylinder seals."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -4000,
+          "latest": -4000,
+          "original": "circa 4000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-uruk-period-context-evidence"
+      ],
+      "reviewId": "early-world-uruk-period-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-avebury-building-dates",
+      "subjectId": "avebury-building",
+      "predicate": "historical-context",
+      "statement": "Building Avebury: approximately 2850–2200 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Building Avebury: approximately 2850–2200 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2850,
+          "latest": -2850,
+          "original": "circa 2850 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2200,
+          "latest": -2200,
+          "original": "circa 2200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-avebury-building-dates-evidence"
+      ],
+      "reviewId": "early-world-avebury-building-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-avebury-building-context",
+      "subjectId": "avebury-building",
+      "predicate": "historical-context",
+      "statement": "Avebury includes banks, ditches and stone circles; the precise sequence of construction remains incompletely understood.",
+      "value": {
+        "type": "text",
+        "text": "Avebury includes banks, ditches and stone circles; the precise sequence of construction remains incompletely understood."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2850,
+          "latest": -2850,
+          "original": "circa 2850 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2200,
+          "latest": -2200,
+          "original": "circa 2200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-avebury-building-context-evidence"
+      ],
+      "reviewId": "early-world-avebury-building-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-skara-brae-dates",
+      "subjectId": "skara-brae",
+      "predicate": "historical-context",
+      "statement": "Village life at Skara Brae: approximately 3100–2500 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Village life at Skara Brae: approximately 3100–2500 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-skara-brae-dates-evidence"
+      ],
+      "reviewId": "early-world-skara-brae-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-skara-brae-context",
+      "subjectId": "skara-brae",
+      "predicate": "historical-context",
+      "statement": "Skara Brae’s stone houses preserve hearths, beds and storage furniture. The inhabitants farmed, hunted and fished and made tools, pottery and jewellery.",
+      "value": {
+        "type": "text",
+        "text": "Skara Brae’s stone houses preserve hearths, beds and storage furniture. The inhabitants farmed, hunted and fished and made tools, pottery and jewellery."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-skara-brae-context-evidence"
+      ],
+      "reviewId": "early-world-skara-brae-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-boyne-passage-tombs-dates",
+      "subjectId": "boyne-passage-tombs",
+      "predicate": "historical-context",
+      "statement": "Building Newgrange and the Boyne tombs: approximately 3200 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Building Newgrange and the Boyne tombs: approximately 3200 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3200,
+          "latest": -3200,
+          "original": "circa 3200 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3200,
+          "latest": -3200,
+          "original": "circa 3200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-boyne-passage-tombs-dates-evidence"
+      ],
+      "reviewId": "early-world-boyne-passage-tombs-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-boyne-passage-tombs-context",
+      "subjectId": "boyne-passage-tombs",
+      "predicate": "historical-context",
+      "statement": "Newgrange, Knowth and Dowth are prehistoric passage tombs in Brú na Bóinne, whose carved stones preserve megalithic art.",
+      "value": {
+        "type": "text",
+        "text": "Newgrange, Knowth and Dowth are prehistoric passage tombs in Brú na Bóinne, whose carved stones preserve megalithic art."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3200,
+          "latest": -3200,
+          "original": "circa 3200 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3200,
+          "latest": -3200,
+          "original": "circa 3200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-boyne-passage-tombs-context-evidence"
+      ],
+      "reviewId": "early-world-boyne-passage-tombs-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-yangshao-communities-dates",
+      "subjectId": "yangshao-communities",
+      "predicate": "historical-context",
+      "statement": "Yangshao communities: approximately 5000–3000 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Yangshao communities: approximately 5000–3000 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -5000,
+          "latest": -5000,
+          "original": "circa 5000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-yangshao-communities-dates-evidence"
+      ],
+      "reviewId": "early-world-yangshao-communities-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-yangshao-communities-context",
+      "subjectId": "yangshao-communities",
+      "predicate": "historical-context",
+      "statement": "The National Museum of China lists Yangshao painted pottery, stone knives and mortar, spindle whorls and bone needles.",
+      "value": {
+        "type": "text",
+        "text": "The National Museum of China lists Yangshao painted pottery, stone knives and mortar, spindle whorls and bone needles."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -5000,
+          "latest": -5000,
+          "original": "circa 5000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-yangshao-communities-context-evidence"
+      ],
+      "reviewId": "early-world-yangshao-communities-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-liangzhu-city-dates",
+      "subjectId": "liangzhu-city",
+      "predicate": "historical-context",
+      "statement": "Liangzhu’s city and waterworks: approximately 3300–2300 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Liangzhu’s city and waterworks: approximately 3300–2300 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3300,
+          "latest": -3300,
+          "original": "circa 3300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2300,
+          "latest": -2300,
+          "original": "circa 2300 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-liangzhu-city-dates-evidence"
+      ],
+      "reviewId": "early-world-liangzhu-city-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-liangzhu-city-context",
+      "subjectId": "liangzhu-city",
+      "predicate": "historical-context",
+      "statement": "Liangzhu combined rice cultivation, urban planning, earthen monuments and water management. Differences in burials express social hierarchy.",
+      "value": {
+        "type": "text",
+        "text": "Liangzhu combined rice cultivation, urban planning, earthen monuments and water management. Differences in burials express social hierarchy."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3300,
+          "latest": -3300,
+          "original": "circa 3300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2300,
+          "latest": -2300,
+          "original": "circa 2300 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-liangzhu-city-context-evidence"
+      ],
+      "reviewId": "early-world-liangzhu-city-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-malta-temple-building-dates",
+      "subjectId": "malta-temple-building",
+      "predicate": "historical-context",
+      "statement": "Malta’s megalithic temples: approximately 4000–2001 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Malta’s megalithic temples: approximately 4000–2001 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -4000,
+          "latest": -4000,
+          "original": "circa 4000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2001,
+          "latest": -2001,
+          "original": "circa 2001 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-malta-temple-building-dates-evidence"
+      ],
+      "reviewId": "early-world-malta-temple-building-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-malta-temple-building-context",
+      "subjectId": "malta-temple-building",
+      "predicate": "historical-context",
+      "statement": "Malta and Gozo’s temple complexes combine upright slabs and horizontal stonework, often approached through forecourts; plans and decoration vary.",
+      "value": {
+        "type": "text",
+        "text": "Malta and Gozo’s temple complexes combine upright slabs and horizontal stonework, often approached through forecourts; plans and decoration vary."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -4000,
+          "latest": -4000,
+          "original": "circa 4000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2001,
+          "latest": -2001,
+          "original": "circa 2001 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-malta-temple-building-context-evidence"
+      ],
+      "reviewId": "early-world-malta-temple-building-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-pre-kerma-dates",
+      "subjectId": "pre-kerma",
+      "predicate": "historical-context",
+      "statement": "Communities before the kingdom of Kerma: approximately 3500–2500 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Communities before the kingdom of Kerma: approximately 3500–2500 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3500,
+          "latest": -3500,
+          "original": "circa 3500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-pre-kerma-dates-evidence"
+      ],
+      "reviewId": "early-world-pre-kerma-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-pre-kerma-context",
+      "subjectId": "pre-kerma",
+      "predicate": "historical-context",
+      "statement": "Pre-Kerma settlement included a large enclosure, interpreted as protection for people and wealth. Evidence for wider Upper Nubian connections remains limited.",
+      "value": {
+        "type": "text",
+        "text": "Pre-Kerma settlement included a large enclosure, interpreted as protection for people and wealth. Evidence for wider Upper Nubian connections remains limited."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3500,
+          "latest": -3500,
+          "original": "circa 3500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-pre-kerma-context-evidence"
+      ],
+      "reviewId": "early-world-pre-kerma-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-kerma-kingdom-dates",
+      "subjectId": "kerma-kingdom",
+      "predicate": "historical-context",
+      "statement": "The kingdom of Kerma: approximately 2500–1500 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The kingdom of Kerma: approximately 2500–1500 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-kerma-kingdom-dates-evidence"
+      ],
+      "reviewId": "early-world-kerma-kingdom-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-kerma-kingdom-context",
+      "subjectId": "kerma-kingdom",
+      "predicate": "historical-context",
+      "statement": "Kerma was the centre of a Nubian kingdom south of Egypt, near the Nile’s Third Cataract. Its capital and eastern cemetery preserve evidence spanning roughly 2500–1500 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Kerma was the centre of a Nubian kingdom south of Egypt, near the Nile’s Third Cataract. Its capital and eastern cemetery preserve evidence spanning roughly 2500–1500 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-kerma-kingdom-context-evidence"
+      ],
+      "reviewId": "early-world-kerma-kingdom-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-kuk-mound-cultivation-dates",
+      "subjectId": "kuk-mound-cultivation",
+      "predicate": "historical-context",
+      "statement": "Early cultivation at Kuk: approximately 5000–4490 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Early cultivation at Kuk: approximately 5000–4490 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -5000,
+          "latest": -5000,
+          "original": "circa 5000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -4490,
+          "latest": -4490,
+          "original": "circa 4490 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-kuk-mound-cultivation-dates-evidence"
+      ],
+      "reviewId": "early-world-kuk-mound-cultivation-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-kuk-mound-cultivation-context",
+      "subjectId": "kuk-mound-cultivation",
+      "predicate": "historical-context",
+      "statement": "At Kuk in the New Guinea highlands, people cultivated plants on raised mounds along wetland margins. Research dates this phase to about 5000–4490 BCE and identifies intensive banana cultivation.",
+      "value": {
+        "type": "text",
+        "text": "At Kuk in the New Guinea highlands, people cultivated plants on raised mounds along wetland margins. Research dates this phase to about 5000–4490 BCE and identifies intensive banana cultivation."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -5000,
+          "latest": -5000,
+          "original": "circa 5000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -4490,
+          "latest": -4490,
+          "original": "circa 4490 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-kuk-mound-cultivation-context-evidence"
+      ],
+      "reviewId": "early-world-kuk-mound-cultivation-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-kuk-ditched-cultivation-dates",
+      "subjectId": "kuk-ditched-cultivation",
+      "predicate": "historical-context",
+      "statement": "Ditched cultivation at Kuk: approximately 2400–2030 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Ditched cultivation at Kuk: approximately 2400–2030 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2400,
+          "latest": -2400,
+          "original": "circa 2400 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2030,
+          "latest": -2030,
+          "original": "circa 2030 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-kuk-ditched-cultivation-dates-evidence"
+      ],
+      "reviewId": "early-world-kuk-ditched-cultivation-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-kuk-ditched-cultivation-context",
+      "subjectId": "kuk-ditched-cultivation",
+      "predicate": "historical-context",
+      "statement": "Later farmers at Kuk used ditches to cultivate wet ground. The research dates the beginning of this phase to about 2400–2030 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Later farmers at Kuk used ditches to cultivate wet ground. The research dates the beginning of this phase to about 2400–2030 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2400,
+          "latest": -2400,
+          "original": "circa 2400 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2030,
+          "latest": -2030,
+          "original": "circa 2030 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-kuk-ditched-cultivation-context-evidence"
+      ],
+      "reviewId": "early-world-kuk-ditched-cultivation-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-watson-brake-dates",
+      "subjectId": "watson-brake",
+      "predicate": "historical-context",
+      "statement": "Watson Brake’s mound builders: approximately 3500–2800 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Watson Brake’s mound builders: approximately 3500–2800 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3500,
+          "latest": -3500,
+          "original": "circa 3500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2800,
+          "latest": -2800,
+          "original": "circa 2800 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-watson-brake-dates-evidence"
+      ],
+      "reviewId": "early-world-watson-brake-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-watson-brake-context",
+      "subjectId": "watson-brake",
+      "predicate": "historical-context",
+      "statement": "Watson Brake has eleven mounds and connecting ridges. Building was episodic. Food remains include nuts, fish and deer and indicate broad-spectrum foraging.",
+      "value": {
+        "type": "text",
+        "text": "Watson Brake has eleven mounds and connecting ridges. Building was episodic. Food remains include nuts, fish and deer and indicate broad-spectrum foraging."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3500,
+          "latest": -3500,
+          "original": "circa 3500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2800,
+          "latest": -2800,
+          "original": "circa 2800 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-watson-brake-context-evidence"
+      ],
+      "reviewId": "early-world-watson-brake-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-avebury-building-point",
+      "subjectId": "avebury-building",
+      "predicate": "site-reference",
+      "statement": "Avebury and associated monuments reference. This is a reference position, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -1.8539166666666667,
+          51.428666666666665
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2850,
+          "latest": -2850,
+          "original": "circa 2850 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2200,
+          "latest": -2200,
+          "original": "circa 2200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-avebury-building-point-evidence"
+      ],
+      "reviewId": "early-world-avebury-building-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-skara-brae-point",
+      "subjectId": "skara-brae",
+      "predicate": "site-reference",
+      "statement": "Skara Brae site reference. This is a reference position, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -3.3416083333333333,
+          59.048825
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "circa 3100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-skara-brae-point-evidence"
+      ],
+      "reviewId": "early-world-skara-brae-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-boyne-passage-tombs-point",
+      "subjectId": "boyne-passage-tombs",
+      "predicate": "site-reference",
+      "statement": "Brú na Bóinne landscape reference. This is a reference position, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -6.4755,
+          53.694694444444444
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3200,
+          "latest": -3200,
+          "original": "circa 3200 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3200,
+          "latest": -3200,
+          "original": "circa 3200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-boyne-passage-tombs-point-evidence"
+      ],
+      "reviewId": "early-world-boyne-passage-tombs-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-liangzhu-city-point",
+      "subjectId": "liangzhu-city",
+      "predicate": "site-reference",
+      "statement": "Liangzhu city site reference. This is a reference position, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          119.990825,
+          30.395547222222223
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3300,
+          "latest": -3300,
+          "original": "circa 3300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2300,
+          "latest": -2300,
+          "original": "circa 2300 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-liangzhu-city-point-evidence"
+      ],
+      "reviewId": "early-world-liangzhu-city-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-kuk-mound-cultivation-point",
+      "subjectId": "kuk-mound-cultivation",
+      "predicate": "site-reference",
+      "statement": "Kuk archaeological site reference. This is a reference position, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          144.33172222222223,
+          -5.783711111111111
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -5000,
+          "latest": -5000,
+          "original": "circa 5000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -4490,
+          "latest": -4490,
+          "original": "circa 4490 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-kuk-mound-cultivation-point-evidence"
+      ],
+      "reviewId": "early-world-kuk-mound-cultivation-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "early-world-kuk-ditched-cultivation-point",
+      "subjectId": "kuk-ditched-cultivation",
+      "predicate": "site-reference",
+      "statement": "Kuk archaeological site reference. This is a reference position, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          144.33172222222223,
+          -5.783711111111111
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2400,
+          "latest": -2400,
+          "original": "circa 2400 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2030,
+          "latest": -2030,
+          "original": "circa 2030 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "early-world-kuk-ditched-cultivation-point-evidence"
+      ],
+      "reviewId": "early-world-kuk-ditched-cultivation-point-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -7365,6 +8704,294 @@
       "note": "Approximate dates distinguish construction episodes; the map point is not a historical boundary.",
       "relation": "supports",
       "reviewId": "stonehenge-later-changes-point-review"
+    },
+    {
+      "id": "early-world-ubaid-communities-dates-evidence",
+      "claimId": "early-world-ubaid-communities-dates",
+      "sourceId": "early-world-ubaid",
+      "locator": "Main essay, paragraphs 1–4",
+      "note": "The displayed span follows the Met’s period of widespread Ubaid culture. Its southern origins are earlier, around 6200 BCE.",
+      "relation": "supports",
+      "reviewId": "early-world-ubaid-communities-dates-review"
+    },
+    {
+      "id": "early-world-ubaid-communities-context-evidence",
+      "claimId": "early-world-ubaid-communities-context",
+      "sourceId": "early-world-ubaid",
+      "locator": "Main essay, paragraphs 1–4",
+      "note": "The displayed span follows the Met’s period of widespread Ubaid culture. Its southern origins are earlier, around 6200 BCE.",
+      "relation": "supports",
+      "reviewId": "early-world-ubaid-communities-context-review"
+    },
+    {
+      "id": "early-world-uruk-period-dates-evidence",
+      "claimId": "early-world-uruk-period-dates",
+      "sourceId": "early-world-uruk",
+      "locator": "Uruk period timeline and key events, ca. 4000–3100 BCE",
+      "note": "Approximate regional chronology, not the lifespan of a single city. Administrative changes developed within the period, not all at its beginning.",
+      "relation": "supports",
+      "reviewId": "early-world-uruk-period-dates-review"
+    },
+    {
+      "id": "early-world-uruk-period-context-evidence",
+      "claimId": "early-world-uruk-period-context",
+      "sourceId": "early-world-uruk",
+      "locator": "Uruk period timeline and key events, ca. 4000–3100 BCE",
+      "note": "Approximate regional chronology, not the lifespan of a single city. Administrative changes developed within the period, not all at its beginning.",
+      "relation": "supports",
+      "reviewId": "early-world-uruk-period-context-review"
+    },
+    {
+      "id": "early-world-avebury-building-dates-evidence",
+      "claimId": "early-world-avebury-building-dates",
+      "sourceId": "early-world-avebury",
+      "locator": "Introduction and History of Construction",
+      "note": "Approximate construction and alteration window. The precise sequence remains uncertain.",
+      "relation": "supports",
+      "reviewId": "early-world-avebury-building-dates-review"
+    },
+    {
+      "id": "early-world-avebury-building-context-evidence",
+      "claimId": "early-world-avebury-building-context",
+      "sourceId": "early-world-avebury",
+      "locator": "Introduction and History of Construction",
+      "note": "Approximate construction and alteration window. The precise sequence remains uncertain.",
+      "relation": "supports",
+      "reviewId": "early-world-avebury-building-context-review"
+    },
+    {
+      "id": "early-world-skara-brae-dates-evidence",
+      "claimId": "early-world-skara-brae-dates",
+      "sourceId": "early-world-skara-dates",
+      "locator": "Section 1.3.4.12–13, printed page 9",
+      "note": "Approximate occupation dates follow Historic Scotland’s management plan. The reason village life ended is uncertain.",
+      "relation": "supports",
+      "reviewId": "early-world-skara-brae-dates-review"
+    },
+    {
+      "id": "early-world-skara-brae-context-evidence",
+      "claimId": "early-world-skara-brae-context",
+      "sourceId": "early-world-skara",
+      "locator": "Village houses and furniture; Artefacts and remains; End of village life",
+      "note": "Approximate occupation dates follow Historic Scotland’s management plan. The reason village life ended is uncertain.",
+      "relation": "supports",
+      "reviewId": "early-world-skara-brae-context-review"
+    },
+    {
+      "id": "early-world-boyne-passage-tombs-dates-evidence",
+      "claimId": "early-world-boyne-passage-tombs-dates",
+      "sourceId": "early-world-boyne",
+      "locator": "Opening historical description",
+      "note": "A rounded construction date for several monuments, not a claim that they were all built in one year.",
+      "relation": "supports",
+      "reviewId": "early-world-boyne-passage-tombs-dates-review"
+    },
+    {
+      "id": "early-world-boyne-passage-tombs-context-evidence",
+      "claimId": "early-world-boyne-passage-tombs-context",
+      "sourceId": "early-world-boyne",
+      "locator": "Opening historical description",
+      "note": "A rounded construction date for several monuments, not a claim that they were all built in one year.",
+      "relation": "supports",
+      "reviewId": "early-world-boyne-passage-tombs-context-review"
+    },
+    {
+      "id": "early-world-yangshao-communities-dates-evidence",
+      "claimId": "early-world-yangshao-communities-dates",
+      "sourceId": "early-world-yangshao",
+      "locator": "Yangshao object labels: knives, mortar, pottery, spindle whorl and needles",
+      "note": "Broad archaeological culture, not a unified state. Date ranges vary between sites and phases.",
+      "relation": "supports",
+      "reviewId": "early-world-yangshao-communities-dates-review"
+    },
+    {
+      "id": "early-world-yangshao-communities-context-evidence",
+      "claimId": "early-world-yangshao-communities-context",
+      "sourceId": "early-world-yangshao",
+      "locator": "Yangshao object labels: knives, mortar, pottery, spindle whorl and needles",
+      "note": "Broad archaeological culture, not a unified state. Date ranges vary between sites and phases.",
+      "relation": "supports",
+      "reviewId": "early-world-yangshao-communities-context-review"
+    },
+    {
+      "id": "early-world-liangzhu-city-dates-evidence",
+      "claimId": "early-world-liangzhu-city-dates",
+      "sourceId": "early-world-liangzhu",
+      "locator": "Description and Outstanding Universal Value",
+      "note": "Dates follow UNESCO’s archaeological site chronology, not every site associated with Liangzhu culture.",
+      "relation": "supports",
+      "reviewId": "early-world-liangzhu-city-dates-review"
+    },
+    {
+      "id": "early-world-liangzhu-city-context-evidence",
+      "claimId": "early-world-liangzhu-city-context",
+      "sourceId": "early-world-liangzhu",
+      "locator": "Description and Outstanding Universal Value",
+      "note": "Dates follow UNESCO’s archaeological site chronology, not every site associated with Liangzhu culture.",
+      "relation": "supports",
+      "reviewId": "early-world-liangzhu-city-context-review"
+    },
+    {
+      "id": "early-world-malta-temple-building-dates-evidence",
+      "claimId": "early-world-malta-temple-building-dates",
+      "sourceId": "early-world-malta",
+      "locator": "Outstanding Universal Value: brief synthesis",
+      "note": "Editorial span covers the fourth and third millennia BCE stated by UNESCO. It is not an exact start or end date for temple construction.",
+      "relation": "supports",
+      "reviewId": "early-world-malta-temple-building-dates-review"
+    },
+    {
+      "id": "early-world-malta-temple-building-context-evidence",
+      "claimId": "early-world-malta-temple-building-context",
+      "sourceId": "early-world-malta",
+      "locator": "Outstanding Universal Value: brief synthesis",
+      "note": "Editorial span covers the fourth and third millennia BCE stated by UNESCO. It is not an exact start or end date for temple construction.",
+      "relation": "supports",
+      "reviewId": "early-world-malta-temple-building-context-review"
+    },
+    {
+      "id": "early-world-pre-kerma-dates-evidence",
+      "claimId": "early-world-pre-kerma-dates",
+      "sourceId": "early-world-kerma",
+      "locator": "Pre-Kerma settlement; The kingdom of Kerma",
+      "note": "Broad Pre-Kerma phase. The site evidence does not establish a single state throughout Upper Nubia.",
+      "relation": "supports",
+      "reviewId": "early-world-pre-kerma-dates-review"
+    },
+    {
+      "id": "early-world-pre-kerma-context-evidence",
+      "claimId": "early-world-pre-kerma-context",
+      "sourceId": "early-world-kerma",
+      "locator": "Pre-Kerma settlement; The kingdom of Kerma",
+      "note": "Broad Pre-Kerma phase. The site evidence does not establish a single state throughout Upper Nubia.",
+      "relation": "supports",
+      "reviewId": "early-world-pre-kerma-context-review"
+    },
+    {
+      "id": "early-world-kerma-kingdom-dates-evidence",
+      "claimId": "early-world-kerma-kingdom-dates",
+      "sourceId": "early-world-kerma",
+      "locator": "Pre-Kerma settlement; The kingdom of Kerma",
+      "note": "Approximate archaeological chronology of the kingdom’s capital and cemetery.",
+      "relation": "supports",
+      "reviewId": "early-world-kerma-kingdom-dates-review"
+    },
+    {
+      "id": "early-world-kerma-kingdom-context-evidence",
+      "claimId": "early-world-kerma-kingdom-context",
+      "sourceId": "early-world-kerma",
+      "locator": "Pre-Kerma settlement; The kingdom of Kerma",
+      "note": "Approximate archaeological chronology of the kingdom’s capital and cemetery.",
+      "relation": "supports",
+      "reviewId": "early-world-kerma-kingdom-context-review"
+    },
+    {
+      "id": "early-world-kuk-mound-cultivation-dates-evidence",
+      "claimId": "early-world-kuk-mound-cultivation-dates",
+      "sourceId": "early-world-kuk",
+      "locator": "Abstract: phases 2 and 3, calibrated years BP",
+      "note": "Dated evidence for the onset of this cultivation phase, not its full duration. Converted from 6950–6440 calibrated years BP using the conventional 1950 reference year.",
+      "relation": "supports",
+      "reviewId": "early-world-kuk-mound-cultivation-dates-review"
+    },
+    {
+      "id": "early-world-kuk-mound-cultivation-context-evidence",
+      "claimId": "early-world-kuk-mound-cultivation-context",
+      "sourceId": "early-world-kuk",
+      "locator": "Abstract: phases 2 and 3, calibrated years BP",
+      "note": "Dated evidence for the onset of this cultivation phase, not its full duration. Converted from 6950–6440 calibrated years BP using the conventional 1950 reference year.",
+      "relation": "supports",
+      "reviewId": "early-world-kuk-mound-cultivation-context-review"
+    },
+    {
+      "id": "early-world-kuk-ditched-cultivation-dates-evidence",
+      "claimId": "early-world-kuk-ditched-cultivation-dates",
+      "sourceId": "early-world-kuk",
+      "locator": "Abstract: phases 2 and 3, calibrated years BP",
+      "note": "Dated evidence for the onset of a phase, not a continuous construction programme. Converted from 4350–3980 calibrated years BP using the conventional 1950 reference year.",
+      "relation": "supports",
+      "reviewId": "early-world-kuk-ditched-cultivation-dates-review"
+    },
+    {
+      "id": "early-world-kuk-ditched-cultivation-context-evidence",
+      "claimId": "early-world-kuk-ditched-cultivation-context",
+      "sourceId": "early-world-kuk",
+      "locator": "Abstract: phases 2 and 3, calibrated years BP",
+      "note": "Dated evidence for the onset of a phase, not a continuous construction programme. Converted from 4350–3980 calibrated years BP using the conventional 1950 reference year.",
+      "relation": "supports",
+      "reviewId": "early-world-kuk-ditched-cultivation-context-review"
+    },
+    {
+      "id": "early-world-watson-brake-dates-evidence",
+      "claimId": "early-world-watson-brake-dates",
+      "sourceId": "early-world-watson-range",
+      "locator": "Site date range, 3500–2800 BCE",
+      "note": "The displayed 3500–2800 BCE site range follows 64 Parishes. Saunders and colleagues date substantial mound raising from about 3350 BCE until after 3000 BCE; work was episodic.",
+      "relation": "supports",
+      "reviewId": "early-world-watson-brake-dates-review"
+    },
+    {
+      "id": "early-world-watson-brake-context-evidence",
+      "claimId": "early-world-watson-brake-context",
+      "sourceId": "early-world-watson",
+      "locator": "Abstract: construction sequence and subsistence",
+      "note": "The displayed 3500–2800 BCE site range follows 64 Parishes. Saunders and colleagues date substantial mound raising from about 3350 BCE until after 3000 BCE; work was episodic.",
+      "relation": "supports",
+      "reviewId": "early-world-watson-brake-context-review"
+    },
+    {
+      "id": "early-world-avebury-building-point-evidence",
+      "claimId": "early-world-avebury-building-point",
+      "sourceId": "early-world-avebury-map",
+      "locator": "Component 373bis-002",
+      "note": "Approximate chronology; broad context does not imply activity in every year.",
+      "relation": "supports",
+      "reviewId": "early-world-avebury-building-point-review"
+    },
+    {
+      "id": "early-world-skara-brae-point-evidence",
+      "claimId": "early-world-skara-brae-point",
+      "sourceId": "early-world-orkney-map",
+      "locator": "Component 514bis-004",
+      "note": "Approximate chronology; broad context does not imply activity in every year.",
+      "relation": "supports",
+      "reviewId": "early-world-skara-brae-point-review"
+    },
+    {
+      "id": "early-world-boyne-passage-tombs-point-evidence",
+      "claimId": "early-world-boyne-passage-tombs-point",
+      "sourceId": "early-world-boyne-map",
+      "locator": "Property 659, landscape reference rather than one tomb",
+      "note": "Approximate chronology; broad context does not imply activity in every year.",
+      "relation": "supports",
+      "reviewId": "early-world-boyne-passage-tombs-point-review"
+    },
+    {
+      "id": "early-world-liangzhu-city-point-evidence",
+      "claimId": "early-world-liangzhu-city-point",
+      "sourceId": "early-world-liangzhu-map",
+      "locator": "Component 1592-004",
+      "note": "Approximate chronology; broad context does not imply activity in every year.",
+      "relation": "supports",
+      "reviewId": "early-world-liangzhu-city-point-review"
+    },
+    {
+      "id": "early-world-kuk-mound-cultivation-point-evidence",
+      "claimId": "early-world-kuk-mound-cultivation-point",
+      "sourceId": "early-world-kuk-map",
+      "locator": "Property coordinates",
+      "note": "Approximate chronology; broad context does not imply activity in every year.",
+      "relation": "supports",
+      "reviewId": "early-world-kuk-mound-cultivation-point-review"
+    },
+    {
+      "id": "early-world-kuk-ditched-cultivation-point-evidence",
+      "claimId": "early-world-kuk-ditched-cultivation-point",
+      "sourceId": "early-world-kuk-map",
+      "locator": "Property coordinates",
+      "note": "Approximate chronology; broad context does not imply activity in every year.",
+      "relation": "supports",
+      "reviewId": "early-world-kuk-ditched-cultivation-point-review"
     }
   ],
   "reviews": [
@@ -8452,6 +10079,230 @@
       "date": "2026-11-22",
       "decision": "verified",
       "reason": "Inspected the linked construction history or location field. Approximate dates and gaps between episodes remain explicit."
+    },
+    {
+      "id": "early-world-ubaid-communities-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-ubaid-communities-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-uruk-period-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-uruk-period-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-avebury-building-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-avebury-building-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-skara-brae-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-skara-brae-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-boyne-passage-tombs-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-boyne-passage-tombs-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-yangshao-communities-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-yangshao-communities-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-liangzhu-city-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-liangzhu-city-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-malta-temple-building-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-malta-temple-building-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-pre-kerma-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-pre-kerma-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-kerma-kingdom-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-kerma-kingdom-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-kuk-mound-cultivation-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-kuk-mound-cultivation-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-kuk-ditched-cultivation-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-kuk-ditched-cultivation-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-watson-brake-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-watson-brake-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-avebury-building-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-skara-brae-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-boyne-passage-tombs-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-liangzhu-city-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-kuk-mound-cultivation-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "early-world-kuk-ditched-cultivation-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
     }
   ],
   "accounts": []
