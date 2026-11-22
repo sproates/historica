@@ -1,0 +1,5 @@
+{
+  "host": "ftp.example.com",
+  "username": "your-deployment-account",
+  "remote_root": "/your-dedicated-site-folder"
+}

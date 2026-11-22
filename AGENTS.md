@@ -10,6 +10,6 @@ Never use `codex` in a Git branch name. Use descriptive `feature/…`, `fix/…`
 - Committing or pushing is not permission to deploy unapproved design changes.
 - Keep the preview running beyond the agent session. Use the macOS LaunchAgent installed by `scripts/install-preview-service.py`, serving a refreshed copy of `web/` on port 4173 over the same Wi-Fi as the Mac. The Mac must be awake and connected. Provide a LAN or `.local` URL, never a 127.0.0.1 link for phone review.
 - Run builds and verification manually on the Mac; do not add GitHub CI or enable GitHub Pages. Keep the repository private until instructed otherwise.
-- Production FTPS operations must remain confined to `/historica.online`. Never store credentials in Git or project files.
+- Production FTPS operations must remain confined to the confirmed Historica document root in the ignored local deployment configuration. Never store credentials in Git or project files.
 
 Refresh the persistent preview after edits with `npm run preview:sync`. Files are copied to `~/Library/Application Support/Historica/preview/` so the background service does not depend on access to the Documents folder. This command never changes production.

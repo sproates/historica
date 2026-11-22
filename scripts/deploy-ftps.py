@@ -9,9 +9,17 @@ from pathlib import Path, PurePosixPath
 import ssl
 from datetime import datetime, timezone
 
-ROOT = "/dedicated-site-folder"
-HOST = 'ftp.example.com'
-USER = 'deployment-account@example.com'
+config_path = Path(__file__).resolve().parent.parent / '.deploy-local.json'
+if not config_path.is_file():
+    raise SystemExit('Missing local deployment configuration. See RELEASE.md.')
+config = json.loads(config_path.read_text())
+if set(config) != {'host', 'username', 'remote_root'}:
+    raise SystemExit('Local configuration must contain only host, username and remote_root; never a password.')
+HOST, USER, ROOT = (config[key] for key in ('host', 'username', 'remote_root'))
+if not all(isinstance(value, str) and value.strip() == value and value for value in (HOST, USER, ROOT)):
+    raise SystemExit('Invalid local deployment configuration.')
+if not ROOT.startswith('/') or ROOT == '/' or '..' in PurePosixPath(ROOT).parts or ROOT.rstrip('/') != ROOT:
+    raise SystemExit('A dedicated absolute remote document root is required.')
 local = Path('docs')
 manifest = json.loads((local / 'release-manifest.json').read_text())
 files = manifest['files'] + [{'path':'release-manifest.json','sha256':hashlib.sha256((local/'release-manifest.json').read_bytes()).hexdigest()}]

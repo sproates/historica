@@ -8,3 +8,5 @@ node_modules/
 release/
 
 __pycache__/
+
+.deploy-local.json

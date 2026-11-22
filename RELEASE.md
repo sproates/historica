@@ -1,149 +1,55 @@
-# Manual beta release to A Small Orange
+# Manual releases
 
-The GitHub repository stays private. Production hosting will be A Small
-Orange, using the domain historica.online. Do not enable GitHub Pages or add
-CI workflows. Builds and verification run manually on the Mac.
+Historica is hosted on a separate document root at its hosting provider.
+Keep the repository private. Do not enable GitHub Pages or GitHub CI.
+Builds and verification run manually on the Mac.
 
-## Data releases and design previews
+## What can be published
 
-Data-only updates can go directly to production after manual checks. Design,
-layout, navigation, interaction and visitor-facing editorial changes must be
-previewed locally and approved by Ian before deployment. Mixed changes follow
-the design rule. A data release must not include pending design work: use an
-isolated release checkout if both are in progress. See [AGENTS.md](AGENTS.md).
+Data-only changes may be deployed after checks. Design, layout, navigation,
+interaction and visitor-facing editorial changes must be reviewed on the
+Wi-Fi preview and approved by Ian before publishing. Mixed changes follow
+the design rule. Never include unapproved design work in a data release.
+Use an isolated checkout if needed. See [AGENTS.md](AGENTS.md).
 
-Install the persistent Mac preview with `python3 scripts/install-preview-service.py`.
-It runs as a user LaunchAgent, restarts after a crash and starts at login. It
-serves a copy of `web/` on port 4173, independently of the agent or terminal session.
-Use `http://Ians-MacBook-Pro.local:4173/` on the same Wi-Fi; the current numeric
-address is available with `ipconfig getifaddr en0`. The Mac must be awake and
-connected. No router port forwarding or public tunnel is needed.
+## Local configuration
 
-Run `npm run build:site`. This generates the evidence and coverage assets,
-runs tests and prepares the static website in `docs/`. The folder name is
-retained as a staging directory; it does not imply GitHub Pages hosting.
-`npm run package:site` also produces `release/historica-site.zip` for upload.
+Connection details belong in `.deploy-local.json`, which is ignored by Git.
+Copy `.deploy-local.example.json` and set the hosting server, username and
+confirmed remote document root. Do not put a password in that file. The
+uploader requests it through a hidden prompt and keeps it in memory only.
+The local hosting notes are under the ignored `release/` directory.
 
-Upload the archive contents into the document root assigned specifically to
-historica.online. Confirm that root in the hosting account before uploading;
-do not assume the account's primary public_html directory is the right target.
-Back up any existing site files before replacement. Upload only the static
-site, never the Git repository, research inputs, local configuration or keys.
+Only the configured Historica document root is authorised. Do not inspect,
+modify or upload to any other site or hosting directory. TLS certificate
+validation and encrypted data transfer must remain enabled.
 
-Story's docs/HOSTING.md records explicit FTPS at ftp.example.com:21,
-user deployment-account@example.com, with verified TLS, encrypted data and passive mode.
-The password was entered through a hidden prompt and was not saved. The FTP
-login root is /; /other-site-root serves sproates.net and must not be overwritten
-with historica. Preserve all existing sites, .htaccess and email configuration.
+## Build and release
 
-Hosting setup still requires authenticated access and confirmation of
-historica.online's assigned document root and hosting DNS target. Do not infer
-that domain binding from an FTP directory name. Inspect the hosting account
-before choosing the upload destination or DNS records.
-Preserve unrelated mail and verification records at GoDaddy. Once the domain
-resolves to the hosting account, enable its HTTPS certificate and verify the
-home page, search, source links, coverage page and bookmarked views.
+The source of truth is `web/`; do not edit generated `docs/` files directly.
+Run `npm run package:site` to generate metadata, routes, evidence and coverage,
+run tests, and prepare the manifest and archive. No build command publishes.
 
-The source of truth is `web/`; do not edit generated files in `docs/`.
-The site requires static file serving only, with no database or application
-server. Alexander is the default; Focus paths and optional query parameters preserve exploration state.
+Run `python3 scripts/deploy-ftps.py` for an authorised release. Backups and
+upload records are saved under ignored `release/backups/`. Verify the live
+site after upload with `python3 scripts/verify-hosted.py`, plus checks of the
+changed routes and user flows. Do not bypass certificate validation.
 
-## Current content
+## Persistent Wi-Fi preview
 
-142 focus entries; 143 individually source-checked statements. Checks are
-AI-assisted, not independent expert review. Original prototype fields still
-await claim-level review. No regional coverage package is claimed complete.
-Large gaps remain, including Oceania and much of Africa and the Americas.
+Run `npm run preview:install` once to install a per-user macOS LaunchAgent.
+It starts at login and restarts after a crash, independently of agent sessions.
+Run `npm run preview:sync` after edits. The service serves a copy of `web/`
+from `~/Library/Application Support/Historica/preview/` on port 4173.
 
-## Confirmed hosting configuration
+Use the Mac’s `.local` hostname or current Wi-Fi IP, followed by `:4173`.
+The phone must be on the same network and the Mac must be awake. Find its
+address with `ipconfig getifaddr en0`. No public tunnel or port forwarding
+is required. Preview refreshes never modify production.
 
-Ian created the separate domain root `/hosting-account/historica.online` and
-confirmed the shared website IP `192.0.2.1`. GoDaddy authoritative DNS
-returns that address for `historica.online`, TTL 600 seconds; `www` is a CNAME
-to the apex. The FTP folder is `/historica.online`.
+## Before making the repository public
 
-Run `python3 scripts/deploy-ftps.py` only for an authorised release. It prompts
-for the password without echo, verifies TLS, validates local release hashes,
-checks only the approved folder, backs up replacements under ignored
-`release/backups/`, uploads dependencies before HTML and verifies every file
-by FTPS. It never deletes or mirrors remote files. No credentials are stored.
-Run `python3 scripts/verify-hosted.py` afterwards to verify HTTPS asset bytes
-and JavaScript MIME types. Certificate validation is always enabled.
-
-## Initial upload — 22 November 2026
-
-Uploaded 28 website assets plus the release manifest to `/historica.online`.
-The folder initially contained only `cgi-bin`; it was left untouched. All 29
-uploaded files were retrieved and hash-verified over FTPS. All 28 website
-assets subsequently matched over HTTP, including JavaScript MIME checks.
-Local upload record: `release/backups/20261122T191722Z/deployment.json`.
-No remote file operation accessed a path outside `/historica.online`.
-
-HTTPS verification is pending: the server currently presents a certificate
-that does not cover historica.online. Ian has been asked to check this domain
-and www in cPanel SSL/TLS Status and run AutoSSL if available. Do not force
-HTTPS redirects until a valid certificate has been confirmed. No credentials
-were written to project files, scripts, backups or Git.
-
-## Proper focus paths
-
-The release now includes a domain-local `.htaccess` generated from the
-collection’s explicit routes. It rewrites recognised person, area, state,
-city, period and event URLs to the app entry point without redirecting the
-browser to index.html. Existing files/directories pass through; unknown URLs
-remain 404s. Only `/historica.online/.htaccess` is in scope. The uploader refuses
-to replace an unfamiliar existing routing file without review.
-
-Local checks cover all 100 canonical paths, compact default URLs, customised
-bookmark round-trips, invalid parameters, direct HTTP loads, unknown-route
-404s and browser Back/Forward plus reload. No HTTPS redirect is added here.
-
-### Deployment verification — 22 November 2026
-
-Deployed the path routing release only inside `/historica.online`; backup and
-upload record: `release/backups/20261122T193617Z/deployment.json`.
-All changed files were retrieved and hash-verified over FTPS. All 29 public
-assets matched over both HTTP and HTTPS. ASO's certificate is now valid for
-historica.online; HTTPS verification succeeded without bypassing validation.
-Live person, area with custom dates, and event paths returned 200; an unknown
-person path returned 404. Browser navigation Alexander → Egypt preserved
-356–323 BCE, and Back, Forward and reload restored the correct focus.
-
-## World lifeways and Alexander default — 22 November 2026
-
-Added ten introductory periods across nine regions, with 24 source-checked
-statements and four sourced archaeological map references. Total: 110 focus
-entries and 93 reviewed statements. Sources include UNESCO, the Met, the
-National Park Service and the official northern Japan Jomon site guide.
-Regional coverage remains partial; no coverage package was marked complete.
-
-The root now opens Alexander's lifespan (356–323 BCE). Explicit Socrates and
-other bookmarks retain their own focus. Manual build and all 58 tests passed.
-All ten new public routes returned the current app; all 29 public assets
-matched the release hashes over validated HTTPS. Live browser checks verified
-the root default, search, new focus pages and linked claim evidence.
-
-FTPS changes were confined to `/historica.online`. Existing replacements were
-backed up before upload, and uploaded bytes verified. Deployment record:
-`release/backups/20261122T194400Z/deployment.json`. Credentials were not saved.
-
-## Egypt expansion and ancient connections — 22 November 2026
-
-Added 24 Egypt entries and eight wider-world entries, with 50 additional
-source-checked statements. Totals: 142 focus entries and 143 reviewed claims.
-Egypt now offers a 3100 BCE–200 CE study window; switching to it preserves
-incoming dates, while Fit study period restores the broad window. Alexander
-remains the default. Reigns are explicitly periods, not invented lifespans.
-
-All 60 tests passed. Live browser checks covered search, source links, Egypt's
-full window and preserving a selected reign's dates when changing focus.
-All earlier reviewed records were preserved. The coverage programme remains
-incomplete; introductory records do not certify complete regional accounts.
-
-Deployment backed up replaced files under
-`release/backups/20261122T195306Z/deployment.json`, then uploaded and verified
-changes only inside `/historica.online`. No credentials were saved.
-All 29 public assets matched the release hashes over validated HTTPS; all 32
-new public routes served the current app successfully.
-
-Refresh the persistent preview after edits with `npm run preview:sync`. Files are copied to `~/Library/Application Support/Historica/preview/` so the background service does not depend on access to the Documents folder. This command never changes production.
+Earlier commits contain hosting connection details. Removing them from the
+current files does not remove them from Git history. Review and clean that
+history before changing repository visibility. Never commit passwords,
+local deployment configuration, backups or hosting notes.
