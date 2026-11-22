@@ -16,6 +16,8 @@ Run `npm start`, then open http://127.0.0.1:4173. Python 3 and Node.js are used 
 
 To open historica from another device on the same Wi-Fi, use `npm run start:lan` instead. Find this Mac’s Wi-Fi address with `ipconfig getifaddr en0`, then open `http://<that-address>:4173` on the other device. This mode serves the prototype on the local network.
 
+For the persistent Wi-Fi review server, run `python3 scripts/install-preview-service.py`. It starts at login and survives agent sessions. Open `http://Ians-MacBook-Pro.local:4173/` on your phone while the Mac is awake on the same network. Design changes require preview approval before deployment; data-only updates may go straight to production after checks. See [the workflow rules](AGENTS.md).
+
 Run `npm test` to check historical-year selection, follow/explore behaviour, interval overlap, viewport filtering, shared state, map projection and source references.
 
 Map data is stored in `web/data/`, with its source URLs and retrieval hashes recorded in `map-sources.json`. Event data lives in `web/data/collection.json`. The original research fixture remains unchanged.
@@ -172,3 +174,5 @@ Mithridates I's reign, early Jenne-jeno, Aksum, Sanchi and Black Sea Scythian
 communities. Aksum and Sanchi have sourced site-reference coordinates.
 Both packs include claim-level linked evidence and AI-assisted review records;
 neither certifies complete regional coverage or independent expert review.
+
+Refresh the persistent preview after edits with `npm run preview:sync`. Files are copied to `~/Library/Application Support/Historica/preview/` so the background service does not depend on access to the Documents folder. This command never changes production.

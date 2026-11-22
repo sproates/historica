@@ -4,6 +4,21 @@ The GitHub repository stays private. Production hosting will be A Small
 Orange, using the domain historica.online. Do not enable GitHub Pages or add
 CI workflows. Builds and verification run manually on the Mac.
 
+## Data releases and design previews
+
+Data-only updates can go directly to production after manual checks. Design,
+layout, navigation, interaction and visitor-facing editorial changes must be
+previewed locally and approved by Ian before deployment. Mixed changes follow
+the design rule. A data release must not include pending design work: use an
+isolated release checkout if both are in progress. See [AGENTS.md](AGENTS.md).
+
+Install the persistent Mac preview with `python3 scripts/install-preview-service.py`.
+It runs as a user LaunchAgent, restarts after a crash and starts at login. It
+serves a copy of `web/` on port 4173, independently of the agent or terminal session.
+Use `http://Ians-MacBook-Pro.local:4173/` on the same Wi-Fi; the current numeric
+address is available with `ipconfig getifaddr en0`. The Mac must be awake and
+connected. No router port forwarding or public tunnel is needed.
+
 Run `npm run build:site`. This generates the evidence and coverage assets,
 runs tests and prepares the static website in `docs/`. The folder name is
 retained as a staging directory; it does not imply GitHub Pages hosting.
@@ -130,3 +145,5 @@ Deployment backed up replaced files under
 changes only inside `/historica.online`. No credentials were saved.
 All 29 public assets matched the release hashes over validated HTTPS; all 32
 new public routes served the current app successfully.
+
+Refresh the persistent preview after edits with `npm run preview:sync`. Files are copied to `~/Library/Application Support/Historica/preview/` so the background service does not depend on access to the Documents folder. This command never changes production.

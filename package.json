@@ -11,6 +11,8 @@
     "build:evidence": "node scripts/build-evidence.mjs",
     "build:coverage": "node scripts/build-coverage.mjs",
     "build:site": "npm run build:evidence && npm run build:coverage && node scripts/build-routes.mjs && npm test && node scripts/build-site.mjs",
-    "package:site": "npm run build:site && python3 scripts/package-site.py"
+    "package:site": "npm run build:site && python3 scripts/package-site.py",
+    "preview:sync": "python3 scripts/sync-preview.py",
+    "preview:install": "python3 scripts/install-preview-service.py"
   }
 }

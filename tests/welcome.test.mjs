@@ -17,7 +17,7 @@ test('preview serves the introduction, About and bookmarked focus separately',as
   let ready=false;
   for(let i=0;i<40;i++){try{const r=await fetch('http://127.0.0.1:4186/');if(r.ok){ready=true;break;}}catch{}await new Promise(resolve=>setTimeout(resolve,50));}
   assert.ok(ready,'preview starts');
-  for(const [path,expected] of [['/','One world.'],['/about','CREATED BY'],['/person/alexander?comparison=full','id="focus-title"'],['/person/socrates','id="focus-title"']]){
+  for(const [path,expected] of [['/','History, alongside history.'],['/about','Created by Ian Sproates'],['/person/alexander?comparison=full','id="focus-title"'],['/person/socrates','id="focus-title"']]){
    const response=await fetch('http://127.0.0.1:4186'+path);assert.equal(response.status,200);assert.ok((await response.text()).includes(expected),path);
   }
   assert.equal((await fetch('http://127.0.0.1:4186/person/not-real')).status,404);
