@@ -120,6 +120,16 @@
       "id": "deir-el-medina-artisans",
       "name": "The royal tomb workers of Deir el-Medina",
       "type": "period"
+    },
+    {
+      "id": "djedefre-reign",
+      "name": "Djedefre’s reign",
+      "type": "period"
+    },
+    {
+      "id": "fourth-dynasty-egypt",
+      "name": "Egypt’s Fourth Dynasty",
+      "type": "period"
     }
   ],
   "sources": [
@@ -1397,6 +1407,74 @@
       ],
       "reviewId": "egypt-expansion-deir-el-medina-artisans-1-review",
       "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-djedefre-reign-1",
+      "subjectId": "djedefre-reign",
+      "predicate": "historical-context",
+      "statement": "Djedefre ruled after Khufu and before Khafre, during Egypt’s Fourth Dynasty. The Met dates his reign to approximately 2528–2520 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Djedefre ruled after Khufu and before Khafre, during Egypt’s Fourth Dynasty. The Met dates his reign to approximately 2528–2520 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2528,
+          "latest": -2528,
+          "original": "circa 2528 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2520,
+          "latest": -2520,
+          "original": "circa 2520 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-djedefre-reign-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-djedefre-reign-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "egypt-expansion-fourth-dynasty-egypt-1",
+      "subjectId": "fourth-dynasty-egypt",
+      "predicate": "historical-context",
+      "statement": "The Fourth Dynasty includes the reigns of Snefru, Khufu, Djedefre, Khafre and Menkaure. The Met places it at approximately 2575–2465 BCE, within the Old Kingdom.",
+      "value": {
+        "type": "text",
+        "text": "The Fourth Dynasty includes the reigns of Snefru, Khufu, Djedefre, Khafre and Menkaure. The Met places it at approximately 2575–2465 BCE, within the Old Kingdom."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2575,
+          "latest": -2575,
+          "original": "circa 2575 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2465,
+          "latest": -2465,
+          "original": "circa 2465 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "egypt-expansion-fourth-dynasty-egypt-1-evidence"
+      ],
+      "reviewId": "egypt-expansion-fourth-dynasty-egypt-1-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -1705,6 +1783,24 @@
       "note": "Shown within broad New Kingdom context from the source, not as exact settlement foundation and abandonment dates. A site-specific map reference has not yet been checked.",
       "relation": "supports",
       "reviewId": "egypt-expansion-deir-el-medina-artisans-1-review"
+    },
+    {
+      "id": "egypt-expansion-djedefre-reign-1-evidence",
+      "claimId": "egypt-expansion-djedefre-reign-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Dynasty 4 heading and ordered ruler list",
+      "note": "Approximate chronology and succession follow the Met’s Dynasty 4 list.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-djedefre-reign-1-review"
+    },
+    {
+      "id": "egypt-expansion-fourth-dynasty-egypt-1-evidence",
+      "claimId": "egypt-expansion-fourth-dynasty-egypt-1",
+      "sourceId": "egypt-rulers",
+      "locator": "Dynasty 4 heading and ordered ruler list",
+      "note": "Approximate chronology and succession follow the Met’s Dynasty 4 list.",
+      "relation": "supports",
+      "reviewId": "egypt-expansion-fourth-dynasty-egypt-1-review"
     }
   ],
   "reviews": [
@@ -1945,6 +2041,20 @@
       "date": "2026-11-22",
       "decision": "verified",
       "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "egypt-expansion-djedefre-reign-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the Dynasty 4 heading, dates and succession list."
+    },
+    {
+      "id": "egypt-expansion-fourth-dynasty-egypt-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the Dynasty 4 heading, dates and succession list."
     }
   ],
   "accounts": []

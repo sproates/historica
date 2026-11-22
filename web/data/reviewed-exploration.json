@@ -1560,6 +1560,142 @@
       "regionIds": [
         "egypt"
       ]
+    },
+    {
+      "id": "djedefre-reign",
+      "title": "Djedefre’s reign",
+      "type": "period",
+      "startYear": -2528,
+      "endYear": -2520,
+      "description": "Djedefre ruled after Khufu and before Khafre, during Egypt’s Fourth Dynasty. The Met dates his reign to approximately 2528–2520 BCE.",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-djedefre-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "fourth-dynasty-egypt",
+      "title": "Egypt’s Fourth Dynasty",
+      "type": "period",
+      "startYear": -2575,
+      "endYear": -2465,
+      "description": "The Fourth Dynasty includes the reigns of Snefru, Khufu, Djedefre, Khafre and Menkaure. The Met places it at approximately 2575–2465 BCE, within the Old Kingdom.\n\nUse the connected reigns to explore individual rulers, or keep this wider view to compare their period with events elsewhere.",
+      "note": "Approximate dynasty boundaries follow the Met’s chronology. Connected reigns are a selection, not a complete king list.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-fourth-dynasty-egypt-1"
+      ],
+      "dateLabel": "Approximate dynasty chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "stonehenge",
+      "title": "Stonehenge",
+      "type": "period",
+      "startYear": -3000,
+      "endYear": -1500,
+      "description": "Stonehenge developed over many generations. The first earthwork was built around 3000 BCE; the main stone settings followed around 2500 BCE.\n\nThe early monument was also a burial place. Later changes included rearranging the bluestones and creating the Avenue towards the River Avon. The date range here covers its principal prehistoric building phases, not its entire history.",
+      "note": "Approximate construction dates, not exact years. The overall study window does not imply continuous work or abandonment in 1500 BCE.",
+      "point": [
+        -1.826277,
+        51.178905
+      ],
+      "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/",
+      "contextual": true,
+      "claimIds": [
+        "stonehenge-history",
+        "stonehenge-point"
+      ],
+      "dateLabel": "Approximate construction chronology",
+      "region": "Britain",
+      "regionIds": [
+        "britain-ireland"
+      ]
+    },
+    {
+      "id": "stonehenge-earthwork",
+      "title": "Stonehenge’s first earthwork",
+      "type": "period",
+      "startYear": -3000,
+      "endYear": -3000,
+      "description": "Around 3000 BCE, people built a circular ditch and banks at Stonehenge. Cremated remains were buried within and around the monument.",
+      "note": "Approximate construction dates, not exact years. The overall study window does not imply continuous work or abandonment in 1500 BCE.",
+      "point": [
+        -1.826277,
+        51.178905
+      ],
+      "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/",
+      "contextual": true,
+      "claimIds": [
+        "stonehenge-earthwork-history",
+        "stonehenge-earthwork-point"
+      ],
+      "dateLabel": "Approximate construction chronology",
+      "region": "Britain",
+      "regionIds": [
+        "britain-ireland"
+      ]
+    },
+    {
+      "id": "stonehenge-stones",
+      "title": "Raising Stonehenge’s stones",
+      "type": "period",
+      "startYear": -2500,
+      "endYear": -2500,
+      "description": "Around 2500 BCE, builders erected the large sarsens and smaller bluestones at the centre of Stonehenge.",
+      "note": "Approximate construction dates, not exact years. The overall study window does not imply continuous work or abandonment in 1500 BCE.",
+      "point": [
+        -1.826277,
+        51.178905
+      ],
+      "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/",
+      "contextual": true,
+      "claimIds": [
+        "stonehenge-stones-history",
+        "stonehenge-stones-point"
+      ],
+      "dateLabel": "Approximate construction chronology",
+      "region": "Britain",
+      "regionIds": [
+        "britain-ireland"
+      ]
+    },
+    {
+      "id": "stonehenge-later-changes",
+      "title": "Stonehenge’s later changes",
+      "type": "period",
+      "startYear": -2300,
+      "endYear": -1500,
+      "description": "Bluestones were rearranged and the Avenue was built around 2300–2200 BCE. The Y and Z pits date to around 1800–1500 BCE. These were separate episodes, not continuous building work.",
+      "note": "Approximate construction dates, not exact years. The overall study window does not imply continuous work or abandonment in 1500 BCE.",
+      "point": [
+        -1.826277,
+        51.178905
+      ],
+      "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/",
+      "contextual": true,
+      "claimIds": [
+        "stonehenge-later-changes-history",
+        "stonehenge-later-changes-point"
+      ],
+      "dateLabel": "Approximate construction chronology",
+      "region": "Britain",
+      "regionIds": [
+        "britain-ireland"
+      ]
     }
   ],
   "associations": [
@@ -1812,6 +1948,74 @@
         "connections-sanchi-early-1",
         "connections-sanchi-early-2",
         "connections-sanchi-early-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "stonehenge",
+      "place": "stonehenge",
+      "startYear": -3000,
+      "endYear": -1500,
+      "label": "Stonehenge · archaeological site reference",
+      "point": [
+        -1.826277,
+        51.178905
+      ],
+      "source": "https://historicengland.org.uk/listing/heritage-gateway/results/record/5079bd59-b1b8-4237-b20f-3bc281dbc435/MWI12515",
+      "claimIds": [
+        "stonehenge-history",
+        "stonehenge-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "stonehenge-earthwork",
+      "place": "stonehenge-earthwork",
+      "startYear": -3000,
+      "endYear": -3000,
+      "label": "Stonehenge · archaeological site reference",
+      "point": [
+        -1.826277,
+        51.178905
+      ],
+      "source": "https://historicengland.org.uk/listing/heritage-gateway/results/record/5079bd59-b1b8-4237-b20f-3bc281dbc435/MWI12515",
+      "claimIds": [
+        "stonehenge-earthwork-history",
+        "stonehenge-earthwork-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "stonehenge-stones",
+      "place": "stonehenge-stones",
+      "startYear": -2500,
+      "endYear": -2500,
+      "label": "Stonehenge · archaeological site reference",
+      "point": [
+        -1.826277,
+        51.178905
+      ],
+      "source": "https://historicengland.org.uk/listing/heritage-gateway/results/record/5079bd59-b1b8-4237-b20f-3bc281dbc435/MWI12515",
+      "claimIds": [
+        "stonehenge-stones-history",
+        "stonehenge-stones-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "stonehenge-later-changes",
+      "place": "stonehenge-later-changes",
+      "startYear": -2300,
+      "endYear": -1500,
+      "label": "Stonehenge · archaeological site reference",
+      "point": [
+        -1.826277,
+        51.178905
+      ],
+      "source": "https://historicengland.org.uk/listing/heritage-gateway/results/record/5079bd59-b1b8-4237-b20f-3bc281dbc435/MWI12515",
+      "claimIds": [
+        "stonehenge-later-changes-history",
+        "stonehenge-later-changes-point"
       ],
       "contextual": true
     }
@@ -2316,6 +2520,107 @@
       "a": "akhenaten-reign",
       "b": "amarna-religion",
       "label": "Religious changes"
+    },
+    {
+      "a": "khufu-reign",
+      "b": "snefru-reign",
+      "label": "Succession",
+      "labelFromA": "Father and predecessor",
+      "labelFromB": "Son and successor"
+    },
+    {
+      "a": "khufu-reign",
+      "b": "djedefre-reign",
+      "label": "Succession",
+      "labelFromA": "Successor",
+      "labelFromB": "Predecessor"
+    },
+    {
+      "a": "djedefre-reign",
+      "b": "khafre-reign",
+      "label": "Succession",
+      "labelFromA": "Successor",
+      "labelFromB": "Predecessor"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "old-kingdom",
+      "label": "Old Kingdom dynasty"
+    },
+    {
+      "a": "egypt",
+      "b": "fourth-dynasty-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "snefru-reign",
+      "label": "Fourth Dynasty",
+      "labelFromA": "Reign in this dynasty",
+      "labelFromB": "Dynasty"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "khufu-reign",
+      "label": "Fourth Dynasty",
+      "labelFromA": "Reign in this dynasty",
+      "labelFromB": "Dynasty"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "djedefre-reign",
+      "label": "Fourth Dynasty",
+      "labelFromA": "Reign in this dynasty",
+      "labelFromB": "Dynasty"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "khafre-reign",
+      "label": "Fourth Dynasty",
+      "labelFromA": "Reign in this dynasty",
+      "labelFromB": "Dynasty"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "menkaure-reign",
+      "label": "Fourth Dynasty",
+      "labelFromA": "Reign in this dynasty",
+      "labelFromB": "Dynasty"
+    },
+    {
+      "a": "stonehenge",
+      "b": "britain-ireland",
+      "label": "Britain"
+    },
+    {
+      "a": "stonehenge-earthwork",
+      "b": "britain-ireland",
+      "label": "Britain"
+    },
+    {
+      "a": "stonehenge",
+      "b": "stonehenge-earthwork",
+      "label": "Construction phase"
+    },
+    {
+      "a": "stonehenge-stones",
+      "b": "britain-ireland",
+      "label": "Britain"
+    },
+    {
+      "a": "stonehenge",
+      "b": "stonehenge-stones",
+      "label": "Construction phase"
+    },
+    {
+      "a": "stonehenge-later-changes",
+      "b": "britain-ireland",
+      "label": "Britain"
+    },
+    {
+      "a": "stonehenge",
+      "b": "stonehenge-later-changes",
+      "label": "Construction phase"
     }
   ]
 }

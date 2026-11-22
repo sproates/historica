@@ -26,3 +26,20 @@ test('new batches retain claim links and reigns cannot become artificial lifespa
   }
  }
 });
+test('Khufu connects to succession and dynasty with labels correct in both directions',()=>{
+ const related=id=>new Map(relatedEntities(data,initialFocus(data,id)).map(e=>[e.id,e.relation]));
+ assert.equal(related('khufu-reign').get('snefru-reign'),'Father and predecessor');
+ assert.equal(related('snefru-reign').get('khufu-reign'),'Son and successor');
+ assert.equal(related('khufu-reign').get('djedefre-reign'),'Successor');
+ assert.equal(related('djedefre-reign').get('khufu-reign'),'Predecessor');
+ assert.equal(related('khufu-reign').get('fourth-dynasty-egypt'),'Dynasty');
+ assert.ok(related('fourth-dynasty-egypt').has('khufu-reign'));
+ assert.equal(changeFocus(data,initialFocus(data,'khufu-reign'),'djedefre-reign').start,-2528);
+});
+test('Stonehenge overview overlaps Khufu but its later stone settings do not',()=>{
+ const ids=rankedContext(data,initialFocus(data,'khufu-reign')).map(e=>e.id);
+ assert.ok(ids.includes('stonehenge'));
+ assert.ok(!ids.includes('stonehenge-stones'));
+ assert.ok(rankedContext(data,{...initialFocus(data,'khufu-reign'),start:-2500,end:-2500}).some(e=>e.id==='stonehenge-stones'));
+ assert.deepEqual(validateEvidence(read('research/evidence/stonehenge-reviewed.json'),{release:true}),[]);
+});

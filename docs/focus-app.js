@@ -20,8 +20,8 @@ function band(e,isFocus=false){const a=Math.max(e.startYear,state.start),b=Math.
 return `<div class="lane ${isFocus?'focus-lane':''}" ${isFocus?'':`data-focus="${esc(e.id)}"`}><div class="lane-distance">${isFocus?'YOUR FOCUS':(state.focus==='global-overview'||data.entities.find(x=>x.id===state.focus)?.type==='period')?'Same period':e.km===null?'Location not researched':e.km<100?'Nearby':`~${Math.round(e.km/100)*100} km`}<small>${esc(isFocus?e.type:e.region||e.type)}</small></div><div class="lane-content"><button data-focus="${esc(e.id)}" ${isFocus?'disabled':''}>${esc(e.title)}</button><small>${dates(e.startYear,e.endYear)}${temporalLabel(e,state)?` · ${esc(temporalLabel(e,state))}`:''}</small><div class="track">${valid?`<span class="band ${e.type==='person'?'life':''} ${e.temporalKind==='dated-evidence'||e.uncertainty?'uncertain':''} ${dot?'point':''}" style="left:${left}%;width:${dot?'7px':width+'%'}"></span>`:''}</div></div></div>`;}
 function renderDescription(f){
  const target=$('focus-description');
- if(target.dataset.focus===f.id)return;
- target.dataset.focus=f.id;
+ if(target.dataset.descriptionFocus===f.id)return;
+ target.dataset.descriptionFocus=f.id;
  const paragraphs=f.description.split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean);
  const paragraph=p=>`<p>${esc(p)}</p>`;
  const lengthy=f.description.trim().split(/\s+/).length>80;

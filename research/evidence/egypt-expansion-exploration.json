@@ -489,6 +489,46 @@
       "regionIds": [
         "egypt"
       ]
+    },
+    {
+      "id": "djedefre-reign",
+      "title": "Djedefre’s reign",
+      "type": "period",
+      "startYear": -2528,
+      "endYear": -2520,
+      "description": "Djedefre ruled after Khufu and before Khafre, during Egypt’s Fourth Dynasty. The Met dates his reign to approximately 2528–2520 BCE.",
+      "note": "Reign dates, not a lifespan. Approximate chronology follows the Met; overlaps can reflect co-rule or chronological uncertainty.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-djedefre-reign-1"
+      ],
+      "dateLabel": "Approximate reign · not lifespan",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
+    },
+    {
+      "id": "fourth-dynasty-egypt",
+      "title": "Egypt’s Fourth Dynasty",
+      "type": "period",
+      "startYear": -2575,
+      "endYear": -2465,
+      "description": "The Fourth Dynasty includes the reigns of Snefru, Khufu, Djedefre, Khafre and Menkaure. The Met places it at approximately 2575–2465 BCE, within the Old Kingdom.\n\nUse the connected reigns to explore individual rulers, or keep this wider view to compare their period with events elsewhere.",
+      "note": "Approximate dynasty boundaries follow the Met’s chronology. Connected reigns are a selection, not a complete king list.",
+      "point": null,
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "contextual": true,
+      "claimIds": [
+        "egypt-expansion-fourth-dynasty-egypt-1"
+      ],
+      "dateLabel": "Approximate dynasty chronology",
+      "region": "Egypt",
+      "regionIds": [
+        "egypt"
+      ]
     }
   ],
   "associations": [],
@@ -802,6 +842,72 @@
       "a": "akhenaten-reign",
       "b": "amarna-religion",
       "label": "Religious changes"
+    },
+    {
+      "a": "khufu-reign",
+      "b": "snefru-reign",
+      "label": "Succession",
+      "labelFromA": "Father and predecessor",
+      "labelFromB": "Son and successor"
+    },
+    {
+      "a": "khufu-reign",
+      "b": "djedefre-reign",
+      "label": "Succession",
+      "labelFromA": "Successor",
+      "labelFromB": "Predecessor"
+    },
+    {
+      "a": "djedefre-reign",
+      "b": "khafre-reign",
+      "label": "Succession",
+      "labelFromA": "Successor",
+      "labelFromB": "Predecessor"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "old-kingdom",
+      "label": "Old Kingdom dynasty"
+    },
+    {
+      "a": "egypt",
+      "b": "fourth-dynasty-egypt",
+      "label": "Explore Egypt"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "snefru-reign",
+      "label": "Fourth Dynasty",
+      "labelFromA": "Reign in this dynasty",
+      "labelFromB": "Dynasty"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "khufu-reign",
+      "label": "Fourth Dynasty",
+      "labelFromA": "Reign in this dynasty",
+      "labelFromB": "Dynasty"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "djedefre-reign",
+      "label": "Fourth Dynasty",
+      "labelFromA": "Reign in this dynasty",
+      "labelFromB": "Dynasty"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "khafre-reign",
+      "label": "Fourth Dynasty",
+      "labelFromA": "Reign in this dynasty",
+      "labelFromB": "Dynasty"
+    },
+    {
+      "a": "fourth-dynasty-egypt",
+      "b": "menkaure-reign",
+      "label": "Fourth Dynasty",
+      "labelFromA": "Reign in this dynasty",
+      "labelFromB": "Dynasty"
     }
   ]
 }

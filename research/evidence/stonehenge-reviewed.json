@@ -1,0 +1,468 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {
+      "id": "stonehenge",
+      "name": "Stonehenge",
+      "type": "period"
+    },
+    {
+      "id": "stonehenge-earthwork",
+      "name": "Stonehenge’s first earthwork",
+      "type": "period"
+    },
+    {
+      "id": "stonehenge-stones",
+      "name": "Raising Stonehenge’s stones",
+      "type": "period"
+    },
+    {
+      "id": "stonehenge-later-changes",
+      "name": "Stonehenge’s later changes",
+      "type": "period"
+    }
+  ],
+  "sources": [
+    {
+      "id": "stonehenge-history",
+      "title": "History of Stonehenge",
+      "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/",
+      "creator": "English Heritage",
+      "locatorHint": "Construction history",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "stonehenge-location",
+      "title": "Stonehenge: Heritage Gateway record MWI12515",
+      "url": "https://historicengland.org.uk/listing/heritage-gateway/results/record/5079bd59-b1b8-4237-b20f-3bc281dbc435/MWI12515",
+      "creator": "Historic England / Wiltshire & Swindon Historic Environment Record",
+      "locatorHint": "Location: latitude / longitude",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    }
+  ],
+  "claims": [
+    {
+      "id": "stonehenge-history",
+      "subjectId": "stonehenge",
+      "predicate": "historical-context",
+      "statement": "Stonehenge developed over many generations. The first earthwork was built around 3000 BCE; the main stone settings followed around 2500 BCE. The early monument was also a burial place. Later changes included rearranging the bluestones and creating the Avenue towards the River Avon.",
+      "value": {
+        "type": "text",
+        "text": "Stonehenge developed over many generations. The first earthwork was built around 3000 BCE; the main stone settings followed around 2500 BCE. The early monument was also a burial place. Later changes included rearranging the bluestones and creating the Avenue towards the River Avon."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "stonehenge-history-evidence"
+      ],
+      "reviewId": "stonehenge-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "stonehenge-point",
+      "subjectId": "stonehenge",
+      "predicate": "site-reference",
+      "statement": "The map marks the archaeological site, using the Heritage Gateway reference coordinates.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -1.826277,
+          51.178905
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "stonehenge-point-evidence"
+      ],
+      "reviewId": "stonehenge-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "stonehenge-earthwork-history",
+      "subjectId": "stonehenge-earthwork",
+      "predicate": "historical-context",
+      "statement": "Around 3000 BCE, people built a circular ditch and banks at Stonehenge. Cremated remains were buried within and around the monument.",
+      "value": {
+        "type": "text",
+        "text": "Around 3000 BCE, people built a circular ditch and banks at Stonehenge. Cremated remains were buried within and around the monument."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "stonehenge-earthwork-history-evidence"
+      ],
+      "reviewId": "stonehenge-earthwork-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "stonehenge-earthwork-point",
+      "subjectId": "stonehenge-earthwork",
+      "predicate": "site-reference",
+      "statement": "The map marks the archaeological site, using the Heritage Gateway reference coordinates.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -1.826277,
+          51.178905
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "circa 3000 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "stonehenge-earthwork-point-evidence"
+      ],
+      "reviewId": "stonehenge-earthwork-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "stonehenge-stones-history",
+      "subjectId": "stonehenge-stones",
+      "predicate": "historical-context",
+      "statement": "Around 2500 BCE, builders erected the large sarsens and smaller bluestones at the centre of Stonehenge.",
+      "value": {
+        "type": "text",
+        "text": "Around 2500 BCE, builders erected the large sarsens and smaller bluestones at the centre of Stonehenge."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "stonehenge-stones-history-evidence"
+      ],
+      "reviewId": "stonehenge-stones-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "stonehenge-stones-point",
+      "subjectId": "stonehenge-stones",
+      "predicate": "site-reference",
+      "statement": "The map marks the archaeological site, using the Heritage Gateway reference coordinates.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -1.826277,
+          51.178905
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2500,
+          "latest": -2500,
+          "original": "circa 2500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "stonehenge-stones-point-evidence"
+      ],
+      "reviewId": "stonehenge-stones-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "stonehenge-later-changes-history",
+      "subjectId": "stonehenge-later-changes",
+      "predicate": "historical-context",
+      "statement": "Bluestones were rearranged and the Avenue was built around 2300–2200 BCE. The Y and Z pits date to around 1800–1500 BCE. These were separate episodes, not continuous building work.",
+      "value": {
+        "type": "text",
+        "text": "Bluestones were rearranged and the Avenue was built around 2300–2200 BCE. The Y and Z pits date to around 1800–1500 BCE. These were separate episodes, not continuous building work."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2300,
+          "latest": -2300,
+          "original": "circa 2300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "stonehenge-later-changes-history-evidence"
+      ],
+      "reviewId": "stonehenge-later-changes-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "stonehenge-later-changes-point",
+      "subjectId": "stonehenge-later-changes",
+      "predicate": "site-reference",
+      "statement": "The map marks the archaeological site, using the Heritage Gateway reference coordinates.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -1.826277,
+          51.178905
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2300,
+          "latest": -2300,
+          "original": "circa 2300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "stonehenge-later-changes-point-evidence"
+      ],
+      "reviewId": "stonehenge-later-changes-point-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "stonehenge-history-evidence",
+      "claimId": "stonehenge-history",
+      "sourceId": "stonehenge-history",
+      "locator": "The Earliest Monument and The Stone Settings",
+      "note": "Approximate dates distinguish construction episodes; the map point is not a historical boundary.",
+      "relation": "supports",
+      "reviewId": "stonehenge-history-review"
+    },
+    {
+      "id": "stonehenge-point-evidence",
+      "claimId": "stonehenge-point",
+      "sourceId": "stonehenge-location",
+      "locator": "Location: latitude / longitude",
+      "note": "Approximate dates distinguish construction episodes; the map point is not a historical boundary.",
+      "relation": "supports",
+      "reviewId": "stonehenge-point-review"
+    },
+    {
+      "id": "stonehenge-earthwork-history-evidence",
+      "claimId": "stonehenge-earthwork-history",
+      "sourceId": "stonehenge-history",
+      "locator": "The Earliest Monument and The Stone Settings",
+      "note": "Approximate dates distinguish construction episodes; the map point is not a historical boundary.",
+      "relation": "supports",
+      "reviewId": "stonehenge-earthwork-history-review"
+    },
+    {
+      "id": "stonehenge-earthwork-point-evidence",
+      "claimId": "stonehenge-earthwork-point",
+      "sourceId": "stonehenge-location",
+      "locator": "Location: latitude / longitude",
+      "note": "Approximate dates distinguish construction episodes; the map point is not a historical boundary.",
+      "relation": "supports",
+      "reviewId": "stonehenge-earthwork-point-review"
+    },
+    {
+      "id": "stonehenge-stones-history-evidence",
+      "claimId": "stonehenge-stones-history",
+      "sourceId": "stonehenge-history",
+      "locator": "The Earliest Monument and The Stone Settings",
+      "note": "Approximate dates distinguish construction episodes; the map point is not a historical boundary.",
+      "relation": "supports",
+      "reviewId": "stonehenge-stones-history-review"
+    },
+    {
+      "id": "stonehenge-stones-point-evidence",
+      "claimId": "stonehenge-stones-point",
+      "sourceId": "stonehenge-location",
+      "locator": "Location: latitude / longitude",
+      "note": "Approximate dates distinguish construction episodes; the map point is not a historical boundary.",
+      "relation": "supports",
+      "reviewId": "stonehenge-stones-point-review"
+    },
+    {
+      "id": "stonehenge-later-changes-history-evidence",
+      "claimId": "stonehenge-later-changes-history",
+      "sourceId": "stonehenge-history",
+      "locator": "The Earliest Monument and The Stone Settings",
+      "note": "Approximate dates distinguish construction episodes; the map point is not a historical boundary.",
+      "relation": "supports",
+      "reviewId": "stonehenge-later-changes-history-review"
+    },
+    {
+      "id": "stonehenge-later-changes-point-evidence",
+      "claimId": "stonehenge-later-changes-point",
+      "sourceId": "stonehenge-location",
+      "locator": "Location: latitude / longitude",
+      "note": "Approximate dates distinguish construction episodes; the map point is not a historical boundary.",
+      "relation": "supports",
+      "reviewId": "stonehenge-later-changes-point-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "stonehenge-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked construction history or location field. Approximate dates and gaps between episodes remain explicit."
+    },
+    {
+      "id": "stonehenge-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked construction history or location field. Approximate dates and gaps between episodes remain explicit."
+    },
+    {
+      "id": "stonehenge-earthwork-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked construction history or location field. Approximate dates and gaps between episodes remain explicit."
+    },
+    {
+      "id": "stonehenge-earthwork-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked construction history or location field. Approximate dates and gaps between episodes remain explicit."
+    },
+    {
+      "id": "stonehenge-stones-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked construction history or location field. Approximate dates and gaps between episodes remain explicit."
+    },
+    {
+      "id": "stonehenge-stones-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked construction history or location field. Approximate dates and gaps between episodes remain explicit."
+    },
+    {
+      "id": "stonehenge-later-changes-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked construction history or location field. Approximate dates and gaps between episodes remain explicit."
+    },
+    {
+      "id": "stonehenge-later-changes-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Inspected the linked construction history or location field. Approximate dates and gaps between episodes remain explicit."
+    }
+  ],
+  "accounts": []
+}

@@ -56,7 +56,7 @@ export function rankedContext(data,state){const f=data.entities.find(e=>e.id===s
  const relevant=anchors.filter(a=>overlaps(a,Math.max(e.startYear,state.start),Math.min(e.endYear,state.end)));
  return {...e,km:relevant.length&&(e.point||personPoints.length)?Math.min(...relevant.flatMap(a=>(e.point?[e.point]:personPoints).map(p=>distance(a.point,p)))):null};
  }).filter(e=>state.area==='all'||e.regionIds?.includes(state.area)||filterPoint&&e.point&&distance(filterPoint,e.point)<1200).sort((a,b)=>(a.km??Infinity)-(b.km??Infinity)||a.startYear-b.startYear);}
-export function relatedEntities(data,state){const ids=new Map();for(const r of data.relationships){if(r.a===state.focus)ids.set(r.b,r.label);if(r.b===state.focus)ids.set(r.a,r.label);}
+export function relatedEntities(data,state){const ids=new Map();for(const r of data.relationships){if(r.a===state.focus)ids.set(r.b,r.labelFromA??r.label);if(r.b===state.focus)ids.set(r.a,r.labelFromB??r.label);}
  for(const a of data.associations){if(a.subject===state.focus)ids.set(a.place,a.label);if(a.place===state.focus)ids.set(a.subject,a.label);}
  if(state.focus==='alexander')ids.set('period','Compare this whole period');
  if(state.focus.startsWith('stage-'))ids.set('alexander','Campaign of Alexander');
