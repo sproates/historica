@@ -1,4 +1,4 @@
-import {decodeFocus} from './focus-model.js?v=global-2';
+import {decodeFocus} from './focus-model.js?v=lifeways-1';
 export function encodeView(state,view,data){
  const f=data.entities.find(e=>e.id===state.focus);
  if(!f)throw new Error('Unknown focus');
@@ -18,7 +18,7 @@ export function decodeView(address,data){
  const url=new URL(address||'/', 'https://historica.online');
  const legacy=url.hash.startsWith('#focus=');
  const p=new URLSearchParams(legacy?url.hash.slice(1):url.search);
- if(!legacy){const parts=url.pathname.split('/').filter(Boolean);const entity=data.entities.find(e=>e.type===parts[0]&&e.id===parts[1]);p.set('focus',entity?.id||'socrates');}
+ if(!legacy){const parts=url.pathname.split('/').filter(Boolean);const entity=data.entities.find(e=>e.type===parts[0]&&e.id===parts[1]);p.set('focus',entity?.id||'alexander');}
  const state=decodeFocus('#'+p,data);
  const n=(k,f)=>p.has(k)&&p.get(k).trim()!==''&&Number.isFinite(Number(p.get(k)))?Number(p.get(k)):f;
  const w=Math.max(30,Math.min(720,n('w',720)));

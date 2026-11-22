@@ -8,7 +8,7 @@ const exploration=read('web/data/reviewed-exploration.json');
 const evidence=read('web/data/reviewed-evidence.json');
 const data=buildFocusData(read('web/data/collection.json'),exploration);
 test('Socrates can lead to Britain and Ireland without changing the visible dates',()=>{
- const state=changeFocus(data,initialFocus(data),'britain-ireland');
+ const state=changeFocus(data,initialFocus(data,'socrates'),'britain-ireland');
  assert.deepEqual([state.start,state.end],[-469,-399]);
  for(const id of ['danebury-life','broxmouth','ireland-iron-age']) assert.ok(rankedContext(data,state).some(e=>e.id===id));
  const filtered=rankedContext(data,{...state,area:'britain-ireland'});
@@ -22,9 +22,9 @@ test('regional archaeology preserves uncertain dates and does not become exact-y
  assert.deepEqual([broxmouth.startYear,broxmouth.endYear],[-640,210]);
  assert.equal(broxmouth.point,null);
  assert.match(broxmouth.note,/68% probability/);
- assert.ok(!rankedContext(data,{...initialFocus(data),kind:'event'}).some(e=>e.id==='broxmouth'));
+ assert.ok(!rankedContext(data,{...initialFocus(data,'socrates'),kind:'event'}).some(e=>e.id==='broxmouth'));
  assert.ok(!focusAssociations(data,{...initialFocus(data,'britain-ireland'),start:100,end:100}).some(a=>a.place==='danebury'));
- assert.ok(!rankedContext(data,{...initialFocus(data),start:401,end:500}).some(e=>e.regionIds?.includes('britain-ireland')));
+ assert.ok(!rankedContext(data,{...initialFocus(data,'socrates'),start:401,end:500}).some(e=>e.regionIds?.includes('britain-ireland')));
 });
 test('every regional assertion link resolves to reviewed evidence and every map point has provenance',()=>{
  const regional=read('research/evidence/britain-ireland-exploration.json');
@@ -46,7 +46,7 @@ test('uncertain Welsh occupation is possible in 399 BCE and absent before its da
  assert.ok(!rankedContext(data,{...state,start:-189,end:-150}).some(r=>r.id===e.id));
 });
 test('later Irish roadway is excluded from Socrates and retains construction dating uncertainty',()=>{
- const s=initialFocus(data);
+ const s=initialFocus(data,'socrates');
  assert.ok(!rankedContext(data,s).some(e=>e.id==='corlea-construction'));
  const later={...s,start:-148,end:-147,area:'britain-ireland'};
  const road=rankedContext(data,later).find(e=>e.id==='corlea-construction');

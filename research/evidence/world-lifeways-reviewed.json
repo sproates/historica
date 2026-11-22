@@ -1,0 +1,1370 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {
+      "id": "northern-jomon",
+      "name": "Jōmon communities in northern Japan",
+      "type": "period"
+    },
+    {
+      "id": "sannai-maruyama",
+      "name": "Life at Sannai Maruyama",
+      "type": "period"
+    },
+    {
+      "id": "korean-dolmens",
+      "name": "Korean dolmen communities",
+      "type": "period"
+    },
+    {
+      "id": "dilmun-burials",
+      "name": "Dilmun’s burial landscapes",
+      "type": "period"
+    },
+    {
+      "id": "lapita-settlement",
+      "name": "Lapita settlement and pottery",
+      "type": "period"
+    },
+    {
+      "id": "arnhem-rock-art",
+      "name": "Arnhem Land’s X-ray rock art",
+      "type": "period"
+    },
+    {
+      "id": "chavin-context",
+      "name": "Chavín’s ceremonial landscape",
+      "type": "period"
+    },
+    {
+      "id": "poverty-point",
+      "name": "Poverty Point’s mound builders",
+      "type": "period"
+    },
+    {
+      "id": "sammallahdenmaki",
+      "name": "Sammallahdenmäki’s burial cairns",
+      "type": "period"
+    },
+    {
+      "id": "teotihuacan-context",
+      "name": "Teotihuacán’s monumental city",
+      "type": "period"
+    }
+  ],
+  "sources": [
+    {
+      "id": "lifeways-jomon",
+      "title": "Jomon Prehistoric Sites in Northern Japan",
+      "url": "https://whc.unesco.org/en/list/1632/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "English description and Brief synthesis",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "lifeways-sannai",
+      "title": "Sannai Maruyama Site",
+      "url": "https://jomon-japan.jp/en/learn/jomon-sites/sannai-maruyama",
+      "creator": "World Heritage Jomon Prehistoric Sites in Northern Japan",
+      "locatorHint": "Date heading and first three descriptive paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "lifeways-korea",
+      "title": "Gochang, Hwasun and Ganghwa Dolmen Sites",
+      "url": "https://whc.unesco.org/en/list/977/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "English description, first paragraph",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "lifeways-dilmun",
+      "title": "Dilmun Burial Mounds",
+      "url": "https://whc.unesco.org/en/list/1542/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "English description, first two paragraphs",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "lifeways-oceania",
+      "title": "Oceania, 2000–1000 BCE",
+      "url": "https://www.metmuseum.org/toah/ht/03/oc.html",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Timeline; Overview; Key Events for Arnhem Land and Lapita",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "lifeways-chavin",
+      "title": "Chavin (Archaeological Site)",
+      "url": "https://whc.unesco.org/en/list/330/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "English description; site coordinate listing",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "lifeways-poverty",
+      "title": "Monumental Earthworks of Poverty Point: World Heritage Site",
+      "url": "https://home.nps.gov/articles/000/monumental-earthworks-of-poverty-point-world-heritage-site.htm",
+      "creator": "U.S. National Park Service",
+      "locatorHint": "Opening description and paragraphs on settlement, exchange and subsistence",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "lifeways-poverty-location",
+      "title": "Monumental Earthworks of Poverty Point",
+      "url": "https://whc.unesco.org/en/list/1435/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Site coordinate listing only; chronology follows the linked National Park Service article",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "lifeways-finland",
+      "title": "Bronze Age Burial Site of Sammallahdenmäki",
+      "url": "https://whc.unesco.org/en/list/579/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Brief synthesis, first two paragraphs; site coordinate listing",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "lifeways-teotihuacan",
+      "title": "Pre-Hispanic City of Teotihuacan",
+      "url": "https://whc.unesco.org/en/list/414/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "English description; site coordinate listing",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    }
+  ],
+  "claims": [
+    {
+      "id": "lifeways-northern-jomon-1",
+      "subjectId": "northern-jomon",
+      "predicate": "historical-context",
+      "statement": "UNESCO places the northern Japanese sequence represented by these sites at approximately 13,000–400 BCE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO places the northern Japanese sequence represented by these sites at approximately 13,000–400 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -13000,
+          "latest": -13000,
+          "original": "circa 13000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -400,
+          "latest": -400,
+          "original": "circa 400 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-northern-jomon-1-evidence"
+      ],
+      "reviewId": "lifeways-northern-jomon-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-northern-jomon-2",
+      "subjectId": "northern-jomon",
+      "predicate": "historical-context",
+      "statement": "Settled communities relied on hunting, fishing and gathering; their sites preserve dwellings, graves, earthworks and stone circles.",
+      "value": {
+        "type": "text",
+        "text": "Settled communities relied on hunting, fishing and gathering; their sites preserve dwellings, graves, earthworks and stone circles."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -13000,
+          "latest": -13000,
+          "original": "circa 13000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -400,
+          "latest": -400,
+          "original": "circa 400 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-northern-jomon-2-evidence"
+      ],
+      "reviewId": "lifeways-northern-jomon-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-sannai-maruyama-1",
+      "subjectId": "sannai-maruyama",
+      "predicate": "historical-context",
+      "statement": "The official site guide dates the settlement at Sannai Maruyama to approximately 3900–2200 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The official site guide dates the settlement at Sannai Maruyama to approximately 3900–2200 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3900,
+          "latest": -3900,
+          "original": "circa 3900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2200,
+          "latest": -2200,
+          "original": "circa 2200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-sannai-maruyama-1-evidence"
+      ],
+      "reviewId": "lifeways-sannai-maruyama-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-sannai-maruyama-2",
+      "subjectId": "sannai-maruyama",
+      "predicate": "historical-context",
+      "statement": "At Aomori, planned dwellings, storage pits and roads accompanied a diet evidenced by nuts, fish and animal remains; imported materials included jade and obsidian.",
+      "value": {
+        "type": "text",
+        "text": "At Aomori, planned dwellings, storage pits and roads accompanied a diet evidenced by nuts, fish and animal remains; imported materials included jade and obsidian."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3900,
+          "latest": -3900,
+          "original": "circa 3900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -2200,
+          "latest": -2200,
+          "original": "circa 2200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-sannai-maruyama-2-evidence"
+      ],
+      "reviewId": "lifeways-sannai-maruyama-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-korean-dolmens-1",
+      "subjectId": "korean-dolmens",
+      "predicate": "historical-context",
+      "statement": "UNESCO dates the dolmen tombs at Gochang, Hwasun and Ganghwa broadly to the first millennium BCE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO dates the dolmen tombs at Gochang, Hwasun and Ganghwa broadly to the first millennium BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1000,
+          "latest": -1000,
+          "original": "circa 1000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1,
+          "latest": -1,
+          "original": "circa 1 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-korean-dolmens-1-evidence"
+      ],
+      "reviewId": "lifeways-korean-dolmens-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-korean-dolmens-2",
+      "subjectId": "korean-dolmens",
+      "predicate": "historical-context",
+      "statement": "These cemeteries preserve hundreds of tombs assembled from large stone slabs.",
+      "value": {
+        "type": "text",
+        "text": "These cemeteries preserve hundreds of tombs assembled from large stone slabs."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1000,
+          "latest": -1000,
+          "original": "circa 1000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1,
+          "latest": -1,
+          "original": "circa 1 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-korean-dolmens-2-evidence"
+      ],
+      "reviewId": "lifeways-korean-dolmens-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-dilmun-burials-1",
+      "subjectId": "dilmun-burials",
+      "predicate": "historical-context",
+      "statement": "The Dilmun burial mounds in western Bahrain were built approximately 2200–1750 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Dilmun burial mounds in western Bahrain were built approximately 2200–1750 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2200,
+          "latest": -2200,
+          "original": "circa 2200 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1750,
+          "latest": -1750,
+          "original": "circa 1750 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-dilmun-burials-1-evidence"
+      ],
+      "reviewId": "lifeways-dilmun-burials-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-dilmun-burials-2",
+      "subjectId": "dilmun-burials",
+      "predicate": "historical-context",
+      "statement": "Bahrain’s role as a trading centre supported elaborate burial traditions, preserved in extensive mound fields and royal tombs.",
+      "value": {
+        "type": "text",
+        "text": "Bahrain’s role as a trading centre supported elaborate burial traditions, preserved in extensive mound fields and royal tombs."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2200,
+          "latest": -2200,
+          "original": "circa 2200 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1750,
+          "latest": -1750,
+          "original": "circa 1750 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-dilmun-burials-2-evidence"
+      ],
+      "reviewId": "lifeways-dilmun-burials-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-lapita-settlement-1",
+      "subjectId": "lapita-settlement",
+      "predicate": "historical-context",
+      "statement": "The Met’s chronology places Lapita settlement of Island Melanesia and western Polynesia around 1500–500 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Met’s chronology places Lapita settlement of Island Melanesia and western Polynesia around 1500–500 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "circa 500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-lapita-settlement-1-evidence"
+      ],
+      "reviewId": "lifeways-lapita-settlement-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-lapita-settlement-2",
+      "subjectId": "lapita-settlement",
+      "predicate": "historical-context",
+      "statement": "Communities expanded eastward across the western Pacific and made distinctively decorated pottery.",
+      "value": {
+        "type": "text",
+        "text": "Communities expanded eastward across the western Pacific and made distinctively decorated pottery."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "circa 500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-lapita-settlement-2-evidence"
+      ],
+      "reviewId": "lifeways-lapita-settlement-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-arnhem-rock-art-1",
+      "subjectId": "arnhem-rock-art",
+      "predicate": "historical-context",
+      "statement": "The Met dates the emergence of Arnhem Land’s X-ray rock-art style to around 2000 BCE and describes it as continuing to the present.",
+      "value": {
+        "type": "text",
+        "text": "The Met dates the emergence of Arnhem Land’s X-ray rock-art style to around 2000 BCE and describes it as continuing to the present."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2000,
+          "latest": -2000,
+          "original": "circa 2000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "circa 200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-arnhem-rock-art-1-evidence"
+      ],
+      "reviewId": "lifeways-arnhem-rock-art-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-arnhem-rock-art-2",
+      "subjectId": "arnhem-rock-art",
+      "predicate": "historical-context",
+      "statement": "Artists depicted internal organs and bones within human and animal figures.",
+      "value": {
+        "type": "text",
+        "text": "Artists depicted internal organs and bones within human and animal figures."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2000,
+          "latest": -2000,
+          "original": "circa 2000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "circa 200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-arnhem-rock-art-2-evidence"
+      ],
+      "reviewId": "lifeways-arnhem-rock-art-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-chavin-context-1",
+      "subjectId": "chavin-context",
+      "predicate": "historical-context",
+      "statement": "UNESCO dates the Chavín cultural context in this Peruvian highland valley to approximately 1500–300 BCE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO dates the Chavín cultural context in this Peruvian highland valley to approximately 1500–300 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "circa 300 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-chavin-context-1-evidence"
+      ],
+      "reviewId": "lifeways-chavin-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-chavin-context-2",
+      "subjectId": "chavin-context",
+      "predicate": "historical-context",
+      "statement": "Its place of worship includes terraces, plazas and dressed-stone structures with animal-like ornament.",
+      "value": {
+        "type": "text",
+        "text": "Its place of worship includes terraces, plazas and dressed-stone structures with animal-like ornament."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "circa 300 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-chavin-context-2-evidence"
+      ],
+      "reviewId": "lifeways-chavin-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-chavin-context-point",
+      "subjectId": "chavin-context",
+      "predicate": "site-reference",
+      "statement": "The map uses UNESCO’s reference position for Chavín’s ceremonial landscape, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -77.17845361111111,
+          -9.5927725
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "circa 300 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-chavin-context-point-evidence"
+      ],
+      "reviewId": "lifeways-chavin-context-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-poverty-point-1",
+      "subjectId": "poverty-point",
+      "predicate": "historical-context",
+      "statement": "The National Park Service dates residential and ceremonial use of Poverty Point to approximately 1700–1100 BCE.",
+      "value": {
+        "type": "text",
+        "text": "The National Park Service dates residential and ceremonial use of Poverty Point to approximately 1700–1100 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1700,
+          "latest": -1700,
+          "original": "circa 1700 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1100,
+          "latest": -1100,
+          "original": "circa 1100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-poverty-point-1-evidence"
+      ],
+      "reviewId": "lifeways-poverty-point-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-poverty-point-2",
+      "subjectId": "poverty-point",
+      "predicate": "historical-context",
+      "statement": "Hunter-fisher-gatherers built monumental earthworks in the Lower Mississippi Valley and participated in far-reaching exchange networks.",
+      "value": {
+        "type": "text",
+        "text": "Hunter-fisher-gatherers built monumental earthworks in the Lower Mississippi Valley and participated in far-reaching exchange networks."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1700,
+          "latest": -1700,
+          "original": "circa 1700 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1100,
+          "latest": -1100,
+          "original": "circa 1100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-poverty-point-2-evidence"
+      ],
+      "reviewId": "lifeways-poverty-point-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-poverty-point-point",
+      "subjectId": "poverty-point",
+      "predicate": "site-reference",
+      "statement": "The map uses UNESCO’s reference position for Poverty Point’s mound builders, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -91.4063888888889,
+          32.636944444444445
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1700,
+          "latest": -1700,
+          "original": "circa 1700 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1100,
+          "latest": -1100,
+          "original": "circa 1100 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-poverty-point-point-evidence"
+      ],
+      "reviewId": "lifeways-poverty-point-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-sammallahdenmaki-1",
+      "subjectId": "sammallahdenmaki",
+      "predicate": "historical-context",
+      "statement": "UNESCO places Sammallahdenmäki in the Scandinavian Bronze Age context of approximately 1500–500 BCE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO places Sammallahdenmäki in the Scandinavian Bronze Age context of approximately 1500–500 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "circa 500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-sammallahdenmaki-1-evidence"
+      ],
+      "reviewId": "lifeways-sammallahdenmaki-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-sammallahdenmaki-2",
+      "subjectId": "sammallahdenmaki",
+      "predicate": "historical-context",
+      "statement": "Communities built granite burial cairns in clusters along a ridge in western Finland.",
+      "value": {
+        "type": "text",
+        "text": "Communities built granite burial cairns in clusters along a ridge in western Finland."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "circa 500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-sammallahdenmaki-2-evidence"
+      ],
+      "reviewId": "lifeways-sammallahdenmaki-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-sammallahdenmaki-point",
+      "subjectId": "sammallahdenmaki",
+      "predicate": "site-reference",
+      "statement": "The map uses UNESCO’s reference position for Sammallahdenmäki’s burial cairns, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          21.7775,
+          61.12056
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "circa 1500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "circa 500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-sammallahdenmaki-point-evidence"
+      ],
+      "reviewId": "lifeways-sammallahdenmaki-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-teotihuacan-context-1",
+      "subjectId": "teotihuacan-context",
+      "predicate": "historical-context",
+      "statement": "UNESCO describes the monumental city’s building period broadly as the first through seventh centuries CE.",
+      "value": {
+        "type": "text",
+        "text": "UNESCO describes the monumental city’s building period broadly as the first through seventh centuries CE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "circa 1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 700,
+          "latest": 700,
+          "original": "circa 700 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-teotihuacan-context-1-evidence"
+      ],
+      "reviewId": "lifeways-teotihuacan-context-1-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-teotihuacan-context-2",
+      "subjectId": "teotihuacan-context",
+      "predicate": "historical-context",
+      "statement": "Large pyramids and temples formed part of a city laid out according to geometric and symbolic principles.",
+      "value": {
+        "type": "text",
+        "text": "Large pyramids and temples formed part of a city laid out according to geometric and symbolic principles."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "circa 1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 700,
+          "latest": 700,
+          "original": "circa 700 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-teotihuacan-context-2-evidence"
+      ],
+      "reviewId": "lifeways-teotihuacan-context-2-review",
+      "disputeNote": null
+    },
+    {
+      "id": "lifeways-teotihuacan-context-point",
+      "subjectId": "teotihuacan-context",
+      "predicate": "site-reference",
+      "statement": "The map uses UNESCO’s reference position for Teotihuacán’s monumental city, not a territorial boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -98.84167,
+          19.691670000000002
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "circa 1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 700,
+          "latest": 700,
+          "original": "circa 700 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "lifeways-teotihuacan-context-point-evidence"
+      ],
+      "reviewId": "lifeways-teotihuacan-context-point-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "lifeways-northern-jomon-1-evidence",
+      "claimId": "lifeways-northern-jomon-1",
+      "sourceId": "lifeways-jomon",
+      "locator": "English description and Brief synthesis",
+      "note": "Regional archaeological context for southern Hokkaido and northern Tohoku. Dates do not apply uniformly to all Japan or every settlement. The full sequence begins before the initial study window. No single map point represents these scattered sites.",
+      "relation": "supports",
+      "reviewId": "lifeways-northern-jomon-1-review"
+    },
+    {
+      "id": "lifeways-northern-jomon-2-evidence",
+      "claimId": "lifeways-northern-jomon-2",
+      "sourceId": "lifeways-jomon",
+      "locator": "English description and Brief synthesis",
+      "note": "Regional archaeological context for southern Hokkaido and northern Tohoku. Dates do not apply uniformly to all Japan or every settlement. The full sequence begins before the initial study window. No single map point represents these scattered sites.",
+      "relation": "supports",
+      "reviewId": "lifeways-northern-jomon-2-review"
+    },
+    {
+      "id": "lifeways-sannai-maruyama-1-evidence",
+      "claimId": "lifeways-sannai-maruyama-1",
+      "sourceId": "lifeways-sannai",
+      "locator": "Date heading and first three descriptive paragraphs",
+      "note": "Whole-site dates are used. The guide separately labels Stage IIb as 3000–2200 BCE. Archaeological remains span phases; a precise map reference has not yet been checked.",
+      "relation": "supports",
+      "reviewId": "lifeways-sannai-maruyama-1-review"
+    },
+    {
+      "id": "lifeways-sannai-maruyama-2-evidence",
+      "claimId": "lifeways-sannai-maruyama-2",
+      "sourceId": "lifeways-sannai",
+      "locator": "Date heading and first three descriptive paragraphs",
+      "note": "Whole-site dates are used. The guide separately labels Stage IIb as 3000–2200 BCE. Archaeological remains span phases; a precise map reference has not yet been checked.",
+      "relation": "supports",
+      "reviewId": "lifeways-sannai-maruyama-2-review"
+    },
+    {
+      "id": "lifeways-korean-dolmens-1-evidence",
+      "claimId": "lifeways-korean-dolmens-1",
+      "sourceId": "lifeways-korea",
+      "locator": "English description, first paragraph",
+      "note": "1000–1 BCE represents the source’s whole-millennium dating, not continuous construction or the date of any individual tomb. Three separated site groups are not represented by a single point.",
+      "relation": "supports",
+      "reviewId": "lifeways-korean-dolmens-1-review"
+    },
+    {
+      "id": "lifeways-korean-dolmens-2-evidence",
+      "claimId": "lifeways-korean-dolmens-2",
+      "sourceId": "lifeways-korea",
+      "locator": "English description, first paragraph",
+      "note": "1000–1 BCE represents the source’s whole-millennium dating, not continuous construction or the date of any individual tomb. Three separated site groups are not represented by a single point.",
+      "relation": "supports",
+      "reviewId": "lifeways-korean-dolmens-2-review"
+    },
+    {
+      "id": "lifeways-dilmun-burials-1-evidence",
+      "claimId": "lifeways-dilmun-burials-1",
+      "sourceId": "lifeways-dilmun",
+      "locator": "English description, first two paragraphs",
+      "note": "Dates describe this group of burial monuments, not the entire history of Dilmun. The property has 21 component sites; their individual map references remain to be checked.",
+      "relation": "supports",
+      "reviewId": "lifeways-dilmun-burials-1-review"
+    },
+    {
+      "id": "lifeways-dilmun-burials-2-evidence",
+      "claimId": "lifeways-dilmun-burials-2",
+      "sourceId": "lifeways-dilmun",
+      "locator": "English description, first two paragraphs",
+      "note": "Dates describe this group of burial monuments, not the entire history of Dilmun. The property has 21 component sites; their individual map references remain to be checked.",
+      "relation": "supports",
+      "reviewId": "lifeways-dilmun-burials-2-review"
+    },
+    {
+      "id": "lifeways-lapita-settlement-1-evidence",
+      "claimId": "lifeways-lapita-settlement-1",
+      "sourceId": "lifeways-oceania",
+      "locator": "Timeline; Overview; Key Events for Arnhem Land and Lapita",
+      "note": "Broad source-specific chronology. Islands were settled at different times; this band is not an annual migration route or territorial boundary. Geographic associations need further research.",
+      "relation": "supports",
+      "reviewId": "lifeways-lapita-settlement-1-review"
+    },
+    {
+      "id": "lifeways-lapita-settlement-2-evidence",
+      "claimId": "lifeways-lapita-settlement-2",
+      "sourceId": "lifeways-oceania",
+      "locator": "Timeline; Overview; Key Events for Arnhem Land and Lapita",
+      "note": "Broad source-specific chronology. Islands were settled at different times; this band is not an annual migration route or territorial boundary. Geographic associations need further research.",
+      "relation": "supports",
+      "reviewId": "lifeways-lapita-settlement-2-review"
+    },
+    {
+      "id": "lifeways-arnhem-rock-art-1-evidence",
+      "claimId": "lifeways-arnhem-rock-art-1",
+      "sourceId": "lifeways-oceania",
+      "locator": "Timeline; Overview; Key Events for Arnhem Land and Lapita",
+      "note": "The timeline is clipped at 200 CE to fit this collection’s study window; this is not the end of a continuing Aboriginal artistic tradition. Dates are approximate and do not date every painting. No single map point is assigned.",
+      "relation": "supports",
+      "reviewId": "lifeways-arnhem-rock-art-1-review"
+    },
+    {
+      "id": "lifeways-arnhem-rock-art-2-evidence",
+      "claimId": "lifeways-arnhem-rock-art-2",
+      "sourceId": "lifeways-oceania",
+      "locator": "Timeline; Overview; Key Events for Arnhem Land and Lapita",
+      "note": "The timeline is clipped at 200 CE to fit this collection’s study window; this is not the end of a continuing Aboriginal artistic tradition. Dates are approximate and do not date every painting. No single map point is assigned.",
+      "relation": "supports",
+      "reviewId": "lifeways-arnhem-rock-art-2-review"
+    },
+    {
+      "id": "lifeways-chavin-context-1-evidence",
+      "claimId": "lifeways-chavin-context-1",
+      "sourceId": "lifeways-chavin",
+      "locator": "English description; site coordinate listing",
+      "note": "These are broad cultural dates, not construction dates for every monument. The marker is the archaeological site reference, not the extent of Chavín influence.",
+      "relation": "supports",
+      "reviewId": "lifeways-chavin-context-1-review"
+    },
+    {
+      "id": "lifeways-chavin-context-2-evidence",
+      "claimId": "lifeways-chavin-context-2",
+      "sourceId": "lifeways-chavin",
+      "locator": "English description; site coordinate listing",
+      "note": "These are broad cultural dates, not construction dates for every monument. The marker is the archaeological site reference, not the extent of Chavín influence.",
+      "relation": "supports",
+      "reviewId": "lifeways-chavin-context-2-review"
+    },
+    {
+      "id": "lifeways-chavin-context-point-evidence",
+      "claimId": "lifeways-chavin-context-point",
+      "sourceId": "lifeways-chavin",
+      "locator": "English description; site coordinate listing",
+      "note": "These are broad cultural dates, not construction dates for every monument. The marker is the archaeological site reference, not the extent of Chavín influence.",
+      "relation": "supports",
+      "reviewId": "lifeways-chavin-context-point-review"
+    },
+    {
+      "id": "lifeways-poverty-point-1-evidence",
+      "claimId": "lifeways-poverty-point-1",
+      "sourceId": "lifeways-poverty",
+      "locator": "Opening description and paragraphs on settlement, exchange and subsistence",
+      "note": "This follows the NPS World Heritage article’s date range, not a date for each mound. UNESCO’s BP wording has not been converted into calendar years. The marker locates the site, not its trading network.",
+      "relation": "supports",
+      "reviewId": "lifeways-poverty-point-1-review"
+    },
+    {
+      "id": "lifeways-poverty-point-2-evidence",
+      "claimId": "lifeways-poverty-point-2",
+      "sourceId": "lifeways-poverty",
+      "locator": "Opening description and paragraphs on settlement, exchange and subsistence",
+      "note": "This follows the NPS World Heritage article’s date range, not a date for each mound. UNESCO’s BP wording has not been converted into calendar years. The marker locates the site, not its trading network.",
+      "relation": "supports",
+      "reviewId": "lifeways-poverty-point-2-review"
+    },
+    {
+      "id": "lifeways-poverty-point-point-evidence",
+      "claimId": "lifeways-poverty-point-point",
+      "sourceId": "lifeways-poverty-location",
+      "locator": "Site coordinate listing only; chronology follows the linked National Park Service article",
+      "note": "This follows the NPS World Heritage article’s date range, not a date for each mound. UNESCO’s BP wording has not been converted into calendar years. The marker locates the site, not its trading network.",
+      "relation": "supports",
+      "reviewId": "lifeways-poverty-point-point-review"
+    },
+    {
+      "id": "lifeways-sammallahdenmaki-1-evidence",
+      "claimId": "lifeways-sammallahdenmaki-1",
+      "sourceId": "lifeways-finland",
+      "locator": "Brief synthesis, first two paragraphs; site coordinate listing",
+      "note": "This is a Bronze Age context band, not the full lifespan of the cemetery. UNESCO also records two excavated cairns from the Early Iron Age. The site marker is not a cultural boundary.",
+      "relation": "supports",
+      "reviewId": "lifeways-sammallahdenmaki-1-review"
+    },
+    {
+      "id": "lifeways-sammallahdenmaki-2-evidence",
+      "claimId": "lifeways-sammallahdenmaki-2",
+      "sourceId": "lifeways-finland",
+      "locator": "Brief synthesis, first two paragraphs; site coordinate listing",
+      "note": "This is a Bronze Age context band, not the full lifespan of the cemetery. UNESCO also records two excavated cairns from the Early Iron Age. The site marker is not a cultural boundary.",
+      "relation": "supports",
+      "reviewId": "lifeways-sammallahdenmaki-2-review"
+    },
+    {
+      "id": "lifeways-sammallahdenmaki-point-evidence",
+      "claimId": "lifeways-sammallahdenmaki-point",
+      "sourceId": "lifeways-finland",
+      "locator": "Brief synthesis, first two paragraphs; site coordinate listing",
+      "note": "This is a Bronze Age context band, not the full lifespan of the cemetery. UNESCO also records two excavated cairns from the Early Iron Age. The site marker is not a cultural boundary.",
+      "relation": "supports",
+      "reviewId": "lifeways-sammallahdenmaki-point-review"
+    },
+    {
+      "id": "lifeways-teotihuacan-context-1-evidence",
+      "claimId": "lifeways-teotihuacan-context-1",
+      "sourceId": "lifeways-teotihuacan",
+      "locator": "English description; site coordinate listing",
+      "note": "The full source period extends beyond 200 CE. Monuments belong to different phases; this does not imply all were present in the first century or that settlement began in 1 CE. The map marker locates the archaeological site.",
+      "relation": "supports",
+      "reviewId": "lifeways-teotihuacan-context-1-review"
+    },
+    {
+      "id": "lifeways-teotihuacan-context-2-evidence",
+      "claimId": "lifeways-teotihuacan-context-2",
+      "sourceId": "lifeways-teotihuacan",
+      "locator": "English description; site coordinate listing",
+      "note": "The full source period extends beyond 200 CE. Monuments belong to different phases; this does not imply all were present in the first century or that settlement began in 1 CE. The map marker locates the archaeological site.",
+      "relation": "supports",
+      "reviewId": "lifeways-teotihuacan-context-2-review"
+    },
+    {
+      "id": "lifeways-teotihuacan-context-point-evidence",
+      "claimId": "lifeways-teotihuacan-context-point",
+      "sourceId": "lifeways-teotihuacan",
+      "locator": "English description; site coordinate listing",
+      "note": "The full source period extends beyond 200 CE. Monuments belong to different phases; this does not imply all were present in the first century or that settlement began in 1 CE. The map marker locates the archaeological site.",
+      "relation": "supports",
+      "reviewId": "lifeways-teotihuacan-context-point-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "lifeways-northern-jomon-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-northern-jomon-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-sannai-maruyama-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-sannai-maruyama-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-korean-dolmens-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-korean-dolmens-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-dilmun-burials-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-dilmun-burials-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-lapita-settlement-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-lapita-settlement-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-arnhem-rock-art-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-arnhem-rock-art-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-chavin-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-chavin-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-chavin-context-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-poverty-point-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-poverty-point-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-poverty-point-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-sammallahdenmaki-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-sammallahdenmaki-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-sammallahdenmaki-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-teotihuacan-context-1-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-teotihuacan-context-2-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "lifeways-teotihuacan-context-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    }
+  ],
+  "accounts": []
+}

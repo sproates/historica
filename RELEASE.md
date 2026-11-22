@@ -31,11 +31,11 @@ home page, search, source links, coverage page and bookmarked views.
 
 The source of truth is `web/`; do not edit generated files in `docs/`.
 The site requires static file serving only, with no database or application
-server. Socrates remains the default; Focus paths and optional query parameters preserve exploration state.
+server. Alexander is the default; Focus paths and optional query parameters preserve exploration state.
 
 ## Current content
 
-100 focus entries; 69 individually source-checked statements. Checks are
+110 focus entries; 93 individually source-checked statements. Checks are
 AI-assisted, not independent expert review. Original prototype fields still
 await claim-level review. No regional coverage package is claimed complete.
 Large gaps remain, including Oceania and much of Africa and the Americas.
@@ -93,3 +93,21 @@ historica.online; HTTPS verification succeeded without bypassing validation.
 Live person, area with custom dates, and event paths returned 200; an unknown
 person path returned 404. Browser navigation Alexander → Egypt preserved
 356–323 BCE, and Back, Forward and reload restored the correct focus.
+
+## World lifeways and Alexander default — 22 November 2026
+
+Added ten introductory periods across nine regions, with 24 source-checked
+statements and four sourced archaeological map references. Total: 110 focus
+entries and 93 reviewed statements. Sources include UNESCO, the Met, the
+National Park Service and the official northern Japan Jomon site guide.
+Regional coverage remains partial; no coverage package was marked complete.
+
+The root now opens Alexander's lifespan (356–323 BCE). Explicit Socrates and
+other bookmarks retain their own focus. Manual build and all 58 tests passed.
+All ten new public routes returned the current app; all 29 public assets
+matched the release hashes over validated HTTPS. Live browser checks verified
+the root default, search, new focus pages and linked claim evidence.
+
+FTPS changes were confined to `/historica.online`. Existing replacements were
+backed up before upload, and uploaded bytes verified. Deployment record:
+`release/backups/20261122T194400Z/deployment.json`. Credentials were not saved.

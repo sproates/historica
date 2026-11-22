@@ -4,9 +4,10 @@ import fs from 'node:fs';
 import {buildFocusData} from '../web/focus-model.js';
 import {encodeView,decodeView} from '../web/view-url.js';
 const data=buildFocusData(JSON.parse(fs.readFileSync(new URL('../web/data/collection.json',import.meta.url))));
-test('empty and unknown focus links open Socrates while older explicit links survive',()=>{
- for(const hash of ['', '#focus=missing'])assert.equal(decodeView(hash,data).state.focus,'socrates');
- assert.deepEqual([decodeView('',data).state.start,decodeView('',data).state.end],[-469,-399]);
+test('empty and unknown focus links open Alexander while older explicit links survive',()=>{
+ for(const hash of ['', '/', '#focus=missing'])assert.equal(decodeView(hash,data).state.focus,'alexander');
+ assert.equal(decodeView('/person/socrates',data).state.focus,'socrates');
+ assert.deepEqual([decodeView('',data).state.start,decodeView('',data).state.end],[-356,-323]);
  const old=decodeView('#focus=alexander&from=-331&to=-329&kind=event&area=egypt',data);
  assert.deepEqual(old.state,{focus:'alexander',start:-331,end:-329,kind:'event',area:'egypt'});
  assert.equal(old.view.map.w,720);

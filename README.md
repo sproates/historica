@@ -2,7 +2,7 @@
 
 A beta web project, intended for open-source release, for exploring world history through events, lives and places.
 
-The current prototype has one focus at a time: person, area, state, city, period or event. The default page opens on Socrates’ lifespan. Philip II, Ptolemy I Soter, Aristotle and Egypt are clickable connections. Changing to another person fits their lifespan; changing to a place preserves the visible period. Wider, Closer and the From/To controls adjust the window without changing focus. Back restores the previous focus, window and filters.
+The current prototype has one focus at a time: person, area, state, city, period or event. The default page opens on Alexander the Great’s lifespan. Philip II, Ptolemy I Soter, Aristotle and Egypt are clickable connections. Changing to another person fits their lifespan; changing to a place preserves the visible period. Wider, Closer and the From/To controls adjust the window without changing focus. Back restores the previous focus, window and filters.
 
 The timeline orders context by approximate geographical distance from dated associations that overlap the context record. Areas use their own reference position. Unknown distance is explicitly shown. Timeline labels, bars and event rows change focus; separate type and area filters narrow context. Area filters use a prototype 1,200 km proximity threshold, not historical border containment.
 
@@ -61,7 +61,7 @@ flows before publishing. See [manual release instructions](RELEASE.md). Keep the
 
 ## Bookmark URLs
 
-The root opens Socrates at `/person/socrates`. Every focus has a proper path,
+The root opens Alexander at `/person/alexander`. Every focus has a proper path,
 such as `/person/alexander`, `/area/egypt` or `/event/socrates-trial`.
 Only changed settings appear in the query string: for example,
 `/area/egypt?from=-356&to=-323` keeps Alexander’s lifespan while viewing Egypt.
@@ -122,13 +122,22 @@ Hatched timeline bands and explicit labels distinguish uncertain dating from a c
 
 ## Broad overview batch
 
-The current collection has 100 entries and 69 source-checked statements.
-The latest batch adds 21 historical entries and an editorial overview across
+The current collection has 110 entries and 93 source-checked statements.
+The first overview batch added 21 historical entries and an editorial overview across
 seven regions, with ten linked institutional sources. It prioritises breadth
 over detailed accounts. Use **Ancient world · 3000 BCE–200 CE** to open the
 full browsing window. Earlier predynastic context is available in Explore.
 The source packs remain separate from the older prototype material awaiting
 claim-level review. Coverage packages are not marked complete by this batch.
+
+The world-lifeways batch adds ten introductions across nine regions: northern
+Japanese Jōmon communities, Sannai Maruyama, Korean dolmens, Dilmun burials,
+Lapita settlement, Arnhem Land rock art, Chavín, Poverty Point,
+Sammallahdenmäki and Teotihuacán. Its 24 claims link to ten institutional
+sources. Four archaeological site references have checked coordinates;
+scattered traditions retain explicit location gaps. Arnhem Land's 200 CE end
+is an editorial cutoff, not the end of the continuing artistic tradition.
+The evidence and exploration records are in `research/evidence/world-lifeways-*.json`.
 
 `npm run build:site` prepares the static release in `docs/`; publication is a
 separate step. No CI configuration has been added.

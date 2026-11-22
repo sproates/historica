@@ -43,7 +43,7 @@ export function buildFocusData(collection,exploration={entities:[],associations:
  entities.push(...exploration.entities);associations.push(...exploration.associations);relationships.push(...exploration.relationships);
  return {entities,associations,relationships,collection};
 }
-export function initialFocus(data,id='socrates'){const e=data.entities.find(e=>e.id===id)??data.entities.find(e=>e.id==='socrates')??data.entities[0];return {focus:e.id,start:e.startYear,end:e.endYear,kind:'all',area:'all'};}
+export function initialFocus(data,id='alexander'){const e=data.entities.find(e=>e.id===id)??data.entities.find(e=>e.id==='alexander')??data.entities[0];return {focus:e.id,start:e.startYear,end:e.endYear,kind:'all',area:'all'};}
 export function changeFocus(data,state,id){const next=initialFocus(data,id),entity=data.entities.find(e=>e.id===next.focus);return ['area','state','city'].includes(entity.type)?{...next,start:state.start,end:state.end}:next;}
 export function focusAssociations(data,state){const focus=data.entities.find(e=>e.id===state.focus);let list=data.associations.filter(a=>a.subject===state.focus||a.place===state.focus);
  if(focus.type==='period'||focus.id==='global-overview')list=data.associations;
