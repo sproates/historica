@@ -83,11 +83,11 @@
     },
     {
       "path": "focus.css",
-      "sha256": "97a0626795fbbe15fc7ffaad21655362907b8f8ee6a3459bc06a247d925a32d6"
+      "sha256": "8268a2c2764b7bdcce542d4711c479dc0aec6918e03296a0b25b7fc06e95e945"
     },
     {
       "path": "index.html",
-      "sha256": "c765da9a3ace8ba1dfd3597e2f63764e7558345b56926887f9dc829c6ff57007"
+      "sha256": "0f7a059af2c4349efa8d921b59440d99cffdd93d0baa570a32e894a804fa5409"
     },
     {
       "path": "model.js",
