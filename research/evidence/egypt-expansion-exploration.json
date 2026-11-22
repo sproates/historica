@@ -415,13 +415,17 @@
       "startYear": -3100,
       "endYear": 200,
       "description": "The city was an important centre for the worship of Ptah.",
-      "note": "Editorial browsing window 3100 BCE–200 CE, not the city’s complete lifespan. The traditional foundation story is not treated as a precisely dated event. A city-specific map position remains to be checked.",
-      "point": null,
+      "note": "Editorial browsing window 3100 BCE–200 CE, not the city’s complete lifespan. The traditional foundation story is not treated as a precisely dated event. The map uses UNESCO’s Site of Memphis reference, not a city boundary.",
+      "point": [
+        31.261055555555554,
+        29.855500000000003
+      ],
       "url": "https://egymonuments.gov.eg/world-heritage/memphis-and-its-necropolis",
       "contextual": true,
       "claimIds": [
         "egypt-expansion-memphis-1",
-        "egypt-expansion-memphis-2"
+        "egypt-expansion-memphis-2",
+        "connected-browsing-memphis-map-point"
       ],
       "dateLabel": "Broad context · approximate chronology",
       "region": "Egypt",
@@ -436,12 +440,16 @@
       "startYear": -2055,
       "endYear": 200,
       "description": "Thebes was a capital in the Middle and New Kingdoms and a major centre of Amun worship.",
-      "note": "Editorial browsing window from the Middle Kingdom through 200 CE; neither the city’s founding nor its abandonment. The site includes multiple temples and necropolises; no unchecked central point is assigned. This is Egyptian Thebes, distinct from the Greek city.",
-      "point": null,
+      "note": "Editorial browsing window from the Middle Kingdom through 200 CE; neither the city’s founding nor its abandonment. The map uses the Karnak component as a reference within a city with multiple temples and necropolises; it is not a city centre or boundary. This is Egyptian Thebes, distinct from the Greek city.",
+      "point": [
+        32.65725,
+        25.718888888888888
+      ],
       "url": "https://whc.unesco.org/en/list/87/",
       "contextual": true,
       "claimIds": [
-        "egypt-expansion-thebes-egypt-1"
+        "egypt-expansion-thebes-egypt-1",
+        "connected-browsing-thebes-egypt-map-point"
       ],
       "dateLabel": "Broad context · approximate chronology",
       "region": "Egypt",
@@ -531,7 +539,40 @@
       ]
     }
   ],
-  "associations": [],
+  "associations": [
+    {
+      "subject": "memphis",
+      "place": "memphis",
+      "startYear": -3100,
+      "endYear": 200,
+      "point": [
+        31.261055555555554,
+        29.855500000000003
+      ],
+      "label": "UNESCO Site of Memphis reference",
+      "source": "https://whc.unesco.org/en/list/86/maps/",
+      "claimIds": [
+        "connected-browsing-memphis-map-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "thebes-egypt",
+      "place": "thebes-egypt",
+      "startYear": -2055,
+      "endYear": 200,
+      "point": [
+        32.65725,
+        25.718888888888888
+      ],
+      "label": "Karnak reference within ancient Thebes",
+      "source": "https://whc.unesco.org/en/list/87/maps/",
+      "claimIds": [
+        "connected-browsing-thebes-egypt-map-point"
+      ],
+      "contextual": true
+    }
+  ],
   "relationships": [
     {
       "a": "global-overview",

@@ -67,11 +67,11 @@
     },
     {
       "path": "data/reviewed-evidence.json",
-      "sha256": "f73682bd8c71d0f600c03e90397faf1366720d777a8f55f2feb6a6c85c05df5d"
+      "sha256": "e83a1ef2f067af221fcf8603a11255610939a2b30ccd628ba38ea1288d218a35"
     },
     {
       "path": "data/reviewed-exploration.json",
-      "sha256": "a234ce4b0387f3b5b9592cd2d64852902ab34763625d85d3bf6bc92e7cd7337c"
+      "sha256": "abb9c0cbc0d9c325b5db2d011eb8ca953ea06de7da128cb6fb9ac002acff475f"
     },
     {
       "path": "data/routes.json",

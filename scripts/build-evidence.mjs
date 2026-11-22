@@ -5,7 +5,7 @@ const read=path=>JSON.parse(fs.readFileSync(path,'utf8'));
 const packs=['socrates','britain-ireland','global-overview','world-lifeways','ancient-connections','egypt-expansion','stonehenge','early-world','caesar-era','alcibiades-era','maurya-era','qin-han-era'].map(name=>read(`research/evidence/${name}-reviewed.json`));
 const pack={schemaVersion:'1.0'};
 for(const key of ['entities','sources','claims','evidence','reviews','accounts']) pack[key]=packs.flatMap(p=>p[key]);
-const adapters=['britain-ireland','global-overview','world-lifeways','ancient-connections','egypt-expansion','stonehenge','early-world','caesar-era','alcibiades-era','maurya-era','qin-han-era'].map(name=>read(`research/evidence/${name}-exploration.json`));
+const adapters=['connected-browsing','britain-ireland','global-overview','world-lifeways','ancient-connections','egypt-expansion','stonehenge','early-world','caesar-era','alcibiades-era','maurya-era','qin-han-era'].map(name=>read(`research/evidence/${name}-exploration.json`));
 const exploration=Object.fromEntries(['entities','associations','relationships'].map(key=>[key,adapters.flatMap(a=>a[key])]));
 const errors=validateEvidence(pack,{release:true});
 const claims=new Map(pack.claims.map(c=>[c.id,c]));

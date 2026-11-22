@@ -1486,13 +1486,17 @@
       "startYear": -3100,
       "endYear": 200,
       "description": "The city was an important centre for the worship of Ptah.",
-      "note": "Editorial browsing window 3100 BCE–200 CE, not the city’s complete lifespan. The traditional foundation story is not treated as a precisely dated event. A city-specific map position remains to be checked.",
-      "point": null,
+      "note": "Editorial browsing window 3100 BCE–200 CE, not the city’s complete lifespan. The traditional foundation story is not treated as a precisely dated event. The map uses UNESCO’s Site of Memphis reference, not a city boundary.",
+      "point": [
+        31.261055555555554,
+        29.855500000000003
+      ],
       "url": "https://egymonuments.gov.eg/world-heritage/memphis-and-its-necropolis",
       "contextual": true,
       "claimIds": [
         "egypt-expansion-memphis-1",
-        "egypt-expansion-memphis-2"
+        "egypt-expansion-memphis-2",
+        "connected-browsing-memphis-map-point"
       ],
       "dateLabel": "Broad context · approximate chronology",
       "region": "Egypt",
@@ -1507,12 +1511,16 @@
       "startYear": -2055,
       "endYear": 200,
       "description": "Thebes was a capital in the Middle and New Kingdoms and a major centre of Amun worship.",
-      "note": "Editorial browsing window from the Middle Kingdom through 200 CE; neither the city’s founding nor its abandonment. The site includes multiple temples and necropolises; no unchecked central point is assigned. This is Egyptian Thebes, distinct from the Greek city.",
-      "point": null,
+      "note": "Editorial browsing window from the Middle Kingdom through 200 CE; neither the city’s founding nor its abandonment. The map uses the Karnak component as a reference within a city with multiple temples and necropolises; it is not a city centre or boundary. This is Egyptian Thebes, distinct from the Greek city.",
+      "point": [
+        32.65725,
+        25.718888888888888
+      ],
       "url": "https://whc.unesco.org/en/list/87/",
       "contextual": true,
       "claimIds": [
-        "egypt-expansion-thebes-egypt-1"
+        "egypt-expansion-thebes-egypt-1",
+        "connected-browsing-thebes-egypt-map-point"
       ],
       "dateLabel": "Broad context · approximate chronology",
       "region": "Egypt",
@@ -3492,6 +3500,38 @@
       "contextual": true
     },
     {
+      "subject": "memphis",
+      "place": "memphis",
+      "startYear": -3100,
+      "endYear": 200,
+      "point": [
+        31.261055555555554,
+        29.855500000000003
+      ],
+      "label": "UNESCO Site of Memphis reference",
+      "source": "https://whc.unesco.org/en/list/86/maps/",
+      "claimIds": [
+        "connected-browsing-memphis-map-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "thebes-egypt",
+      "place": "thebes-egypt",
+      "startYear": -2055,
+      "endYear": 200,
+      "point": [
+        32.65725,
+        25.718888888888888
+      ],
+      "label": "Karnak reference within ancient Thebes",
+      "source": "https://whc.unesco.org/en/list/87/maps/",
+      "claimIds": [
+        "connected-browsing-thebes-egypt-map-point"
+      ],
+      "contextual": true
+    },
+    {
       "subject": "stonehenge",
       "place": "stonehenge",
       "startYear": -3000,
@@ -4165,6 +4205,222 @@
     }
   ],
   "relationships": [
+    {
+      "a": "period",
+      "b": "alexander",
+      "label": "Life shown in this comparison",
+      "labelFromA": "Life shown in this comparison",
+      "labelFromB": "Compare his lifetime",
+      "sourceUrls": [
+        "https://archive.archaeology.org/online/features/alexander/whoswho.html"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "italy-settlement",
+      "b": "rome",
+      "label": "City in this account",
+      "labelFromA": "City in this account",
+      "labelFromB": "After the Latin War",
+      "sourceUrls": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/FRAAHR/4*.html",
+        "https://www.metmuseum.org/essays/the-roman-republic"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "samnite-war",
+      "b": "rome",
+      "label": "City involved in the war",
+      "labelFromA": "City involved in the war",
+      "labelFromB": "War with the Samnites",
+      "sourceUrls": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/FRAAHR/4*.html",
+        "https://www.metmuseum.org/essays/the-roman-republic"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "italy-settlement",
+      "b": "samnite-war",
+      "label": "Later conflict in Italy",
+      "labelFromA": "Later conflict in Italy",
+      "labelFromB": "Earlier Italian context",
+      "sourceUrls": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/FRAAHR/4*.html"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "monte-alban",
+      "b": "monte-alban-city",
+      "label": "City in this account",
+      "labelFromA": "City in this account",
+      "labelFromB": "Early urban history",
+      "sourceUrls": [
+        "https://sic.cultura.gob.mx/ficha.php?table=zona_arqueologica&table_id=76"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "monte-alban",
+      "b": "oaxaca",
+      "label": "Regional context",
+      "labelFromA": "Regional context",
+      "labelFromB": "Early urban community",
+      "sourceUrls": [
+        "https://sic.cultura.gob.mx/ficha.php?table=zona_arqueologica&table_id=76"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "world-400-250",
+      "b": "alexander",
+      "label": "A life within this period",
+      "labelFromA": "A life within this period",
+      "labelFromB": "Wider contemporary world",
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Pergamon_and_the_Hellenistic_Kingdoms_of_the_Ancient_World.pdf",
+        "https://archive.archaeology.org/online/features/alexander/whoswho.html"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "world-400-250",
+      "b": "chu-silk",
+      "label": "Material culture in this period",
+      "labelFromA": "Material culture in this period",
+      "labelFromB": "Compare the wider period",
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Pergamon_and_the_Hellenistic_Kingdoms_of_the_Ancient_World.pdf",
+        "https://artistproject.metmuseum.org/toah/ht/04/eac.html"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "world-400-250",
+      "b": "danebury-life",
+      "label": "Community life in this period",
+      "labelFromA": "Community life in this period",
+      "labelFromB": "Compare the wider period",
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Pergamon_and_the_Hellenistic_Kingdoms_of_the_Ancient_World.pdf",
+        "https://www.hants.gov.uk/thingstodo/countryside/finder/danebury"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "world-400-250",
+      "b": "monte-alban",
+      "label": "Urban life in this period",
+      "labelFromA": "Urban life in this period",
+      "labelFromB": "Compare the wider period",
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Pergamon_and_the_Hellenistic_Kingdoms_of_the_Ancient_World.pdf",
+        "https://sic.cultura.gob.mx/ficha.php?table=zona_arqueologica&table_id=76"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "badarian-culture",
+      "b": "predynastic-egypt",
+      "label": "Wider Egyptian period",
+      "labelFromA": "Wider Egyptian period",
+      "labelFromB": "Badarian communities",
+      "sourceUrls": [
+        "https://egymonuments.gov.eg/en/historical-periods/predynastic-period"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "maadi-culture",
+      "b": "predynastic-egypt",
+      "label": "Wider Egyptian period",
+      "labelFromA": "Wider Egyptian period",
+      "labelFromB": "Maadi communities",
+      "sourceUrls": [
+        "https://egymonuments.gov.eg/en/historical-periods/predynastic-period"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "naqada-one",
+      "b": "predynastic-egypt",
+      "label": "Wider Egyptian period",
+      "labelFromA": "Wider Egyptian period",
+      "labelFromB": "Naqada I communities",
+      "sourceUrls": [
+        "https://egymonuments.gov.eg/en/historical-periods/predynastic-period"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "djoser-reign",
+      "b": "old-kingdom",
+      "label": "Dynastic context",
+      "labelFromA": "Dynastic context",
+      "labelFromB": "Djoser and the Step Pyramid",
+      "sourceUrls": [
+        "https://www.metmuseum.org/essays/egypt-in-the-old-kingdom-ca-2649-2150-b-c"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "western-zhou",
+      "b": "shang-context",
+      "label": "Earlier Chinese period",
+      "labelFromA": "Earlier Chinese period",
+      "labelFromB": "Following Chinese period",
+      "sourceUrls": [
+        "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "western-zhou",
+      "b": "eastern-zhou",
+      "label": "Following Chinese period",
+      "labelFromA": "Following Chinese period",
+      "labelFromB": "Earlier Chinese period",
+      "sourceUrls": [
+        "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "la-venta-context",
+      "b": "olmec-gulf",
+      "label": "Wider regional context",
+      "labelFromA": "Wider regional context",
+      "labelFromB": "Monumental community",
+      "sourceUrls": [
+        "https://www.metmuseum.org/essays/olmec-art"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "new-kingdom",
+      "b": "deir-el-medina-artisans",
+      "label": "Tomb workers in this period",
+      "labelFromA": "Tomb workers in this period",
+      "labelFromB": "Wider Egyptian period",
+      "sourceUrls": [
+        "https://www.metmuseum.org/essays/egypt-in-the-new-kingdom-ca-1550-1070-b-c"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
+    {
+      "a": "qin-empire",
+      "b": "chu-silk",
+      "label": "Compare overlapping material culture",
+      "labelFromA": "Compare overlapping material culture",
+      "labelFromB": "Compare overlapping imperial period",
+      "sourceUrls": [
+        "https://www.metmuseum.org/essays/qin-dynasty-221-206-b-c",
+        "https://artistproject.metmuseum.org/toah/ht/04/eac.html"
+      ],
+      "basis": "Navigation connection between existing sourced records; chronology, place or subject as stated in those records. No personal contact inferred."
+    },
     {
       "a": "britain-ireland",
       "b": "danebury",

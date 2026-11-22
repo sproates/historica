@@ -249,6 +249,24 @@
       "locatorHint": "Paragraphs on royal tombs and the town of Deir el-Medina",
       "accessed": "2026-11-22",
       "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "connected-browsing-memphis-map",
+      "title": "UNESCO geographical data: Memphis",
+      "url": "https://whc.unesco.org/en/list/86/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Component 86-001, Site of Memphis: N29 51 19.8 E31 15 39.8",
+      "accessed": "2026-11-23",
+      "reuse": "Coordinate reference and linked attribution; no map image reproduced."
+    },
+    {
+      "id": "connected-browsing-thebes-egypt-map",
+      "title": "UNESCO geographical data: Thebes (Egypt)",
+      "url": "https://whc.unesco.org/en/list/87/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Component 087-001, Temple of Karnak: N25 43 08 E32 39 26.1",
+      "accessed": "2026-11-23",
+      "reuse": "Coordinate reference and linked attribution; no map image reproduced."
     }
   ],
   "claims": [
@@ -1475,6 +1493,82 @@
       ],
       "reviewId": "egypt-expansion-fourth-dynasty-egypt-1-review",
       "disputeNote": null
+    },
+    {
+      "id": "connected-browsing-memphis-map-point",
+      "subjectId": "memphis",
+      "predicate": "geographic-reference",
+      "statement": "UNESCO Site of Memphis reference. This locates the existing editorial study window; it does not establish continuous occupation, temple activity or a city boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          31.261055555555554,
+          29.855500000000003
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3100,
+          "latest": -3100,
+          "original": "3100 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-browsing-memphis-map-point-evidence"
+      ],
+      "reviewId": "connected-browsing-memphis-map-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "connected-browsing-thebes-egypt-map-point",
+      "subjectId": "thebes-egypt",
+      "predicate": "geographic-reference",
+      "statement": "Karnak reference within ancient Thebes. This locates the existing editorial study window; it does not establish continuous occupation, temple activity or a city boundary.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          32.65725,
+          25.718888888888888
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2055,
+          "latest": -2055,
+          "original": "2055 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "connected-browsing-thebes-egypt-map-point-evidence"
+      ],
+      "reviewId": "connected-browsing-thebes-egypt-map-point-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -1801,6 +1895,24 @@
       "note": "Approximate chronology and succession follow the Met’s Dynasty 4 list.",
       "relation": "supports",
       "reviewId": "egypt-expansion-fourth-dynasty-egypt-1-review"
+    },
+    {
+      "id": "connected-browsing-memphis-map-point-evidence",
+      "claimId": "connected-browsing-memphis-map-point",
+      "sourceId": "connected-browsing-memphis-map",
+      "locator": "Component 86-001, Site of Memphis: N29 51 19.8 E31 15 39.8",
+      "note": "UNESCO Site of Memphis reference",
+      "relation": "supports",
+      "reviewId": "connected-browsing-memphis-map-point-review"
+    },
+    {
+      "id": "connected-browsing-thebes-egypt-map-point-evidence",
+      "claimId": "connected-browsing-thebes-egypt-map-point",
+      "sourceId": "connected-browsing-thebes-egypt-map",
+      "locator": "Component 087-001, Temple of Karnak: N25 43 08 E32 39 26.1",
+      "note": "Karnak reference within ancient Thebes",
+      "relation": "supports",
+      "reviewId": "connected-browsing-thebes-egypt-map-point-review"
     }
   ],
   "reviews": [
@@ -2055,6 +2167,20 @@
       "date": "2026-11-22",
       "decision": "verified",
       "reason": "Inspected the Dynasty 4 heading, dates and succession list."
+    },
+    {
+      "id": "connected-browsing-memphis-map-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Read the UNESCO component table and converted degrees, minutes and seconds to decimal longitude and latitude. Site reference, not a city boundary or personal itinerary."
+    },
+    {
+      "id": "connected-browsing-thebes-egypt-map-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Read the UNESCO component table and converted degrees, minutes and seconds to decimal longitude and latitude. Site reference, not a city boundary or personal itinerary."
     }
   ],
   "accounts": []
