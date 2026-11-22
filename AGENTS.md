@@ -3,6 +3,16 @@
 ## Branch names
 Never use `codex` in a Git branch name. Use descriptive `feature/…`, `fix/…` or `chore/…` names.
 
+## Speed from idea to deployment
+- Keep the path from request to preview or deployment short. The local preview is the only extra approval step Ian requested; do not add process around it.
+- For design or wording changes: edit, run checks proportionate to the change, refresh the existing Wi-Fi preview, and send Ian the link promptly. After approval, publish that version without another approval round or repeating completed checks unless something changed.
+- For data-only changes: edit, run relevant data checks, and publish directly.
+- Small edits need targeted checks, not repeated full builds, full test suites or whole-site audits. Run broader checks when shared logic, routing, build tooling or failures justify them.
+- Deploy only changed files and required dependencies. Back up files being replaced and verify those uploads. Do not download every hosted file just to discover what changed; use release manifests to identify the differences.
+- Keep full-site audits separate from ordinary releases. Do not make them a routine prerequisite for a small change.
+- Reuse the persistent preview. Do not reinstall or restart it for ordinary content or style edits.
+- Do not bundle unrelated improvements, refactors or tooling work into a simple request. Report a concrete tooling limitation honestly rather than claiming an optimisation is already implemented.
+
 ## Release workflow
 - Data-only updates may be built, checked and deployed directly to historica.online without a separate design preview approval. This includes historical records, sources, relationships, dates and geographic data, plus generated assets/routes required for that data.
 - Design, layout, navigation, interaction and visitor-facing editorial changes must first be available on the persistent local Wi-Fi preview. Give Ian the phone-accessible URL and describe the changes. Do not deploy those changes to production until Ian explicitly approves the preview or specifically requests that release.

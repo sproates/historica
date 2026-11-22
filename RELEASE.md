@@ -24,16 +24,43 @@ Only the configured Historica document root is authorised. Do not inspect,
 modify or upload to any other site or hosting directory. TLS certificate
 validation and encrypted data transfer must remain enabled.
 
-## Build and release
+## Fast path from idea to release
+
+For design or wording changes, edit the source, run proportionate checks,
+refresh the existing Wi-Fi preview and send Ian the link. Once he approves,
+publish that version. Do not add another approval step or repeat checks that
+already passed unless the files changed or a new issue appeared.
+
+For data-only changes, edit, run the relevant data checks and publish directly.
+Do not bundle unrelated improvements into either workflow.
+
+Small edits need targeted checks. Broader tests are appropriate for shared
+logic, routing or build changes, or when a failure warrants them. A full-site
+audit is a separate task, not a prerequisite for every release.
+
+## Build and release tools
 
 The source of truth is `web/`; do not edit generated `docs/` files directly.
-Run `npm run package:site` to generate metadata, routes, evidence and coverage,
-run tests, and prepare the manifest and archive. No build command publishes.
+Regenerate affected outputs and their dependencies before publishing. The
+complete build command, `npm run package:site`, regenerates metadata, routes,
+evidence and coverage, runs the full tests and prepares the release archive.
+Use it when a complete rebuild is warranted, not as an automatic response
+to every preview edit. No build command publishes.
 
-Run `python3 scripts/deploy-ftps.py` for an authorised release. Backups and
-upload records are saved under ignored `release/backups/`. Verify the live
-site after upload with `python3 scripts/verify-hosted.py`, plus checks of the
-changed routes and user flows. Do not bypass certificate validation.
+The required deployment behaviour is incremental: compare release manifests,
+upload only changed files and dependencies, back up replacements and verify
+those uploads. Do not download the entire hosted site to identify changes.
+
+**Current tooling limitation:** `scripts/deploy-ftps.py` still downloads
+existing manifest-listed files to compare and back them up. Documenting the
+incremental rule does not fix that implementation. It needs updating before
+it can meet the fast-release requirement; do not describe it as optimised.
+
+Run the uploader only for an authorised release. Backups and upload records
+are saved under ignored `release/backups/`. Verify changed assets and affected
+routes after upload. `scripts/verify-hosted.py` checks the full site and is
+reserved for a full audit or a specific concern, rather than every release.
+Keep TLS verification and the configured document-root restriction in place.
 
 ## Persistent Wi-Fi preview
 
