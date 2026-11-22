@@ -604,7 +604,7 @@
     "next": "Add excavation-based accounts for other subregions and narrow the candidate dates before timeline publication.",
     "reviewedRelease": {
       "statementCount": 22,
-      "url": "./#focus=britain-ireland&from=-469&to=-399&kind=all&area=all",
+      "url": "/area/britain-ireland?from=-469&to=-399",
       "note": "The regional collection now includes 22 reviewed statements across British and Irish examples, including later Corlea context. Original candidates remain for traceability. Neither regional work package has a complete overview.",
       "claimMappings": {
         "bi-01-danebury-houses": "bi-reviewed-danebury-houses",

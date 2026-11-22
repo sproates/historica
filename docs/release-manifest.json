@@ -3,7 +3,7 @@
   "files": [
     {
       "path": ".htaccess",
-      "sha256": "48f4f98f136b0b677c60da16bc4672dad8f57160826efd5a3e4f95d2272fdb4c"
+      "sha256": "c585199cb6749cfeed11ab5aa930d644fe270b13f3c1203a85db0ac9c015c690"
     },
     {
       "path": "app.js",
@@ -39,7 +39,7 @@
     },
     {
       "path": "data/coverage-research.json",
-      "sha256": "06d02a9d8f8d6b724a0c9660cd267d58f18bc40c667581386b6560be3b9ac274"
+      "sha256": "caded4ee95dc64490f904e6eb06ac77d0bd8774605f58a459ae542074fbd45e5"
     },
     {
       "path": "data/coverage.json",
@@ -87,7 +87,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "7bd75f4ba4571650951a3016e64d8f058b3bc90aad3d7da5cc4d0de50b151eb7"
+      "sha256": "6124c7ade39bd6ec07fb0cde7e93703ac24ecaa7960f35ca19b55620f4198772"
     },
     {
       "path": "model.js",

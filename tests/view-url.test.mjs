@@ -33,3 +33,9 @@ test('canonical paths omit every default and preserve changed dates',()=>{
  assert.equal(encodeView(changed.state,changed.view,data),'/person/alexander?from=-340&to=-330');
  for(const e of data.entities){const path=`/${e.type}/${e.id}`;const decoded=decodeView(path,data);assert.equal(decoded.state.focus,e.id);assert.equal(encodeView(decoded.state,decoded.view,data),path);}
 });
+
+test('reported Khufu fragment becomes a clean path without losing its time window',()=>{
+ const complete=buildFocusData(JSON.parse(fs.readFileSync('web/data/collection.json')),JSON.parse(fs.readFileSync('web/data/reviewed-exploration.json')));
+ const old=decodeView('http://historica.online/#focus=khufu-reign&from=-2551&to=-2528&kind=all&area=all&v=1&x=0&y=0&w=720&borders=1&expanded=0&evidence=0&rangeFrom=-2551&rangeTo=-2528',complete);
+ assert.equal(encodeView(old.state,old.view,complete),'/period/khufu-reign');
+});
