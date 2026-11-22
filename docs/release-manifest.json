@@ -3,7 +3,7 @@
   "files": [
     {
       "path": ".htaccess",
-      "sha256": "eb83ff5b1d33605a27f7009d253471643ae726b45987c534e06f5fb3f58959fa"
+      "sha256": "c41be62cc1ceb857558acf9b77e26b5a3d01c38caa85924f5c66d02acd0a9c1c"
     },
     {
       "path": "about.html",
@@ -67,15 +67,15 @@
     },
     {
       "path": "data/reviewed-evidence.json",
-      "sha256": "6401a05421bf565a4f2c5fa5f30856496872adeda734344a9fcb1e253e299b03"
+      "sha256": "fe22f5c661820979d94cd56bb9efea0f6b25561430b082d1b07e4a3d3f37bc41"
     },
     {
       "path": "data/reviewed-exploration.json",
-      "sha256": "ae99533a21c3e15372872e5cc915d9750f4357330886be3acdbf44e472a05242"
+      "sha256": "8cdb4b3461f148986b378df4476f70b6a1b4bb0763cac79e53e976041304a42d"
     },
     {
       "path": "data/routes.json",
-      "sha256": "9c312b0c113576e1a89b569ec7893232197811cd026033311af494daede37895"
+      "sha256": "a366519557ba0ed832cc4fb685137ca8d01b110d2f5eb5e60b0f926214e1e629"
     },
     {
       "path": "focus-app.js",
@@ -87,7 +87,7 @@
     },
     {
       "path": "focus-model.js",
-      "sha256": "aeb8cb52ba0fe13c4d5077fb8160e485099525c351921f0812543ab3f30262a0"
+      "sha256": "ab451f9857b7199621fd7053a8d2abcf5fb3f10384a6fb31cbcfbce0a1023834"
     },
     {
       "path": "focus.css",
@@ -142,6 +142,10 @@
       "sha256": "10258cbc8c293eb2041e8ade65b184af8a72902976f3b41de10349a88f2fa485"
     },
     {
+      "path": "pages/alexander-taxila.html",
+      "sha256": "3e4a1f517958dd4ab442a0f37dc7d2b621ec0a7d726c1299bbd42c22a44281b5"
+    },
+    {
       "path": "pages/alexander.html",
       "sha256": "84b95b5e513fd08264f84a6e8cc052c67f9f05bf9f49889d63983acb1bca2b05"
     },
@@ -178,8 +182,16 @@
       "sha256": "d963991732af4af3bc34de20f9004c90387b29fb5b1c075c27dcc7d1d9e780f0"
     },
     {
+      "path": "pages/ashoka-inscriptions.html",
+      "sha256": "8e98872c66f8349e3da4c1d39202d7ff720ed417ae8dd8f0e9b68208812a70e5"
+    },
+    {
+      "path": "pages/ashoka-lumbini.html",
+      "sha256": "911624d3db8f4c7236d6bbf29078e09b995d720f2ebe3cb3965d48835fc4d25d"
+    },
+    {
       "path": "pages/ashoka-rule.html",
-      "sha256": "de4569926e7eb1e7acc0bc4d34a225e2d8fd802d108ac7aaecd4e3bea992d737"
+      "sha256": "b8a1b31dcf06a6cd85d1f9a433a5e960cfbc072ea2c53df15da12fb5ebcc10e1"
     },
     {
       "path": "pages/athens-democracy-restored.html",
@@ -224,6 +236,10 @@
     {
       "path": "pages/badarian-culture.html",
       "sha256": "bb23a49c7205530b1c5a01822b2aab4b329437c3354800303a0dd9cfd1003d93"
+    },
+    {
+      "path": "pages/bindusara-reign.html",
+      "sha256": "01fa9933d56ac4b4d28ea59113d649d8f95a3e50ebbe7e1f1dd491b3ba2b06fa"
     },
     {
       "path": "pages/boyne-passage-tombs.html",
@@ -276,6 +292,10 @@
     {
       "path": "pages/chaeronea.html",
       "sha256": "8dcd2e1fbce6d2e42361b8d04b5c741572ddc0810d658e0e2e41544360c27a37"
+    },
+    {
+      "path": "pages/chandragupta-reign.html",
+      "sha256": "138a3c2372509c09aef7d68f454329e82cb2a153277a165f5334b88bb879aa1a"
     },
     {
       "path": "pages/chavin-context.html",
@@ -502,6 +522,10 @@
       "sha256": "8b4c91444c67ddec06fca8727b97aeb45bffe4d0fc8b71e7b941e0c6c41f307b"
     },
     {
+      "path": "pages/lumbini.html",
+      "sha256": "511ee777fe640c39d7c4157e9f2c8498ef2817cced045fc3ad44160ee7e020f9"
+    },
+    {
       "path": "pages/lyceum.html",
       "sha256": "7f634eddfbe2300fcfad729444529faec74963b3cced109c0a718aa8240953b3"
     },
@@ -535,7 +559,7 @@
     },
     {
       "path": "pages/maurya.html",
-      "sha256": "7a78a39f96368b4e0ddbf7563f18ae4ce91819178881dae73ae679dd84ede077"
+      "sha256": "c6294289a39826b8b7a31d6efd6af83cdf2639bd9bf554bde19cdd0ba13e210d"
     },
     {
       "path": "pages/memphis.html",
@@ -607,7 +631,7 @@
     },
     {
       "path": "pages/pataliputra.html",
-      "sha256": "1b1db0dc7aefa5b35161fa1581554412857c101f927803cd7d137312e4bb474e"
+      "sha256": "e78dba05cb345dcab772e79854eff99f211e75d99777e734259613effbe6f73e"
     },
     {
       "path": "pages/peace-of-nicias.html",
@@ -738,6 +762,14 @@
       "sha256": "3305f88f6c472bd161226865ddd159856256658f9a53de3c163afa8e7aa0ec0d"
     },
     {
+      "path": "pages/seleucid-mauryan-settlement.html",
+      "sha256": "9b291268f62c4ca1f885e7a31d3192cf9d324e75b9a9b8c95afaf695e2edaf00"
+    },
+    {
+      "path": "pages/seleucus.html",
+      "sha256": "6623469ad7dca45f45f68753e10d200eb00a3198dd6f78d4d0522ab3e1ddec26"
+    },
+    {
       "path": "pages/senwosret-three-reign.html",
       "sha256": "684841c0db35e805e1ea7a611e3afca9d94c232a675b374580f9bb52e04acc15"
     },
@@ -854,6 +886,10 @@
       "sha256": "19d5de1a2bea44cb4accd5a6401185b7479f23e2255f8ac4bdd3b8a43012763d"
     },
     {
+      "path": "pages/taxila.html",
+      "sha256": "57d2b0927964510d2cf1ee0147dfd2decea40765676c72bd2862790f2fe133f6"
+    },
+    {
       "path": "pages/teotihuacan-context.html",
       "sha256": "5b782152871329307df377433a7d5df53f4746def9e62eed7a7fcfa33afe7548"
     },
@@ -927,7 +963,7 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "787f69ce0eb10a36d702eb1c01909cbffb275a3de9a1d140c892d83ab39bb91c"
+      "sha256": "df159dd3c114b5ad34f4ce3b5fad4ce2f14bc7b7b98be7aabc41fb27d0a4b782"
     },
     {
       "path": "style.css",

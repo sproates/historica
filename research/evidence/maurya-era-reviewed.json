@@ -1,0 +1,1593 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {
+      "id": "maurya",
+      "name": "The Mauryan Empire",
+      "type": "state"
+    },
+    {
+      "id": "chandragupta-reign",
+      "name": "Chandragupta Maurya’s reign",
+      "type": "period"
+    },
+    {
+      "id": "bindusara-reign",
+      "name": "Bindusara’s reign",
+      "type": "period"
+    },
+    {
+      "id": "ashoka-rule",
+      "name": "Ashoka’s reign",
+      "type": "period"
+    },
+    {
+      "id": "ashoka-inscriptions",
+      "name": "Ashoka’s rock and pillar inscriptions",
+      "type": "period"
+    },
+    {
+      "id": "seleucus",
+      "name": "Seleucus I Nicator",
+      "type": "person"
+    },
+    {
+      "id": "seleucid-mauryan-settlement",
+      "name": "Chandragupta and Seleucus make peace",
+      "type": "period"
+    },
+    {
+      "id": "pataliputra",
+      "name": "Pataliputra under the Mauryas",
+      "type": "city"
+    },
+    {
+      "id": "lumbini",
+      "name": "Lumbini",
+      "type": "area"
+    },
+    {
+      "id": "ashoka-lumbini",
+      "name": "Ashoka’s visit to Lumbini",
+      "type": "event"
+    },
+    {
+      "id": "taxila",
+      "name": "Taxila",
+      "type": "city"
+    },
+    {
+      "id": "alexander-taxila",
+      "name": "Alexander enters Taxila",
+      "type": "event"
+    }
+  ],
+  "sources": [
+    {
+      "id": "maurya-era-met",
+      "title": "Mauryan Empire (ca. 323–185 B.C.)",
+      "url": "https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c",
+      "creator": "The Metropolitan Museum of Art, Department of Asian Art",
+      "locatorHint": "Main essay, paragraphs on the dynasty, capital and Ashoka",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "maurya-era-maurya",
+      "title": "Maurya",
+      "url": "https://www.livius.org/articles/dynasty/maurya/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "Chandragupta, Bindusara and Ashoka sections; decline section not used",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "maurya-era-seleucus",
+      "title": "Seleucus I Nicator",
+      "url": "https://www.livius.org/articles/person/seleucus-i-nicator/",
+      "creator": "Jona Lendering / Livius",
+      "locatorHint": "Main deeds: birth, service under Alexander, Egypt, treaty and death",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "maurya-era-ucl",
+      "title": "Chandragupta Maurya: The creation of a national hero in India",
+      "url": "https://uclpress.co.uk/book/chandragupta-maurya/",
+      "creator": "Sushma Jansari / UCL Press",
+      "locatorHint": "Publisher synopsis: meeting c.305–303 BCE, peace-making and uncertain military outcome",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "maurya-era-lumbini",
+      "title": "Lumbini, the Birthplace of the Lord Buddha",
+      "url": "https://whc.unesco.org/en/list/666/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Brief synthesis and geographical coordinates; Buddha birth date not adopted",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "maurya-era-taxila",
+      "title": "Taxila",
+      "url": "https://whc.unesco.org/en/list/139/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Brief synthesis: historic settlements, Bhir and Alexander in 326 BCE",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "maurya-era-taxila-map",
+      "title": "Taxila: geographical data",
+      "url": "https://whc.unesco.org/en/list/0139/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Component 139-003 Bhir Mound, N33 44 38.2 E72 49 9.59",
+      "accessed": "2026-11-22",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    }
+  ],
+  "claims": [
+    {
+      "id": "maurya-era-maurya-history",
+      "subjectId": "maurya",
+      "predicate": "historical-context",
+      "statement": "The Mauryan dynasty brought much of the Indian subcontinent under one ruling house. Chandragupta founded it, followed by Bindusara and Ashoka. Its capital was Pataliputra. The connections here follow the rulers, their dealings with Alexander’s successors and the surviving evidence of Ashoka’s reign.",
+      "value": {
+        "type": "text",
+        "text": "The Mauryan dynasty brought much of the Indian subcontinent under one ruling house. Chandragupta founded it, followed by Bindusara and Ashoka. Its capital was Pataliputra. The connections here follow the rulers, their dealings with Alexander’s successors and the surviving evidence of Ashoka’s reign."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -321,
+          "latest": -321,
+          "original": "321 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -185,
+          "latest": -185,
+          "original": "185 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-maurya-history-met"
+      ],
+      "reviewId": "maurya-era-maurya-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-maurya-chronology",
+      "subjectId": "maurya",
+      "predicate": "historical-context",
+      "statement": "The Mauryan Empire: 321 BCE to 185 BCE. Approximate dynastic chronology follows the Met’s main text, 321–185 BCE; its heading uses 323. No fixed territorial border is implied.",
+      "value": {
+        "type": "text",
+        "text": "The Mauryan Empire: 321 BCE to 185 BCE. Approximate dynastic chronology follows the Met’s main text, 321–185 BCE; its heading uses 323. No fixed territorial border is implied."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -321,
+          "latest": -321,
+          "original": "321 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -185,
+          "latest": -185,
+          "original": "185 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-maurya-chronology-met"
+      ],
+      "reviewId": "maurya-era-maurya-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-chandragupta-reign-history",
+      "subjectId": "chandragupta-reign",
+      "predicate": "historical-context",
+      "statement": "Chandragupta took power in Magadha and established the Mauryan dynasty. His expansion connected the Ganges valley with the north-west, where Alexander’s successors were competing for control. He reached a settlement with Seleucus. Bindusara succeeded him; the date of that succession is approximate.",
+      "value": {
+        "type": "text",
+        "text": "Chandragupta took power in Magadha and established the Mauryan dynasty. His expansion connected the Ganges valley with the north-west, where Alexander’s successors were competing for control. He reached a settlement with Seleucus. Bindusara succeeded him; the date of that succession is approximate."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -321,
+          "latest": -321,
+          "original": "321 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -297,
+          "latest": -297,
+          "original": "297 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-chandragupta-reign-history-maurya",
+        "maurya-era-chandragupta-reign-history-ucl"
+      ],
+      "reviewId": "maurya-era-chandragupta-reign-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-chandragupta-reign-chronology",
+      "subjectId": "chandragupta-reign",
+      "predicate": "historical-context",
+      "statement": "Chandragupta Maurya’s reign: 321 BCE to 297 BCE. Reign, not lifespan. Uses Livius’s conventional 321–c.297 BCE chronology. Early Mauryan chronology is debated.",
+      "value": {
+        "type": "text",
+        "text": "Chandragupta Maurya’s reign: 321 BCE to 297 BCE. Reign, not lifespan. Uses Livius’s conventional 321–c.297 BCE chronology. Early Mauryan chronology is debated."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -321,
+          "latest": -321,
+          "original": "321 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -297,
+          "latest": -297,
+          "original": "297 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-chandragupta-reign-chronology-maurya",
+        "maurya-era-chandragupta-reign-chronology-ucl"
+      ],
+      "reviewId": "maurya-era-chandragupta-reign-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-bindusara-reign-history",
+      "subjectId": "bindusara-reign",
+      "predicate": "historical-context",
+      "statement": "Bindusara succeeded his father Chandragupta and was followed by his son Ashoka. His reign sits between two better documented rulers. Accounts attribute expansion in central India to him, but some assign the same conquests to Ashoka. The division is uncertain.",
+      "value": {
+        "type": "text",
+        "text": "Bindusara succeeded his father Chandragupta and was followed by his son Ashoka. His reign sits between two better documented rulers. Accounts attribute expansion in central India to him, but some assign the same conquests to Ashoka. The division is uncertain."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -297,
+          "latest": -297,
+          "original": "297 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -272,
+          "latest": -272,
+          "original": "272 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-bindusara-reign-history-maurya"
+      ],
+      "reviewId": "maurya-era-bindusara-reign-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-bindusara-reign-chronology",
+      "subjectId": "bindusara-reign",
+      "predicate": "historical-context",
+      "statement": "Bindusara’s reign: 297 BCE to 272 BCE. Approximate reign, not lifespan, following Livius. Other chronologies place the succession to Ashoka differently.",
+      "value": {
+        "type": "text",
+        "text": "Bindusara’s reign: 297 BCE to 272 BCE. Approximate reign, not lifespan, following Livius. Other chronologies place the succession to Ashoka differently."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -297,
+          "latest": -297,
+          "original": "297 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -272,
+          "latest": -272,
+          "original": "272 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-bindusara-reign-chronology-maurya"
+      ],
+      "reviewId": "maurya-era-bindusara-reign-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-ashoka-rule-history",
+      "subjectId": "ashoka-rule",
+      "predicate": "historical-context",
+      "statement": "Ashoka was the third Mauryan emperor. He supported Buddhism and had inscriptions placed across his empire. These surviving texts make his rule unusually visible. They let us compare what a king said about government and conduct with the monuments and places connected to his reign.",
+      "value": {
+        "type": "text",
+        "text": "Ashoka was the third Mauryan emperor. He supported Buddhism and had inscriptions placed across his empire. These surviving texts make his rule unusually visible. They let us compare what a king said about government and conduct with the monuments and places connected to his reign."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -273,
+          "latest": -273,
+          "original": "273 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -232,
+          "latest": -232,
+          "original": "232 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-ashoka-rule-history-met",
+        "maurya-era-ashoka-rule-history-maurya"
+      ],
+      "reviewId": "maurya-era-ashoka-rule-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-ashoka-rule-chronology",
+      "subjectId": "ashoka-rule",
+      "predicate": "historical-context",
+      "statement": "Ashoka’s reign: 273 BCE to 232 BCE. Reign, not lifespan. The Met uses c.273–232 BCE; Livius gives accession in 272. Accession and coronation chronologies differ. No birth date is inferred.",
+      "value": {
+        "type": "text",
+        "text": "Ashoka’s reign: 273 BCE to 232 BCE. Reign, not lifespan. The Met uses c.273–232 BCE; Livius gives accession in 272. Accession and coronation chronologies differ. No birth date is inferred."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -273,
+          "latest": -273,
+          "original": "273 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -232,
+          "latest": -232,
+          "original": "232 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-ashoka-rule-chronology-met",
+        "maurya-era-ashoka-rule-chronology-maurya"
+      ],
+      "reviewId": "maurya-era-ashoka-rule-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-ashoka-inscriptions-history",
+      "subjectId": "ashoka-inscriptions",
+      "predicate": "historical-context",
+      "statement": "Ashoka used inscriptions on rock and polished stone pillars to communicate beyond his court. They recorded royal instructions and ideas about conduct. The surviving inscriptions are evidence of particular statements in particular places, rather than proof that every subject lived by the same rules.",
+      "value": {
+        "type": "text",
+        "text": "Ashoka used inscriptions on rock and polished stone pillars to communicate beyond his court. They recorded royal instructions and ideas about conduct. The surviving inscriptions are evidence of particular statements in particular places, rather than proof that every subject lived by the same rules."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -254,
+          "latest": -254,
+          "original": "254 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -232,
+          "latest": -232,
+          "original": "232 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-ashoka-inscriptions-history-met"
+      ],
+      "reviewId": "maurya-era-ashoka-inscriptions-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-ashoka-inscriptions-chronology",
+      "subjectId": "ashoka-inscriptions",
+      "predicate": "historical-context",
+      "statement": "Ashoka’s rock and pillar inscriptions: 254 BCE to 232 BCE. Editorial window from the Met’s starting date of 254 BCE to the end of Ashoka’s reign. Not a continuous carving programme or the date of every edict.",
+      "value": {
+        "type": "text",
+        "text": "Ashoka’s rock and pillar inscriptions: 254 BCE to 232 BCE. Editorial window from the Met’s starting date of 254 BCE to the end of Ashoka’s reign. Not a continuous carving programme or the date of every edict."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -254,
+          "latest": -254,
+          "original": "254 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -232,
+          "latest": -232,
+          "original": "232 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-ashoka-inscriptions-chronology-met"
+      ],
+      "reviewId": "maurya-era-ashoka-inscriptions-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-seleucus-history",
+      "subjectId": "seleucus",
+      "predicate": "historical-context",
+      "statement": "Seleucus served under Alexander and later established a kingdom of his own. He sought refuge with Ptolemy in Egypt before recovering power in Babylonia. His settlement with Chandragupta connects the struggles among Alexander’s successors with the rise of the Mauryan state. He was assassinated in 281 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Seleucus served under Alexander and later established a kingdom of his own. He sought refuge with Ptolemy in Egypt before recovering power in Babylonia. His settlement with Chandragupta connects the struggles among Alexander’s successors with the rise of the Mauryan state. He was assassinated in 281 BCE."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -358,
+          "latest": -358,
+          "original": "358 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -281,
+          "latest": -281,
+          "original": "281 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-seleucus-history-seleucus"
+      ],
+      "reviewId": "maurya-era-seleucus-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-seleucus-chronology",
+      "subjectId": "seleucus",
+      "predicate": "historical-context",
+      "statement": "Seleucus I Nicator: 358 BCE to 281 BCE. Approximate birth c.358 BCE; death 281 BCE. Lifespan, not reign. No continuous personal itinerary is inferred.",
+      "value": {
+        "type": "text",
+        "text": "Seleucus I Nicator: 358 BCE to 281 BCE. Approximate birth c.358 BCE; death 281 BCE. Lifespan, not reign. No continuous personal itinerary is inferred."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -358,
+          "latest": -358,
+          "original": "358 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -281,
+          "latest": -281,
+          "original": "281 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-seleucus-chronology-seleucus"
+      ],
+      "reviewId": "maurya-era-seleucus-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-seleucid-mauryan-settlement-history",
+      "subjectId": "seleucid-mauryan-settlement",
+      "predicate": "historical-context",
+      "statement": "Chandragupta and Seleucus reached a settlement after conflict near the Indus. Their agreement connected the Mauryan state with one of the kingdoms formed after Alexander’s death. The early evidence does not clearly establish who won the fighting. Later accounts have turned that uncertainty into very different stories.",
+      "value": {
+        "type": "text",
+        "text": "Chandragupta and Seleucus reached a settlement after conflict near the Indus. Their agreement connected the Mauryan state with one of the kingdoms formed after Alexander’s death. The early evidence does not clearly establish who won the fighting. Later accounts have turned that uncertainty into very different stories."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -305,
+          "latest": -305,
+          "original": "305 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -303,
+          "latest": -303,
+          "original": "303 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-seleucid-mauryan-settlement-history-ucl"
+      ],
+      "reviewId": "maurya-era-seleucid-mauryan-settlement-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-seleucid-mauryan-settlement-chronology",
+      "subjectId": "seleucid-mauryan-settlement",
+      "predicate": "historical-context",
+      "statement": "Chandragupta and Seleucus make peace: 305 BCE to 303 BCE. One episode within approximately 305–303 BCE, following Jansari’s publisher synopsis. This range does not establish three years of uninterrupted warfare or a precise treaty date.",
+      "value": {
+        "type": "text",
+        "text": "Chandragupta and Seleucus make peace: 305 BCE to 303 BCE. One episode within approximately 305–303 BCE, following Jansari’s publisher synopsis. This range does not establish three years of uninterrupted warfare or a precise treaty date."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -305,
+          "latest": -305,
+          "original": "305 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -303,
+          "latest": -303,
+          "original": "303 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-seleucid-mauryan-settlement-chronology-ucl"
+      ],
+      "reviewId": "maurya-era-seleucid-mauryan-settlement-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-pataliputra-history",
+      "subjectId": "pataliputra",
+      "predicate": "historical-context",
+      "statement": "Pataliputra was the Mauryan capital. The Greek envoy Megasthenes described a city defended by a timber wall, gates and towers. That account gives us a view of the capital through a visitor’s writing. It should not be treated as a complete description of everyday life there.",
+      "value": {
+        "type": "text",
+        "text": "Pataliputra was the Mauryan capital. The Greek envoy Megasthenes described a city defended by a timber wall, gates and towers. That account gives us a view of the capital through a visitor’s writing. It should not be treated as a complete description of everyday life there."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -321,
+          "latest": -321,
+          "original": "321 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -185,
+          "latest": -185,
+          "original": "185 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-pataliputra-history-met"
+      ],
+      "reviewId": "maurya-era-pataliputra-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-pataliputra-chronology",
+      "subjectId": "pataliputra",
+      "predicate": "historical-context",
+      "statement": "Pataliputra under the Mauryas: 321 BCE to 185 BCE. Editorial window follows the dynasty, not the foundation or end of the city. Megasthenes’ description is literary testimony. A precise map reference has not yet been checked.",
+      "value": {
+        "type": "text",
+        "text": "Pataliputra under the Mauryas: 321 BCE to 185 BCE. Editorial window follows the dynasty, not the foundation or end of the city. Megasthenes’ description is literary testimony. A precise map reference has not yet been checked."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -321,
+          "latest": -321,
+          "original": "321 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -185,
+          "latest": -185,
+          "original": "185 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-pataliputra-chronology-met"
+      ],
+      "reviewId": "maurya-era-pataliputra-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-lumbini-history",
+      "subjectId": "lumbini",
+      "predicate": "historical-context",
+      "statement": "Lumbini is a Buddhist pilgrimage site in what is now southern Nepal. Its archaeological remains include Ashoka’s inscribed pillar and structures dating back to the third century BCE. The pillar connects the place to a recorded royal visit, alongside the longer history of worship at the site.",
+      "value": {
+        "type": "text",
+        "text": "Lumbini is a Buddhist pilgrimage site in what is now southern Nepal. Its archaeological remains include Ashoka’s inscribed pillar and structures dating back to the third century BCE. The pillar connects the place to a recorded royal visit, alongside the longer history of worship at the site."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -201,
+          "latest": -201,
+          "original": "201 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-lumbini-history-lumbini"
+      ],
+      "reviewId": "maurya-era-lumbini-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-lumbini-chronology",
+      "subjectId": "lumbini",
+      "predicate": "historical-context",
+      "statement": "Lumbini: 300 BCE to 201 BCE. Third-century BCE study window, not the lifespan of the site. UNESCO’s traditional date for the Buddha’s birth is not used here. The point is the World Heritage property reference.",
+      "value": {
+        "type": "text",
+        "text": "Lumbini: 300 BCE to 201 BCE. Third-century BCE study window, not the lifespan of the site. UNESCO’s traditional date for the Buddha’s birth is not used here. The point is the World Heritage property reference."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -201,
+          "latest": -201,
+          "original": "201 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-lumbini-chronology-lumbini"
+      ],
+      "reviewId": "maurya-era-lumbini-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-ashoka-lumbini-history",
+      "subjectId": "ashoka-lumbini",
+      "predicate": "historical-context",
+      "statement": "Ashoka visited Lumbini and erected an inscribed pillar there. UNESCO dates the pillar to 249 BCE. This is a dated connection between a ruler and a place, rather than a general assumption that he visited every site associated with his dynasty.",
+      "value": {
+        "type": "text",
+        "text": "Ashoka visited Lumbini and erected an inscribed pillar there. UNESCO dates the pillar to 249 BCE. This is a dated connection between a ruler and a place, rather than a general assumption that he visited every site associated with his dynasty."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -249,
+          "latest": -249,
+          "original": "249 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -249,
+          "latest": -249,
+          "original": "249 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-ashoka-lumbini-history-lumbini"
+      ],
+      "reviewId": "maurya-era-ashoka-lumbini-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-ashoka-lumbini-chronology",
+      "subjectId": "ashoka-lumbini",
+      "predicate": "historical-context",
+      "statement": "Ashoka’s visit to Lumbini: 249 BCE to 249 BCE. Year follows UNESCO. The map uses the property reference, not a reconstructed route.",
+      "value": {
+        "type": "text",
+        "text": "Ashoka’s visit to Lumbini: 249 BCE to 249 BCE. Year follows UNESCO. The map uses the property reference, not a reconstructed route."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -249,
+          "latest": -249,
+          "original": "249 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -249,
+          "latest": -249,
+          "original": "249 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-ashoka-lumbini-chronology-lumbini"
+      ],
+      "reviewId": "maurya-era-ashoka-lumbini-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-taxila-history",
+      "subjectId": "taxila",
+      "predicate": "historical-context",
+      "statement": "Taxila preserves several successive settlements. The Bhir mound contains the remains of an early historic town; Sirkap and Sirsukh belong to later phases. Its position brought it into contact with Persia, the Greek world and Central Asia. Buddhist monasteries and monuments were part of its changing urban landscape.",
+      "value": {
+        "type": "text",
+        "text": "Taxila preserves several successive settlements. The Bhir mound contains the remains of an early historic town; Sirkap and Sirsukh belong to later phases. Its position brought it into contact with Persia, the Greek world and Central Asia. Buddhist monasteries and monuments were part of its changing urban landscape."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-taxila-history-taxila"
+      ],
+      "reviewId": "maurya-era-taxila-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-taxila-chronology",
+      "subjectId": "taxila",
+      "predicate": "historical-context",
+      "statement": "Taxila: 500 BCE to 200 CE. 500 BCE–200 CE is an editorial window within a much longer history. The point marks Bhir Mound, one component of the UNESCO property, not all Taxila or a political border.",
+      "value": {
+        "type": "text",
+        "text": "Taxila: 500 BCE to 200 CE. 500 BCE–200 CE is an editorial window within a much longer history. The point marks Bhir Mound, one component of the UNESCO property, not all Taxila or a political border."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-taxila-chronology-taxila"
+      ],
+      "reviewId": "maurya-era-taxila-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-alexander-taxila-history",
+      "subjectId": "alexander-taxila",
+      "predicate": "historical-context",
+      "statement": "Alexander entered Taxila in 326 BCE. UNESCO associates this episode with the Bhir mound, the earliest historic settlement in the archaeological complex. The city’s history extends beyond that encounter. Its other entries and connections put the campaign alongside the region’s urban and religious history.",
+      "value": {
+        "type": "text",
+        "text": "Alexander entered Taxila in 326 BCE. UNESCO associates this episode with the Bhir mound, the earliest historic settlement in the archaeological complex. The city’s history extends beyond that encounter. Its other entries and connections put the campaign alongside the region’s urban and religious history."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -326,
+          "latest": -326,
+          "original": "326 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -326,
+          "latest": -326,
+          "original": "326 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-alexander-taxila-history-taxila"
+      ],
+      "reviewId": "maurya-era-alexander-taxila-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-alexander-taxila-chronology",
+      "subjectId": "alexander-taxila",
+      "predicate": "historical-context",
+      "statement": "Alexander enters Taxila: 326 BCE to 326 BCE. Year follows UNESCO. The point is the Bhir Mound site reference, not an exact camp or route.",
+      "value": {
+        "type": "text",
+        "text": "Alexander enters Taxila: 326 BCE to 326 BCE. Year follows UNESCO. The point is the Bhir Mound site reference, not an exact camp or route."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -326,
+          "latest": -326,
+          "original": "326 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -326,
+          "latest": -326,
+          "original": "326 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-alexander-taxila-chronology-taxila"
+      ],
+      "reviewId": "maurya-era-alexander-taxila-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-lumbini-point",
+      "subjectId": "lumbini",
+      "predicate": "geographic-reference",
+      "statement": "UNESCO Lumbini property reference",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          83.27611,
+          27.46889
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -300,
+          "latest": -300,
+          "original": "300 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -201,
+          "latest": -201,
+          "original": "201 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-lumbini-point-lumbini"
+      ],
+      "reviewId": "maurya-era-lumbini-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-ashoka-lumbini-point",
+      "subjectId": "ashoka-lumbini",
+      "predicate": "geographic-reference",
+      "statement": "Lumbini property reference for the recorded visit",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          83.27611,
+          27.46889
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -249,
+          "latest": -249,
+          "original": "249 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -249,
+          "latest": -249,
+          "original": "249 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-ashoka-lumbini-point-lumbini"
+      ],
+      "reviewId": "maurya-era-ashoka-lumbini-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-taxila-point",
+      "subjectId": "taxila",
+      "predicate": "geographic-reference",
+      "statement": "Bhir Mound reference within Taxila",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          72.81933055555555,
+          33.743944444444445
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "500 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 200,
+          "latest": 200,
+          "original": "200 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-taxila-point-taxila-map"
+      ],
+      "reviewId": "maurya-era-taxila-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "maurya-era-alexander-taxila-point",
+      "subjectId": "alexander-taxila",
+      "predicate": "geographic-reference",
+      "statement": "Bhir Mound reference for Alexander’s entry",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          72.81933055555555,
+          33.743944444444445
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -326,
+          "latest": -326,
+          "original": "326 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -326,
+          "latest": -326,
+          "original": "326 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "maurya-era-alexander-taxila-point-taxila-map"
+      ],
+      "reviewId": "maurya-era-alexander-taxila-point-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "maurya-era-maurya-history-met",
+      "claimId": "maurya-era-maurya-history",
+      "sourceId": "maurya-era-met",
+      "locator": "Main essay, paragraphs on the dynasty, capital and Ashoka",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-maurya-history-review"
+    },
+    {
+      "id": "maurya-era-maurya-chronology-met",
+      "claimId": "maurya-era-maurya-chronology",
+      "sourceId": "maurya-era-met",
+      "locator": "Main essay, paragraphs on the dynasty, capital and Ashoka",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-maurya-chronology-review"
+    },
+    {
+      "id": "maurya-era-chandragupta-reign-history-maurya",
+      "claimId": "maurya-era-chandragupta-reign-history",
+      "sourceId": "maurya-era-maurya",
+      "locator": "Chandragupta, Bindusara and Ashoka sections; decline section not used",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-chandragupta-reign-history-review"
+    },
+    {
+      "id": "maurya-era-chandragupta-reign-history-ucl",
+      "claimId": "maurya-era-chandragupta-reign-history",
+      "sourceId": "maurya-era-ucl",
+      "locator": "Publisher synopsis: meeting c.305–303 BCE, peace-making and uncertain military outcome",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-chandragupta-reign-history-review"
+    },
+    {
+      "id": "maurya-era-chandragupta-reign-chronology-maurya",
+      "claimId": "maurya-era-chandragupta-reign-chronology",
+      "sourceId": "maurya-era-maurya",
+      "locator": "Chandragupta, Bindusara and Ashoka sections; decline section not used",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-chandragupta-reign-chronology-review"
+    },
+    {
+      "id": "maurya-era-chandragupta-reign-chronology-ucl",
+      "claimId": "maurya-era-chandragupta-reign-chronology",
+      "sourceId": "maurya-era-ucl",
+      "locator": "Publisher synopsis: meeting c.305–303 BCE, peace-making and uncertain military outcome",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-chandragupta-reign-chronology-review"
+    },
+    {
+      "id": "maurya-era-bindusara-reign-history-maurya",
+      "claimId": "maurya-era-bindusara-reign-history",
+      "sourceId": "maurya-era-maurya",
+      "locator": "Chandragupta, Bindusara and Ashoka sections; decline section not used",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-bindusara-reign-history-review"
+    },
+    {
+      "id": "maurya-era-bindusara-reign-chronology-maurya",
+      "claimId": "maurya-era-bindusara-reign-chronology",
+      "sourceId": "maurya-era-maurya",
+      "locator": "Chandragupta, Bindusara and Ashoka sections; decline section not used",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-bindusara-reign-chronology-review"
+    },
+    {
+      "id": "maurya-era-ashoka-rule-history-met",
+      "claimId": "maurya-era-ashoka-rule-history",
+      "sourceId": "maurya-era-met",
+      "locator": "Main essay, paragraphs on the dynasty, capital and Ashoka",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-ashoka-rule-history-review"
+    },
+    {
+      "id": "maurya-era-ashoka-rule-history-maurya",
+      "claimId": "maurya-era-ashoka-rule-history",
+      "sourceId": "maurya-era-maurya",
+      "locator": "Chandragupta, Bindusara and Ashoka sections; decline section not used",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-ashoka-rule-history-review"
+    },
+    {
+      "id": "maurya-era-ashoka-rule-chronology-met",
+      "claimId": "maurya-era-ashoka-rule-chronology",
+      "sourceId": "maurya-era-met",
+      "locator": "Main essay, paragraphs on the dynasty, capital and Ashoka",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-ashoka-rule-chronology-review"
+    },
+    {
+      "id": "maurya-era-ashoka-rule-chronology-maurya",
+      "claimId": "maurya-era-ashoka-rule-chronology",
+      "sourceId": "maurya-era-maurya",
+      "locator": "Chandragupta, Bindusara and Ashoka sections; decline section not used",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-ashoka-rule-chronology-review"
+    },
+    {
+      "id": "maurya-era-ashoka-inscriptions-history-met",
+      "claimId": "maurya-era-ashoka-inscriptions-history",
+      "sourceId": "maurya-era-met",
+      "locator": "Main essay, paragraphs on the dynasty, capital and Ashoka",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-ashoka-inscriptions-history-review"
+    },
+    {
+      "id": "maurya-era-ashoka-inscriptions-chronology-met",
+      "claimId": "maurya-era-ashoka-inscriptions-chronology",
+      "sourceId": "maurya-era-met",
+      "locator": "Main essay, paragraphs on the dynasty, capital and Ashoka",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-ashoka-inscriptions-chronology-review"
+    },
+    {
+      "id": "maurya-era-seleucus-history-seleucus",
+      "claimId": "maurya-era-seleucus-history",
+      "sourceId": "maurya-era-seleucus",
+      "locator": "Main deeds: birth, service under Alexander, Egypt, treaty and death",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-seleucus-history-review"
+    },
+    {
+      "id": "maurya-era-seleucus-chronology-seleucus",
+      "claimId": "maurya-era-seleucus-chronology",
+      "sourceId": "maurya-era-seleucus",
+      "locator": "Main deeds: birth, service under Alexander, Egypt, treaty and death",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-seleucus-chronology-review"
+    },
+    {
+      "id": "maurya-era-seleucid-mauryan-settlement-history-ucl",
+      "claimId": "maurya-era-seleucid-mauryan-settlement-history",
+      "sourceId": "maurya-era-ucl",
+      "locator": "Publisher synopsis: meeting c.305–303 BCE, peace-making and uncertain military outcome",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-seleucid-mauryan-settlement-history-review"
+    },
+    {
+      "id": "maurya-era-seleucid-mauryan-settlement-chronology-ucl",
+      "claimId": "maurya-era-seleucid-mauryan-settlement-chronology",
+      "sourceId": "maurya-era-ucl",
+      "locator": "Publisher synopsis: meeting c.305–303 BCE, peace-making and uncertain military outcome",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-seleucid-mauryan-settlement-chronology-review"
+    },
+    {
+      "id": "maurya-era-pataliputra-history-met",
+      "claimId": "maurya-era-pataliputra-history",
+      "sourceId": "maurya-era-met",
+      "locator": "Main essay, paragraphs on the dynasty, capital and Ashoka",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-pataliputra-history-review"
+    },
+    {
+      "id": "maurya-era-pataliputra-chronology-met",
+      "claimId": "maurya-era-pataliputra-chronology",
+      "sourceId": "maurya-era-met",
+      "locator": "Main essay, paragraphs on the dynasty, capital and Ashoka",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-pataliputra-chronology-review"
+    },
+    {
+      "id": "maurya-era-lumbini-history-lumbini",
+      "claimId": "maurya-era-lumbini-history",
+      "sourceId": "maurya-era-lumbini",
+      "locator": "Brief synthesis and geographical coordinates; Buddha birth date not adopted",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-lumbini-history-review"
+    },
+    {
+      "id": "maurya-era-lumbini-chronology-lumbini",
+      "claimId": "maurya-era-lumbini-chronology",
+      "sourceId": "maurya-era-lumbini",
+      "locator": "Brief synthesis and geographical coordinates; Buddha birth date not adopted",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-lumbini-chronology-review"
+    },
+    {
+      "id": "maurya-era-ashoka-lumbini-history-lumbini",
+      "claimId": "maurya-era-ashoka-lumbini-history",
+      "sourceId": "maurya-era-lumbini",
+      "locator": "Brief synthesis and geographical coordinates; Buddha birth date not adopted",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-ashoka-lumbini-history-review"
+    },
+    {
+      "id": "maurya-era-ashoka-lumbini-chronology-lumbini",
+      "claimId": "maurya-era-ashoka-lumbini-chronology",
+      "sourceId": "maurya-era-lumbini",
+      "locator": "Brief synthesis and geographical coordinates; Buddha birth date not adopted",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-ashoka-lumbini-chronology-review"
+    },
+    {
+      "id": "maurya-era-taxila-history-taxila",
+      "claimId": "maurya-era-taxila-history",
+      "sourceId": "maurya-era-taxila",
+      "locator": "Brief synthesis: historic settlements, Bhir and Alexander in 326 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-taxila-history-review"
+    },
+    {
+      "id": "maurya-era-taxila-chronology-taxila",
+      "claimId": "maurya-era-taxila-chronology",
+      "sourceId": "maurya-era-taxila",
+      "locator": "Brief synthesis: historic settlements, Bhir and Alexander in 326 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-taxila-chronology-review"
+    },
+    {
+      "id": "maurya-era-alexander-taxila-history-taxila",
+      "claimId": "maurya-era-alexander-taxila-history",
+      "sourceId": "maurya-era-taxila",
+      "locator": "Brief synthesis: historic settlements, Bhir and Alexander in 326 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-alexander-taxila-history-review"
+    },
+    {
+      "id": "maurya-era-alexander-taxila-chronology-taxila",
+      "claimId": "maurya-era-alexander-taxila-chronology",
+      "sourceId": "maurya-era-taxila",
+      "locator": "Brief synthesis: historic settlements, Bhir and Alexander in 326 BCE",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-alexander-taxila-chronology-review"
+    },
+    {
+      "id": "maurya-era-lumbini-point-lumbini",
+      "claimId": "maurya-era-lumbini-point",
+      "sourceId": "maurya-era-lumbini",
+      "locator": "Brief synthesis and geographical coordinates; Buddha birth date not adopted",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-lumbini-point-review"
+    },
+    {
+      "id": "maurya-era-ashoka-lumbini-point-lumbini",
+      "claimId": "maurya-era-ashoka-lumbini-point",
+      "sourceId": "maurya-era-lumbini",
+      "locator": "Brief synthesis and geographical coordinates; Buddha birth date not adopted",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-ashoka-lumbini-point-review"
+    },
+    {
+      "id": "maurya-era-taxila-point-taxila-map",
+      "claimId": "maurya-era-taxila-point",
+      "sourceId": "maurya-era-taxila-map",
+      "locator": "Component 139-003 Bhir Mound, N33 44 38.2 E72 49 9.59",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-taxila-point-review"
+    },
+    {
+      "id": "maurya-era-alexander-taxila-point-taxila-map",
+      "claimId": "maurya-era-alexander-taxila-point",
+      "sourceId": "maurya-era-taxila-map",
+      "locator": "Component 139-003 Bhir Mound, N33 44 38.2 E72 49 9.59",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "maurya-era-alexander-taxila-point-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "maurya-era-maurya-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-maurya-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-chandragupta-reign-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-chandragupta-reign-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-bindusara-reign-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-bindusara-reign-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-ashoka-rule-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-ashoka-rule-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-ashoka-inscriptions-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-ashoka-inscriptions-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-seleucus-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-seleucus-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-seleucid-mauryan-settlement-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-seleucid-mauryan-settlement-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-pataliputra-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-pataliputra-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-lumbini-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-lumbini-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-ashoka-lumbini-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-ashoka-lumbini-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-taxila-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-taxila-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-alexander-taxila-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-alexander-taxila-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-lumbini-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-ashoka-lumbini-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-taxila-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "maurya-era-alexander-taxila-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-22",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    }
+  ],
+  "accounts": []
+}

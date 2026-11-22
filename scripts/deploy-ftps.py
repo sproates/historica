@@ -1,4 +1,5 @@
 """Manual, manifest-only upload confined to historica.online. Password stays in memory."""
+from deploy_plan import unchanged_paths
 import concurrent.futures
 import ftplib
 import getpass
@@ -64,9 +65,20 @@ try:
     backup = Path('release/backups')/datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     backup.mkdir(parents=True)
     record={'host':HOST,'remoteRoot':ROOT,'files':files,'previouslyAbsent':[],'uploaded':[],'verified':[],'unchanged':[]}
-    # Complete all backups before any remote write.
+    # Compare the completed release manifest once, rather than retrieving every asset.
+    if 'release-manifest.json' in top:
+        assert top['release-manifest.json'].get('type')=='file'
+        previous_bytes=io.BytesIO();ftp.retrbinary('RETR '+remote('release-manifest.json'),previous_bytes.write)
+        unchanged=unchanged_paths(files,json.loads(previous_bytes.getvalue()))
+        for name in unchanged:
+            p=PurePosixPath(name)
+            if listings[str(p.parent)].get(p.name,{}).get('type')=='file': record['unchanged'].append(name)
+        if previous_bytes.getvalue()==(local/'release-manifest.json').read_bytes():record['unchanged'].append('release-manifest.json')
+    print(f"Release delta: {len(files)-len(record['unchanged'])} changed or new files; {len(record['unchanged'])} unchanged.",flush=True)
+    # Complete replacement backups before any remote write.
     for row in files:
         name=row['path']; p=PurePosixPath(name)
+        if name in record['unchanged']:continue
         existing=listings[str(p.parent)].get(p.name)
         if existing:
             assert existing.get('type')=='file', 'Refusing non-regular existing file'
@@ -79,7 +91,7 @@ try:
     (backup/'deployment.json').write_text(json.dumps(record,indent=2))
     print('Backups complete: '+str(backup),flush=True)
     for directory in missing_dirs: ftp.mkd(remote(directory))
-    ordered=sorted(files,key=lambda r:(r['path']=='index.html',r['path']=='.htaccess',r['path'].endswith('.html'),r['path']))
+    ordered=sorted(files,key=lambda r:(r['path']=='release-manifest.json',r['path']=='index.html',r['path']=='.htaccess',r['path'].endswith('.html'),r['path']))
     def upload(connection, row):
         name=row['path']
         with (local/name).open('rb') as source: connection.storbinary('STOR '+remote(name),source)

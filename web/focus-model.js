@@ -40,7 +40,8 @@ export function buildFocusData(collection,exploration={entities:[],associations:
  {a:'ptolemy',b:'ptolemy-rule',label:'His rule in Egypt',startYear:-323,endYear:-283}
  ];
  expandWorld({entities,associations,relationships});
- entities.push(...exploration.entities);associations.push(...exploration.associations);relationships.push(...exploration.relationships);
+ for(const entry of exploration.entities){const index=entities.findIndex(e=>e.id===entry.id);if(index<0)entities.push(entry);else entities[index]=entry;}
+ associations.push(...exploration.associations);relationships.push(...exploration.relationships);
  return {entities,associations,relationships,collection};
 }
 export function initialFocus(data,id='alexander'){const e=data.entities.find(e=>e.id===id)??data.entities.find(e=>e.id==='alexander')??data.entities[0];return {focus:e.id,start:e.startYear,end:e.endYear,kind:'all',area:'all'};}

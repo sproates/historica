@@ -1,0 +1,529 @@
+{
+  "entities": [
+    {
+      "id": "maurya",
+      "type": "state",
+      "title": "The Mauryan Empire",
+      "startYear": -321,
+      "endYear": -185,
+      "description": "The Mauryan dynasty brought much of the Indian subcontinent under one ruling house. Chandragupta founded it, followed by Bindusara and Ashoka.\n\nIts capital was Pataliputra. The connections here follow the rulers, their dealings with Alexander’s successors and the surviving evidence of Ashoka’s reign.",
+      "note": "Approximate dynastic chronology follows the Met’s main text, 321–185 BCE; its heading uses 323. No fixed territorial border is implied.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-maurya-history",
+        "maurya-era-maurya-chronology"
+      ],
+      "dateLabel": "Approximate dynastic period",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "chandragupta-reign",
+      "type": "period",
+      "title": "Chandragupta Maurya’s reign",
+      "startYear": -321,
+      "endYear": -297,
+      "description": "Chandragupta took power in Magadha and established the Mauryan dynasty. His expansion connected the Ganges valley with the north-west, where Alexander’s successors were competing for control.\n\nHe reached a settlement with Seleucus. Bindusara succeeded him; the date of that succession is approximate.",
+      "note": "Reign, not lifespan. Uses Livius’s conventional 321–c.297 BCE chronology. Early Mauryan chronology is debated.",
+      "point": null,
+      "url": "https://www.livius.org/articles/dynasty/maurya/",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-chandragupta-reign-history",
+        "maurya-era-chandragupta-reign-chronology"
+      ],
+      "dateLabel": "Approximate reign",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "bindusara-reign",
+      "type": "period",
+      "title": "Bindusara’s reign",
+      "startYear": -297,
+      "endYear": -272,
+      "description": "Bindusara succeeded his father Chandragupta and was followed by his son Ashoka. His reign sits between two better documented rulers.\n\nAccounts attribute expansion in central India to him, but some assign the same conquests to Ashoka. The division is uncertain.",
+      "note": "Approximate reign, not lifespan, following Livius. Other chronologies place the succession to Ashoka differently.",
+      "point": null,
+      "url": "https://www.livius.org/articles/dynasty/maurya/",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-bindusara-reign-history",
+        "maurya-era-bindusara-reign-chronology"
+      ],
+      "dateLabel": "Approximate reign",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "ashoka-rule",
+      "type": "period",
+      "title": "Ashoka’s reign",
+      "startYear": -273,
+      "endYear": -232,
+      "description": "Ashoka was the third Mauryan emperor. He supported Buddhism and had inscriptions placed across his empire.\n\nThese surviving texts make his rule unusually visible. They let us compare what a king said about government and conduct with the monuments and places connected to his reign.",
+      "note": "Reign, not lifespan. The Met uses c.273–232 BCE; Livius gives accession in 272. Accession and coronation chronologies differ. No birth date is inferred.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-ashoka-rule-history",
+        "maurya-era-ashoka-rule-chronology"
+      ],
+      "dateLabel": "Approximate reign",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "ashoka-inscriptions",
+      "type": "period",
+      "title": "Ashoka’s rock and pillar inscriptions",
+      "startYear": -254,
+      "endYear": -232,
+      "description": "Ashoka used inscriptions on rock and polished stone pillars to communicate beyond his court. They recorded royal instructions and ideas about conduct.\n\nThe surviving inscriptions are evidence of particular statements in particular places, rather than proof that every subject lived by the same rules.",
+      "note": "Editorial window from the Met’s starting date of 254 BCE to the end of Ashoka’s reign. Not a continuous carving programme or the date of every edict.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-ashoka-inscriptions-history",
+        "maurya-era-ashoka-inscriptions-chronology"
+      ],
+      "dateLabel": "Editorial evidence window",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "seleucus",
+      "type": "person",
+      "title": "Seleucus I Nicator",
+      "startYear": -358,
+      "endYear": -281,
+      "description": "Seleucus served under Alexander and later established a kingdom of his own. He sought refuge with Ptolemy in Egypt before recovering power in Babylonia.\n\nHis settlement with Chandragupta connects the struggles among Alexander’s successors with the rise of the Mauryan state. He was assassinated in 281 BCE.",
+      "note": "Approximate birth c.358 BCE; death 281 BCE. Lifespan, not reign. No continuous personal itinerary is inferred.",
+      "point": null,
+      "url": "https://www.livius.org/articles/person/seleucus-i-nicator/",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-seleucus-history",
+        "maurya-era-seleucus-chronology"
+      ],
+      "dateLabel": "Approximate lifespan",
+      "region": "Macedonia and western Asia",
+      "regionIds": []
+    },
+    {
+      "id": "seleucid-mauryan-settlement",
+      "type": "period",
+      "title": "Chandragupta and Seleucus make peace",
+      "startYear": -305,
+      "endYear": -303,
+      "description": "Chandragupta and Seleucus reached a settlement after conflict near the Indus. Their agreement connected the Mauryan state with one of the kingdoms formed after Alexander’s death.\n\nThe early evidence does not clearly establish who won the fighting. Later accounts have turned that uncertainty into very different stories.",
+      "note": "One episode within approximately 305–303 BCE, following Jansari’s publisher synopsis. This range does not establish three years of uninterrupted warfare or a precise treaty date.",
+      "point": null,
+      "url": "https://uclpress.co.uk/book/chandragupta-maurya/",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-seleucid-mauryan-settlement-history",
+        "maurya-era-seleucid-mauryan-settlement-chronology"
+      ],
+      "dateLabel": "Date uncertain within this range",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "pataliputra",
+      "type": "city",
+      "title": "Pataliputra under the Mauryas",
+      "startYear": -321,
+      "endYear": -185,
+      "description": "Pataliputra was the Mauryan capital. The Greek envoy Megasthenes described a city defended by a timber wall, gates and towers.\n\nThat account gives us a view of the capital through a visitor’s writing. It should not be treated as a complete description of everyday life there.",
+      "note": "Editorial window follows the dynasty, not the foundation or end of the city. Megasthenes’ description is literary testimony. A precise map reference has not yet been checked.",
+      "point": null,
+      "url": "https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-pataliputra-history",
+        "maurya-era-pataliputra-chronology"
+      ],
+      "dateLabel": "Mauryan study window",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "lumbini",
+      "type": "area",
+      "title": "Lumbini",
+      "startYear": -300,
+      "endYear": -201,
+      "description": "Lumbini is a Buddhist pilgrimage site in what is now southern Nepal. Its archaeological remains include Ashoka’s inscribed pillar and structures dating back to the third century BCE.\n\nThe pillar connects the place to a recorded royal visit, alongside the longer history of worship at the site.",
+      "note": "Third-century BCE study window, not the lifespan of the site. UNESCO’s traditional date for the Buddha’s birth is not used here. The point is the World Heritage property reference.",
+      "point": [
+        83.27611,
+        27.46889
+      ],
+      "url": "https://whc.unesco.org/en/list/666/",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-lumbini-history",
+        "maurya-era-lumbini-chronology",
+        "maurya-era-lumbini-point"
+      ],
+      "dateLabel": "Editorial study window",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "ashoka-lumbini",
+      "type": "event",
+      "title": "Ashoka’s visit to Lumbini",
+      "startYear": -249,
+      "endYear": -249,
+      "description": "Ashoka visited Lumbini and erected an inscribed pillar there. UNESCO dates the pillar to 249 BCE.\n\nThis is a dated connection between a ruler and a place, rather than a general assumption that he visited every site associated with his dynasty.",
+      "note": "Year follows UNESCO. The map uses the property reference, not a reconstructed route.",
+      "point": [
+        83.27611,
+        27.46889
+      ],
+      "url": "https://whc.unesco.org/en/list/666/",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-ashoka-lumbini-history",
+        "maurya-era-ashoka-lumbini-chronology",
+        "maurya-era-ashoka-lumbini-point"
+      ],
+      "dateLabel": "Source-specific year",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "taxila",
+      "type": "city",
+      "title": "Taxila",
+      "startYear": -500,
+      "endYear": 200,
+      "description": "Taxila preserves several successive settlements. The Bhir mound contains the remains of an early historic town; Sirkap and Sirsukh belong to later phases.\n\nIts position brought it into contact with Persia, the Greek world and Central Asia. Buddhist monasteries and monuments were part of its changing urban landscape.",
+      "note": "500 BCE–200 CE is an editorial window within a much longer history. The point marks Bhir Mound, one component of the UNESCO property, not all Taxila or a political border.",
+      "point": [
+        72.81933055555555,
+        33.743944444444445
+      ],
+      "url": "https://whc.unesco.org/en/list/139/",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-taxila-history",
+        "maurya-era-taxila-chronology",
+        "maurya-era-taxila-point"
+      ],
+      "dateLabel": "Editorial study window",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    },
+    {
+      "id": "alexander-taxila",
+      "type": "event",
+      "title": "Alexander enters Taxila",
+      "startYear": -326,
+      "endYear": -326,
+      "description": "Alexander entered Taxila in 326 BCE. UNESCO associates this episode with the Bhir mound, the earliest historic settlement in the archaeological complex.\n\nThe city’s history extends beyond that encounter. Its other entries and connections put the campaign alongside the region’s urban and religious history.",
+      "note": "Year follows UNESCO. The point is the Bhir Mound site reference, not an exact camp or route.",
+      "point": [
+        72.81933055555555,
+        33.743944444444445
+      ],
+      "url": "https://whc.unesco.org/en/list/139/",
+      "contextual": true,
+      "claimIds": [
+        "maurya-era-alexander-taxila-history",
+        "maurya-era-alexander-taxila-chronology",
+        "maurya-era-alexander-taxila-point"
+      ],
+      "dateLabel": "Year-level event",
+      "region": "South Asia",
+      "regionIds": [
+        "india"
+      ]
+    }
+  ],
+  "associations": [
+    {
+      "subject": "lumbini",
+      "place": "lumbini",
+      "startYear": -300,
+      "endYear": -201,
+      "point": [
+        83.27611,
+        27.46889
+      ],
+      "label": "UNESCO Lumbini property reference",
+      "source": "https://whc.unesco.org/en/list/666/",
+      "claimIds": [
+        "maurya-era-lumbini-history",
+        "maurya-era-lumbini-chronology",
+        "maurya-era-lumbini-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "ashoka-lumbini",
+      "place": "lumbini",
+      "startYear": -249,
+      "endYear": -249,
+      "point": [
+        83.27611,
+        27.46889
+      ],
+      "label": "Lumbini property reference for the recorded visit",
+      "source": "https://whc.unesco.org/en/list/666/",
+      "claimIds": [
+        "maurya-era-ashoka-lumbini-history",
+        "maurya-era-ashoka-lumbini-chronology",
+        "maurya-era-ashoka-lumbini-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "taxila",
+      "place": "taxila",
+      "startYear": -500,
+      "endYear": 200,
+      "point": [
+        72.81933055555555,
+        33.743944444444445
+      ],
+      "label": "Bhir Mound reference within Taxila",
+      "source": "https://whc.unesco.org/en/list/139/",
+      "claimIds": [
+        "maurya-era-taxila-history",
+        "maurya-era-taxila-chronology",
+        "maurya-era-taxila-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "alexander-taxila",
+      "place": "taxila",
+      "startYear": -326,
+      "endYear": -326,
+      "point": [
+        72.81933055555555,
+        33.743944444444445
+      ],
+      "label": "Bhir Mound reference for Alexander’s entry",
+      "source": "https://whc.unesco.org/en/list/139/",
+      "claimIds": [
+        "maurya-era-alexander-taxila-history",
+        "maurya-era-alexander-taxila-chronology",
+        "maurya-era-alexander-taxila-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "ashoka-rule",
+      "place": "lumbini",
+      "startYear": -249,
+      "endYear": -249,
+      "point": [
+        83.27611,
+        27.46889
+      ],
+      "label": "Lumbini property reference for the recorded visit",
+      "source": "https://whc.unesco.org/en/list/666/",
+      "claimIds": [
+        "maurya-era-ashoka-lumbini-history",
+        "maurya-era-ashoka-lumbini-chronology",
+        "maurya-era-ashoka-lumbini-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "alexander",
+      "place": "taxila",
+      "startYear": -326,
+      "endYear": -326,
+      "point": [
+        72.81933055555555,
+        33.743944444444445
+      ],
+      "label": "Bhir Mound reference for Alexander’s entry",
+      "source": "https://whc.unesco.org/en/list/139/",
+      "claimIds": [
+        "maurya-era-alexander-taxila-history",
+        "maurya-era-alexander-taxila-chronology",
+        "maurya-era-alexander-taxila-point"
+      ],
+      "contextual": true
+    }
+  ],
+  "relationships": [
+    {
+      "a": "maurya",
+      "b": "chandragupta-reign",
+      "label": "Ruler or capital of the Mauryan state",
+      "labelFromA": "Ruler or capital of the Mauryan state",
+      "labelFromB": "Mauryan state"
+    },
+    {
+      "a": "maurya",
+      "b": "bindusara-reign",
+      "label": "Ruler or capital of the Mauryan state",
+      "labelFromA": "Ruler or capital of the Mauryan state",
+      "labelFromB": "Mauryan state"
+    },
+    {
+      "a": "maurya",
+      "b": "ashoka-rule",
+      "label": "Ruler or capital of the Mauryan state",
+      "labelFromA": "Ruler or capital of the Mauryan state",
+      "labelFromB": "Mauryan state"
+    },
+    {
+      "a": "maurya",
+      "b": "pataliputra",
+      "label": "Ruler or capital of the Mauryan state",
+      "labelFromA": "Ruler or capital of the Mauryan state",
+      "labelFromB": "Mauryan state"
+    },
+    {
+      "a": "chandragupta-reign",
+      "b": "bindusara-reign",
+      "label": "Son and successor",
+      "labelFromA": "Son and successor",
+      "labelFromB": "Father and predecessor"
+    },
+    {
+      "a": "bindusara-reign",
+      "b": "ashoka-rule",
+      "label": "Son and successor",
+      "labelFromA": "Son and successor",
+      "labelFromB": "Father and predecessor"
+    },
+    {
+      "a": "ashoka-rule",
+      "b": "ashoka-inscriptions",
+      "label": "Royal inscriptions",
+      "labelFromA": "Royal inscriptions",
+      "labelFromB": "Commissioning ruler"
+    },
+    {
+      "a": "ashoka-rule",
+      "b": "ashoka-lumbini",
+      "label": "Recorded visit",
+      "labelFromA": "Recorded visit",
+      "labelFromB": "Visiting ruler"
+    },
+    {
+      "a": "ashoka-rule",
+      "b": "lumbini",
+      "label": "Pilgrimage site",
+      "labelFromA": "Pilgrimage site",
+      "labelFromB": "Ashoka’s visit"
+    },
+    {
+      "a": "ashoka-lumbini",
+      "b": "lumbini",
+      "label": "Place of the visit",
+      "labelFromA": "Place of the visit",
+      "labelFromB": "Dated royal visit"
+    },
+    {
+      "a": "seleucus",
+      "b": "alexander",
+      "label": "Commander under Alexander",
+      "labelFromA": "Commander under Alexander",
+      "labelFromB": "Commander and successor"
+    },
+    {
+      "a": "seleucus",
+      "b": "ptolemy",
+      "label": "Ally and refuge in Egypt",
+      "labelFromA": "Ally and refuge in Egypt",
+      "labelFromB": "Ally"
+    },
+    {
+      "a": "seleucus",
+      "b": "seleucid-mauryan-settlement",
+      "label": "Peace settlement",
+      "labelFromA": "Peace settlement",
+      "labelFromB": "Party to the settlement"
+    },
+    {
+      "a": "chandragupta-reign",
+      "b": "seleucid-mauryan-settlement",
+      "label": "Peace settlement",
+      "labelFromA": "Peace settlement",
+      "labelFromB": "Party to the settlement"
+    },
+    {
+      "a": "chandragupta-reign",
+      "b": "seleucus",
+      "label": "Diplomatic counterpart",
+      "labelFromA": "Diplomatic counterpart",
+      "labelFromB": "Diplomatic counterpart"
+    },
+    {
+      "a": "maurya",
+      "b": "india",
+      "label": "South Asian context",
+      "labelFromA": "South Asian context",
+      "labelFromB": "Mauryan state"
+    },
+    {
+      "a": "alexander",
+      "b": "alexander-taxila",
+      "label": "Entry into Taxila",
+      "labelFromA": "Entry into Taxila",
+      "labelFromB": "Campaign commander"
+    },
+    {
+      "a": "alexander-taxila",
+      "b": "taxila",
+      "label": "Place of the encounter",
+      "labelFromA": "Place of the encounter",
+      "labelFromB": "Alexander’s entry"
+    },
+    {
+      "a": "taxila",
+      "b": "chandragupta-reign",
+      "label": "Mauryan expansion",
+      "labelFromA": "Mauryan expansion",
+      "labelFromB": "North-western city"
+    },
+    {
+      "a": "taxila",
+      "b": "india",
+      "label": "South Asian context",
+      "labelFromA": "South Asian context",
+      "labelFromB": "Historic city"
+    },
+    {
+      "a": "maurya",
+      "b": "sanchi-early",
+      "label": "Buddhist site begun in the Mauryan era",
+      "labelFromA": "Buddhist site begun in the Mauryan era",
+      "labelFromB": "Mauryan-era beginnings"
+    }
+  ]
+}

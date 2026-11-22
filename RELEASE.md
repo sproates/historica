@@ -51,10 +51,11 @@ The required deployment behaviour is incremental: compare release manifests,
 upload only changed files and dependencies, back up replacements and verify
 those uploads. Do not download the entire hosted site to identify changes.
 
-**Current tooling limitation:** `scripts/deploy-ftps.py` still downloads
-existing manifest-listed files to compare and back them up. Documenting the
-incremental rule does not fix that implementation. It needs updating before
-it can meet the fast-release requirement; do not describe it as optimised.
+The uploader compares the hosted release manifest with the local one, skips
+unchanged assets, and backs up and verifies only replacements. The full
+manifest is published last, after every changed file has passed verification.
+An absent manifest requires an initial comparison; a malformed manifest stops
+the release for inspection. Out-of-band server edits require a separate audit.
 
 Run the uploader only for an authorised release. Backups and upload records
 are saved under ignored `release/backups/`. Verify changed assets and affected
