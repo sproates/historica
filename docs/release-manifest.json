@@ -63,7 +63,7 @@
     },
     {
       "path": "data/reviewed-exploration.json",
-      "sha256": "00b2167c80b529922f14aae9bf150c51eafa4ca01946c4de24de18024029ad4a"
+      "sha256": "50921dafd28c9ad914fa14df75544d81c3cc2fd38f34b9a526378657cff163af"
     },
     {
       "path": "data/routes.json",
@@ -71,7 +71,7 @@
     },
     {
       "path": "focus-app.js",
-      "sha256": "e365aa93e834183160ccb098e5928ee0353ce58db2d6d515d2c24689df71f202"
+      "sha256": "10ef7bfeae1e078c7837f05e9909d8d4d4243f703a2bcfe49c05e2215de90cbb"
     },
     {
       "path": "focus-map.js",
@@ -83,11 +83,11 @@
     },
     {
       "path": "focus.css",
-      "sha256": "9c882bf975fe3dee82fd6b87161b317111b52f4020872ca4164bc7a8c91007ce"
+      "sha256": "97a0626795fbbe15fc7ffaad21655362907b8f8ee6a3459bc06a247d925a32d6"
     },
     {
       "path": "index.html",
-      "sha256": "6124c7ade39bd6ec07fb0cde7e93703ac24ecaa7960f35ca19b55620f4198772"
+      "sha256": "c765da9a3ace8ba1dfd3597e2f63764e7558345b56926887f9dc829c6ff57007"
     },
     {
       "path": "model.js",

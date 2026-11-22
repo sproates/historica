@@ -18,7 +18,19 @@ function setEnvelope(){const f=data.entities.find(e=>e.id===state.focus);envelop
 function focus(id){stack.push(snapshot());showAllContext=false;state=changeFocus(data,state,id);setEnvelope();history.pushState(null,'',encodeView(state,snapshot().view,data));render();$('status').textContent=`Focused on ${data.entities.find(e=>e.id===state.focus).title}, ${dates(state.start,state.end)}`;}
 function band(e,isFocus=false){const a=Math.max(e.startYear,state.start),b=Math.min(e.endYear,state.end),single=state.start===state.end,valid=a<=b;const left=single?0:position(a,state.start,state.end)*100,width=single?100:Math.max(0,position(b,state.start,state.end)*100-left);const dot=e.startYear===e.endYear;
 return `<div class="lane ${isFocus?'focus-lane':''}" ${isFocus?'':`data-focus="${esc(e.id)}"`}><div class="lane-distance">${isFocus?'YOUR FOCUS':(state.focus==='global-overview'||data.entities.find(x=>x.id===state.focus)?.type==='period')?'Same period':e.km===null?'Location not researched':e.km<100?'Nearby':`~${Math.round(e.km/100)*100} km`}<small>${esc(isFocus?e.type:e.region||e.type)}</small></div><div class="lane-content"><button data-focus="${esc(e.id)}" ${isFocus?'disabled':''}>${esc(e.title)}</button><small>${dates(e.startYear,e.endYear)}${temporalLabel(e,state)?` · ${esc(temporalLabel(e,state))}`:''}</small><div class="track">${valid?`<span class="band ${e.type==='person'?'life':''} ${e.temporalKind==='dated-evidence'||e.uncertainty?'uncertain':''} ${dot?'point':''}" style="left:${left}%;width:${dot?'7px':width+'%'}"></span>`:''}</div></div></div>`;}
-function render(){const f=data.entities.find(e=>e.id===state.focus),associations=focusAssociations(data,state),ranked=rankedContext(data,state);$('back').disabled=!stack.length;$('focus-picker').value=f.id;$('focus-type').textContent=`FOCUS · ${f.type==='state'?'STATE / KINGDOM':f.type.toUpperCase()}`;$('focus-title').textContent=f.title;document.title=`${f.title} · historica beta`;$('focus-description').textContent=f.description;$('focus-note').textContent=f.note||'';$('range-title').textContent=dates(state.start,state.end);$('fit').textContent=f.type==='person'?'Full lifespan':'Fit study period';$('kind').value=state.kind;$('area').value=state.area;
+function renderDescription(f){
+ const target=$('focus-description');
+ if(target.dataset.focus===f.id)return;
+ target.dataset.focus=f.id;
+ const paragraphs=f.description.split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean);
+ const paragraph=p=>`<p>${esc(p)}</p>`;
+ const lengthy=f.description.trim().split(/\s+/).length>80;
+ // Preserve authored paragraph boundaries; never truncate a sentence.
+ if(lengthy&&paragraphs.length>1){
+  target.innerHTML=paragraph(paragraphs[0])+`<details class="description-more"><summary><span class="read-more">Read more</span><span class="read-less">Read less</span></summary>${paragraphs.slice(1).map(paragraph).join('')}</details>`;
+ }else target.innerHTML=paragraphs.map(paragraph).join('');
+}
+function render(){const f=data.entities.find(e=>e.id===state.focus),associations=focusAssociations(data,state),ranked=rankedContext(data,state);$('back').disabled=!stack.length;$('focus-picker').value=f.id;$('focus-type').textContent=`FOCUS · ${f.type==='state'?'STATE / KINGDOM':f.type.toUpperCase()}`;$('focus-title').textContent=f.title;document.title=`${f.title} · historica beta`;renderDescription(f);$('focus-note').textContent=f.note||'';$('range-title').textContent=dates(state.start,state.end);$('fit').textContent=f.type==='person'?'Full lifespan':'Fit study period';$('kind').value=state.kind;$('area').value=state.area;
 for(const [id,val]of [['start',state.start],['end',state.end]]){const s=$(id);s.min=ordinal(envelope.start);s.max=ordinal(envelope.end);s.value=ordinal(val);s.setAttribute('aria-valuetext',year(val));$(id+'-label').textContent=year(val);}
 $('zoom-in').disabled=state.start===state.end;$('zoom-out').disabled=state.start===-300000&&state.end===2026;
 $('ticks').innerHTML=[state.start,state.end].map(y=>`<span>${year(y)}</span>`).join('');

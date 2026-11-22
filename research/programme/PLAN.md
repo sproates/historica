@@ -18,6 +18,8 @@ This programme covers all parts of the world. Regions without named rulers or wr
 
 Use Ian’s plain, direct British English for reader-facing accounts. Explain how the facts connect, with enough context for a curious reader to understand the subject. The expanded Khufu entry is the first example of this approach. Avoid isolated catalogue statements such as “the pyramid belongs to Khufu”, inflated praise and em dashes.
 
+Write short paragraphs, each developing one idea. Put a useful introduction first so longer entries can reveal the remaining paragraphs under “Read more”. Avoid a single dense paragraph, especially on mobile.
+
 Aim for roughly 100–180 words where the evidence supports a fuller overview, without padding sparse material to meet a target. Introduce the person, place or period, then develop the details that explain it. Connections to predecessors, contemporaries, everyday life or neighbouring places should earn their space. Do not force every entry into the same structure.
 
 Keep reader-facing prose separate from the individual evidence claims. Every added factual assertion must be supported by linked, inspected sources and included in the entry’s claim references. Preserve approximate dates and uncertainty; distinguish a reign from a lifespan or construction interval. A fuller account must not imply fuller evidence than we have.
