@@ -14,7 +14,7 @@ test('empty and unknown focus links open Alexander while older explicit links su
 });
 test('bookmark round trip includes map, borders, expanded list, evidence and slider bounds',()=>{
  const state={focus:'socrates',start:-450,end:-410,kind:'person',area:'athens'};
- const view={comparison:'full',map:{x:350.25,y:80.125,w:100,borders:.35},expanded:true,evidence:true,envelope:{start:-500,end:-350}};
+ const view={lanes:['Athens','Persia'],panels:['timeline-options','connections-panel'],comparison:'full',map:{x:350.25,y:80.125,w:100,borders:.35},expanded:true,evidence:true,envelope:{start:-500,end:-350}};
  assert.deepEqual(decodeView(encodeView(state,view,data),data),{state,view});
 });
 test('malformed bookmarks fall back to safe dates and bounded camera',()=>{
@@ -46,3 +46,12 @@ test('comparison scale is bookmarked without changing the selected years',()=>{
  assert.equal(encodeView(original.state,original.view,data),'/person/alexander?comparison=full');
  assert.equal(decodeView('/person/alexander?comparison=invalid',data).view.comparison,'shared');
 });
+
+ test('expanded regions and controls use bounded, deduplicated bookmark values',()=>{
+ const restored=decodeView('/person/socrates?lane=Athens&lane=Athens&lane=&lane='+ 'x'.repeat(101)+'&panel=unknown&panel=connections-panel&panel=connections-panel',data);
+ assert.deepEqual(restored.view.lanes,['Athens']);
+ assert.deepEqual(restored.view.panels,['connections-panel']);
+ assert.equal(encodeView(restored.state,restored.view,data),'/person/socrates?lane=Athens&panel=connections-panel');
+ const defaults=decodeView('/person/socrates',data);
+ assert.deepEqual(defaults.view.lanes,[]);assert.deepEqual(defaults.view.panels,[]);
+ });

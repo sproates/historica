@@ -75,7 +75,7 @@
     },
     {
       "path": "focus-app.js",
-      "sha256": "c5c7f359c17684c55797927d187ab169c5e49fb2c8a3d3209b4e2ccc6961223b"
+      "sha256": "f96668c84ca71d23f2a6fab6b2f5d61ebc0b7a275ca154cac2df97b2c69aa76b"
     },
     {
       "path": "focus-map.js",
@@ -91,7 +91,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "82c98579ba87ea02b1459d7f610cfe384b6b19c8e8f99a14c9138d4facac667e"
+      "sha256": "6979e4b5fb5b39d4cc6de6d3d1cc8e5384ba37ac813131946b5c467b3dd19b1a"
     },
     {
       "path": "model.js",
@@ -123,7 +123,7 @@
     },
     {
       "path": "view-url.js",
-      "sha256": "08cc41f1dcc37bb0ae0201e99b40f7bebdf7078e4f6efb19570ed84184ad9b20"
+      "sha256": "95815e02254829880ecb6b0e54df2df445e5177b14e37437daedca0dcb42f32c"
     },
     {
       "path": "world-collection.js",

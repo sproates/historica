@@ -1,7 +1,7 @@
 import {comparisonRecords,comparisonLayout,comparisonExplanation,outsideVisiblePeriod} from './comparison-model.js';
 import {timelineLayout,regionFor,laneView} from './swimlane-model.js';
 import {searchEntities} from './search-model.js';
-import {encodeView,decodeView} from './view-url.js?v=comparison-4';
+import {encodeView,decodeView,bookmarkPanels} from './view-url.js?v=bookmarks-2';
 import {setupMap} from './focus-map.js?v=bookmarks-1';
 import {buildFocusData,temporalLabel,initialFocus,changeFocus,focusAssociations,rankedContext,relatedEntities,encodeFocus,decodeFocus} from './focus-model.js?v=egypt-1';
 import {ordinal,historical,position,windowAround,overlaps} from './timeline-model.js';
@@ -14,9 +14,9 @@ const expandedLanes=new Set();
 const mapControls=setupMap($('focus-map'),()=>{if(ready)sync();}); 
 const xy=p=>[(p[0]+180)*2,180-p[1]*2];
 function geometry(g){const ring=r=>r.map((p,i)=>`${i?'L':'M'}${xy(p).join(',')}`).join('')+'Z';return g.type==='Polygon'?g.coordinates.map(ring).join(''):g.type==='MultiPolygon'?g.coordinates.flatMap(p=>p.map(ring)).join(''):'';}
-function snapshot(){return {state:{...state},view:{comparison:comparisonMode,map:mapControls.getState(),envelope:{...envelope},expanded:showAllContext,evidence:document.querySelector('.geography details').open}};}
+function snapshot(){return {state:{...state},view:{lanes:[...expandedLanes].map(key=>JSON.parse(key)).filter(([id])=>id===state.focus).map(([,name])=>name),panels:bookmarkPanels.filter(name=>document.querySelector(`.${name}`).open),comparison:comparisonMode,map:mapControls.getState(),envelope:{...envelope},expanded:showAllContext,evidence:document.querySelector('.geography details').open}};}
 function sync(){if(!ready)return;history.replaceState(null,'',encodeView(state,snapshot().view,data));}
-function restore(saved){comparisonMode=saved.view.comparison||'shared';state=saved.state;envelope=saved.view.envelope;showAllContext=saved.view.expanded;mapControls.restore(saved.view.map);document.querySelector('.geography details').open=saved.view.evidence;}
+function restore(saved){const wasReady=ready;ready=false;comparisonMode=saved.view.comparison||'shared';state=saved.state;envelope=saved.view.envelope;showAllContext=saved.view.expanded;mapControls.restore(saved.view.map);document.querySelector('.geography details').open=saved.view.evidence;expandedLanes.clear();for(const name of saved.view.lanes||[])expandedLanes.add(JSON.stringify([state.focus,name]));for(const name of bookmarkPanels)document.querySelector(`.${name}`).open=(saved.view.panels||[]).includes(name);ready=wasReady;}
 function setEnvelope(){const f=data.entities.find(e=>e.id===state.focus);envelope={start:Math.min(state.start,f.startYear),end:Math.max(state.end,f.endYear)};}
 function focus(id,kind='all'){stack.push(snapshot());showAllContext=false;state=changeFocus(data,state,id);state.kind=kind;setEnvelope();history.pushState(null,'',encodeView(state,snapshot().view,data));render();if(window.matchMedia('(max-width: 600px)').matches){$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:true});window.scrollTo({top:0,left:0,behavior:'instant'});}$('status').textContent=`Focused on ${data.entities.find(e=>e.id===state.focus).title}, ${dates(state.start,state.end)}`;}
 function band(e,isFocus=false){const a=Math.max(e.startYear,state.start),b=Math.min(e.endYear,state.end),single=state.start===state.end,valid=a<=b;const left=single?0:position(a,state.start,state.end)*100,width=single?100:Math.max(0,position(b,state.start,state.end)*100-left);const dot=e.startYear===e.endYear;
@@ -92,7 +92,7 @@ $('search-clear').onclick=()=>{clearSearch();$('history-search').focus();};
 $('search-results').onclick=e=>{const button=e.target.closest('[data-search-focus]');if(!button)return;focus(button.dataset.searchFocus);clearSearch();$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:window.matchMedia('(max-width: 600px)').matches});};
 $('history-search').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key==='ArrowDown'){const first=$('search-results').querySelector('button');if(first){e.preventDefault();first.focus();}}});
 document.querySelector('.collection-search').addEventListener('keydown',e=>{if(e.key==='Escape'){clearSearch();$('history-search').focus();}});
-$('swimlanes').addEventListener('click',event=>{const button=event.target.closest('[data-lane]');if(!button)return;const key=button.dataset.lane;if(expandedLanes.has(key))expandedLanes.delete(key);else expandedLanes.add(key);renderSwimlanes(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));const replacement=[...$('swimlanes').querySelectorAll('[data-lane]')].find(b=>b.dataset.lane===key);replacement?.focus({preventScroll:true});});
+$('swimlanes').addEventListener('click',event=>{const button=event.target.closest('[data-lane]');if(!button)return;const key=button.dataset.lane;if(expandedLanes.has(key))expandedLanes.delete(key);else expandedLanes.add(key);renderSwimlanes(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));const replacement=[...$('swimlanes').querySelectorAll('[data-lane]')].find(b=>b.dataset.lane===key);replacement?.focus({preventScroll:true});sync();});
 for(const mode of ['shared','full'])$('comparison-'+mode).onclick=()=>{comparisonMode=mode;renderComparison(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));sync();};
 $('jump-timeline').onclick=()=>{$('swim-heading').scrollIntoView({behavior:'smooth',block:'start'});$('swim-heading').setAttribute('tabindex','-1');$('swim-heading').focus({preventScroll:true});};
 $('focus-picker').onchange=e=>focus(e.target.value);document.querySelector('main').addEventListener('click',e=>{const button=e.target.closest('[data-focus],[data-filter]');if(!button||button.disabled)return;if(button.dataset.focus)focus(button.dataset.focus,button.dataset.kind||'all');else{state.area=button.dataset.filter;render();}});
@@ -104,6 +104,7 @@ $('zoom-in').onclick=()=>zoom(.5);$('zoom-out').onclick=()=>zoom(2);$('fit').onc
 $('kind').onchange=e=>{state.kind=e.target.value;render();};$('area').onchange=e=>{state.area=e.target.value;render();};$('clear').onclick=()=>{state.kind='all';state.area='all';render();};
 $('share').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);$('share').textContent='Link copied';}catch{$('share').textContent='Copy the address bar URL';}};
 document.querySelector('.geography details').addEventListener('toggle',sync);
+for(const name of bookmarkPanels)document.querySelector(`.${name}`).addEventListener('toggle',sync);
 const restoreLocation=()=>{stack=[];restore(decodeView(location.href,data));render();};
 window.addEventListener('popstate',restoreLocation);window.addEventListener('hashchange',restoreLocation);render();
 }catch(e){$('error').hidden=false;$('error').textContent='The collection could not load. Please reload with the local server running.';console.error(e);}
