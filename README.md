@@ -2,7 +2,7 @@
 
 A beta web project, intended for open-source release, for exploring world history through events, lives and places.
 
-The current prototype has one focus at a time: person, area, state, city, period or event. The default page opens on Alexander the Great’s lifespan. Philip II, Ptolemy I Soter, Aristotle and Egypt are clickable connections. Changing to another person fits their lifespan; changing to a place preserves the visible period. Wider, Closer and the From/To controls adjust the window without changing focus. Back restores the previous focus, window and filters.
+The current prototype has one focus at a time: person, area, state, city, period or event. The front page introduces the project with a shared timeline, search, featured histories and a short guide. `/about` explains the project and credits Ian Sproates. Philip II, Ptolemy I Soter, Aristotle and Egypt are clickable connections. Changing to another person fits their lifespan; changing to a place preserves the visible period. Wider, Closer and the From/To controls adjust the window without changing focus. Back restores the previous focus, window and filters.
 
 The timeline orders context by approximate geographical distance from dated associations that overlap the context record. Areas use their own reference position. Unknown distance is explicitly shown. Timeline labels, bars and event rows change focus; separate type and area filters narrow context. Area filters use a prototype 1,200 km proximity threshold, not historical border containment.
 
@@ -61,7 +61,7 @@ flows before publishing. See [manual release instructions](RELEASE.md). Keep the
 
 ## Bookmark URLs
 
-The root opens Alexander at `/person/alexander`. Every focus has a proper path,
+The root serves the static introduction in `web/index.html`; `/about` serves `web/about.html`. History routes serve `web/focus.html`. Every focus has a proper path,
 such as `/person/alexander`, `/area/egypt` or `/event/socrates-trial`.
 Only changed settings appear in the query string: for example,
 `/area/egypt?from=-356&to=-323` keeps Alexander’s lifespan while viewing Egypt.

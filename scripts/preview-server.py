@@ -14,7 +14,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def send_head(self):
         route=urlsplit(self.path).path.rstrip('/')
         routes=json.loads((Path(args.directory)/'data/routes.json').read_text())
-        if route in routes:self.path='/index.html'
+        if route in routes:self.path='/focus.html'
+        if route=='/about':self.path='/about.html'
         if urlsplit(self.path).path=='/.htaccess':
             self.send_error(403);return None
         return super().send_head()

@@ -71,7 +71,7 @@ try:
     (backup/'deployment.json').write_text(json.dumps(record,indent=2))
     print('Backups complete: '+str(backup),flush=True)
     for directory in missing_dirs: ftp.mkd(remote(directory))
-    ordered=sorted(files,key=lambda r:(r['path']=='index.html',r['path'].endswith('.html'),r['path']))
+    ordered=sorted(files,key=lambda r:(r['path']=='index.html',r['path']=='.htaccess',r['path'].endswith('.html'),r['path']))
     for row in ordered:
         name=row['path']
         if name in record['unchanged']:continue

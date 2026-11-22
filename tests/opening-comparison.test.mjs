@@ -31,7 +31,7 @@ test('introductory journeys answer Socrates and Caesar questions directly',()=>{
   const state={...initialFocus(data,id),kind},f=data.entities.find(e=>e.id===id);
   assert.deepEqual(comparisonRecords(f,rankedContext(data,state),data,state).map(e=>e.id),expected);
  }
- const html=fs.readFileSync('web/index.html','utf8');
+ const html=fs.readFileSync('web/focus.html','utf8');
  assert.match(html,/data-focus="socrates">How did Socrates/);
  assert.match(html,/data-focus="julius-caesar" data-kind="person">Who/);
 });
