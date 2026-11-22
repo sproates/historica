@@ -7,7 +7,7 @@
     },
     {
       "path": "about.html",
-      "sha256": "ac4d71833724c4db15c393189b878abef0e4ae4bffc7bf95e7b90c7b1b42741d"
+      "sha256": "294ccd04a512408b163a3b3033c72bd4b4bd5569961a99366251e1d47707ff53"
     },
     {
       "path": "app.js",
@@ -19,7 +19,7 @@
     },
     {
       "path": "campaign.html",
-      "sha256": "3f97946c82a78b701991bf2ff2d515efcea6d86358a6bff15f498f9008dc16fa"
+      "sha256": "28d2af667f3cab084f788da648f105ac3475bda01d040fd094a04999bdcc703b"
     },
     {
       "path": "comparison-model.js",
@@ -39,7 +39,7 @@
     },
     {
       "path": "coverage.html",
-      "sha256": "701b17e3d01b70e4db5b50129fb03e7743f91b4e739ed1388ad1119018e74e5a"
+      "sha256": "2b6d2d5b94b92eb83d8990089dc2a11e964c8fe0efff589b9588267258c2bc95"
     },
     {
       "path": "data/collection.json",
@@ -95,7 +95,7 @@
     },
     {
       "path": "focus.html",
-      "sha256": "370f5d4f6cd64f57d334ed50f2a28c15afb2a30be69702ba0a242b51f2c587db"
+      "sha256": "1070dcc359d8e9fa50e03965e9d5f7af993d1731034782ae456d6bcd5f27ceec"
     },
     {
       "path": "home.js",
@@ -103,7 +103,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "253a30b98c0f55bc956dd37cc81041946ca9ee817833f634edbabfd03067942a"
+      "sha256": "92dac9f9f30f2afc07fc646703ff4abfadbaa1131c0a5c8f675ece1b0daf5957"
     },
     {
       "path": "model.js",
@@ -139,7 +139,7 @@
     },
     {
       "path": "welcome.css",
-      "sha256": "f8216840965f06040ba0e8093ddc61cbdb8e92744e421a5278f6a5abc495b3f3"
+      "sha256": "4959d69b01e1444947e15899bf042a70ec37f2b7c37f263c397226d1cd58dbb1"
     },
     {
       "path": "world-collection.js",
