@@ -1,0 +1,17 @@
+---
+import {dates} from '../../scripts/static/history-page.mjs';
+import {position} from '../domain/timeline';
+import {temporalLabel} from '../../web/focus-model.js';
+const {page}=Astro.props;
+const {focus,ranked,state}=page;
+const records=[focus,...ranked.slice(0,18)];
+---
+<div id="lanes">{records.map((e,i)=>{
+  const left=position(Math.max(e.startYear,state.start),state.start,state.end)*100;
+  const width=Math.max(0,position(Math.min(e.endYear,state.end),state.start,state.end)*100-left);
+  const dot=e.startYear===e.endYear;
+  return <div class={`lane ${i===0?'focus-lane':''}`} data-focus={i===0?undefined:e.id}>
+    <div class="lane-distance">{i===0?'YOUR FOCUS':e.km===null?'Location not researched':e.km<100?'Nearby':`~${Math.round(e.km/100)*100} km`}<small>{i===0?e.type:e.region||e.type}</small></div>
+    <div class="lane-content"><button data-focus={e.id} disabled={i===0}>{e.title}</button><small>{dates(e.startYear,e.endYear)}{temporalLabel(e,state)?` · ${temporalLabel(e,state)}`:''}</small><div class="track"><span class={`band ${e.type==='person'?'life':''} ${e.temporalKind==='dated-evidence'||e.uncertainty?'uncertain':''} ${dot?'point':''}`} style={`left:${left}%;width:${dot?'7px':width+'%'}`}></span></div></div>
+  </div>
+})}</div>

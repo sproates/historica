@@ -53,6 +53,7 @@ jobs:
           node scripts/build-routes.mjs
           node scripts/build-metadata.mjs
           npm test
+          npm run test:static
           npm run build:pages
           git diff --exit-code -- research/evidence/\*-exploration.json web/data/reviewed-exploration.json web/generated/content/prototype-data.js
       - name: Keep the verified staging artifact

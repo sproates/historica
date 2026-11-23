@@ -1,7 +1,9 @@
+import {fitMapCamera} from './generated/domain/map-camera.js';
 // Camera changes are independent of the selected entity and time window.
 export function setupMap(svg,onChange=()=>{}){
   const $=id=>document.getElementById(id);
-  let camera={x:0,y:0,w:720},points=[],drag=null,suppressClick=false,pointers=new Map();
+  const initial=svg.getAttribute?.('viewBox')?.split(/\s+/).map(Number);
+  let camera=initial?.length===4&&initial.every(Number.isFinite)&&initial[2]>=30&&initial[2]<=720?{x:initial[0],y:initial[1],w:initial[2]}:{x:0,y:0,w:720},points=[],drag=null,suppressClick=false,pointers=new Map();
   let silent=false,fitPending=false;
   function draw(){
     const h=camera.w/2;
@@ -18,10 +20,7 @@ export function setupMap(svg,onChange=()=>{}){
   $('map-world').onclick=()=>{camera={x:0,y:0,w:720};draw();};
   function fit(){
     if(!points.length)return;
-    const xs=points.map(p=>p[0]),ys=points.map(p=>p[1]);
-    const left=Math.min(...xs),right=Math.max(...xs),top=Math.min(...ys),bottom=Math.max(...ys);
-    const w=Math.min(720,Math.max(60,(right-left+30)*1.2,(bottom-top+30)*2.4));
-    camera={x:(left+right-w)/2,y:(top+bottom-w/2)/2,w};draw();
+    camera=fitMapCamera(points);draw();
   }
   $('map-fit').onclick=fit;
   const borders=()=>svg.style.setProperty('--border-opacity',$('map-borders').value);

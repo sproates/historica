@@ -13,3 +13,6 @@ __pycache__/
 
 # Generated ASO release; rebuild with npm run build:site.
 /docs/
+
+# Astro local build state
+.astro/

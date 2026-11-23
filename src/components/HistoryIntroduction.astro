@@ -1,0 +1,14 @@
+---
+const {page}=Astro.props;
+const {focus:f,checked}=page;
+const paragraphs=f.description.split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean);
+---
+<section class="hero">
+  <p class="eyebrow" id="focus-type">FOCUS · {f.type==='state'?'STATE / KINGDOM':f.type.toUpperCase()}</p>
+  <h1 id="focus-title">{f.title}</h1>
+  <div id="focus-description" data-description-focus={f.id}>
+    <p>{paragraphs[0]}</p>
+    {paragraphs.length>1&&<details class="description-more"><summary><span class="read-more">Read more</span><span class="read-less">Read less</span></summary>{paragraphs.slice(1).map(p=><p>{p}</p>)}</details>}
+  </div>
+  <details class="entry-notes"><summary>Dates, sources and caveats</summary><p id="focus-note" class="muted">{f.note||''}</p><p id="focus-trust">{checked.length?`${checked.length} statements have been checked against linked sources with AI assistance. This is not independent expert review; coverage may still be incomplete.`:'This entry has research references, but its individual statements have not yet all been checked. Treat it as provisional.'}</p><a href="coverage.html">How we check the history</a></details>
+</section>

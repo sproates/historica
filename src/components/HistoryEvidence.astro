@@ -1,0 +1,10 @@
+---
+const {page}=Astro.props;
+const {checked,evidence,references}=page;
+---
+<div id="evidence">
+  <p class="evidence-status">{checked.length?`${checked.length} statements checked against source passages. Other content in this view is still awaiting claim-level review.`:'Claim-level review is pending for this focus. The links below are research references.'}</p>
+  {checked.map(c=><article class="checked-claim"><strong>{c.statement}</strong>{c.evidenceIds.map(id=>{const e=evidence.evidence.find(x=>x.id===id),source=evidence.sources.find(x=>x.id===e.sourceId);return <><a href={source.url} target="_blank" rel="noopener">{source.title} · {source.creator}</a><span>{e.locator}</span><span>{e.note}</span></>})}<small>AI-assisted source check · not independent expert review</small></article>)}
+  <h3>Research references</h3>
+  {references.map((url,i)=><a href={url} target="_blank" rel="noopener">{i===0?'Focus reference':`Place association reference ${i}`}</a>)}
+</div>
