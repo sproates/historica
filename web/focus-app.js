@@ -1,3 +1,5 @@
+import {bindExplorerControls} from './generated/controllers/explorer-controls.js';
+import {focusEnvelope} from './generated/state/focus.js';
 import {dateMeaning,ageAt,peopleAt,compareLives,clampMoment} from './exploration-model.js';
 import {comparisonRecords,comparisonLayout,comparisonExplanation,outsideVisiblePeriod} from './comparison-model.js';
 import {timelineLayout,regionFor,laneView} from './swimlane-model.js';
@@ -5,7 +7,7 @@ import {searchEntities} from './search-model.js';
 import {encodeView,decodeView,bookmarkPanels} from './view-url.js?v=exploration-1';
 import {setupMap} from './focus-map.js?v=fit-initial-1';
 import {buildFocusData,temporalLabel,initialFocus,changeFocus,focusAssociations,rankedContext,relatedEntities,encodeFocus,decodeFocus} from './focus-model.js?v=egypt-1';
-import {ordinal,historical,position,windowAround,overlaps} from './timeline-model.js';
+import {ordinal,historical,position,overlaps} from './timeline-model.js';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const year=y=>`${Math.abs(y).toLocaleString()} ${y<0?'BCE':'CE'}`,dates=(a,b)=>a===b?year(a):`${year(a)} – ${year(b)}`;
 const load=async url=>{const r=await fetch(url);if(!r.ok)throw Error(url);return r.json();};
@@ -18,7 +20,7 @@ function geometry(g){const ring=r=>r.map((p,i)=>`${i?'L':'M'}${xy(p).join(',')}`
 function snapshot(){return {state:{...state},view:{moment:selectedYear,people:[...comparedPeople],lanes:[...expandedLanes].map(key=>JSON.parse(key)).filter(([id])=>id===state.focus).map(([,name])=>name),panels:bookmarkPanels.filter(name=>document.querySelector(`.${name}`).open),comparison:comparisonMode,map:mapControls.getState(),envelope:{...envelope},expanded:showAllContext,evidence:document.querySelector('.geography details').open}};}
 function sync(){if(!ready)return;history.replaceState(null,'',encodeView(state,snapshot().view,data));}
 function restore(saved,fitInitially=false){const wasReady=ready;ready=false;comparisonMode=saved.view.comparison||'shared';selectedYear=saved.view.moment??null;comparedPeople=saved.view.people||[];document.querySelector('.people-comparison').open=comparedPeople.length===2;state=saved.state;envelope=saved.view.envelope;showAllContext=saved.view.expanded;mapControls.restore(saved.view.map,fitInitially);document.querySelector('.geography details').open=saved.view.evidence;expandedLanes.clear();for(const name of saved.view.lanes||[])expandedLanes.add(JSON.stringify([state.focus,name]));for(const name of bookmarkPanels)document.querySelector(`.${name}`).open=(saved.view.panels||[]).includes(name);ready=wasReady;}
-function setEnvelope(){const f=data.entities.find(e=>e.id===state.focus);envelope={start:Math.min(state.start,f.startYear),end:Math.max(state.end,f.endYear)};}
+function setEnvelope(){envelope=focusEnvelope(data,state);}
 function focus(id,kind='all'){stack.push(snapshot());showAllContext=false;state=changeFocus(data,state,id);mapControls.fitOnNextUpdate();state.kind=kind;selectedYear=clampMoment(selectedYear,state);setEnvelope();history.pushState(null,'',encodeView(state,snapshot().view,data));render();if(window.matchMedia('(max-width: 600px)').matches){$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:true});window.scrollTo({top:0,left:0,behavior:'instant'});}$('status').textContent=`Focused on ${data.entities.find(e=>e.id===state.focus).title}, ${dates(state.start,state.end)}`;}
 function band(e,isFocus=false){const a=Math.max(e.startYear,state.start),b=Math.min(e.endYear,state.end),single=state.start===state.end,valid=a<=b;const left=single?0:position(a,state.start,state.end)*100,width=single?100:Math.max(0,position(b,state.start,state.end)*100-left);const dot=e.startYear===e.endYear;
 return `<div class="lane ${isFocus?'focus-lane':''}" ${isFocus?'':`data-focus="${esc(e.id)}"`}><div class="lane-distance">${isFocus?'YOUR FOCUS':(state.focus==='global-overview'||data.entities.find(x=>x.id===state.focus)?.type==='period')?'Same period':e.km===null?'Location not researched':e.km<100?'Nearby':`~${Math.round(e.km/100)*100} km`}<small>${esc(isFocus?e.type:e.region||e.type)}</small></div><div class="lane-content"><button data-focus="${esc(e.id)}" ${isFocus?'disabled':''}>${esc(e.title)}</button><small>${dates(e.startYear,e.endYear)}${temporalLabel(e,state)?` · ${esc(temporalLabel(e,state))}`:''}</small><div class="track">${valid?`<span class="band ${e.type==='person'?'life':''} ${e.temporalKind==='dated-evidence'||e.uncertainty?'uncertain':''} ${dot?'point':''}" style="left:${left}%;width:${dot?'7px':width+'%'}"></span>`:''}</div></div></div>`;}
@@ -95,7 +97,6 @@ function renderYear(ranked,f){
  $('living-people').innerHTML=people.map(e=>`<div><button data-focus="${esc(e.id)}">${esc(e.title)}</button><span>${esc(ageAt(e,selectedYear,reviewedEvidence))}</span></div>`).join('')||'<p>No matching biographies recorded for this year.</p>';
 }
 function selectYear(y){selectedYear=clampMoment(y,state);render();}
-function zoom(factor){const width=ordinal(state.end)-ordinal(state.start),mid=historical(Math.round((ordinal(state.start)+ordinal(state.end))/2));Object.assign(state,windowAround(mid,factor>1?Math.max(13,width*factor):width<3?0:Math.floor(width*factor)));setEnvelope();render();}
 try{const [collection,countries,reviewed,exploration]=await Promise.all([load('data/collection.json'),load('data/ne_50m_admin_0_countries.json'),load('data/reviewed-evidence.json').catch(()=>null),load('data/reviewed-exploration.json')]);reviewedEvidence=reviewed;data=buildFocusData(collection,exploration);restore(decodeView(location.href,data),!/[?&#](x|y|w)=/.test(location.href));ready=true;focusGeography=countries.features.filter(f=>['GBR','IRL','IMN'].includes(f.properties.ADM0_A3)).map(f=>f.geometry);land=countries.features.map(f=>`<path d="${geometry(f.geometry)}"/>`).join('');
 $('area').innerHTML='<option value="all">Everywhere</option>'+data.entities.filter(e=>e.id!=='global-overview'&&['area','state','city'].includes(e.type)).map(e=>`<option value="${esc(e.id)}">${esc(e.title)}</option>`).join('');
 $('focus-picker').innerHTML=['person','area','state','city','period','event'].map(type=>`<optgroup label="${type}">${data.entities.filter(e=>e.type===type).map(e=>`<option value="${esc(e.id)}">${esc(e.title)}</option>`).join('')}</optgroup>`).join('');
@@ -103,10 +104,7 @@ const personOptions='<option value="">Choose a person</option>'+data.entities.fi
 for(const id of ['compare-first','compare-second'])$(id).innerHTML=personOptions;
 for(const id of ['compare-first','compare-second'])$(id).onchange=()=>{const a=$('compare-first').value,b=$('compare-second').value;if(a&&b&&a===b){$('compare-second').value='';comparedPeople=[a,''];renderComparison(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));$('comparison-intro').textContent='Choose two different people.';sync();return;}comparedPeople=[a,b];renderComparison(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));sync();};
 $('compare-reset').onclick=()=>{comparedPeople=[];render();};
-$('year-enabled').onchange=e=>{selectYear(e.target.checked?historical(Math.round((ordinal(state.start)+ordinal(state.end))/2)):null);};
-$('year-cursor').oninput=e=>selectYear(historical(Number(e.target.value)));
-$('year-prev').onclick=()=>selectYear(historical(ordinal(selectedYear)-1));
-$('year-next').onclick=()=>selectYear(historical(ordinal(selectedYear)+1));
+bindExplorerControls(document,{getData:()=>data,getState:()=>state,getMoment:()=>selectedYear,setState(next,resizeEnvelope){state=next;if(resizeEnvelope)setEnvelope();render();},setMoment:selectYear});
 // A drag on the date axis selects a year; entry buttons keep their navigation behaviour.
 const selectFromAxis=e=>{const axis=e.target.closest('.swim-dates');if(!axis)return;const r=axis.getBoundingClientRect(),fraction=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width));selectYear(historical(Math.round(ordinal(state.start)+fraction*(ordinal(state.end)-ordinal(state.start)))));};
 $('swimlanes').addEventListener('pointerdown',e=>{if(!e.target.closest('.swim-dates'))return;e.preventDefault();$('swimlanes').setPointerCapture(e.pointerId);selectFromAxis(e);});
@@ -128,9 +126,6 @@ $('focus-picker').onchange=e=>focus(e.target.value);document.querySelector('main
 $('whole-period').onclick=()=>{focus('global-overview');state.start=-3000;state.end=200;setEnvelope();render();};
 $('more-context').onclick=()=>{showAllContext=!showAllContext;render();};
 $('back').onclick=()=>{if(stack.length){restore(stack.pop());render();}};
-$('start').oninput=e=>{state.start=Math.min(historical(Number(e.target.value)),state.end);render();};$('end').oninput=e=>{state.end=Math.max(historical(Number(e.target.value)),state.start);render();};
-$('zoom-in').onclick=()=>zoom(.5);$('zoom-out').onclick=()=>zoom(2);$('fit').onclick=()=>{const full=initialFocus(data,state.focus);state.start=full.start;state.end=full.end;setEnvelope();render();};
-$('kind').onchange=e=>{state.kind=e.target.value;render();};$('area').onchange=e=>{state.area=e.target.value;render();};$('clear').onclick=()=>{state.kind='all';state.area='all';render();};
 $('share').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);$('share').textContent='Link copied';}catch{$('share').textContent='Copy the address bar URL';}};
 document.querySelector('.geography details').addEventListener('toggle',sync);
 for(const name of bookmarkPanels)document.querySelector(`.${name}`).addEventListener('toggle',sync);

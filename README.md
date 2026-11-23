@@ -40,8 +40,8 @@ Edit source records and templates, then run the relevant generators. Don't edit 
 npm test                 # model, data, routing and build checks
 npm run build:evidence   # validate and generate reviewed evidence
 npm run build:coverage   # generate the coverage dashboard data
-npm run build:site       # complete verification and ASO output in docs/
-npm run build:pages      # GitHub Pages staging output in release/pages-site/
+npm run build:site       # complete verification and generated output in docs/
+npm run build:pages      # portable static export in release/pages-site/
 ```
 
 Build commands don't publish. `docs/` and `release/` are local build outputs, excluded from Git. Generated pages under `web/pages/` remain tracked for now because the development and preview workflows consume them directly.
@@ -65,15 +65,13 @@ The pilot keeps the existing interaction controller as a temporary bridge. Other
 
 Validation preserves the input object and all its fields. It doesn't fill missing locations, invent relationship dates or certify historical claims. Evidence review remains separate. All 230 current histories now live in individual Markdown files with YAML metadata under `content/histories/`. Pack associations and relationships live under `content/packs/`. See [content authoring](content/README.md). Evidence claims and review records still use the legacy format. The prototype data module is generated from authored records; the JavaScript history builders have been removed. Three earlier record versions remain explicitly preserved for the original prototype view.
 
-## Hosting and development status
+## Development status
 
-Production runs on ASO. GitHub Actions verifies changes and skips the site build for explicitly allowlisted internal documentation changes. A private-repository GitHub Pages deployment is a migration rehearsal, not the production site.
-
-Before switching production to GitHub Pages, we'll complete repository cleanup and obtain explicit approval to make the repository public. Cloudflare manages Historica's DNS; website traffic still goes directly to ASO. See the [cutover record](project/github-pages-cutover.md) and [release instructions](RELEASE.md).
-
-The refactor has started with strict TypeScript in `src/domain/`. Timeline arithmetic now compiles to `web/generated/`, with the existing browser entry point preserved. The rest of the app still uses JavaScript and generated static HTML with interactive browser rendering. Fuller static generation, incremental verification and dark mode remain planned.
+The refactor has started with strict TypeScript in `src/domain/`. Timeline arithmetic now compiles to `web/generated/`, with the existing browser entry point preserved. The rest of the app still uses JavaScript and generated static HTML with interactive browser rendering. The Alexander pilot introduces Astro generation; migration of the remaining routes, incremental verification and dark mode remain planned.
 
 Edit TypeScript source, then run `npm run build:client`. Generated browser modules remain tracked during migration so existing preview and generation tools can read them; CI rejects stale generated modules. `npm test`, `npm run build:pages` and `npm run preview:sync` compile them automatically. Strict checking applies to migrated TypeScript, not yet to all legacy JavaScript.
+
+Focus changes, date windows and bookmark encoding now live in `src/state/`. `src/controllers/explorer-controls.ts` binds date, year and filter inputs through callbacks, independently of rendering. Browser adapters preserve the existing public module imports and detect the correct path prefix. The main explorer still coordinates rendering and other controls; that migration is ongoing.
 
 ## Research and reuse
 
