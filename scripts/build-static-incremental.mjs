@@ -6,7 +6,7 @@ import {historyEntities,historyPage,dates} from './static/history-page.mjs';
 import {digest,planPages} from './lib/static-cache.mjs';
 const output='release/static-incremental',manifest=output+'/manifest.json';
 const walk=root=>fs.statSync(root).isDirectory()?fs.readdirSync(root).sort().flatMap(name=>walk(path.join(root,name))):[root];
-const files=['src','scripts/static','scripts/lib/static-cache.mjs','scripts/build-static-incremental.mjs','scripts/build-client.mjs','scripts/verify-static-incremental.mjs','tests/static','astro.config.mjs','package.json','package-lock.json','tsconfig.json','tsconfig.astro.json','web/focus.html','web/index.html','web/about.html','web/coverage.html','web/focus.css','web/branding.css',...fs.readdirSync('web').filter(f=>f.endsWith('.js')).map(f=>'web/'+f)].flatMap(walk);
+const files=['src','scripts/static','scripts/lib/static-cache.mjs','scripts/build-static-incremental.mjs','scripts/build-client.mjs','scripts/verify-static-incremental.mjs','tests/static','astro.config.mjs','package.json','package-lock.json','tsconfig.json','tsconfig.astro.json','web/focus.html','web/focus.css','web/branding.css',...fs.readdirSync('web').filter(f=>f.endsWith('.js')).map(f=>'web/'+f)].flatMap(walk);
 const shared=digest([process.version,...files.map(file=>[file,digest(fs.readFileSync(file))]),digest(fs.readFileSync('web/data/ne_50m_admin_0_countries.json'))]);
 let previous;try{previous=JSON.parse(fs.readFileSync(manifest,'utf8'));}catch{}
 if(previous?.version!==1)previous=undefined;
