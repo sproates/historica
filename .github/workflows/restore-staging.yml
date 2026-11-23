@@ -1,5 +1,5 @@
 name: Restore verified Pages staging
-on:
+"on":
   workflow_dispatch:
     inputs:
       run_id:
