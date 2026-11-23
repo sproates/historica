@@ -1,9 +1,0 @@
----
-import HistoryLayout from '../../layouts/HistoryLayout.astro';
-import HistoryExplorer from '../../components/HistoryExplorer.astro';
-import {historyPage} from '../../../scripts/static/history-page.mjs';
-const page=historyPage('alexander');
----
-<HistoryLayout focus={page.focus}>
-  <HistoryExplorer page={page} />
-</HistoryLayout>
