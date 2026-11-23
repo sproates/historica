@@ -22,7 +22,7 @@ export function validateHistory(input: unknown, registry: ReferenceRegistry = {}
   const rows = (key: string): RecordValue[] => {
     const value = input[key];
     if (!Array.isArray(value)) { fail(key, 'expected an array'); return []; }
-    return value.map((row: unknown, i: number) => {
+    return Array.from(value, (row: unknown, i: number) => {
       if (!object(row)) { fail(`${key}[${i}]`, 'expected an object'); return {}; }
       return row;
     });
@@ -47,7 +47,7 @@ export function validateHistory(input: unknown, registry: ReferenceRegistry = {}
   };
   const point = (value: unknown, path: string): void => {
     if (value === null) return;
-    if (!Array.isArray(value) || value.length !== 2 || !value.every(n => typeof n === 'number' && Number.isFinite(n)) || Math.abs(value[0]) > 180 || Math.abs(value[1]) > 90) fail(path, 'expected null or [longitude, latitude] within geographic bounds');
+    if (!Array.isArray(value) || value.length !== 2 || ![value[0], value[1]].every(n => typeof n === 'number' && Number.isFinite(n)) || Math.abs(value[0]) > 180 || Math.abs(value[1]) > 90) fail(path, 'expected null or [longitude, latitude] within geographic bounds');
   };
   const reference = (value: unknown, path: string, known: ReadonlySet<string>): void => {
     if (!text(value) || !known.has(value)) fail(path, 'unknown reference');
@@ -56,7 +56,7 @@ export function validateHistory(input: unknown, registry: ReferenceRegistry = {}
     const values = row[key];
     if (values === undefined) return;
     if (!Array.isArray(values)) { fail(`${path}.${key}`, 'expected an array'); return; }
-    values.forEach((value: unknown, i: number) => {
+    Array.from(values).forEach((value: unknown, i: number) => {
       const p = `${path}.${key}[${i}]`;
       if (!text(value)) fail(p, 'expected a non-empty string');
       else if (known) reference(value, p, known);

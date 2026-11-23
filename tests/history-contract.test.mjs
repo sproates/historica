@@ -30,6 +30,7 @@ test('invalid records report actionable paths instead of coercing values', () =>
     [d => {d.entities[0].endYear = -2;}, 'entities[0]: startYear'],
     [d => {d.entities[0].startYear = '-1';}, 'entities[0].startYear'],
     [d => {d.entities[0].point = [181, 20];}, 'entities[0].point'],
+    [d => {d.entities[0].point = new Array(2);}, 'entities[0].point'],
     [d => {d.entities[0].point = [20, NaN];}, 'entities[0].point'],
     [d => {d.entities[0].url = 'javascript:alert(1)';}, 'entities[0].url'],
     [d => {d.entities[0].type = 'king';}, 'entities[0].type'],
@@ -62,7 +63,7 @@ test('connections validate endpoints and paired dates without inventing interval
 });
 
 test('malformed top-level and nested input yields errors rather than crashes', () => {
-  for (const value of [null, [], {}, {entities:[null],associations:'wrong',relationships:[42]}]) {
+  for (const value of [null, [], {}, {entities:new Array(1),associations:[],relationships:[]}, {entities:[null],associations:'wrong',relationships:[42]}]) {
     assert.ok(validateHistory(value).length);
   }
 });

@@ -24,7 +24,7 @@ export function validateHistory(input, registry = {}) {
             fail(key, 'expected an array');
             return [];
         }
-        return value.map((row, i) => {
+        return Array.from(value, (row, i) => {
             if (!object(row)) {
                 fail(`${key}[${i}]`, 'expected an object');
                 return {};
@@ -62,7 +62,7 @@ export function validateHistory(input, registry = {}) {
     const point = (value, path) => {
         if (value === null)
             return;
-        if (!Array.isArray(value) || value.length !== 2 || !value.every(n => typeof n === 'number' && Number.isFinite(n)) || Math.abs(value[0]) > 180 || Math.abs(value[1]) > 90)
+        if (!Array.isArray(value) || value.length !== 2 || ![value[0], value[1]].every(n => typeof n === 'number' && Number.isFinite(n)) || Math.abs(value[0]) > 180 || Math.abs(value[1]) > 90)
             fail(path, 'expected null or [longitude, latitude] within geographic bounds');
     };
     const reference = (value, path, known) => {
@@ -77,7 +77,7 @@ export function validateHistory(input, registry = {}) {
             fail(`${path}.${key}`, 'expected an array');
             return;
         }
-        values.forEach((value, i) => {
+        Array.from(values).forEach((value, i) => {
             const p = `${path}.${key}[${i}]`;
             if (!text(value))
                 fail(p, 'expected a non-empty string');
