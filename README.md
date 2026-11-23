@@ -68,7 +68,7 @@ Validation preserves the input object and all its fields. It doesn't fill missin
 
 ## Development status
 
-The refactor has started with strict TypeScript in `src/domain/`. Timeline arithmetic now compiles to `web/generated/`, with the existing browser entry point preserved. The rest of the app still uses JavaScript and generated static HTML with interactive browser rendering. Astro now generates all history routes in the preview; replacing the runtime renderer, incremental verification and dark mode remain planned.
+The refactor has started with strict TypeScript in `src/domain/`. Timeline arithmetic now compiles to `web/generated/`, with the existing browser entry point preserved. Interactive history rendering now lives in strict TypeScript, while the browser entry point still coordinates loading, state and navigation in JavaScript. Astro now generates all history routes in the preview; replacing the runtime renderer, incremental verification and dark mode remain planned.
 
 Edit TypeScript source, then run `npm run build:client`. Generated browser modules remain tracked during migration so existing preview and generation tools can read them; CI rejects stale generated modules. `npm test`, `npm run build:pages` and `npm run preview:sync` compile them automatically. Strict checking applies to migrated TypeScript and Astro templates, not yet to all legacy JavaScript. TypeScript 6 is pinned for compatibility with the Astro checker; Node remains on 26.
 
