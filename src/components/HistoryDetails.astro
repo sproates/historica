@@ -17,4 +17,4 @@ const records=[{...focus,km:null},...ranked.slice(0,18)];
     <div class="lane-distance">{i===0?'YOUR FOCUS':(focus.type==='period'||focus.id==='global-overview')?'Same period':e.km===null?'Location not researched':e.km<100?'Nearby':`~${Math.round(e.km/100)*100} km`}<small>{i===0?e.type:e.region||e.type}</small></div>
     <div class="lane-content"><button data-focus={e.id} disabled={i===0}>{e.title}</button><small>{dates(e.startYear,e.endYear)}{temporalLabel(e,state)?` · ${temporalLabel(e,state)}`:''}</small><div class="track"><span class={`band ${e.type==='person'?'life':''} ${e.temporalKind==='dated-evidence'||e.uncertainty?'uncertain':''} ${dot?'point':''}`} style={`left:${left}%;width:${dot?'7px':width+'%'}`}></span></div></div>
   </div>
-})}</div>
+})}{!ranked.length&&<p class="empty">No context records match this window and these filters.</p>}</div>
