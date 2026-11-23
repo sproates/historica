@@ -14,7 +14,7 @@ This gives Historica a second starting point: visitors can begin with somewhere 
 
 Add **Explore the world** to the main navigation and a small entry on the home page. Keep the existing history pages. The explorer is a single new page with shared place and time controls, a graphical timeline on the left and a map on the right. On a phone, Timeline and Map buttons switch views while retaining both selections.
 
-Use `/explore/` with readable query parameters for the country, years and map view. Do not use fragments. Store selected geography separately from the camera: looking around must not silently replace the timeline. **Explore this area** explicitly applies the visible map rectangle.
+Use `/explore/` with readable query parameters for the country, years and map view. Do not use fragments. Store selected geography separately from the camera: looking around must not silently replace the timeline. **Show history in this area** explicitly applies the visible map rectangle.
 
 Modern countries are geographic selectors, not claims about ancient borders or identity. Label them “Present-day Italy”, for example. A historical state remains a separate history record.
 
@@ -48,7 +48,7 @@ Aim for one feature PR once the prototype direction is agreed. Split only if the
 ## Acceptance checks
 
 - Select Italy, then Egypt: the years stay unchanged and both results and highlight update.
-- Pan away from Egypt: its timeline stays selected. Apply **Explore this area**: the selected rectangle becomes the geographic filter.
+- Pan away from Egypt: its timeline stays selected. Apply **Show history in this area**: the selected rectangle becomes the geographic filter.
 - Zoom or move the time window: results and dated markers update together, including across BCE/CE.
 - Tap a marker: its name appears before any navigation. Open a history and return to the same geography, dates and map view.
 - Reload or share the explorer URL: the same state is restored.
@@ -58,3 +58,7 @@ Aim for one feature PR once the prototype direction is agreed. Split only if the
 ## Outside this first release
 
 Drawing arbitrary shapes, reconstructing changing ancient borders, comprehensive new historical research and global coverage are separate work. This feature should expose and navigate the evidence we already have without suggesting that it is complete.
+
+## Prototype feedback incorporated
+
+Country names are drawn on the map, with overlapping labels suppressed. Country framing uses the component containing the dataset’s label point, so France opens on metropolitan France rather than including distant territories. This changes the camera only; geographic filtering still uses the full country geometry. A **Back to [country]** button restores the selected place after zooming out. The area action now says **Show history in this area**, reports the result count beside the map and opens the timeline on mobile. Physical-phone gesture testing remains outstanding.
