@@ -22,7 +22,9 @@
     "build:static": "npm run build:evidence && npm run check:static && astro build",
     "preview:static": "npm run build:static && npm run preview:sync && python3 scripts/sync-static-preview.py",
     "test:static": "npm run build:static && node --test tests/static/*.test.mjs",
-    "check:static": "astro check --tsconfig tsconfig.astro.json"
+    "check:static": "astro check --tsconfig tsconfig.astro.json",
+    "build:static:incremental": "npm run build:evidence && node scripts/build-static-incremental.mjs",
+    "preview:static:incremental": "npm run build:static:incremental && npm run preview:sync && python3 scripts/sync-static-preview.py --incremental"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",

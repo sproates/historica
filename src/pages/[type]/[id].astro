@@ -3,9 +3,9 @@ import type {GetStaticPaths} from 'astro';
 import type {HistoryPage} from '../../presentation/history-page';
 import HistoryLayout from '../../layouts/HistoryLayout.astro';
 import HistoryExplorer from '../../components/HistoryExplorer.astro';
-import {historyPage,historyEntities} from '../../../scripts/static/history-page.mjs';
+import {historyPage,selectedHistoryEntities} from '../../../scripts/static/history-page.mjs';
 
-export const getStaticPaths = (() => historyEntities().map(({id}) => {
+export const getStaticPaths = (() => selectedHistoryEntities().map(({id}) => {
   const page=historyPage(id);
   return {params:{type:page.focus.type,id},props:{page}};
 })) satisfies GetStaticPaths;
