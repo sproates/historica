@@ -104,7 +104,7 @@ A typed evidence store shares in-flight requests, caches successful downloads an
 
 `src/browser/explorer.ts` now owns loading, state snapshots, bookmarks, navigation, evidence selection and controller wiring. `web/focus-app.js` only supplies the mount path and generated prototype records. The assembled history is validated before use. Map coordinate extraction moved behind the map-data boundary, and the coordinator uses the shared geometry projection.
 
-The entry-point harness now executes the compiled coordinator. Tests cover default enhancement, custom bookmarks, browser history under `/historica/`, cached Back, failed navigation and retry, and whole-period navigation. The primary history explorer and home search are now strict TypeScript end to end; coverage and legacy campaign scripts remain outside this migration. Standalone packaging is described below; production deployment remains separate work.
+The entry-point harness now executes the compiled coordinator. Tests cover default enhancement, custom bookmarks, browser history under `/historica/`, cached Back, failed navigation and retry, and whole-period navigation. The primary history explorer and home search are now strict TypeScript end to end; legacy campaign scripts remain outside this migration. Standalone packaging is described below; production deployment remains separate work.
 
 ## Incremental local static builds
 
@@ -131,3 +131,9 @@ The packager accepts `--static-source` for a complete Astro route tree. It reads
 `src/browser/home.ts` owns home-page search loading, rendering and keyboard controls. `web/home.js` only supplies the mount path and generated prototype records. The assembled history is validated before searching. Search no longer downloads `collection.json`, which it did not use; featured links remain static and available if loading fails.
 
 Tests compare search destinations for every history against the existing model and cover staging paths, the 12-result limit, keyboard controls, queries entered while loading, failed or malformed responses and old fragment redirects. The Wi-Fi preview was refreshed and a Socrates search checked in the browser. Appearance and wording are unchanged; production has not been updated.
+
+## Typed research coverage
+
+`src/domain/coverage.ts` now owns the research registry contracts, validation, coverage totals and subdivision rules. `src/browser/coverage.ts` owns the planning grid, filters, selected package, draft findings and bookmark state. The old browser entry and model paths are compatibility adapters. Historical research, wording and layout are unchanged.
+
+The browser checks registry consistency before displaying totals. Existing model tests still cover parent/child completion and reject unsupported acceptance; new controller tests cover bookmarked filters, the Egyptian introduction, empty results, unchanged worldwide totals and failed inputs. The refreshed Wi-Fi preview was checked with a saved European view, the accepted filter and the Egyptian introduction. Production remains unchanged.
