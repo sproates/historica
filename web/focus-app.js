@@ -1,3 +1,4 @@
+import {createEvidenceStore} from './generated/content/evidence-store.js';
 import {loadMapData} from './generated/presentation/map-data.js';
 import {createHistoryRenderer} from './generated/presentation/history-renderer.js';
 import {canEnhanceStaticHistory} from './generated/state/static-page.js';
@@ -15,18 +16,20 @@ import {buildFocusData,changeFocus,focusAssociations,rankedContext} from './focu
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const year=y=>`${Math.abs(y).toLocaleString()} ${y<0?'BCE':'CE'}`,dates=(a,b)=>a===b?year(a):`${year(a)} – ${year(b)}`;
 const load=async url=>{const r=await fetch(url);if(!r.ok)throw Error(url);return r.json();};
+const evidenceStore=createEvidenceStore(load);
+function withEvidence(id,apply){loadingEvidence=true;return evidenceStore.select(id,pack=>{loadingEvidence=false;reviewedEvidence=pack;$('error').hidden=true;apply();},()=>{loadingEvidence=false;sync();$('error').hidden=false;$('error').textContent='The sources for this history could not load. Please try selecting it again.';});}
 let data,state,stack=[],land='',focusGeography=[],envelope,showAllContext=false,reviewedEvidence=null;
-let ready=false,comparisonMode='shared',selectedYear=null,comparedPeople=[];
+let loadingEvidence=false,chronologyEvidence,ready=false,comparisonMode='shared',selectedYear=null,comparedPeople=[];
 const expandedLanes=new Set();
 const mapControls=setupMap($('focus-map'),()=>{if(ready)sync();}); 
 const xy=p=>[(p[0]+180)*2,180-p[1]*2];
 function geometry(g){const ring=r=>r.map((p,i)=>`${i?'L':'M'}${xy(p).join(',')}`).join('')+'Z';return g.type==='Polygon'?g.coordinates.map(ring).join(''):g.type==='MultiPolygon'?g.coordinates.flatMap(p=>p.map(ring)).join(''):'';}
-const {renderComparison,renderSwimlanes,renderMap,renderYear,renderRegionalEvidence,renderFocus,renderDetails}=createHistoryRenderer(document,()=>({data,state,selectedYear,comparedPeople,comparisonMode,reviewedEvidence,expandedLanes,land,focusGeography,showAllContext,bactriaOutline:geometry(data.collection.historicalOverlays[0].geometry)}),updateMapPoints);
+const {renderComparison,renderSwimlanes,renderMap,renderYear,renderRegionalEvidence,renderFocus,renderDetails}=createHistoryRenderer(document,()=>({data,state,selectedYear,comparedPeople,comparisonMode,reviewedEvidence,chronologyEvidence,expandedLanes,land,focusGeography,showAllContext,bactriaOutline:geometry(data.collection.historicalOverlays[0].geometry)}),updateMapPoints);
 function snapshot(){return {state:{...state},view:{moment:selectedYear,people:[...comparedPeople],lanes:[...expandedLanes].map(key=>JSON.parse(key)).filter(([id])=>id===state.focus).map(([,name])=>name),panels:bookmarkPanels.filter(name=>document.querySelector(`.${name}`).open),comparison:comparisonMode,map:mapControls.getState(),envelope:{...envelope},expanded:showAllContext,evidence:document.querySelector('.geography details').open}};}
-function sync(){if(!ready)return;history.replaceState(null,'',encodeView(state,snapshot().view,data));}
+function sync(){if(!ready||loadingEvidence)return;history.replaceState(null,'',encodeView(state,snapshot().view,data));}
 function restore(saved,fitInitially=false){const wasReady=ready;ready=false;comparisonMode=saved.view.comparison||'shared';selectedYear=saved.view.moment??null;comparedPeople=saved.view.people||[];document.querySelector('.people-comparison').open=comparedPeople.length===2;state=saved.state;envelope=saved.view.envelope;showAllContext=saved.view.expanded;mapControls.restore(saved.view.map,fitInitially);document.querySelector('.geography details').open=saved.view.evidence;expandedLanes.clear();for(const name of saved.view.lanes||[])expandedLanes.add(JSON.stringify([state.focus,name]));for(const name of bookmarkPanels)document.querySelector(`.${name}`).open=(saved.view.panels||[]).includes(name);ready=wasReady;}
 function setEnvelope(){envelope=focusEnvelope(data,state);}
-function focus(id,kind='all'){stack.push(snapshot());showAllContext=false;state=changeFocus(data,state,id);mapControls.fitOnNextUpdate();state.kind=kind;selectedYear=clampMoment(selectedYear,state);setEnvelope();history.pushState(null,'',encodeView(state,snapshot().view,data));render();if(window.matchMedia('(max-width: 600px)').matches){$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:true});window.scrollTo({top:0,left:0,behavior:'instant'});}$('status').textContent=`Focused on ${data.entities.find(e=>e.id===state.focus).title}, ${dates(state.start,state.end)}`;}
+function focus(id,kind='all',period=null){return withEvidence(id,()=>{stack.push(snapshot());showAllContext=false;state=changeFocus(data,state,id);if(period)Object.assign(state,period);mapControls.fitOnNextUpdate();state.kind=kind;selectedYear=clampMoment(selectedYear,state);setEnvelope();history.pushState(null,'',encodeView(state,snapshot().view,data));render();if(window.matchMedia('(max-width: 600px)').matches){$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:true});window.scrollTo({top:0,left:0,behavior:'instant'});}$('status').textContent=`Focused on ${data.entities.find(e=>e.id===state.focus).title}, ${dates(state.start,state.end)}`;});}
 function render(){selectedYear=clampMoment(selectedYear,state);const f=data.entities.find(e=>e.id===state.focus),associations=focusAssociations(data,selectedYear===null?state:{...state,start:selectedYear,end:selectedYear}),ranked=rankedContext(data,state);syncFocusControls(document,state,envelope,Boolean(stack.length),year);renderFocus(f);
 renderComparison(f,ranked);renderSwimlanes(f,ranked);renderYear(ranked,f);
 renderDetails(f,ranked);
@@ -39,7 +42,8 @@ const regionPoints=region.flatMap(g=>g.type==='MultiPolygon'?g.coordinates.flat(
 mapControls.update(regionPoints.length?regionPoints.map(xy):[...associations.filter(a=>a.point).map(a=>xy(a.point)),...(['area','city','state'].includes(f.type)&&f.point?[xy(f.point)]:[])]);
 }
 function selectYear(y){selectedYear=clampMoment(y,state);render();}
-try{const [collection,mapData,reviewed,exploration]=await Promise.all([load('data/collection.json'),loadMapData(document,load),load('data/browser-evidence.json').catch(()=>null),load('data/reviewed-exploration.json')]);reviewedEvidence=reviewed;data=buildFocusData(collection,exploration);const saved=decodeView(location.href,data),reuseStatic=canEnhanceStaticHistory(document.body.dataset.staticHistory,data,saved),fitInitially=!/[?&#](x|y|w)=/.test(location.href);
+try{const [collection,mapData,exploration,chronology]=await Promise.all([load('data/collection.json'),loadMapData(document,load),load('data/reviewed-exploration.json'),load('data/browser-chronology.json')]);chronologyEvidence=chronology;data=buildFocusData(collection,exploration);const saved=decodeView(location.href,data),reuseStatic=canEnhanceStaticHistory(document.body.dataset.staticHistory,data,saved),fitInitially=!/[?&#](x|y|w)=/.test(location.href);
+reviewedEvidence=await evidenceStore.get(saved.state.focus);
 // Keep the generated camera while initialising controls; custom camera bookmarks still take precedence.
 if(reuseStatic&&fitInitially)saved.view.map={...mapControls.getState(),borders:saved.view.map.borders};
 restore(saved,fitInitially);ready=true;focusGeography=mapData.focusGeography;land=mapData.land;
@@ -48,12 +52,12 @@ $('focus-picker').innerHTML=['person','area','state','city','period','event'].ma
 bindComparisonControls(document,{getEntities:()=>data.entities,selectPeople(people,duplicate){comparedPeople=people;renderComparison(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));if(duplicate)$('comparison-intro').textContent='Choose two different people.';sync();},selectScale(mode){comparisonMode=mode;renderComparison(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));sync();},reset(){comparedPeople=[];render();}});
 bindExplorerControls(document,{getData:()=>data,getState:()=>state,getMoment:()=>selectedYear,setState(next,resizeEnvelope){state=next;if(resizeEnvelope)setEnvelope();render();},setMoment:selectYear});
 bindTimelineControls(document,{getWindow:()=>state,selectYear,toggleLane(key){if(expandedLanes.has(key))expandedLanes.delete(key);else expandedLanes.add(key);renderSwimlanes(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));sync();}});
-bindSearchControls(document,{getEntities:()=>data.entities,formatDates:dates,select(id){focus(id);$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:window.matchMedia('(max-width: 600px)').matches});}});
-bindNavigationControls(document,{focus,filter(area){state.area=area;render();},wholePeriod(){focus('global-overview');state.start=-3000;state.end=200;setEnvelope();render();},toggleContext(){showAllContext=!showAllContext;render();},back(){if(stack.length){restore(stack.pop());render();}}});
+bindSearchControls(document,{getEntities:()=>data.entities,formatDates:dates,async select(id){if(!await focus(id))return;$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:window.matchMedia('(max-width: 600px)').matches});}});
+bindNavigationControls(document,{focus,filter(area){state.area=area;render();},wholePeriod(){return focus('global-overview','all',{start:-3000,end:200});},toggleContext(){showAllContext=!showAllContext;render();},back(){const saved=stack.at(-1);if(saved)return withEvidence(saved.state.focus,()=>{stack.pop();restore(saved);render();});}});
 $('share').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);$('share').textContent='Link copied';}catch{$('share').textContent='Copy the address bar URL';}};
 document.querySelector('.geography details').addEventListener('toggle',sync);
 for(const name of bookmarkPanels)document.querySelector(`.${name}`).addEventListener('toggle',sync);
-const restoreLocation=()=>{stack=[];restore(decodeView(location.href,data),!/[?&#](x|y|w)=/.test(location.href));render();};
+const restoreLocation=()=>{const saved=decodeView(location.href,data),fitInitially=!/[?&#](x|y|w)=/.test(location.href);return withEvidence(saved.state.focus,()=>{stack=[];restore(saved,fitInitially);render();});};
 window.addEventListener('popstate',restoreLocation);window.addEventListener('hashchange',restoreLocation);
 if(reuseStatic){
  syncFocusControls(document,state,envelope,false,year);

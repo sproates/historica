@@ -93,3 +93,9 @@ The regional file is regenerated from the existing country source during content
 History pages now request `browser-evidence.json`, a generated projection containing the claim, source, passage and chronology fields used by the explorer. The full reviewed evidence file and authored research remain intact, and the coverage page continues to use the full file. The projection retains every claim and citation identity, including provisional claims.
 
 The uncompressed payload falls from 753,753 to 302,124 bytes. Tests compare checked statements and citations for all 230 histories and age estimates across every recorded life, and verify deterministic output and reference integrity. This is a smaller shared payload, not yet per-page or on-demand evidence loading. CI checks that the generated projection is current.
+
+## Evidence loaded by history
+
+The explorer now loads `data/evidence/<id>.json` for the selected history and a shared 8,656-byte chronology index. Socrates uses 1,046 bytes of focused evidence, making the initial evidence and chronology total 9,702 bytes instead of the 302,124-byte shared pack. These are uncompressed file sizes. Original research references and full review data remain available.
+
+A typed evidence store shares in-flight requests, caches successful downloads and retries failures. Navigation commits only after its evidence arrives, and stale requests cannot replace a newer focus. Back reuses cached evidence; errors preserve the current view. Bookmark writes are suspended during navigation so they cannot overwrite a pending destination. Tests cover every history’s statements and citations, chronology parity, request ordering, failures, caching and whole-period navigation. Browser checks cover Socrates to Stonehenge and Back.

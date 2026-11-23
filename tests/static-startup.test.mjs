@@ -31,7 +31,7 @@ for(const match of source.matchAll(/^import \{([^}]+)\} from '([^']+)';/gm)){
 const body=source.replace(/^import .*;\n/gm,'');
 const AsyncFunction=Object.getPrototypeOf(async function(){}).constructor;
 async function startup(id,address){
-  const nodes=new Map(),writes=[],callbacks={},errors=[],history=[];
+  const nodes=new Map(),writes=[],callbacks={},errors=[],history=[],requests=[];
   const node=key=>{
     if(!nodes.has(key)){
       const el=new EventTarget();
@@ -45,11 +45,11 @@ async function startup(id,address){
   let camera={x:300,y:50,w:120,borders:1},points=[];
   const overrides={setupMap:()=>({getState:()=>camera,restore(saved){camera=saved;},update(next){points=next;},fitOnNextUpdate(){}})};
   for(const name of Object.keys(dependencies).filter(n=>n.startsWith('bind')))overrides[name]=(_root,app)=>{callbacks[name]=app;};
-  const environment={document,location:{href:'https://historica.online'+address},history:{replaceState(_a,_b,url){history.push(url);},pushState(_a,_b,url){history.push(url);}},window:Object.assign(new EventTarget(),{matchMedia:()=>({matches:false})}),console:{error:e=>errors.push(e)},fetch:async url=>({ok:true,json:async()=>read(url.replace('data/','').replace('.json',''))})};
+  const environment={document,location:{href:'https://historica.online'+address},history:{replaceState(_a,_b,url){history.push(url);},pushState(_a,_b,url){history.push(url);}},window:Object.assign(new EventTarget(),{matchMedia:()=>({matches:false})}),console:{error:e=>errors.push(e)},fetch:async url=>{requests.push(url);return {ok:true,json:async()=>read(url.replace('data/','').replace('.json',''))};}};
   const scope={...dependencies,...overrides,...environment};
   await new AsyncFunction(...Object.keys(scope),body)(...Object.values(scope));
   assert.deepEqual(errors,[]);
-  return {nodes,writes,callbacks,history,get camera(){return camera;},get points(){return points;}};
+  return {nodes,writes,callbacks,history,requests,get camera(){return camera;},get points(){return points;}};
 }
 const content=new Set(['focus-title','focus-description','comparison-bars','swimlanes','lanes','related','focus-map','map-places','evidence','regional-evidence']);
 
@@ -60,11 +60,17 @@ test('default startup preserves generated content and registers working navigati
   assert.equal(h.nodes.get('start').value,'-355');
   assert.ok(h.points.length>0);
   assert.equal(h.camera.w,120,'generated camera is not reset to the world');
-  h.callbacks.bindNavigationControls.focus('egypt');
+  await h.callbacks.bindNavigationControls.focus('egypt');
   assert.ok(h.writes.some(w=>w.key==='focus-title'&&w.value==='Egypt'));
   assert.equal(h.nodes.get('start').value,'-355','place navigation keeps selected dates');
-  h.callbacks.bindNavigationControls.back();
+  await h.callbacks.bindNavigationControls.back();
   assert.ok(h.history.at(-1).startsWith('/person/alexander'));
+  assert.deepEqual(h.requests.filter(p=>p.startsWith('data/evidence/')),['data/evidence/alexander.json','data/evidence/egypt.json']);
+  assert.ok(!h.requests.includes('data/browser-evidence.json'));
+  await h.callbacks.bindNavigationControls.wholePeriod();
+  assert.ok(h.history.at(-1).startsWith('/area/global-overview'));
+  assert.equal(h.nodes.get('start').value,'-2999');
+  assert.equal(h.nodes.get('end').value,'200');
 });
 
 test('camera and panel bookmarks enhance content without replacing it',async()=>{
