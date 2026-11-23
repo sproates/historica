@@ -14,13 +14,13 @@ The build reads the canonical Markdown and YAML histories through the existing a
 
 The pilot is excluded from production and Pages packaging. Its output is a page overlay that depends on the existing assets, not an independently deployable artifact. It is marked noindex. The repository remains private and ASO remains live.
 
-The current interaction controller still fetches the full collection and rebuilds the displayed regions. Static generation alone doesn't fix that. Astro templates compile during the build but do not yet have a separate strict template type-checking step; the migrated domain TypeScript does.
+The current interaction controller still fetches the full collection and rebuilds the displayed regions. Static generation alone doesn't fix that. Astro templates and their page models are now strictly checked before the static build.
 
 ## Checks and next work
 
 The first slice includes static response checks and the existing model suite. Browser checks cover Alexander to Philip, browser Back, reload, comparison scale and a bookmarked date window, with phone and desktop layouts inspected. JavaScript-free reading is checked in generated HTML; native disclosure sections retain sources and caveats, and a noscript section provides links to connected histories.
 
-Next, introduce typed page view models and separate the interaction controllers from the rendering templates. Preserve bookmarks before extending the static route set. Remove duplicate template paths as that replacement lands. Customised bookmarks can still show the default state briefly while the existing controller loads, and this pilot makes no incremental-build claim.
+Next, use the typed page models to extend static rendering beyond Alexander and finish separating application state from rendering. Preserve bookmarks before extending the static route set. Remove duplicate template paths as that replacement lands. Customised bookmarks can still show the default state briefly while the existing controller loads, and this pilot makes no incremental-build claim.
 
 ## Controls and bookmark extraction
 
@@ -48,4 +48,12 @@ Distance ranking ignores missing coordinates without inventing a replacement loc
 
 Comparison suggestions and bar layouts, regional swimlanes, date meanings and age calculations now live in typed domain modules. The browser imports remain compatibility adapters, so Astro and the existing renderer consume the same implementation. Timeline layout output explicitly distinguishes its event-dot flag from geographical coordinates.
 
-A migration comparison confirmed identical results for 460 default and single-year views across the whole collection, including full-range comparisons, compact and expanded lanes, uncertainty labels and age estimates. Existing comparison, chronology and swimlane tests cover the migrated models; no duplicate tests were added merely to restate the port. The next static-page step can use these contracts to type its page models and templates.
+A migration comparison confirmed identical results for 460 default and single-year views across the whole collection, including full-range comparisons, compact and expanded lanes, uncertainty labels and age estimates. Existing comparison, chronology and swimlane tests cover the migrated models; no duplicate tests were added merely to restate the port. These contracts now type the static page model and component props.
+
+## Strict static-page checks
+
+`npm run check:static` checks Astro templates and TypeScript through `tsconfig.astro.json`, with strict null checks, unchecked-index protection and exact optional properties. `build:static` runs this gate before generating HTML, so the existing CI static-page job also enforces it. The normal TypeScript compilation remains separate because it emits the compatibility browser modules.
+
+`src/presentation/history-page.ts` constructs the typed page model. The filesystem adapter validates historical records, while the page model checks the JSON boundaries for evidence and geography. Checked statements resolve their source references before reaching templates. Missing coordinates retain their research references without producing a map marker.
+
+The Astro checker currently declares support for TypeScript 5 and 6. TypeScript is therefore pinned to 6.0.3, with Node unchanged at 26, rather than forcing an unsupported dependency combination. The generated Alexander HTML is byte-for-byte identical to the previous pilot. A deliberately invalid component prop was rejected by the new checker; the temporary probe was then removed.

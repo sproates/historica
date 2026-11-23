@@ -7,8 +7,10 @@ import HistoryEvidence from './HistoryEvidence.astro';
 import HistoryDetails from './HistoryDetails.astro';
 import {dates,year,href} from '../../scripts/static/history-page.mjs';
 import {ordinal} from '../domain/timeline';
-import {temporalLabel} from '../../web/focus-model.js';
-import {outsideVisiblePeriod} from '../../web/comparison-model.js';
+import {temporalLabel} from '../domain/history-queries';
+import {outsideVisiblePeriod} from '../domain/comparison';
+import type {HistoryPage} from '../presentation/history-page';
+interface Props {page: HistoryPage}
 const {page}=Astro.props;
 const {state}=page;
 ---

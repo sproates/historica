@@ -1,0 +1,10 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "allowJs": false
+  },
+  "include": [".astro/types.d.ts", "src/**/*.astro", "src/**/*.ts", "scripts/static/*.d.mts"],
+  "exclude": ["web", "release", "node_modules"]
+}

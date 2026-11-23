@@ -51,13 +51,14 @@ Build commands don't publish. `docs/` and `release/` are local build outputs, ex
 Alexander has an opt-in Astro page using the same authored records and timeline calculations as the current explorer. Its introduction, comparison, regional timeline, fitted map, connections and research references are generated before the browser runs JavaScript.
 
 ```sh
-npm run test:static      # build and check the pilot HTML
+npm run check:static     # strict checks for Astro templates and page models
+npm run test:static      # type-check, build and check the pilot HTML
 npm run preview:static   # refresh the existing Wi-Fi preview with the pilot
 ```
 
 Open `/person/alexander` on the existing preview. `npm run preview:sync` restores the normal prototype page. Neither command publishes. The Astro output in `release/static-pilot/` is a page overlay, not a standalone deployable site: it uses the existing preview's styles, scripts and data.
 
-The pilot keeps the existing interaction controller as a temporary bridge. Other histories still use the old renderer. Shared state, smaller browser payloads, Astro template type checking and incremental generation remain to be migrated; this is not the completed static application. See [pilot notes](project/static-page-pilot.md).
+The pilot keeps the existing interaction controller as a temporary bridge. Other histories still use the old renderer. Page models and Astro templates are now strictly checked before building. A unified runtime state, smaller browser payloads and incremental generation remain to be completed. See [pilot notes](project/static-page-pilot.md).
 
 ## History data contract
 
@@ -69,7 +70,7 @@ Validation preserves the input object and all its fields. It doesn't fill missin
 
 The refactor has started with strict TypeScript in `src/domain/`. Timeline arithmetic now compiles to `web/generated/`, with the existing browser entry point preserved. The rest of the app still uses JavaScript and generated static HTML with interactive browser rendering. The Alexander pilot introduces Astro generation; migration of the remaining routes, incremental verification and dark mode remain planned.
 
-Edit TypeScript source, then run `npm run build:client`. Generated browser modules remain tracked during migration so existing preview and generation tools can read them; CI rejects stale generated modules. `npm test`, `npm run build:pages` and `npm run preview:sync` compile them automatically. Strict checking applies to migrated TypeScript, not yet to all legacy JavaScript.
+Edit TypeScript source, then run `npm run build:client`. Generated browser modules remain tracked during migration so existing preview and generation tools can read them; CI rejects stale generated modules. `npm test`, `npm run build:pages` and `npm run preview:sync` compile them automatically. Strict checking applies to migrated TypeScript and Astro templates, not yet to all legacy JavaScript. TypeScript 6 is pinned for compatibility with the Astro checker; Node remains on 26.
 
 Focus changes, date windows and bookmark encoding now live in `src/state/`. `src/controllers/explorer-controls.ts` binds date, year and filter inputs through callbacks, independently of rendering. Browser adapters preserve the existing public module imports and detect the correct path prefix. Search and comparison inputs also have separate controllers, with search ranking in `src/domain/search.ts`. The map controller is also typed, including touch gestures and saved camera state. The main explorer still coordinates rendering and browser history; that migration is ongoing.
 

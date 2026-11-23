@@ -1,0 +1,5 @@
+import type {HistoryPage} from '../../src/presentation/history-page.js';
+/** Filesystem adapter; input records are validated before entering the typed page model. */
+export function historyPage(id: string): HistoryPage;
+export {year,dates,href,xy,geometry} from '../../src/presentation/history-page.js';
+export {laneView} from '../../src/domain/swimlane.js';
