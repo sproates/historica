@@ -24,6 +24,8 @@ export interface HistoryPage {
   timeline: TimelineLayout;
   related: RelatedHistory[];
   land: string[];
+  regionPaths: string[];
+  regionPoints: GeoPoint[];
   references: string[];
   bactriaOutline: string | null;
 }
@@ -86,6 +88,14 @@ export function createHistoryPage(data: HistoryDataset, id: string, evidence: un
   const located=associations.filter((a): a is LocatedAssociation=>a.point!==null);
   const places=[...new Map(located.map(a=>[`${a.point.join(',')}:${a.label}`,a])).values()];
   const features=array(object(countries,'countries')['features'],'country features');
+  const region=focus.id==='britain-ireland'?features.filter(f=>['GBR','IRL','IMN'].includes(String(object(object(f,'country')['properties'],'country properties')['ADM0_A3']))):[];
+  const regionPoints: GeoPoint[]=[];
+  const collect=(value: unknown): void=>{
+    const values=array(value,'region coordinates');
+    if(typeof values[0]==='number'&&typeof values[1]==='number')regionPoints.push([values[0],values[1]]);
+    else values.forEach(collect);
+  };
+  for(const feature of region)collect(object(object(feature,'country')['geometry'],'region geometry')['coordinates']);
   let bactriaOutline: string | null=null;
   if(places.some(a=>a.place==='bactria')){
     const overlays=array(object(data.collection,'collection')['historicalOverlays'],'historical overlays');
@@ -94,6 +104,7 @@ export function createHistoryPage(data: HistoryDataset, id: string, evidence: un
   return {data,focus,state,ranked,places,focusPoint:['area','city','state'].includes(focus.type)?focus.point:null,checked:checkedStatements(evidence,focus),
     comparisons:comparisonLayout([focus,...picks],state),explanation:comparisonExplanation(picks,state),
     timeline:timelineLayout(focus,ranked,data,state),related:relatedEntities(data,state).filter(e=>e.type!=='event'),
+    regionPaths:region.map(f=>geometry(object(f,'country')['geometry'])),regionPoints,
     land:features.map(f=>geometry(object(f,'country feature')['geometry'])),
     references:[...new Set([focus.url,...associations.map(a=>a.source)].filter(Boolean))],bactriaOutline};
 }
