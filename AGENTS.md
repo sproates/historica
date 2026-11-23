@@ -26,3 +26,6 @@ Refresh the persistent preview after edits with `npm run preview:sync`. Files ar
 
 ## Cloudflare scope
 - Ian uses Cloudflare for other projects. Limit work to the `historica.online` zone and explicitly Historica-specific resources. Never change other zones, projects or account-wide settings. Check for existing Historica resources before creating any.
+
+## Public release gate
+- Before moving production hosting to GitHub Pages, complete repository cleanup and obtain Ian’s explicit approval to make the repository public. Private Pages staging is a rehearsal only. Keep production on ASO until that gate is met.

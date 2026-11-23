@@ -1,6 +1,6 @@
 # GitHub Pages cutover preparation
 
-23 November 2026. Live production remains on ASO. No DNS or production-domain change has been made.
+23 November 2026. Live production remains on ASO. DNS delegation has moved to Cloudflare; website records still point to ASO and remain DNS-only.
 
 ## Prepared
 
@@ -43,3 +43,13 @@ Reference: [Cloudflare Universal SSL activation](https://developers.cloudflare.c
 Rollback rehearsal passed on 23 November: [restoration run](https://github.com/sproates/historica/actions/runs/45158198224) restored the original staging release from run 45155742618, verified file checksums and deployed without rebuilding. The restored Socrates route passed an HTTPS check with bookmark query preserved. Production still resolves through GoDaddy to ASO.
 
 GoDaddy comparison completed on 23 November: all four transferable records match the prepared Cloudflare zone. The remaining three GoDaddy entries are provider-managed NS/SOA records. No MX records, forwarding or enabled DNSSEC were present. The pre-change values are saved under ignored `release/` for rollback. Ian explicitly confirmed the Historica-only nameserver switch. GoDaddy now shows the assigned Cloudflare nameservers as saved custom nameservers. DNS propagation and Cloudflare activation are pending; all imported records remain DNS-only and the website continues to point to ASO. Both Cloudflare authoritative servers serve the expected website records, and the ASO certificate still validates for historica.online. No other domain or account-wide setting changed.
+
+## Cloudflare activation confirmed
+
+23 November: Cloudflare is active and its Universal SSL certificate for historica.online and *.historica.online is Active (managed expiry 21 February 2027); a backup certificate is also issued. Public DNS resolves to ASO. Direct HTTPS checks against the ASO origin succeeded for both apex and www. Historica-only encryption mode is now Full (strict), verified after saving. Website proxying is still off. The next step is to enable proxying for the apex and www while retaining ASO as origin, then check live HTTPS and routes before any hosting move. Proxy activation and hosting cutover are paused pending repository cleanup and Ian’s explicit approval to make the repository public. Other zones and account-wide settings are untouched.
+
+## Public-release prerequisite
+
+Ian confirmed that the repository must be cleaned up and made public before the production move to GitHub Pages. Existing private-repository staging is only a rehearsal. Do not change repository visibility, enable website proxying or switch production hosting until this prerequisite is met and the release is explicitly approved.
+
+Cleanup review must cover tracked files and Git history for credentials and private deployment details; generated output duplication (`docs/` and generated `web/pages/`); obsolete prototype assets and scripts; the README’s conflicting historical counts, hosting statements and no-CI instructions; current setup/release guidance; and code/content/third-party licence attribution. Preserve the live ASO deployment and rollback material while doing this work. History rewriting, if needed, requires a separate concrete decision after the audit.

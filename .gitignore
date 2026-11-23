@@ -10,3 +10,6 @@ release/
 __pycache__/
 
 .deploy-local.json
+
+# Generated ASO release; rebuild with npm run build:site.
+/docs/
