@@ -1,0 +1,62 @@
+name: Restore verified Pages staging
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Successful Verify Historica push run containing the github-pages artifact
+        required: true
+        type: string
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: pages-staging
+  cancel-in-progress: false
+jobs:
+  restore:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    permissions:
+      contents: read
+      actions: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Validate the original release and staging destination
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_RUN: ${{ inputs.run_id }}
+        run: |
+          [[ "$RELEASE_RUN" =~ ^[0-9]+$ ]] || exit 1
+          gh api "repos/sproates/historica/actions/runs/$RELEASE_RUN" > "$RUNNER_TEMP/release.json"
+          gh api repos/sproates/historica/pages > "$RUNNER_TEMP/pages.json"
+          node <<'JS'
+          const fs=require('node:fs');
+          const release=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/release.json'));
+          const pages=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/pages.json'));
+          if(release.conclusion!=='success'||release.event!=='push'||release.path!=='.github/workflows/verify.yml'||!['main','feature/github-pages-preparation'].includes(release.head_branch))throw Error('Not an eligible verified release');
+          if(pages.cname||pages.html_url!=='https://sproates.github.io/historica/')throw Error('Destination is not isolated staging');
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,`Restoring verified run ${release.id}, source commit ${release.head_sha}. No rebuild.\n`);
+          JS
+      - name: Download the original Pages bundle
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: github-pages
+          path: restored
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Attach the same bundle to this deployment
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: github-pages
+          path: restored/artifact.tar
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
+      - name: Deploy the restored bundle
+        id: deploy
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
