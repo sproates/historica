@@ -38,3 +38,11 @@ PR #1 remains the unresolved reference. GitHub documents that refs/pull referenc
 Proposed resolution, pending Ian's approval: rename the existing repository to historica-private-archive and keep it private; create a fresh private historica repository; push only sanitised branches and tags, with the cleanup branch promoted to main after verification. Do not mirror-push original local references. Recreate and verify CI/Pages staging settings in the fresh repository. The old staging URL may change during the rename; production remains on ASO throughout. Keep the archive's workflows from deploying after the rename. Confirm the fresh repository has no inherited PR references and verify a remote clone before asking for public visibility approval. Preserve the old repository's PRs and logs privately rather than deleting them.
 
 This is a repository replacement proposal, not an executed rename or authorisation to make either repository public.
+
+## Repository replacement completed
+
+Ian approved the replacement on 23 November. The old repository is now sproates/historica-private-archive, private and archived, with Actions disabled. The fresh sproates/historica repository is also private. Its main branch includes the cleanup work. Only the three sanitised branches and v0.0.1 tag were pushed; no original local checkpoint or pull-request references were transferred.
+
+A fresh mirror fetched from GitHub contained four branch/tag references and 1,482 reachable objects. The same hosting-detail and credential-pattern scan found no matches. GitHub reported no pull-request refs. The old PR reference therefore remains confined to the private archive. Historical run links in the cutover notes now point to that archive.
+
+Read-only CI permissions and the github-pages environment were restored. Deployment remains restricted to main and feature/github-pages-preparation. Pages staging uses the github.io address with no production domain. Repository visibility and production cutover still require separate approval.

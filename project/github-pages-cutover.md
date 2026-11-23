@@ -24,7 +24,7 @@ Sources: [GitHub Pages HTTPS provisioning](https://docs.github.com/en/pages/gett
 
 The larger TypeScript, data and static-rendering refactor is described in [the sustainability plan](../SUSTAINABILITY-PLAN.md). This preparation removes the hosting dependency without attempting that rewrite at the same time.
 
-Implementation: [preparation PR](https://github.com/sproates/historica/pull/1). First successful staging deployment: [GitHub Actions run](https://github.com/sproates/historica/actions/runs/45155742618). The remaining cutover work starts at gate 4; production traffic has not moved.
+Implementation: [preparation PR](https://github.com/sproates/historica-private-archive/pull/1). First successful staging deployment: [GitHub Actions run](https://github.com/sproates/historica-private-archive/actions/runs/45155742618). The remaining cutover work starts at gate 4; production traffic has not moved.
 
 ## HTTPS preparation
 
@@ -40,7 +40,7 @@ Reference: [Cloudflare Universal SSL activation](https://developers.cloudflare.c
 
 `Restore verified Pages staging` accepts the run ID of a successful push build from the verification workflow. It downloads that run's retained `historica-pages-<commit>` artifact, verifies its file checksums, packages the unchanged files and deploys them. The temporary `github-pages` upload isn't relied on as a retained release. It does not rebuild. It runs from main only and refuses a Pages destination with a custom domain attached. Bundles are retained for seven days; an expired artifact fails safely before deployment.
 
-Rollback rehearsal passed on 23 November: [restoration run](https://github.com/sproates/historica/actions/runs/45158198224) restored the original staging release from run 45155742618, verified file checksums and deployed without rebuilding. The restored Socrates route passed an HTTPS check with bookmark query preserved. Production still resolves through GoDaddy to ASO.
+Rollback rehearsal passed on 23 November: [restoration run](https://github.com/sproates/historica-private-archive/actions/runs/45158198224) restored the original staging release from run 45155742618, verified file checksums and deployed without rebuilding. The restored Socrates route passed an HTTPS check with bookmark query preserved. Production still resolves through GoDaddy to ASO.
 
 GoDaddy comparison completed on 23 November: all four transferable records match the prepared Cloudflare zone. The remaining three GoDaddy entries are provider-managed NS/SOA records. No MX records, forwarding or enabled DNSSEC were present. The pre-change values are saved under ignored `release/` for rollback. Ian explicitly confirmed the Historica-only nameserver switch. GoDaddy now shows the assigned Cloudflare nameservers as saved custom nameservers. DNS propagation and Cloudflare activation are pending; all imported records remain DNS-only and the website continues to point to ASO. Both Cloudflare authoritative servers serve the expected website records, and the ASO certificate still validates for historica.online. No other domain or account-wide setting changed.
 
