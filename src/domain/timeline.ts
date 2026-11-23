@@ -77,3 +77,9 @@ export function appendTimeline(hash: string, state: SharedTimelineState): string
   }
   return '#' + params.toString();
 }
+
+/** Map a position along the date axis to a historical year, omitting year zero. */
+export function yearAtFraction(window: TimeWindow, fraction: number): number {
+  const bounded = Math.max(0, Math.min(1, fraction));
+  return historical(Math.round(ordinal(window.start) + bounded * (ordinal(window.end) - ordinal(window.start))));
+}
