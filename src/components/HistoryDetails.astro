@@ -1,10 +1,12 @@
 ---
 import {dates} from '../../scripts/static/history-page.mjs';
 import {position} from '../domain/timeline';
-import {temporalLabel} from '../../web/focus-model.js';
+import {temporalLabel} from '../domain/history-queries';
+import type {HistoryPage} from '../presentation/history-page';
+interface Props {page: HistoryPage}
 const {page}=Astro.props;
 const {focus,ranked,state}=page;
-const records=[focus,...ranked.slice(0,18)];
+const records=[{...focus,km:null},...ranked.slice(0,18)];
 ---
 <div id="lanes">{records.map((e,i)=>{
   const left=position(Math.max(e.startYear,state.start),state.start,state.end)*100;

@@ -1,4 +1,6 @@
 ---
+import type {HistoryPage} from '../presentation/history-page';
+interface Props {page: HistoryPage}
 const {page}=Astro.props;
 const {focus:f,checked}=page;
 const paragraphs=f.description.split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean);

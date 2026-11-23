@@ -1,10 +1,12 @@
 ---
 import {year,dates,laneView} from '../../scripts/static/history-page.mjs';
 import {position} from '../domain/timeline';
-import {dateMeaning} from '../../web/exploration-model.js';
+import {dateMeaning} from '../domain/exploration';
+import type {HistoryPage} from '../presentation/history-page';
+interface Props {page: HistoryPage}
 const {page}=Astro.props;
 const {timeline:layout,state}=page;
-const tickPosition=y=>state.start===state.end?50:position(y,state.start,state.end)*100;
+const tickPosition=(y: number)=>state.start===state.end?50:position(y,state.start,state.end)*100;
 ---
 <div id="swimlanes">
   <div class="swim-axis"><div class="swim-label">REGION</div><div class="swim-dates">{layout.ticks.map((y,i)=><span style={`left:${tickPosition(y)}%`} class={i===0?'first':i===layout.ticks.length-1?'last':''}>{year(y)}</span>)}</div></div>

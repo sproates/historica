@@ -1,7 +1,9 @@
 ---
 import {year,dates} from '../../scripts/static/history-page.mjs';
-import {dateMeaning} from '../../web/exploration-model.js';
-import {regionFor} from '../../web/swimlane-model.js';
+import {dateMeaning} from '../domain/exploration';
+import {regionFor} from '../domain/swimlane';
+import type {HistoryPage} from '../presentation/history-page';
+interface Props {page: HistoryPage}
 const {page}=Astro.props;
 const {comparisons:layout,data,state}=page;
 ---
