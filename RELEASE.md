@@ -98,14 +98,16 @@ See [the cutover preparation record](project/github-pages-cutover.md) for status
 
 The normal Wi-Fi preview now uses the verified Astro pages. The current consolidated design remains subject to Ian's preview approval. See [release readiness](project/release-readiness.md) for the bounded release gates; earlier migration notes are not a queue of additional refactors.
 
-For an approved production package, set `HISTORICA_ANALYTICS_TOKEN` to the public site token from **Historica's** Cloudflare Web Analytics configuration, then run:
+Historica's Cloudflare Web Analytics site is configured for manual installation. Its public site token is stored in the `HISTORICA_ANALYTICS_TOKEN` GitHub repository variable; this is a beacon identifier, not an account API credential. For an approved production package, read that variable into the build environment:
 
 ```sh
 npm run build:web
-node scripts/build-pages.mjs --static-source release/static-incremental --production --base / --output release/production-site
+HISTORICA_ANALYTICS_TOKEN="$(gh variable get HISTORICA_ANALYTICS_TOKEN --repo sproates/historica)" node scripts/build-pages.mjs --static-source release/static-incremental --production --base / --output release/production-site
 node scripts/verify-pages.mjs release/production-site
 ```
 
 Without a token the package contains no analytics configuration. Staging ignores the token. The browser also restricts loading to `historica.online`, and blocks duplicate initialization. Automatic SPA measurement is disabled; this counts document visits and performance, not every client-side focus change. No custom events are sent. Cloudflare describes this option in its [SPA measurement documentation](https://developers.cloudflare.com/web-analytics/get-started/web-analytics-spa/).
 
 Store and promote the checked package; do not rebuild between approval and deployment. The existing `Restore verified Pages staging` workflow promotes retained files without rebuilding, checks their hashes, and refuses a production-domain destination. Production promotion and rollback still require the separately approved cutover configuration. Do not describe a staging rehearsal as a completed production rollback test.
+
+Cloudflare setup was completed on 23 November 2026 for `historica.online` only. Automatic injection is off to avoid duplicating the application beacon. A local production package passed artifact and analytics configuration checks; no production deployment or real-traffic reporting is claimed. Keep automatic injection off when using the application integration. Other account sites were not changed.
