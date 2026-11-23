@@ -1,97 +1,105 @@
-interface Entry {id:string;type:string;title:string;startYear:number;endYear:number;point:[number,number]|null}
-interface Association {subject:string;place:string;startYear:number;endYear:number;point:[number,number]|null;label:string}
-type Point=[number,number];type Polygon=Point[][];
-interface Country {properties:{NAME:string;ADM0_A3:string;LABEL_X:number;LABEL_Y:number};geometry:{type:string;coordinates:Polygon|Polygon[]}}
-interface Camera {x:number;y:number;w:number;h:number}
+import * as L from 'leaflet';
+import {placesFor,uniqueEntries,year,ordinal,calendar,type Entry,type Association,type Place} from './model.js';
 const el=<T extends HTMLElement=HTMLElement>(id:string)=>document.getElementById(id) as T;
-const svg=document.getElementById('map') as unknown as SVGSVGElement;
-const ns='http://www.w3.org/2000/svg';
-const [history,geography]=await Promise.all([fetch('/data/browser-history.json').then(r=>r.json()),fetch('/data/ne_50m_admin_0_countries.json').then(r=>r.json())]);
-const entries:Entry[]=history.data.entities,associations:Association[]=history.data.associations,countries:Country[]=geography.features;
-const names=new Map(entries.map(e=>[e.id,e.title]));
-const params=new URLSearchParams(location.search);
-const number=(key:string,fallback:number)=>{const value=Number(params.get(key));return params.has(key)&&Number.isFinite(value)?value:fallback;};
-let start=Math.max(-5500,Math.min(199,number('from',-600)))||1,end=Math.max(start,Math.min(200,number('to',200)))||1;
-let selected=params.get('country')||'ITA',area:Camera|null=null,camera:Camera={x:330,y:45,w:150,h:110};
-const fromYear=(n:number)=>n<0?n+1:n,toYear=(n:number)=>n<=0?n-1:n;
-const year=(n:number)=>`${Math.abs(n).toLocaleString()} ${n<0?'BCE':'CE'}`;
-const projected=([lon,lat]:Point):Point=>[(lon+180)*2,(90-lat)*2];
-const polygons=(c:Country):Polygon[]=>c.geometry.type==='Polygon'?[c.geometry.coordinates as Polygon]:c.geometry.coordinates as Polygon[];
-function inRing(p:Point,ring:Point[]){let inside=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i]!,b=ring[j]!;if((a[1]>p[1])!==(b[1]>p[1])&&p[0]<(b[0]-a[0])*(p[1]-a[1])/(b[1]-a[1])+a[0])inside=!inside;}return inside;}
-function contains(c:Country,p:Point){return polygons(c).some(poly=>inRing(p,poly[0]!)&&!poly.slice(1).some(hole=>inRing(p,hole)));}
-function countryBounds(c:Country):Camera{
- const label:Point=[c.properties.LABEL_X,c.properties.LABEL_Y];
- const parts=polygons(c);const main=parts.find(poly=>inRing(label,poly[0]!))||parts.reduce((a,b)=>a[0]!.length>b[0]!.length?a:b);
- const points=main[0]!.map(projected),xs=points.map(p=>p[0]),ys=points.map(p=>p[1]);
- const x=Math.min(...xs),y=Math.min(...ys),w=Math.max(...xs)-x,h=Math.max(...ys)-y;
- const width=Math.max(16,w*1.35,h*1.8);return{x:x+w/2-width/2,y:y+h/2-width*.35,w:width,h:width*.7};
+const mobile=()=>matchMedia('(max-width:720px)').matches;
+const reduced=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const query=new URLSearchParams(location.search);
+const numeric=(key:string,fallback:number)=>{const value=Number(query.get(key));return query.has(key)&&Number.isFinite(value)?value:fallback;};
+let from=Math.max(-5500,Math.min(199,numeric('from',-5500)))||-1;
+let to=Math.max(from,Math.min(200,numeric('to',200)))||1;
+let entries:Entry[]=[],associations:Association[]=[],places:Place[]=[];
+interface Country {properties:{NAME:string;ADM0_A3:string;LABEL_X:number;LABEL_Y:number};geometry:{type:string;coordinates:number[][][]|number[][][][]}}
+let countries:Country[]=[];
+let selected:Place[]|null=null,selectionTitle='',currentPlaces:Place[]=[];
+let markers=L.layerGroup(),homeBounds:L.LatLngBounds|null=null;
+let sheetSnap:'peek'|'middle'|'full'='middle';
+let settling=false,ready=false;
+const map=L.map('map',{zoomControl:false,attributionControl:false,inertia:true,inertiaDeceleration:2200,inertiaMaxSpeed:1800,touchZoom:true,zoomSnap:.25,zoomDelta:.75,worldCopyJump:true,minZoom:2,maxZoom:17,zoomAnimation:!reduced,fadeAnimation:!reduced,markerZoomAnimation:!reduced});
+const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,keepBuffer:3,updateWhenIdle:true,referrerPolicy:'strict-origin-when-cross-origin'}).addTo(map);
+let tileErrors=0;tiles.on('tileerror',()=>{if(++tileErrors>=3)el('map-warning').hidden=false;});tiles.on('tileload',()=>{tileErrors=0;el('map-warning').hidden=true;});
+markers.addTo(map);
+function sizeSheet(snap:typeof sheetSnap){sheetSnap=snap;const height=el('explorer').clientHeight;const value=snap==='peek'?126:snap==='middle'?Math.min(320,height*.42):height-118;document.documentElement.style.setProperty('--sheet-height',`${Math.max(126,value)}px`);el('sheet').dataset.snap=snap;el('sheet-handle').setAttribute('aria-expanded',String(snap==='full'));el('sheet-handle').setAttribute('aria-label',snap==='full'?'Collapse history panel':'Expand history panel');el('sheet-toggle').textContent=snap==='full'?'More map ↓':'See timeline ↑';}
+function save(){if(!ready)return;const center=map.getCenter();const p=new URLSearchParams({from:String(from),to:String(to),lat:center.lat.toFixed(5),lng:center.lng.toFixed(5),zoom:map.getZoom().toFixed(2)});if(homeBounds)p.set('home',homeBounds.toBBoxString());if(selected)p.set('places',selected.map(p=>p.key).join(';'));window.history.replaceState(null,'','?'+p);}
+function dateUI(){el('date-label').textContent=from===-5500&&to===200?'All dates · 5500 BCE–200 CE':`${year(from)} – ${year(to)}`;el('axis').replaceChildren();for(const n of [from,to]){const label=document.createElement('span');label.textContent=year(n);el('axis').append(label);}}
+function openRoute(e:Entry){return `/${e.type}/${e.id}?from=${from}&to=${to}`;}
+function listEntry(e:Entry){
+ const article=document.createElement('article');article.className='entry';
+ const link=document.createElement('a');link.href=openRoute(e);
+ const meta=document.createElement('p');meta.className='entry-meta';meta.textContent=e.type;
+ const h=document.createElement('h2');h.textContent=e.title;
+ const date=document.createElement('span');date.className='date';date.textContent=`${year(e.startYear)} – ${year(e.endYear)}`;
+ const track=document.createElement('div');track.className='bar-track';track.setAttribute('aria-hidden','true');const bar=document.createElement('span');const width=Math.max(1,ordinal(to)-ordinal(from));bar.style.left=`${100*(ordinal(Math.max(from,e.startYear))-ordinal(from))/width}%`;bar.style.width=`${Math.max(.7,100*(ordinal(Math.min(to,e.endYear))-ordinal(Math.max(from,e.startYear)))/width)}%`;track.append(bar);
+ const description=document.createElement('p');description.className='description';description.textContent=e.description?.split('\n')[0]||'';link.append(meta,h,date,track,description);
+ const foot=document.createElement('div');foot.className='entry-foot';const show=document.createElement('button');show.textContent='Show on map';show.onclick=()=>{const found=places.filter(p=>p.entries.some(item=>item.id===e.id));if(!found.length)return;selected=found;selectionTitle=found.length===1?found[0]!.name:e.title;sizeSheet('middle');fitPlaces(found);renderList();};const open=document.createElement('a');open.href=openRoute(e);open.textContent='Read history ↗';foot.append(show,open);article.append(link,foot);return article;
 }
-function drawLabels(){
- const group=el('country-labels');group.replaceChildren();if(!svg.clientWidth||!svg.clientHeight)return;
- const scale=Math.max(camera.w/svg.clientWidth,camera.h/svg.clientHeight),boxes:number[][]=[];
- const ordered=[...countries].sort((a,b)=>Number(b.properties.ADM0_A3===selected)-Number(a.properties.ADM0_A3===selected));
- for(const c of ordered){const [x,y]=projected([c.properties.LABEL_X,c.properties.LABEL_Y]);
- if(x<camera.x||x>camera.x+camera.w||y<camera.y||y>camera.y+camera.h)continue;
- const width=c.properties.NAME.length*6.5*scale,height=17*scale,box=[x-width/2,y-height/2,x+width/2,y+height/2];
- if(boxes.some(b=>box[0]!<b[2]!&&box[2]!>b[0]!&&box[1]!<b[3]!&&box[3]!>b[1]!))continue;
- boxes.push(box);const text=makeSvg('text',{x:String(x),y:String(y),'font-size':String(12*scale),'data-country':c.properties.ADM0_A3});text.textContent=c.properties.NAME;group.append(text);
+function renderList(){
+ const source=selected||currentPlaces,items=uniqueEntries(source);
+ el('context').textContent=selected?(source.length===1?'AT THIS PLACE':'AROUND THESE PLACES'):'HISTORY IN THIS MAP AREA';
+ el('place-title').textContent=selected?selectionTitle:'What happened here';
+ el('result-count').textContent=`${items.length} ${items.length===1?'entry':'entries'} · ${source.length} ${source.length===1?'place':'places'}`;
+ el('close-place').hidden=!selected;el('selection-actions').hidden=!selected;
+ const results=el('results');results.replaceChildren(...items.map(listEntry));
+ if(!items.length){const empty=document.createElement('div');empty.className='empty';const heading=document.createElement('h2');heading.textContent='There’s more to uncover';const p=document.createElement('p');p.textContent='No mapped entries here for these dates. Try a wider area or another period. Our collection is still growing.';const dates=document.createElement('button');dates.textContent='Show all dates';dates.onclick=()=>applyPeriod(-5500,200);const placesButton=document.createElement('button');placesButton.textContent='Find a place';placesButton.onclick=()=>{el<HTMLInputElement>('search').focus();search('');};empty.append(heading,p,dates,placesButton);results.append(empty);}
+ dateUI();save();
+}
+interface Cluster {places:Place[];x:number;y:number;latlng:L.LatLng}
+function updateMap(){
+ if(!ready)return;
+ const bounds=map.getBounds();currentPlaces=places.filter(p=>bounds.contains([p.point[1],p.point[0]]));
+ const clusters:Cluster[]=[];
+ for(const place of currentPlaces){const ll=L.latLng(place.point[1],place.point[0]),point=map.latLngToContainerPoint(ll);const cluster=clusters.find(c=>Math.hypot(c.x-point.x,c.y-point.y)<(mobile()?58:48));if(cluster){cluster.places.push(place);}else clusters.push({places:[place],x:point.x,y:point.y,latlng:ll});}
+ markers.clearLayers();const labelBoxes:{x:number;y:number}[]=[];
+ for(const cluster of clusters){
+  const list=uniqueEntries(cluster.places);const primary=[...cluster.places].sort((a,b)=>b.entries.length-a.entries.length)[0]!;const name=cluster.places.length===1?primary.name:`${primary.name} + ${cluster.places.length-1}`;
+  const icon=document.createElement('div');const disc=document.createElement('span');disc.className='pin-disc';disc.textContent=String(list.length);icon.append(disc);
+  if(labelBoxes.every(p=>Math.abs(p.x-cluster.x)>150||Math.abs(p.y-cluster.y)>70)){const label=document.createElement('span');label.className='pin-label';label.textContent=name;icon.append(label);labelBoxes.push({x:cluster.x,y:cluster.y});}
+  const active=selected&&cluster.places.some(p=>selected!.some(s=>s.key===p.key));
+  const marker=L.marker(cluster.latlng,{icon:L.divIcon({className:`history-pin${active?' selected':''}`,html:icon,iconSize:[42,42],iconAnchor:[21,21]}),title:`${name}: ${list.length} entries`,alt:name,keyboard:true,riseOnHover:true}).addTo(markers);
+  const choose=()=>{selected=cluster.places;selectionTitle=name;sizeSheet('middle');el('sheet-scroll').scrollTop=0;renderList();updateMarkerSelection();};
+  marker.on('click',choose);const element=marker.getElement();element?.setAttribute('aria-label',`${name}, ${list.length} entries. Show histories.`);element?.addEventListener('keydown',e=>{if(e.key===' '){e.preventDefault();choose();}});
  }
+ renderList();
 }
-
-function save(){const p=new URLSearchParams({country:selected,from:String(start),to:String(end)});if(area)p.set('area',[area.x,area.y,area.w,area.h].join(','));p.set('view',[camera.x,camera.y,camera.w,camera.h].map(v=>v.toFixed(2)).join(','));p.set('panel',document.body.dataset.panel||'timeline');window.history.replaceState(null,'','?'+p);}
-function readCamera(key:string):Camera|null{const parts=params.get(key)?.split(',').map(Number);return parts?.length===4&&parts.every(Number.isFinite)&&parts[2]!>0&&parts[3]!>0?{x:parts[0]!,y:parts[1]!,w:parts[2]!,h:parts[3]!}:null;}
-area=readCamera('area');if(area)selected='area';
-if(!countries.some(c=>c.properties.ADM0_A3===selected)&&selected!=='area')selected='ITA';
-camera=readCamera('view')||(selected==='area'?area!:countryBounds(countries.find(c=>c.properties.ADM0_A3===selected)!));
-const select=el<HTMLSelectElement>('country');
-select.add(new Option('Selected map area','area'));
-for(const c of [...countries].sort((a,b)=>a.properties.NAME.localeCompare(b.properties.NAME)))select.add(new Option(c.properties.NAME,c.properties.ADM0_A3));
-function makeSvg(tag:string,attrs:Record<string,string>){const node=document.createElementNS(ns,tag);for(const [key,value]of Object.entries(attrs))node.setAttribute(key,value);return node;}
-for(const c of countries){const d=polygons(c).map(poly=>poly.map(ring=>ring.map((p,i)=>(i?'L':'M')+projected(p).join(',')).join(' ')+'Z').join(' ')).join(' ');const path=makeSvg('path',{d,'fill-rule':'evenodd','data-country':c.properties.ADM0_A3});const title=makeSvg('title',{});title.textContent=c.properties.NAME;path.append(title);el('countries').append(path);}
-function locate(e:Entry){const dated=associations.filter(a=>a.subject===e.id&&a.point&&a.startYear<=end&&a.endYear>=start).map(a=>({point:a.point!,label:a.label,place:names.get(a.place)||a.place}));return dated.length?dated:e.point?[{point:e.point,label:'Recorded reference point',place:''}]:[];}
-function matchesPoint(p:Point){if(area){const [x,y]=projected(p);return x>=area.x&&x<=area.x+area.w&&y>=area.y&&y<=area.y+area.h;}const c=countries.find(c=>c.properties.ADM0_A3===selected);return c?contains(c,p):false;}
-function rows(){return entries.filter(e=>e.startYear<=end&&e.endYear>=start).map(e=>({entry:e,locations:locate(e).filter(l=>matchesPoint(l.point))})).filter(r=>r.locations.length).sort((a,b)=>a.entry.startYear-b.entry.startYear);}
-function drawCamera(){svg.setAttribute('viewBox',`${camera.x} ${camera.y} ${camera.w} ${camera.h}`);
- const scale=svg.clientWidth&&svg.clientHeight?Math.max(camera.w/svg.clientWidth,camera.h/svg.clientHeight):camera.w/350;
- let visible=0;for(const circle of svg.querySelectorAll('circle')){circle.setAttribute('r',String(scale*7));const x=Number(circle.getAttribute('cx')),y=Number(circle.getAttribute('cy'));if(x>=camera.x&&x<=camera.x+camera.w&&y>=camera.y&&y<=camera.y+camera.h)visible++;}
- if(!el('place-preview').querySelector('a'))el('place-preview').textContent=visible?'Tap a blue marker to see the entry. Several entries may share a location.':el('markers').childElementCount?'No markers in this map view. Use Back to selection to return to the selected place.':'No mapped entries for this area and period. Try Fit available history or wider dates.';
- drawLabels();save();}
-
-function route(e:Entry){return `/${e.type}/${e.id}?from=${start}&to=${end}`;}
-function render(){select.value=selected;el('years').textContent=`${year(start)} – ${year(end)}`;for(const [id,value]of [['from',start],['to',end]] as const){el<HTMLInputElement>(id).value=String(value);el(id+'-label').textContent=year(value);}
- el('place-preview').replaceChildren();const c=countries.find(c=>c.properties.ADM0_A3===selected);el('timeline-title').textContent=area?'Selected map area':'Present-day '+c?.properties.NAME;
- el('selection-note').textContent=area?'Histories with recorded locations inside your selected area.':'Histories with recorded locations inside today’s borders. Coverage is incomplete.';
- for(const path of svg.querySelectorAll('[data-country]'))path.classList.toggle('selected',path.getAttribute('data-country')===selected);
- const outline=document.getElementById('area-outline')!;outline.toggleAttribute('hidden',!area);if(area)for(const [key,value]of Object.entries({x:area.x,y:area.y,width:area.w,height:area.h}))outline.setAttribute(key,String(value));
- const list=rows();el('count').textContent=`${list.length} ${list.length===1?'history':'histories'}`;el('map-results').textContent=`${list.length} ${list.length===1?'history':'histories'} in ${area?'the selected map area':c?.properties.NAME} · ${year(start)} – ${year(end)}`;el('return-selection').textContent=area?'Back to selected area':`Back to ${c?.properties.NAME}`;const axis=el('axis');axis.replaceChildren();for(const n of [start,toYear(Math.round((fromYear(start)+fromYear(end))/2)),end]){const span=document.createElement('span');span.textContent=year(n);axis.append(span);}
- el('rows').replaceChildren();el('markers').replaceChildren();
- if(!list.length){const empty=document.createElement('div');empty.className='empty';const h=document.createElement('h3');h.textContent='No matching histories yet';const p=document.createElement('p');p.textContent='Try wider dates or another area. Our location records and historical coverage are incomplete.';empty.append(h,p);el('rows').append(empty);}
- for(const {entry:e,locations}of list){const link=document.createElement('a');link.className='history';link.href=route(e);const heading=document.createElement('div');heading.className='history-top';const title=document.createElement('strong');title.textContent=e.title;const dates=document.createElement('small');dates.textContent=`${year(e.startYear)} – ${year(e.endYear)}`;heading.append(title,dates);const track=document.createElement('div');track.className='track';const bar=document.createElement('span');bar.className='bar';const duration=Math.max(1,fromYear(end)-fromYear(start));bar.style.left=100*(fromYear(Math.max(start,e.startYear))-fromYear(start))/duration+'%';bar.style.width=Math.max(.6,100*(fromYear(Math.min(end,e.endYear))-fromYear(Math.max(start,e.startYear)))/duration)+'%';track.append(bar);const note=document.createElement('span');note.className='location';note.textContent=locations[0]!.place?`Dated association · ${locations[0]!.place}`:'Approximate reference location';link.append(heading,track,note);el('rows').append(link);
- for(const l of locations){const [cx,cy]=projected(l.point);const marker=makeSvg('circle',{cx:String(cx),cy:String(cy),r:String(camera.w/180),'data-entry':e.id,role:'button',tabindex:'0','aria-label':e.title});const title=makeSvg('title',{});title.textContent=e.title;marker.append(title);el('markers').append(marker);}}
- drawCamera();}
-function choose(code:string){selected=code;if(code==='area')area={...camera};else{area=null;camera=countryBounds(countries.find(c=>c.properties.ADM0_A3===code)!);}el('place-preview').textContent='Select a dot to identify a history before opening it.';render();}
-select.addEventListener('change',()=>choose(select.value));
-function windowTo(a:number,b:number){const min=fromYear(-5500),max=fromYear(200);let width=Math.min(max-min,Math.max(1,b-a));a=Math.max(min,Math.min(a,max-width));b=a+width;start=toYear(Math.round(a));end=toYear(Math.round(b));render();}
-function zoomTime(factor:number){const a=fromYear(start),b=fromYear(end),mid=(a+b)/2,width=Math.max(5,(b-a)*factor);windowTo(mid-width/2,mid+width/2);}
-el('wider').onclick=()=>zoomTime(2);el('closer').onclick=()=>zoomTime(.5);
-for(const [id,direction]of [['earlier',-1],['later',1]]as const)el(id).onclick=()=>{const a=fromYear(start),b=fromYear(end),shift=(b-a)/2*direction;windowTo(a+shift,b+shift);};
-el('from').oninput=()=>{start=toYear(Math.min(fromYear(end)-1,fromYear(Number(el<HTMLInputElement>('from').value)||-1)));render();};el('to').oninput=()=>{end=toYear(Math.max(fromYear(start)+1,fromYear(Number(el<HTMLInputElement>('to').value)||1)));render();};
-el('fit').onclick=()=>{const prior=[start,end];start=-5500;end=200;const all=rows();if(all.length)windowTo(fromYear(Math.min(...all.map(r=>r.entry.startYear))),fromYear(Math.max(...all.map(r=>r.entry.endYear))));else{[start,end]=prior as [number,number];render();}};
-function zoomMap(factor:number){const width=Math.max(8,Math.min(720,camera.w*factor)),height=width*camera.h/camera.w;camera={x:camera.x+(camera.w-width)/2,y:camera.y+(camera.h-height)/2,w:width,h:height};drawCamera();}
-el('zoom-in').onclick=()=>zoomMap(.7);el('zoom-out').onclick=()=>zoomMap(1/.7);el('world').onclick=()=>{camera={x:0,y:0,w:720,h:360};drawCamera();};el('explore-area').onclick=()=>{choose('area');if(matchMedia('(max-width:800px)').matches)el('tab-timeline').click();};
-el('return-selection').onclick=()=>{camera=area?{...area}:countryBounds(countries.find(c=>c.properties.ADM0_A3===selected)!);drawCamera();};
-let moved=false;const touches=new Map<number,{x:number;y:number}>();let last:{x:number;y:number;distance:number}|null=null;
-function gesture(){const points=[...touches.values()];return{x:points.reduce((n,p)=>n+p.x,0)/points.length,y:points.reduce((n,p)=>n+p.y,0)/points.length,distance:points.length>1?Math.hypot(points[0]!.x-points[1]!.x,points[0]!.y-points[1]!.y):0};}
-svg.addEventListener('pointerdown',event=>{touches.set(event.pointerId,{x:event.clientX,y:event.clientY});if(touches.size===1)moved=false;else moved=true;last=gesture();});
-svg.addEventListener('pointermove',event=>{if(!touches.has(event.pointerId)||!last)return;touches.set(event.pointerId,{x:event.clientX,y:event.clientY});const now=gesture(),dx=now.x-last.x,dy=now.y-last.y;if(Math.hypot(dx,dy)>2||touches.size>1)moved=true;if(moved){svg.setPointerCapture(event.pointerId);const rect=svg.getBoundingClientRect(),scale=Math.max(camera.w/rect.width,camera.h/rect.height);camera.x-=dx*scale;camera.y-=dy*scale;if(last.distance&&now.distance)zoomMap(last.distance/now.distance);else drawCamera();}last=now;});
-for(const type of ['pointerup','pointercancel'] as const)svg.addEventListener(type,event=>{touches.delete(event.pointerId);last=touches.size?gesture():null;});
-svg.addEventListener('wheel',event=>{event.preventDefault();if(event.ctrlKey||event.metaKey)zoomMap(Math.exp(event.deltaY*.01));else{camera.x+=event.deltaX*camera.w/svg.clientWidth;camera.y+=event.deltaY*camera.h/svg.clientHeight;drawCamera();}},{passive:false});
-function identify(id:string){const e=entries.find(e=>e.id===id)!;const title=document.createElement('strong');title.textContent=e.title;const link=document.createElement('a');link.href=route(e);link.textContent='Open this history →';el('place-preview').replaceChildren(title,link);}
-svg.addEventListener('click',event=>{if(moved){moved=false;return;}const target=event.target as Element;const marker=target.closest('[data-entry]');if(marker)identify(marker.getAttribute('data-entry')!);else{const country=target.closest('[data-country]');if(country)choose(country.getAttribute('data-country')!);}});
-svg.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){const id=(event.target as Element).getAttribute('data-entry');if(id){event.preventDefault();identify(id);}}});
-for(const panel of ['timeline','map'])el('tab-'+panel).onclick=()=>{document.body.dataset.panel=panel;for(const key of ['timeline','map'])el('tab-'+key).setAttribute('aria-pressed',String(key===panel));drawCamera();};
-if(params.get('panel')==='map')el('tab-map').click();
-el('theme').onclick=()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark';};
-window.addEventListener('resize',drawCamera);
-render();
-export {};
+function updateMarkerSelection(){// Rebuild only after a completed gesture or explicit selection, never during dragging.
+ updateMap();
+}
+function padding():L.FitBoundsOptions{return {paddingTopLeft:mobile()?[40,125]:[420,90],paddingBottomRight:mobile()?[40,Math.min(320,el('explorer').clientHeight*.42)+35]:[65,45],maxZoom:11,animate:!reduced,duration:.65};}
+function fitPlaces(points:Place[]){if(!points.length)return;const bounds=L.latLngBounds(points.map(p=>[p.point[1],p.point[0]] as L.LatLngTuple));map.flyToBounds(bounds,padding());}
+function fitCountry(c:Country){const [lon,lat]=[c.properties.LABEL_X,c.properties.LABEL_Y];const polygons=(c.geometry.type==='Polygon'?[c.geometry.coordinates]:c.geometry.coordinates) as number[][][][];const ring=polygons.map(p=>p[0]!).find(r=>inside([lon,lat],r))||polygons[0]![0]!;const bounds=L.latLngBounds(ring.map(p=>[p[1]!,p[0]!] as L.LatLngTuple));homeBounds=bounds;selected=null;sizeSheet('middle');map.flyToBounds(bounds,{...padding(),maxZoom:8});}
+function inside(p:number[],ring:number[][]){let value=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i]!,b=ring[j]!;if((a[1]!>p[1]!)!==(b[1]!>p[1]!)&&p[0]!<(b[0]!-a[0]!)*(p[1]!-a[1]!)/(b[1]!-a[1]!)+a[0]!)value=!value;}return value;}
+function closeSearch(){el('search-results').hidden=true;el('search').setAttribute('aria-expanded','false');el<HTMLInputElement>('search').blur();}
+function search(term:string){const box=el('search-results');box.replaceChildren();box.hidden=false;el('search').setAttribute('aria-expanded','true');const q=term.trim().toLowerCase();
+ const countryMatches=countries.filter(c=>q?c.properties.NAME.toLowerCase().includes(q):['GBR','EGY','GRC','ITA','CHN'].includes(c.properties.ADM0_A3)).slice(0,6);
+ const all=placesFor(entries,associations,-5500,200);const matches=all.filter(p=>q&&(p.name.toLowerCase().includes(q)||p.entries.some(e=>e.title.toLowerCase().includes(q)))).slice(0,7);
+ function add(title:string,subtitle:string,action:()=>void){const button=document.createElement('button');button.className='search-result';const symbol=document.createElement('span');symbol.className='search-symbol';symbol.textContent='⌖';const text=document.createElement('span');const name=document.createElement('strong');name.textContent=title;const detail=document.createElement('small');detail.textContent=subtitle;text.append(name,detail);button.append(symbol,text);button.onclick=()=>{el<HTMLInputElement>('search').value='';el('clear-search').hidden=true;closeSearch();action();};box.append(button);}
+ for(const c of countryMatches)add(c.properties.NAME,'Present-day country',()=>fitCountry(c));
+ for(const p of matches){const dated=places.find(x=>x.key===p.key);add(p.name,`${p.entries.length} ${p.entries.length===1?'entry':'entries'}${dated?'':' · outside these dates'}`,()=>{if(!dated)applyPeriod(-5500,200);const match=places.find(x=>x.key===p.key)!;selected=[match];selectionTitle=match.name;sizeSheet('middle');homeBounds=L.latLngBounds([match.point[1],match.point[0]],[match.point[1],match.point[0]]);fitPlaces([match]);renderList();});}
+ if(!box.childElementCount){const note=document.createElement('p');note.className='search-empty';note.textContent='No matching country or recorded place.';box.append(note);}
+}
+el<HTMLInputElement>('search').addEventListener('input',e=>{const value=(e.target as HTMLInputElement).value;el('clear-search').hidden=!value;search(value);});el('search').addEventListener('focus',()=>{if(ready)search(el<HTMLInputElement>('search').value);});el('search').addEventListener('keydown',e=>{if(e.key==='Escape')closeSearch();if(e.key==='ArrowDown'){e.preventDefault();el('search-results').querySelector('button')?.focus();}});el('search-results').addEventListener('keydown',e=>{const buttons=[...el('search-results').querySelectorAll('button')],index=buttons.indexOf(document.activeElement as HTMLButtonElement);if(e.key==='Escape')closeSearch();if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();buttons[(index+(e.key==='ArrowDown'?1:-1)+buttons.length)%buttons.length]?.focus();}});el('clear-search').onclick=()=>{el<HTMLInputElement>('search').value='';search('');el<HTMLInputElement>('search').focus();};document.addEventListener('pointerdown',e=>{if(!(e.target as Element).closest('.search-wrap'))closeSearch();});
+function clearSelection(){selected=null;updateMap();}el('close-place').onclick=clearSelection;el('clear-place').onclick=clearSelection;el('zoom-place').onclick=()=>{if(selected)fitPlaces(selected);};
+el('zoom-in').onclick=()=>map.zoomIn();el('zoom-out').onclick=()=>map.zoomOut();el('reset-map').onclick=()=>{selected=null;sizeSheet('middle');if(homeBounds)map.flyToBounds(homeBounds,padding());};el('world').onclick=()=>{selected=null;sizeSheet('peek');map.flyTo([25,15],2,{animate:!reduced,duration:.8});};
+map.on('dragstart',()=>{selected=null;settling=true;closeSearch();if(mobile()&&sheetSnap==='full')sizeSheet('middle');el('result-count').textContent='Looking around…';});map.on('zoomstart',()=>{settling=true;});map.on('moveend',()=>{settling=false;updateMap();});map.on('click',()=>{if(selected)clearSelection();});
+function applyPeriod(a:number,b:number){from=a;to=b;selected=null;places=placesFor(entries,associations,from,to);el<HTMLDialogElement>('dates-dialog').close();updateMap();}
+function zoomPeriod(factor:number){const a=ordinal(from),b=ordinal(to),width=Math.min(5699,Math.max(10,(b-a)*factor)),start=Math.max(-5499,Math.min((a+b-width)/2,200-width));applyPeriod(calendar(Math.round(start)),calendar(Math.round(start+width)));}
+el('wider-period').onclick=()=>zoomPeriod(2);el('closer-period').onclick=()=>zoomPeriod(.5);
+function dateFields(){for(const [prefix,value]of [['start',from],['end',to]]as const){el<HTMLInputElement>(prefix+'-number').value=String(Math.abs(value));el<HTMLSelectElement>(prefix+'-era').value=value<0?'BCE':'CE';}el('date-error').textContent='';}
+el('dates-button').onclick=()=>{dateFields();el<HTMLDialogElement>('dates-dialog').showModal();};for(const button of document.querySelectorAll<HTMLButtonElement>('[data-range]'))button.onclick=()=>{const [a,b]=button.dataset.range!.split(',').map(Number);applyPeriod(a!,b!);};el('apply-dates').onclick=()=>{const a=Number(el<HTMLInputElement>('start-number').value)*(el<HTMLSelectElement>('start-era').value==='BCE'?-1:1),b=Number(el<HTMLInputElement>('end-number').value)*(el<HTMLSelectElement>('end-era').value==='BCE'?-1:1);if(!Number.isInteger(a)||!Number.isInteger(b)||!a||!b||a>b||a< -5500||b>200){el('date-error').textContent='Choose a period between 5500 BCE and 200 CE, with the start before the end.';return;}applyPeriod(a,b);};
+el('theme').onclick=()=>{const dark=document.documentElement.classList.toggle('dark');el('theme').textContent=dark?'☀':'☾';el('theme').setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');};
+let dragStart:number|null=null,initialHeight=0,dragged=false,dragTime=0;
+const handle=el('sheet-handle');handle.addEventListener('pointerdown',e=>{dragStart=e.clientY;initialHeight=el('sheet').getBoundingClientRect().height;dragged=false;dragTime=performance.now();handle.setPointerCapture(e.pointerId);el('sheet').classList.add('dragging');});handle.addEventListener('pointermove',e=>{if(dragStart===null)return;const delta=dragStart-e.clientY;if(Math.abs(delta)>4)dragged=true;document.documentElement.style.setProperty('--sheet-height',`${Math.max(126,Math.min(el('explorer').clientHeight-118,initialHeight+delta))}px`);});function endDrag(e:PointerEvent){if(dragStart===null)return;const delta=dragStart-e.clientY,velocity=delta/Math.max(1,performance.now()-dragTime);dragStart=null;el('sheet').classList.remove('dragging');const height=el('sheet').getBoundingClientRect().height,full=el('explorer').clientHeight-118,middle=Math.min(320,el('explorer').clientHeight*.42);const snap=Math.abs(velocity)>.45?(velocity>0?'full':'peek'):height>(full+middle)/2?'full':height<(126+middle)/2?'peek':'middle';if(dragged)sizeSheet(snap);else sizeSheet(sheetSnap==='full'?'middle':'full');}handle.addEventListener('pointerup',endDrag);handle.addEventListener('pointercancel',()=>{dragStart=null;el('sheet').classList.remove('dragging');sizeSheet(sheetSnap);});handle.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','Enter',' '].includes(e.key)){e.preventDefault();sizeSheet(e.key==='ArrowDown'?'peek':sheetSnap==='full'?'middle':'full');}});el('sheet-toggle').onclick=()=>sizeSheet(sheetSnap==='full'?'middle':'full');
+window.addEventListener('resize',()=>{sizeSheet(sheetSnap);map.invalidateSize({pan:true,animate:false});if(!settling)updateMap();});
+sizeSheet('middle');dateUI();
+try{
+ const [history,geography]=await Promise.all([fetch('/data/browser-history.json').then(r=>{if(!r.ok)throw Error('History unavailable');return r.json();}),fetch('/data/ne_50m_admin_0_countries.json').then(r=>{if(!r.ok)throw Error('Countries unavailable');return r.json();})]);
+ entries=history.data.entities;associations=history.data.associations;countries=geography.features;places=placesFor(entries,associations,from,to);ready=true;el('loading').hidden=true;
+ const initial=countries.find(c=>c.properties.ADM0_A3===(query.get('country')||'GBR'))||countries.find(c=>c.properties.ADM0_A3==='GBR')!;
+ // fit without animation on first paint; old prototype URLs retain country and dates.
+ const polys=(initial.geometry.type==='Polygon'?[initial.geometry.coordinates]:initial.geometry.coordinates) as number[][][][];
+ const ring=polys.map(p=>p[0]!).find(r=>inside([initial.properties.LABEL_X,initial.properties.LABEL_Y],r))||polys[0]![0]!;
+ homeBounds=L.latLngBounds(ring.map(p=>[p[1]!,p[0]!] as L.LatLngTuple));
+ const savedHome=query.get('home')?.split(',').map(Number);if(savedHome?.length===4&&savedHome.every(Number.isFinite)&&Math.abs(savedHome[0]!)<=180&&Math.abs(savedHome[2]!)<=180&&Math.abs(savedHome[1]!)<=85&&Math.abs(savedHome[3]!)<=85&&savedHome[0]!<=savedHome[2]!&&savedHome[1]!<=savedHome[3]!)homeBounds=L.latLngBounds([savedHome[1]!,savedHome[0]!],[savedHome[3]!,savedHome[2]!]);
+ if(query.has('lat')&&query.has('lng'))map.setView([Math.max(-80,Math.min(80,numeric('lat',54))),Math.max(-180,Math.min(180,numeric('lng',-3)))],Math.max(2,Math.min(17,numeric('zoom',5))),{animate:false});else map.fitBounds(homeBounds,{...padding(),animate:false});
+ if(query.has('places')){const keys=query.get('places')!.split(';');selected=places.filter(p=>keys.includes(p.key));if(!selected.length)selected=null;else {const primary=[...selected].sort((a,b)=>b.entries.length-a.entries.length)[0]!;selectionTitle=selected.length===1?primary.name:`${primary.name} + ${selected.length-1}`;}}
+ updateMap();
+}catch(error){el('loading').textContent='Could not load the history collection. Reload to try again.';el('result-count').textContent='History unavailable';console.error(error);}

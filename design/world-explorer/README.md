@@ -1,19 +1,49 @@
 # World explorer prototype
 
-Local interaction prototype on `feature/world-explorer-prototype`. Not part of the production build.
+Local branch: `feature/world-explorer-prototype`. This is an interaction prototype, outside the production build.
 
-Preview: http://ians-macbook-pro.local:4173/design-preview/world-explorer/
+Open http://ians-macbook-pro.local:4173/design-preview/world-explorer/ on the Mac or a phone on the same Wi-Fi. The Mac must stay awake. The existing preview service runs independently of the agent session.
 
-The Mac must be awake and on the same Wi-Fi as the phone. The existing preview service keeps running after the agent session.
+## What to try
 
-Uses the preview's existing `/data/browser-history.json` and `/data/ne_50m_admin_0_countries.json`. No new historical claims are added. See `project/world-explorer-plan.md` for matching limitations and the implementation plan.
+- Drag and pinch the map. Leaflet supplies touch zoom and inertial panning. Results update after movement settles.
+- Tap a numbered marker. The panel shows every entry at that location or nearby cluster, without navigating away.
+- Drag the panel's handle up to read the timeline, or down for more map. The text button provides the same interaction without dragging.
+- Search for Stonehenge, Egypt or France. Country searches frame the main component containing Natural Earth's label point, rather than remote territories. Historical places outside the active period explicitly say so; selecting one restores all dates.
+- Change dates, zoom the period, explore the world, and return to the most recent searched place using the crosshair button.
+- Open an entry and use browser Back. The URL retains the map, dates and selected places.
 
-To refresh this isolated prototype from the repository root:
+The map occupies the screen. On desktop, results sit alongside it; on mobile, they share the screen in a sliding panel. There is no apply-area action or separate map/timeline mode.
+
+## Build and refresh
+
+From the repository root, install the isolated prototype dependencies once:
 
 ```sh
-npx tsc --ignoreConfig design/world-explorer/prototype.ts --strict --target ES2022 --module ES2022 --moduleResolution bundler --skipLibCheck --outDir release/world-explorer
-mkdir -p "$HOME/Library/Application Support/Historica/preview/web/design-preview/world-explorer"
-cp design/world-explorer/index.html design/world-explorer/style.css release/world-explorer/prototype.js "$HOME/Library/Application Support/Historica/preview/web/design-preview/world-explorer/"
+npm ci --prefix design/world-explorer --ignore-scripts
 ```
 
-This copies only the prototype into the existing preview. It does not build or publish the site. A normal preview sync may remove this isolated folder; repeat the commands afterwards if necessary.
+Then:
+
+```sh
+python3 design/world-explorer/preview.py
+node --test design/world-explorer/model.test.ts
+```
+
+The refresh compiles TypeScript, copies Leaflet and its licence to the ignored output directory, and updates only the prototype folder in the existing preview. Content-hashed asset URLs prevent stale phone caches. This does not rebuild or publish Historica. A normal site preview sync may remove this isolated folder; repeat the refresh afterwards.
+
+## Data and services
+
+History comes from the preview's existing `browser-history.json`. Natural Earth's existing country geometry supports country search. Dated location associations are filtered by the selected years. A reference point is used only for records without associations; it is not evidence of continuous residence. Multiple records at the same location share a marker. Nearby markers cluster at the current zoom, and results deduplicate histories appearing at several places.
+
+Leaflet 1.9.4 (BSD-2-Clause) is pinned in the prototype's own lockfile. The basemap uses OpenStreetMap's standard HTTPS tiles, normal browser caching and visible attribution. It requires internet access. No tile prefetch or bulk downloads are used. Tile-server usage is limited to this small local preview; select a suitable tile service and review the privacy wording before production integration. Dark mode currently applies a colour filter to the raster map; a dedicated dark basemap is preferable for release.
+
+Reference: https://leafletjs.com/reference-1.9.4.html and https://operations.osmfoundation.org/policies/tiles/
+
+## Remaining limits
+
+This is not complete geographic coverage. Point-based matching misses unlocated records and does not establish historical territories. Country search changes the camera; results include all places in its map bounds, including neighbouring countries. The result heading says “this map area” for that reason. Results include the bounds behind the sliding panel so expanding it does not change the collection being read.
+
+Clustering is intentionally small and local to the existing collection. Production should use a spatial index as volume grows. Map position, selected results and the return-to-place shortcut are restored from the URL.
+
+Desktop and phone-width browser checks are recorded in the plan. Physical iPhone pinch/inertia feel still requires Ian's review; browser automation cannot substitute for that.

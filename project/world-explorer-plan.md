@@ -1,64 +1,60 @@
 # Explore the world
 
-Status: local prototype for review. No production change approved.
+Status: second local prototype, awaiting phone review. Nothing published.
 
 Branch: `feature/world-explorer-prototype`
 
-## What visitors can do
+## The experience
 
-Choose a country or an area on the map and see the histories we have for that place. Change the years without losing the place. Open a history, then return to the same regional view.
+Move around a map, see which histories are available, and tap a place to read them. Time is a shared filter. The map and timeline stay together.
 
-This gives Historica a second starting point: visitors can begin with somewhere they know, as well as a person or event.
+The first prototype made visitors manage a selected country, a map rectangle and separate mobile views. It also used custom gesture handling that felt poor on a phone. The revised prototype replaces that interaction with Leaflet's map controls and a sliding results panel.
 
-## Where it sits
+## Prototype behaviour
 
-Add **Explore the world** to the main navigation and a small entry on the home page. Keep the existing history pages. The explorer is a single new page with shared place and time controls, a graphical timeline on the left and a map on the right. On a phone, Timeline and Map buttons switch views while retaining both selections.
+- The map fills the available screen, with search and a compact date button above it. Country names come from the modern basemap.
+- Panning has momentum. Pinch zoom, double-tap zoom, keyboard movement and map recovery controls come from or work with Leaflet.
+- Results update when map movement settles. There is no “apply this area” step.
+- Numbered markers show the number of histories at a place or nearby group. Tapping reveals the complete group in the panel. Zooming separates nearby places; histories at identical coordinates remain together.
+- The mobile panel has three heights: a compact summary, a reading preview and an expanded timeline. It can be dragged or controlled with buttons. On desktop it is a side panel.
+- Search finds present-day countries and historical places from the existing collection. Country search frames its main geographic component. It does not impose today's political identity on historical records.
+- Date controls offer presets, direct BCE/CE input and wider/closer periods. Invalid ranges and year zero are rejected.
+- URLs preserve map position, dates and selected place keys. Existing history links open normally; browser Back returns to the explorer.
+- Light and dark modes remain available. The prototype uses a filtered raster basemap in dark mode.
 
-Use `/explore/` with readable query parameters for the country, years and map view. Do not use fragments. Store selected geography separately from the camera: looking around must not silently replace the timeline. **Show history in this area** explicitly applies the visible map rectangle.
+## Where it sits in Historica
 
-Modern countries are geographic selectors, not claims about ancient borders or identity. Label them “Present-day Italy”, for example. A historical state remains a separate history record.
+Add **Explore the world** to the main navigation and a small home-page entry. Integrate the screen at `/explore/`. Existing history pages retain their own focus; the explorer provides another route into them, with a visible return link preserving the geographic context.
 
-## Local prototype
+Keep the Chronology typography and colours. This is an interaction change, not a site-wide restyle.
 
-Source: `design/world-explorer/`. The prototype uses existing history records and Natural Earth country outlines. It supports country selection, a rectangular map area, date zoom and movement, clickable timeline entries, marker identification, mobile view switching and light/dark colours. It opens on Italy, 600 BCE–200 CE, to show a populated example.
+## Implementation after prototype approval
 
-The prototype is isolated from the production build. Its TypeScript was checked, and desktop and phone-width browser checks covered country selection, time zoom, applying an area, marker identification and switching views. Touch gestures are implemented but still need checking on a physical phone.
+Deliver one coherent feature PR unless an independently useful data change needs to be separated.
 
-Location matching is deliberately provisional. It uses dated associations overlapping the selected period, falling back to an entry's reference point. A reference point is not evidence that somebody remained there throughout their life. The displayed bars describe the history's dates, not residence. The production implementation must make that distinction explicit.
-
-## Build as one coherent feature
-
-1. **Define geographic matching.** Create a small generated location index from existing entities and associations. Preserve location source, association dates and uncertainty. Do not fall back to a timeless reference point when dated evidence contradicts presence in the selected period. Clearly separate contextual reference matches from dated matches. Missing locations mean incomplete coverage, not an absence of history.
-2. **Integrate the explorer.** Add an Astro page using existing layout, theme, map gestures, timeline and marker preview components. Reuse the prototype's interaction decisions rather than shipping its standalone renderer. Load country geometry only when needed. Keep selection, dates and camera independent, and derive map markers and timeline results from the same query.
-3. **Complete navigation.** Add the navigation and home links. Preserve regional state in bookmarkable URLs, support browser Back, and provide a return-to-explorer link from a history opened through the explorer. Validate URL parameters and constrain map/time bounds. Use ordinary accessible links for histories.
-4. **Verify and preview.** Check the geographic and date boundaries with targeted tests, then exercise the main desktop/mobile journeys. Refresh the existing Wi-Fi preview for review. After approval, use the normal PR and release process.
-
-Aim for one feature PR once the prototype direction is agreed. Split only if the geographic index needs an independently useful change. No wider restyle, framework migration or new deployment tooling is needed.
-
-## Details that need care
-
-- Support multipolygons, holes and the antimeridian. Version the country boundary source and retain its attribution. Do not invent memberships for disputed or unlocated records.
-- Fit the map to the selected geography sensibly, including countries with remote territories. Panning and zooming must remain independent of the chosen geography.
-- Show full record dates alongside clipped timeline bars. Show dated geographic association intervals separately where needed, so a lifespan bar cannot be mistaken for continuous presence.
-- Keep the country selector usable without the map. Provide keyboard equivalents, visible focus, named controls and stable focus when switching phone views. Identify markers before navigation on touch devices.
-- Group or limit crowded timelines without hiding the existence of further results. Avoid a full page-height lane for every record.
-- Use the existing no-year-zero date utilities. Derive supported date limits from the collection rather than the prototype's fixed bounds.
-- Avoid repeated scans of every association on each drag. Generate an index, update results only when geography or time changes, and load large map assets once.
+1. Integrate the agreed layout into Astro with shared branding, theme, date utilities and entry links. Keep the map library out of pages that do not need it.
+2. Generate a geographic index retaining source, association dates and uncertainty. Distinguish dated association matches from reference locations. Do not infer residence, territorial extent or complete coverage from a point. Do not substitute a timeless reference point when dated associations fail to match the requested years.
+3. Promote the map, clustering, search and panel controls into tested components. Keep map rendering smooth by querying only when movement ends. Preserve results while the panel changes height. Handle overlapping markers, antimeridian geography and countries with remote territories explicitly.
+4. Complete state restoration, including the return-to-searched-place shortcut after reload, browser Back/Forward within exploration, and returning from a history page. Add country-filtering only if it is clearly distinguished from browsing the visible map area.
+5. Select an appropriate production basemap service and review its attribution, usage limits and privacy implications. The local prototype uses OpenStreetMap tiles with normal caching; this is not a production capacity decision. Provide an intentional dark basemap rather than relying on the prototype's colour filter.
+6. Preview the integrated version, obtain approval, then use the normal PR/release workflow. No live changes from this local prototype branch.
 
 ## Acceptance checks
 
-- Select Italy, then Egypt: the years stay unchanged and both results and highlight update.
-- Pan away from Egypt: its timeline stays selected. Apply **Show history in this area**: the selected rectangle becomes the geographic filter.
-- Zoom or move the time window: results and dated markers update together, including across BCE/CE.
-- Tap a marker: its name appears before any navigation. Open a history and return to the same geography, dates and map view.
-- Reload or share the explorer URL: the same state is restored.
-- Select an area without matches: show a useful coverage explanation and ways to broaden the search.
-- Complete these flows using the keyboard and a phone, in light and dark modes, without horizontal page overflow.
+- On a physical iPhone, pan with one finger, release with momentum, pinch around a chosen point and double-tap to zoom. The page itself must not move or capture the gesture unexpectedly.
+- Drag the result panel through its heights. Scroll a long list without moving the map; return to the map without losing the selected place.
+- Open Stonehenge: all four mapped entries are available together. Opening a cluster must never hide the records behind its topmost marker.
+- Browse away: the results update automatically and stop describing the previous selected place.
+- Search France: the camera frames metropolitan France. Search Egypt: return controls recover Egypt after exploring elsewhere.
+- Choose a time range with no records: explain the gap and offer another period or place. Never suggest that no historical activity occurred.
+- Use the explorer with a keyboard, enlarged text, reduced motion, and light/dark themes. Credits and essential controls remain visible around the panel and phone safe areas.
+- Reload and share a URL, open a history and return. Retain the intended map/time/place state.
+- Handle failed history loads and failed map tiles visibly. Never leave an unexplained blank map or spinner.
 
-## Outside this first release
+## Verification
 
-Drawing arbitrary shapes, reconstructing changing ancient borders, comprehensive new historical research and global coverage are separate work. This feature should expose and navigate the evidence we already have without suggesting that it is complete.
+The prototype's strict TypeScript build passes. Five targeted data tests cover four shared Stonehenge entries, date filtering, avoiding timeless fallbacks for dated travel evidence, deduplication and BCE/CE arithmetic. Browser checks cover desktop/390px layouts, clustered entry selection, place search, panel expansion, map movement, date filtering and tile loading. Physical-phone gesture feel remains a review item, not a claim established by browser automation.
 
-## Prototype feedback incorporated
+## Outside this release
 
-Country names are drawn on the map, with overlapping labels suppressed. Country framing uses the component containing the dataset’s label point, so France opens on metropolitan France rather than including distant territories. This changes the camera only; geographic filtering still uses the full country geometry. A **Back to [country]** button restores the selected place after zooming out. The area action now says **Show history in this area**, reports the result count beside the map and opens the timeline on mobile. Physical-phone gesture testing remains outstanding.
+New global historical coverage, reconstructed ancient borders, user-drawn polygons and unrelated site refactoring. The feature should make the existing collection easy to explore without overstating what it knows.
