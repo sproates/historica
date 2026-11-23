@@ -22,16 +22,17 @@ test('static reuse accepts only matching content, while allowing camera and disc
 
 // Execute the real entry point with deterministic network and DOM boundaries.
 // Content setters record replacements; controller callbacks remain available for navigation checks.
-const source=fs.readFileSync('web/focus-app.js','utf8');
+const source=fs.readFileSync('web/generated/browser/explorer.js','utf8');
+const prototypeData=(await import('../web/generated/content/prototype-data.js')).default;
 const dependencies={};
 for(const match of source.matchAll(/^import \{([^}]+)\} from '([^']+)';/gm)){
-  const module=await import(new URL('../web/'+match[2],import.meta.url));
-  for(const name of match[1].split(',').map(s=>s.trim()))dependencies[name]=module[name];
+  const module=await import(new URL('../web/generated/browser/'+match[2],import.meta.url));
+  for(const specifier of match[1].split(',').map(s=>s.trim())){const [name,alias=name]=specifier.split(/\s+as\s+/);dependencies[alias]=module[name];}
 }
-const body=source.replace(/^import .*;\n/gm,'');
+const body=source.replace(/^import .*;\n/gm,'').replace('export async function startExplorer','async function startExplorer')+'\nawait startExplorer(base,prototypeData);';
 const AsyncFunction=Object.getPrototypeOf(async function(){}).constructor;
-async function startup(id,address){
-  const nodes=new Map(),writes=[],callbacks={},errors=[],history=[],requests=[];
+async function startup(id,address,base='/'){
+  const nodes=new Map(),writes=[],callbacks={},errors=[],history=[],requests=[],listeners={},failedUrls=new Set();
   const node=key=>{
     if(!nodes.has(key)){
       const el=new EventTarget();
@@ -45,11 +46,11 @@ async function startup(id,address){
   let camera={x:300,y:50,w:120,borders:1},points=[];
   const overrides={setupMap:()=>({getState:()=>camera,restore(saved){camera=saved;},update(next){points=next;},fitOnNextUpdate(){}})};
   for(const name of Object.keys(dependencies).filter(n=>n.startsWith('bind')))overrides[name]=(_root,app)=>{callbacks[name]=app;};
-  const environment={document,location:{href:'https://historica.online'+address},history:{replaceState(_a,_b,url){history.push(url);},pushState(_a,_b,url){history.push(url);}},window:Object.assign(new EventTarget(),{matchMedia:()=>({matches:false})}),console:{error:e=>errors.push(e)},fetch:async url=>{requests.push(url);return {ok:true,json:async()=>read(url.replace('data/','').replace('.json',''))};}};
-  const scope={...dependencies,...overrides,...environment};
+  const environment={document,location:{href:'https://historica.online'+address},history:{replaceState(_a,_b,url){history.push(url);},pushState(_a,_b,url){history.push(url);}},window:{addEventListener(name,handler){listeners[name]=handler;},matchMedia:()=>({matches:false})},console:{error:e=>errors.push(e)},fetch:async url=>{requests.push(url);return {ok:!failedUrls.has(url),json:async()=>read(url.replace('data/','').replace('.json',''))};}};
+  const scope={...dependencies,...overrides,...environment,base,prototypeData};
   await new AsyncFunction(...Object.keys(scope),body)(...Object.values(scope));
   assert.deepEqual(errors,[]);
-  return {nodes,writes,callbacks,history,requests,get camera(){return camera;},get points(){return points;}};
+  return {nodes,writes,callbacks,history,requests,failedUrls,async restoreAddress(address,event='popstate'){environment.location.href='https://historica.online'+address;await listeners[event]();},get camera(){return camera;},get points(){return points;}};
 }
 const content=new Set(['focus-title','focus-description','comparison-bars','swimlanes','lanes','related','focus-map','map-places','evidence','regional-evidence']);
 
@@ -88,4 +89,33 @@ test('custom and legacy pages still render their restored view',async()=>{
     assert.ok(h.writes.some(w=>w.key==='focus-map'),address);
     if(address.includes('from='))assert.equal(h.nodes.get('start').value,'-339');
   }
+});
+
+
+test('browser history restores bookmarks under the GitHub Pages mount point',async()=>{
+ const h=await startup('alexander','/historica/person/alexander','/historica/');
+ await h.callbacks.bindNavigationControls.focus('egypt');
+ assert.ok(h.history.at(-1).startsWith('/historica/area/egypt'));
+ await h.restoreAddress('/historica/person/socrates?from=-431&to=-404&year=-420&panel=timeline-options');
+ assert.equal(h.nodes.get('focus-picker').value,'socrates');
+ assert.equal(h.nodes.get('start').value,'-430');
+ assert.equal(h.nodes.get('end').value,'-403');
+ assert.equal(h.nodes.get('year-cursor').value,'-419');
+ assert.equal(h.nodes.get('.timeline-options').open,true);
+ await h.restoreAddress('/historica/person/alexander');
+ assert.equal(h.nodes.get('focus-picker').value,'alexander');
+ assert.equal(h.nodes.get('back').disabled,true);
+ assert.ok(h.history.at(-1).startsWith('/historica/person/alexander'));
+});
+
+test('failed navigation preserves the current focus and can be retried',async()=>{
+ const h=await startup('socrates','/person/socrates');
+ h.failedUrls.add('data/evidence/stonehenge.json');
+ assert.equal(await h.callbacks.bindNavigationControls.focus('stonehenge'),false);
+ assert.equal(h.nodes.get('focus-picker').value,'socrates');
+ assert.equal(h.nodes.get('error').hidden,false);
+ h.failedUrls.clear();
+ assert.equal(await h.callbacks.bindNavigationControls.focus('stonehenge'),true);
+ assert.equal(h.nodes.get('focus-picker').value,'stonehenge');
+ assert.equal(h.nodes.get('error').hidden,true);
 });

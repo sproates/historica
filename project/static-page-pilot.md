@@ -99,3 +99,9 @@ The uncompressed payload falls from 753,753 to 302,124 bytes. Tests compare chec
 The explorer now loads `data/evidence/<id>.json` for the selected history and a shared 8,656-byte chronology index. Socrates uses 1,046 bytes of focused evidence, making the initial evidence and chronology total 9,702 bytes instead of the 302,124-byte shared pack. These are uncompressed file sizes. Original research references and full review data remain available.
 
 A typed evidence store shares in-flight requests, caches successful downloads and retries failures. Navigation commits only after its evidence arrives, and stale requests cannot replace a newer focus. Back reuses cached evidence; errors preserve the current view. Bookmark writes are suspended during navigation so they cannot overwrite a pending destination. Tests cover every history’s statements and citations, chronology parity, request ordering, failures, caching and whole-period navigation. Browser checks cover Socrates to Stonehenge and Back.
+
+## Typed browser coordinator
+
+`src/browser/explorer.ts` now owns loading, state snapshots, bookmarks, navigation, evidence selection and controller wiring. `web/focus-app.js` only supplies the mount path and generated prototype records. The assembled history is validated before use. Map coordinate extraction moved behind the map-data boundary, and the coordinator uses the shared geometry projection.
+
+The entry-point harness now executes the compiled coordinator. Tests cover default enhancement, custom bookmarks, browser history under `/historica/`, cached Back, failed navigation and retry, and whole-period navigation. The primary history explorer is now strict TypeScript end to end; ancillary home, coverage and legacy campaign scripts remain outside this migration. Static packaging and deployment remain separate work.
