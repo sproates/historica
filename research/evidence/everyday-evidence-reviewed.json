@@ -1,0 +1,840 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {
+      "id": "pompeii",
+      "name": "Pompeii",
+      "type": "city"
+    },
+    {
+      "id": "pompeii-fullery",
+      "name": "Washing clothes at Pompeii",
+      "type": "period"
+    },
+    {
+      "id": "pompeii-food-shop",
+      "name": "Food, trade and a household at Pompeii",
+      "type": "period"
+    },
+    {
+      "id": "vesuvius-eruption",
+      "name": "Vesuvius buries Pompeii and Herculaneum",
+      "type": "event"
+    },
+    {
+      "id": "deir-attendance",
+      "name": "Why Egypt’s tomb workers missed work",
+      "type": "period"
+    }
+  ],
+  "sources": [
+    {
+      "id": "everyday-evidence-pompeii",
+      "title": "Archaeological Areas of Pompei, Herculaneum and Torre Annunziata",
+      "url": "https://whc.unesco.org/en/list/829/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Brief synthesis: eruption in 79 CE, residential and commercial buildings, baths and theatres",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "everyday-evidence-map",
+      "title": "Pompeii: geographical data",
+      "url": "https://whc.unesco.org/en/list/829/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Component 829ter-001: N40 45 4 E14 29 10",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "everyday-evidence-fullery",
+      "title": "Fullery of Stephanus",
+      "url": "https://pompeiisites.org/en/archaeological-site/fullery-of-stephanus/",
+      "creator": "Archaeological Park of Pompeii",
+      "locatorHint": "Facility description: converted house, washing vats, drying terrace and enslaved labour",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "everyday-evidence-food",
+      "title": "House and Thermopolium of Vetutius Placidus",
+      "url": "https://pompeiisites.org/en/archaeological-site/house-and-thermopolium-of-vetutius-placidus/",
+      "creator": "Archaeological Park of Pompeii",
+      "locatorHint": "Food counter, rear house and household shrine",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "everyday-evidence-register",
+      "title": "Limestone ostrakon with a register of workmen’s absences",
+      "url": "https://artsandculture.google.com/asset/limestone-ostrakon-with-a-register-of-workmen-s-absences/NQH9qIBqeBg6Pg?hl=en",
+      "creator": "British Museum, via Google Arts & Culture",
+      "locatorHint": "Object .5634: 280-day register, forty names, reasons for absence; metadata c.1250 BCE differs from regnal-year description",
+      "accessed": "2026-11-23",
+      "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    }
+  ],
+  "claims": [
+    {
+      "id": "everyday-evidence-pompeii-history",
+      "subjectId": "pompeii",
+      "predicate": "historical-context",
+      "statement": "Pompeii’s excavated streets bring houses, shops, baths and theatres into the same view. They let us follow activities that often disappear behind accounts of emperors and wars. The eruption of Vesuvius buried the city in 79 CE. Its remains preserve evidence from different phases of the city’s life, not a record of every inhabitant.",
+      "value": {
+        "type": "text",
+        "text": "Pompeii’s excavated streets bring houses, shops, baths and theatres into the same view. They let us follow activities that often disappear behind accounts of emperors and wars. The eruption of Vesuvius buried the city in 79 CE. Its remains preserve evidence from different phases of the city’s life, not a record of every inhabitant."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-pompeii-history-pompeii"
+      ],
+      "reviewId": "everyday-evidence-pompeii-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-pompeii-chronology",
+      "subjectId": "pompeii",
+      "predicate": "historical-context",
+      "statement": "Pompeii: 1 CE to 79 CE. 1–79 CE is an editorial window for the early imperial city, not its foundation date. The map uses UNESCO’s Pompeii component reference.",
+      "value": {
+        "type": "text",
+        "text": "Pompeii: 1 CE to 79 CE. 1–79 CE is an editorial window for the early imperial city, not its foundation date. The map uses UNESCO’s Pompeii component reference."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-pompeii-chronology-pompeii"
+      ],
+      "reviewId": "everyday-evidence-pompeii-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-history",
+      "subjectId": "pompeii-fullery",
+      "predicate": "historical-context",
+      "statement": "A house at Pompeii was converted into a fullery, where workers washed clothes and processed cloth. Vats occupied the former domestic spaces, and a terrace was used for drying. The archaeological park describes most of the workforce as enslaved. The building connects household architecture with demanding commercial labour.",
+      "value": {
+        "type": "text",
+        "text": "A house at Pompeii was converted into a fullery, where workers washed clothes and processed cloth. Vats occupied the former domestic spaces, and a terrace was used for drying. The archaeological park describes most of the workforce as enslaved. The building connects household architecture with demanding commercial labour."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-pompeii-fullery-history-fullery",
+        "everyday-evidence-pompeii-fullery-history-pompeii"
+      ],
+      "reviewId": "everyday-evidence-pompeii-fullery-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-chronology",
+      "subjectId": "pompeii-fullery",
+      "predicate": "historical-context",
+      "statement": "Washing clothes at Pompeii: 79 CE to 79 CE. Snapshot of evidence preserved by the 79 CE eruption, not a one-year business or its opening date. Stephanus’s ownership is inferred from inscriptions; the identity of a body found at the entrance is not assumed. Map point locates Pompeii, not the individual workshop.",
+      "value": {
+        "type": "text",
+        "text": "Washing clothes at Pompeii: 79 CE to 79 CE. Snapshot of evidence preserved by the 79 CE eruption, not a one-year business or its opening date. Stephanus’s ownership is inferred from inscriptions; the identity of a body found at the entrance is not assumed. Map point locates Pompeii, not the individual workshop."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-pompeii-fullery-chronology-fullery",
+        "everyday-evidence-pompeii-fullery-chronology-pompeii"
+      ],
+      "reviewId": "everyday-evidence-pompeii-fullery-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-history",
+      "subjectId": "pompeii-food-shop",
+      "predicate": "historical-context",
+      "statement": "At the shop associated with Vetutius Placidus, customers could buy hot food and drinks from a masonry counter fitted with large jars. The house behind it was connected to the business. A shrine on the back wall included household protectors and the gods Mercury and Dionysus. Commerce, domestic space and religious practice met in one building.",
+      "value": {
+        "type": "text",
+        "text": "At the shop associated with Vetutius Placidus, customers could buy hot food and drinks from a masonry counter fitted with large jars. The house behind it was connected to the business. A shrine on the back wall included household protectors and the gods Mercury and Dionysus. Commerce, domestic space and religious practice met in one building."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-pompeii-food-shop-history-food",
+        "everyday-evidence-pompeii-food-shop-history-pompeii"
+      ],
+      "reviewId": "everyday-evidence-pompeii-food-shop-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-chronology",
+      "subjectId": "pompeii-food-shop",
+      "predicate": "historical-context",
+      "statement": "Food, trade and a household at Pompeii: 79 CE to 79 CE. Evidence preserved in 79 CE, not the shop’s founding year or full operating period. The map uses the city reference rather than an unchecked shop coordinate.",
+      "value": {
+        "type": "text",
+        "text": "Food, trade and a household at Pompeii: 79 CE to 79 CE. Evidence preserved in 79 CE, not the shop’s founding year or full operating period. The map uses the city reference rather than an unchecked shop coordinate."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-pompeii-food-shop-chronology-food",
+        "everyday-evidence-pompeii-food-shop-chronology-pompeii"
+      ],
+      "reviewId": "everyday-evidence-pompeii-food-shop-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-vesuvius-eruption-history",
+      "subjectId": "vesuvius-eruption",
+      "predicate": "historical-context",
+      "statement": "The eruption of Vesuvius buried Pompeii and Herculaneum in 79 CE. Their remains preserve buildings, objects and traces of work and domestic life. The linked entries explore some of that evidence, alongside people living elsewhere at the time.",
+      "value": {
+        "type": "text",
+        "text": "The eruption of Vesuvius buried Pompeii and Herculaneum in 79 CE. Their remains preserve buildings, objects and traces of work and domestic life. The linked entries explore some of that evidence, alongside people living elsewhere at the time."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-vesuvius-eruption-history-pompeii"
+      ],
+      "reviewId": "everyday-evidence-vesuvius-eruption-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-vesuvius-eruption-chronology",
+      "subjectId": "vesuvius-eruption",
+      "predicate": "historical-context",
+      "statement": "Vesuvius buries Pompeii and Herculaneum: 79 CE to 79 CE. Year-level event. No exact day or month is adopted. The map locates Pompeii as one affected city, not the volcano or the full disaster area.",
+      "value": {
+        "type": "text",
+        "text": "Vesuvius buries Pompeii and Herculaneum: 79 CE to 79 CE. Year-level event. No exact day or month is adopted. The map locates Pompeii as one affected city, not the volcano or the full disaster area."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-vesuvius-eruption-chronology-pompeii"
+      ],
+      "reviewId": "everyday-evidence-vesuvius-eruption-chronology-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-deir-attendance-history",
+      "subjectId": "deir-attendance",
+      "predicate": "historical-context",
+      "statement": "A limestone writing surface from Deir el-Medina lists forty workers and records reasons for absence. They include illness, deaths in the family, house building and work for a superior. This was an administrative record, not a survey of everyone’s working life. It gives individual glimpses of the obligations and interruptions behind the royal tombs.",
+      "value": {
+        "type": "text",
+        "text": "A limestone writing surface from Deir el-Medina lists forty workers and records reasons for absence. They include illness, deaths in the family, house building and work for a superior. This was an administrative record, not a survey of everyone’s working life. It gives individual glimpses of the obligations and interruptions behind the royal tombs."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1279,
+          "latest": -1279,
+          "original": "1279 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1213,
+          "latest": -1213,
+          "original": "1213 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-deir-attendance-history-register"
+      ],
+      "reviewId": "everyday-evidence-deir-attendance-history-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-deir-attendance-chronology",
+      "subjectId": "deir-attendance",
+      "predicate": "historical-context",
+      "statement": "Why Egypt’s tomb workers missed work: 1279 BCE to 1213 BCE. Shown within Ramesses II’s reign. The museum description assigns the register to his Year 40, while its catalogue metadata gives c.1250 BCE. The discrepancy is unresolved; this broad window does not mean the register spans the reign. The text covers 280 days. No precise site coordinate has been inferred.",
+      "value": {
+        "type": "text",
+        "text": "Why Egypt’s tomb workers missed work: 1279 BCE to 1213 BCE. Shown within Ramesses II’s reign. The museum description assigns the register to his Year 40, while its catalogue metadata gives c.1250 BCE. The discrepancy is unresolved; this broad window does not mean the register spans the reign. The text covers 280 days. No precise site coordinate has been inferred."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1279,
+          "latest": -1279,
+          "original": "1279 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1213,
+          "latest": -1213,
+          "original": "1213 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "disputed",
+      "evidenceIds": [
+        "everyday-evidence-deir-attendance-chronology-register"
+      ],
+      "reviewId": "everyday-evidence-deir-attendance-chronology-review",
+      "disputeNote": "Museum narrative gives regnal Year 40; metadata gives c.1250 BCE. Plotted reign is context only, pending object-level chronology review."
+    },
+    {
+      "id": "everyday-evidence-pompeii-point",
+      "subjectId": "pompeii",
+      "predicate": "geographic-reference",
+      "statement": "UNESCO Pompeii city-site reference; not a shop coordinate or volcanic vent.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          14.48611111111111,
+          40.75111111111111
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 1,
+          "latest": 1,
+          "original": "1 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-pompeii-point-map"
+      ],
+      "reviewId": "everyday-evidence-pompeii-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-point",
+      "subjectId": "pompeii-fullery",
+      "predicate": "geographic-reference",
+      "statement": "UNESCO Pompeii city-site reference; not a shop coordinate or volcanic vent.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          14.48611111111111,
+          40.75111111111111
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-pompeii-fullery-point-map"
+      ],
+      "reviewId": "everyday-evidence-pompeii-fullery-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-point",
+      "subjectId": "pompeii-food-shop",
+      "predicate": "geographic-reference",
+      "statement": "UNESCO Pompeii city-site reference; not a shop coordinate or volcanic vent.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          14.48611111111111,
+          40.75111111111111
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-pompeii-food-shop-point-map"
+      ],
+      "reviewId": "everyday-evidence-pompeii-food-shop-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "everyday-evidence-vesuvius-eruption-point",
+      "subjectId": "vesuvius-eruption",
+      "predicate": "geographic-reference",
+      "statement": "UNESCO Pompeii city-site reference; not a shop coordinate or volcanic vent.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          14.48611111111111,
+          40.75111111111111
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 79,
+          "latest": 79,
+          "original": "79 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "everyday-evidence-vesuvius-eruption-point-map"
+      ],
+      "reviewId": "everyday-evidence-vesuvius-eruption-point-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "everyday-evidence-pompeii-history-pompeii",
+      "claimId": "everyday-evidence-pompeii-history",
+      "sourceId": "everyday-evidence-pompeii",
+      "locator": "Brief synthesis: eruption in 79 CE, residential and commercial buildings, baths and theatres",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-history-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-chronology-pompeii",
+      "claimId": "everyday-evidence-pompeii-chronology",
+      "sourceId": "everyday-evidence-pompeii",
+      "locator": "Brief synthesis: eruption in 79 CE, residential and commercial buildings, baths and theatres",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-chronology-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-history-fullery",
+      "claimId": "everyday-evidence-pompeii-fullery-history",
+      "sourceId": "everyday-evidence-fullery",
+      "locator": "Facility description: converted house, washing vats, drying terrace and enslaved labour",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-fullery-history-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-history-pompeii",
+      "claimId": "everyday-evidence-pompeii-fullery-history",
+      "sourceId": "everyday-evidence-pompeii",
+      "locator": "Brief synthesis: eruption in 79 CE, residential and commercial buildings, baths and theatres",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-fullery-history-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-chronology-fullery",
+      "claimId": "everyday-evidence-pompeii-fullery-chronology",
+      "sourceId": "everyday-evidence-fullery",
+      "locator": "Facility description: converted house, washing vats, drying terrace and enslaved labour",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-fullery-chronology-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-chronology-pompeii",
+      "claimId": "everyday-evidence-pompeii-fullery-chronology",
+      "sourceId": "everyday-evidence-pompeii",
+      "locator": "Brief synthesis: eruption in 79 CE, residential and commercial buildings, baths and theatres",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-fullery-chronology-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-history-food",
+      "claimId": "everyday-evidence-pompeii-food-shop-history",
+      "sourceId": "everyday-evidence-food",
+      "locator": "Food counter, rear house and household shrine",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-food-shop-history-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-history-pompeii",
+      "claimId": "everyday-evidence-pompeii-food-shop-history",
+      "sourceId": "everyday-evidence-pompeii",
+      "locator": "Brief synthesis: eruption in 79 CE, residential and commercial buildings, baths and theatres",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-food-shop-history-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-chronology-food",
+      "claimId": "everyday-evidence-pompeii-food-shop-chronology",
+      "sourceId": "everyday-evidence-food",
+      "locator": "Food counter, rear house and household shrine",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-food-shop-chronology-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-chronology-pompeii",
+      "claimId": "everyday-evidence-pompeii-food-shop-chronology",
+      "sourceId": "everyday-evidence-pompeii",
+      "locator": "Brief synthesis: eruption in 79 CE, residential and commercial buildings, baths and theatres",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-food-shop-chronology-review"
+    },
+    {
+      "id": "everyday-evidence-vesuvius-eruption-history-pompeii",
+      "claimId": "everyday-evidence-vesuvius-eruption-history",
+      "sourceId": "everyday-evidence-pompeii",
+      "locator": "Brief synthesis: eruption in 79 CE, residential and commercial buildings, baths and theatres",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-vesuvius-eruption-history-review"
+    },
+    {
+      "id": "everyday-evidence-vesuvius-eruption-chronology-pompeii",
+      "claimId": "everyday-evidence-vesuvius-eruption-chronology",
+      "sourceId": "everyday-evidence-pompeii",
+      "locator": "Brief synthesis: eruption in 79 CE, residential and commercial buildings, baths and theatres",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-vesuvius-eruption-chronology-review"
+    },
+    {
+      "id": "everyday-evidence-deir-attendance-history-register",
+      "claimId": "everyday-evidence-deir-attendance-history",
+      "sourceId": "everyday-evidence-register",
+      "locator": "Object .5634: 280-day register, forty names, reasons for absence; metadata c.1250 BCE differs from regnal-year description",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-deir-attendance-history-review"
+    },
+    {
+      "id": "everyday-evidence-deir-attendance-chronology-register",
+      "claimId": "everyday-evidence-deir-attendance-chronology",
+      "sourceId": "everyday-evidence-register",
+      "locator": "Object .5634: 280-day register, forty names, reasons for absence; metadata c.1250 BCE differs from regnal-year description",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-deir-attendance-chronology-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-point-map",
+      "claimId": "everyday-evidence-pompeii-point",
+      "sourceId": "everyday-evidence-map",
+      "locator": "Component 829ter-001: N40 45 4 E14 29 10",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-point-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-point-map",
+      "claimId": "everyday-evidence-pompeii-fullery-point",
+      "sourceId": "everyday-evidence-map",
+      "locator": "Component 829ter-001: N40 45 4 E14 29 10",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-fullery-point-review"
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-point-map",
+      "claimId": "everyday-evidence-pompeii-food-shop-point",
+      "sourceId": "everyday-evidence-map",
+      "locator": "Component 829ter-001: N40 45 4 E14 29 10",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-pompeii-food-shop-point-review"
+    },
+    {
+      "id": "everyday-evidence-vesuvius-eruption-point-map",
+      "claimId": "everyday-evidence-vesuvius-eruption-point",
+      "sourceId": "everyday-evidence-map",
+      "locator": "Component 829ter-001: N40 45 4 E14 29 10",
+      "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
+      "relation": "supports",
+      "reviewId": "everyday-evidence-vesuvius-eruption-point-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "everyday-evidence-pompeii-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-pompeii-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-vesuvius-eruption-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-vesuvius-eruption-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-deir-attendance-history-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-deir-attendance-chronology-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-pompeii-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-pompeii-fullery-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-pompeii-food-shop-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "everyday-evidence-vesuvius-eruption-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    }
+  ],
+  "accounts": []
+}

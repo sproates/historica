@@ -3,7 +3,7 @@
   "files": [
     {
       "path": ".htaccess",
-      "sha256": "691b94f429a2eb5b711746d92f5c3c7325564956e15dc9aae507d49b1dbffc70"
+      "sha256": "cccfcd37cb67afe33e5458205f49729e76df749b77f184b10be5dd823e5986a5"
     },
     {
       "path": "about.html",
@@ -67,15 +67,15 @@
     },
     {
       "path": "data/reviewed-evidence.json",
-      "sha256": "bab1377799e668a0f8d739f3176be54ffc0bd1e5642b53fbf97b34c15c487cab"
+      "sha256": "331201884e341b28323ab68fd39bdbf34ab4b5c472ee6afd658c662c6a537d00"
     },
     {
       "path": "data/reviewed-exploration.json",
-      "sha256": "afb1c2f54a4e4289fdf763e2630f768193bed3179ccb2db3db83ef83ef6b70b6"
+      "sha256": "53d8c644a658092cdea3c0f9ecc0356189ccb41d3dfe31db57d99a9ff5a1bce8"
     },
     {
       "path": "data/routes.json",
-      "sha256": "603b41b75ac742200e5ccb037edbe8d98a1601e6a1a5ef1bc017509a625e8d99"
+      "sha256": "c7fad01137a6419a784e7c6038af93045c38fbb75b8eee53b272ac1551c6436a"
     },
     {
       "path": "focus-app.js",
@@ -372,6 +372,10 @@
     {
       "path": "pages/darius.html",
       "sha256": "5009c6700861f7c4eccb2c74f381e920b5545395abf8eaedc2f1f267ba9fc25c"
+    },
+    {
+      "path": "pages/deir-attendance.html",
+      "sha256": "49bf6f81519f650bb31a4621bf39433512d4c31f8edf0ec324699da8a79e86a2"
     },
     {
       "path": "pages/deir-el-medina-artisans.html",
@@ -710,6 +714,18 @@
       "sha256": "f64402ed5ea6123dfc435e1fcc54194ff20068c3c9540f976c4647fed7b59965"
     },
     {
+      "path": "pages/pompeii-food-shop.html",
+      "sha256": "cb3e3b6be6c603291d764ec0895e9f89d202817e5f3afcdb41ff55a95dd1cec8"
+    },
+    {
+      "path": "pages/pompeii-fullery.html",
+      "sha256": "dc471000f7c226ceb389671e28c77478d6edf78b6e7d51291f0831f9f16c209c"
+    },
+    {
+      "path": "pages/pompeii.html",
+      "sha256": "23dcb6fffcfbbdd5de0aa74dafd21744c2072ec43ad9050ad01cd99175592781"
+    },
+    {
       "path": "pages/pompey.html",
       "sha256": "d5219379af9bb8903d6949abee3b438449415d6c9b61a47bc54219935354a28f"
     },
@@ -986,6 +1002,10 @@
       "sha256": "27144ee19533215bb3550cce6f25296fd798496e749470240632f44ad9144550"
     },
     {
+      "path": "pages/vesuvius-eruption.html",
+      "sha256": "ab6ec7af12032a75e33b2702c9d66f0717323e819be76fcd35420db67d4ef8d3"
+    },
+    {
       "path": "pages/villanovan-context.html",
       "sha256": "ed4da7c65797405a202a232ef1a64d922ec59996cabb7850a467f04945640f69"
     },
@@ -1023,7 +1043,7 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "8270c2d7cdf09078c101129b660999d83ae369dc85bb10579d6bcc85ffc223a3"
+      "sha256": "8e81d04380e4a313cd42bc2bd667908ebf21c0aab5da8c88a7425a265ab899ec"
     },
     {
       "path": "style.css",

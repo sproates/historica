@@ -39,3 +39,11 @@ Pataliputra, Han Chang’an and Han Luoyang now have checked coordinates and map
 - Luoyang: UNESCO component 1442-002, the Eastern Han–Northern Wei city site. The Sui–Tang Dingding Gate component is deliberately excluded.
 
 Existing study windows are preserved. Coordinate claims do not establish continuous activity at each structure throughout those windows. Existing historical claims remain unchanged. These three geographic backlog items are complete; dated personal movements and historical geometry remain separate work.
+
+## Fourth pass: everyday evidence, 23 November 2026
+
+Five entries add Pompeii, its food shop and fullery, the Vesuvius eruption and a Deir el-Medina attendance register. They are reachable from existing Roman and Egyptian histories. Pompeii’s map reference is UNESCO’s city component, not a fabricated location for an individual shop. The two business entries use 79 CE as an archaeological snapshot, explicitly not an opening date or full business lifespan. Pompeii itself uses an editorial 1–79 CE study window. No exact eruption day is adopted.
+
+The archaeological park’s account supplies the laundry’s enslaved labour and the food shop’s connection with a house and shrine. Its tentative identification of a body as Stephanus is not promoted to fact.
+
+The British Museum’s register description, published through Google Arts & Culture, assigns it to Ramesses II’s Year 40 but the metadata says c.1250 BCE. This discrepancy is retained, with the reign used only as a contextual window. The entry explicitly explains that the record covers 280 days. No individual lifespan is invented for its named workers and no unchecked Deir el-Medina point is added. That site coordinate remains a geographic research task.
