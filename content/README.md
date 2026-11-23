@@ -1,22 +1,13 @@
 # Authored history records
 
-All current explorer histories now live here. Each `histories/<id>.md` file contains YAML metadata followed by the historical description as prose. Keep the stable ID aligned with the filename. Preserve claim IDs, source links, uncertainty notes and null locations when editing.
+Use the [guide to adding facts](../project/adding-facts.md) for the current research, authoring and publication process. See [CONTRIBUTION.md](../CONTRIBUTION.md) for working on the app.
 
-The Markdown body currently feeds the existing plain-text description renderer. Paragraphs are preserved; headings, embedded HTML and other Markdown presentation features are not yet rendered. Full Markdown rendering belongs to the static-site migration.
+Each `histories/<id>.md` file contains YAML metadata followed by the historical description. Its filename and ID must match. Paragraphs are preserved, but headings, embedded HTML and Markdown links aren't rendered as rich description content.
 
-`packs/<name>.yaml` groups history IDs, dated place associations and navigation connections. Its explicit `order` preserves the previous collection order. Each history belongs to exactly one pack. New pack files are discovered automatically; histories that are missing, duplicated or not assigned to a pack are rejected.
+`packs/<name>.yaml` groups history IDs, dated place associations and navigation connections. Its unique integer `order` determines collection order. Every history belongs to exactly one pack. New YAML packs are discovered automatically.
 
-After editing:
+Evidence claims, sources and reviews live in `research/evidence/*-reviewed.json`. New evidence packs must be registered in `scripts/build-evidence.ts`. Generated exploration JSON, browser data and static pages are build output; don't edit them directly.
 
-```sh
-npm run build:evidence
-npm test
-```
+The prototype pack contains older records that aren't automatically reviewed evidence. `prototype-compatibility.yaml` preserves base record ordering and older versions needed by the assembly and audit tools. Reviewed Markdown records replace those versions in the current collection. The earlier campaign interface and generated prototype data module have been removed.
 
-Commit the authored files. Generated compatibility assets are ignored build output. `research/evidence/*-exploration.json` and `web/data/reviewed-exploration.json` are generated from these records. Don't edit those JSON files directly. CI rebuilds these assets from source before testing. Build validation checks the complete assembled collection before writing them.
-
-Evidence claims, sources and review decisions still live in `research/evidence/*-reviewed.json`. The prototype pack contains the 65 histories that previously came from JavaScript builders. This does not promote those histories to reviewed evidence status.
-
-`prototype-compatibility.yaml` preserves the old 68-record ordering and the three historical versions superseded by reviewed records (Maurya, Pataliputra and Ashoka's reign). Those variants are only for the original prototype view and audit tools; current histories use their Markdown records. The generated `web/generated/content/prototype-data.js` keeps the existing runtime API working without hand-authored history in JavaScript.
-
-The original `web/data/collection.json` still supplies the earlier campaign interface, source registry and map overlay. Migrating those supporting structures and the evidence packs remains separate work.
+`web/data/collection.json` still supplies legacy supporting data, including source references and the Bactria outline. Don't use it as the destination for new historical entries.

@@ -40,7 +40,7 @@ The app uses TypeScript and Astro. Pages are generated as HTML, so a history's i
 
 Edit application code in `src/`. `npm run build:client` compiles it into `web/generated/`. Build scripts and tests also use TypeScript, run directly by Node 26. Generated JavaScript, type declarations, pages and data are ignored by Git; change their source files rather than editing the output.
 
-Historical content lives in separate records and source packs. Start with the [content authoring guide](content/README.md) and [evidence format](research/evidence/FORMAT.md). Validation catches structural problems and broken references, but it doesn't establish whether a historical claim is correct. That still needs research.
+Historical content lives in separate records and source packs. Start with the [guide to adding facts](project/adding-facts.md) and [evidence format](research/evidence/FORMAT.md). Validation catches structural problems and broken references, but it doesn't establish whether a historical claim is correct. That still needs research.
 
 ## Build and check
 
@@ -69,7 +69,7 @@ Use a descriptive branch and open a PR. Main is protected. Keep related changes 
 
 Changes to design, wording or interactions need a local preview before publication. Data changes need the relevant data and source checks. The [release checklist](project/release-readiness.md) records what's still needed for the next release; [release instructions](RELEASE.md) cover packaging and recovery.
 
-Historica was created by [Ian Sproates](https://sproates.net/). See [CONTRIBUTORS.md](CONTRIBUTORS.md) for contributor credits.
+Historica was created by [Ian Sproates](https://sproates.net/). See [CONTRIBUTION.md](CONTRIBUTION.md) for the guide to working on Historica.
 
 ## Licence
 
