@@ -13,3 +13,8 @@ export function planPages(models,previous,shared,readOutput){
  }
  return {changed,unchanged,pages,removed:Object.keys(previous?.pages||{}).filter(route=>!pages[route])};
 }
+
+/** A build manifest alone is not proof that its static tests passed. */
+export function pagesNeedingChecks(manifest,verified){
+ return Object.entries(manifest.pages).filter(([route,page])=>verified?.shared!==manifest.shared||verified?.pages?.[route]?.fingerprint!==page.fingerprint||verified?.pages?.[route]?.output!==page.output).map(([,page])=>page.id);
+}

@@ -45,6 +45,13 @@ jobs:
         run: |
           npm run build:client
           git diff --exit-code -- web/generated/
+      - name: Restore verified static pages
+        if: steps.changes.outputs.scope == 'site'
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: release/static-incremental/
+          key: ${{ runner.os }}-historica-static-v1-${{ github.sha }}
+          restore-keys: ${{ runner.os }}-historica-static-v1-
       - name: Generate and verify the site
         if: steps.changes.outputs.scope == 'site'
         run: |
@@ -53,9 +60,15 @@ jobs:
           node scripts/build-routes.mjs
           node scripts/build-metadata.mjs
           npm test
-          npm run test:static
+          node scripts/verify-static-incremental.mjs
           npm run build:pages
           git diff --exit-code -- research/evidence/\*-exploration.json web/data/reviewed-exploration.json web/data/map-regions.json web/data/browser-evidence.json web/data/evidence/ web/data/browser-chronology.json web/generated/content/prototype-data.js
+      - name: Save verified main-branch static pages
+        if: success() && steps.changes.outputs.scope == 'site' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: release/static-incremental/
+          key: ${{ runner.os }}-historica-static-v1-${{ github.sha }}
       - name: Keep the verified staging artifact
         if: steps.changes.outputs.scope == 'site'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
