@@ -19,7 +19,10 @@ Never use `codex` in a Git branch name. Use descriptive `feature/…`, `fix/…`
 - Treat mixed data/design changes as requiring preview approval. If publishing data while design work awaits approval, build a separate clean release containing only approved production code and the data changes. Never deploy pending design changes accidentally through a full-folder upload.
 - Committing or pushing is not permission to deploy unapproved design changes.
 - Keep the preview running beyond the agent session. Use the macOS LaunchAgent installed by `scripts/install-preview-service.py`, serving a refreshed copy of `web/` on port 4173 over the same Wi-Fi as the Mac. The Mac must be awake and connected. Provide a LAN or `.local` URL, never a 127.0.0.1 link for phone review.
-- Run builds and verification manually on the Mac; do not add GitHub CI or enable GitHub Pages. Keep the repository private until instructed otherwise.
+- The sustainability phase now permits GitHub CI and preparation of GitHub Pages staging alongside the live ASO site. Keep manual local checks proportionate. Do not change production DNS, attach the production domain to Pages, remove ASO files or make the repository public as part of staging preparation. Keep the repository private until explicitly instructed otherwise.
 - Production FTPS operations must remain confined to the confirmed Historica document root in the ignored local deployment configuration. Never store credentials in Git or project files.
 
 Refresh the persistent preview after edits with `npm run preview:sync`. Files are copied to `~/Library/Application Support/Historica/preview/` so the background service does not depend on access to the Documents folder. This command never changes production.
+
+## Cloudflare scope
+- Ian uses Cloudflare for other projects. Limit work to the `historica.online` zone and explicitly Historica-specific resources. Never change other zones, projects or account-wide settings. Check for existing Historica resources before creating any.

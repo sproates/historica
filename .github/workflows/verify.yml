@@ -1,0 +1,96 @@
+name: Verify Historica
+on:
+  pull_request:
+  push:
+    branches: [main, feature/github-pages-preparation]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: verify-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      scope: ${{ steps.changes.outputs.scope }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Classify changes
+        id: changes
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node scripts/change-scope.mjs "$BASE" HEAD
+      - name: Check patch formatting
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [ -n "$BASE" ] && git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            git diff --check "$BASE" HEAD
+          else
+            git diff --check HEAD
+          fi
+      - name: Generate and verify the site
+        if: steps.changes.outputs.scope == 'site'
+        run: |
+          npm run build:evidence
+          npm run build:coverage
+          node scripts/build-routes.mjs
+          node scripts/build-metadata.mjs
+          npm test
+          npm run build:pages
+      - name: Keep the verified staging artifact
+        if: steps.changes.outputs.scope == 'site'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: historica-pages-${{ github.sha }}
+          path: release/pages-site/
+          include-hidden-files: true
+          retention-days: 7
+      - name: Package staging for Pages
+        if: steps.changes.outputs.scope == 'site' && github.event_name == 'push' && github.ref == 'refs/heads/feature/github-pages-preparation'
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: release/pages-site/
+          retention-days: 7
+      - name: Report scope
+        env:
+          SCOPE: ${{ steps.changes.outputs.scope }}
+        run: |
+          if [ "$SCOPE" = docs ]; then
+            echo 'Internal documentation only: site build and deployment skipped.' >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'Site verified and staging artifact saved. Production DNS unchanged.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  staging:
+    if: needs.verify.outputs.scope == 'site' && github.event_name == 'push' && github.ref == 'refs/heads/feature/github-pages-preparation'
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages-staging
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Refuse to deploy if the production domain is attached
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/sproates/historica/pages > "$RUNNER_TEMP/pages.json"
+          node -e 'const p=require(process.env.RUNNER_TEMP+"/pages.json"); if(p.cname || p.html_url!=="https://sproates.github.io/historica/") process.exit(1);'
+      - name: Deploy verified staging artifact
+        id: deploy
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
