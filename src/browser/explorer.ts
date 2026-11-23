@@ -1,3 +1,4 @@
+import {bindMapMarkers} from '../controllers/map-marker-controls.js';
 import {createEvidenceStore} from '../content/evidence-store.js';
 import {loadMapData} from '../presentation/map-data.js';
 import {createHistoryRenderer} from '../presentation/history-renderer.js';
@@ -46,6 +47,7 @@ let showAllContext=false,reviewedEvidence: ReviewedEvidence | null=null;
 let loadingEvidence=false,chronologyEvidence: ChronologyEvidence={claims:[]},ready=false,comparisonMode: 'shared'|'full'='shared',selectedYear: number | null=null,comparedPeople: string[]=[];
 const expandedLanes=new Set<string>();
 const mapControls=setupMap($<SVGSVGElement>('focus-map'),()=>{if(ready)sync();});
+bindMapMarkers($<SVGSVGElement>('focus-map'));
 const {renderComparison,renderSwimlanes,renderMap,renderYear,renderRegionalEvidence,renderFocus,renderDetails}=createHistoryRenderer(document,()=>({data,state,selectedYear,comparedPeople,comparisonMode,reviewedEvidence,chronologyEvidence,expandedLanes,land,focusGeography,showAllContext,bactriaOutline}),updateMapPoints);
 function snapshot(): ExplorerSnapshot{return {state:{...state},view:{moment:selectedYear,people:[...comparedPeople],lanes:[...expandedLanes].map(key=>JSON.parse(key) as [string,string]).filter(([id])=>id===state.focus).map(([,name])=>name),panels:bookmarkPanels.filter(name=>panel(`.${name}`).open),comparison:comparisonMode,map:mapControls.getState(),envelope:{...envelope},expanded:showAllContext,evidence:panel('.geography details').open}};}
 function sync(){if(!ready||loadingEvidence)return;history.replaceState(null,'',encodeView(state,snapshot().view,data,base));}

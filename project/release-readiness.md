@@ -15,7 +15,7 @@ This is the finish line for the current refactor, not a new optimisation backlog
 
 ## Review gates
 
-1. Restyling remains open for Ian’s review. The current Wi-Fi preview includes light/dark appearance and layout refinements, but is not an approved final design. Design is not published before approval.
+1. Ian approved the Chronology restyle: sans-serif typography, slate/cobalt colours, timeline H logo and light/dark modes. The local preview also includes requested map identification: hover/focus labels and an explicit Explore button after selecting a marker. These changes are being consolidated into the release PR; production remains unchanged.
 2. Historica’s Cloudflare Web Analytics site is configured for manual installation, and its public token is stored in the GitHub repository variable `HISTORICA_ANALYTICS_TOKEN`. A production package was verified with the token; previews exclude it. SPA measurement is deliberately off, so document visits are counted rather than in-page focus changes. The remaining step is deployment with the approved release and confirmation of real traffic in Cloudflare.
 3. Approve the private-to-public repository change and hosting cutover separately. Reconfirm repository visibility, domain and HTTPS settings immediately before that action. Do not alter other Cloudflare projects.
 4. Promote the reviewed artifact, verify public routes and HTTPS, and rehearse restoring the retained release. Keep the current live site available throughout the hosting transition.

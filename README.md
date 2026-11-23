@@ -1,59 +1,75 @@
 # Historica
 
-[Historica](https://historica.online) is a beta site for visualising history. Explore people, places and events on a shared timeline, with a map alongside it. Follow connections or change the dates to see what was happening elsewhere.
+[Historica](https://historica.online) is a site for visualising history. It puts people, places and events on a shared timeline so you can see what was happening at the same time in different parts of the world.
 
-Coverage is selective. Entries link to sources and describe uncertain dates and geographical references. Missing records mean missing research, not that nothing happened.
+Who was alive during Alexander’s lifetime? What was happening in Britain while Socrates was alive? Where was Bactria, and how does it relate to the countries we know today? These are the sorts of questions Historica is intended to help you explore.
 
-## Develop locally
+Choose a person, place, event or period as your focus, then change the dates or follow a connection. The map shows related places. Hover over a marker to identify it, or select it and choose Explore to move there. You can bookmark a view and return to the same focus and settings.
 
-Use Node.js 26, pinned in `.node-version`, and Python 3. Install locked dependencies with `npm ci`.
+Historica is still a beta. The collection concentrates on the ancient world and coverage is uneven. Entries link to their sources, with notes where dates or locations are uncertain. A gap in the timeline means we haven't covered something yet, not that nothing happened there.
+
+## Run it locally
+
+You'll need Node.js 26, pinned in `.node-version`, and Python 3.
 
 ```sh
-npm start                  # local server on port 4173
-npm run start:lan          # accessible on the same Wi-Fi
-npm run preview:sync       # refresh the installed persistent macOS preview
-npm test                   # types, static pages, data and application checks
-npm run build:pages        # verified standalone package in release/pages-site/
+npm ci
+npm start
 ```
 
-Builds do not publish. The persistent preview runs independently of the terminal; use the Mac's `.local` hostname on port 4173. The Mac must be awake. `npm run preview:install` installs the service if it is not already present.
+The local server runs on port 4173. To open it from a phone on the same Wi-Fi, use `npm run start:lan` and the computer's network address.
 
-## Source layout
+On a Mac, `npm run preview:install` installs a persistent preview service. Refresh it with `npm run preview:sync`, then open the Mac's `.local` hostname on port 4173. The service stays running after the terminal closes, but the Mac needs to be awake and on the same network as the phone.
 
-| Location | Purpose |
+## How the app is organised
+
+The app uses TypeScript and Astro. Pages are generated as HTML, so a history's introduction, timeline, map and references are available before JavaScript runs. Browser code adds search, date controls, comparisons and navigation between histories.
+
+| Location | What belongs here |
 | --- | --- |
 | `content/histories/` | Individual historical records in Markdown |
-| `content/packs/` | Navigation groups, associations and relationships in YAML |
+| `content/packs/` | Groups, place associations and relationships in YAML |
 | `research/` | Source passages, evidence reviews and coverage records |
 | `src/pages/`, `src/layouts/`, `src/components/` | Astro pages and shared HTML |
-| `src/domain/`, `src/state/` | Typed history calculations, focus transitions and bookmarks |
-| `src/browser/`, `src/controllers/` | Typed interactions and browser integration |
-| `src/presentation/`, `src/content/` | Rendering models, validation and browser projections |
-| `web/` | Shared assets, styles and small browser entry points |
-| `scripts/`, `tests/` | Build, verification, preview and packaging |
+| `src/domain/`, `src/state/` | History calculations, focus changes and bookmarks |
+| `src/browser/`, `src/controllers/` | Browser interactions |
+| `src/presentation/`, `src/content/` | Rendering, validation and data preparation |
+| `web/` | Shared styles, assets and browser entry points |
+| `scripts/`, `tests/` | Building, checking, previewing and packaging the site |
 
-Edit TypeScript under `src/`; compile it with `npm run build:client`. Generated `web/generated/`, `web/pages/`, home/About/coverage HTML and derived JSON are ignored output. Do not edit them. The main explorer and home search no longer load prototype records. The earlier campaign view remains available for existing links, with its isolated compatibility code.
+Edit application code in `src/`. `npm run build:client` compiles it into `web/generated/`. Generated pages and data are ignored by Git; change their source files rather than editing the output.
 
-## Build and verification
+Historical content lives in separate records and source packs. Start with the [content authoring guide](content/README.md) and [evidence format](research/evidence/FORMAT.md). Validation catches structural problems and broken references, but it doesn't establish whether a historical claim is correct. That still needs research.
 
-`build:content` validates authored records and generates routing, discovery metadata and browser data. `build:web` then builds and verifies affected Astro pages and exports the existing server paths. Home, About, privacy, coverage and all 230 history pages come from Astro. Default histories contain their introduction, timeline, map and references before JavaScript runs.
+## Build and check
 
-Incremental builds track page inputs and output hashes. Unchanged pages reuse their verification; shared application changes trigger wider checks. CI follows the same build and retains a checksummed staging package. Allowlisted internal documentation skips site generation. Changes to content and unknown files do not take that shortcut.
+```sh
+npm run typecheck         # check TypeScript without generating files
+npm test                  # build the site and run data, page and app checks
+npm run preview:sync      # refresh the persistent preview
+npm run build:pages       # prepare and verify a standalone staging package
+```
 
-Home search uses a compact index. The explorer loads assembled records plus evidence for the selected history, caching evidence as visitors navigate. Historical validation checks structure and references; it does not certify the underlying claims. See [content authoring](content/README.md) and [evidence format](research/evidence/FORMAT.md).
+Build commands don't publish anything. The staging package is written to `release/pages-site/`.
+
+Incremental builds reuse pages whose inputs and output haven't changed. Shared code changes need broader checks because they can affect many pages. GitHub CI runs the checks for each PR and keeps the verified package. Recognised internal documentation changes skip the site build; unknown files take the full verification path.
+
+Search uses a small index. The explorer loads the history records needed for comparisons, then fetches evidence for each selected history and caches it as you move around the site.
 
 ## Appearance and analytics
 
-`web/appearance.css` defines shared light/dark tokens and layout refinements. The moon button toggles light and dark. Until a choice is saved, appearance follows the system; the preference is local to the browser and is applied before paint. Keep map, timeline, keyboard focus and uncertainty patterns legible in both modes.
+The Chronology design uses shared colours and typography in `web/appearance.css`, with a logo in `src/components/Brand.astro`. The moon button switches between light and dark modes. Until you choose, the site follows your system setting; your choice is saved in your browser.
 
-Analytics is optional and disabled in previews. A production Pages package can read `HISTORICA_ANALYTICS_TOKEN` for the Historica-specific Cloudflare Web Analytics site. The loader checks the exact production hostname and initializes once. Automatic SPA tracking is disabled: counts represent document visits, not every in-page focus change or slider movement. No custom search or comparison telemetry is added. See [release instructions](RELEASE.md) before enabling it.
+Cloudflare Web Analytics is configured for the next production release. It doesn't use cookies. The production package includes it when built with `HISTORICA_ANALYTICS_TOKEN`; local and staging previews don't load it. It counts page visits, rather than every change to a timeline or filter, and we don't send custom search or comparison events. See the [privacy page](https://historica.online/privacy) and [release instructions](RELEASE.md).
 
-## Contribution and release
+## Contributing
 
-Use a short descriptive branch and a PR; main is protected. Run checks proportionate to the change. Preview design, wording and interaction changes on Wi-Fi before release approval. Keep related refactor work together rather than creating a sequence of micro-PRs. Data changes need the relevant data checks.
+Use a descriptive branch and open a PR. Main is protected. Keep related changes together and run checks appropriate to what you've changed.
 
-[Release readiness](project/release-readiness.md) records the remaining release gates. Earlier plans and migration notes are historical context, not an additional backlog. [Release instructions](RELEASE.md) cover packaging and rollback.
+Changes to design, wording or interactions need a local preview before publication. Data changes need the relevant data and source checks. The [release checklist](project/release-readiness.md) records what's still needed for the next release; [release instructions](RELEASE.md) cover packaging and recovery.
 
-Code uses [MIT](LICENSE); original historical summaries and research records use CC BY 4.0. Third-party material retains its own terms: see [attribution](ATTRIBUTION.md).
+Historica was created by [Ian Sproates](https://sproates.net/). See [CONTRIBUTORS.md](CONTRIBUTORS.md) for contributor credits.
 
-Created by [Ian Sproates](https://sproates.net).
+## Licence
+
+Code is licensed under [MIT](LICENSE). Original historical summaries and research records use CC BY 4.0. Third-party material retains its own terms; see [ATTRIBUTION.md](ATTRIBUTION.md).
