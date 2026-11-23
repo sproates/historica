@@ -1,5 +1,5 @@
 import {createTimeline} from './timeline.js';
-import {appendTimeline} from './timeline-model.js';
+import {appendTimeline} from './generated/domain/timeline.js';
 import {MIN_YEAR,MAX_YEAR,PRESETS,yearLabel,activeAt,allRecords,stageAt,readState,writeState,project,cameraAt,changeYear,inViewport,ageLabel} from './model.js';
 const $=id=>document.getElementById(id),ns='http://www.w3.org/2000/svg';
 const svg=$('map');let timeline;let data,state,camera,modern,labels,viewHeight,heartland,heartlandPath,heartlandLabel,heartlandSubtitle,routeLayer,pointLayer;

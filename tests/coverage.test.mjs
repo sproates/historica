@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {validateCoverage, overview, splitRegion} from '../web/coverage-model.js';
+import {validateCoverage, overview, splitRegion} from '../web/generated/domain/coverage.js';
 const registry = JSON.parse(fs.readFileSync('research/programme/coverage.json'));
 test('registry is complete and the preview matches the research queue',()=>{
  assert.deepEqual(validateCoverage(registry),[]);

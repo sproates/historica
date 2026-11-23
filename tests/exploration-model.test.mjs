@@ -1,6 +1,6 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {ageAt,peopleAt,compareLives,dateMeaning,clampMoment} from '../web/exploration-model.js';
-import {encodeView,decodeView} from '../web/view-url.js';
+import {ageAt,peopleAt,compareLives,dateMeaning,clampMoment} from '../web/generated/domain/exploration.js';
+import {encodeView,decodeView} from '../web/generated/state/view-url.js';
 const a={id:'a',title:'A',type:'person',startYear:-10,endYear:10},b={id:'b',title:'B',type:'person',startYear:20,endYear:80},data={entities:[a,b]};
 test('year-level ages cross BCE/CE without a year zero and never manufacture ages outside life',()=>{
  assert.equal(ageAt(a,1),'9–10 years');assert.equal(ageAt(a,-10),'0 years');assert.equal(ageAt(a,-11),'Not yet born');assert.equal(ageAt(a,11),'After recorded lifespan');

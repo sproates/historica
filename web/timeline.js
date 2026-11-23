@@ -1,5 +1,5 @@
 import {yearLabel} from './model.js';
-import {FIRST,LAST,ordinal,historical,bounds,position,overlaps,windowAround,shiftWindow,zoomWindow,readTimeline} from './timeline-model.js';
+import {FIRST,LAST,ordinal,historical,bounds,position,overlaps,windowAround,shiftWindow,zoomWindow,readTimeline} from './generated/domain/timeline.js';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function createTimeline(root,data,onChange){
  const extra=[

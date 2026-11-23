@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {timelineLayout} from '../web/swimlane-model.js';
+import {timelineLayout} from '../web/generated/domain/swimlane.js';
 const data={entities:[],associations:[]};
 const f={id:'focus',title:'Focus',type:'person',region:'Egypt',startYear:-100,endYear:100};
 test('timeline clips bars and marks continuation without a year zero',()=>{
@@ -19,7 +19,7 @@ test('single-year windows and area focus remain visible',()=>{
  assert.deepEqual(ticks,[1]);assert.equal(lanes[0].items[0].left,50);assert.equal(lanes[1].items[0].point,true);
 });
 test('crowded lanes show three rows and can reveal every entry',async()=>{
- const {laneView}=await import('../web/swimlane-model.js');
+ const {laneView}=await import('../web/generated/domain/swimlane.js');
  const lane={name:'Athens',rows:9,items:Array.from({length:9},(_,row)=>({id:String(row),row}))};
  const compact=laneView(lane);assert.equal(compact.rows,3);assert.equal(compact.items.length,3);assert.equal(compact.total,9);assert.equal(compact.expanded,false);
  assert.deepEqual(laneView(lane,true).items,lane.items);

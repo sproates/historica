@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {setupMap} from '../web/focus-map.js';
+import {setupMap} from '../web/generated/controllers/map-controls.js';
 test('map supports anchored pinch, two-finger pan, lifting a finger and trackpad gestures',()=>{
  const controls=new Map();const handlers={};let view;
  const oldDocument=globalThis.document;
