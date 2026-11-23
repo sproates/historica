@@ -29,3 +29,13 @@ Octavia’s 35 BCE arrival follows Plutarch, Antony 53.1–2, with the Loeb edit
 Ban Zhao’s plotted lifespan follows Columbia’s c.48–c.116 CE; Pang-White’s Cambridge chapter summary gives c.45–117. Both readings are retained in structured evidence and the visible note. The Lessons entry is approximately 100 CE, not a precise publication year. Octavia’s death also retains the 11/10 BCE alternative. Livia’s dates and marriage follow the named scholars’ Store norske leksikon entry.
 
 This adds data for visual lifespan comparisons. It does not add a relative-age calculator or change comparison controls. Date uncertainty must be respected when those features are implemented. The geographic tasks for the Han capitals and Pataliputra remain open.
+
+## Third pass: capital locations, 23 November 2026
+
+Pataliputra, Han Chang’an and Han Luoyang now have checked coordinates and map associations. No new entities or personal locations were added.
+
+- Pataliputra: Kumrahar, National Monuments Authority draft heritage document, section 3.1.1. Section 3.2 describes Mauryan remains. The document’s tentative palace identification is not accepted as fact. This is an archaeological reference within Pataliputra.
+- Chang’an: UNESCO Silk Roads component 1442-001, Weiyang Palace in the Western Han city. The later Tang palace component is deliberately excluded.
+- Luoyang: UNESCO component 1442-002, the Eastern Han–Northern Wei city site. The Sui–Tang Dingding Gate component is deliberately excluded.
+
+Existing study windows are preserved. Coordinate claims do not establish continuous activity at each structure throughout those windows. Existing historical claims remain unchanged. These three geographic backlog items are complete; dated personal movements and historical geometry remain separate work.

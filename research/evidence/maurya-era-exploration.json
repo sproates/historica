@@ -152,13 +152,17 @@
       "startYear": -321,
       "endYear": -185,
       "description": "Pataliputra was the Mauryan capital. The Greek envoy Megasthenes described a city defended by a timber wall, gates and towers.\n\nThat account gives us a view of the capital through a visitor’s writing. It should not be treated as a complete description of everyday life there.",
-      "note": "Editorial window follows the dynasty, not the foundation or end of the city. Megasthenes’ description is literary testimony. A precise map reference has not yet been checked.",
-      "point": null,
+      "note": "Editorial window follows the dynasty, not the foundation or end of the city. Megasthenes’ description is literary testimony. The map uses Kumrahar’s archaeological site reference within Pataliputra, not the city’s centre or extent. The identification as Ashoka’s palace is not treated as certain.",
+      "point": [
+        85.18501111111111,
+        25.599708333333332
+      ],
       "url": "https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c",
       "contextual": true,
       "claimIds": [
         "maurya-era-pataliputra-history",
-        "maurya-era-pataliputra-chronology"
+        "maurya-era-pataliputra-chronology",
+        "city-references-pataliputra-point"
       ],
       "dateLabel": "Mauryan study window",
       "region": "South Asia",
@@ -373,6 +377,22 @@
         "maurya-era-alexander-taxila-history",
         "maurya-era-alexander-taxila-chronology",
         "maurya-era-alexander-taxila-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "pataliputra",
+      "place": "pataliputra",
+      "startYear": -321,
+      "endYear": -185,
+      "point": [
+        85.18501111111111,
+        25.599708333333332
+      ],
+      "label": "Kumrahar archaeological site reference within Pataliputra",
+      "source": "https://nma.gov.in/showfile.php?lang=1&level=2&lid=1372&ls_id=1128&nma_type=0",
+      "claimIds": [
+        "city-references-pataliputra-point"
       ],
       "contextual": true
     }

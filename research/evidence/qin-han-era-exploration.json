@@ -120,13 +120,17 @@
       "startYear": -206,
       "endYear": 9,
       "description": "Chang’an was the Western Han capital. Palaces, residential districts and markets occupied a city organised along a north–south axis.\n\nIt provides an urban setting for the dynasty’s rulers, writers and trade.",
-      "note": "Western Han study window, not foundation dates or an assertion that it was the capital from the first year. Precise geographic reference not yet checked.",
-      "point": null,
+      "note": "Western Han study window, not foundation dates or an assertion that it was the capital from the first year. The map uses UNESCO’s Weiyang Palace site reference within Han Chang’an, not the later Tang capital or a city boundary.",
+      "point": [
+        108.85722222222222,
+        34.30444444444444
+      ],
       "url": "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d",
       "contextual": true,
       "claimIds": [
         "qin-han-era-han-changan-history",
-        "qin-han-era-han-changan-chronology"
+        "qin-han-era-han-changan-chronology",
+        "city-references-han-changan-point"
       ],
       "dateLabel": "Dynastic study window",
       "region": "China",
@@ -183,13 +187,17 @@
       "startYear": 25,
       "endYear": 220,
       "description": "The Eastern Han ruled from Luoyang, east of the earlier capital at Chang’an. Two large palace complexes dominated the city.\n\nCaravans and visiting envoys connected the capital with places beyond the empire.",
-      "note": "Eastern Han study window, not the foundation or end of the city. Precise geographic reference not yet checked.",
-      "point": null,
+      "note": "Eastern Han study window, not the foundation or end of the city. The map uses UNESCO’s Eastern Han–Northern Wei city site reference, not the later Sui–Tang city or a historical boundary.",
+      "point": [
+        112.62138888888889,
+        34.73111111111111
+      ],
       "url": "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d",
       "contextual": true,
       "claimIds": [
         "qin-han-era-han-luoyang-history",
-        "qin-han-era-han-luoyang-chronology"
+        "qin-han-era-han-luoyang-chronology",
+        "city-references-han-luoyang-point"
       ],
       "dateLabel": "Dynastic study window",
       "region": "China",
@@ -250,6 +258,38 @@
         "qin-han-era-qin-mausoleum-history",
         "qin-han-era-qin-mausoleum-chronology",
         "qin-han-era-qin-mausoleum-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "han-changan",
+      "place": "han-changan",
+      "startYear": -206,
+      "endYear": 9,
+      "point": [
+        108.85722222222222,
+        34.30444444444444
+      ],
+      "label": "Weiyang Palace site reference within Han Chang’an",
+      "source": "https://whc.unesco.org/en/list/1442/maps/",
+      "claimIds": [
+        "city-references-han-changan-point"
+      ],
+      "contextual": true
+    },
+    {
+      "subject": "han-luoyang",
+      "place": "han-luoyang",
+      "startYear": 25,
+      "endYear": 220,
+      "point": [
+        112.62138888888889,
+        34.73111111111111
+      ],
+      "label": "Eastern Han–Northern Wei Luoyang site reference",
+      "source": "https://whc.unesco.org/en/list/1442/maps/",
+      "claimIds": [
+        "city-references-han-luoyang-point"
       ],
       "contextual": true
     }

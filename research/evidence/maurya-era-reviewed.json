@@ -125,6 +125,15 @@
       "locatorHint": "Component 139-003 Bhir Mound, N33 44 38.2 E72 49 9.59",
       "accessed": "2026-11-22",
       "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "city-references-pataliputra",
+      "title": "Draft heritage bye-laws: Kumrahar, Patna",
+      "url": "https://nma.gov.in/showfile.php?lang=1&level=2&lid=1372&ls_id=1128&nma_type=0",
+      "creator": "National Monuments Authority, Government of India",
+      "locatorHint": "Chapter III, section 3.1.1 (PDF page index 6): N25 35 58.95 E85 11 6.04; section 3.2 describes Mauryan remains.",
+      "accessed": "2026-11-23",
+      "reuse": "Coordinate reference and linked attribution; no map image reproduced."
     }
   ],
   "claims": [
@@ -1099,6 +1108,44 @@
       ],
       "reviewId": "maurya-era-alexander-taxila-point-review",
       "disputeNote": null
+    },
+    {
+      "id": "city-references-pataliputra-point",
+      "subjectId": "pataliputra",
+      "predicate": "geographic-reference",
+      "statement": "Kumrahar archaeological site reference within Pataliputra. This point locates the existing study window; it does not date every structure, define the city’s boundaries or establish any person’s presence.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          85.18501111111111,
+          25.599708333333332
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -321,
+          "latest": -321,
+          "original": "321 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -185,
+          "latest": -185,
+          "original": "185 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "city-references-pataliputra-point-evidence"
+      ],
+      "reviewId": "city-references-pataliputra-point-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -1389,6 +1436,15 @@
       "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
       "relation": "supports",
       "reviewId": "maurya-era-alexander-taxila-point-review"
+    },
+    {
+      "id": "city-references-pataliputra-point-evidence",
+      "claimId": "city-references-pataliputra-point",
+      "sourceId": "city-references-pataliputra",
+      "locator": "Chapter III, section 3.1.1 (PDF page index 6): N25 35 58.95 E85 11 6.04; section 3.2 describes Mauryan remains.",
+      "note": "Kumrahar archaeological site reference within Pataliputra",
+      "relation": "supports",
+      "reviewId": "city-references-pataliputra-point-review"
     }
   ],
   "reviews": [
@@ -1587,6 +1643,13 @@
       "date": "2026-11-22",
       "decision": "verified",
       "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "city-references-pataliputra-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Inspected the published coordinate text and site identification. Converted degrees, minutes and seconds to decimal coordinates. Only a site reference is accepted; no palace attribution, urban boundary or personal itinerary inferred."
     }
   ],
   "accounts": []

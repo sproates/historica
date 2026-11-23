@@ -83,6 +83,24 @@
       "locatorHint": "Components 441-001 (mausoleum) and 441-002 (terracotta army pits)",
       "accessed": "2026-11-22",
       "reuse": "Original concise paraphrase and linked attribution; no source images or long quotations reproduced."
+    },
+    {
+      "id": "city-references-han-changan",
+      "title": "Silk Roads: geographical data",
+      "url": "https://whc.unesco.org/en/list/1442/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Component 1442-001, Weiyang Palace in Western Han Chang’an: N34 18 16 E108 51 26.",
+      "accessed": "2026-11-23",
+      "reuse": "Coordinate reference and linked attribution; no map image reproduced."
+    },
+    {
+      "id": "city-references-han-luoyang",
+      "title": "Silk Roads: geographical data",
+      "url": "https://whc.unesco.org/en/list/1442/maps/",
+      "creator": "UNESCO World Heritage Centre",
+      "locatorHint": "Component 1442-002, Luoyang from Eastern Han to Northern Wei: N34 43 52 E112 37 17.",
+      "accessed": "2026-11-23",
+      "reuse": "Coordinate reference and linked attribution; no map image reproduced."
     }
   ],
   "claims": [
@@ -773,6 +791,82 @@
       ],
       "reviewId": "qin-han-era-terracotta-army-point-review",
       "disputeNote": null
+    },
+    {
+      "id": "city-references-han-changan-point",
+      "subjectId": "han-changan",
+      "predicate": "geographic-reference",
+      "statement": "Weiyang Palace site reference within Han Chang’an. This point locates the existing study window; it does not date every structure, define the city’s boundaries or establish any person’s presence.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          108.85722222222222,
+          34.30444444444444
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -206,
+          "latest": -206,
+          "original": "206 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 9,
+          "latest": 9,
+          "original": "9 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "city-references-han-changan-point-evidence"
+      ],
+      "reviewId": "city-references-han-changan-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "city-references-han-luoyang-point",
+      "subjectId": "han-luoyang",
+      "predicate": "geographic-reference",
+      "statement": "Eastern Han–Northern Wei Luoyang site reference. This point locates the existing study window; it does not date every structure, define the city’s boundaries or establish any person’s presence.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          112.62138888888889,
+          34.73111111111111
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": 25,
+          "latest": 25,
+          "original": "25 CE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": 220,
+          "latest": 220,
+          "original": "220 CE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "city-references-han-luoyang-point-evidence"
+      ],
+      "reviewId": "city-references-han-luoyang-point-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -955,6 +1049,24 @@
       "note": "Supports the statement or date scope; see entry note for limits. No claim of complete regional coverage.",
       "relation": "supports",
       "reviewId": "qin-han-era-terracotta-army-point-review"
+    },
+    {
+      "id": "city-references-han-changan-point-evidence",
+      "claimId": "city-references-han-changan-point",
+      "sourceId": "city-references-han-changan",
+      "locator": "Component 1442-001, Weiyang Palace in Western Han Chang’an: N34 18 16 E108 51 26.",
+      "note": "Weiyang Palace site reference within Han Chang’an",
+      "relation": "supports",
+      "reviewId": "city-references-han-changan-point-review"
+    },
+    {
+      "id": "city-references-han-luoyang-point-evidence",
+      "claimId": "city-references-han-luoyang-point",
+      "sourceId": "city-references-han-luoyang",
+      "locator": "Component 1442-002, Luoyang from Eastern Han to Northern Wei: N34 43 52 E112 37 17.",
+      "note": "Eastern Han–Northern Wei Luoyang site reference",
+      "relation": "supports",
+      "reviewId": "city-references-han-luoyang-point-review"
     }
   ],
   "reviews": [
@@ -1097,6 +1209,20 @@
       "date": "2026-11-22",
       "decision": "verified",
       "reason": "Checked the cited public passage. Approximate dates, editorial windows and source-specific chronology are disclosed; no lifespan or route inferred."
+    },
+    {
+      "id": "city-references-han-changan-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Inspected the published coordinate text and site identification. Converted degrees, minutes and seconds to decimal coordinates. Only a site reference is accepted; no palace attribution, urban boundary or personal itinerary inferred."
+    },
+    {
+      "id": "city-references-han-luoyang-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-23",
+      "decision": "verified",
+      "reason": "Inspected the published coordinate text and site identification. Converted degrees, minutes and seconds to decimal coordinates. Only a site reference is accepted; no palace attribution, urban boundary or personal itinerary inferred."
     }
   ],
   "accounts": []
