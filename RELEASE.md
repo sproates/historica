@@ -1,119 +1,46 @@
-# Manual releases
+# Releases
 
-Historica is hosted on a separate document root at its hosting provider.
-Keep the repository private. The sustainability phase permits GitHub CI and Pages staging preparation. Production remains on ASO until the cutover is explicitly released. Local verification remains available on the Mac.
+Historica is hosted on GitHub Pages at https://historica.online, with Cloudflare providing public HTTPS and DNS. The repository is public and main is protected. Changes reach main through a PR and passing verification.
 
-## What can be published
+## Prepare a release
 
-Data-only changes may be deployed after checks. Design, layout, navigation,
-interaction and visitor-facing editorial changes must be reviewed on the
-Wi-Fi preview and approved by Ian before publishing. Mixed changes follow
-the design rule. Never include unapproved design work in a data release.
-Use an isolated checkout if needed. See [AGENTS.md](AGENTS.md).
+Use Node.js 26 and `npm ci`. Run checks appropriate to the change. Design, wording and interaction changes need Ian's preview approval before publication; data-only changes need the relevant checks. A commit or merge doesn't publish the site.
 
-## Local configuration
+The source is under `src/`, `content/` and `research/`, with shared styles and assets in `web/`. Generated HTML, JavaScript and data aren't source files. `npm run preview:sync` rebuilds the affected pages and refreshes the persistent Wi-Fi preview. It doesn't change production.
 
-Connection details belong in `.deploy-local.json`, which is ignored by Git.
-Copy `.deploy-local.example.json` and set the hosting server, username and
-confirmed remote document root. Do not put a password in that file. The
-uploader requests it through a hidden prompt and keeps it in memory only.
-The local hosting notes are under the ignored `release/` directory.
+Successful site verification on main retains two packages:
 
-Only the configured Historica document root is authorised. Do not inspect,
-modify or upload to any other site or hosting directory. TLS certificate
-validation and encrypted data transfer must remain enabled.
+- `historica-pages-<commit>` is a noindex package mounted at `/historica/` for staging.
+- `historica-production-<commit>` is the root-domain package, with analytics configured from the `HISTORICA_ANALYTICS_TOKEN` repository variable. It is retained for 90 days.
 
-## Fast path from idea to release
+The production package is checked before upload. Internal documentation-only changes don't generate a new package.
 
-For design or wording changes, edit the source, run proportionate checks,
-refresh the existing Wi-Fi preview and send Ian the link. Once he approves,
-publish that version. Do not add another approval step or repeat checks that
-already passed unless the files changed or a new issue appeared.
+## Publish or restore
 
-For data-only changes, edit, run the relevant data checks and publish directly.
-Do not bundle unrelated improvements into either workflow.
+Run **Deploy or restore Historica production** on main, supplying the successful verification run ID. It downloads that run's production package, checks its manifest and file hashes, and deploys the retained files without rebuilding. It only accepts successful main push runs from the verification workflow and refuses to deploy unless the Pages custom domain is exactly `historica.online`.
 
-Small edits need targeted checks. Broader tests are appropriate for shared
-logic, routing or build changes, or when a failure warrants them. A full-site
-audit is a separate task, not a prerequisite for every release.
+```sh
+gh workflow run deploy-production.yml --ref main -f run_id=VERIFICATION_RUN_ID
+```
 
-## Build and release tools
+Check the workflow result and the live homepage, affected routes and assets. Confirm redirects preserve bookmark queries, and check browser interactions when they changed. The first production release used verification run `45242603802` and deployment run `45244078415`.
 
-The source of truth is `web/`; do not edit generated `docs/` files directly.
-Regenerate affected outputs and their dependencies before publishing. The
-complete build command, `npm run package:site`, regenerates metadata, routes,
-evidence and coverage, runs the full tests and prepares the release archive.
-Use it when a complete rebuild is warranted, not as an automatic response
-to every preview edit. No build command publishes.
+To restore a previous release, use its successful verification run ID in the same workflow. The artifact must still be retained. Keep an off-host copy when a release needs to remain recoverable beyond the retention period. Do not claim that a production rollback was tested merely because staging restoration passed.
 
-The required deployment behaviour is incremental: compare release manifests,
-upload only changed files and dependencies, back up replacements and verify
-those uploads. Do not download the entire hosted site to identify changes.
+The old staging workflows refuse to deploy while a custom production domain is attached. Don't remove that guard or detach the domain just to run a staging test; use the persistent local preview.
 
-The uploader compares the hosted release manifest with the local one, skips
-unchanged assets, and backs up and verifies only replacements. The full
-manifest is published last, after every changed file has passed verification.
-An absent manifest requires an initial comparison; a malformed manifest stops
-the release for inspection. Out-of-band server edits require a separate audit.
+## HTTPS and the hosting transition
 
-Run the uploader only for an authorised release. Backups and upload records
-are saved under ignored `release/backups/`. Verify changed assets and affected
-routes after upload. `scripts/verify-hosted.py` checks the full site and is
-reserved for a full audit or a specific concern, rather than every release.
-Keep TLS verification and the configured document-root restriction in place.
+Both web DNS records point to `sproates.github.io` through Cloudflare. Full (strict) is enabled, along with Always Use HTTPS. GitHub's own custom-domain certificate wasn't yet available at cutover; public HTTPS is provided by Cloudflare. Keep proxying enabled unless the replacement certificate has been checked.
+
+A Historica-only transition Worker passes successful requests through and returns a non-cacheable 503 splash if the origin fails. It has no application data bindings or request logging. Its source, configuration and pre-cutover DNS values are retained locally in ignored `release/cutover/`. Review removal after the certificate transition has settled.
+
+The previous hosting files remain untouched for recovery. Reclaim that storage only after acceptance and an off-host recovery copy. Never touch another site's document root. The [release record](project/release-readiness.md) contains the current state; older cutover documents are historical records.
 
 ## Persistent Wi-Fi preview
 
-Run `npm run preview:install` once to install a per-user macOS LaunchAgent.
-It starts at login and restarts after a crash, independently of agent sessions.
-Run `npm run preview:sync` after edits. The service serves a copy of `web/`
-from `~/Library/Application Support/Historica/preview/` on port 4173.
+On macOS, `npm run preview:install` installs the LaunchAgent once. Refresh it with `npm run preview:sync`. It serves a copy from `~/Library/Application Support/Historica/preview/` on port 4173 and stays running after the terminal closes. The Mac must be awake and on the same network as the phone. Use its `.local` hostname or LAN address.
 
-Use the Mac’s `.local` hostname or current Wi-Fi IP, followed by `:4173`.
-The phone must be on the same network and the Mac must be awake. Find its
-address with `ipconfig getifaddr en0`. No public tunnel or port forwarding
-is required. Preview refreshes never modify production.
+## Analytics
 
-## Before making the repository public
-
-Earlier commits contain hosting connection details. Removing them from the
-current files does not remove them from Git history. Review and clean that
-history before changing repository visibility. Never commit passwords,
-local deployment configuration, backups or hosting notes.
-
-## GitHub Pages preparation
-
-`npm run build:pages` writes a staging artifact under ignored `release/pages-site/`,
-using verified incremental Astro pages, with the `/historica/` mount point and noindex metadata. The final package is checked for file integrity, missing local links and assets, and static page markers. It does not upload anything.
-After verification, `node scripts/build-pages.mjs --static-source release/static-incremental --production` prepares the custom-domain root version.
-Both generate real directories for history routes and About; Apache is not required.
-
-The Verify Historica workflow checks site changes and retains a seven-day staging
-artifact. Explicitly allowlisted internal documentation changes skip the site build.
-Verification has read-only permissions and no production secrets. A separate staging job can publish only pushes to `feature/github-pages-preparation`; it refuses deployment if any custom domain is attached. It promotes the verified artifact without rebuilding.
-
-See [the cutover preparation record](project/github-pages-cutover.md) for status.
-
-## Consolidated preview and optional analytics
-
-The normal Wi-Fi preview now uses the verified Astro pages. The current consolidated design remains subject to Ian's preview approval. See [release readiness](project/release-readiness.md) for the bounded release gates; earlier migration notes are not a queue of additional refactors.
-
-Historica's Cloudflare Web Analytics site is configured for manual installation. Its public site token is stored in the `HISTORICA_ANALYTICS_TOKEN` GitHub repository variable; this is a beacon identifier, not an account API credential. For an approved production package, read that variable into the build environment:
-
-```sh
-npm run build:web
-HISTORICA_ANALYTICS_TOKEN="$(gh variable get HISTORICA_ANALYTICS_TOKEN --repo sproates/historica)" node scripts/build-pages.mjs --static-source release/static-incremental --production --base / --output release/production-site
-node scripts/verify-pages.mjs release/production-site
-```
-
-Without a token the package contains no analytics configuration. Staging ignores the token. The browser also restricts loading to `historica.online`, and blocks duplicate initialization. Automatic SPA measurement is disabled; this counts document visits and performance, not every client-side focus change. No custom events are sent. Cloudflare describes this option in its [SPA measurement documentation](https://developers.cloudflare.com/web-analytics/get-started/web-analytics-spa/).
-
-Store and promote the checked package; do not rebuild between approval and deployment. The existing `Restore verified Pages staging` workflow promotes retained files without rebuilding, checks their hashes, and refuses a production-domain destination. Production promotion and rollback still require the separately approved cutover configuration. Do not describe a staging rehearsal as a completed production rollback test.
-
-Cloudflare setup was completed on 23 November 2026 for `historica.online` only. Automatic injection is off to avoid duplicating the application beacon. A local production package passed artifact and analytics configuration checks; no production deployment or real-traffic reporting is claimed. Keep automatic injection off when using the application integration. Other account sites were not changed.
-
-## Production Pages releases
-
-Successful site builds on main retain `historica-production-<commit>` for 90 days, including the configured analytics token. The manual **Deploy or restore Historica production** workflow accepts the verification run ID, checks the retained package, and deploys it without rebuilding. It refuses to run before the Pages custom domain is `historica.online`. Re-run it with an earlier retained production run to restore that version. This is separate from the staging restore workflow.
-
-The repository is now public with main protected. The original private archive remains private. Production hosting cutover is still pending; see the release checklist for the current status.
+The application loads Cloudflare Web Analytics only on `historica.online`, with automatic SPA tracking disabled. It counts document visits rather than each in-page focus or filter change. Automatic Cloudflare injection is off to avoid loading the beacon twice. Local and staging previews exclude analytics. Other Cloudflare projects must remain untouched.

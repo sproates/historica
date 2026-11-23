@@ -1,4 +1,4 @@
-# Sustainable version: review and release
+# Sustainable version: released
 
 This is the finish line for the current refactor, not a new optimisation backlog. The consolidated preview replaces the sequence of small migration PRs.
 
@@ -13,12 +13,13 @@ This is the finish line for the current refactor, not a new optimisation backlog
 - Production-only optional analytics loader, excluded from local and staging hosts.
 - Protected main, PR checks and an existing retained-artifact staging restore workflow.
 
-## Review gates
+## Release status
 
-1. Ian approved the Chronology restyle: sans-serif typography, slate/cobalt colours, timeline H logo and light/dark modes. The local preview also includes requested map identification: hover/focus labels and an explicit Explore button after selecting a marker. These changes were merged in PR #41 and deployed to GitHub Pages staging; production remains unchanged.
-2. Historica’s Cloudflare Web Analytics site is configured for manual installation, and its public token is stored in the GitHub repository variable `HISTORICA_ANALYTICS_TOKEN`. A production package was verified with the token; previews exclude it. SPA measurement is deliberately off, so document visits are counted rather than in-page focus changes. The remaining step is deployment with the approved release and confirmation of real traffic in Cloudflare.
-3. Ian approved public visibility and the repository is now public. Main remains protected; the original archive remains private. The production domain and HTTPS cutover are still pending. Do not alter other Cloudflare projects.
-4. Promote the reviewed artifact, verify public routes and HTTPS, and rehearse restoring the retained release. Keep the current live site available throughout the hosting transition.
+1. Ian approved Chronology and the hosting cutover. The repository is public and main remains protected. The original archive remains private.
+2. The production package from successful verification run `45242603802`, commit `8ef34471fa815619a4b0d2595b12e62b870769db`, was published without rebuilding by production deployment run `45244078415` on 23 November 2026.
+3. `historica.online` and `www.historica.online` now use proxied CNAME records pointing to `sproates.github.io`. Other DNS records and Cloudflare projects were unchanged. Cloudflare Full (strict) and Always Use HTTPS are enabled. The old hosting files remain intact for recovery.
+4. Live checks passed for the homepage, history routes, map identification and explicit navigation, retained bookmark dates, privacy, HTTPS redirects and 404 responses. The Cloudflare analytics beacon loads in the live browser; reporting is checked separately from script loading.
+5. GitHub's own custom-domain certificate is not issued yet, so its Enforce HTTPS setting is unavailable. Public HTTPS is provided and enforced by Cloudflare. Keep the web records proxied. Direct GitHub TLS with the `github.io` hostname and Historica Host header was validated. The Historica-only transition Worker remains attached as a 503 splash fallback for origin failures; it does not replace successful responses or bypass TLS validation. Its configuration and DNS rollback values are retained locally under ignored `release/cutover/`.
 
 ## Deliberate boundaries
 
@@ -32,6 +33,6 @@ No further architecture rewrite is required before reviewing this version. Fix c
 
 Local verification passed 202 application/build tests and 15 static checks across all 234 pages. The packaged artifact contains 541 files with 4,259 checked local references. Browser review covered 390px phone and desktop layouts, light/dark/system selection, the timeline beside the map, research-page contrast, Alexander → Egypt with retained dates, and browser Back. Stylesheet URLs include their content hash after the browser check exposed stale light-only CSS.
 
-These checks establish a reviewable preview, not Ian's visual approval or a production deployment. The repository is public; the current live site is untouched.
+These checks establish a reviewable preview, not Ian's visual approval or a production deployment. The repository is public and the reviewed version is live on GitHub Pages through Cloudflare.
 
 The appearance dropdown is now a moon toggle. The privacy page distinguishes cookie-free analytics from the local storage used for appearance preferences and is linked beside research coverage in the footer. Both changes are included in the same preview PR.
