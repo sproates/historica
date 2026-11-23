@@ -1,0 +1,14 @@
+---
+import type {HistoryPage} from '../presentation/history-page';
+interface Props {page: HistoryPage}
+const {page}=Astro.props;
+const {focus,checked}=page;
+---
+<section id="regional-evidence" hidden={!focus.contextual}>
+  {focus.contextual&&<>
+    <div class="section-heading"><h2>What the evidence shows</h2></div>
+    <p class="muted">{focus.type==='area'?'Explore the connected examples or read their evidence here.':'Date ranges may describe broad context or uncertainty about when something happened. They do not establish activity in every selected year.'}</p>
+    <div class="regional-cards">{checked.map(claim=><article><p>{claim.statement}</p><details><summary>Source and scope</summary>{claim.citations.map(source=><><p><a href={source.url} target="_blank" rel="noopener">{source.title}</a><br/>{source.creator}<br/>{source.locator}</p><p>{source.note}</p></>)}</details></article>)}</div>
+    {!checked.length&&<p>The regional overview is still incomplete. The connected examples have their own sources and limitations.</p>}
+  </>}
+</section>

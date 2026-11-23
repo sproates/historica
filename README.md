@@ -48,7 +48,7 @@ Build commands don't publish. `docs/` and `release/` are local build outputs, ex
 
 ## Static-page pilot
 
-Alexander, Socrates and Egypt have opt-in Astro pages using the same authored records and timeline calculations as the current explorer. Their introductions, comparisons, regional timelines, fitted maps, connections and research references are generated before the browser runs JavaScript.
+All 230 histories have opt-in Astro pages using the same authored records and timeline calculations as the current explorer. Their introductions, comparisons, regional timelines, fitted maps, connections and research references are generated before the browser runs JavaScript.
 
 ```sh
 npm run check:static     # strict checks for Astro templates and page models
@@ -56,9 +56,9 @@ npm run test:static      # type-check, build and check the pilot HTML
 npm run preview:static   # refresh the existing Wi-Fi preview with the pilot
 ```
 
-Open `/person/alexander`, `/person/socrates` or `/area/egypt` on the existing preview. `npm run preview:sync` restores the normal prototype page. Neither command publishes. The Astro output in `release/static-pilot/` is a page overlay, not a standalone deployable site: it uses the existing preview's styles, scripts and data.
+Open `/person/alexander`, `/person/socrates` or `/area/egypt` on the existing preview. `npm run preview:sync` restores the normal prototype pages. Neither command publishes. The Astro output in `release/static-pilot/` is a page overlay, not a standalone deployable site: it uses the existing preview's styles, scripts and data.
 
-The pilot keeps the existing interaction controller as a temporary bridge. Other histories still use the old renderer. Page models and Astro templates are now strictly checked before building. A unified runtime state, smaller browser payloads and incremental generation remain to be completed. See [pilot notes](project/static-page-pilot.md).
+The pilot keeps the existing interaction controller as a temporary bridge. The home, About and coverage pages still use their existing generation. Page models and Astro templates are now strictly checked before building. A unified runtime state, smaller browser payloads and incremental generation remain to be completed. See [pilot notes](project/static-page-pilot.md).
 
 ## History data contract
 
@@ -68,7 +68,7 @@ Validation preserves the input object and all its fields. It doesn't fill missin
 
 ## Development status
 
-The refactor has started with strict TypeScript in `src/domain/`. Timeline arithmetic now compiles to `web/generated/`, with the existing browser entry point preserved. The rest of the app still uses JavaScript and generated static HTML with interactive browser rendering. The three pilot pages introduce Astro generation; migration of the remaining routes, incremental verification and dark mode remain planned.
+The refactor has started with strict TypeScript in `src/domain/`. Timeline arithmetic now compiles to `web/generated/`, with the existing browser entry point preserved. The rest of the app still uses JavaScript and generated static HTML with interactive browser rendering. Astro now generates all history routes in the preview; replacing the runtime renderer, incremental verification and dark mode remain planned.
 
 Edit TypeScript source, then run `npm run build:client`. Generated browser modules remain tracked during migration so existing preview and generation tools can read them; CI rejects stale generated modules. `npm test`, `npm run build:pages` and `npm run preview:sync` compile them automatically. Strict checking applies to migrated TypeScript and Astro templates, not yet to all legacy JavaScript. TypeScript 6 is pinned for compatibility with the Astro checker; Node remains on 26.
 
