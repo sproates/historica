@@ -53,7 +53,7 @@ npm run build:pages       # prepare and verify a standalone staging package
 
 Build commands don't publish anything. The staging package is written to `release/pages-site/`.
 
-Incremental builds reuse pages whose inputs and output haven't changed. Shared code changes need broader checks because they can affect many pages. GitHub CI runs the checks for each PR and keeps the verified package. Recognised internal documentation changes skip the site build; unknown files take the full verification path.
+Incremental builds reuse pages whose inputs and output haven't changed. Shared code changes need broader checks because they can affect many pages. GitHub CI checks each PR once. After merge it reuses the verified package when the source tree matches, rather than rebuilding and rerunning the app tests. Sharing artwork and image URL changes use focused image and metadata checks against a verified release. Recognised internal documentation changes skip the site build; unknown files take the full verification path.
 
 Search uses a small index. The explorer loads the history records needed for comparisons, then fetches evidence for each selected history and caches it as you move around the site.
 
