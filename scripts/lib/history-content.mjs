@@ -35,3 +35,30 @@ export function readHistoryPacks(root = 'content') {
   }
   return result;
 }
+
+/** Keep the original 68-record view available to the older prototype and audit tools. */
+export function readPrototypeData(packs, root = 'content') {
+  const prototype = packs.find(pack => pack.name === 'prototype');
+  if (!prototype) throw new Error('Missing prototype history pack');
+  const filename = path.join(root, 'prototype-compatibility.yaml');
+  const compatibility = parseContentYaml(fs.readFileSync(filename, 'utf8'), filename);
+  if (Object.keys(compatibility).some(key => !['entityOrder','legacyOverrides'].includes(key))) throw new Error(`${filename}: unknown compatibility key`);
+  if (!Array.isArray(compatibility.entityOrder) || !compatibility.entityOrder.every(slug) || new Set(compatibility.entityOrder).size !== compatibility.entityOrder.length) throw new Error(`${filename}: expected unique history IDs`);
+  if (!Array.isArray(compatibility.legacyOverrides)) throw new Error(`${filename}: expected legacy overrides`);
+  const records = new Map(packs.flatMap(pack => pack.data.entities).map(entity => [entity.id,entity]));
+  const overrides = new Set();
+  for (const entity of compatibility.legacyOverrides) {
+    if (!entity || !slug(entity.id) || !records.has(entity.id) || !compatibility.entityOrder.includes(entity.id) || overrides.has(entity.id) || prototype.data.entities.some(row => row.id === entity.id)) throw new Error(`${filename}: invalid or duplicate legacy override`);
+    overrides.add(entity.id); records.set(entity.id,entity);
+  }
+  for (const entity of prototype.data.entities) if (!compatibility.entityOrder.includes(entity.id)) throw new Error(`${filename}: missing prototype history ${entity.id}`);
+  return {
+    entities:compatibility.entityOrder.map(id => {
+      if (!records.has(id)) throw new Error(`${filename}: missing history ${id}`);
+      if (!prototype.data.entities.some(entity => entity.id === id) && !overrides.has(id)) throw new Error(`${filename}: reviewed history needs an explicit legacy override: ${id}`);
+      return records.get(id);
+    }),
+    associations:prototype.data.associations,
+    relationships:prototype.data.relationships,
+  };
+}

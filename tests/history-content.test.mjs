@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import {readHistoryPacks} from '../scripts/lib/history-content.mjs';
+import {readHistoryPacks, readPrototypeData} from '../scripts/lib/history-content.mjs';
 import {parseHistoryMarkdown} from '../web/generated/content/history-markdown.js';
 
 const markdown = id => `---\nid: ${id}\nstartYear: -1\nendYear: 1\npoint: null\nclaimIds: []\n---\nFirst paragraph.\n\nSecond paragraph.\n`;
@@ -60,7 +60,23 @@ test('pack filenames, metadata and order cannot silently redirect or reorder con
 });
 
 test('authored packs reproduce the legacy compatibility assets exactly', () => {
-  for (const {name,data} of readHistoryPacks()) {
+  for (const {name,data} of readHistoryPacks().filter(pack => pack.name !== 'prototype')) {
     assert.equal(JSON.stringify(data,null,2)+'\n',fs.readFileSync(`research/evidence/${name}-exploration.json`,'utf8'));
   }
+});
+
+
+test('prototype assembly retains explicit legacy variants and rejects missing order entries', t => {
+  const root = fixture(t);
+  fs.renameSync(path.join(root,'packs','example.yaml'),path.join(root,'packs','prototype.yaml'));
+  const file = path.join(root,'prototype-compatibility.yaml');
+  fs.writeFileSync(file,'entityOrder: [example]\nlegacyOverrides: []\n');
+  const packs = readHistoryPacks(root);
+  assert.equal(readPrototypeData(packs,root).entities[0].id,'example');
+  fs.writeFileSync(file,'entityOrder: []\nlegacyOverrides: []\n');
+  assert.throws(() => readPrototypeData(packs,root), /missing prototype history/);
+  fs.writeFileSync(file,'entityOrder: [example, missing]\nlegacyOverrides: []\n');
+  assert.throws(() => readPrototypeData(packs,root), /missing history/);
+  fs.writeFileSync(file,'entityOrder: [example]\nlegacyOverrides: [{id: example}]\n');
+  assert.throws(() => readPrototypeData(packs,root), /invalid or duplicate/);
 });

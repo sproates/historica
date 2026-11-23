@@ -1,48 +1,8 @@
-import {expandWorld} from './world-collection.js?v=socrates-1';
+import prototypeData from './generated/content/prototype-data.js';
+import {assembleHistory} from './generated/domain/assemble-history.js';
 import {overlaps} from './timeline-model.js';
-export function buildFocusData(collection,exploration={entities:[],associations:[],relationships:[]}){
- const sources={alexander:'https://archive.archaeology.org/online/features/alexander/whoswho.html',philip:'https://academic.oup.com/edited-volume/61673/chapter-abstract/549705697',ptolemy:'https://orbi.uliege.be/bitstream/2268/229448/1/Ptolemy%20I%20Soter_Chapter%205.pdf',aristotle:'https://plato.stanford.edu/entries/aristotle/',egypt:'https://penelope.uchicago.edu/thayer/e/gazetteer/places/africa/egypt/_texts/bevhop/2%2A.html'};
- const entity=(id,type,title,startYear,endYear,description,point,url,note='')=>({id,type,title,startYear,endYear,description,point,url,note});
- const entities=[
- entity('alexander','person','Alexander the Great',-356,-323,'Follow a life from Macedonia to Babylon, alongside the people and societies of the same time.',null,sources.alexander),
- entity('philip','person','Philip II',-382,-336,'King of Macedonia and Alexander’s father. His reign transformed Macedonia and laid the foundations for Alexander’s campaign.',null,sources.philip,'Birth year approximate; reign 359–336 BCE.'),
- entity('ptolemy','person','Ptolemy I Soter',-367,-283,'Alexander’s companion and general, then ruler of Egypt. His life continues for decades after Alexander’s death.',null,sources.ptolemy,'Life dates approximate: born 367/366, died 283/282 BCE. The plotted range uses 367–283 BCE.'),
- entity('aristotle','person','Aristotle',-384,-322,'Philosopher and teacher of Alexander. His life overlaps Philip, Alexander and Ptolemy.',null,sources.aristotle),
- entity('egypt','area','Egypt',-3100,200,'Explore Egyptian periods, rulers, cities and communities, alongside histories elsewhere.',[30,27],sources.egypt,'3100 BCE–200 CE is an editorial study window, not Egypt’s beginning or end. Use Fit study period to see it all. Source chronologies vary; regional highlights are approximate, not political borders.'),
- entity('macedonia','state','Kingdom of Macedonia',-359,-323,'The kingdom of Philip II and Alexander. Explore the royal succession and related people.',[22.5,40.75],sources.philip,'359–323 BCE is a study window across two reigns, not the entire duration of the kingdom.'),
- entity('bactria','area','Bactria',-330,-326,'A historical region around the Oxus and Hindu Kush, encountered during Alexander’s eastern campaign.',[66.9,36.77],'https://www.iranicaonline.org/articles/bessos-satrap-of-bactria/','330–326 BCE is a study window. The outline is an approximate southern heartland, omitting northern Bactria.'),
- entity('bactra','city','Bactra',-330,-326,'The ancient city associated with modern Balkh. A city reference point, not a precise personal location.',[66.9,36.77],'https://pleiades.stoa.org/places/961886','Study window 330–326 BCE; the city existed beyond these dates.'),
- entity('period','period','Alexander’s lifetime',-356,-323,'A shared period for comparing the Mediterranean, Asia and the Americas.',null,sources.alexander),
- ...collection.campaign.map(r=>({...r,type:'event',url:collection.sources.find(s=>s.id===r.sourceIds[0])?.url,note:r.precisionNote})),
- ...collection.contexts.map(r=>({...r,type:'period',url:collection.sources.find(s=>s.id===r.sourceIds[0])?.url,note:r.precisionNote})),
- entity('ptolemy-egypt','event','Ptolemy takes charge of Egypt',-323,-323,'After Alexander’s death, Ptolemy becomes satrap of Egypt. His rule later develops into a kingdom.',[30,27],sources.egypt),
- entity('philip-king','event','Philip becomes king',-359,-359,'Philip’s reign begins in Macedonia.',[22.5,40.75],sources.philip,'Chronologies may give 360/359 BCE; this collection uses 359 BCE.'),
- entity('philip-reign','period','Philip’s reign in Macedonia',-359,-336,'The reign of Philip II, ending with the succession of Alexander.',[22.5,40.75],sources.philip),
- entity('chaeronea','event','Philip’s victory at Chaeronea',-338,-338,'Philip defeats the forces of Athens and Thebes.',[23,38.5],'https://resources.metmuseum.org/resources/metpublications/pdf/Pergamon_and_the_Hellenistic_Kingdoms_of_the_Ancient_World.pdf','Approximate battle-area reference.'),
- entity('ptolemy-rule','period','Ptolemy’s rule in Egypt',-323,-283,'Ptolemy governs Egypt first as satrap, then as king.',[30,27],sources.egypt,'End date approximate; some chronologies use 282 BCE.'),
- entity('ptolemy-king','event','Ptolemy becomes king',-305,-305,'Ptolemy assumes the royal title in Egypt.',[30,27],sources.egypt,'This chronology uses 305 BCE; some accounts date the royal title to 306/305 BCE.')
- ];
- const association=(subject,place,startYear,endYear,label,point,source)=>({subject,place,startYear,endYear,label,point,source});
- const associations=[
- association('alexander','macedonia',-356,-336,'Macedonian origins and early life',[22.5,40.75],sources.alexander),
- ...collection.campaign.map(r=>association('alexander',r.id==='stage-egypt'?'egypt':r.id==='stage-bactria'?'bactria':r.id==='stage-macedonia'?'macedonia':r.id,r.startYear,r.endYear,r.region,r.point,collection.sources.find(s=>s.id===r.sourceIds[0])?.url)),
- association('philip','macedonia',-359,-336,'Rule in Macedonia',[22.5,40.75],sources.philip),
- association('ptolemy','egypt',-323,-283,'Government and rule in Egypt',[30,27],sources.egypt),
- association('aristotle','athens',-335,-323,'Lyceum period in Athens',[23.73,37.98],sources.aristotle),
- association('ptolemy','macedonia',-367,-367,'Macedonian origins',[21.8,40.5],sources.ptolemy),
- association('bactra','bactria',-330,-326,'City within the Bactria study area',[66.9,36.77],'https://pleiades.stoa.org/places/961886')
- ];
- const relationships=[
- {a:'alexander',b:'philip',label:'Father / son',startYear:-356,endYear:-336},
- {a:'alexander',b:'ptolemy',label:'Companion and general',startYear:-336,endYear:-323},
- {a:'alexander',b:'aristotle',label:'Pupil / teacher',startYear:-343,endYear:-340},
- {a:'philip',b:'philip-reign',label:'His reign',startYear:-359,endYear:-336},
- {a:'ptolemy',b:'ptolemy-rule',label:'His rule in Egypt',startYear:-323,endYear:-283}
- ];
- expandWorld({entities,associations,relationships});
- for(const entry of exploration.entities){const index=entities.findIndex(e=>e.id===entry.id);if(index<0)entities.push(entry);else entities[index]=entry;}
- associations.push(...exploration.associations);relationships.push(...exploration.relationships);
- return {entities,associations,relationships,collection};
+export function buildFocusData(collection, exploration={entities:[],associations:[],relationships:[]}, base=prototypeData){
+ return assembleHistory(base,exploration,collection);
 }
 export function initialFocus(data,id='alexander'){const e=data.entities.find(e=>e.id===id)??data.entities.find(e=>e.id==='alexander')??data.entities[0];return {focus:e.id,start:e.startYear,end:e.endYear,kind:'all',area:'all'};}
 export function changeFocus(data,state,id){const next=initialFocus(data,id),entity=data.entities.find(e=>e.id===next.focus);return ['area','state','city'].includes(entity.type)?{...next,start:state.start,end:state.end}:next;}
