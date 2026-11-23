@@ -55,7 +55,7 @@ jobs:
           include-hidden-files: true
           retention-days: 7
       - name: Package staging for Pages
-        if: steps.changes.outputs.scope == 'site' && github.event_name == 'push' && github.ref == 'refs/heads/feature/github-pages-preparation'
+        if: steps.changes.outputs.scope == 'site' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/feature/github-pages-preparation'
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
           path: release/pages-site/
@@ -71,7 +71,7 @@ jobs:
           fi
 
   staging:
-    if: needs.verify.outputs.scope == 'site' && github.event_name == 'push' && github.ref == 'refs/heads/feature/github-pages-preparation'
+    if: needs.verify.outputs.scope == 'site' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/feature/github-pages-preparation'
     needs: verify
     runs-on: ubuntu-latest
     timeout-minutes: 10
