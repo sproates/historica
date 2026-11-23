@@ -42,3 +42,5 @@ __pycache__/
 /web/index.html
 /web/about.html
 /web/coverage.html
+
+/web/data/search-index.json

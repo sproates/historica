@@ -1,3 +1,4 @@
+import {createSearchIndex} from '../web/generated/domain/search.js';
 import {browserEvidence,evidenceForFocus,browserChronology} from '../web/generated/content/browser-evidence.js';
 import fs from 'node:fs';
 import {readHistoryPacks,readPrototypeData} from './lib/history-content.mjs';
@@ -35,6 +36,7 @@ if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else{
  const evidenceDir='web/data/evidence';
  fs.mkdirSync(evidenceDir,{recursive:true});
  const histories=assembleHistory(prototype,exploration,read('web/data/collection.json')).entities;
+ fs.writeFileSync('web/data/search-index.json',JSON.stringify(createSearchIndex(histories))+'\n');
  const files=new Set(histories.map(e=>e.id+'.json'));
  for(const file of fs.readdirSync(evidenceDir))if(file.endsWith('.json')&&!files.has(file))fs.unlinkSync(`${evidenceDir}/${file}`);
  for(const entity of histories)fs.writeFileSync(`${evidenceDir}/${entity.id}.json`,JSON.stringify(evidenceForFocus(pack,entity))+'\n');
