@@ -1,0 +1,535 @@
+order: 14
+entities:
+  - alexander
+  - philip
+  - ptolemy
+  - aristotle
+  - egypt
+  - macedonia
+  - bactria
+  - bactra
+  - period
+  - stage-macedonia
+  - stage-thebes
+  - stage-asia-minor
+  - stage-issus
+  - stage-tyre
+  - stage-egypt
+  - stage-gaugamela
+  - stage-persepolis
+  - stage-bactria
+  - stage-sogdiana
+  - stage-hydaspes
+  - stage-indus
+  - stage-gedrosia
+  - stage-susa
+  - stage-babylon
+  - china-warring
+  - italy-settlement
+  - samnite-war
+  - monte-alban
+  - ptolemy-egypt
+  - philip-king
+  - philip-reign
+  - chaeronea
+  - ptolemy-rule
+  - ptolemy-king
+  - athens
+  - persia
+  - epirus
+  - china
+  - qin
+  - chu
+  - india
+  - rome
+  - carthage
+  - oaxaca
+  - monte-alban-city
+  - world-400-250
+  - darius
+  - olympias
+  - demosthenes
+  - plato
+  - mencius
+  - darius-rule
+  - academy
+  - lyceum
+  - qin-reforms
+  - chu-silk
+  - daodejing
+  - maurya-foundation
+  - maurya-expansion
+  - kalinga
+  - ashoka-edicts
+  - pyrrhic-war
+  - first-punic
+  - socrates
+  - socrates-trial
+associations:
+  - subject: alexander
+    place: macedonia
+    startYear: -356
+    endYear: -336
+    label: Macedonian origins and early life
+    point:
+      - 22.5
+      - 40.75
+    source: https://archive.archaeology.org/online/features/alexander/whoswho.html
+  - subject: alexander
+    place: macedonia
+    startYear: -336
+    endYear: -336
+    label: Macedonia
+    point:
+      - 22.5
+      - 40.75
+    source: https://archive.archaeology.org/online/features/alexander/whoswho.html
+  - subject: alexander
+    place: stage-thebes
+    startYear: -335
+    endYear: -335
+    label: Greece
+    point:
+      - 23.3
+      - 38.3
+    source: https://archive.archaeology.org/online/features/alexander/whoswho.html
+  - subject: alexander
+    place: stage-asia-minor
+    startYear: -334
+    endYear: -334
+    label: Asia Minor
+    point:
+      - 27.3
+      - 40.3
+    source: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA5F32E13E20CAFF2ACE09749527E515/9781009408981chr_xiv-xvii.pdf/chronology.pdf
+  - subject: alexander
+    place: stage-issus
+    startYear: -333
+    endYear: -333
+    label: Cilicia
+    point:
+      - 36.2
+      - 36.9
+    source: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA5F32E13E20CAFF2ACE09749527E515/9781009408981chr_xiv-xvii.pdf/chronology.pdf
+  - subject: alexander
+    place: stage-tyre
+    startYear: -332
+    endYear: -332
+    label: The Levant
+    point:
+      - 35.2
+      - 33.3
+    source: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA5F32E13E20CAFF2ACE09749527E515/9781009408981chr_xiv-xvii.pdf/chronology.pdf
+  - subject: alexander
+    place: egypt
+    startYear: -331
+    endYear: -331
+    label: Egypt
+    point:
+      - 29.9
+      - 31.2
+    source: https://archive.archaeology.org/online/features/alexander/whoswho.html
+  - subject: alexander
+    place: stage-gaugamela
+    startYear: -331
+    endYear: -331
+    label: Mesopotamia
+    point:
+      - 43.4
+      - 36.6
+    source: https://archive.archaeology.org/online/features/alexander/whoswho.html
+  - subject: alexander
+    place: stage-persepolis
+    startYear: -330
+    endYear: -330
+    label: Persia
+    point:
+      - 52.9
+      - 29.9
+    source: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA5F32E13E20CAFF2ACE09749527E515/9781009408981chr_xiv-xvii.pdf/chronology.pdf
+  - subject: alexander
+    place: bactria
+    startYear: -329
+    endYear: -329
+    label: Bactria
+    point:
+      - 66.9
+      - 36.77
+    source: https://www.iranicaonline.org/articles/bessos-satrap-of-bactria/
+  - subject: alexander
+    place: stage-sogdiana
+    startYear: -328
+    endYear: -327
+    label: Sogdiana and Bactria
+    point:
+      - 67
+      - 39.2
+    source: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA5F32E13E20CAFF2ACE09749527E515/9781009408981chr_xiv-xvii.pdf/chronology.pdf
+  - subject: alexander
+    place: stage-hydaspes
+    startYear: -326
+    endYear: -326
+    label: Punjab
+    point:
+      - 73.5
+      - 32.8
+    source: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA5F32E13E20CAFF2ACE09749527E515/9781009408981chr_xiv-xvii.pdf/chronology.pdf
+  - subject: alexander
+    place: stage-indus
+    startYear: -325
+    endYear: -325
+    label: The Indus valley
+    point:
+      - 68.4
+      - 25.4
+    source: https://archive.archaeology.org/online/features/alexander/whoswho.html
+  - subject: alexander
+    place: stage-gedrosia
+    startYear: -325
+    endYear: -325
+    label: Gedrosia
+    point:
+      - 62.5
+      - 26
+    source: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA5F32E13E20CAFF2ACE09749527E515/9781009408981chr_xiv-xvii.pdf/chronology.pdf
+  - subject: alexander
+    place: stage-susa
+    startYear: -324
+    endYear: -324
+    label: Susiana
+    point:
+      - 48.3
+      - 32.2
+    source: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA5F32E13E20CAFF2ACE09749527E515/9781009408981chr_xiv-xvii.pdf/chronology.pdf
+  - subject: alexander
+    place: stage-babylon
+    startYear: -323
+    endYear: -323
+    label: Babylonia
+    point:
+      - 44.4
+      - 32.5
+    source: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AA5F32E13E20CAFF2ACE09749527E515/9781009408981chr_xiv-xvii.pdf/chronology.pdf
+  - subject: philip
+    place: macedonia
+    startYear: -359
+    endYear: -336
+    label: Rule in Macedonia
+    point:
+      - 22.5
+      - 40.75
+    source: https://academic.oup.com/edited-volume/61673/chapter-abstract/549705697
+  - subject: ptolemy
+    place: egypt
+    startYear: -323
+    endYear: -283
+    label: Government and rule in Egypt
+    point:
+      - 30
+      - 27
+    source: https://penelope.uchicago.edu/thayer/e/gazetteer/places/africa/egypt/_texts/bevhop/2%2A.html
+  - subject: aristotle
+    place: athens
+    startYear: -335
+    endYear: -323
+    label: Lyceum period in Athens
+    point:
+      - 23.73
+      - 37.98
+    source: https://plato.stanford.edu/entries/aristotle/
+  - subject: ptolemy
+    place: macedonia
+    startYear: -367
+    endYear: -367
+    label: Macedonian origins
+    point:
+      - 21.8
+      - 40.5
+    source: https://orbi.uliege.be/bitstream/2268/229448/1/Ptolemy%20I%20Soter_Chapter%205.pdf
+  - subject: bactra
+    place: bactria
+    startYear: -330
+    endYear: -326
+    label: City within the Bactria study area
+    point:
+      - 66.9
+      - 36.77
+    source: https://pleiades.stoa.org/places/961886
+  - subject: darius-rule
+    place: persia
+    startYear: -336
+    endYear: -330
+    label: Darius III rules Persia
+    point:
+      - 52.89
+      - 29.94
+    source: https://www.iranicaonline.org/articles/darius-v/
+  - subject: academy
+    place: athens
+    startYear: -387
+    endYear: -387
+    label: Plato establishes the Academy
+    point:
+      - 23.73
+      - 37.98
+    source: https://doors.stanford.edu/plato.html
+  - subject: lyceum
+    place: athens
+    startYear: -335
+    endYear: -323
+    label: Aristotle’s Lyceum years
+    point:
+      - 23.73
+      - 37.98
+    source: https://plato.stanford.edu/entries/aristotle/
+  - subject: qin-reforms
+    place: qin
+    startYear: -356
+    endYear: -350
+    label: Shang Yang’s reforms in Qin
+    point:
+      - 108.7
+      - 34.33
+    source: https://www.folklore.ee/folklore/vol59/kulmar.pdf
+  - subject: chu-silk
+    place: chu
+    startYear: -400
+    endYear: -200
+    label: Silk painting in Chu
+    point:
+      - 112.2
+      - 30.3
+    source: https://artistproject.metmuseum.org/toah/ht/04/eac.html
+  - subject: daodejing
+    place: china
+    startYear: -400
+    endYear: -200
+    label: The Daodejing takes shape
+    point:
+      - 112
+      - 34
+    source: https://artistproject.metmuseum.org/toah/ht/04/eac.html
+  - subject: maurya-foundation
+    place: maurya
+    startYear: -321
+    endYear: -321
+    label: The Mauryan dynasty emerges
+    point:
+      - 85.14
+      - 25.61
+    source: https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c
+  - subject: maurya-expansion
+    place: maurya
+    startYear: -303
+    endYear: -303
+    label: Chandragupta’s empire spans northern India
+    point:
+      - 85.14
+      - 25.61
+    source: https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c
+  - subject: ashoka-rule
+    place: maurya
+    startYear: -273
+    endYear: -232
+    label: Ashoka rules the Mauryan Empire
+    point:
+      - 85.14
+      - 25.61
+    source: https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c
+  - subject: kalinga
+    place: india
+    startYear: -260
+    endYear: -260
+    label: Ashoka’s war in Kalinga
+    point:
+      - 85.8
+      - 20.2
+    source: https://www.metmuseum.org/zh/toah/ht/04/ssa
+  - subject: ashoka-edicts
+    place: maurya
+    startYear: -254
+    endYear: -254
+    label: Ashoka begins monumental edicts
+    point:
+      - 85.14
+      - 25.61
+    source: https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c
+  - subject: pyrrhic-war
+    place: rome
+    startYear: -280
+    endYear: -275
+    label: Pyrrhus campaigns in Italy
+    point:
+      - 17.23
+      - 40.47
+    source: https://resources.metmuseum.org/resources/metpublications/pdf/Pergamon_and_the_Hellenistic_Kingdoms_of_the_Ancient_World.pdf
+  - subject: first-punic
+    place: carthage
+    startYear: -264
+    endYear: -241
+    label: The First Punic War
+    point:
+      - 14
+      - 37.5
+    source: https://resources.metmuseum.org/resources/metpublications/pdf/Pergamon_and_the_Hellenistic_Kingdoms_of_the_Ancient_World.pdf
+  - subject: socrates-trial
+    place: athens
+    startYear: -399
+    endYear: -399
+    label: The trial and execution of Socrates
+    point:
+      - 23.73
+      - 37.98
+    source: https://plato.stanford.edu/entries/socrates/
+  - subject: socrates
+    place: athens
+    startYear: -469
+    endYear: -399
+    label: Athenian life and civic setting; not a continuous itinerary
+    point:
+      - 23.73
+      - 37.98
+    source: https://plato.stanford.edu/entries/socrates/
+  - subject: darius
+    place: persia
+    startYear: -336
+    endYear: -330
+    label: Realm of Darius; not a personal itinerary
+    point:
+      - 52.89
+      - 29.94
+    source: https://www.iranicaonline.org/articles/darius-v/
+  - subject: olympias
+    place: epirus
+    startYear: -331
+    endYear: -317
+    label: Political base in Epirus
+    point:
+      - 20.85
+      - 39.67
+    source: https://snl.no/Olympias
+  - subject: olympias
+    place: macedonia
+    startYear: -317
+    endYear: -316
+    label: Succession struggle in Macedonia
+    point:
+      - 22.5
+      - 40.75
+    source: https://snl.no/Olympias
+  - subject: demosthenes
+    place: athens
+    startYear: -384
+    endYear: -384
+    label: Birth in Attica
+    point:
+      - 23.73
+      - 37.98
+    source: https://cmuntz.hosted.uark.edu/texts/demosthenes/
+  - subject: plato
+    place: athens
+    startYear: -387
+    endYear: -347
+    label: Academy association, not continuous residence
+    point:
+      - 23.73
+      - 37.98
+    source: https://doors.stanford.edu/plato.html
+  - subject: mencius
+    place: china
+    startYear: -372
+    endYear: -289
+    label: Regional intellectual setting; itinerary unknown
+    point:
+      - 112
+      - 34
+    source: https://plato.stanford.edu/archives/spr2024/entries/xunzi/
+  - subject: monte-alban-city
+    place: oaxaca
+    startYear: -500
+    endYear: -100
+    label: Early archaeological phase
+    point:
+      - -96.73
+      - 17.05
+    source: https://sic.cultura.gob.mx/ficha.php?table=zona_arqueologica&table_id=76
+relationships:
+  - a: alexander
+    b: philip
+    label: Father / son
+    startYear: -356
+    endYear: -336
+  - a: alexander
+    b: ptolemy
+    label: Companion and general
+    startYear: -336
+    endYear: -323
+  - a: alexander
+    b: aristotle
+    label: Pupil / teacher
+    startYear: -343
+    endYear: -340
+  - a: philip
+    b: philip-reign
+    label: His reign
+    startYear: -359
+    endYear: -336
+  - a: ptolemy
+    b: ptolemy-rule
+    label: His rule in Egypt
+    startYear: -323
+    endYear: -283
+  - a: alexander
+    b: darius
+    label: Opposing kings
+  - a: alexander
+    b: olympias
+    label: Mother / son
+  - a: philip
+    b: olympias
+    label: Spouses
+  - a: philip
+    b: demosthenes
+    label: Political opponents
+  - a: alexander
+    b: demosthenes
+    label: Political opponents
+  - a: aristotle
+    b: plato
+    label: Pupil / teacher
+  - a: darius
+    b: darius-rule
+    label: His reign
+  - a: plato
+    b: academy
+    label: His school
+  - a: aristotle
+    b: lyceum
+    label: His school
+  - a: mencius
+    b: china
+    label: Intellectual setting
+  - a: rome
+    b: first-punic
+    label: Participant
+  - a: maurya
+    b: pataliputra
+    label: Capital
+  - a: india
+    b: maurya
+    label: Empire in this region
+  - a: china
+    b: qin
+    label: Competing state
+  - a: china
+    b: chu
+    label: Competing state
+  - a: oaxaca
+    b: monte-alban-city
+    label: Urban centre
+  - a: socrates
+    b: plato
+    label: Teacher / pupil
+  - a: socrates
+    b: socrates-trial
+    label: Trial and execution

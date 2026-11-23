@@ -1,0 +1,103 @@
+entityOrder:
+  - alexander
+  - philip
+  - ptolemy
+  - aristotle
+  - egypt
+  - macedonia
+  - bactria
+  - bactra
+  - period
+  - stage-macedonia
+  - stage-thebes
+  - stage-asia-minor
+  - stage-issus
+  - stage-tyre
+  - stage-egypt
+  - stage-gaugamela
+  - stage-persepolis
+  - stage-bactria
+  - stage-sogdiana
+  - stage-hydaspes
+  - stage-indus
+  - stage-gedrosia
+  - stage-susa
+  - stage-babylon
+  - china-warring
+  - italy-settlement
+  - samnite-war
+  - monte-alban
+  - ptolemy-egypt
+  - philip-king
+  - philip-reign
+  - chaeronea
+  - ptolemy-rule
+  - ptolemy-king
+  - athens
+  - persia
+  - epirus
+  - china
+  - qin
+  - chu
+  - india
+  - maurya
+  - pataliputra
+  - rome
+  - carthage
+  - oaxaca
+  - monte-alban-city
+  - world-400-250
+  - darius
+  - olympias
+  - demosthenes
+  - plato
+  - mencius
+  - darius-rule
+  - academy
+  - lyceum
+  - qin-reforms
+  - chu-silk
+  - daodejing
+  - maurya-foundation
+  - maurya-expansion
+  - ashoka-rule
+  - kalinga
+  - ashoka-edicts
+  - pyrrhic-war
+  - first-punic
+  - socrates
+  - socrates-trial
+legacyOverrides:
+  - id: maurya
+    type: state
+    title: Mauryan Empire
+    startYear: -321
+    endYear: -185
+    description: Chandragupta founded a dynasty whose rule spread across much of South Asia.
+    point:
+      - 85.14
+      - 25.61
+    url: https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c
+    note: Foundation approximately 321 BCE; alternative chronologies vary by a few years. Capital reference, not an imperial boundary.
+  - id: pataliputra
+    type: city
+    title: Pataliputra
+    startYear: -400
+    endYear: -250
+    description: The Mauryan capital near modern Patna. Megasthenes described a large city protected by wooden walls.
+    point:
+      - 85.14
+      - 25.61
+    url: https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c
+    note: 400–250 BCE is the collection’s study window, not this place’s founding or end. Map points indicate regions, not territorial borders.
+  - id: ashoka-rule
+    type: period
+    title: Ashoka rules the Mauryan Empire
+    startYear: -273
+    endYear: -232
+    description: Imperial rule becomes closely associated with the promotion of Buddhism.
+    point:
+      - 85.14
+      - 25.61
+    url: https://www.metmuseum.org/essays/mauryan-empire-ca-323-185-b-c
+    note: Approximate reign, using the Met chronology; accession and coronation dates differ between accounts.
