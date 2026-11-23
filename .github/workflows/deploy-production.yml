@@ -1,0 +1,73 @@
+name: Deploy or restore Historica production
+"on":
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Successful main verification run containing the retained production package
+        required: true
+        type: string
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: pages-production
+  cancel-in-progress: false
+jobs:
+  restore:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    permissions:
+      contents: read
+      actions: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Validate the original release and production destination
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_RUN: ${{ inputs.run_id }}
+        run: |
+          [[ "$RELEASE_RUN" =~ ^[0-9]+$ ]] || exit 1
+          gh api "repos/sproates/historica/actions/runs/$RELEASE_RUN" > "$RUNNER_TEMP/release.json"
+          gh api repos/sproates/historica/pages > "$RUNNER_TEMP/pages.json"
+          node <<'JS'
+          const fs=require('node:fs');
+          const release=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/release.json'));
+          const pages=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/pages.json'));
+          if(release.conclusion!=='success'||release.event!=='push'||release.path!=='.github/workflows/verify.yml'||release.head_branch!=='main')throw Error('Not an eligible verified release');
+          if(pages.cname!=='historica.online')throw Error('Historica production domain must be attached first');
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,`sha=${release.head_sha}\n`);
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,`Restoring verified run ${release.id}, source commit ${release.head_sha}. No rebuild.\n`);
+          JS
+      - name: Download the verified site files
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: historica-production-${{ steps.release.outputs.sha }}
+          path: restored
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Verify retained file checksums
+        run: |
+          node <<'JS'
+          const fs=require('node:fs'),crypto=require('node:crypto');
+          const m=JSON.parse(fs.readFileSync('restored/release-manifest.json'));
+          if(m.target!=='github-pages'||!m.production||m.base!=='/'||!m.analytics)throw Error('Not an analytics-enabled production artifact');
+          for(const f of m.files){
+            if(f.path.startsWith('/')||f.path.split('/').includes('..'))throw Error('Invalid file path');
+            const hash=crypto.createHash('sha256').update(fs.readFileSync('restored/'+f.path)).digest('hex');
+            if(hash!==f.sha256)throw Error('Artifact checksum mismatch: '+f.path);
+          }
+          JS
+      - name: Package verified files without rebuilding
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: restored/
+          retention-days: 90
+      - name: Deploy the restored bundle
+        id: deploy
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

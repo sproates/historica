@@ -111,3 +111,9 @@ Without a token the package contains no analytics configuration. Staging ignores
 Store and promote the checked package; do not rebuild between approval and deployment. The existing `Restore verified Pages staging` workflow promotes retained files without rebuilding, checks their hashes, and refuses a production-domain destination. Production promotion and rollback still require the separately approved cutover configuration. Do not describe a staging rehearsal as a completed production rollback test.
 
 Cloudflare setup was completed on 23 November 2026 for `historica.online` only. Automatic injection is off to avoid duplicating the application beacon. A local production package passed artifact and analytics configuration checks; no production deployment or real-traffic reporting is claimed. Keep automatic injection off when using the application integration. Other account sites were not changed.
+
+## Production Pages releases
+
+Successful site builds on main retain `historica-production-<commit>` for 90 days, including the configured analytics token. The manual **Deploy or restore Historica production** workflow accepts the verification run ID, checks the retained package, and deploys it without rebuilding. It refuses to run before the Pages custom domain is `historica.online`. Re-run it with an earlier retained production run to restore that version. This is separate from the staging restore workflow.
+
+The repository is now public with main protected. The original private archive remains private. Production hosting cutover is still pending; see the release checklist for the current status.
