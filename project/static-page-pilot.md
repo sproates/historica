@@ -171,3 +171,11 @@ Verification: all 251 regenerated exports matched their former committed version
 `src/presentation/metadata.ts` now provides one typed metadata renderer and description excerpt rule. The existing metadata builder and Astro's `PageMetadata` component both use it. Astro history pages now include the full image dimensions, alt text and Twitter-card details already present in the older pages. Canonical URLs stay on the public domain and the static pilot stays excluded from indexing.
 
 Tests cover consistent fields, description lengths, HTML escaping and safe structured data. All 230 generated history pages passed the 11 static checks, including one title and description in the document head and complete social metadata. The preview was refreshed; production is unchanged.
+
+## Astro home and About pages
+
+Home and About now have Astro templates using a shared welcome layout and metadata component. The static package and preview overlay use these pages, including the `/about.html` compatibility entry. The ordinary production builder retains its existing templates until release approval. Content/link parity tests guard against accidental divergence during that transition.
+
+Both pages are included in the incremental manifest and verification records, bringing the static output to 232 pages. No-change builds reuse all 232. Missing or damaged home/About output is rebuilt and rechecked; history-only selections exclude the two auxiliary IDs. Coverage remains on its existing HTML template.
+
+Verification passed all 13 static checks across 232 pages. A no-change run reused all pages and test records; deleting the generated home page rebuilt that page and reused the other 231. Packaging tests confirmed the Astro home/About output is selected. The refreshed browser preview passed home search, About navigation and creator-link checks. Production remains unchanged.

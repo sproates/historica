@@ -11,6 +11,7 @@ const shared=digest([process.version,...files.map(file=>[file,digest(fs.readFile
 let previous;try{previous=JSON.parse(fs.readFileSync(manifest,'utf8'));}catch{}
 if(previous?.version!==1)previous=undefined;
 const models=historyEntities().map(e=>({id:e.id,route:`${e.type}/${e.id}`,model:historyPage(e.id,{geography:false})}));
+models.push({id:'@home',route:'',model:{page:'home'}},{id:'@about',route:'about',model:{page:'about'}});
 const htmlPath=(dir,route)=>path.join(dir,route,'index.html');
 const plan=planPages(models,previous,shared,route=>{try{return fs.readFileSync(htmlPath(output,route));}catch{return null;}});
 const run=(cmd,args,env={})=>{const result=spawnSync(cmd,args,{stdio:'inherit',env:{...process.env,...env}});if(result.status!==0)throw new Error(`${cmd} failed`);};
@@ -19,13 +20,19 @@ const work=fs.mkdtempSync('release/static-work-');
 try{
  if(plan.changed.length){
   if(previous?.shared!==shared)run('npm',['run','check:static']);
-  const selection=path.resolve(work,'selection.json');fs.writeFileSync(selection,JSON.stringify(plan.changed));
+  const selection=path.resolve(work,'selection.json');fs.writeFileSync(selection,JSON.stringify(plan.changed.filter(id=>!id.startsWith('@'))));
   const built=path.resolve(work,'pages');
   const bin=JSON.parse(fs.readFileSync('node_modules/astro/package.json')).bin.astro;
   run(process.execPath,[path.join('node_modules/astro',bin),'build'],{HISTORICA_STATIC_SELECTION:selection,HISTORICA_STATIC_OUTPUT:built});
   const required=[...fs.readFileSync('web/focus.html','utf8').matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   // Verify the staged pages before changing the last successful output or manifest.
   for(const entry of models.filter(e=>plan.changed.includes(e.id))){
+   if(entry.id.startsWith('@')){
+    const html=fs.readFileSync(htmlPath(built,entry.route),'utf8');
+    assert.ok(html.includes(`data-static-page="${entry.model.page}"`),entry.id);
+    assert.ok(html.includes('name="robots" content="noindex, follow"'),entry.id);
+    continue;
+   }
    const html=fs.readFileSync(htmlPath(built,entry.route),'utf8'),ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
    assert.equal(new Set(ids).size,ids.length,entry.route+' duplicate IDs');
    assert.deepEqual(new Set(ids),new Set(required),entry.route+' controller hooks');

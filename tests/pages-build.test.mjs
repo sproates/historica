@@ -52,6 +52,10 @@ test('Astro packaging includes static histories and shared assets, with no legac
    fs.mkdirSync(path.dirname(target),{recursive:true});
    fs.writeFileSync(target,`<html><head><base href="/"><meta name="robots" content="noindex, follow"></head><body data-static-history="${route.split('/').at(-1)}"><a href="/person/socrates">Socrates</a><script src="focus-app.js"></script></body></html>`);
   }
+  for(const [file,page] of [['index.html','home'],['about/index.html','about']]){
+   const target=path.join(staticSource,file);fs.mkdirSync(path.dirname(target),{recursive:true});
+   fs.writeFileSync(target,`<html><head></head><body data-static-page="${page}"></body></html>`);
+  }
   buildPages({output,staticSource,base:'/historica/'});
   for(const route of routes){
    const html=fs.readFileSync(path.join(output,route,'index.html'),'utf8');
@@ -62,6 +66,8 @@ test('Astro packaging includes static histories and shared assets, with no legac
   }
   for(const file of ['index.html','about/index.html','coverage.html','focus-app.js','generated/browser/explorer.js','data/browser-chronology.json','data/evidence/socrates.json','focus.css','404.html','.nojekyll'])assert.ok(fs.existsSync(path.join(output,file)),file);
   assert.ok(!fs.existsSync(path.join(output,'pages')));
+  assert.match(fs.readFileSync(path.join(output,'index.html'),'utf8'),/data-static-page="home"/);
+  assert.match(fs.readFileSync(path.join(output,'about/index.html'),'utf8'),/data-static-page="about"/);
   const manifest=JSON.parse(fs.readFileSync(path.join(output,'release-manifest.json')));
   assert.equal(manifest.renderer,'astro');
   assert.equal(manifest.files.filter(f=>/^(person|area|state|city|period|event)\/.+\/index.html$/.test(f.path)).length,routes.length);
