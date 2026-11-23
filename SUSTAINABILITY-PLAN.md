@@ -162,3 +162,7 @@ The site is served independently of ASO, every existing public history and bookm
 A documentation edit causes no website deployment. A small content edit rebuilds and verifies its actual dependants, with a safe full-build fallback. A shared-code change receives the wider checks it needs. Clean and incremental output agree, deleted pages don't survive in caches, and rollback uses the original verified artifact.
 
 The approved design works on phone and desktop in both themes, with no known release-blocking accessibility, functional or visual defects. Analytics is working without affecting page loading. Build and deployment times are recorded against the targets above. These are testable completion criteria for a maintainable app; “perfect and correct” should not become an unbounded refactoring project.
+
+## Runtime decision
+
+Use Node.js 26 for the refactored application, as requested by Ian on 23 November 2026. Align local development, the build tooling and GitHub CI on that version during the refactor. This does not change the current prototype runtime.
