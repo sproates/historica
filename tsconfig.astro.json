@@ -5,6 +5,6 @@
     "exactOptionalPropertyTypes": true,
     "allowJs": false
   },
-  "include": [".astro/types.d.ts", "src/**/*.astro", "src/**/*.ts", "scripts/static/*.d.mts"],
+  "include": [".astro/types.d.ts", "src/**/*.astro", "src/**/*.ts", "scripts/static/*.ts"],
   "exclude": ["web", "release", "node_modules"]
 }

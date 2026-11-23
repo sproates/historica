@@ -1,5 +1,5 @@
 ---
-import {styleUrl} from '../../scripts/static/assets.mjs';
+import {styleUrl} from '../../scripts/static/assets.ts';
 import type {HistoryEntity} from '../domain/history';
 import Appearance from '../components/Appearance.astro';
 import PageMetadata from '../components/PageMetadata.astro';
@@ -22,6 +22,6 @@ const {focus}=Astro.props;
 <body data-static-history={focus.id}>
   <slot />
   <!-- Typed controls enhance the prerendered default. -->
-  <script is:inline type="module" src="focus-app.js"></script>
+  <script is:inline type="module" src="generated/entrypoints/focus-app.js"></script>
 </body>
 </html>

@@ -118,7 +118,7 @@ Verification included a no-change run (230 reused), a temporary Socrates evidenc
 
 ## Verified cache reuse in CI
 
-CI now restores the incremental output and runs `scripts/verify-static-incremental.mjs`. It checks the build manifest against a separate successful-test record. Cold caches, shared code changes and static test changes run the full static suite. Content changes run tests for affected histories; unchanged pages retain their verified record. A failed test run cannot advance that record. Model, data and controller tests still run for every site change, and internal documentation changes still skip site work.
+CI now restores the incremental output and runs `scripts/verify-static-incremental.ts`. It checks the build manifest against a separate successful-test record. Cold caches, shared code changes and static test changes run the full static suite. Content changes run tests for affected histories; unchanged pages retain their verified record. A failed test run cannot advance that record. Model, data and controller tests still run for every site change, and internal documentation changes still skip site work.
 
 Only successful main-branch push jobs save caches. PRs and manual runs may restore them but do not publish shared caches. Cache actions are pinned to a commit; missing or corrupt output falls back to rebuilding. Local verification covered a cold run (230 pages checked), a warm run (zero pages rechecked), and a temporary Socrates evidence change (one checked, 229 reused). End-to-end CI verification passed in run 45200730361 after the main-branch cache was saved: all 230 pages and their static test records were reused. The verify job took 49 seconds and deployment was skipped.
 
@@ -146,7 +146,7 @@ Eight redundant browser adapters have been removed: comparison, coverage, explor
 
 ## Generated browser output
 
-`web/generated/` is ignored and no longer committed. `scripts/build-client.mjs` clears this owned output directory, compiles TypeScript, then generates the prototype module from authored content. The evidence builder uses the typed assembly function directly, removing its dependency on a pre-existing generated prototype module.
+`web/generated/` is ignored and no longer committed. `scripts/build-client.ts` clears this owned output directory, compiles TypeScript and emits its type declarations. Build tools read authored content directly; the unused browser prototype data module has been removed. The evidence builder uses the typed assembly function directly, removing its dependency on a pre-existing generated prototype module.
 
 Start commands, preview installation and coverage generation prepare browser output before using it. Existing test, preview and package commands already build it. CI builds from source; it no longer compares generated browser modules with Git. Generated research data and history HTML are covered below. This change does not relocate public asset URLs or publish a release.
 

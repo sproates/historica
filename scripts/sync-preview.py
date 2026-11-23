@@ -5,6 +5,9 @@ root = Path(__file__).resolve().parent.parent
 runtime = Path.home() / 'Library/Application Support/Historica/preview'
 if runtime.exists():
     shutil.copytree(root / 'web', runtime / 'web', dirs_exist_ok=True)
+    # Remove retired campaign assets and handwritten entry points from older previews.
+    for name in ('campaign.html', 'app.js', 'model.js', 'timeline.js', 'style.css', 'timeline.css', 'focus-model.js', 'focus-app.js', 'coverage-app.js', 'home.js', 'site-path.js'):
+        (runtime / 'web' / name).unlink(missing_ok=True)
     privacy = runtime / 'web/privacy'
     privacy.mkdir(exist_ok=True)
     shutil.copy2(root / 'web/privacy.html', privacy / 'index.html')

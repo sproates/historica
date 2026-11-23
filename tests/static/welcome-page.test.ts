@@ -1,0 +1,28 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const output=process.env.HISTORICA_STATIC_TEST_OUTPUT||'release/static-pilot';
+const selection=process.env.HISTORICA_STATIC_TEST_SELECTION?new Set(JSON.parse(fs.readFileSync(process.env.HISTORICA_STATIC_TEST_SELECTION))):null;
+for(const [id,route] of [['home','index.html'],['about','about/index.html']]){
+ test(`Astro ${id} supplies navigation, metadata and page-specific content`,{skip:!!selection&&!selection.has('@'+id)},()=>{
+  const actual=fs.readFileSync(`${output}/${route}`,'utf8');
+  assert.match(actual,new RegExp(`data-static-page="${id}"`));
+  assert.match(actual,/<h1>[^<]+<\/h1>/);
+  assert.ok(actual.includes('Historica is an open source site on'));
+  assert.ok(actual.includes('href="https://github.com/sproates/historica"'));
+  assert.ok(actual.includes('href="/coverage.html"'));
+  assert.match(actual,/name="robots" content="noindex, follow"/);
+  assert.match(actual,/property="og:image:width" content="1200"/);
+  if(id==='home'){
+   for(const hook of ['home-query','home-results','home-search-status'])assert.ok(actual.includes(`id="${hook}"`));
+   assert.match(actual,/src="generated\/entrypoints\/home.js"/);
+   const structured=actual.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1];
+   assert.equal(JSON.parse(structured).name,'Historica');
+   for(const route of ['/period/stonehenge','/person/socrates','/person/alexander','/person/julius-caesar?kind=person'])assert.ok(actual.includes(`href="${route}"`));
+  }else {
+   assert.ok(!actual.includes('src="generated/entrypoints/home.js"'));
+   assert.ok(actual.includes('Created by Ian Sproates'));
+   for(const url of ['https://sproates.net','https://www.linkedin.com/in/sproates/','https://github.com/sproates'])assert.ok(actual.includes(`href="${url}"`));
+  }
+ });
+}

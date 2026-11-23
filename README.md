@@ -34,17 +34,18 @@ The app uses TypeScript and Astro. Pages are generated as HTML, so a history's i
 | `src/domain/`, `src/state/` | History calculations, focus changes and bookmarks |
 | `src/browser/`, `src/controllers/` | Browser interactions |
 | `src/presentation/`, `src/content/` | Rendering, validation and data preparation |
-| `web/` | Shared styles, assets and browser entry points |
+| `src/entrypoints/` | Browser startup modules |
+| `web/` | Shared styles, assets and generated site files |
 | `scripts/`, `tests/` | Building, checking, previewing and packaging the site |
 
-Edit application code in `src/`. `npm run build:client` compiles it into `web/generated/`. Generated pages and data are ignored by Git; change their source files rather than editing the output.
+Edit application code in `src/`. `npm run build:client` compiles it into `web/generated/`. Build scripts and tests also use TypeScript, run directly by Node 26. Generated JavaScript, type declarations, pages and data are ignored by Git; change their source files rather than editing the output.
 
 Historical content lives in separate records and source packs. Start with the [content authoring guide](content/README.md) and [evidence format](research/evidence/FORMAT.md). Validation catches structural problems and broken references, but it doesn't establish whether a historical claim is correct. That still needs research.
 
 ## Build and check
 
 ```sh
-npm run typecheck         # check TypeScript without generating files
+npm run typecheck         # compile browser code and check build tools
 npm test                  # build the site and run data, page and app checks
 npm run preview:sync      # refresh the persistent preview
 npm run build:pages       # prepare and verify a standalone staging package
