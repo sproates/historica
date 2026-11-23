@@ -51,10 +51,15 @@ for(const c of countries){const d=polygons(c).map(poly=>poly.map(ring=>ring.map(
 function locate(e:Entry){const dated=associations.filter(a=>a.subject===e.id&&a.point&&a.startYear<=end&&a.endYear>=start).map(a=>({point:a.point!,label:a.label,place:names.get(a.place)||a.place}));return dated.length?dated:e.point?[{point:e.point,label:'Recorded reference point',place:''}]:[];}
 function matchesPoint(p:Point){if(area){const [x,y]=projected(p);return x>=area.x&&x<=area.x+area.w&&y>=area.y&&y<=area.y+area.h;}const c=countries.find(c=>c.properties.ADM0_A3===selected);return c?contains(c,p):false;}
 function rows(){return entries.filter(e=>e.startYear<=end&&e.endYear>=start).map(e=>({entry:e,locations:locate(e).filter(l=>matchesPoint(l.point))})).filter(r=>r.locations.length).sort((a,b)=>a.entry.startYear-b.entry.startYear);}
-function drawCamera(){svg.setAttribute('viewBox',`${camera.x} ${camera.y} ${camera.w} ${camera.h}`);for(const circle of svg.querySelectorAll('circle'))circle.setAttribute('r',String(camera.w/180));drawLabels();save();}
+function drawCamera(){svg.setAttribute('viewBox',`${camera.x} ${camera.y} ${camera.w} ${camera.h}`);
+ const scale=svg.clientWidth&&svg.clientHeight?Math.max(camera.w/svg.clientWidth,camera.h/svg.clientHeight):camera.w/350;
+ let visible=0;for(const circle of svg.querySelectorAll('circle')){circle.setAttribute('r',String(scale*7));const x=Number(circle.getAttribute('cx')),y=Number(circle.getAttribute('cy'));if(x>=camera.x&&x<=camera.x+camera.w&&y>=camera.y&&y<=camera.y+camera.h)visible++;}
+ if(!el('place-preview').querySelector('a'))el('place-preview').textContent=visible?'Tap a blue marker to see the entry. Several entries may share a location.':el('markers').childElementCount?'No markers in this map view. Use Back to selection to return to the selected place.':'No mapped entries for this area and period. Try Fit available history or wider dates.';
+ drawLabels();save();}
+
 function route(e:Entry){return `/${e.type}/${e.id}?from=${start}&to=${end}`;}
 function render(){select.value=selected;el('years').textContent=`${year(start)} – ${year(end)}`;for(const [id,value]of [['from',start],['to',end]] as const){el<HTMLInputElement>(id).value=String(value);el(id+'-label').textContent=year(value);}
- const c=countries.find(c=>c.properties.ADM0_A3===selected);el('timeline-title').textContent=area?'Selected map area':'Present-day '+c?.properties.NAME;
+ el('place-preview').replaceChildren();const c=countries.find(c=>c.properties.ADM0_A3===selected);el('timeline-title').textContent=area?'Selected map area':'Present-day '+c?.properties.NAME;
  el('selection-note').textContent=area?'Histories with recorded locations inside your selected area.':'Histories with recorded locations inside today’s borders. Coverage is incomplete.';
  for(const path of svg.querySelectorAll('[data-country]'))path.classList.toggle('selected',path.getAttribute('data-country')===selected);
  const outline=document.getElementById('area-outline')!;outline.toggleAttribute('hidden',!area);if(area)for(const [key,value]of Object.entries({x:area.x,y:area.y,width:area.w,height:area.h}))outline.setAttribute(key,String(value));
@@ -84,9 +89,9 @@ svg.addEventListener('wheel',event=>{event.preventDefault();if(event.ctrlKey||ev
 function identify(id:string){const e=entries.find(e=>e.id===id)!;const title=document.createElement('strong');title.textContent=e.title;const link=document.createElement('a');link.href=route(e);link.textContent='Open this history →';el('place-preview').replaceChildren(title,link);}
 svg.addEventListener('click',event=>{if(moved){moved=false;return;}const target=event.target as Element;const marker=target.closest('[data-entry]');if(marker)identify(marker.getAttribute('data-entry')!);else{const country=target.closest('[data-country]');if(country)choose(country.getAttribute('data-country')!);}});
 svg.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){const id=(event.target as Element).getAttribute('data-entry');if(id){event.preventDefault();identify(id);}}});
-for(const panel of ['timeline','map'])el('tab-'+panel).onclick=()=>{document.body.dataset.panel=panel;for(const key of ['timeline','map'])el('tab-'+key).setAttribute('aria-pressed',String(key===panel));drawLabels();save();};
+for(const panel of ['timeline','map'])el('tab-'+panel).onclick=()=>{document.body.dataset.panel=panel;for(const key of ['timeline','map'])el('tab-'+key).setAttribute('aria-pressed',String(key===panel));drawCamera();};
 if(params.get('panel')==='map')el('tab-map').click();
 el('theme').onclick=()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark';};
-window.addEventListener('resize',drawLabels);
+window.addEventListener('resize',drawCamera);
 render();
 export {};
