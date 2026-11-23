@@ -1,7 +1,7 @@
 import type {HistoryDataset,HistoryEntity,PlaceAssociation} from '../domain/history.js';
 import type {RankedHistory} from '../domain/history-queries.js';
 import type {FocusState} from '../state/focus.js';
-import type {ChronologyEvidence} from '../domain/exploration.js';
+import type {ReviewedEvidence} from '../domain/evidence.js';
 import {dateMeaning,ageAt,peopleAt,compareLives} from '../domain/exploration.js';
 import {comparisonRecords,comparisonLayout,comparisonExplanation,outsideVisiblePeriod} from '../domain/comparison.js';
 import {timelineLayout,regionFor,laneView} from '../domain/swimlane.js';
@@ -10,11 +10,6 @@ import {ordinal,position} from '../domain/timeline.js';
 import {escapeHtml as esc} from './html.js';
 import {geometry,xy} from './history-page.js';
 
-export interface ReviewedEvidence extends ChronologyEvidence {
-  claims: Array<NonNullable<ChronologyEvidence['claims']>[number] & {subjectId?: string; status: string; statement: string; evidenceIds: string[]}>;
-  evidence: Array<{id: string; sourceId: string; locator?: string; note?: string}>;
-  sources: Array<{id: string; url: string; title: string; creator?: string}>;
-}
 export interface RenderContext {
   data: HistoryDataset;
   state: FocusState;

@@ -87,3 +87,9 @@ A temporary migration comparison checked 690 default, people-filtered and single
 Static pages now reuse the world paths already present in their HTML. They fetch a 28,799-byte regional geometry file instead of the 2,294,670-byte country dataset. Coordinates and outlines are unchanged. These are uncompressed file sizes, not measured transfer sizes; the generated HTML still contains the base map. Legacy pages without embedded paths retain the full-data fallback.
 
 The regional file is regenerated from the existing country source during content builds and checked for drift in CI. Tests verify the requested asset, exact regional geometry, preserved base paths and legacy fallback. Browser checks cover switching to Britain and Ireland, fitting its area and reloading. History and evidence downloads remain unchanged.
+
+## Compact browser evidence
+
+History pages now request `browser-evidence.json`, a generated projection containing the claim, source, passage and chronology fields used by the explorer. The full reviewed evidence file and authored research remain intact, and the coverage page continues to use the full file. The projection retains every claim and citation identity, including provisional claims.
+
+The uncompressed payload falls from 753,753 to 302,124 bytes. Tests compare checked statements and citations for all 230 histories and age estimates across every recorded life, and verify deterministic output and reference integrity. This is a smaller shared payload, not yet per-page or on-demand evidence loading. CI checks that the generated projection is current.
