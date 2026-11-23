@@ -13,7 +13,7 @@ Version 1.0 separates entities, historical claims, sources, evidence and review 
 | reviews | id, reviewer, date, reason, decision: verified, rejected or needs-review |
 | accounts | id, regionId, start, end, status, sentences, themes, reviewId (or null) |
 
-IDs are stable and unique within each collection. References resolve within a package in this first version. A future package assembler will resolve references across files before validation.
+IDs are stable and unique within each collection. Standalone validation resolves references within the supplied package. The site builder also combines the registered reviewed packs and validates their references together, so IDs must remain unique across that combined collection.
 
 A claim status is draft, accepted or rejected. Certainty is uncontested, disputed or unknown. An accepted disputed claim is possible if the disagreement is explained and the presented statement has verified support. Do not confuse publication status with historical certainty.
 
@@ -45,4 +45,4 @@ Draft validation checks structure and references. Accepted claims are held to ac
 
 An accepted claim needs supporting evidence with a verified evidence review and a verified claim review. Context-only citations do not qualify. Contradictory evidence must be disclosed. Accepted accounts require supported sentences, completed themes and a verified account review.
 
-These checks validate declared review records. They cannot establish that a reviewer read a source, that a licence is suitable or that an interpretation is sound. Source-content review, licence review and eventual release assembly remain separate work packages. There is no automatic promotion or publication command, and the prototype still reads its existing collection.
+These checks validate declared review records. They cannot establish that a reviewer read a source, that a licence is suitable or that an interpretation is sound. Source-content and licence reviews remain separate from structural validation. The site builder assembles registered reviewed packs, but doesn't promote draft claims automatically. Use the [guide to adding facts](../../project/adding-facts.md) for authoring and the [release instructions](../../RELEASE.md) for publication.

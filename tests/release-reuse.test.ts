@@ -17,6 +17,9 @@ test('artwork and URL-only metadata changes use focused checks; code or layout c
  assert.equal(changeScope([...files,'src/browser/explorer.ts'],read),'site');
  assert.equal(changeScope(['web/share-historica-new.png']),'sharing');
  assert.equal(changeScope(['README.md','project/notes.md']),'docs');
+ assert.equal(changeScope(['CONTRIBUTION.md','CONTRIBUTORS.md','content/README.md','research/evidence/FORMAT.md','project/adding-facts.md']),'docs');
+ assert.equal(changeScope(['CONTRIBUTION.md','content/histories/socrates.md']),'site');
+ assert.equal(changeScope(['research/evidence/FORMAT.md','research/evidence/socrates-reviewed.json']),'site');
  assert.equal(changeScope([]),'site');
 });
 test('reusing a PR requires a successful verification of the same source tree',()=>{
