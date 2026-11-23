@@ -44,3 +44,5 @@ __pycache__/
 /web/coverage.html
 
 /web/data/search-index.json
+
+/web/data/browser-history.json

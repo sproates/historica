@@ -11,6 +11,10 @@ parser.add_argument('--port',type=int,default=4173)
 parser.add_argument('--directory',default='web')
 args=parser.parse_args()
 class Handler(http.server.SimpleHTTPRequestHandler):
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-cache, must-revalidate")
+        super().end_headers()
+
     def send_head(self):
         route=urlsplit(self.path).path.rstrip('/')
         routes=json.loads((Path(args.directory)/'data/routes.json').read_text())

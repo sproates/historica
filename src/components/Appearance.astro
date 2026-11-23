@@ -1,0 +1,11 @@
+---
+import {styleUrl} from '../../scripts/static/assets.mjs';
+---
+<link rel="stylesheet" href={styleUrl('appearance.css')} />
+<script is:inline>
+try {
+ const choice=localStorage.getItem('historica-theme');
+ document.documentElement.dataset.theme=choice==='dark'||choice==='light'?choice:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+} catch { document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'; }
+</script>
+<script is:inline type="module" src="generated/browser/theme.js"></script>

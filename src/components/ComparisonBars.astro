@@ -4,7 +4,7 @@ import {dateMeaning} from '../domain/exploration';
 import type {HistoryPage} from '../presentation/history-page';
 interface Props {page: HistoryPage}
 const {page}=Astro.props;
-const {comparisons:layout,state}=page;
+const {comparisons:layout}=page;
 ---
 <div id="comparison-bars">
   <div class="comparison-axis"><span>Visible years</span><div><span>{year(layout.start)}</span><span>{year(layout.end)}</span></div></div>

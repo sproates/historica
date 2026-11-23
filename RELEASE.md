@@ -93,3 +93,19 @@ artifact. Explicitly allowlisted internal documentation changes skip the site bu
 Verification has read-only permissions and no production secrets. A separate staging job can publish only pushes to `feature/github-pages-preparation`; it refuses deployment if any custom domain is attached. It promotes the verified artifact without rebuilding.
 
 See [the cutover preparation record](project/github-pages-cutover.md) for status.
+
+## Consolidated preview and optional analytics
+
+The normal Wi-Fi preview now uses the verified Astro pages. The current consolidated design remains subject to Ian's preview approval. See [release readiness](project/release-readiness.md) for the bounded release gates; earlier migration notes are not a queue of additional refactors.
+
+For an approved production package, set `HISTORICA_ANALYTICS_TOKEN` to the public site token from **Historica's** Cloudflare Web Analytics configuration, then run:
+
+```sh
+npm run build:web
+node scripts/build-pages.mjs --static-source release/static-incremental --production --base / --output release/production-site
+node scripts/verify-pages.mjs release/production-site
+```
+
+Without a token the package contains no analytics configuration. Staging ignores the token. The browser also restricts loading to `historica.online`, and blocks duplicate initialization. Automatic SPA measurement is disabled; this counts document visits and performance, not every client-side focus change. No custom events are sent. Cloudflare describes this option in its [SPA measurement documentation](https://developers.cloudflare.com/web-analytics/get-started/web-analytics-spa/).
+
+Store and promote the checked package; do not rebuild between approval and deployment. The existing `Restore verified Pages staging` workflow promotes retained files without rebuilding, checks their hashes, and refuses a production-domain destination. Production promotion and rollback still require the separately approved cutover configuration. Do not describe a staging rehearsal as a completed production rollback test.

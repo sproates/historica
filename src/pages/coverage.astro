@@ -1,9 +1,10 @@
 ---
+import ThemeControl from '../components/ThemeControl.astro';
 import SiteLayout from '../layouts/SiteLayout.astro';
 ---
 <SiteLayout title="Sources and research coverage · Historica" description="See what has been checked, what is provisional and where Historica still has gaps. Explore the linked sources and research coverage." path="/coverage.html" page="coverage">
 
-<header><a class="brand" href="./">historica</a><span class="beta-sash">BETA</span><span class="brand-tagline">Visualising history</span><a class="return" href="./">Home</a><a href="/about">About</a></header>
+<header><a class="brand" href="./">historica</a><span class="beta-sash">BETA</span><span class="brand-tagline">Visualising history</span><a class="return" href="./">Home</a><a href="/about">About</a><ThemeControl /></header>
 <div class="beta-notice">Research coverage · Missing records mean gaps in our research, not an absence of history.</div>
 <main><p class="eyebrow">THE WORLD · 3000 BCE TO 200 CE</p><h1>How much of history can we see?</h1><p class="intro">Historica is a growing collection, not a complete account of the world. Every entry should make its sources and limitations easy to find.</p>
 <section class="research-guide" aria-label="Understanding the research"><article><h2>Checked against sources</h2><p>Some individual statements have been compared with the linked source passages. Their evidence is available on the entry.</p><p id="checked-total"></p><p>These checks use AI assistance. They are not independent expert review.</p></article><article><h2>Still provisional</h2><p>Some entries currently have reading references, but their individual statements have not all been checked. Dates or descriptions may change as we review them.</p><p>Open “Dates, sources and caveats” on a timeline page to see its status.</p></article><article><h2>Still incomplete</h2><p>A sourced entry does not mean we have covered its whole region or period. Everyday life and less documented places need much more work.</p><p>An empty part of the timeline means missing research, not that nothing happened there.</p></article></section>

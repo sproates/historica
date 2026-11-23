@@ -39,7 +39,7 @@ pageTest('alexander','pilot retains every existing controller hook exactly once'
   const actual=ids(html);
   assert.equal(new Set(actual).size,actual.length,'duplicate DOM IDs');
   assert.deepEqual(new Set(actual),new Set(ids(template)));
-  assert.match(html,/src="focus-app\.js\?v=exploration-2"/);
+  assert.match(html,/src="focus-app\.js"/);
   assert.match(html,/<base href="\/"/);
 });
 

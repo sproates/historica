@@ -1,9 +1,10 @@
 ---
+import ThemeControl from '../components/ThemeControl.astro';
 import SiteLayout from '../layouts/SiteLayout.astro';
 ---
 <SiteLayout title="Historica · Visualising history" description="Explore people, places and events on a shared timeline. See what was happening elsewhere, follow connections and compare histories across the world." path="/" page="home">
 
-<header><a href="/" class="brand">historica</a><span class="beta-sash">BETA</span><nav aria-label="Main navigation"><a href="#journeys">Explore</a><a href="/about">About</a></nav></header>
+<header><a href="/" class="brand">historica</a><span class="beta-sash">BETA</span><nav aria-label="Main navigation"><a href="#journeys">Explore</a><a href="/about">About</a></nav><ThemeControl /></header>
 <main class="welcome">
 <section class="welcome-intro"><h1>Visualising history</h1><p>Choose something on the timeline to see its connections and what was happening elsewhere.</p></section>
 <section class="history-sheet" aria-labelledby="sheet-title"><div class="sheet-heading"><h2 id="sheet-title">Building the ancient world</h2><span>3300–1500 BCE</span></div><p>Stonehenge in Britain, a pyramid in Egypt, cities in China and Peru. These histories overlap.</p><div class="home-axis"><span>3300 BCE</span><span>2400 BCE</span><span>1500 BCE</span></div>

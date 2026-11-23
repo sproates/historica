@@ -12,11 +12,10 @@ import {bindSearchControls} from '../controllers/search-controls.js';
 import {bindComparisonControls} from '../controllers/comparison-controls.js';
 import {encodeView,decodeView,bookmarkPanels} from '../state/view-url.js';
 import {setupMap} from '../controllers/map-controls.js';
-import {changeFocus} from '../state/focus.js';
 import {focusAssociations,rankedContext} from '../domain/history-queries.js';
-import {assembleHistory} from '../domain/assemble-history.js';
-import {parseHistory} from '../content/validate-history.js';
-import {geometry,xy} from '../presentation/history-page.js';
+import {parseBrowserHistory} from '../content/browser-history.js';
+import {nextFocus} from '../state/navigation.js';
+import {xy} from '../presentation/history-page.js';
 import {escapeHtml as esc} from '../presentation/html.js';
 import type {HistoryDataset,HistoryEntity,PlaceAssociation,GeoPoint} from '../domain/history.js';
 import type {FocusState,ContextKind} from '../state/focus.js';
@@ -24,10 +23,9 @@ import type {ExplorerSnapshot} from '../state/view-url.js';
 import type {TimeWindow} from '../domain/timeline.js';
 import type {ReviewedEvidence} from '../domain/evidence.js';
 import type {ChronologyEvidence} from '../domain/exploration.js';
-interface CollectionMap {historicalOverlays: Array<{geometry: unknown}>}
 
 /** Own the browser lifecycle; models and rendering remain independent of navigation. */
-export async function startExplorer(base: string, prototype: unknown): Promise<void> {
+export async function startExplorer(base: string): Promise<void> {
 const $=<T extends Element=HTMLElement>(id: string): T=>{
  const node=document.getElementById(id);
  if(!node)throw new Error(`Missing explorer element: ${id}`);
@@ -58,7 +56,7 @@ function currentFocus(): HistoryEntity {
  return entity;
 }
 function setEnvelope(){envelope=focusEnvelope(data,state);}
-function focus(id: string,kind: ContextKind='all',period: TimeWindow | null=null){return withEvidence(id,()=>{stack.push(snapshot());showAllContext=false;state=changeFocus(data,state,id);if(period)Object.assign(state,period);mapControls.fitOnNextUpdate();state.kind=kind;selectedYear=clampMoment(selectedYear,state);setEnvelope();history.pushState(null,'',encodeView(state,snapshot().view,data,base));render();if(window.matchMedia('(max-width: 600px)').matches){$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:true});window.scrollTo({top:0,left:0,behavior:'instant'});}$('status').textContent=`Focused on ${currentFocus().title}, ${dates(state.start,state.end)}`;});}
+function focus(id: string,kind: ContextKind='all',period: TimeWindow | null=null){return withEvidence(id,()=>{const previous=snapshot();stack.push(previous);restore(nextFocus(data,previous,id,kind,period));mapControls.fitOnNextUpdate();history.pushState(null,'',encodeView(state,snapshot().view,data,base));render();if(window.matchMedia('(max-width: 600px)').matches){$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:true});window.scrollTo({top:0,left:0,behavior:'instant'});}$('status').textContent=`Focused on ${currentFocus().title}, ${dates(state.start,state.end)}`;});}
 function render(){selectedYear=clampMoment(selectedYear,state);const f=currentFocus(),associations=focusAssociations(data,selectedYear===null?state:{...state,start:selectedYear,end:selectedYear}),ranked=rankedContext(data,state);syncFocusControls(document,state,envelope,Boolean(stack.length),year);renderFocus(f);
 renderComparison(f,ranked);renderSwimlanes(f,ranked);renderYear(ranked,f);
 renderDetails(f,ranked);
@@ -70,8 +68,7 @@ const points=f.id==='britain-ireland'?regionPoints:[];
 mapControls.update(points.length?points.map(xy):[...associations.filter((a): a is PlaceAssociation & {point: GeoPoint}=>a.point!==null).map(a=>xy(a.point)),...(['area','city','state'].includes(f.type)&&f.point?[xy(f.point)]:[])]);
 }
 function selectYear(y: number | null){selectedYear=clampMoment(y,state);render();}
-try{const [collection,mapData,exploration,chronology]=await Promise.all([load<CollectionMap>('data/collection.json'),loadMapData(document,load),load<HistoryDataset>('data/reviewed-exploration.json'),load<ChronologyEvidence>('data/browser-chronology.json')]);chronologyEvidence=chronology;data=parseHistory(assembleHistory(parseHistory(prototype),exploration,collection));
-bactriaOutline=geometry(collection.historicalOverlays[0]?.geometry);
+try{const [records,mapData,chronology]=await Promise.all([load('data/browser-history.json'),loadMapData(document,load),load<ChronologyEvidence>('data/browser-chronology.json')]);chronologyEvidence=chronology;const pack=parseBrowserHistory(records);data=pack.data;bactriaOutline=pack.bactriaOutline;
 const saved=decodeView(location.href,data,base),reuseStatic=canEnhanceStaticHistory(document.body.dataset.staticHistory,data,saved),fitInitially=!/[?&#](x|y|w)=/.test(location.href);
 reviewedEvidence=await evidenceStore.get(saved.state.focus);
 // Keep the generated camera while initialising controls; custom camera bookmarks still take precedence.
