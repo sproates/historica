@@ -1,7 +1,7 @@
 ---
-import WelcomeLayout from '../layouts/WelcomeLayout.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
 ---
-<WelcomeLayout title="Historica · Visualising history" description="Explore people, places and events on a shared timeline. See what was happening elsewhere, follow connections and compare histories across the world." path="/" page="home">
+<SiteLayout title="Historica · Visualising history" description="Explore people, places and events on a shared timeline. See what was happening elsewhere, follow connections and compare histories across the world." path="/" page="home">
 
 <header><a href="/" class="brand">historica</a><span class="beta-sash">BETA</span><nav aria-label="Main navigation"><a href="#journeys">Explore</a><a href="/about">About</a></nav></header>
 <main class="welcome">
@@ -22,4 +22,4 @@ import WelcomeLayout from '../layouts/WelcomeLayout.astro';
 <section class="how-to" aria-labelledby="how-title"><h2 id="how-title">Using Historica</h2><ol><li><h3>Choose a focus</h3><p>Start with a person, place, period or event. Each page gathers its connections and contemporary histories.</p></li><li><h3>Change the years</h3><p>Widen the timeline for the bigger picture, or narrow it to a few years. Compare regions side by side.</p></li><li><h3>Follow what interests you</h3><p>Select a timeline entry or connected place to move on. Copy the view’s link to return to it later.</p></li></ol></section>
 <footer><p>Historica is a beta. The collection currently concentrates on the ancient world, with uneven coverage. Missing entries mean missing research, not that nothing happened.</p><a href="/about">About Historica</a> · <a href="/coverage.html">Sources and research coverage</a><p>Historica is an open source site on <a href="https://github.com/sproates/historica">GitHub</a>.</p></footer>
 </main>
-</WelcomeLayout>
+</SiteLayout>
