@@ -91,11 +91,11 @@
     },
     {
       "path": "focus.css",
-      "sha256": "218d98ab7d02f0e4bde9f241c0ba81dc0f801c688b7e9ddf9851f8123cc290f5"
+      "sha256": "ed628cb37f27fa022274713fb7192c5b9abfa77b86db175da8ff0e3dc91cdf2e"
     },
     {
       "path": "focus.html",
-      "sha256": "a495b447d43cb599d9bc8c3a36e1653c1dc6909ecdfcb946e1f68f7bdb797415"
+      "sha256": "3d6043109f371a54338989cb6abe8bb5cff55a81174cecfb8d54ce60e82fefdc"
     },
     {
       "path": "home.js",
@@ -111,923 +111,923 @@
     },
     {
       "path": "pages/academy.html",
-      "sha256": "d4349f0b3fc99a4a84c465f5ffad5dbff30a0974869c3a72f94a3b65d5037ee8"
+      "sha256": "b77eca159ca786ad0c166f41a83f390ac46777ee2950c9918c8cff4fc53f8e7c"
     },
     {
       "path": "pages/actium.html",
-      "sha256": "4df127cfcce8cb6d6a5135bd4e0f4cd8e5b945e349b69bb3ae12ab6937320873"
+      "sha256": "2e1b43e5d82d961f5da529baf384459f7319d3ebf2027bf67c29b0e36b7f0458"
     },
     {
       "path": "pages/aegospotami.html",
-      "sha256": "50d4120d1b35c841215b0cb636a409e2b576495c9027ed241bdb1030f18a0741"
+      "sha256": "eb99b4b07b886e0d5627d400164c30217e9eb101590a109b25164464a59a6c3b"
     },
     {
       "path": "pages/akhenaten-reign.html",
-      "sha256": "8e694b19f5bb11d736cf151f35d72539c07310a910003983c4dd6c4829014f3a"
+      "sha256": "6e5f5d5c4070e317f5f3e8559724877f3c0f9c764fe09add1d7c3ca8a7720127"
     },
     {
       "path": "pages/aksum-context.html",
-      "sha256": "9ecdbe40c2d9d64cdfea2304d3b66c302e871ca01ef776efb8a3c618c04ac571"
+      "sha256": "2c9a8da2ada6c3b9144a045a1fed98d061b0b5e6e78363ef3ce8d5bec61dfb7d"
     },
     {
       "path": "pages/alcibiades-return.html",
-      "sha256": "dfa811317fc51ecb16bad2eba1c9feb68eb93e9de7102d6d7d399c4266386d9c"
+      "sha256": "b5133f12d06244a5dd8e57bad337630afde2f8278ed8d91aa440d01d74fe1ca7"
     },
     {
       "path": "pages/alcibiades-sparta.html",
-      "sha256": "7d478680714debe0e0de5dfb31f867156be2ebf958b1a2699fd6fbe4a124c12e"
+      "sha256": "97000a19aedf3dae7aa2775b5d68eaae6de13745a39ac2d375c87d33a7cefd42"
     },
     {
       "path": "pages/alcibiades.html",
-      "sha256": "10258cbc8c293eb2041e8ade65b184af8a72902976f3b41de10349a88f2fa485"
+      "sha256": "3021b2a661ba6378926f984a9b4850f6178096b26ed26db97e59a6d7d78c4013"
     },
     {
       "path": "pages/alexander-taxila.html",
-      "sha256": "3e4a1f517958dd4ab442a0f37dc7d2b621ec0a7d726c1299bbd42c22a44281b5"
+      "sha256": "f82fe8801900c214db5bc280f18a57b46de8939c87a7abb36d1b07e4d5813b9e"
     },
     {
       "path": "pages/alexander.html",
-      "sha256": "84b95b5e513fd08264f84a6e8cc052c67f9f05bf9f49889d63983acb1bca2b05"
+      "sha256": "e58dbf959f57c8b27d94145d0853b7e14a187693793434038064c113493efa2e"
     },
     {
       "path": "pages/amarna-religion.html",
-      "sha256": "1cb32837d88b695d5f510bf28316908d84070d490ce873f5e414948f9accccc6"
+      "sha256": "a446ea58e4784cddece09325c1e7ca4a47742fb5900be8fed97f64fe4f370090"
     },
     {
       "path": "pages/amenemhat-one-reign.html",
-      "sha256": "c3d209f50bc18f62935947268d79e2d4a3e2385128641dcb95c680ed30b90d1c"
+      "sha256": "20b549fff8b99cd28d4144ba368b5f020b0b165bc801979d547494302c048613"
     },
     {
       "path": "pages/amenhotep-three-reign.html",
-      "sha256": "872156fc64ecf155e94aaaaa70ed37d91c6376c8d8c94539c90a91a2cb42e8a3"
+      "sha256": "554d5bb16e6cd9c7ded0f289e6039d19bf20e0c49825d07bfec918097fd4d90a"
     },
     {
       "path": "pages/amyrtaeus-accession.html",
-      "sha256": "4f6a159ae5ae7491ed588777c4197a0ebd8831f3d5b9d773893c725d4b266a99"
+      "sha256": "5ef88ddd395848c0405d4e0e048c1874bf61330db67d844d86f155dc9bf3cef7"
     },
     {
       "path": "pages/arginusae-trial.html",
-      "sha256": "37ef985031174f9b110c7722c2245ddef1f39689b09ab7794d75b1a2ef3a89ac"
+      "sha256": "e727a4ad178d384e92012f9fa6098df25faaed42be84569ecb189266217a6ee2"
     },
     {
       "path": "pages/aristotle.html",
-      "sha256": "b957598214d579db9f71ce1c8265a58476dfa9ed08d339c46ebeb2cccc265f6f"
+      "sha256": "a7a5565eb1926fe4c16b7daf669106e5486843f5b567ba50770aeb44790d8d8e"
     },
     {
       "path": "pages/arnhem-rock-art.html",
-      "sha256": "5536910bec430add304072abe9fadc8fcb21188cd6b8dd5ed4c9f419313274d0"
+      "sha256": "178fc706f2e927a78b745fee4d1f087b8a07d6b2232c42c40dd810e5287519a2"
     },
     {
       "path": "pages/ashoka-edicts.html",
-      "sha256": "d963991732af4af3bc34de20f9004c90387b29fb5b1c075c27dcc7d1d9e780f0"
+      "sha256": "334e4a22ac52ba8e417184470eea19da62bc5cb5127bb726bba074efe21c66bf"
     },
     {
       "path": "pages/ashoka-inscriptions.html",
-      "sha256": "8e98872c66f8349e3da4c1d39202d7ff720ed417ae8dd8f0e9b68208812a70e5"
+      "sha256": "7e516e99a81ea140cd884c1efd2373cf3b571f310b830192e427871f00703a6f"
     },
     {
       "path": "pages/ashoka-lumbini.html",
-      "sha256": "911624d3db8f4c7236d6bbf29078e09b995d720f2ebe3cb3965d48835fc4d25d"
+      "sha256": "639d513408cbda9ea062c24d6901781b72c3c07d954baf56ebff9c70c8e84534"
     },
     {
       "path": "pages/ashoka-rule.html",
-      "sha256": "b8a1b31dcf06a6cd85d1f9a433a5e960cfbc072ea2c53df15da12fb5ebcc10e1"
+      "sha256": "a8b20289f792ee726ea568ee731ec5b0891d358771870a47811c62046c08b438"
     },
     {
       "path": "pages/athens-democracy-restored.html",
-      "sha256": "c127cad7155ce74afc4bd869d8645cfecbff6562257a9da5b5a3bcf3f900ca74"
+      "sha256": "653e9ada528302bf70f432caa0c4bc5cf65ca780a4a02e0683fd5d51dadc10d8"
     },
     {
       "path": "pages/athens-four-hundred.html",
-      "sha256": "157fc8d7e4b5f58e29dd8945947c177423907597542e117b51cecc265870c8f5"
+      "sha256": "3c0174b57399d1c9407db49383c38175de95e52bb28ac4b07e96a71fb965f6b5"
     },
     {
       "path": "pages/athens-plague.html",
-      "sha256": "daaac7c3ee9220ebb68efeb4e7662e658acdc19999fa2a2066856eb6a2e30352"
+      "sha256": "60927015df36bc5bca6898a540007d79d61a2ff6838561a4a51f9c143ff4b95b"
     },
     {
       "path": "pages/athens-surrender.html",
-      "sha256": "793f14887af11145ef9a3462f10053adefd1e39fd87845cb0b8ccb69a47e4d04"
+      "sha256": "df502f8202d2a575db2f561b4d564085d3ef98ffb69f57268aa10f6565ca1e2f"
     },
     {
       "path": "pages/athens.html",
-      "sha256": "f80ad216b1bcb68da5674b1d16adab84de3550f6ac6d7efea16e623a8e7a1dfc"
+      "sha256": "1bbb8c033aa04eeb95aec97fee6f0599c5b63abf44bba3708b04b5fa894a9afc"
     },
     {
       "path": "pages/augustus-reign.html",
-      "sha256": "a8943bc7e6e082b08e955f6e92a29a6772e15fcd7e81285b06ef89d25db7edb1"
+      "sha256": "0f6b65a7224a8781d1a207b64b6d0a70eed6bb52d55b0eb75543952bde62f26f"
     },
     {
       "path": "pages/augustus.html",
-      "sha256": "bced43fb443c67e14414192857687ec19c999e51b7c76327e5b02c00162d00b5"
+      "sha256": "71fbc833ca1c10cdae4d11669ac484b00a809fe10fb82747c384a0e7f2875c5e"
     },
     {
       "path": "pages/avebury-building.html",
-      "sha256": "d0dfd6172cac4c82eaba56848e3896f1558b106903d6de82991295600bb9607b"
+      "sha256": "4f4ad46aa51fac21c824cefd584e290f9860f404b044c14cf0d168fded1d70c1"
     },
     {
       "path": "pages/bactra.html",
-      "sha256": "654f132a5d114b806a50b67ad99975304ecd4bf1b991abc4ad9b899d84674277"
+      "sha256": "c205624958ac649b4195effa911432cb12897a38da0d92f54d8239f437debbb2"
     },
     {
       "path": "pages/bactria.html",
-      "sha256": "fac241e60c98f786686e279967229683f5aef4ce50ce1b0d507ae0620bb77a1b"
+      "sha256": "db33f885cfd9e98236555f963387ab91927c84be2206425b5cc2ba75a76ec21e"
     },
     {
       "path": "pages/badarian-culture.html",
-      "sha256": "bb23a49c7205530b1c5a01822b2aab4b329437c3354800303a0dd9cfd1003d93"
+      "sha256": "9938daa0d88e80837d6d1192b46007b3706c28c8fbb812bdedcbd27081996e85"
     },
     {
       "path": "pages/ban-chao.html",
-      "sha256": "b1de864ab3dc94982a0b75c16e2aa1b3b5ed6c5dd14c5aec1d9606688d034907"
+      "sha256": "7f4e60387abab35c1494423f3233e5f1652c0a586c8dbe15cab558277e500390"
     },
     {
       "path": "pages/ban-zhao-lessons.html",
-      "sha256": "41f45f832681f8b1600ffdeaca43612c6bda27caa61a5442a5d9663f3d44a164"
+      "sha256": "0006721f0ec0c2b163a8a3567df39e77c45834072a5638f4cabc7ef39e3a0e27"
     },
     {
       "path": "pages/ban-zhao.html",
-      "sha256": "5b5150d9e39ebfaae5ef6f93f21b1b78fb4c0f9d7501ec0fe49f27a9f67daa72"
+      "sha256": "a72e0970f771f988e43db25390e73251d75e4818da9fadac549e394f30dba469"
     },
     {
       "path": "pages/bindusara-reign.html",
-      "sha256": "01fa9933d56ac4b4d28ea59113d649d8f95a3e50ebbe7e1f1dd491b3ba2b06fa"
+      "sha256": "d2dcb554a4b2e51e20e383bb9aafb3ac21348f1e3c25d13bbe13f9ed654dad34"
     },
     {
       "path": "pages/boyne-passage-tombs.html",
-      "sha256": "3ab46de79e04807262bf002779c8d47656332a5ce4562f275ea5fd35ca884328"
+      "sha256": "ddd588b2d5d681f91cfd9d45052e855bdc9bcc79f78b949028ca29a869daf747"
     },
     {
       "path": "pages/britain-ireland.html",
-      "sha256": "ae215586b6f0b5236883b34468acaf931c917d1c3124cef5b113b32ab22473de"
+      "sha256": "04709a19dda8e0f6b9f3b6150f6b063ca4b002a39b6c07ce57996eb63758b10d"
     },
     {
       "path": "pages/broxmouth.html",
-      "sha256": "e6a1975f93fa2c2a80ea43f977ef997b30d6b65058349423dad72010319cd65b"
+      "sha256": "74bf5f97d726826f322797c0b9c59ef4460e4f28086f6085e4d20a5ea3baf264"
     },
     {
       "path": "pages/caesar-alexandria.html",
-      "sha256": "7aeb97e01428f78c5747ea0ed9cb8ce5d7c26a277ffc0a8f84ca36b81e930e0a"
+      "sha256": "88830bd479ad2947fbba8039d998b6d3c4266f1c0d5511db1f3ad8a3432b62e8"
     },
     {
       "path": "pages/caesar-assassination.html",
-      "sha256": "5d6590bcebaf0068f27c17a78e43c2ec26f1a18ac23f362e0263da8a444d8e05"
+      "sha256": "6fe82027681f4b3544b31288dfe461ce86c3af0e6bc130f1899051b6d591fb04"
     },
     {
       "path": "pages/caesar-britain.html",
-      "sha256": "3ba6c61b59164b17bab61d7cb00e3468dbfe3f398194bfe0246c2752b7dac975"
+      "sha256": "954df54cb901efc6dd0a2a48ccedc95214ab63de7291440a4fdc15adaf3a82f0"
     },
     {
       "path": "pages/caesar-consul.html",
-      "sha256": "fb43e3ea7b0b1d06221935064c65401a5979f1a26b886298986860828a76f143"
+      "sha256": "2e5279e264243d876d1b779b9215dde4fe7758bbce66e382209a815fcda3453e"
     },
     {
       "path": "pages/caesar-gallic-wars.html",
-      "sha256": "d4bf6d5b2f31f0aeee8044cc93a62c72be38b2baa63d1ba995a19a731e88ac1b"
+      "sha256": "67ea1b74ca90f335c7701c904ca02206b14495d55f1960b954d503f83cc0f269"
     },
     {
       "path": "pages/caesar-rubicon.html",
-      "sha256": "7abc5f374aae10222210a7826ce56b2fb9d5b088e01e069366e89269e79eabe6"
+      "sha256": "8b6a34ab0c792d987384b1abe60166dc971cff76ce189c6ffad1c8cdd587f144"
     },
     {
       "path": "pages/caral-context.html",
-      "sha256": "a7351f9f79ff7318b77894b831d77f1cc26a6e6b83694a32a876bf95477382c1"
+      "sha256": "2d3fea8bbc9fc7694dcf78c7a6615afd56fdb4793ace165496e6e22c7f389e37"
     },
     {
       "path": "pages/carthage.html",
-      "sha256": "7625e6d01529667ef375277ed5306cd0df2cd27ce65c5c46f0b777559bd0733e"
+      "sha256": "52c650dafc3f5aa22e98680dada8e62fa57fb99240d59ca9f915a89c99f7794f"
     },
     {
       "path": "pages/castell-henllys.html",
-      "sha256": "86168e7e9e1092e10f7111ae5a0836a789b5c53fa9805f10938b41a900032e26"
+      "sha256": "7193c72c1b323c4d27a879f8f770b6ff45402f854ea773211382bc899117793c"
     },
     {
       "path": "pages/chaeronea.html",
-      "sha256": "8dcd2e1fbce6d2e42361b8d04b5c741572ddc0810d658e0e2e41544360c27a37"
+      "sha256": "928e202fc7c2feb09ccab58ed133025c6feb8b4adefdbe1bc64a51b522a3d23c"
     },
     {
       "path": "pages/chandragupta-reign.html",
-      "sha256": "138a3c2372509c09aef7d68f454329e82cb2a153277a165f5334b88bb879aa1a"
+      "sha256": "5fea8806f5f6039422d8e71a06b2b335fce755a96c09608001c522f45868e6b6"
     },
     {
       "path": "pages/chavin-context.html",
-      "sha256": "63203a38328abe6e408172b472d502add4ded6fe0bd236a2277cbd23b9ee3055"
+      "sha256": "19be381ee24f3032005ff1bc74cc9fe6e5233e5ef58bc19be4d8f37465fe502b"
     },
     {
       "path": "pages/china-warring.html",
-      "sha256": "31ef6c2bc81df33ae45e894579aec767508a867cac9ca982ed58c019bfc335b4"
+      "sha256": "2cb710cf72b2a4117371b4880a2dcd4a17bce1b24c0155b2891cf0782fdd2aac"
     },
     {
       "path": "pages/china.html",
-      "sha256": "5b4a68e792d1846a7ef7423fa7545cf824998ea53a76e28db6ad2b372dc9acf9"
+      "sha256": "a9d8f3bb3ded036d664cbeb7a3016e6371f455e2473ca747e0e0b10b84b0e771"
     },
     {
       "path": "pages/chu-silk.html",
-      "sha256": "3aa1e4325b8ec3a021f41312df6253ba86e808940c8ab5df05fd50218b9395af"
+      "sha256": "22788cc7f2e76570b9a772c2a14cd2f85e08dda35678742afee13562b6975e07"
     },
     {
       "path": "pages/chu.html",
-      "sha256": "3ec263b6d7155af0677b112b7e252ae457bcbc296475a099c92f05ec6a06b869"
+      "sha256": "881f2cef753cd2746184d9431c8657eca709aa6beb232822b94c6635e770613b"
     },
     {
       "path": "pages/cicero.html",
-      "sha256": "aeb4b3be855944868f1c711b5a7a1b015be9845f63fd44b7f1d1df7ea1fadbaa"
+      "sha256": "9297cb87b0ea8c0a918e600e36edb2bb9098178b8575fbd7cb0b20fd8435961e"
     },
     {
       "path": "pages/cleopatra-vii-reign.html",
-      "sha256": "383af994f43d41e1b6e36464b54056815c64fb068f7ab2a2aac2b050a86280b9"
+      "sha256": "c0bd5d2aefde391379dbd6cadcb9396cb0e2382a8c68fb20665449d1f77b41ad"
     },
     {
       "path": "pages/cleopatra-vii.html",
-      "sha256": "d2d254df2f45bdf9e64bb3d20f2d065fb67c9b7d48dd8ce6c1186d53fbacb7e0"
+      "sha256": "80c82ce139aa89f501ece4b1dbe3b790f7dff220251ed13e8e171ed645bb6940"
     },
     {
       "path": "pages/corlea-construction.html",
-      "sha256": "e5b0a60558fc398684ecf0d673ef7c29615b66fcf4c828097d273b37650be17c"
+      "sha256": "c024ea127ea0c5cc7ea585f03f70e6d097adf98f582b135244e600d7f5dd40ea"
     },
     {
       "path": "pages/corlea.html",
-      "sha256": "ac83bdf6e7547800cb120a01c1fec04ec2087ff4992bb3ac7456204a6fde399f"
+      "sha256": "0c10c89291b03fab3b0c773aea6af9e4fdd7139a876186d405f553d9e45f1e63"
     },
     {
       "path": "pages/danebury-life.html",
-      "sha256": "a88e2d5d850b2c31ea42f2451f1db2fcaeb1388a7e187a053fe92d743382cc1f"
+      "sha256": "e7b9dd7a1204bfa3d6ca7af1bd335cb502a66bd5febe63702ec03a1224a56127"
     },
     {
       "path": "pages/danebury.html",
-      "sha256": "d7a866c33020dfc9d0b50f5628308408dc1549f0970d164d500d39744ac94bca"
+      "sha256": "f776bb240cb17a823a0625f9935ad2d64b5084f697d56719d08ec6cc896cf380"
     },
     {
       "path": "pages/daodejing.html",
-      "sha256": "94ae9b11e89b904dfad2ec77df02072853be4ff4f5fd5335b11d3dc40e7c16fa"
+      "sha256": "a8df889d7596ee498705ee34091f42a67af8103de426c923df86304ce2c12b97"
     },
     {
       "path": "pages/darius-ii-reign.html",
-      "sha256": "f258a67e238e49275bcc28aa29482ce7b6d91f3522b5f4fc367c684c1c43650c"
+      "sha256": "85a5e706ca9e5195aac5d2a9752c34999cf555a581cef83d54b445439391188c"
     },
     {
       "path": "pages/darius-rule.html",
-      "sha256": "795dad77cb1130bbab196b333f5b48bb6ec2c822ba23c80f6cc84107f17df661"
+      "sha256": "28f8d54474af033cf8dd49dcb9866377addf02ed46e8cc2a209cb76e6f4d36de"
     },
     {
       "path": "pages/darius.html",
-      "sha256": "5009c6700861f7c4eccb2c74f381e920b5545395abf8eaedc2f1f267ba9fc25c"
+      "sha256": "b565ae44d101898db67fe1549a49940d3d22a1cb827ef770fa82d578bfa55054"
     },
     {
       "path": "pages/deir-attendance.html",
-      "sha256": "49bf6f81519f650bb31a4621bf39433512d4c31f8edf0ec324699da8a79e86a2"
+      "sha256": "647ae9668f2029281659cfb5428ba58aad777430b949d01efb0e075deafed940"
     },
     {
       "path": "pages/deir-el-medina-artisans.html",
-      "sha256": "66e3a217d79e3e7d56278371cbe9fa27316a3407cf963cf8b79a2a5aff5c69c9"
+      "sha256": "4f4b8218bd91edf67da0082d622b373d8808a535f63798b0a974bd36d5eb5c24"
     },
     {
       "path": "pages/delium.html",
-      "sha256": "74dc5c68f15d49f6a92e1174937ef9488950521a59fabc54dac5dde1d44d2eac"
+      "sha256": "00453d0cd51d44d8bba1181f77fd5007232675e8a22fa5c0dc258c5ddfef0333"
     },
     {
       "path": "pages/demosthenes.html",
-      "sha256": "84677003c4edff12980db1a6f1696f6b05c040138f7675e75b53471d62135e90"
+      "sha256": "2f7673f60f8e93f77439dfab5165069cda1874416e09619d972be4fa641325ae"
     },
     {
       "path": "pages/dilmun-burials.html",
-      "sha256": "ed994bb6892dc736feecaaf4dd0c7f951ab81bb15dec3bbca2d1edaf9f7f2f32"
+      "sha256": "4f261e164b7d84f720edc25da984590040e9de8553112ebc2c354c6dc01285e0"
     },
     {
       "path": "pages/djedefre-reign.html",
-      "sha256": "64d97cfc2a1d1bd013308ae7967c2b8e6b39ec22778a60fb26f3405b62624977"
+      "sha256": "6dab252214cc483a3d17d41cf1ec73d5344f838de02b4cf3046b8bf6030b1618"
     },
     {
       "path": "pages/djoser-reign.html",
-      "sha256": "11b74496e785cf16454e9b0d5237cfa0f51663726ce0ec36585a6ec8694d5390"
+      "sha256": "867ae1afb52c15cc418c312c5acfafdc56e8c4e5bec6e5b834370f248a668525"
     },
     {
       "path": "pages/doogarrymore-wheels.html",
-      "sha256": "e790f79af93146ff3ff4b12580336f8166e86099ea150b27d5d38e8784e3542d"
+      "sha256": "433a34ac0806cf201ef32b7d0d20576616e3e21a4f6a248fcfdd4376d83f5bcd"
     },
     {
       "path": "pages/early-dynastic-egypt.html",
-      "sha256": "d41e5c5790031ae698511a9f1eeb600aee01cece34b319ac57aa087f2b6fd410"
+      "sha256": "93e366b85c6feb321380d1dd6802f3bfe9b4fb1c46a1c7c52898a21d30eb68d5"
     },
     {
       "path": "pages/eastern-han.html",
-      "sha256": "3c3fe415cb9678b90ea1b7369523f1ebdf2ae2bd3a58ecb33ede04aa0214c8f1"
+      "sha256": "3adb6ab606ac7db4a4f36263b2816cff6d708891338496a0fe822da606b87a08"
     },
     {
       "path": "pages/eastern-zhou.html",
-      "sha256": "c59dc63cf19af97f3396bc6f07dc0fb53b260afa7df2611669ecb1a23799d7f1"
+      "sha256": "f51ba9b551e6e8a604ea9fe35740832cc0f89b71e8e1dd8890a2a48393889e7d"
     },
     {
       "path": "pages/egypt-roman-annexation.html",
-      "sha256": "1a885c69d9b484268bebc9aa15d58a53b391590bcbc57544da5a938186d34bf1"
+      "sha256": "a21facd7dc158391a694032ab3d4e46da55e84a9572b971269312851c4d2b966"
     },
     {
       "path": "pages/egypt.html",
-      "sha256": "5963e40b137c4c6867e6d2605fc754ed0c803bb048f13b8016b5a919da34c4cf"
+      "sha256": "18a6fbd4cd0e75eb504a532d9187a49e64cc9344b9a3ef1fdecb3c4cc99059b2"
     },
     {
       "path": "pages/epirus.html",
-      "sha256": "a5ee9c067f63fe71724099d303a5932ebee4c4f421b72b755907e814d9e22e59"
+      "sha256": "5ceea1d66ff838e16219f2456558344979fa8685f1d1a732ba1dc9ece831e73e"
     },
     {
       "path": "pages/etruscan-context.html",
-      "sha256": "251abb5abb6b5f5c2e5ce2d48f8f8a1f5c986e1450ca7f1ffc9ce3060a847cbe"
+      "sha256": "9f6ce5d5b24a1751f9f3a8ba64f1fe6f67c9ec06d4add2dbc63caeb375115aa9"
     },
     {
       "path": "pages/first-intermediate-egypt.html",
-      "sha256": "e4ad083be98a11ef69366bb93c75a9daf57d945e83e6abf97a68d5f5e1e545e6"
+      "sha256": "c78320a8bf6f96ad9c7af04ceb81793bc4d95949c5fe31c7a3f5d127346edaa6"
     },
     {
       "path": "pages/first-punic.html",
-      "sha256": "3a3cf9dc0ebf5a72bda595191e8381ee643d1037241ba539d07cb904be59df63"
+      "sha256": "ece5c2576d0b813626a0cdb854a181f1355b872b6c72e6834e9659c00daf65fc"
     },
     {
       "path": "pages/fourth-dynasty-egypt.html",
-      "sha256": "35d97e6ff5beb9e383f67907dd9b0f442a8db2b622703476ce121dbe30d51915"
+      "sha256": "cf33ca2e1dc9228abb709b168704626d04862b889a53652f4bd8780d9e0c7b86"
     },
     {
       "path": "pages/global-overview.html",
-      "sha256": "18e37df8512bb7f661886834b57a362a27c6cb9d631f5f0a3090bffd50e92685"
+      "sha256": "0d10e87f4f8407d7cd4fd92c698f80e4aa086404d0eb5482919e9168ece571d5"
     },
     {
       "path": "pages/han-changan.html",
-      "sha256": "294b9b0b1f5417723156c81325560dd1cd3b46de5ecfd5975d1208ea89ddcf65"
+      "sha256": "00681f1a49bb13fd6c2bba54346bd7e85595664ec57056150e8da5b188966949"
     },
     {
       "path": "pages/han-luoyang.html",
-      "sha256": "04df043efa8a01b0d21699a282875bcd2a6a1009519c95ad87cf05811f3a670e"
+      "sha256": "abe55463b76ef016cbfb3822573fa3657fac12e2ddc2a2834963cb17f87497cd"
     },
     {
       "path": "pages/han-wu-reign.html",
-      "sha256": "23ec69036ad8818000787c373d395b67580b5ed7a8a89655c4ad44a151d78bcd"
+      "sha256": "95ccefb021d088c6ef286f6f5c66cf20493f2ff151840326c83b3a97ce3d6c6e"
     },
     {
       "path": "pages/hatshepsut-reign.html",
-      "sha256": "c2938307a25387502208ade7d00af6e87337c7fa65a2d634a38473e62fc1a419"
+      "sha256": "2570264aed60b47b3ae61bcdad742887ce6e0164add5e1772163268b969889e3"
     },
     {
       "path": "pages/henllys-community.html",
-      "sha256": "ff58764700e4efab3b217b6501bdc696d1db80ee65294c1f6232c64b7128e2c9"
+      "sha256": "ad9a11d1d4f6030565fbe880251d6c9832a955803c425a8dba7a3ca7d5532eaa"
     },
     {
       "path": "pages/herms-scandal.html",
-      "sha256": "edaaa53f1ef4fc8c9e372c26806dcf49fc9c71bdfcd5a3688106d13bb6da7648"
+      "sha256": "4f8e5a2c8d2de5a127a381ed6e97a8db2584fe0fb82a8bf8aaa00b383d8773ce"
     },
     {
       "path": "pages/india.html",
-      "sha256": "826644e688f3461fe47eb4e9ea2d8cc641035fad466c01c36d56da2c1db8370d"
+      "sha256": "dcc6866288fca1eaeb5b60e1fca6a7cf53b89e7e208dc206b7cbf0f77592eeb5"
     },
     {
       "path": "pages/indus-urban.html",
-      "sha256": "183824953058a1d58c12b8f8647d6311719771f4eb737404b7b87489a59b4247"
+      "sha256": "2a571804ba186ffb743b9310942c31438aa3312890fbac9dfa24db10482f5106"
     },
     {
       "path": "pages/ireland-iron-age.html",
-      "sha256": "7299bbfa0bafe93aa643ac103ad93d79342c316056429bec466b42b71f016931"
+      "sha256": "d9fcceaf9e56da130b13c58c4031e63d60c840dff87104757176b6f46d6077e6"
     },
     {
       "path": "pages/italy-settlement.html",
-      "sha256": "06118ab16642d6c0f4172092f492bf13c88f0da400d575973d9d9c8d65ee987e"
+      "sha256": "f16847888252136c14aca00b50c0881e6ec457f0fb089adb0a0559d29af131f1"
     },
     {
       "path": "pages/jenne-jeno-early.html",
-      "sha256": "e1c8c5654032c53f1fa19f537d53a788bef424c9cce11cba6c918b39df7bb1b0"
+      "sha256": "93186c8e9426fbbef63e827fe9f1d80c498ada09fb456bb7cf3ab392ed8f3859"
     },
     {
       "path": "pages/julius-caesar.html",
-      "sha256": "4e1b5c88670db27d162862342f058820a4145dfbba112d6d656ce4ba52c6db60"
+      "sha256": "c61f2b20f602030bbb41546a9bc5b33a4c3859c3fc3b7f8b98c4d8574d16728a"
     },
     {
       "path": "pages/kalinga.html",
-      "sha256": "5a314c1b47ce327865d917660ecc7615e0f88cc254f4ccb6494cbc1c5f1b7d39"
+      "sha256": "9ae3792a070ee524d7ab1e219e5230f34685a891fd4ec774de214c595250548d"
     },
     {
       "path": "pages/kerma-kingdom.html",
-      "sha256": "11bf38e450606b02758864eba1ab44201090242fb1fc6e5dbfe6f98e30325a9f"
+      "sha256": "842652d3ed53415801b36e0a3fc0d4b8142e4299708c0c4d4957c13298e8e6da"
     },
     {
       "path": "pages/khafre-reign.html",
-      "sha256": "5234246aa83e6309e1071d41df4b43a8e4092edc1aa22cefd0a729a797270101"
+      "sha256": "7fa99f8c5a9b6b578e794a7789658805fa21b974307b631157388762ebbe640b"
     },
     {
       "path": "pages/khufu-reign.html",
-      "sha256": "e0f9900a2b41e41eb3bfaf388d0f0a6e036ee29b5b11220bcc6ec927b4006789"
+      "sha256": "7fc37ef4d9a01688799d6dfbb8062b71b007ba3ca047a7cd78179b4bca2be604"
     },
     {
       "path": "pages/korean-dolmens.html",
-      "sha256": "a9810474f902343084c37a7967a08503444a52c938031ac71e7c9c1c9659a12e"
+      "sha256": "d155fd712a0f0e759b012ae6f9a51a3484f5bfe4e3dacb22a9e923fada8f8de4"
     },
     {
       "path": "pages/kuk-ditched-cultivation.html",
-      "sha256": "791184fe764ca945f63b63450704cc778e4866400bd013a0faf6e4b1f45537f5"
+      "sha256": "e83f8817419be0cc7f5e9a7c5d02453d104f500dd32a19503c6a328f0ee9d336"
     },
     {
       "path": "pages/kuk-mound-cultivation.html",
-      "sha256": "c1822d04d15ac8c7c364af85263dfd245f04c2d80978c8397e934df3b6b826db"
+      "sha256": "0c5d42c5e79c61a799150551d3780f5a126e1540a00c6a96ad6aa002960ea915"
     },
     {
       "path": "pages/kush-overview.html",
-      "sha256": "2fadc2c52ee6e21be96e733a00c32e4e4ac80eb836717cce0ac3debab968db7b"
+      "sha256": "1bca1f6f98838879092ab762e168b2c0a6707c87ffa11aed9da9fece1613b001"
     },
     {
       "path": "pages/la-venta-context.html",
-      "sha256": "58cff9c754f9684f73af0056c55d4ea0f2d4d237b7044cbef2041e2cf06c0eed"
+      "sha256": "aff1742cfbcf13786b476162371a7737409c2be941311f9a91b81c5780ee67b0"
     },
     {
       "path": "pages/lapita-settlement.html",
-      "sha256": "6d8923ea070e0cd56d052742b00c51cf6f1abe93c345f19f998471975faa3bb9"
+      "sha256": "f27cc1abb51e6e6adb96a742ab8fcc940f43e1876382f0d72a8721b59d8a043c"
     },
     {
       "path": "pages/late-period-egypt.html",
-      "sha256": "05192c0b76589dde4179dbe23fb5976a9daa4608e934219b600675c0db1ab88f"
+      "sha256": "dbc75dc7d87dad17713bf7dc26f299d6633832ba8bddbe23f7169e191487a62e"
     },
     {
       "path": "pages/liangzhu-city.html",
-      "sha256": "8b4c91444c67ddec06fca8727b97aeb45bffe4d0fc8b71e7b941e0c6c41f307b"
+      "sha256": "217de6ed044762897f812a6b2ab6cf0ef677476b661e9f54017a7e82c80532af"
     },
     {
       "path": "pages/livia-marriage.html",
-      "sha256": "0cbe016effee3e4372a039b7ebfa354f6aefde79a7d5789b5b4da1ce799da43f"
+      "sha256": "1c6040453f621240f34744f5a1db7035d24166b2a1ea511ed533116b053ffafc"
     },
     {
       "path": "pages/livia.html",
-      "sha256": "f9c73d186b04c74497250f061a191697def986e6eb7677a0999a9127863794fb"
+      "sha256": "6ee6a5db12a5d7fe6dd8f5739a17cce2352c405b3ce1eb9c22f661ada04ec902"
     },
     {
       "path": "pages/lumbini.html",
-      "sha256": "511ee777fe640c39d7c4157e9f2c8498ef2817cced045fc3ad44160ee7e020f9"
+      "sha256": "0f68fab633f2084436841d53006d91e08e009a965ddb50efda10462e1dfa98d4"
     },
     {
       "path": "pages/lyceum.html",
-      "sha256": "7f634eddfbe2300fcfad729444529faec74963b3cced109c0a718aa8240953b3"
+      "sha256": "1ad0a5103b3b70e62493ae53346ab854acbaee850d4262ea80d08f877fe427fd"
     },
     {
       "path": "pages/maadi-culture.html",
-      "sha256": "42e260d82c3e8011d70fff7f682cb9424f7725b7337ee217acb68cbf8da51436"
+      "sha256": "caf01c7d381fe7a6a910cde1e9a570fd46efe40bb137946835da710749ef6b3b"
     },
     {
       "path": "pages/macedonia.html",
-      "sha256": "8bee33b7940aa20130d8ba9678a491f82e3b2d1d8ee1369f5146f9af22d1e7fd"
+      "sha256": "1bec3a4c317c6a9e4948a6ca1351b540b5cb7f531476cef14fd47f32232ad49e"
     },
     {
       "path": "pages/macedonian-ptolemaic-egypt.html",
-      "sha256": "d5be5550a8cc6f3de4d05772cef4e5ce66c195dae2e72ba4b097f9f7814ba381"
+      "sha256": "f76903b7b77ba18100ed0f79964d7e3d0514ce8dadbf2e578b82cb0f77254dc9"
     },
     {
       "path": "pages/malta-temple-building.html",
-      "sha256": "47e7c7faf3f1868e866b0e576c365fb7e5ed90e96b37e0f7a20a2347af81dcdd"
+      "sha256": "6b7996ab7c9339967d2af26d52ced490c3e97cf7d56c1f2a47b93d63141f7eed"
     },
     {
       "path": "pages/mark-antony.html",
-      "sha256": "1589b91eeac5f1f7c425b2febd318534d46cadc868b6bc0776c412834ef39dee"
+      "sha256": "57f565ca9f6824704d45620e2333ce53f3906f4372466c2db6c1cc11075eba14"
     },
     {
       "path": "pages/maurya-expansion.html",
-      "sha256": "add170a59f2997d687ba3c6c63cdd0948af0b1f9c904cd09d539037090a500a3"
+      "sha256": "7914b3af8ee18f42c5a0a1e7e7b3af13b7e0f2076ffc1a112caf3e4368d6a42d"
     },
     {
       "path": "pages/maurya-foundation.html",
-      "sha256": "c4ceda5ab09c8f357b9d6fad7b4d18384ab98ccd66431eebe5f95ea47f3a6fdb"
+      "sha256": "9adf6724a304fbc1e4b838b41123f173c745cd0fe8dd62f825c685a682dca95b"
     },
     {
       "path": "pages/maurya.html",
-      "sha256": "c6294289a39826b8b7a31d6efd6af83cdf2639bd9bf554bde19cdd0ba13e210d"
+      "sha256": "4f24b5251dae0f83afc32a47d769948f9bf3ca474eb1eb651fbb5fb620cb8fd6"
     },
     {
       "path": "pages/memphis.html",
-      "sha256": "246dea5f560ced5c98b6d193ae24651e351c888ee8e397d9ffb98951b8110b36"
+      "sha256": "cb3439582fb58d965cf79121e1e67d3e22083e1af5a8ea0ccecd8f459a58b4f1"
     },
     {
       "path": "pages/mencius.html",
-      "sha256": "010083af8f1980f4dba2b5c221e88c2ff0c44f3b0f494514661fbb72fc6eecfb"
+      "sha256": "ceeb3913f146cdca12945062bdb493fca25244abcb4819b72803b1feebc9880b"
     },
     {
       "path": "pages/menkaure-reign.html",
-      "sha256": "ded9a996cc868b243c40f95cd68a26dac0b4f11c549ee2ce4f2f304550b66d0b"
+      "sha256": "8f0f92d99b6ef25f7f241fa8516e8afae75346d11edd524eedebd61dad1a1977"
     },
     {
       "path": "pages/mesopotamian-city-states.html",
-      "sha256": "4fedfe2bf7f338f6c2f37a61bb33032e93e1bb3ad7a92331e5102cf5e289e72a"
+      "sha256": "0957e126e2b756336a5e3d4e0d5d7c27fbb5141741b0ac43e2629b3235922738"
     },
     {
       "path": "pages/middle-kingdom-egypt.html",
-      "sha256": "93455c5259fb336802c38a766f62248428f9d44cef829ff8d22ed7b02afd4c67"
+      "sha256": "2662b17a709614bc299b85f668b752d2d1873a226b9eb694aeed1cc48e846c0c"
     },
     {
       "path": "pages/mithridates-one-reign.html",
-      "sha256": "795b4f80f9a72ff6229dd2cce40b16a91e97b6881ef54fb7b3d14d8d4ab1559c"
+      "sha256": "9c49426e7ca4c10bd66cce7ca25e6f47298af45feacafb9a548805f5d2b4a723"
     },
     {
       "path": "pages/monte-alban-city.html",
-      "sha256": "98939db3dbc1ab5510ef1c8a283941e8e277f764617990499d0cfbc571d6133b"
+      "sha256": "d734b52cb9966c9c9986d6a3b08b83679d2baea802d60b1afbebbeb360c1ab4d"
     },
     {
       "path": "pages/monte-alban.html",
-      "sha256": "5799c789e553d12f18acca6c22acf95937dbfabfc399df19401e6a39e5e4afb6"
+      "sha256": "c2a2ce28baec028ba5889076561cb6ffcd6b9d580a6621ec0ae83410de5e5d1e"
     },
     {
       "path": "pages/naqada-one.html",
-      "sha256": "ded08d372d255d1c49d4bcfbc39f4e85374f3093a7e774db9814e996b451b9c4"
+      "sha256": "880927a3b2493f7b08e1093311179e94b445c2066ccc1b105e1fb233136e2be8"
     },
     {
       "path": "pages/new-kingdom.html",
-      "sha256": "8d62e88ec0de34eb5a44317ff61248327e68046f77087daf21b60e7f1ad76d9d"
+      "sha256": "ea69ba9591c5e34af3319a8de0121206606bb40c7c3afaa54959788d164691e2"
     },
     {
       "path": "pages/nicias.html",
-      "sha256": "ce4bae7f770da9edca7321e7e9d1c8ca2253df2b28eed0e9d03416ebd9e73e06"
+      "sha256": "4a3198b7ac386a8cdde35f59695983a4494208ee026652d4286895a96a54fad8"
     },
     {
       "path": "pages/northern-jomon.html",
-      "sha256": "a67da4a2c8c20d9f3f3454f3aa8320e69ad1a1e2e57a28420142113146755756"
+      "sha256": "4fcf62dec877d27c0670ecf59543a5fc4e22f5c4ba60294f7ff9125b6626f82f"
     },
     {
       "path": "pages/oaxaca.html",
-      "sha256": "f1d0e1beb2a8283f1755dc38b2a36babcdae06f0500b5523050e8dd0e249dc47"
+      "sha256": "f1edb0d9bbd93f8bd036b25817d1309e7ea2b444b44302968e85d16bc7bd8f38"
     },
     {
       "path": "pages/octavia-athens.html",
-      "sha256": "923bbfaf15d154fe34023edc78c349766e956d52c954525a59147d2881475513"
+      "sha256": "1b5ad0db21b0c78ca40276fa20126c8e2613ecdb21051719f7c987f4469caffa"
     },
     {
       "path": "pages/octavia-minor.html",
-      "sha256": "0198716528f8a13a349fef061c6c79d6819d2938fddbc7036ffae8f8eb8622f2"
+      "sha256": "c0e4441e8f61996a026ef470c6168d46897910c0070135f0721dd2186df0f280"
     },
     {
       "path": "pages/old-kingdom.html",
-      "sha256": "5a9acf1398eac3a2417d93241957be83170a03f76bcc31ee5a3f33caf242b427"
+      "sha256": "e7068d1a6c02d0fa03debae600a954c215ea9ce5cdb54d41b2a769f5f570c9fe"
     },
     {
       "path": "pages/olmec-gulf.html",
-      "sha256": "14fc6aaee67b40a726974044908f0c6792c6eaff3b83573b5f337b541dad46a8"
+      "sha256": "b11d25a43c309d393e49bb27be47f588108c6ad9039b9368f9269ad4b6992bdf"
     },
     {
       "path": "pages/olympias.html",
-      "sha256": "2b7502a8006bc087ff57bdd964ef6eb4573845334c814e9ca0c6d894f3b22ba0"
+      "sha256": "d705b8b4165d8fb7125eb3fb992db5175c31faf3d53fbad9262359ddde338112"
     },
     {
       "path": "pages/parthian-context.html",
-      "sha256": "44b61a471b1e3ac54317717b25fe1fc615cfc9ff2739f20d08130429d343b4b8"
+      "sha256": "e543a2352a68db337c51d19c17938f645b822a74638cac24c168731c433719bd"
     },
     {
       "path": "pages/pataliputra.html",
-      "sha256": "e78dba05cb345dcab772e79854eff99f211e75d99777e734259613effbe6f73e"
+      "sha256": "6232d9b797afa4728b4e7910f33b9172dad002497f9ea5be22c13e0afc06b96f"
     },
     {
       "path": "pages/peace-of-nicias.html",
-      "sha256": "a374dd3c954fb22ba323e74504366a3106a4e71c6fbbb21eaa6edb909d326fe2"
+      "sha256": "09b6286fc5e119bb0a6696d682ff3c89a39399a816928e22ed4c22f20e887b41"
     },
     {
       "path": "pages/peloponnesian-war.html",
-      "sha256": "392e856e1317b9d19fa02ee881b0ba40b449708f32698f0be7e6cfe677f5edb6"
+      "sha256": "9eb4a5a5f8ddff7306eed71ff02f44f8d60af128057e364e3ab8b2ca6cbe5650"
     },
     {
       "path": "pages/pericles.html",
-      "sha256": "31ffbddbf01c544fdbb672ca493efbe179d5ff008e66ca45648369b0a0f61190"
+      "sha256": "4fa8666090a0e319187b92f3b7b4e51c32cf082faa77880ffd30668579feb072"
     },
     {
       "path": "pages/period.html",
-      "sha256": "9213fb69da000b60bb90cd84364e950721c6f857a5eaad45efea4e594b50e4ac"
+      "sha256": "2f457d4d4cb92a25bf133cdc73292b0edd14fb20005bc263cd0d6174e07d4a48"
     },
     {
       "path": "pages/persia.html",
-      "sha256": "af1e0b486965e331c22c6966fb6263092f0cd8768a591001a985c1e57fac7d5d"
+      "sha256": "d3c68536d20bb7ab3d435ae7110edf4a36e5d34cfce05943deeb435d8a4b443a"
     },
     {
       "path": "pages/pharsalus.html",
-      "sha256": "893c8a80922339a7e0cb48668ef4af0cf216d3fc69bf06290f50898f6912db7d"
+      "sha256": "80553e376b05737c22ac1c5682599f3e3529bc571a51a99d4a42d3bd986729eb"
     },
     {
       "path": "pages/philip-king.html",
-      "sha256": "5270a277079a760f58a2c3ed5f812e4903ef89ad34ddc5eb7556f8570389d8e4"
+      "sha256": "ddc5ddf93691948391da80487138867ec2ff28573c17e6f385a384b17d9ae581"
     },
     {
       "path": "pages/philip-reign.html",
-      "sha256": "03a737f8e83a4b04eab4640d51360d6ff675f9f1eb2f69b74074ccab613c5fef"
+      "sha256": "ec004ea08cc15f88ca75e990f63327de72cff7e3dc1da73602dca84404c35f3b"
     },
     {
       "path": "pages/philip.html",
-      "sha256": "91dc20df945fa970f02d8ac589470ddc583e04b0fc78909a9fea266ccbbdf525"
+      "sha256": "c7c0406c30cbe73818d65888ee0b2c03825056f25d17e912f8294a2c9639a26f"
     },
     {
       "path": "pages/plato.html",
-      "sha256": "f64402ed5ea6123dfc435e1fcc54194ff20068c3c9540f976c4647fed7b59965"
+      "sha256": "c55bf0469d29811eb21c90f4a2b6989f12b275de42120bfcd4e85dc3c989f9f0"
     },
     {
       "path": "pages/pompeii-food-shop.html",
-      "sha256": "cb3e3b6be6c603291d764ec0895e9f89d202817e5f3afcdb41ff55a95dd1cec8"
+      "sha256": "9c18cab65da22967e8df18d61b8b9a0c8e4742829e97bfceb9fa4c5cbed57c2c"
     },
     {
       "path": "pages/pompeii-fullery.html",
-      "sha256": "dc471000f7c226ceb389671e28c77478d6edf78b6e7d51291f0831f9f16c209c"
+      "sha256": "f2eb388aa0e74a51167e02261064b41d8c5844208c70ab438dd20fe78abca797"
     },
     {
       "path": "pages/pompeii.html",
-      "sha256": "23dcb6fffcfbbdd5de0aa74dafd21744c2072ec43ad9050ad01cd99175592781"
+      "sha256": "679263ab2f10f3237036da8fc0d37491d71e39f96b2bf9d5bc22127e95462587"
     },
     {
       "path": "pages/pompey.html",
-      "sha256": "d5219379af9bb8903d6949abee3b438449415d6c9b61a47bc54219935354a28f"
+      "sha256": "bd0705ba1bb86547e518cad9fd85369a6c2890bde6b6ee91fdf4b6d0cf586757"
     },
     {
       "path": "pages/potidaea-service.html",
-      "sha256": "e291f41333c5a01844d8f9155d3e51aed915255423cd277baf4ac81295180f00"
+      "sha256": "11ac1196507c791da8d6509fd80a7bdc4ce250059fa94aef530d9c4b357e74fd"
     },
     {
       "path": "pages/poverty-point.html",
-      "sha256": "6140a433327691f084416aaf324747c0f79898fe17f6a45e25a9f84febc9e60f"
+      "sha256": "42fdd642d33846b26097a7c495f1c18fd23975a0989bea90b441c50305fedc2b"
     },
     {
       "path": "pages/pre-kerma.html",
-      "sha256": "76f04c6756e0dd0c26e00d3160a87b8a36a03508e3b824fb4d7d2f9ed90a1da4"
+      "sha256": "ff90daae1f38430edee5f76130236c939552f4cbe1d8c0f24a626483ee8ec7f7"
     },
     {
       "path": "pages/predynastic-egypt.html",
-      "sha256": "0bc662415638924b1f9b86e5566435d15e5becf0bc79ca4b44b74f9f4ca87f8f"
+      "sha256": "c6394d0f9c7b76f2944a46ebb2a92c36bc3eeed85491de4770833ff0e626e70c"
     },
     {
       "path": "pages/ptolemy-egypt.html",
-      "sha256": "b8c7d3754037861da20ea4bacff5e52704f5850ea13a187c8ccff76400212fb9"
+      "sha256": "f3edc830c7e736d787b80e6912a9ab2db2d3cd5bacee4af0bfbaaa50747c8309"
     },
     {
       "path": "pages/ptolemy-king.html",
-      "sha256": "41bd2e537c33c01ca8e9c20c8fa678d60b28668c47d3770ff5393663fb79fa9b"
+      "sha256": "34a4e56f10f21c2a5cdb1d86a52d21022bce97c7ee9c777329ab32253029aff9"
     },
     {
       "path": "pages/ptolemy-rule.html",
-      "sha256": "1bf00b58abbafda810f330985aef6eaa49ddef31e39c1a252cab8811448d20d0"
+      "sha256": "f4c917b253d9abf091b8aa10325ddc44cec4b4f7333cd47f3a45c4d02bb8e103"
     },
     {
       "path": "pages/ptolemy.html",
-      "sha256": "8fadb7351d391c50c0f09ffeb2afdb2b5932b81d1fc561829e8b613ab8ae5da7"
+      "sha256": "f16f67620b2b274a49bb2747cec29888f1c3a5e1d4db276e89fcfb1fc586ea13"
     },
     {
       "path": "pages/pyrrhic-war.html",
-      "sha256": "c9701add5441c4e6ed9f73d746eb10ef2c1af379609c69315af26f92ddd1ef0f"
+      "sha256": "68363f488f9f0160f36e79d2372a78dc02c681ea437bde6f7045ef39371264f5"
     },
     {
       "path": "pages/qin-empire.html",
-      "sha256": "080b72b6dacca51ad7dbf31dd67ad0252c6a6f8c9a44b7ef8cd41878c0dce54a"
+      "sha256": "dbff1cc8c012f8e55576b5ea324eb6fa2ca260dd3b6f2ca9909eaede653f481b"
     },
     {
       "path": "pages/qin-mausoleum.html",
-      "sha256": "ea5f6d0a57be55e0308e35556315860d222adf430f5affa96fb6b6dc14398c19"
+      "sha256": "f47b01597af37201b40b42b642ef28cd146c350911a12af05816a174ec1f67bd"
     },
     {
       "path": "pages/qin-reforms.html",
-      "sha256": "1c056260a408a067544a04ad6aaa590330b12ba3292de85f8949aacf484b7caa"
+      "sha256": "7c010d6e3079a6c4355775311fe30cc85872239550a116d092aaddc20abddf77"
     },
     {
       "path": "pages/qin-shi-huang.html",
-      "sha256": "ce1d2b5b631618e659a74ac0d1070adade3e67d64ba2a22b06fb0135582477f2"
+      "sha256": "00c2a0f99a1968f564eea01da4f749e735fb054a3463bd933601a241d020215d"
     },
     {
       "path": "pages/qin-unification.html",
-      "sha256": "54b196d058c935eefae97caf22fa112d65f3be2a1b797e1366957a6fcf66cbb7"
+      "sha256": "ecb2bd8099e302e993e53fb4ef14f74388483231265b4dfb85ce0e6551043898"
     },
     {
       "path": "pages/qin.html",
-      "sha256": "ede2d962db43dd642b678407de09eba67560d19a901f0ee5af82e1e69662aa42"
+      "sha256": "b365a3142f2e0dbca3179ca771563fa0e30b4118b3de3b17b5e1de276f4f9fb5"
     },
     {
       "path": "pages/ramesses-two-reign.html",
-      "sha256": "01731235e2f0aaa0f2ff3b7e96901500c44b1abb9f1513ea962dec261572068f"
+      "sha256": "de5d69bdcf924abd3c74668d3008a904bcf99e531bedc9c9638cf0721686efa6"
     },
     {
       "path": "pages/roman-egypt.html",
-      "sha256": "310c866b280e9fd4a1261fa9c2a1c77415107ddd42f537e31698ca34e1223c7b"
+      "sha256": "b46f50bb2569c3260150a960ec977b852989f8a1dfd9d78be2eb374fc5a974e4"
     },
     {
       "path": "pages/rome.html",
-      "sha256": "57855fdfb16b83d9291458c43301d92b7c2d27c9859a538afcfd4716d7b7ae15"
+      "sha256": "f4646c29866594b4559f5d6a9b2a1eba53a633a33853169c554539e40604f239"
     },
     {
       "path": "pages/sammallahdenmaki.html",
-      "sha256": "9e0ef73debb073875defa016ff21c5691e2b3110de709d4dd60320d6a8fc730c"
+      "sha256": "0ca79ece34453f06ef73b77a9069e4ac7dd42625d78052207c28896bbe53b583"
     },
     {
       "path": "pages/samnite-war.html",
-      "sha256": "4b014af2fda83aeb0baf3b2a6f2267f7eb47e1c1a26680d9f1286ede010f4b1e"
+      "sha256": "512e771de0f4a257c9d2527be8ace49815ac991780d67c0a294c835a78da00ec"
     },
     {
       "path": "pages/sanchi-early.html",
-      "sha256": "b29e0e5a11d829440a7453ac4320d129c208d5557a8a3efab9563a454c89089d"
+      "sha256": "aeca53f390670cb7dd58b8a6b7a42e1ee4a27c376c8e49961243ac4184314f43"
     },
     {
       "path": "pages/sanchi-gateways.html",
-      "sha256": "4c9094d61bf3234c877ab9b13ab990e59412630feeb6c4cd4325193a636e9e1d"
+      "sha256": "17a4edb0e1d478f85ae22f27ac38fca111ce33218b1eed6073f025d87aaa6c96"
     },
     {
       "path": "pages/sannai-maruyama.html",
-      "sha256": "72da0c46d6c959e85d67a42ac6ed5bddd2c2b202b39ce7526cf856f893a57776"
+      "sha256": "394aedf547cca7dc4c6a6816b394145316248b88b2ee0c50c70dc74df62ae359"
     },
     {
       "path": "pages/scythian-black-sea.html",
-      "sha256": "409490422d33acabf78d4f3cc16cf8a9d3851bdcf7e54526024a8ef4351d2668"
+      "sha256": "57cab858b1ee4888de0adb15f388cfbcdc8ed9f8d8de0f5fd7e056afe618514d"
     },
     {
       "path": "pages/second-intermediate-egypt.html",
-      "sha256": "3305f88f6c472bd161226865ddd159856256658f9a53de3c163afa8e7aa0ec0d"
+      "sha256": "431e14e7cda7cafa1be5fd17441a40c2c0ad18ec449364e6670b109705c60fc6"
     },
     {
       "path": "pages/seleucid-mauryan-settlement.html",
-      "sha256": "9b291268f62c4ca1f885e7a31d3192cf9d324e75b9a9b8c95afaf695e2edaf00"
+      "sha256": "e788ae97c1b65b39a982758678191ccc8b02e2daca781eeeee44abe5091628d7"
     },
     {
       "path": "pages/seleucus.html",
-      "sha256": "6623469ad7dca45f45f68753e10d200eb00a3198dd6f78d4d0522ab3e1ddec26"
+      "sha256": "e4fa1db520ff10b426f1e54515916d990e59ca970d10e26b5402c832ad104caa"
     },
     {
       "path": "pages/senwosret-three-reign.html",
-      "sha256": "684841c0db35e805e1ea7a611e3afca9d94c232a675b374580f9bb52e04acc15"
+      "sha256": "67687255f0c7f67d0e239acc4aaa6d01e76c836d1c9e7d33e04f88e963ace9ca"
     },
     {
       "path": "pages/seti-one-reign.html",
-      "sha256": "c6dc9a5bf4a7d7f3c885241ccb78216c4051ffff85f7fe72903ad4a6fedad1cf"
+      "sha256": "61832a0e41b08a8fd3e48f6567e408a1915566a58082c28cd71e9a2ab4770706"
     },
     {
       "path": "pages/shang-context.html",
-      "sha256": "499e5894a665850f29e1e1548c05b1d9d2d116f13a3fb231a21d3d26f581dbf1"
+      "sha256": "dc6b655986c6196bf70d920d5f0b45d6e06283f4d15e3d039d7df8c6940eebd1"
     },
     {
       "path": "pages/shiji-history.html",
-      "sha256": "fc7db816a3343f0be7d8f262c49b90ace80d18b9069f6a6d11be91f3867954de"
+      "sha256": "c2e5d65461d648509bad99ae471c396bc0de7b841e975ed4c7230ff9f62c1165"
     },
     {
       "path": "pages/sicilian-expedition.html",
-      "sha256": "a243e8fa553012e9e39a2138f6889f847b013a13fa6a6b23372e09047ae39eac"
+      "sha256": "2f699e339c16de93a8adf8d40a1c8ebb1ac9eef3b43d7af98c6b8d9858c38149"
     },
     {
       "path": "pages/skara-brae.html",
-      "sha256": "97c7c6ab5873c24074cc168f65f29f153af7a5aadaabfe41ecf1a94e55989d61"
+      "sha256": "a0968a5c62cb42361cc0f96f7c9057592ad5f9fb8c21d348aad7b63118871fac"
     },
     {
       "path": "pages/snefru-reign.html",
-      "sha256": "0fc83c4d955cca4f89bab6fb8784754c69714333f9cd33c85f1d7122fc1261bd"
+      "sha256": "f94bbf80cf3acadf49763a92db2a0126d3af3ace72874b0e92d832ccdc537294"
     },
     {
       "path": "pages/socrates-trial.html",
-      "sha256": "b9718058cdf1cf84ae9e9bde69629b141a9b43b8691130ec95a24fffa852ff44"
+      "sha256": "f9a1a0f77c415e93489c168d8e5caf76c229f1edd9142eaf06cf81e210556b64"
     },
     {
       "path": "pages/socrates.html",
-      "sha256": "facc0caa4c54c92a8e340883eff436439c603a9fc5df3167f1da3bbc482d8065"
+      "sha256": "910b375eadd6bbc6ec55e9667b3665328297fb20f200b6029b0261aca167dbd8"
     },
     {
       "path": "pages/sparta.html",
-      "sha256": "a0705fe1c282d678248c3761944f8b14f9d589e3bb3ce14bf94239f1b4f3bcba"
+      "sha256": "325f5bc8e80d2f30c353c04344962b2bf8ae5b50acbc1ed378649a6324433009"
     },
     {
       "path": "pages/stage-asia-minor.html",
-      "sha256": "b15da10437f0c0314703b4cd5ce5a2987de535c13e71e2cac60e3fcf89cedfa3"
+      "sha256": "85114175834c761889ad8496b0a8ccdc94d44f932a8af9b6eedf6b572cd535b6"
     },
     {
       "path": "pages/stage-babylon.html",
-      "sha256": "9d2ccb83a40e361656b3da86915731c5f838abe6f600f55afc4a18d3d48da858"
+      "sha256": "8afa4de25c80a8555385e3a1f3144d8e716f95a3d15c34db0687a7e56bd8807d"
     },
     {
       "path": "pages/stage-bactria.html",
-      "sha256": "f2d81efd76029763d483d32c3d62417a0a645f2cff885f0530b64e6a49441767"
+      "sha256": "0a6ea015b4a7981a5fa7a76082e4ce6b2ea42391bed955167615e66e432b25be"
     },
     {
       "path": "pages/stage-egypt.html",
-      "sha256": "13b04cf027a58689693edc93438677c876d4f88370894f171bd8dd7d47c08da4"
+      "sha256": "9da645e8dde1f5b07dbf37087819ba4ed751e78b2c4d0197a3b79dae9b80087b"
     },
     {
       "path": "pages/stage-gaugamela.html",
-      "sha256": "cf9498b538319258ecf29b6f2b8582697e54b108b63865e53820819557decc2f"
+      "sha256": "d34d3651ae5b2d92f9eeaf8fe9380391324f4ad9c9d92a5bc32d21b06f737630"
     },
     {
       "path": "pages/stage-gedrosia.html",
-      "sha256": "256af9c2034157579677b4e17abdaba58043d1aef4cded65bae555631399eb85"
+      "sha256": "364923b341a7911ed8d55fd7a828cf16441dbe68ecb5d616b1850d2506a05ec6"
     },
     {
       "path": "pages/stage-hydaspes.html",
-      "sha256": "5b7d4068866971163631a49154f0c62e917394d2bd2c7caecfdb1096e5a100ce"
+      "sha256": "06561ca22f1b5d80ded61e031205d69b1a03936ba214593e20c0877f97321e0f"
     },
     {
       "path": "pages/stage-indus.html",
-      "sha256": "93eea88b741bab1e6d8168de0e8c7301b4d60422d8d24ed37a0cce8ddd6f3166"
+      "sha256": "a98be0b7fa50827316f510f654f917331113f726f70d59e871fdf84df73b2e39"
     },
     {
       "path": "pages/stage-issus.html",
-      "sha256": "a8035b45e2fbd33f9c40b9f156d3e45fae9da23f550b1e7f9aad689c30678b0e"
+      "sha256": "b4fb044e3d4f8b0e91fcd75edd49d2931fc1223efe62ed4affbb64414a929536"
     },
     {
       "path": "pages/stage-macedonia.html",
-      "sha256": "17504e7304560cf0553ffdcd0bf36a76ac7e6b516e77e011d3d68c2cfd6ecc27"
+      "sha256": "4e51311320194553fe386bc98080e45ca509b393595b802b5037bfa67dd31b7a"
     },
     {
       "path": "pages/stage-persepolis.html",
-      "sha256": "4a870f88ada99dba9cfa8ee0f982028820af1e3cd96d6cadc12b599bf62ad5be"
+      "sha256": "803c9306e5e7bf581b59c689b459528e867bce066f80082cc09f5d8a01480c35"
     },
     {
       "path": "pages/stage-sogdiana.html",
-      "sha256": "3c20ddc9d9123dc16f43a9e7860e86785b13387b5b34793b1219ce79b89858d9"
+      "sha256": "4eb88542aedd87ab38d2c4a784e872e2641704a36f1d20ed1fb0ad53f7ba26d4"
     },
     {
       "path": "pages/stage-susa.html",
-      "sha256": "84202eda9116375c54149a55074bafbb94331c0ea86ba63c0e60f92b37419442"
+      "sha256": "a43c4fdc7d02740bf245cf408b46ec3536c8fe83f91df51dcff704db10cf6d3d"
     },
     {
       "path": "pages/stage-thebes.html",
-      "sha256": "34cee0b23afd70b8886cfed74aa680acba6abb6539b7054c9fd6cbc7c02ef158"
+      "sha256": "78d4769ecc5e9c2c01a4ba6c1ee9ab58fe238a01cd4ee2c04c2b59619c3627ea"
     },
     {
       "path": "pages/stage-tyre.html",
-      "sha256": "220c0d11710078420d8b8d511d73b0d92021100e844c4a3eb6884730dc56bb94"
+      "sha256": "cbcb11983aa4ecf132f0a5ef6ff070e3cb1de29004921edd13154cc7e32501d5"
     },
     {
       "path": "pages/stonehenge-earthwork.html",
-      "sha256": "df2e02e99416593834530ea7ca11c9aab48d08769bc14bb58512ffeeaf932e54"
+      "sha256": "dee762d7243ee725da8629d9325bab5304626b7e5123b60487e13b7684953043"
     },
     {
       "path": "pages/stonehenge-later-changes.html",
-      "sha256": "5bf4bb1b9e561a74f039ed4fbeec062b92aacbef4c3acd93cf77e7890b77710b"
+      "sha256": "b61831c5eafa00fc1621f857fc53bd1b3c4a1b56ba6906499a2941579a0b5253"
     },
     {
       "path": "pages/stonehenge-stones.html",
-      "sha256": "4d5a0ae9486c7d767c5819d38a6bde84abca44917467ec3814e938de2b58603c"
+      "sha256": "675e8091541bd59dee7475623e47f06d77691ac885ab39af5ceae4222016445a"
     },
     {
       "path": "pages/stonehenge.html",
-      "sha256": "0e90b00cb210fd70bb45342b39f7a15695419e9566c4a8f5a78fc8ed218c7650"
+      "sha256": "6c8bc63db2eff1a4b4c9ac7edddac8066a4d2b8a4a998aaa52d4c83fb89f114b"
     },
     {
       "path": "pages/syracuse.html",
-      "sha256": "19d5de1a2bea44cb4accd5a6401185b7479f23e2255f8ac4bdd3b8a43012763d"
+      "sha256": "5268cc08fb87567de385346d9d679b19cef028c4c2f4a6a26a652d999d1172b7"
     },
     {
       "path": "pages/taxila.html",
-      "sha256": "57d2b0927964510d2cf1ee0147dfd2decea40765676c72bd2862790f2fe133f6"
+      "sha256": "0328d883d09525ac34ab02406bd4711e0be71b2cf431df11ee36639625954b5f"
     },
     {
       "path": "pages/teotihuacan-context.html",
-      "sha256": "5b782152871329307df377433a7d5df53f4746def9e62eed7a7fcfa33afe7548"
+      "sha256": "532f772dc8e147fab7e3edf4b7e04ef90609d6175cbaf6c0aa22545269f4535b"
     },
     {
       "path": "pages/terracotta-army.html",
-      "sha256": "6b4fb5a1ec844b8690aa1f5ecb07560f9461077bee3e3dfc63e783a0f27b4e09"
+      "sha256": "885daf743d494143682bc556b6f9075d00f81eec7743e5e3d3cdd94e8a361c7a"
     },
     {
       "path": "pages/thebes-egypt.html",
-      "sha256": "4a18536639914469c7b0c203c542209aabd185a94ce0abfc4d103a2b5cf311f7"
+      "sha256": "9dda69cf3a52dcb175f4a781ac5be80253e9c098809edb1875baddc4a34b86eb"
     },
     {
       "path": "pages/third-intermediate-egypt.html",
-      "sha256": "bd2d545d0cec0a59225cbe851d5ab79fbdecc072df123ac48bfd7fa3d0227355"
+      "sha256": "b474802f57d432677b3c95345931b68d70d0707e7ed5ee0999fe735d01c2b3fd"
     },
     {
       "path": "pages/thirty-athens.html",
-      "sha256": "e75a1a12c3c3fd52815e928d87948238cf5a4ea35e32965715bbd8be998325d1"
+      "sha256": "5bde216a4492f5c79541a8c9a25eb834b898ff7dbfea47bddd0282df927b843e"
     },
     {
       "path": "pages/thutmose-three-reign.html",
-      "sha256": "707ccf78fc7c511e12a1747648e842e52909d6945c9b6fb971eb9d6cd8124151"
+      "sha256": "44ed437677a97d5afc23b9b10e859aa5464bd6e1190dddd97378d3c58918ab40"
     },
     {
       "path": "pages/tutankhamun-reign.html",
-      "sha256": "22016ae3fa95d5206a01c98a42746854e6c8626b4215b6c547b96f820b0953f6"
+      "sha256": "325a30e4eb3e68c141532999d626250c4ff826b1e3d97705eab7997f241e244d"
     },
     {
       "path": "pages/ubaid-communities.html",
-      "sha256": "b6e8fe4675dbffe21ae3e1d7cf1e4ef13351e59d2159d77da6a786454a69ac07"
+      "sha256": "eed0f29542dd7ce346b6d1741b21a7a7c1e7adfb7047e5d432f7812f31d24dec"
     },
     {
       "path": "pages/uruk-period.html",
-      "sha256": "067c090256174bd683f26e0536106d252357f36bd523a98b20849180ec8fbdb8"
+      "sha256": "929adfc34eb18efb96e8de849ff79be754b2a445b1b13f252cc061411921301e"
     },
     {
       "path": "pages/uruk-urban.html",
-      "sha256": "27144ee19533215bb3550cce6f25296fd798496e749470240632f44ad9144550"
+      "sha256": "17c6b097ec7f8a01ee2144a36ef605e37e52b1db0724b48553259fb8a9ff7abe"
     },
     {
       "path": "pages/vesuvius-eruption.html",
-      "sha256": "ab6ec7af12032a75e33b2702c9d66f0717323e819be76fcd35420db67d4ef8d3"
+      "sha256": "2287178487af522454a3062bbdd7c44c7b9bb5d8c743490f360531f0a85b5b6f"
     },
     {
       "path": "pages/villanovan-context.html",
-      "sha256": "ed4da7c65797405a202a232ef1a64d922ec59996cabb7850a467f04945640f69"
+      "sha256": "9ca228a5b6928f02e0d1fadabd6047cabfcc4f097cefaac6b5e7af2c6e63bc3b"
     },
     {
       "path": "pages/watson-brake.html",
-      "sha256": "1824cbc281d259987161d26fa12ca094154bfbdb38cce3caf3fcc667a855964f"
+      "sha256": "9f75fceeafb72dbd1a9fe35c0280d58d8a36b159ed70c63854fca1600ef55ded"
     },
     {
       "path": "pages/western-han.html",
-      "sha256": "3b17a108dfd61c4b5f11b1e0b08b79e2a20cde6b8adaab5f29314abc46e26481"
+      "sha256": "96cba1bb694804e6708dc28339cbb10f315bc1c7c8156265693b5c9457371591"
     },
     {
       "path": "pages/western-zhou.html",
-      "sha256": "b399b89399ff60cea66508b478fca517f190e307a776ad1a3af702acccffb2d3"
+      "sha256": "11039cdecd0bb8aee403fc386041ae45bf769df3b5a424581dcdc0bc22d16021"
     },
     {
       "path": "pages/world-400-250.html",
-      "sha256": "2f0d1151a93ff4d2d16acf8557ebb5c7da4788b4ca0698386678970bc7fb29da"
+      "sha256": "731106cf34e7f2c9c344eb15855002c4901bc1ef881d5859ca89082e94915689"
     },
     {
       "path": "pages/yangshao-communities.html",
-      "sha256": "4ea4d6db5cfbd5f3f4d02b5b87fc2101d05bb67d65b6c5fec7729f8ee16fe219"
+      "sha256": "12f2a02819aa7a1ce2f8e18da33ca49a12f29b09b614eff52d5e6202115a327d"
     },
     {
       "path": "robots.txt",
