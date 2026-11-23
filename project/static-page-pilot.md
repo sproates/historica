@@ -201,3 +201,11 @@ Home, About and coverage are now authored only in `src/pages/`; their `web/` cop
 The export reads and validates all pages before replacing output, keeps unrelated assets, and removes retired generated histories. It changes the cache's noindex metadata to the ordinary site's indexing policy; the staging packager independently enforces noindex. The original Astro cache remains untouched. Tests cover incomplete input, path safety, indexing and pruning.
 
 The persistent preview now uses this normal build. The separate overlay script has been removed and its npm commands alias `preview:sync`. No layout or wording change is intended. The empty focus shell and original campaign prototype remain for their existing runtime/compatibility uses; their retirement is separate.
+
+## Compact home search index
+
+Home search now loads `data/search-index.json`, generated from the assembled authored histories. It includes result labels, routes, dates and normalized searchable text; it omits relationships, geographical associations and evidence. The home entry point no longer imports the prototype records or loads the full reviewed exploration dataset. The explorer still uses its existing full dataset.
+
+Both search paths share the same normalization and ranking function. Tests compare titles, description phrases, region and note searches across all 230 entries, plus aliases, accents, partial matches, loading, errors, keyboard controls and mounted links. The browser validates the index contract before rendering.
+
+The new index is 102,121 bytes, replacing 234,731 bytes of reviewed exploration plus 57,939 bytes of prototype JavaScript on the home page (about 65% less before compression). This is a transfer-size comparison, not a measured page-load speedup. Production remains unchanged.
