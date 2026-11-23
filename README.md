@@ -8,7 +8,7 @@ Coverage is selective. Historical statements link to sources, but a sourced entr
 
 ## Run locally
 
-Use Node.js 26 (the exact development and CI version is in `.node-version`) and Python 3. Run `npm ci` to install the locked TypeScript build tools. No API keys are needed.
+Use Node.js 26 (the exact development and CI version is in `.node-version`) and Python 3. Run `npm ci` to install the locked build tools. No API keys are needed.
 
 ```sh
 npm start
@@ -24,7 +24,8 @@ On macOS, `npm run preview:install` installs the persistent preview service. Aft
 | --- | --- |
 | `web/` | Site source, browser modules and assets |
 | `web/data/` | Collection, geography and generated research assets |
-| `content/` | Individual reviewed histories and their navigation packs |
+| `content/` | Individual histories and their navigation packs |
+| `src/` | Migrated TypeScript and the Astro static-page pilot |
 | `research/` | Evidence records, provenance and coverage programme |
 | `scripts/` | Validation, generation, preview and release tools |
 | `tests/` | Model, routing, data and build checks |
@@ -44,6 +45,19 @@ npm run build:pages      # GitHub Pages staging output in release/pages-site/
 ```
 
 Build commands don't publish. `docs/` and `release/` are local build outputs, excluded from Git. Generated pages under `web/pages/` remain tracked for now because the development and preview workflows consume them directly.
+
+## Static-page pilot
+
+Alexander has an opt-in Astro page using the same authored records and timeline calculations as the current explorer. Its introduction, comparison, regional timeline, fitted map, connections and research references are generated before the browser runs JavaScript.
+
+```sh
+npm run test:static      # build and check the pilot HTML
+npm run preview:static   # refresh the existing Wi-Fi preview with the pilot
+```
+
+Open `/person/alexander` on the existing preview. `npm run preview:sync` restores the normal prototype page. Neither command publishes. The Astro output in `release/static-pilot/` is a page overlay, not a standalone deployable site: it uses the existing preview's styles, scripts and data.
+
+The pilot keeps the existing interaction controller as a temporary bridge. Other histories still use the old renderer. Shared state, smaller browser payloads, Astro template type checking and incremental generation remain to be migrated; this is not the completed static application. See [pilot notes](project/static-page-pilot.md).
 
 ## History data contract
 

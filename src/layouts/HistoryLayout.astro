@@ -1,0 +1,34 @@
+---
+import type {HistoryEntity} from '../domain/history';
+interface Props {focus: HistoryEntity}
+const {focus}=Astro.props;
+const description=focus.description.replace(/\s+/g,' ').slice(0,200);
+const canonical=`https://historica.online/${focus.type}/${focus.id}`;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="/" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{focus.title} · Historica</title>
+  <meta name="description" content={description} />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href={canonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Historica" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:title" content={`${focus.title} · Historica`} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content="https://historica.online/share-historica.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="focus.css?v=exploration-1" />
+  <link rel="stylesheet" href="branding.css?v=1" />
+</head>
+<body data-static-history={focus.id}>
+  <slot />
+  <!-- Temporary bridge: the existing controller enhances the prerendered default. -->
+  <script is:inline type="module" src="focus-app.js?v=exploration-2"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+---
+import {year,dates,laneView} from '../../scripts/static/history-page.mjs';
+import {position} from '../domain/timeline';
+import {dateMeaning} from '../../web/exploration-model.js';
+const {page}=Astro.props;
+const {timeline:layout,state}=page;
+const tickPosition=y=>state.start===state.end?50:position(y,state.start,state.end)*100;
+---
+<div id="swimlanes">
+  <div class="swim-axis"><div class="swim-label">REGION</div><div class="swim-dates">{layout.ticks.map((y,i)=><span style={`left:${tickPosition(y)}%`} class={i===0?'first':i===layout.ticks.length-1?'last':''}>{year(y)}</span>)}</div></div>
+  {layout.lanes.map(raw=>{const l=laneView(raw);return <section class={`swim-lane ${l.focus?'swim-focus':''}`} aria-label={l.name}>
+    <div class="swim-label"><h3>{l.name}</h3>{l.canCollapse&&<button class="lane-toggle" data-lane={JSON.stringify([state.focus,l.name])} aria-expanded={l.expanded}>{l.expanded?'Show fewer':`Show all ${l.total}`}<span class="sr-only"> in {l.name}</span></button>}</div>
+    <div class="swim-track" style={`height:${l.rows*64+12}px`}>
+      {layout.ticks.map(y=><i class="swim-gridline" style={`left:${tickPosition(y)}%`}></i>)}
+      {l.items.map(e=><button class={`swim-item ${e.type==='person'?'swim-life':''} ${e.point||e.single?'swim-point':''}`} disabled={l.focus} data-focus={l.focus?undefined:e.id} style={`top:${e.row*64+8}px;--left:${e.left}%;--width:${e.width}%;--label-left:${e.labelLeft}%`} title={`${e.title} · ${dates(e.startYear,e.endYear)} · ${dateMeaning(e)}${e.note?' · '+e.note:''}`} aria-label={`${e.title}, ${dates(e.startYear,e.endYear)}${l.focus?', current focus':''}`}><span class="swim-caption">{e.title}<small class="date-kind">{dateMeaning(e)}</small></span><span class={`swim-bar ${/Approximate|Context|study/.test(dateMeaning(e))||e.uncertainty?'swim-approximate':''}`}>{e.continuesBefore&&<b class="swim-before">‹</b>}{e.continuesAfter&&<b class="swim-after">›</b>}</span></button>)}
+      {!l.items.length&&<p class="swim-outside">Outside this window</p>}
+    </div>
+  </section>})}
+</div>

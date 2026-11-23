@@ -1,0 +1,14 @@
+---
+import {year,dates} from '../../scripts/static/history-page.mjs';
+import {dateMeaning} from '../../web/exploration-model.js';
+import {regionFor} from '../../web/swimlane-model.js';
+const {page}=Astro.props;
+const {comparisons:layout,data,state}=page;
+---
+<div id="comparison-bars">
+  <div class="comparison-axis"><span>Visible years</span><div><span>{year(layout.start)}</span><span>{year(layout.end)}</span></div></div>
+  {layout.items.map((e,i)=><div class="comparison-row">
+    <button disabled={i===0} data-focus={i===0?undefined:e.id}><strong>{e.title}</strong><small>{i===0?'Your focus':regionFor(e,data,state)} · {dates(e.startYear,e.endYear)} · {dateMeaning(e)}</small></button>
+    <div class="comparison-track" aria-hidden="true">{e.visible&&<span class={/Approximate|Context|study/.test(dateMeaning(e))?'date-uncertain':''} style={`left:${e.left}%;width:max(4px,${e.width}%)`}>{e.before&&<b class="comparison-before">‹</b>}{e.after&&<b class="comparison-after">›</b>}</span>}</div>
+  </div>)}
+</div>
