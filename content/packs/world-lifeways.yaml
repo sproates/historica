@@ -1,0 +1,103 @@
+order: 3
+entities:
+  - northern-jomon
+  - sannai-maruyama
+  - korean-dolmens
+  - dilmun-burials
+  - lapita-settlement
+  - arnhem-rock-art
+  - chavin-context
+  - poverty-point
+  - sammallahdenmaki
+  - teotihuacan-context
+associations:
+  - subject: chavin-context
+    place: chavin-context
+    startYear: -1500
+    endYear: -300
+    label: Chavín’s ceremonial landscape · archaeological site reference
+    point:
+      - -77.17845361111111
+      - -9.5927725
+    source: https://whc.unesco.org/en/list/330/
+    claimIds:
+      - lifeways-chavin-context-1
+      - lifeways-chavin-context-2
+      - lifeways-chavin-context-point
+    contextual: true
+  - subject: poverty-point
+    place: poverty-point
+    startYear: -1700
+    endYear: -1100
+    label: Poverty Point’s mound builders · archaeological site reference
+    point:
+      - -91.4063888888889
+      - 32.636944444444445
+    source: https://whc.unesco.org/en/list/1435/
+    claimIds:
+      - lifeways-poverty-point-1
+      - lifeways-poverty-point-2
+      - lifeways-poverty-point-point
+    contextual: true
+  - subject: sammallahdenmaki
+    place: sammallahdenmaki
+    startYear: -1500
+    endYear: -500
+    label: Sammallahdenmäki’s burial cairns · archaeological site reference
+    point:
+      - 21.7775
+      - 61.12056
+    source: https://whc.unesco.org/en/list/579/
+    claimIds:
+      - lifeways-sammallahdenmaki-1
+      - lifeways-sammallahdenmaki-2
+      - lifeways-sammallahdenmaki-point
+    contextual: true
+  - subject: teotihuacan-context
+    place: teotihuacan-context
+    startYear: 1
+    endYear: 700
+    label: Teotihuacán’s monumental city · archaeological site reference
+    point:
+      - -98.84167
+      - 19.691670000000002
+    source: https://whc.unesco.org/en/list/414/
+    claimIds:
+      - lifeways-teotihuacan-context-1
+      - lifeways-teotihuacan-context-2
+      - lifeways-teotihuacan-context-point
+    contextual: true
+relationships:
+  - a: global-overview
+    b: northern-jomon
+    label: Explore this period
+  - a: global-overview
+    b: sannai-maruyama
+    label: Explore this period
+  - a: global-overview
+    b: korean-dolmens
+    label: Explore this period
+  - a: global-overview
+    b: dilmun-burials
+    label: Explore this period
+  - a: global-overview
+    b: lapita-settlement
+    label: Explore this period
+  - a: global-overview
+    b: arnhem-rock-art
+    label: Explore this period
+  - a: global-overview
+    b: chavin-context
+    label: Explore this period
+  - a: global-overview
+    b: poverty-point
+    label: Explore this period
+  - a: global-overview
+    b: sammallahdenmaki
+    label: Explore this period
+  - a: global-overview
+    b: teotihuacan-context
+    label: Explore this period
+  - a: northern-jomon
+    b: sannai-maruyama
+    label: Explore a settlement

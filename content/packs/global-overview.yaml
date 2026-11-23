@@ -1,0 +1,64 @@
+order: 2
+entities:
+  - predynastic-egypt
+  - badarian-culture
+  - maadi-culture
+  - naqada-one
+  - old-kingdom
+  - djoser-reign
+  - khufu-reign
+  - new-kingdom
+  - uruk-urban
+  - mesopotamian-city-states
+  - indus-urban
+  - shang-context
+  - western-zhou
+  - eastern-zhou
+  - western-han
+  - eastern-han
+  - han-wu-reign
+  - olmec-gulf
+  - la-venta-context
+  - caral-context
+  - kush-overview
+  - global-overview
+associations:
+  - subject: caral-context
+    place: caral-context
+    startYear: -3000
+    endYear: -1800
+    label: Caral · archaeological site reference
+    point:
+      - -77.5213888888889
+      - -10.891666666666666
+    source: https://whc.unesco.org/en/list/1269/
+    claimIds:
+      - global-caral-context-1
+      - global-caral-context-2
+      - global-caral-context-point
+    contextual: true
+relationships:
+  - a: global-overview
+    b: predynastic-egypt
+    label: Explore this period
+  - a: global-overview
+    b: old-kingdom
+    label: Explore this period
+  - a: global-overview
+    b: uruk-urban
+    label: Explore this period
+  - a: global-overview
+    b: indus-urban
+    label: Explore this period
+  - a: global-overview
+    b: eastern-zhou
+    label: Explore this period
+  - a: global-overview
+    b: olmec-gulf
+    label: Explore this period
+  - a: global-overview
+    b: caral-context
+    label: Explore this period
+  - a: global-overview
+    b: kush-overview
+    label: Explore this period

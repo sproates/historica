@@ -54,6 +54,7 @@ jobs:
           node scripts/build-metadata.mjs
           npm test
           npm run build:pages
+          git diff --exit-code -- research/evidence/\*-exploration.json web/data/reviewed-exploration.json
       - name: Keep the verified staging artifact
         if: steps.changes.outputs.scope == 'site'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

@@ -1,0 +1,149 @@
+order: 7
+entities:
+  - ubaid-communities
+  - uruk-period
+  - avebury-building
+  - skara-brae
+  - boyne-passage-tombs
+  - yangshao-communities
+  - liangzhu-city
+  - malta-temple-building
+  - pre-kerma
+  - kerma-kingdom
+  - kuk-mound-cultivation
+  - kuk-ditched-cultivation
+  - watson-brake
+associations:
+  - subject: avebury-building
+    place: avebury-building
+    startYear: -2850
+    endYear: -2200
+    label: Avebury and associated monuments reference
+    point:
+      - -1.8539166666666667
+      - 51.428666666666665
+    source: https://whc.unesco.org/en/list/373/maps/
+    claimIds:
+      - early-world-avebury-building-dates
+      - early-world-avebury-building-context
+      - early-world-avebury-building-point
+    contextual: true
+  - subject: skara-brae
+    place: skara-brae
+    startYear: -3100
+    endYear: -2500
+    label: Skara Brae site reference
+    point:
+      - -3.3416083333333333
+      - 59.048825
+    source: https://whc.unesco.org/en/list/514/maps/
+    claimIds:
+      - early-world-skara-brae-dates
+      - early-world-skara-brae-context
+      - early-world-skara-brae-point
+    contextual: true
+  - subject: boyne-passage-tombs
+    place: boyne-passage-tombs
+    startYear: -3200
+    endYear: -3200
+    label: Brú na Bóinne landscape reference
+    point:
+      - -6.4755
+      - 53.694694444444444
+    source: https://whc.unesco.org/en/list/659/maps/
+    claimIds:
+      - early-world-boyne-passage-tombs-dates
+      - early-world-boyne-passage-tombs-context
+      - early-world-boyne-passage-tombs-point
+    contextual: true
+  - subject: liangzhu-city
+    place: liangzhu-city
+    startYear: -3300
+    endYear: -2300
+    label: Liangzhu city site reference
+    point:
+      - 119.990825
+      - 30.395547222222223
+    source: https://whc.unesco.org/en/list/1592/maps/
+    claimIds:
+      - early-world-liangzhu-city-dates
+      - early-world-liangzhu-city-context
+      - early-world-liangzhu-city-point
+    contextual: true
+  - subject: kuk-mound-cultivation
+    place: kuk-mound-cultivation
+    startYear: -5000
+    endYear: -4490
+    label: Kuk archaeological site reference
+    point:
+      - 144.33172222222223
+      - -5.783711111111111
+    source: https://whc.unesco.org/en/list/887/
+    claimIds:
+      - early-world-kuk-mound-cultivation-dates
+      - early-world-kuk-mound-cultivation-context
+      - early-world-kuk-mound-cultivation-point
+    contextual: true
+  - subject: kuk-ditched-cultivation
+    place: kuk-ditched-cultivation
+    startYear: -2400
+    endYear: -2030
+    label: Kuk archaeological site reference
+    point:
+      - 144.33172222222223
+      - -5.783711111111111
+    source: https://whc.unesco.org/en/list/887/
+    claimIds:
+      - early-world-kuk-ditched-cultivation-dates
+      - early-world-kuk-ditched-cultivation-context
+      - early-world-kuk-ditched-cultivation-point
+    contextual: true
+relationships:
+  - a: ubaid-communities
+    b: uruk-period
+    label: Earlier and later Mesopotamian periods
+  - a: uruk-period
+    b: uruk-urban
+    label: Urban development at Uruk
+  - a: uruk-period
+    b: mesopotamian-city-states
+    label: Later Mesopotamian context
+  - a: avebury-building
+    b: stonehenge
+    label: Compare Neolithic monuments in Britain
+  - a: skara-brae
+    b: stonehenge
+    label: Compare settlement and monument building
+  - a: boyne-passage-tombs
+    b: stonehenge
+    label: Compare Neolithic monuments
+  - a: yangshao-communities
+    b: liangzhu-city
+    label: Compare regional histories in Neolithic China
+  - a: liangzhu-city
+    b: shang-context
+    label: Later history in China
+  - a: malta-temple-building
+    b: stonehenge
+    label: Compare prehistoric stone monuments
+  - a: pre-kerma
+    b: kerma-kingdom
+    label: Earlier and later Nubian communities
+  - a: kerma-kingdom
+    b: kush-overview
+    label: Later Nubian history
+  - a: kuk-mound-cultivation
+    b: kuk-ditched-cultivation
+    label: Changes in cultivation at Kuk
+  - a: watson-brake
+    b: poverty-point
+    label: Compare earlier and later Louisiana earthworks
+  - a: avebury-building
+    b: britain-ireland
+    label: Explore Britain and Ireland
+  - a: skara-brae
+    b: britain-ireland
+    label: Explore Britain and Ireland
+  - a: boyne-passage-tombs
+    b: britain-ireland
+    label: Explore Britain and Ireland

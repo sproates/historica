@@ -1,11 +1,14 @@
 import fs from 'node:fs';
+import {readHistoryPacks} from './lib/history-content.mjs';
+import {parseHistory} from '../web/generated/content/validate-history.js';
 import {buildFocusData} from '../web/focus-model.js';
 import {validateEvidence} from './lib/evidence.js';
 const read=path=>JSON.parse(fs.readFileSync(path,'utf8'));
 const packs=['socrates','britain-ireland','global-overview','world-lifeways','ancient-connections','egypt-expansion','stonehenge','early-world','caesar-era','alcibiades-era','maurya-era','qin-han-era','connected-lives','everyday-evidence'].map(name=>read(`research/evidence/${name}-reviewed.json`));
 const pack={schemaVersion:'1.0'};
 for(const key of ['entities','sources','claims','evidence','reviews','accounts']) pack[key]=packs.flatMap(p=>p[key]);
-const adapters=['connected-browsing','britain-ireland','global-overview','world-lifeways','ancient-connections','egypt-expansion','stonehenge','early-world','caesar-era','alcibiades-era','maurya-era','qin-han-era','connected-lives','everyday-evidence'].map(name=>read(`research/evidence/${name}-exploration.json`));
+const contentPacks=readHistoryPacks();
+const adapters=contentPacks.map(pack=>pack.data);
 const exploration=Object.fromEntries(['entities','associations','relationships'].map(key=>[key,adapters.flatMap(a=>a[key])]));
 const errors=validateEvidence(pack,{release:true});
 const claims=new Map(pack.claims.map(c=>[c.id,c]));
@@ -17,7 +20,12 @@ for(const e of exploration.entities){
  if(e.point&&!e.claimIds.some(id=>claims.get(id)?.value.type==='point'&&JSON.stringify(claims.get(id).value.coordinates)===JSON.stringify(e.point))) errors.push(`Unverified point: ${e.id}`);
 }
 for(const r of exploration.relationships) if(!ids.has(r.a)||!ids.has(r.b)) errors.push('Unknown exploration relationship');
+if(!errors.length){
+ try {parseHistory(buildFocusData(read('web/data/collection.json'),exploration), {claimIds:new Set(pack.claims.map(c=>c.id)),sourceIds:new Set(read('web/data/collection.json').sources.map(s=>s.id))});}
+ catch(error){errors.push(error.message);}
+}
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else{
+ for(const {name,data} of contentPacks) fs.writeFileSync(`research/evidence/${name}-exploration.json`,JSON.stringify(data,null,2)+'\n');
  fs.writeFileSync('web/data/reviewed-evidence.json',JSON.stringify(pack,null,2)+'\n');
  fs.writeFileSync('web/data/reviewed-exploration.json',JSON.stringify(exploration,null,2)+'\n');
  console.log(`Built ${pack.claims.length} reviewed statements and ${exploration.entities.length} exploration entries.`);

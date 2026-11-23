@@ -1,0 +1,131 @@
+order: 12
+entities:
+  - octavia-minor
+  - livia
+  - ban-zhao
+  - octavia-athens
+  - livia-marriage
+  - ban-zhao-lessons
+associations:
+  - subject: octavia-athens
+    place: athens
+    startYear: -35
+    endYear: -35
+    point:
+      - 23.72618
+      - 37.970870000000005
+    label: Octavia’s recorded arrival in Athens; city reference only
+    source: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53
+    claimIds:
+      - connected-lives-octavia-athens-history
+      - connected-lives-octavia-athens-chronology
+      - connected-lives-octavia-athens-point
+    contextual: true
+  - subject: octavia-minor
+    place: athens
+    startYear: -35
+    endYear: -35
+    point:
+      - 23.72618
+      - 37.970870000000005
+    label: Octavia’s recorded arrival in Athens; city reference only
+    source: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53
+    claimIds:
+      - connected-lives-octavia-athens-history
+      - connected-lives-octavia-athens-chronology
+      - connected-lives-octavia-athens-point
+    contextual: true
+relationships:
+  - a: octavia-minor
+    b: augustus
+    label: Brother
+    labelFromA: Brother
+    labelFromB: Sister
+    sourceUrls:
+      - https://www.livius.org/articles/person/octavia-minor/
+  - a: octavia-minor
+    b: mark-antony
+    label: Husband, later divorced
+    labelFromA: Husband, later divorced
+    labelFromB: Wife, later divorced
+    sourceUrls:
+      - https://www.livius.org/articles/person/octavia-minor/
+  - a: octavia-minor
+    b: cleopatra-vii
+    label: Raised her children after her death
+    labelFromA: Raised her children after her death
+    labelFromB: Her children’s later guardian
+    sourceUrls:
+      - https://www.livius.org/articles/person/octavia-minor/
+  - a: octavia-minor
+    b: octavia-athens
+    label: Recorded journey
+    labelFromA: Recorded journey
+    labelFromB: Traveller
+    sourceUrls:
+      - https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53
+  - a: octavia-athens
+    b: athens
+    label: Place of the arrival
+    labelFromA: Place of the arrival
+    labelFromB: Recorded visit
+    sourceUrls:
+      - https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53
+  - a: octavia-athens
+    b: mark-antony
+    label: Intended recipient of support
+    labelFromA: Intended recipient of support
+    labelFromB: Supplies brought by Octavia
+    sourceUrls:
+      - https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html#53
+  - a: livia
+    b: augustus
+    label: Husband
+    labelFromA: Husband
+    labelFromB: Wife and adviser
+    sourceUrls:
+      - https://snl.no/Livia_Drusilla
+  - a: livia
+    b: livia-marriage
+    label: Marriage in 38 BCE
+    labelFromA: Marriage in 38 BCE
+    labelFromB: Bride
+    sourceUrls:
+      - https://snl.no/Livia_Drusilla
+  - a: livia-marriage
+    b: augustus
+    label: Bridegroom
+    labelFromA: Bridegroom
+    labelFromB: Marriage to Livia
+    sourceUrls:
+      - https://snl.no/Livia_Drusilla
+  - a: ban-zhao
+    b: eastern-han
+    label: Dynastic context
+    labelFromA: Dynastic context
+    labelFromB: Scholar and court teacher
+    sourceUrls:
+      - https://afe.easia.columbia.edu/main_pop/ps/ps_china-banzhao-admonitions.htm
+  - a: ban-zhao
+    b: western-han
+    label: Dynasty whose history she helped complete
+    labelFromA: Dynasty whose history she helped complete
+    labelFromB: Later historian
+    sourceUrls:
+      - https://afe.easia.columbia.edu/main_pop/ps/ps_china-banzhao-admonitions.htm
+  - a: ban-zhao
+    b: ban-zhao-lessons
+    label: Work on women’s education and conduct
+    labelFromA: Work on women’s education and conduct
+    labelFromB: Author
+    sourceUrls:
+      - https://afe.easia.columbia.edu/main_pop/ps/ps_china-banzhao-admonitions.htm
+      - https://www.cambridge.org/core/books/abs/ancient-women-philosophers/reappraising-ban-zhao/CB84B98EA5ED8E2769742CF4C5C4537E
+  - a: ban-zhao-lessons
+    b: eastern-han
+    label: Period of composition
+    labelFromA: Period of composition
+    labelFromB: Writing on women’s lives
+    sourceUrls:
+      - https://afe.easia.columbia.edu/main_pop/ps/ps_china-banzhao-admonitions.htm
+      - https://www.cambridge.org/core/books/abs/ancient-women-philosophers/reappraising-ban-zhao/CB84B98EA5ED8E2769742CF4C5C4537E

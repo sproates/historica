@@ -1,0 +1,70 @@
+order: 4
+entities:
+  - villanovan-context
+  - etruscan-context
+  - parthian-context
+  - mithridates-one-reign
+  - jenne-jeno-early
+  - aksum-context
+  - sanchi-early
+  - scythian-black-sea
+associations:
+  - subject: aksum-context
+    place: aksum-context
+    startYear: 1
+    endYear: 800
+    label: Aksum and Red Sea exchange · archaeological site reference
+    point:
+      - 38.718610000000005
+      - 14.13019
+    source: https://whc.unesco.org/en/list/15/
+    claimIds:
+      - connections-aksum-context-1
+      - connections-aksum-context-2
+      - connections-aksum-context-point
+    contextual: true
+  - subject: sanchi-early
+    place: sanchi-early
+    startYear: -300
+    endYear: 100
+    label: Early Buddhist Sanchi · archaeological site reference
+    point:
+      - 77.73972
+      - 23.479439999999997
+    source: https://whc.unesco.org/en/list/524/
+    claimIds:
+      - connections-sanchi-early-1
+      - connections-sanchi-early-2
+      - connections-sanchi-early-point
+    contextual: true
+relationships:
+  - a: global-overview
+    b: villanovan-context
+    label: Explore this period
+  - a: global-overview
+    b: etruscan-context
+    label: Explore this period
+  - a: global-overview
+    b: parthian-context
+    label: Explore this period
+  - a: global-overview
+    b: mithridates-one-reign
+    label: Explore this period
+  - a: global-overview
+    b: jenne-jeno-early
+    label: Explore this period
+  - a: global-overview
+    b: aksum-context
+    label: Explore this period
+  - a: global-overview
+    b: sanchi-early
+    label: Explore this period
+  - a: global-overview
+    b: scythian-black-sea
+    label: Explore this period
+  - a: villanovan-context
+    b: etruscan-context
+    label: Related cultural development
+  - a: parthian-context
+    b: mithridates-one-reign
+    label: Explore a ruler’s reign

@@ -1,0 +1,286 @@
+order: 5
+entities:
+  - early-dynastic-egypt
+  - first-intermediate-egypt
+  - middle-kingdom-egypt
+  - second-intermediate-egypt
+  - third-intermediate-egypt
+  - late-period-egypt
+  - macedonian-ptolemaic-egypt
+  - roman-egypt
+  - snefru-reign
+  - khafre-reign
+  - menkaure-reign
+  - amenemhat-one-reign
+  - senwosret-three-reign
+  - hatshepsut-reign
+  - thutmose-three-reign
+  - amenhotep-three-reign
+  - akhenaten-reign
+  - tutankhamun-reign
+  - seti-one-reign
+  - ramesses-two-reign
+  - memphis
+  - thebes-egypt
+  - amarna-religion
+  - deir-el-medina-artisans
+  - djedefre-reign
+  - fourth-dynasty-egypt
+associations:
+  - subject: memphis
+    place: memphis
+    startYear: -3100
+    endYear: 200
+    point:
+      - 31.261055555555554
+      - 29.855500000000003
+    label: UNESCO Site of Memphis reference
+    source: https://whc.unesco.org/en/list/86/maps/
+    claimIds:
+      - connected-browsing-memphis-map-point
+    contextual: true
+  - subject: thebes-egypt
+    place: thebes-egypt
+    startYear: -2055
+    endYear: 200
+    point:
+      - 32.65725
+      - 25.718888888888888
+    label: Karnak reference within ancient Thebes
+    source: https://whc.unesco.org/en/list/87/maps/
+    claimIds:
+      - connected-browsing-thebes-egypt-map-point
+    contextual: true
+relationships:
+  - a: global-overview
+    b: early-dynastic-egypt
+    label: Explore this period
+  - a: global-overview
+    b: first-intermediate-egypt
+    label: Explore this period
+  - a: global-overview
+    b: middle-kingdom-egypt
+    label: Explore this period
+  - a: global-overview
+    b: second-intermediate-egypt
+    label: Explore this period
+  - a: global-overview
+    b: third-intermediate-egypt
+    label: Explore this period
+  - a: global-overview
+    b: late-period-egypt
+    label: Explore this period
+  - a: global-overview
+    b: macedonian-ptolemaic-egypt
+    label: Explore this period
+  - a: global-overview
+    b: roman-egypt
+    label: Explore this period
+  - a: global-overview
+    b: snefru-reign
+    label: Explore this period
+  - a: old-kingdom
+    b: snefru-reign
+    label: Reign within this period
+  - a: global-overview
+    b: khafre-reign
+    label: Explore this period
+  - a: old-kingdom
+    b: khafre-reign
+    label: Reign within this period
+  - a: global-overview
+    b: menkaure-reign
+    label: Explore this period
+  - a: old-kingdom
+    b: menkaure-reign
+    label: Reign within this period
+  - a: global-overview
+    b: amenemhat-one-reign
+    label: Explore this period
+  - a: middle-kingdom-egypt
+    b: amenemhat-one-reign
+    label: Reign within this period
+  - a: global-overview
+    b: senwosret-three-reign
+    label: Explore this period
+  - a: middle-kingdom-egypt
+    b: senwosret-three-reign
+    label: Reign within this period
+  - a: global-overview
+    b: hatshepsut-reign
+    label: Explore this period
+  - a: new-kingdom
+    b: hatshepsut-reign
+    label: Reign within this period
+  - a: global-overview
+    b: thutmose-three-reign
+    label: Explore this period
+  - a: new-kingdom
+    b: thutmose-three-reign
+    label: Reign within this period
+  - a: global-overview
+    b: amenhotep-three-reign
+    label: Explore this period
+  - a: new-kingdom
+    b: amenhotep-three-reign
+    label: Reign within this period
+  - a: global-overview
+    b: akhenaten-reign
+    label: Explore this period
+  - a: new-kingdom
+    b: akhenaten-reign
+    label: Reign within this period
+  - a: global-overview
+    b: tutankhamun-reign
+    label: Explore this period
+  - a: new-kingdom
+    b: tutankhamun-reign
+    label: Reign within this period
+  - a: global-overview
+    b: seti-one-reign
+    label: Explore this period
+  - a: new-kingdom
+    b: seti-one-reign
+    label: Reign within this period
+  - a: global-overview
+    b: ramesses-two-reign
+    label: Explore this period
+  - a: new-kingdom
+    b: ramesses-two-reign
+    label: Reign within this period
+  - a: global-overview
+    b: memphis
+    label: Explore this period
+  - a: global-overview
+    b: thebes-egypt
+    label: Explore this period
+  - a: global-overview
+    b: amarna-religion
+    label: Explore this period
+  - a: global-overview
+    b: deir-el-medina-artisans
+    label: Explore this period
+  - a: egypt
+    b: early-dynastic-egypt
+    label: Explore Egypt
+  - a: egypt
+    b: first-intermediate-egypt
+    label: Explore Egypt
+  - a: egypt
+    b: middle-kingdom-egypt
+    label: Explore Egypt
+  - a: egypt
+    b: second-intermediate-egypt
+    label: Explore Egypt
+  - a: egypt
+    b: third-intermediate-egypt
+    label: Explore Egypt
+  - a: egypt
+    b: late-period-egypt
+    label: Explore Egypt
+  - a: egypt
+    b: macedonian-ptolemaic-egypt
+    label: Explore Egypt
+  - a: egypt
+    b: roman-egypt
+    label: Explore Egypt
+  - a: egypt
+    b: snefru-reign
+    label: Explore Egypt
+  - a: egypt
+    b: khafre-reign
+    label: Explore Egypt
+  - a: egypt
+    b: menkaure-reign
+    label: Explore Egypt
+  - a: egypt
+    b: amenemhat-one-reign
+    label: Explore Egypt
+  - a: egypt
+    b: senwosret-three-reign
+    label: Explore Egypt
+  - a: egypt
+    b: hatshepsut-reign
+    label: Explore Egypt
+  - a: egypt
+    b: thutmose-three-reign
+    label: Explore Egypt
+  - a: egypt
+    b: amenhotep-three-reign
+    label: Explore Egypt
+  - a: egypt
+    b: akhenaten-reign
+    label: Explore Egypt
+  - a: egypt
+    b: tutankhamun-reign
+    label: Explore Egypt
+  - a: egypt
+    b: seti-one-reign
+    label: Explore Egypt
+  - a: egypt
+    b: ramesses-two-reign
+    label: Explore Egypt
+  - a: egypt
+    b: memphis
+    label: Explore Egypt
+  - a: egypt
+    b: thebes-egypt
+    label: Explore Egypt
+  - a: egypt
+    b: amarna-religion
+    label: Explore Egypt
+  - a: egypt
+    b: deir-el-medina-artisans
+    label: Explore Egypt
+  - a: thebes-egypt
+    b: deir-el-medina-artisans
+    label: Community in western Thebes
+  - a: akhenaten-reign
+    b: amarna-religion
+    label: Religious changes
+  - a: khufu-reign
+    b: snefru-reign
+    label: Succession
+    labelFromA: Father and predecessor
+    labelFromB: Son and successor
+  - a: khufu-reign
+    b: djedefre-reign
+    label: Succession
+    labelFromA: Successor
+    labelFromB: Predecessor
+  - a: djedefre-reign
+    b: khafre-reign
+    label: Succession
+    labelFromA: Successor
+    labelFromB: Predecessor
+  - a: fourth-dynasty-egypt
+    b: old-kingdom
+    label: Old Kingdom dynasty
+  - a: egypt
+    b: fourth-dynasty-egypt
+    label: Explore Egypt
+  - a: fourth-dynasty-egypt
+    b: snefru-reign
+    label: Fourth Dynasty
+    labelFromA: Reign in this dynasty
+    labelFromB: Dynasty
+  - a: fourth-dynasty-egypt
+    b: khufu-reign
+    label: Fourth Dynasty
+    labelFromA: Reign in this dynasty
+    labelFromB: Dynasty
+  - a: fourth-dynasty-egypt
+    b: djedefre-reign
+    label: Fourth Dynasty
+    labelFromA: Reign in this dynasty
+    labelFromB: Dynasty
+  - a: fourth-dynasty-egypt
+    b: khafre-reign
+    label: Fourth Dynasty
+    labelFromA: Reign in this dynasty
+    labelFromB: Dynasty
+  - a: fourth-dynasty-egypt
+    b: menkaure-reign
+    label: Fourth Dynasty
+    labelFromA: Reign in this dynasty
+    labelFromB: Dynasty

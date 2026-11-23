@@ -24,6 +24,7 @@ On macOS, `npm run preview:install` installs the persistent preview service. Aft
 | --- | --- |
 | `web/` | Site source, browser modules and assets |
 | `web/data/` | Collection, geography and generated research assets |
+| `content/` | Individual reviewed histories and their navigation packs |
 | `research/` | Evidence records, provenance and coverage programme |
 | `scripts/` | Validation, generation, preview and release tools |
 | `tests/` | Model, routing, data and build checks |
@@ -48,7 +49,7 @@ Build commands don't publish. `docs/` and `release/` are local build outputs, ex
 
 `src/domain/history.ts` defines histories, dated place associations and connections. `src/content/validate-history.ts` validates the assembled legacy collection before it crosses into typed code. `npm run validate:history` checks IDs, source and claim references, date ordering, uncertainty envelopes, geographical coordinates and relationship endpoints. This also runs as part of `npm test` and CI.
 
-Validation preserves the input object and all its fields. It doesn't fill missing locations, invent relationship dates or certify historical claims. Evidence review remains separate. The authored data still lives in the existing JSON files and JavaScript builders; moving it into individual content records is a later migration.
+Validation preserves the input object and all its fields. It doesn't fill missing locations, invent relationship dates or certify historical claims. Evidence review remains separate. The 165 reviewed exploration entries now live in individual Markdown files with YAML metadata under `content/histories/`. Pack associations and relationships live under `content/packs/`. See [content authoring](content/README.md). Evidence records and the 65 remaining prototype histories still use the legacy format.
 
 ## Hosting and development status
 
