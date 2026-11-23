@@ -126,3 +126,13 @@ pageTest(event.id,'single-year events show overlapping lives across the detail t
   const details=html.slice(html.indexOf('<div id="lanes">'));
   assert.match(details,/class="band life[^"]*" style="left:0%;width:100%"/);
 });
+
+test('static histories use complete shared search and sharing metadata',()=>{
+ for(const entity of selectedEntities()){
+  const content=fs.readFileSync(`${output}/${entity.type}/${entity.id}/index.html`,'utf8').split('</head>')[0];
+  assert.equal((content.match(/<title>/g)||[]).length,1,entity.id);
+  assert.equal((content.match(/name="description"/g)||[]).length,1,entity.id);
+  for(const field of ['og:image:width','og:image:height','og:image:alt'])assert.ok(content.includes(`property="${field}"`),entity.id+' '+field);
+  for(const field of ['twitter:title','twitter:description','twitter:image','twitter:image:alt'])assert.ok(content.includes(`name="${field}"`),entity.id+' '+field);
+ }
+});

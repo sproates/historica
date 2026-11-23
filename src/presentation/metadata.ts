@@ -1,0 +1,9 @@
+import {escapeHtml as escape} from './html.js';
+export const origin='https://historica.online';
+export const description=(text: string)=>{const plain=String(text||'').replace(/\s+/g,' ').trim();return plain.length<=170?plain:plain.slice(0,167).replace(/\s+\S*$/,'')+'…';};
+export function metadataHead(title: string,desc: string,path: string,{noindex=false,website=false}: {noindex?: boolean; website?: boolean}={}){
+ const url=origin+path,image=origin+'/share-historica.png';
+ const tags=[`<title>${escape(title)}</title>`,`<meta name="description" content="${escape(desc)}">`,`<link rel="canonical" href="${escape(url)}">`,`<meta name="robots" content="${noindex?'noindex, follow':'index, follow, max-image-preview:large'}">`,...Object.entries({'og:type':'website','og:site_name':'Historica','og:locale':'en_GB','og:title':title,'og:description':desc,'og:url':url,'og:image':image,'og:image:type':'image/png','og:image:width':'1200','og:image:height':'630','og:image:alt':'Historica. Visualising history. A timeline of overlapping histories.'}).map(([property,value])=>`<meta property="${property}" content="${escape(value)}">`),...Object.entries({'twitter:card':'summary_large_image','twitter:title':title,'twitter:description':desc,'twitter:image':image,'twitter:image:alt':'Historica. Visualising history.'}).map(([name,value])=>`<meta name="${name}" content="${escape(value)}">`)];
+ if(website)tags.push('<script type="application/ld+json">'+JSON.stringify({'@context':'https://schema.org','@type':'WebSite',name:'Historica',url:origin+'/',description:desc,inLanguage:'en-GB',creator:{'@type':'Person',name:'Ian Sproates',url:'https://sproates.net',sameAs:['https://www.linkedin.com/in/sproates/','https://github.com/sproates']}}).replaceAll('<','\\u003c')+'</script>');
+ return '<!-- metadata:start -->\n'+tags.join('\n')+'\n<!-- metadata:end -->';
+}
