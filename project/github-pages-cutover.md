@@ -38,4 +38,4 @@ Reference: [Cloudflare Universal SSL activation](https://developers.cloudflare.c
 
 ## Staging rollback
 
-`Restore verified Pages staging` accepts the run ID of a successful push build from the verification workflow. It downloads that run's retained `github-pages` bundle, republishes the identical tar file and deploys it. It does not rebuild. It runs from main only and refuses a Pages destination with a custom domain attached. Bundles are retained for seven days; an expired artifact fails safely before deployment.
+`Restore verified Pages staging` accepts the run ID of a successful push build from the verification workflow. It downloads that run's retained `historica-pages-<commit>` artifact, verifies its file checksums, packages the unchanged files and deploys them. The temporary `github-pages` upload isn't relied on as a retained release. It does not rebuild. It runs from main only and refuses a Pages destination with a custom domain attached. Bundles are retained for seven days; an expired artifact fails safely before deployment.
