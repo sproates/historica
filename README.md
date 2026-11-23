@@ -60,7 +60,7 @@ Search uses a small index. The explorer loads the history records needed for com
 
 The Chronology design uses shared colours and typography in `web/appearance.css`, with a logo in `src/components/Brand.astro`. The moon button switches between light and dark modes. Until you choose, the site follows your system setting; your choice is saved in your browser.
 
-Cloudflare Web Analytics is configured for the next production release. It doesn't use cookies. The production package includes it when built with `HISTORICA_ANALYTICS_TOKEN`; local and staging previews don't load it. It counts page visits, rather than every change to a timeline or filter, and we don't send custom search or comparison events. See the [privacy page](https://historica.online/privacy) and [release instructions](RELEASE.md).
+The live site uses Cloudflare Web Analytics. It doesn't use cookies. The production package includes it when built with `HISTORICA_ANALYTICS_TOKEN`; local and staging previews don't load it. It counts page visits, rather than every change to a timeline or filter, and we don't send custom search or comparison events. See the [privacy page](https://historica.online/privacy) and [release instructions](RELEASE.md).
 
 ## Contributing
 
