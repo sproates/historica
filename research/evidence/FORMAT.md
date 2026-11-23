@@ -1,6 +1,6 @@
 # Historical evidence format
 
-Version 1.0 separates entities, historical claims, sources, evidence and review decisions. The executable validation contract is `scripts/lib/evidence.js`. `pilot.json` supplies structural examples; all historical claims in it remain drafts. It is not an accepted content pack.
+Version 1.0 separates entities, historical claims, sources, evidence and review decisions. The executable validation contract is `scripts/lib/evidence.ts`. `pilot.json` supplies structural examples; all historical claims in it remain drafts. It is not an accepted content pack.
 
 ## Records
 
@@ -36,8 +36,8 @@ A theme is unresearched, supported or limited. Supported themes link claims. Lim
 Run `npm run validate:research` for the pilot draft, or:
 
 ```sh
-node scripts/validate-evidence.mjs path/to/package.json
-node scripts/validate-evidence.mjs path/to/package.json --release
+node scripts/validate-evidence.ts path/to/package.json
+node scripts/validate-evidence.ts path/to/package.json --release
 npm test
 ```
 
