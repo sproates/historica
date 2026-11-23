@@ -54,11 +54,13 @@ All 230 histories have opt-in Astro pages using the same authored records and ti
 npm run check:static     # strict checks for Astro templates and page models
 npm run test:static      # type-check, build and check the pilot HTML
 npm run preview:static   # refresh the existing Wi-Fi preview with the pilot
+npm run build:static:incremental   # build and check changed history pages locally
+npm run preview:static:incremental # use the incremental output in the Wi-Fi preview
 ```
 
 Open `/person/alexander`, `/person/socrates` or `/area/egypt` on the existing preview. `npm run preview:sync` restores the normal prototype pages. Neither command publishes. The Astro output in `release/static-pilot/` is a page overlay, not a standalone deployable site: it uses the existing preview's styles, scripts and data.
 
-A typed browser coordinator enhances the static pages. Default pages retain their generated content when controls load; customised date, filter and comparison bookmarks still use the runtime renderer. The home, About and coverage pages still use their existing generation. Page models and Astro templates are now strictly checked before building. Static pages reuse their embedded world map and fetch only a small regional geometry file. The explorer loads evidence for the selected history, caches visited histories and uses a small shared chronology index for age comparisons. Full research records remain available to the build and coverage page. A unified runtime state, smaller history payloads and incremental generation remain to be completed. See [pilot notes](project/static-page-pilot.md).
+A typed browser coordinator enhances the static pages. Default pages retain their generated content when controls load; customised date, filter and comparison bookmarks still use the runtime renderer. The home, About and coverage pages still use their existing generation. Page models and Astro templates are now strictly checked before building. Static pages reuse their embedded world map and fetch only a small regional geometry file. The explorer loads evidence for the selected history, caches visited histories and uses a small shared chronology index for age comparisons. Full research records remain available to the build and coverage page. An opt-in local incremental builder reuses verified pages; CI still performs full static builds. A unified runtime state and smaller history payloads remain to be completed. See [pilot notes](project/static-page-pilot.md).
 
 ## History data contract
 

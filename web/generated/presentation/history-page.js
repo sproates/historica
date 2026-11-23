@@ -1,7 +1,7 @@
 import { initialFocus } from '../state/focus.js';
 import { rankedContext, focusAssociations, relatedEntities } from '../domain/history-queries.js';
 import { comparisonRecords, comparisonLayout, comparisonExplanation } from '../domain/comparison.js';
-import { timelineLayout } from '../domain/swimlane.js';
+import { regionFor, timelineLayout } from '../domain/swimlane.js';
 export const year = (y) => `${Math.abs(y).toLocaleString('en-GB')} ${y < 0 ? 'BCE' : 'CE'}`;
 export const dates = (a, b) => a === b ? year(a) : `${year(a)} – ${year(b)}`;
 export const href = (e) => `/${e.type}/${e.id}`;
@@ -82,7 +82,7 @@ export function createHistoryPage(data, id, evidence, countries) {
         const overlays = array(object(data.collection, 'collection')['historicalOverlays'], 'historical overlays');
         bactriaOutline = geometry(object(overlays[0], 'Bactria overlay')['geometry']);
     }
-    return { data, focus, state, ranked, places, focusPoint: ['area', 'city', 'state'].includes(focus.type) ? focus.point : null, checked: checkedStatements(evidence, focus),
+    return { placeTargets: Object.fromEntries(places.flatMap(a => { const target = data.entities.find(e => e.id === a.place); return target ? [[target.id, { id: target.id, title: target.title }]] : []; })), comparisonRegions: [focus, ...picks].map(e => regionFor(e, data, state)), focus, state, ranked, places, focusPoint: ['area', 'city', 'state'].includes(focus.type) ? focus.point : null, checked: checkedStatements(evidence, focus),
         comparisons: comparisonLayout([focus, ...picks], state), explanation: comparisonExplanation(picks, state),
         timeline: timelineLayout(focus, ranked, data, state), related: relatedEntities(data, state).filter(e => e.type !== 'event'),
         regionPaths: region.map(f => geometry(object(f, 'country')['geometry'])), regionPoints,

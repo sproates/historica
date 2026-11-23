@@ -1,0 +1,15 @@
+import {createHash} from 'node:crypto';
+export const digest=value=>createHash('sha256').update(typeof value==='string'||Buffer.isBuffer(value)?value:JSON.stringify(value)).digest('hex');
+
+/** Missing, changed or tampered outputs are rebuilt; removed routes are pruned only after success. */
+export function planPages(models,previous,shared,readOutput){
+ const changed=[],unchanged=[],pages={};
+ for(const {id,route,model} of models){
+  const fingerprint=digest([shared,model]);
+  const old=previous?.pages?.[route],output=readOutput(route);
+  if(old?.fingerprint===fingerprint&&output!==null&&digest(output)===old.output)unchanged.push(id);
+  else changed.push(id);
+  pages[route]={id,fingerprint};
+ }
+ return {changed,unchanged,pages,removed:Object.keys(previous?.pages||{}).filter(route=>!pages[route])};
+}

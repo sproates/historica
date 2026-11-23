@@ -2,11 +2,15 @@
 from pathlib import Path
 import json
 import shutil
+import argparse
 root = Path(__file__).resolve().parent.parent
 runtime = Path.home() / 'Library/Application Support/Historica/preview/web'
 if not runtime.is_dir():
     raise SystemExit('Persistent preview is not installed.')
-output = root / 'release/static-pilot'
+parser = argparse.ArgumentParser()
+parser.add_argument('--incremental', action='store_true')
+args = parser.parse_args()
+output = root / ('release/static-incremental' if args.incremental else 'release/static-pilot')
 routes = set(json.loads((root / 'web/data/routes.json').read_text()))
 pages = sorted(output.glob('*/*/index.html'))
 if not pages:

@@ -5,14 +5,15 @@ import {rankedContext,focusAssociations,relatedEntities} from '../domain/history
 import type {RankedHistory,RelatedHistory} from '../domain/history-queries.js';
 import {comparisonRecords,comparisonLayout,comparisonExplanation} from '../domain/comparison.js';
 import type {ComparisonLayout} from '../domain/comparison.js';
-import {timelineLayout} from '../domain/swimlane.js';
+import {regionFor,timelineLayout} from '../domain/swimlane.js';
 import type {TimelineLayout} from '../domain/swimlane.js';
 
 export interface Citation {url: string; title: string; creator: string; locator: string; note: string}
 export interface CheckedStatement {statement: string; citations: Citation[]}
 export type LocatedAssociation = PlaceAssociation & {point: GeoPoint};
 export interface HistoryPage {
-  data: HistoryDataset;
+  placeTargets: Record<string,{id: string; title: string}>;
+  comparisonRegions: string[];
   focus: HistoryEntity;
   state: FocusState;
   ranked: RankedHistory[];
@@ -101,7 +102,7 @@ export function createHistoryPage(data: HistoryDataset, id: string, evidence: un
     const overlays=array(object(data.collection,'collection')['historicalOverlays'],'historical overlays');
     bactriaOutline=geometry(object(overlays[0],'Bactria overlay')['geometry']);
   }
-  return {data,focus,state,ranked,places,focusPoint:['area','city','state'].includes(focus.type)?focus.point:null,checked:checkedStatements(evidence,focus),
+  return {placeTargets:Object.fromEntries(places.flatMap(a=>{const target=data.entities.find(e=>e.id===a.place);return target?[[target.id,{id:target.id,title:target.title}]]:[];})),comparisonRegions:[focus,...picks].map(e=>regionFor(e,data,state)),focus,state,ranked,places,focusPoint:['area','city','state'].includes(focus.type)?focus.point:null,checked:checkedStatements(evidence,focus),
     comparisons:comparisonLayout([focus,...picks],state),explanation:comparisonExplanation(picks,state),
     timeline:timelineLayout(focus,ranked,data,state),related:relatedEntities(data,state).filter(e=>e.type!=='event'),
     regionPaths:region.map(f=>geometry(object(f,'country')['geometry'])),regionPoints,

@@ -17,7 +17,16 @@ function loadInputs(){
 }
 
 export function historyEntities(){return loadInputs().data.entities;}
-export function historyPage(id){
+export function historyPage(id,{geography=true}={}){
   const {data,evidence,countries}=loadInputs();
-  return createHistoryPage(data,id,evidence,countries);
+  return createHistoryPage(data,id,evidence,geography?countries:{features:[]});
+}
+
+export function selectedHistoryEntities(){
+ const entities=historyEntities();
+ const file=process.env.HISTORICA_STATIC_SELECTION;
+ if(!file)return entities;
+ const ids=JSON.parse(fs.readFileSync(file,'utf8'));
+ if(!Array.isArray(ids)||ids.some(id=>!entities.some(e=>e.id===id)))throw new Error('Invalid static build selection');
+ return entities.filter(e=>ids.includes(e.id));
 }
