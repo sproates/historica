@@ -26,3 +26,14 @@ __pycache__/
 /web/.htaccess
 /web/sitemap.xml
 /web/robots.txt
+
+# Derived research exports; authored evidence stays under research/.
+/research/evidence/*-exploration.json
+/web/data/evidence/
+/web/data/browser-chronology.json
+/web/data/browser-evidence.json
+/web/data/reviewed-evidence.json
+/web/data/reviewed-exploration.json
+/web/data/coverage.json
+/web/data/coverage-research.json
+/web/data/map-regions.json

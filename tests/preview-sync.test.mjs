@@ -13,7 +13,7 @@ test('preview refresh prunes retired generated files without touching other prev
  try{
   write(path.join(project,'scripts/sync-preview.py'),fs.readFileSync('scripts/sync-preview.py'));
   write(path.join(project,'scripts/preview-server.py'),'# server fixture');
-  for(const folder of ['pages','generated']){
+  for(const folder of ['pages','generated','data/evidence']){
    write(path.join(project,'web',folder,'current.txt'),'new');
    write(path.join(runtime,'web',folder,'current.txt'),'old');
    write(path.join(runtime,'web',folder,'retired.txt'),'retired');
@@ -21,7 +21,7 @@ test('preview refresh prunes retired generated files without touching other prev
   write(path.join(runtime,'web/unrelated.txt'),'keep');
   const run=spawnSync('python3',['-c','import pathlib,runpy,sys; from unittest.mock import patch\nwith patch.object(pathlib.Path,"home",return_value=pathlib.Path(sys.argv[1])): runpy.run_path(sys.argv[2],run_name="__main__")',home,path.join(project,'scripts/sync-preview.py')],{encoding:'utf8'});
   assert.equal(run.status,0,run.stderr);
-  for(const folder of ['pages','generated']){
+  for(const folder of ['pages','generated','data/evidence']){
    assert.equal(fs.readFileSync(path.join(runtime,'web',folder,'current.txt'),'utf8'),'new');
    assert.equal(fs.existsSync(path.join(runtime,'web',folder,'retired.txt')),false);
   }
