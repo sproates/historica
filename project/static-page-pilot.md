@@ -75,3 +75,9 @@ Static checks cover every route, canonical metadata and controller hooks, plus c
 A typed startup check compares the generated focus with the restored content state. Matching pages retain their introduction, comparisons, timeline, map and evidence. Camera and disclosure bookmarks are restored independently. Changed dates, filters, selected years, comparison people and expanded lanes use the existing renderer; legacy pages without static markup also retain that path.
 
 Form state synchronisation is shared between enhancement and rendering. Map points are registered without replacing the SVG, and the generated camera is retained during initialisation. Entry-point tests record DOM writes to verify content preservation and exercise focus navigation, Back and customised bookmarks. This removes the initial default-page redraw, but does not yet remove the full collection download or replace rendering after interactions.
+
+## Typed interactive rendering
+
+`src/presentation/history-renderer.ts` now owns the interactive introduction, comparisons, timeline, detail rows, connections, map, evidence and year view. It reads current state through a callback and receives map fitting as a dependency. Loading, navigation and browser history remain in the entry point. The age formatter now declares only the record fields it reads, so timeline records can use it without pretending their event-dot flag is a geographic coordinate.
+
+A temporary migration comparison checked 690 default, people-filtered and single-year views against the previous renderer. Permanent tests cover rendering all 230 histories, switching comparison and year state, escaping authored descriptions, preserving expanded prose and retaining sources for unlocated associations. This change does not reduce downloaded data yet.

@@ -11,7 +11,7 @@ export function dateMeaning(e: Pick<HistoryEntity,'type'|'title'|'dateLabel'|'no
  if(/approx|uncertain|dating unresolved|date uncertain/.test(note))return 'Approximate dates';
  return e.type==='event'?'Event':'Period';
 }
-export function ageAt(e: HistoryEntity,year: number,evidence?: ChronologyEvidence | null): string | null{
+export function ageAt(e: Pick<HistoryEntity,'type'|'startYear'|'endYear'|'claimIds'|'title'|'note'|'dateLabel'>,year: number,evidence?: ChronologyEvidence | null): string | null{
  if(e.type!=='person')return null;
  if(year<e.startYear)return 'Not yet born';
  if(year>e.endYear)return 'After recorded lifespan';
