@@ -1,9 +1,10 @@
 ---
+import Brand from "../components/Brand.astro";
 import SiteLayout from '../layouts/SiteLayout.astro';
 import ThemeControl from '../components/ThemeControl.astro';
 ---
 <SiteLayout title="Privacy · Historica" description="How Historica handles analytics, cookies, appearance preferences and links to other sites." path="/privacy" page="privacy">
-<header><a href="/" class="brand">historica</a><span class="beta-sash">BETA</span><nav aria-label="Main navigation"><a href="/">Explore</a><a href="/about">About</a></nav><ThemeControl /></header>
+<header><Brand /><span class="beta-sash">BETA</span><nav aria-label="Main navigation"><a href="/">Explore</a><a href="/about">About</a></nav><ThemeControl /></header>
 <main class="about-page"><h1>Privacy</h1><p class="about-lead">You can explore Historica without an account. We don’t use advertising cookies or build profiles of the people who visit.</p>
 <section><h2>Analytics</h2><p>We use Cloudflare Web Analytics to understand which pages people visit and how well the site performs. It measures things such as page visits, loading times, browser type and broad geographical location.</p><p>Cloudflare Web Analytics does not use cookies or browser storage to collect these metrics, and does not fingerprint individual visitors. Cloudflare says it does not log URL query strings. We do not add search terms, comparison selections or slider movements as custom tracking events.</p><p>We use these figures to improve the site, not to follow individual visitors around the web.</p><p>You can read more in Cloudflare’s <a href="https://developers.cloudflare.com/web-analytics/data-metrics/core-web-vitals/">analytics documentation</a> and <a href="https://developers.cloudflare.com/web-analytics/faq/">Web Analytics FAQ</a>.</p></section>
 <section><h2>Cookies and your appearance preference</h2><p>Historica’s application does not set cookies. The moon button saves your choice of light or dark mode in this browser using local storage. That preference stays on your device; it is not sent to our analytics service.</p><p>You can remove the saved preference by clearing this site’s data in your browser. Without a saved choice, Historica follows your device’s appearance setting.</p></section>
