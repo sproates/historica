@@ -37,3 +37,40 @@ test('pilot retains every existing controller hook exactly once',()=>{
   assert.match(html,/src="focus-app\.js\?v=exploration-2"/);
   assert.match(html,/<base href="\/"/);
 });
+
+test('Socrates is a static page with the war comparison and checked source passages',()=>{
+  const page=historyPage('socrates');
+  const html=fs.readFileSync('release/static-pilot/person/socrates/index.html','utf8');
+  assert.match(html,/<body data-static-history="socrates">/);
+  assert.match(html,/<h1 id="focus-title">Socrates<\/h1>/);
+  assert.ok(html.includes('Socrates was alive throughout the Peloponnesian War'));
+  assert.ok(html.includes(dates(-469,-399)));
+  assert.ok(page.checked.length>0);
+  for(const claim of page.checked)for(const source of claim.citations)assert.ok(html.includes(source.url.replaceAll('&','&amp;')),source.url);
+  assert.match(html,/href="https:\/\/historica.online\/person\/socrates"/);
+});
+
+test('Egypt renders a study window and a fitted geographical reference rather than a lifespan',()=>{
+  const page=historyPage('egypt');
+  const html=fs.readFileSync('release/static-pilot/area/egypt/index.html','utf8');
+  assert.match(html,/<body data-static-history="egypt">/);
+  assert.match(html,/<button id="fit">Fit study period<\/button>/);
+  assert.ok(html.includes(dates(-3100,200)));
+  assert.ok(html.includes('editorial study window'));
+  assert.ok(html.includes('Focus area reference: Egypt'));
+  assert.ok(html.includes('Place study window'));
+  const camera=fitMapCamera([...page.places.map(a=>xy(a.point)),xy(page.focusPoint)]);
+  assert.ok(camera.w<720);
+  assert.ok(html.includes(`viewBox="${camera.x} ${camera.y} ${camera.w} ${camera.w/2}"`));
+  assert.match(html,/href="https:\/\/historica.online\/area\/egypt"/);
+});
+
+test('all three pilot routes retain the controller hooks exactly once',()=>{
+  const ids=text=>[...text.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
+  const expected=new Set(ids(fs.readFileSync('web/focus.html','utf8')));
+  for(const route of ['person/alexander','person/socrates','area/egypt']){
+    const html=fs.readFileSync(`release/static-pilot/${route}/index.html`,'utf8'),actual=ids(html);
+    assert.equal(new Set(actual).size,actual.length,route);
+    assert.deepEqual(new Set(actual),expected,route);
+  }
+});

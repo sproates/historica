@@ -1,0 +1,17 @@
+---
+import type {GetStaticPaths} from 'astro';
+import type {HistoryPage} from '../../presentation/history-page';
+import HistoryLayout from '../../layouts/HistoryLayout.astro';
+import HistoryExplorer from '../../components/HistoryExplorer.astro';
+import {historyPage} from '../../../scripts/static/history-page.mjs';
+
+export const getStaticPaths = (() => ['alexander','socrates','egypt'].map(id => {
+  const page=historyPage(id);
+  return {params:{type:page.focus.type,id},props:{page}};
+})) satisfies GetStaticPaths;
+interface Props {page: HistoryPage}
+const {page}=Astro.props;
+---
+<HistoryLayout focus={page.focus}>
+  <HistoryExplorer page={page} />
+</HistoryLayout>
