@@ -53,3 +53,11 @@ GoDaddy comparison completed on 23 November: all four transferable records match
 Ian confirmed that the repository must be cleaned up and made public before the production move to GitHub Pages. Existing private-repository staging is only a rehearsal. Do not change repository visibility, enable website proxying or switch production hosting until this prerequisite is met and the release is explicitly approved.
 
 Cleanup review must cover tracked files and Git history for credentials and private deployment details; generated output duplication (`docs/` and generated `web/pages/`); obsolete prototype assets and scripts; the README’s conflicting historical counts, hosting statements and no-CI instructions; current setup/release guidance; and code/content/third-party licence attribution. Preserve the live ASO deployment and rollback material while doing this work. History rewriting, if needed, requires a separate concrete decision after the audit.
+
+## Fresh private repository staging
+
+The original repository was renamed to historica-private-archive and archived privately with Actions disabled. The new private historica repository contains the sanitised history and cleanup work on main. No production DNS or custom-domain change was made.
+
+In this session, pushes to the fresh repository did not produce visible push-triggered Actions runs. Explicit workflow dispatch did run successfully; the cause of absent push triggers has not been established. Do not describe automatic push CI as verified yet. The staging workflow now also accepts manual dispatch on feature/github-pages-preparation, with the same verification dependency, branch restriction, environment policy and no-production-domain guard. Manual dispatch on main remains verification-only.
+
+An attempt to restore the manual verification artifact was correctly rejected because the restore workflow only accepts push-built releases. No deployment occurred from that attempt. The normal verification/staging workflow is being used instead.
