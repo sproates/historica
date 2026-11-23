@@ -4,7 +4,7 @@ import {setupMap} from '../web/focus-map.js';
 test('map supports anchored pinch, two-finger pan, lifting a finger and trackpad gestures',()=>{
  const controls=new Map();const handlers={};let view;
  const oldDocument=globalThis.document;
- globalThis.document={getElementById(id){if(!controls.has(id))controls.set(id,{value:1});return controls.get(id);}};
+ globalThis.document={getElementById(id){if(!controls.has(id))controls.set(id,{value:1,addEventListener(){},removeEventListener(){}});return controls.get(id);}};
  const svg={setAttribute(k,v){if(k==='viewBox')view=v.split(' ').map(Number);},style:{setProperty(){}},getBoundingClientRect:()=>({left:0,top:0,width:720,height:360}),setPointerCapture(){},addEventListener(k,fn){handlers[k]=fn;}};
  const pointer=(id,x,y)=>({button:0,pointerId:id,clientX:x,clientY:y});
  try{
