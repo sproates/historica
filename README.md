@@ -44,6 +44,12 @@ npm run build:pages      # GitHub Pages staging output in release/pages-site/
 
 Build commands don't publish. `docs/` and `release/` are local build outputs, excluded from Git. Generated pages under `web/pages/` remain tracked for now because the development and preview workflows consume them directly.
 
+## History data contract
+
+`src/domain/history.ts` defines histories, dated place associations and connections. `src/content/validate-history.ts` validates the assembled legacy collection before it crosses into typed code. `npm run validate:history` checks IDs, source and claim references, date ordering, uncertainty envelopes, geographical coordinates and relationship endpoints. This also runs as part of `npm test` and CI.
+
+Validation preserves the input object and all its fields. It doesn't fill missing locations, invent relationship dates or certify historical claims. Evidence review remains separate. The authored data still lives in the existing JSON files and JavaScript builders; moving it into individual content records is a later migration.
+
 ## Hosting and development status
 
 Production runs on ASO. GitHub Actions verifies changes and skips the site build for explicitly allowlisted internal documentation changes. A private-repository GitHub Pages deployment is a migration rehearsal, not the production site.
