@@ -54,3 +54,25 @@ test('sharing patch changes images and metadata while preserving app, data and p
   assert.deepEqual(fs.readFileSync(path.join(output,next)),png);assert.equal(fs.existsSync(path.join(output,old)),false);
  }finally{fs.rmSync(root,{recursive:true,force:true});}
 });
+
+test('release extraction rejects escaping paths and links before they can write outside the bundle',async()=>{
+ const {spawnSync}=await import('node:child_process');
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'historica-archive-'));
+ try{
+  for(const mode of ['valid','parent','absolute','symlink']){
+   const tar=path.join(root,mode+'.tar'),archive=tar+'.zst',destination=path.join(root,mode);
+   const make=spawnSync('python3',['-c',`import io,sys,tarfile
+mode=sys.argv[2]
+with tarfile.open(sys.argv[1],'w') as t:
+ m=tarfile.TarInfo({'valid':'production-site/index.html','parent':'../outside','absolute':'/outside','symlink':'link'}[mode])
+ if mode=='symlink': m.type=tarfile.SYMTYPE; m.linkname='../outside'; t.addfile(m)
+ else: m.size=2; t.addfile(m,io.BytesIO(b'ok'))`,tar,mode],{encoding:'utf8'});
+   assert.equal(make.status,0,make.stderr);
+   assert.equal(spawnSync('zstd',['-q',tar,'-o',archive]).status,0);
+   const unpack=spawnSync('python3',['scripts/unpack-release.py',archive,destination],{encoding:'utf8'});
+   if(mode==='valid'){assert.equal(unpack.status,0,unpack.stderr);assert.equal(fs.readFileSync(path.join(destination,'production-site/index.html'),'utf8'),'ok');}
+   else assert.notEqual(unpack.status,0,mode);
+   assert.equal(fs.existsSync(path.join(root,'outside')),false);
+  }
+ }finally{fs.rmSync(root,{recursive:true,force:true});}
+});

@@ -8,7 +8,7 @@ Use Node.js 26 and `npm ci`. Run checks appropriate to the change. Design, wordi
 
 The source is under `src/`, `content/` and `research/`, with shared styles and assets in `web/`. Generated HTML, JavaScript and data aren't source files. `npm run preview:sync` rebuilds the affected pages and refreshes the persistent Wi-Fi preview. It doesn't change production.
 
-A PR builds and verifies the production package once. After merge, main reuses it only when the source tree matches exactly, the original check passed, the artifact is intact and analytics configuration is unchanged. It also carries forward the verified incremental page cache. Missing or ineligible artifacts fall back to full verification.
+A PR builds and verifies the production package once. After merge, main reuses it only when the source tree matches exactly, the original check passed, the artifact is intact and analytics configuration is unchanged. It also carries forward the verified incremental page cache. The release and cache are compressed together in a Zstandard archive so repeated page markup is stored once, rather than zipped separately for every file. Older flat artifacts remain usable for recovery. Missing or ineligible artifacts fall back to full verification.
 
 Sharing artwork changes have a narrower path. Image files and image-URL-only changes to metadata use a verified main-branch package as their baseline. CI checks PNG dimensions, refreshes the image references and checks the resulting package, without installing dependencies, rebuilding pages or running app tests. Any other code or layout change takes the normal verification path.
 

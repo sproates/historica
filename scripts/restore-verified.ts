@@ -22,20 +22,27 @@ export function restoreVerified(mode:'tree'|'base',key:string,output='release/pr
    const run:Run=api(`actions/runs/${artifact.workflow_run.id}`);
    const testedTree=mode==='tree'?api(`git/commits/${run.head_sha}`).tree.sha:undefined;
    if(!eligibleArtifact(artifact,run,name,mode,key,testedTree))continue;
-   fs.rmSync(output,{recursive:true,force:true});
-   const download=mode==='tree'?'release/reused-pr':output;
-   if(mode==='tree')fs.rmSync(download,{recursive:true,force:true});
+   const download='release/restored-artifact';
+   fs.rmSync(download,{recursive:true,force:true});
    execFileSync('gh',['run','download',String(run.id),'--repo',repository,'--name',name,'--dir',download],{stdio:'pipe'});
-   if(mode==='tree')fs.renameSync(path.join(download,'production-site'),output);
+   const archive=path.join(download,'site.tar.zst');
+   if(fs.existsSync(archive)){
+    execFileSync('python3',['scripts/unpack-release.py',archive,download],{stdio:'pipe'});
+    fs.unlinkSync(archive);
+   }
+   fs.rmSync(output,{recursive:true,force:true});
+   const nested=path.join(download,'production-site');
+   fs.renameSync(fs.existsSync(nested)?nested:download,output);
    verifyPages(output);
    const manifest=JSON.parse(fs.readFileSync(path.join(output,'release-manifest.json'),'utf8'));
    if(!manifest.production||manifest.base!=='/'||!manifest.analytics)throw Error('Not a production package');
    const token=process.env.HISTORICA_ANALYTICS_TOKEN;
    if(!token||!fs.readFileSync(path.join(output,'index.html'),'utf8').includes(`<meta name="historica-analytics" content="${token}">`))throw Error('Analytics configuration changed');
-   if(mode==='tree'&&fs.existsSync('release/reused-pr/static-incremental')){
+   if(fs.existsSync(path.join(download,'static-incremental'))){
     fs.rmSync('release/static-incremental',{recursive:true,force:true});
-    fs.renameSync('release/reused-pr/static-incremental','release/static-incremental');
+    fs.renameSync(path.join(download,'static-incremental'),'release/static-incremental');
    }
+   fs.rmSync(download,{recursive:true,force:true});
    console.log(`Reused verified ${mode==='tree'?'PR package':'baseline'} from run ${run.id}.`);
    return true;
   }

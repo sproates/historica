@@ -1,5 +1,5 @@
 name: Deploy or restore Historica production
-"on":
+on:
   workflow_dispatch:
     inputs:
       run_id:
@@ -26,6 +26,9 @@ jobs:
       pages: write
       id-token: write
     steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
       - name: Validate the original release and production destination
         id: release
         env:
@@ -45,29 +48,40 @@ jobs:
           fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,`Restoring verified run ${release.id}, source commit ${release.head_sha}. No rebuild.\n`);
           JS
       - name: Download the verified site files
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
         with:
           name: historica-production-${{ steps.release.outputs.sha }}
           path: restored
           run-id: ${{ inputs.run_id }}
           github-token: ${{ github.token }}
+      - name: Unpack the retained release
+        run: |-
+          if [ -f restored/site.tar.zst ]; then
+            python3 scripts/unpack-release.py restored/site.tar.zst restored
+            rm restored/site.tar.zst
+          fi
+          if [ -d restored/production-site ]; then
+            mv restored/production-site published
+          else
+            mv restored published
+          fi
       - name: Verify retained file checksums
         run: |
           node <<'JS'
           const fs=require('node:fs'),crypto=require('node:crypto');
-          const m=JSON.parse(fs.readFileSync('restored/release-manifest.json'));
+          const m=JSON.parse(fs.readFileSync('published/release-manifest.json'));
           if(m.target!=='github-pages'||!m.production||m.base!=='/'||!m.analytics)throw Error('Not an analytics-enabled production artifact');
           for(const f of m.files){
             if(f.path.startsWith('/')||f.path.split('/').includes('..'))throw Error('Invalid file path');
-            const hash=crypto.createHash('sha256').update(fs.readFileSync('restored/'+f.path)).digest('hex');
+            const hash=crypto.createHash('sha256').update(fs.readFileSync('published/'+f.path)).digest('hex');
             if(hash!==f.sha256)throw Error('Artifact checksum mismatch: '+f.path);
           }
           JS
       - name: Package verified files without rebuilding
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
         with:
-          path: restored/
+          path: published/
           retention-days: 90
       - name: Deploy the restored bundle
         id: deploy
-        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
