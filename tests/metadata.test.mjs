@@ -5,6 +5,7 @@ const read=p=>fs.readFileSync('web/'+p,'utf8');
 test('every published history has unique crawler-visible metadata and canonical path',()=>{
  const routes=JSON.parse(read('data/routes.json'));
  const sitemap=read('sitemap.xml');
+ assert.deepEqual(fs.readdirSync('web/pages').filter(file=>file.endsWith('.html')).sort(),routes.map(route=>route.split('/').at(-1)+'.html').sort(),'generated page inventory matches the current routes');
  for(const route of routes){
   const html=read('pages/'+route.split('/').at(-1)+'.html');
   assert.equal((html.match(/<title>/g)||[]).length,1,route);
