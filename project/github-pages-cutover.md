@@ -28,7 +28,7 @@ Implementation: [preparation PR](https://github.com/sproates/historica/pull/1). 
 
 ## HTTPS preparation
 
-Ian confirmed an existing Cloudflare account on 23 November. It is also used by other projects: no account-wide settings or unrelated resources may be changed. The current browser session requires sign-in; no Cloudflare changes have been made.
+Ian confirmed an existing Cloudflare account on 23 November. It is also used by other projects: no account-wide settings or unrelated resources may be changed. Ian signed in. A free Historica-only zone has now been prepared; no other project or account-wide settings were changed. All four scanned records are DNS-only, with the apex still pointing at ASO. Registrar nameservers have not changed. Before activation, compare the scanned A, www CNAME, _domainconnect CNAME and _dmarc TXT against the full GoDaddy zone. Assigned nameservers are recorded in Cloudflare, not applied at GoDaddy.
 
 The first Cloudflare step is inspection of an existing `historica.online` zone, if present, and preparation of its DNS records without changing registrar delegation. Keep website records DNS-only and pointed at ASO during any nameserver transition. Cloudflare documents that Universal SSL can be issued while records are DNS-only after activation; only enable proxying once the certificate is active and the ASO origin passes strict TLS validation. Copy and verify the full DNS zone, including mail records and DNSSEC state, rather than assuming the visible website records are sufficient.
 
@@ -39,3 +39,5 @@ Reference: [Cloudflare Universal SSL activation](https://developers.cloudflare.c
 ## Staging rollback
 
 `Restore verified Pages staging` accepts the run ID of a successful push build from the verification workflow. It downloads that run's retained `historica-pages-<commit>` artifact, verifies its file checksums, packages the unchanged files and deploys them. The temporary `github-pages` upload isn't relied on as a retained release. It does not rebuild. It runs from main only and refuses a Pages destination with a custom domain attached. Bundles are retained for seven days; an expired artifact fails safely before deployment.
+
+Rollback rehearsal passed on 23 November: [restoration run](https://github.com/sproates/historica/actions/runs/45158198224) restored the original staging release from run 45155742618, verified file checksums and deployed without rebuilding. The restored Socrates route passed an HTTPS check with bookmark query preserved. Production still resolves through GoDaddy to ASO.
