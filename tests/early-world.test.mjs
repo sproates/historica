@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {buildFocusData,initialFocus,rankedContext,relatedEntities,focusAssociations} from '../web/focus-model.js';
-import {timelineLayout} from '../web/swimlane-model.js';
+import {timelineLayout} from '../web/generated/domain/swimlane.js';
 import {validateEvidence} from '../scripts/lib/evidence.js';
 const read=p=>JSON.parse(fs.readFileSync(p));
 const adapter=read('research/evidence/early-world-exploration.json');

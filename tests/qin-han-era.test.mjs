@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 import {validateEvidence} from '../scripts/lib/evidence.js';
 import {buildFocusData,initialFocus,relatedEntities,focusAssociations,rankedContext,changeFocus} from '../web/focus-model.js';
-import {searchEntities} from '../web/search-model.js';
+import {searchEntities} from '../web/generated/domain/search.js';
 const read=p=>JSON.parse(fs.readFileSync(p));
 const pack=read('research/evidence/qin-han-era-reviewed.json'),adapter=read('research/evidence/qin-han-era-exploration.json');
 const data=buildFocusData(read('web/data/collection.json'),read('web/data/reviewed-exploration.json'));

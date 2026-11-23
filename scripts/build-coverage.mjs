@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import {validateEvidence} from './lib/evidence.js';
-import {validateCoverage} from '../web/coverage-model.js';
+import {validateCoverage} from '../web/generated/domain/coverage.js';
 const data = JSON.parse(fs.readFileSync('research/programme/coverage.json', 'utf8'));
 const batch = JSON.parse(fs.readFileSync('research/batches/britain-ireland-500-251.json', 'utf8'));
 const errors = [...validateCoverage(data), ...validateEvidence(batch)];

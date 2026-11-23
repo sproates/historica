@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {buildFocusData,initialFocus,rankedContext,focusAssociations} from '../web/focus-model.js';
-import {searchEntities} from '../web/search-model.js';
+import {searchEntities} from '../web/generated/domain/search.js';
 import {validateEvidence} from '../scripts/lib/evidence.js';
 const read=p=>JSON.parse(fs.readFileSync(p));
 const pack=read('research/evidence/world-lifeways-reviewed.json');

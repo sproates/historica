@@ -2,8 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {buildFocusData,initialFocus,rankedContext,relatedEntities} from '../web/focus-model.js';
-import {comparisonRecords,comparisonLayout,outsideVisiblePeriod} from '../web/comparison-model.js';
-import {regionFor,timelineLayout} from '../web/swimlane-model.js';
+import {comparisonRecords,comparisonLayout,outsideVisiblePeriod} from '../web/generated/domain/comparison.js';
+import {regionFor,timelineLayout} from '../web/generated/domain/swimlane.js';
 const read=p=>JSON.parse(fs.readFileSync(p));
 const data=buildFocusData(read('web/data/collection.json'),read('web/data/reviewed-exploration.json'));
 test('opening comparisons are drawn only from the visible filtered context',()=>{

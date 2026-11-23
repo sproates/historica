@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {buildFocusData} from '../web/focus-model.js';
-import {encodeView,decodeView} from '../web/view-url.js';
+import {encodeView,decodeView} from '../web/generated/state/view-url.js';
 const data=buildFocusData(JSON.parse(fs.readFileSync(new URL('../web/data/collection.json',import.meta.url))));
 test('empty and unknown focus links open Alexander while older explicit links survive',()=>{
  for(const hash of ['', '/', '#focus=missing'])assert.equal(decodeView(hash,data).state.focus,'alexander');

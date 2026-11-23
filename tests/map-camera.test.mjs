@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {fitMapCamera} from '../web/generated/domain/map-camera.js';
-import {setupMap} from '../web/focus-map.js';
+import {setupMap} from '../web/generated/controllers/map-controls.js';
 
 test('fitted map includes every point and stays within the world',()=>{
   for(const points of [[],[[400,110]],[[360,80],[520,150]],[[0,0],[720,360]]]){

@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import {splitRegion} from '../web/coverage-model.js';
+import {splitRegion} from '../web/generated/domain/coverage.js';
 const [regionId, definitionPath] = process.argv.slice(2);
 if (!regionId || !definitionPath) throw new Error('Usage: node scripts/split-coverage.mjs REGION children.json');
 const path = 'research/programme/coverage.json';

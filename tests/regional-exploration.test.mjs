@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {buildFocusData,temporalLabel,initialFocus,changeFocus,rankedContext,focusAssociations} from '../web/focus-model.js';
-import {encodeView,decodeView} from '../web/view-url.js';
+import {encodeView,decodeView} from '../web/generated/state/view-url.js';
 const read=p=>JSON.parse(fs.readFileSync(p));
 const exploration=read('web/data/reviewed-exploration.json');
 const evidence=read('web/data/reviewed-evidence.json');

@@ -32,7 +32,7 @@ On macOS, `npm run preview:install` installs the persistent preview service. Aft
 | `design/` | Earlier sketches and prototype references |
 | `project/` | Migration status and working notes |
 
-`web/focus-app.js`, `web/focus-model.js`, `web/focus-map.js` and `web/focus.css` contain the main explorer. Earlier campaign views remain in use as prototype references; their removal needs a dependency review.
+`src/browser/explorer.ts` coordinates the main explorer, with models, controllers and rendering under `src/`. `web/focus-app.js` is its browser entry point and `web/focus.css` supplies the styles. The earlier campaign prototype is still linked from the explorer; its retirement is separate from removing unused migration adapters.
 
 Edit source records and templates, then run the relevant generators. Don't edit `web/pages/` by hand: `scripts/build-metadata.mjs` generates those pages and their sharing metadata. The current data layout is transitional; the [sustainability plan](SUSTAINABILITY-PLAN.md) describes the intended replacement.
 

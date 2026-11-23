@@ -137,3 +137,7 @@ Tests compare search destinations for every history against the existing model a
 `src/domain/coverage.ts` now owns the research registry contracts, validation, coverage totals and subdivision rules. `src/browser/coverage.ts` owns the planning grid, filters, selected package, draft findings and bookmark state. The old browser entry and model paths are compatibility adapters. Historical research, wording and layout are unchanged.
 
 The browser checks registry consistency before displaying totals. Existing model tests still cover parent/child completion and reject unsupported acceptance; new controller tests cover bookmarked filters, the Egyptian introduction, empty results, unchanged worldwide totals and failed inputs. The refreshed Wi-Fi preview was checked with a saved European view, the accepted filter and the Egyptian introduction. Production remains unchanged.
+
+## Removing migration adapters
+
+Eight redundant browser adapters have been removed: comparison, coverage, exploration, search, swimlane and timeline models, map controls and view URLs. Tests and build tools now import the compiled TypeScript modules directly. The campaign prototype also imports the compiled timeline model directly. The current browser entry points still derive their mount path through `site-path.js`. The campaign page remains linked and functional; removing it requires a separate navigation change. Generated output remains tracked while preview and release tooling still use it.
