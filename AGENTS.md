@@ -23,3 +23,6 @@ Never use `codex` in a Git branch name. Use descriptive `feature/…`, `fix/…`
 - Production FTPS operations must remain confined to the confirmed Historica document root in the ignored local deployment configuration. Never store credentials in Git or project files.
 
 Refresh the persistent preview after edits with `npm run preview:sync`. Files are copied to `~/Library/Application Support/Historica/preview/` so the background service does not depend on access to the Documents folder. This command never changes production.
+
+## Cloudflare scope
+- Ian uses Cloudflare for other projects. Limit work to the `historica.online` zone and explicitly Historica-specific resources. Never change other zones, projects or account-wide settings. Check for existing Historica resources before creating any.

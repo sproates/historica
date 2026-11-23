@@ -25,3 +25,17 @@ Sources: [GitHub Pages HTTPS provisioning](https://docs.github.com/en/pages/gett
 The larger TypeScript, data and static-rendering refactor is described in [the sustainability plan](../SUSTAINABILITY-PLAN.md). This preparation removes the hosting dependency without attempting that rewrite at the same time.
 
 Implementation: [preparation PR](https://github.com/sproates/historica/pull/1). First successful staging deployment: [GitHub Actions run](https://github.com/sproates/historica/actions/runs/45155742618). The remaining cutover work starts at gate 4; production traffic has not moved.
+
+## HTTPS preparation
+
+Ian confirmed an existing Cloudflare account on 23 November. It is also used by other projects: no account-wide settings or unrelated resources may be changed. The current browser session requires sign-in; no Cloudflare changes have been made.
+
+The first Cloudflare step is inspection of an existing `historica.online` zone, if present, and preparation of its DNS records without changing registrar delegation. Keep website records DNS-only and pointed at ASO during any nameserver transition. Cloudflare documents that Universal SSL can be issued while records are DNS-only after activation; only enable proxying once the certificate is active and the ASO origin passes strict TLS validation. Copy and verify the full DNS zone, including mail records and DNSSEC state, rather than assuming the visible website records are sufficient.
+
+This establishes a certificate-ready edge while ASO still serves the site. The subsequent GitHub origin switch still requires a tested, strictly validated HTTPS upstream and correct host/path handling. A Cloudflare account alone does not prove that step. Do not change DNS or attach the production GitHub domain until that route is concrete and verified.
+
+Reference: [Cloudflare Universal SSL activation](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/enable-universal-ssl/).
+
+## Staging rollback
+
+`Restore verified Pages staging` accepts the run ID of a successful push build from the verification workflow. It downloads that run's retained `github-pages` bundle, republishes the identical tar file and deploys it. It does not rebuild. It runs from main only and refuses a Pages destination with a custom domain attached. Bundles are retained for seven days; an expired artifact fails safely before deployment.
