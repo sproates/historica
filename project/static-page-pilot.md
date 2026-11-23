@@ -14,7 +14,7 @@ The build reads the canonical Markdown and YAML histories through the existing a
 
 The pilot is excluded from production and Pages packaging. Its output is a page overlay that depends on the existing assets, not an independently deployable artifact. It is marked noindex. The repository remains private and ASO remains live.
 
-The current interaction controller still fetches the full collection and rebuilds the displayed regions. Static generation alone doesn't fix that. Astro templates and their page models are now strictly checked before the static build.
+The current interaction controller still fetches the full collection. Default pages now retain the generated content while controls attach. Customised content bookmarks and subsequent interactions still rebuild displayed regions through the existing renderer. Astro templates and their page models are now strictly checked before the static build.
 
 ## Checks and next work
 
@@ -69,3 +69,9 @@ All 147 existing tests and six static-page tests pass. Browser checks confirmed 
 The static build now covers every authored history across all six focus types. Regional evidence sections include their source passages, Britain and Ireland retains its highlighted land outline, and single-year events retain visible detail tracks for overlapping lives. Authored input files are loaded once per build rather than reread for every route. This is shared input loading, not incremental generation.
 
 Static checks cover every route, canonical metadata and controller hooks, plus contextual evidence, regional map fitting and single-year detail tracks. Production packaging remains unchanged.
+
+## Preserve generated content on startup
+
+A typed startup check compares the generated focus with the restored content state. Matching pages retain their introduction, comparisons, timeline, map and evidence. Camera and disclosure bookmarks are restored independently. Changed dates, filters, selected years, comparison people and expanded lanes use the existing renderer; legacy pages without static markup also retain that path.
+
+Form state synchronisation is shared between enhancement and rendering. Map points are registered without replacing the SVG, and the generated camera is retained during initialisation. Entry-point tests record DOM writes to verify content preservation and exercise focus navigation, Back and customised bookmarks. This removes the initial default-page redraw, but does not yet remove the full collection download or replace rendering after interactions.
