@@ -81,3 +81,9 @@ Form state synchronisation is shared between enhancement and rendering. Map poin
 `src/presentation/history-renderer.ts` now owns the interactive introduction, comparisons, timeline, detail rows, connections, map, evidence and year view. It reads current state through a callback and receives map fitting as a dependency. Loading, navigation and browser history remain in the entry point. The age formatter now declares only the record fields it reads, so timeline records can use it without pretending their event-dot flag is a geographic coordinate.
 
 A temporary migration comparison checked 690 default, people-filtered and single-year views against the previous renderer. Permanent tests cover rendering all 230 histories, switching comparison and year state, escaping authored descriptions, preserving expanded prose and retaining sources for unlocated associations. This change does not reduce downloaded data yet.
+
+## Reuse the generated map
+
+Static pages now reuse the world paths already present in their HTML. They fetch a 28,799-byte regional geometry file instead of the 2,294,670-byte country dataset. Coordinates and outlines are unchanged. These are uncompressed file sizes, not measured transfer sizes; the generated HTML still contains the base map. Legacy pages without embedded paths retain the full-data fallback.
+
+The regional file is regenerated from the existing country source during content builds and checked for drift in CI. Tests verify the requested asset, exact regional geometry, preserved base paths and legacy fallback. Browser checks cover switching to Britain and Ireland, fitting its area and reloading. History and evidence downloads remain unchanged.

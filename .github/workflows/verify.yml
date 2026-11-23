@@ -55,7 +55,7 @@ jobs:
           npm test
           npm run test:static
           npm run build:pages
-          git diff --exit-code -- research/evidence/\*-exploration.json web/data/reviewed-exploration.json web/generated/content/prototype-data.js
+          git diff --exit-code -- research/evidence/\*-exploration.json web/data/reviewed-exploration.json web/data/map-regions.json web/generated/content/prototype-data.js
       - name: Keep the verified staging artifact
         if: steps.changes.outputs.scope == 'site'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

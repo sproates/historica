@@ -1,3 +1,4 @@
+import {loadMapData} from './generated/presentation/map-data.js';
 import {createHistoryRenderer} from './generated/presentation/history-renderer.js';
 import {canEnhanceStaticHistory} from './generated/state/static-page.js';
 import {syncFocusControls} from './generated/controllers/focus-control-state.js';
@@ -38,10 +39,10 @@ const regionPoints=region.flatMap(g=>g.type==='MultiPolygon'?g.coordinates.flat(
 mapControls.update(regionPoints.length?regionPoints.map(xy):[...associations.filter(a=>a.point).map(a=>xy(a.point)),...(['area','city','state'].includes(f.type)&&f.point?[xy(f.point)]:[])]);
 }
 function selectYear(y){selectedYear=clampMoment(y,state);render();}
-try{const [collection,countries,reviewed,exploration]=await Promise.all([load('data/collection.json'),load('data/ne_50m_admin_0_countries.json'),load('data/reviewed-evidence.json').catch(()=>null),load('data/reviewed-exploration.json')]);reviewedEvidence=reviewed;data=buildFocusData(collection,exploration);const saved=decodeView(location.href,data),reuseStatic=canEnhanceStaticHistory(document.body.dataset.staticHistory,data,saved),fitInitially=!/[?&#](x|y|w)=/.test(location.href);
+try{const [collection,mapData,reviewed,exploration]=await Promise.all([load('data/collection.json'),loadMapData(document,load),load('data/reviewed-evidence.json').catch(()=>null),load('data/reviewed-exploration.json')]);reviewedEvidence=reviewed;data=buildFocusData(collection,exploration);const saved=decodeView(location.href,data),reuseStatic=canEnhanceStaticHistory(document.body.dataset.staticHistory,data,saved),fitInitially=!/[?&#](x|y|w)=/.test(location.href);
 // Keep the generated camera while initialising controls; custom camera bookmarks still take precedence.
 if(reuseStatic&&fitInitially)saved.view.map={...mapControls.getState(),borders:saved.view.map.borders};
-restore(saved,fitInitially);ready=true;focusGeography=countries.features.filter(f=>['GBR','IRL','IMN'].includes(f.properties.ADM0_A3)).map(f=>f.geometry);land=countries.features.map(f=>`<path d="${geometry(f.geometry)}"/>`).join('');
+restore(saved,fitInitially);ready=true;focusGeography=mapData.focusGeography;land=mapData.land;
 $('area').innerHTML='<option value="all">Everywhere</option>'+data.entities.filter(e=>e.id!=='global-overview'&&['area','state','city'].includes(e.type)).map(e=>`<option value="${esc(e.id)}">${esc(e.title)}</option>`).join('');
 $('focus-picker').innerHTML=['person','area','state','city','period','event'].map(type=>`<optgroup label="${type}">${data.entities.filter(e=>e.type===type).map(e=>`<option value="${esc(e.id)}">${esc(e.title)}</option>`).join('')}</optgroup>`).join('');
 bindComparisonControls(document,{getEntities:()=>data.entities,selectPeople(people,duplicate){comparedPeople=people;renderComparison(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));if(duplicate)$('comparison-intro').textContent='Choose two different people.';sync();},selectScale(mode){comparisonMode=mode;renderComparison(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));sync();},reset(){comparedPeople=[];render();}});
