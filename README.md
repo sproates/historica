@@ -71,7 +71,7 @@ The refactor has started with strict TypeScript in `src/domain/`. Timeline arith
 
 Edit TypeScript source, then run `npm run build:client`. Generated browser modules remain tracked during migration so existing preview and generation tools can read them; CI rejects stale generated modules. `npm test`, `npm run build:pages` and `npm run preview:sync` compile them automatically. Strict checking applies to migrated TypeScript, not yet to all legacy JavaScript.
 
-Focus changes, date windows and bookmark encoding now live in `src/state/`. `src/controllers/explorer-controls.ts` binds date, year and filter inputs through callbacks, independently of rendering. Browser adapters preserve the existing public module imports and detect the correct path prefix. Search and comparison inputs also have separate controllers, with search ranking in `src/domain/search.ts`. The main explorer still coordinates rendering, navigation and map interaction; that migration is ongoing.
+Focus changes, date windows and bookmark encoding now live in `src/state/`. `src/controllers/explorer-controls.ts` binds date, year and filter inputs through callbacks, independently of rendering. Browser adapters preserve the existing public module imports and detect the correct path prefix. Search and comparison inputs also have separate controllers, with search ranking in `src/domain/search.ts`. The map controller is also typed, including touch gestures and saved camera state. The main explorer still coordinates rendering and browser history; that migration is ongoing.
 
 ## Research and reuse
 

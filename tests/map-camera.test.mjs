@@ -15,7 +15,7 @@ test('fitted map includes every point and stays within the world',()=>{
 test('map enhancement preserves the pre-rendered camera before its data arrives',()=>{
   const before=globalThis.document;
   const controls=new Map();let view;
-  globalThis.document={getElementById(id){if(!controls.has(id))controls.set(id,{value:1});return controls.get(id);}};
+  globalThis.document={getElementById(id){if(!controls.has(id))controls.set(id,{value:1,addEventListener(){},removeEventListener(){}});return controls.get(id);}};
   try{
     setupMap({getAttribute:()=> '350 80 200 100',setAttribute(k,v){if(k==='viewBox')view=v;},style:{setProperty(){}},addEventListener(){}});
     assert.equal(view,'350 80 200 100');

@@ -26,7 +26,7 @@ Next, introduce typed page view models and separate the interaction controllers 
 
 Focus selection, date windows and URL encoding now live in strict TypeScript under `src/state/`. The public browser modules remain small adapters so existing routes and import paths keep working, including the GitHub project prefix. A migration comparison confirmed identical results for 460 default and customised bookmarks across all 230 histories.
 
-The date, year and filter controls now attach through `src/controllers/explorer-controls.ts`. They read current state and report changes through callbacks; they don't render the page or write browser history. The main explorer still owns rendering, browser history and map interaction. This is a first separation of controls, not a completed replacement of the controller.
+The date, year and filter controls now attach through `src/controllers/explorer-controls.ts`. They read current state and report changes through callbacks; they don't render the page or write browser history. The main explorer still owns rendering and browser history. This is a first separation of controls, not a completed replacement of the controller.
 
 Control tests cover place-window preservation, filter and bookmark round trips, stepping from BCE to CE without year zero, zoom and detaching handlers. Browser checks cover zoom, fitting the lifespan, filtering, selecting a year and restoring those settings after reload.
 
@@ -37,3 +37,7 @@ Tests cover keyboard focus, selection, clearing, escaping authored text, incompl
 Timeline input and focus navigation now use separate typed controllers. The timeline controller handles year selection on the date axis, pointer capture and cancellation, regional lane expansion and the jump-to-timeline link. The navigation controller handles focus entries, regional filters, the focus picker, whole-period selection, expanded context and Back through callbacks. Focus transitions and browser history are still coordinated by the existing app.
 
 Checks cover year-zero avoidance, current-window dragging, capture cleanup, replacement-button focus after lane rendering, journey filters and disabled entries. Browser checks confirm year selection, lane expansion, changing focus to Egypt while retaining the window, Back and restoration after reload.
+
+The map interaction controller now lives in `src/controllers/map-controls.ts`, with the old browser import retained as an adapter. Its typed interface covers camera snapshots, restoration, fitting new points and disposal. Pinch, pan, trackpad, keyboard navigation, border opacity and marker selection retain their existing behaviour. Disposal removes listeners and releases captured pointers. Map geometry and evidence rendering remain in the page renderer.
+
+The existing gesture tests pass unchanged apart from supplying event-capable control stubs. Added checks cover silent restoration and data updates, user-triggered notifications, fitting, border changes, keyboard movement and disposal. Browser checks cover World, fit, zoom, keyboard panning, saved camera restoration and opening Egypt from its map marker.
