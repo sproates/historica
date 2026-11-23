@@ -6,7 +6,7 @@ runtime = Path.home() / 'Library/Application Support/Historica/preview'
 if runtime.exists():
     shutil.copytree(root / 'web', runtime / 'web', dirs_exist_ok=True)
     # These directories contain generated files only; do not retain retired output.
-    for folder in ('pages', 'generated'):
+    for folder in ('pages', 'generated', 'data/evidence'):
         source = root / 'web' / folder
         target = runtime / 'web' / folder
         for file in target.rglob('*'):

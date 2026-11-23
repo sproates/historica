@@ -13,7 +13,7 @@ npm run build:evidence
 npm test
 ```
 
-Commit the authored files and the generated compatibility assets. `research/evidence/*-exploration.json` and `web/data/reviewed-exploration.json` are generated from these records. Don't edit those JSON files directly. CI rejects stale compatibility assets. Build validation checks the complete assembled collection before writing them.
+Commit the authored files. Generated compatibility assets are ignored build output. `research/evidence/*-exploration.json` and `web/data/reviewed-exploration.json` are generated from these records. Don't edit those JSON files directly. CI rebuilds these assets from source before testing. Build validation checks the complete assembled collection before writing them.
 
 Evidence claims, sources and review decisions still live in `research/evidence/*-reviewed.json`. The prototype pack contains the 65 histories that previously came from JavaScript builders. This does not promote those histories to reviewed evidence status.
 

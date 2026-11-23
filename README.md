@@ -44,7 +44,7 @@ npm run build:site       # complete verification and generated output in docs/
 npm run build:pages      # portable static export in release/pages-site/
 ```
 
-Build commands don't publish. `docs/` and `release/` are local build outputs, excluded from Git. History HTML under `web/pages/`, route records, sitemap and robots files are also ignored build output. Tests, preview and packaging generate them from the authored records and templates.
+Build commands don't publish. `docs/` and `release/` are local build outputs, excluded from Git. History HTML under `web/pages/`, route records, sitemap, robots files and derived research exports are also ignored build output. Tests, preview and packaging generate them from the authored records and templates.
 
 ## Static-page pilot
 

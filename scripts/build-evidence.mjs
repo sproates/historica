@@ -29,6 +29,8 @@ if(!errors.length){
 }
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else{
  for(const {name,data} of reviewedPacks) fs.writeFileSync(`research/evidence/${name}-exploration.json`,JSON.stringify(data,null,2)+'\n');
+ const exports=new Set(reviewedPacks.map(p=>p.name+'-exploration.json'));
+ for(const file of fs.readdirSync('research/evidence'))if(file.endsWith('-exploration.json')&&!exports.has(file))fs.unlinkSync('research/evidence/'+file);
  fs.writeFileSync('web/data/browser-chronology.json',JSON.stringify(browserChronology(pack))+'\n');
  const evidenceDir='web/data/evidence';
  fs.mkdirSync(evidenceDir,{recursive:true});
