@@ -1,0 +1,169 @@
+order: 11
+entities:
+  - qin-shi-huang
+  - qin-empire
+  - qin-unification
+  - qin-mausoleum
+  - terracotta-army
+  - han-changan
+  - shiji-history
+  - ban-chao
+  - han-luoyang
+associations:
+  - subject: qin-mausoleum
+    place: qin-mausoleum
+    startYear: -246
+    endYear: -210
+    point:
+      - 109.25366666666666
+      - 34.38141666666667
+    label: The First Emperor’s mausoleum site reference
+    source: https://whc.unesco.org/en/list/0441/maps/
+    claimIds:
+      - qin-han-era-qin-mausoleum-history
+      - qin-han-era-qin-mausoleum-chronology
+      - qin-han-era-qin-mausoleum-point
+    contextual: true
+  - subject: terracotta-army
+    place: qin-mausoleum
+    startYear: -246
+    endYear: -210
+    point:
+      - 109.27344444444445
+      - 34.385194444444444
+    label: Making the terracotta army site reference
+    source: https://whc.unesco.org/en/list/0441/maps/
+    claimIds:
+      - qin-han-era-terracotta-army-history
+      - qin-han-era-terracotta-army-chronology
+      - qin-han-era-terracotta-army-point
+    contextual: true
+  - subject: qin-shi-huang
+    place: qin-mausoleum
+    startYear: -210
+    endYear: -210
+    point:
+      - 109.25366666666666
+      - 34.38141666666667
+    label: Burial complex in the year of his death
+    source: https://whc.unesco.org/en/list/0441/maps/
+    claimIds:
+      - qin-han-era-qin-mausoleum-history
+      - qin-han-era-qin-mausoleum-chronology
+      - qin-han-era-qin-mausoleum-point
+    contextual: true
+  - subject: han-changan
+    place: han-changan
+    startYear: -206
+    endYear: 9
+    point:
+      - 108.85722222222222
+      - 34.30444444444444
+    label: Weiyang Palace site reference within Han Chang’an
+    source: https://whc.unesco.org/en/list/1442/maps/
+    claimIds:
+      - city-references-han-changan-point
+    contextual: true
+  - subject: han-luoyang
+    place: han-luoyang
+    startYear: 25
+    endYear: 220
+    point:
+      - 112.62138888888889
+      - 34.73111111111111
+    label: Eastern Han–Northern Wei Luoyang site reference
+    source: https://whc.unesco.org/en/list/1442/maps/
+    claimIds:
+      - city-references-han-luoyang-point
+    contextual: true
+relationships:
+  - a: qin-shi-huang
+    b: qin-empire
+    label: Empire he established
+    labelFromA: Empire he established
+    labelFromB: First Emperor
+  - a: qin-shi-huang
+    b: qin-unification
+    label: Conquests and imperial title
+    labelFromA: Conquests and imperial title
+    labelFromB: First Emperor
+  - a: qin-shi-huang
+    b: qin-mausoleum
+    label: His burial complex
+    labelFromA: His burial complex
+    labelFromB: Ruler commemorated
+  - a: qin-mausoleum
+    b: terracotta-army
+    label: Army pits within the complex
+    labelFromA: Army pits within the complex
+    labelFromB: Burial complex
+  - a: qin-unification
+    b: qin-empire
+    label: Beginning of imperial rule
+    labelFromA: Beginning of imperial rule
+    labelFromB: Unification
+  - a: qin-empire
+    b: qin
+    label: Earlier Qin state
+    labelFromA: Earlier Qin state
+    labelFromB: Later imperial dynasty
+  - a: qin-empire
+    b: china-warring
+    label: Preceding political period
+    labelFromA: Preceding political period
+    labelFromB: Following imperial period
+  - a: qin-empire
+    b: western-han
+    label: Following dynasty
+    labelFromA: Following dynasty
+    labelFromB: Preceding dynasty
+  - a: qin-empire
+    b: maurya
+    label: Contemporary state in South Asia
+    labelFromA: Contemporary state in South Asia
+    labelFromB: Contemporary empire in China
+  - a: han-changan
+    b: western-han
+    label: Dynasty whose capital it was
+    labelFromA: Dynasty whose capital it was
+    labelFromB: Capital
+  - a: han-changan
+    b: han-luoyang
+    label: Later Han capital
+    labelFromA: Later Han capital
+    labelFromB: Earlier Han capital
+  - a: shiji-history
+    b: han-wu-reign
+    label: Reign providing context
+    labelFromA: Reign providing context
+    labelFromB: Historical writing
+  - a: shiji-history
+    b: western-han
+    label: Dynastic context
+    labelFromA: Dynastic context
+    labelFromB: Historical writing
+  - a: ban-chao
+    b: eastern-han
+    label: Dynasty he served
+    labelFromA: Dynasty he served
+    labelFromB: General in Central Asia
+  - a: han-luoyang
+    b: eastern-han
+    label: Dynasty whose capital it was
+    labelFromA: Dynasty whose capital it was
+    labelFromB: Capital
+  - a: qin-empire
+    b: china
+    label: Regional context
+    labelFromA: Regional context
+    labelFromB: Connected history
+  - a: han-changan
+    b: china
+    label: Regional context
+    labelFromA: Regional context
+    labelFromB: Connected history
+  - a: han-luoyang
+    b: china
+    label: Regional context
+    labelFromA: Regional context
+    labelFromB: Connected history

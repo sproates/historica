@@ -1,0 +1,217 @@
+order: 10
+entities:
+  - maurya
+  - chandragupta-reign
+  - bindusara-reign
+  - ashoka-rule
+  - ashoka-inscriptions
+  - seleucus
+  - seleucid-mauryan-settlement
+  - pataliputra
+  - lumbini
+  - ashoka-lumbini
+  - taxila
+  - alexander-taxila
+associations:
+  - subject: lumbini
+    place: lumbini
+    startYear: -300
+    endYear: -201
+    point:
+      - 83.27611
+      - 27.46889
+    label: UNESCO Lumbini property reference
+    source: https://whc.unesco.org/en/list/666/
+    claimIds:
+      - maurya-era-lumbini-history
+      - maurya-era-lumbini-chronology
+      - maurya-era-lumbini-point
+    contextual: true
+  - subject: ashoka-lumbini
+    place: lumbini
+    startYear: -249
+    endYear: -249
+    point:
+      - 83.27611
+      - 27.46889
+    label: Lumbini property reference for the recorded visit
+    source: https://whc.unesco.org/en/list/666/
+    claimIds:
+      - maurya-era-ashoka-lumbini-history
+      - maurya-era-ashoka-lumbini-chronology
+      - maurya-era-ashoka-lumbini-point
+    contextual: true
+  - subject: taxila
+    place: taxila
+    startYear: -500
+    endYear: 200
+    point:
+      - 72.81933055555555
+      - 33.743944444444445
+    label: Bhir Mound reference within Taxila
+    source: https://whc.unesco.org/en/list/139/
+    claimIds:
+      - maurya-era-taxila-history
+      - maurya-era-taxila-chronology
+      - maurya-era-taxila-point
+    contextual: true
+  - subject: alexander-taxila
+    place: taxila
+    startYear: -326
+    endYear: -326
+    point:
+      - 72.81933055555555
+      - 33.743944444444445
+    label: Bhir Mound reference for Alexander’s entry
+    source: https://whc.unesco.org/en/list/139/
+    claimIds:
+      - maurya-era-alexander-taxila-history
+      - maurya-era-alexander-taxila-chronology
+      - maurya-era-alexander-taxila-point
+    contextual: true
+  - subject: ashoka-rule
+    place: lumbini
+    startYear: -249
+    endYear: -249
+    point:
+      - 83.27611
+      - 27.46889
+    label: Lumbini property reference for the recorded visit
+    source: https://whc.unesco.org/en/list/666/
+    claimIds:
+      - maurya-era-ashoka-lumbini-history
+      - maurya-era-ashoka-lumbini-chronology
+      - maurya-era-ashoka-lumbini-point
+    contextual: true
+  - subject: alexander
+    place: taxila
+    startYear: -326
+    endYear: -326
+    point:
+      - 72.81933055555555
+      - 33.743944444444445
+    label: Bhir Mound reference for Alexander’s entry
+    source: https://whc.unesco.org/en/list/139/
+    claimIds:
+      - maurya-era-alexander-taxila-history
+      - maurya-era-alexander-taxila-chronology
+      - maurya-era-alexander-taxila-point
+    contextual: true
+  - subject: pataliputra
+    place: pataliputra
+    startYear: -321
+    endYear: -185
+    point:
+      - 85.18501111111111
+      - 25.599708333333332
+    label: Kumrahar archaeological site reference within Pataliputra
+    source: https://nma.gov.in/showfile.php?lang=1&level=2&lid=1372&ls_id=1128&nma_type=0
+    claimIds:
+      - city-references-pataliputra-point
+    contextual: true
+relationships:
+  - a: maurya
+    b: chandragupta-reign
+    label: Ruler or capital of the Mauryan state
+    labelFromA: Ruler or capital of the Mauryan state
+    labelFromB: Mauryan state
+  - a: maurya
+    b: bindusara-reign
+    label: Ruler or capital of the Mauryan state
+    labelFromA: Ruler or capital of the Mauryan state
+    labelFromB: Mauryan state
+  - a: maurya
+    b: ashoka-rule
+    label: Ruler or capital of the Mauryan state
+    labelFromA: Ruler or capital of the Mauryan state
+    labelFromB: Mauryan state
+  - a: maurya
+    b: pataliputra
+    label: Ruler or capital of the Mauryan state
+    labelFromA: Ruler or capital of the Mauryan state
+    labelFromB: Mauryan state
+  - a: chandragupta-reign
+    b: bindusara-reign
+    label: Son and successor
+    labelFromA: Son and successor
+    labelFromB: Father and predecessor
+  - a: bindusara-reign
+    b: ashoka-rule
+    label: Son and successor
+    labelFromA: Son and successor
+    labelFromB: Father and predecessor
+  - a: ashoka-rule
+    b: ashoka-inscriptions
+    label: Royal inscriptions
+    labelFromA: Royal inscriptions
+    labelFromB: Commissioning ruler
+  - a: ashoka-rule
+    b: ashoka-lumbini
+    label: Recorded visit
+    labelFromA: Recorded visit
+    labelFromB: Visiting ruler
+  - a: ashoka-rule
+    b: lumbini
+    label: Pilgrimage site
+    labelFromA: Pilgrimage site
+    labelFromB: Ashoka’s visit
+  - a: ashoka-lumbini
+    b: lumbini
+    label: Place of the visit
+    labelFromA: Place of the visit
+    labelFromB: Dated royal visit
+  - a: seleucus
+    b: alexander
+    label: Commander under Alexander
+    labelFromA: Commander under Alexander
+    labelFromB: Commander and successor
+  - a: seleucus
+    b: ptolemy
+    label: Ally and refuge in Egypt
+    labelFromA: Ally and refuge in Egypt
+    labelFromB: Ally
+  - a: seleucus
+    b: seleucid-mauryan-settlement
+    label: Peace settlement
+    labelFromA: Peace settlement
+    labelFromB: Party to the settlement
+  - a: chandragupta-reign
+    b: seleucid-mauryan-settlement
+    label: Peace settlement
+    labelFromA: Peace settlement
+    labelFromB: Party to the settlement
+  - a: chandragupta-reign
+    b: seleucus
+    label: Diplomatic counterpart
+    labelFromA: Diplomatic counterpart
+    labelFromB: Diplomatic counterpart
+  - a: maurya
+    b: india
+    label: South Asian context
+    labelFromA: South Asian context
+    labelFromB: Mauryan state
+  - a: alexander
+    b: alexander-taxila
+    label: Entry into Taxila
+    labelFromA: Entry into Taxila
+    labelFromB: Campaign commander
+  - a: alexander-taxila
+    b: taxila
+    label: Place of the encounter
+    labelFromA: Place of the encounter
+    labelFromB: Alexander’s entry
+  - a: taxila
+    b: chandragupta-reign
+    label: Mauryan expansion
+    labelFromA: Mauryan expansion
+    labelFromB: North-western city
+  - a: taxila
+    b: india
+    label: South Asian context
+    labelFromA: South Asian context
+    labelFromB: Historic city
+  - a: maurya
+    b: sanchi-early
+    label: Buddhist site begun in the Mauryan era
+    labelFromA: Buddhist site begun in the Mauryan era
+    labelFromB: Mauryan-era beginnings

@@ -1,0 +1,128 @@
+order: 13
+entities:
+  - pompeii
+  - pompeii-fullery
+  - pompeii-food-shop
+  - vesuvius-eruption
+  - deir-attendance
+associations:
+  - subject: pompeii
+    place: pompeii
+    startYear: 1
+    endYear: 79
+    point:
+      - 14.48611111111111
+      - 40.75111111111111
+    label: Pompeii city reference for Pompeii
+    source: https://whc.unesco.org/en/list/829/maps/
+    claimIds:
+      - everyday-evidence-pompeii-history
+      - everyday-evidence-pompeii-chronology
+      - everyday-evidence-pompeii-point
+    contextual: true
+  - subject: pompeii-fullery
+    place: pompeii
+    startYear: 79
+    endYear: 79
+    point:
+      - 14.48611111111111
+      - 40.75111111111111
+    label: Pompeii city reference for Washing clothes at Pompeii
+    source: https://whc.unesco.org/en/list/829/maps/
+    claimIds:
+      - everyday-evidence-pompeii-fullery-history
+      - everyday-evidence-pompeii-fullery-chronology
+      - everyday-evidence-pompeii-fullery-point
+    contextual: true
+  - subject: pompeii-food-shop
+    place: pompeii
+    startYear: 79
+    endYear: 79
+    point:
+      - 14.48611111111111
+      - 40.75111111111111
+    label: Pompeii city reference for Food, trade and a household at Pompeii
+    source: https://whc.unesco.org/en/list/829/maps/
+    claimIds:
+      - everyday-evidence-pompeii-food-shop-history
+      - everyday-evidence-pompeii-food-shop-chronology
+      - everyday-evidence-pompeii-food-shop-point
+    contextual: true
+  - subject: vesuvius-eruption
+    place: pompeii
+    startYear: 79
+    endYear: 79
+    point:
+      - 14.48611111111111
+      - 40.75111111111111
+    label: Pompeii city reference for Vesuvius buries Pompeii and Herculaneum
+    source: https://whc.unesco.org/en/list/829/maps/
+    claimIds:
+      - everyday-evidence-vesuvius-eruption-history
+      - everyday-evidence-vesuvius-eruption-chronology
+      - everyday-evidence-vesuvius-eruption-point
+    contextual: true
+relationships:
+  - a: pompeii
+    b: pompeii-fullery
+    label: Laundry and textile work
+    labelFromA: Laundry and textile work
+    labelFromB: City providing the evidence
+    sourceUrls:
+      - https://whc.unesco.org/en/list/829/
+  - a: pompeii
+    b: pompeii-food-shop
+    label: Food shop and household
+    labelFromA: Food shop and household
+    labelFromB: City providing the evidence
+    sourceUrls:
+      - https://whc.unesco.org/en/list/829/
+  - a: pompeii
+    b: vesuvius-eruption
+    label: Eruption that buried the city
+    labelFromA: Eruption that buried the city
+    labelFromB: City providing the evidence
+    sourceUrls:
+      - https://whc.unesco.org/en/list/829/
+  - a: pompeii
+    b: rome
+    label: Wider Roman context
+    labelFromA: Wider Roman context
+    labelFromB: City of the Roman world
+    sourceUrls:
+      - https://whc.unesco.org/en/list/829/
+  - a: pompeii
+    b: livia
+    label: Compare a contemporary Roman life
+    labelFromA: Compare a contemporary Roman life
+    labelFromB: Compare early imperial urban life
+    sourceUrls:
+      - https://whc.unesco.org/en/list/829/
+  - a: vesuvius-eruption
+    b: ban-zhao
+    label: Contemporary life in China; no direct contact implied
+    labelFromA: Contemporary life in China; no direct contact implied
+    labelFromB: Event during her approximate lifetime
+    sourceUrls:
+      - https://whc.unesco.org/en/list/829/
+  - a: deir-attendance
+    b: deir-el-medina-artisans
+    label: Community that kept the record
+    labelFromA: Community that kept the record
+    labelFromB: Evidence of attendance and absences
+    sourceUrls:
+      - https://artsandculture.google.com/asset/limestone-ostrakon-with-a-register-of-workmen-s-absences/NQH9qIBqeBg6Pg?hl=en
+  - a: deir-attendance
+    b: ramesses-two-reign
+    label: Reign used to date the register
+    labelFromA: Reign used to date the register
+    labelFromB: Workers’ attendance record
+    sourceUrls:
+      - https://artsandculture.google.com/asset/limestone-ostrakon-with-a-register-of-workmen-s-absences/NQH9qIBqeBg6Pg?hl=en
+  - a: deir-attendance
+    b: thebes-egypt
+    label: Regional context
+    labelFromA: Regional context
+    labelFromB: Tomb workers’ written evidence
+    sourceUrls:
+      - https://artsandculture.google.com/asset/limestone-ostrakon-with-a-register-of-workmen-s-absences/NQH9qIBqeBg6Pg?hl=en

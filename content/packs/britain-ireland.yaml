@@ -1,0 +1,137 @@
+order: 1
+entities:
+  - britain-ireland
+  - danebury
+  - danebury-life
+  - broxmouth
+  - ireland-iron-age
+  - castell-henllys
+  - henllys-community
+  - doogarrymore-wheels
+  - corlea
+  - corlea-construction
+associations:
+  - subject: danebury-life
+    place: danebury
+    startYear: -550
+    endYear: -100
+    label: Site context; broad, disputed chronology
+    point:
+      - -1.53973
+      - 51.13671
+    source: https://hillforts.arch.ox.ac.uk/records/EN3828.html
+    claimIds:
+      - bi-reviewed-danebury-location
+      - bi-reviewed-danebury-chronology
+  - subject: britain-ireland
+    place: danebury
+    startYear: -550
+    endYear: -100
+    label: "Danebury: one researched site, not regional coverage"
+    point:
+      - -1.53973
+      - 51.13671
+    source: https://hillforts.arch.ox.ac.uk/records/EN3828.html
+    claimIds:
+      - bi-reviewed-danebury-location
+      - bi-reviewed-danebury-chronology
+  - subject: henllys-community
+    place: castell-henllys
+    startYear: -410
+    endYear: -190
+    label: Castell Henllys site; possible occupation within uncertain dates
+    point:
+      - -4.74533
+      - 52.01781
+    source: https://hillforts.arch.ox.ac.uk/records/WA1888.html
+    claimIds:
+      - bi02-henllys-start
+      - bi02-henllys-end
+      - bi02-henllys-work
+      - bi02-henllys-point
+    uncertainty:
+      start:
+        - -410
+        - -375
+      end:
+        - -380
+        - -190
+  - subject: britain-ireland
+    place: castell-henllys
+    startYear: -410
+    endYear: -190
+    label: Castell Henllys site; possible occupation within uncertain dates
+    point:
+      - -4.74533
+      - 52.01781
+    source: https://hillforts.arch.ox.ac.uk/records/WA1888.html
+    claimIds:
+      - bi02-henllys-start
+      - bi02-henllys-end
+      - bi02-henllys-work
+      - bi02-henllys-point
+    uncertainty:
+      start:
+        - -410
+        - -375
+      end:
+        - -380
+        - -190
+  - subject: corlea-construction
+    place: corlea
+    startYear: -148
+    endYear: -147
+    label: Corlea construction; one year within 148–147 BCE
+    point:
+      - -7.857195
+      - 53.615129
+    source: https://excavations.ie/report/1986/Longford/0000690/
+    claimIds:
+      - bi02-corlea-date
+      - bi02-corlea-dendro
+      - bi02-corlea-purpose
+      - bi02-corlea-point
+    temporalKind: dated-evidence
+  - subject: britain-ireland
+    place: corlea
+    startYear: -148
+    endYear: -147
+    label: Corlea construction; one year within 148–147 BCE
+    point:
+      - -7.857195
+      - 53.615129
+    source: https://excavations.ie/report/1986/Longford/0000690/
+    claimIds:
+      - bi02-corlea-date
+      - bi02-corlea-dendro
+      - bi02-corlea-purpose
+      - bi02-corlea-point
+    temporalKind: dated-evidence
+relationships:
+  - a: britain-ireland
+    b: danebury
+    label: Regional example · partial coverage
+  - a: britain-ireland
+    b: danebury-life
+    label: Regional example · partial coverage
+  - a: britain-ireland
+    b: broxmouth
+    label: Regional example · partial coverage
+  - a: britain-ireland
+    b: ireland-iron-age
+    label: Regional example · partial coverage
+  - a: britain-ireland
+    b: castell-henllys
+    label: Regional example · partial coverage
+  - a: britain-ireland
+    b: henllys-community
+    label: Regional example · partial coverage
+  - a: britain-ireland
+    b: doogarrymore-wheels
+    label: Regional example · partial coverage
+  - a: britain-ireland
+    b: corlea
+    label: Regional example · partial coverage
+  - a: britain-ireland
+    b: corlea-construction
+    label: Regional example · partial coverage

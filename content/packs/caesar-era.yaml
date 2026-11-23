@@ -1,0 +1,216 @@
+order: 8
+entities:
+  - julius-caesar
+  - cleopatra-vii
+  - pompey
+  - cicero
+  - mark-antony
+  - augustus
+  - cleopatra-vii-reign
+  - caesar-consul
+  - caesar-gallic-wars
+  - caesar-britain
+  - caesar-rubicon
+  - pharsalus
+  - caesar-alexandria
+  - caesar-assassination
+  - actium
+  - egypt-roman-annexation
+  - augustus-reign
+  - sanchi-gateways
+associations:
+  - subject: julius-caesar
+    place: rome
+    startYear: -59
+    endYear: -59
+    point:
+      - 12.5
+      - 41.9
+    label: Consulship in Rome · city reference
+    source: https://www.vroma.org/vromans/bmcmanus/caesar.html
+    claimIds:
+      - caesar-era-julius-caesar-association-rome59
+    contextual: true
+  - subject: julius-caesar
+    place: rome
+    startYear: -44
+    endYear: -44
+    point:
+      - 12.5
+      - 41.9
+    label: Final year in Rome · city reference
+    source: https://www.vroma.org/vromans/bmcmanus/caesar.html
+    claimIds:
+      - caesar-era-julius-caesar-association-rome44
+    contextual: true
+  - subject: julius-caesar
+    place: egypt
+    startYear: -48
+    endYear: -47
+    point:
+      - 30
+      - 27
+    label: Egyptian campaign · regional reference, not exact whereabouts
+    source: https://www.vroma.org/vromans/bmcmanus/caesar.html
+    claimIds:
+      - caesar-era-julius-caesar-association-egypt48
+    contextual: true
+  - subject: cleopatra-vii
+    place: egypt
+    startYear: -51
+    endYear: -30
+    point:
+      - 30
+      - 27
+    label: Kingdom ruled · regional association, not continuous residence
+    source: https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/cleopatravii.html
+    claimIds:
+      - caesar-era-cleopatra-vii-association-egypt51
+    contextual: true
+  - subject: cicero
+    place: rome
+    startYear: -63
+    endYear: -63
+    point:
+      - 12.5
+      - 41.9
+    label: Consulship in Rome · city reference
+    source: https://plato.stanford.edu/entries/cicero/
+    claimIds:
+      - caesar-era-cicero-association-rome63
+    contextual: true
+  - subject: sanchi-gateways
+    place: sanchi-early
+    startYear: -100
+    endYear: -1
+    point:
+      - 77.73972
+      - 23.479439999999997
+    label: Sanchi · existing archaeological site reference
+    source: https://asi.nic.in/pages/WorldHeritageBuddhistMonumentsatSanchi
+    claimIds:
+      - caesar-era-sanchi-gateways-association-sanchi-early100
+    contextual: true
+relationships:
+  - a: julius-caesar
+    b: pompey
+    label: Ally, then opponent
+  - a: julius-caesar
+    b: cicero
+    label: Political contemporary
+  - a: julius-caesar
+    b: mark-antony
+    label: Supporter and general
+  - a: julius-caesar
+    b: augustus
+    label: Heir
+  - a: julius-caesar
+    b: cleopatra-vii
+    label: Egyptian ally
+  - a: julius-caesar
+    b: caesar-consul
+    label: Episode in Caesar’s life
+    labelFromA: Episode in Caesar’s life
+    labelFromB: Julius Caesar
+  - a: julius-caesar
+    b: caesar-gallic-wars
+    label: Episode in Caesar’s life
+    labelFromA: Episode in Caesar’s life
+    labelFromB: Julius Caesar
+  - a: julius-caesar
+    b: caesar-britain
+    label: Episode in Caesar’s life
+    labelFromA: Episode in Caesar’s life
+    labelFromB: Julius Caesar
+  - a: julius-caesar
+    b: caesar-rubicon
+    label: Episode in Caesar’s life
+    labelFromA: Episode in Caesar’s life
+    labelFromB: Julius Caesar
+  - a: julius-caesar
+    b: pharsalus
+    label: Episode in Caesar’s life
+    labelFromA: Episode in Caesar’s life
+    labelFromB: Julius Caesar
+  - a: julius-caesar
+    b: caesar-alexandria
+    label: Episode in Caesar’s life
+    labelFromA: Episode in Caesar’s life
+    labelFromB: Julius Caesar
+  - a: julius-caesar
+    b: caesar-assassination
+    label: Episode in Caesar’s life
+    labelFromA: Episode in Caesar’s life
+    labelFromB: Julius Caesar
+  - a: julius-caesar
+    b: egypt
+    label: Egyptian campaign
+  - a: julius-caesar
+    b: rome
+    label: Roman politics
+  - a: cleopatra-vii
+    b: cleopatra-vii-reign
+    label: Reign
+  - a: cleopatra-vii
+    b: macedonian-ptolemaic-egypt
+    label: Ptolemaic dynasty
+  - a: cleopatra-vii
+    b: egypt
+    label: Kingdom
+  - a: cleopatra-vii
+    b: mark-antony
+    label: Political and personal alliance
+  - a: cleopatra-vii
+    b: caesar-alexandria
+    label: Struggle for the throne
+  - a: cleopatra-vii
+    b: actium
+    label: Defeat at Actium
+  - a: cleopatra-vii
+    b: egypt-roman-annexation
+    label: End of Ptolemaic rule
+  - a: cleopatra-vii-reign
+    b: macedonian-ptolemaic-egypt
+    label: Dynasty
+  - a: cleopatra-vii-reign
+    b: egypt
+    label: Egypt
+  - a: pompey
+    b: pharsalus
+    label: Defeat
+  - a: mark-antony
+    b: cicero
+    label: Ordered Cicero’s killing
+  - a: mark-antony
+    b: augustus
+    label: Ally, then rival
+  - a: mark-antony
+    b: actium
+    label: Defeat
+  - a: augustus
+    b: actium
+    label: Victory
+  - a: augustus
+    b: augustus-reign
+    label: Imperial reign
+  - a: augustus
+    b: egypt-roman-annexation
+    label: Roman expansion
+  - a: egypt-roman-annexation
+    b: roman-egypt
+    label: Following period
+  - a: egypt-roman-annexation
+    b: macedonian-ptolemaic-egypt
+    label: Previous dynasty
+  - a: egypt-roman-annexation
+    b: egypt
+    label: Egypt
+  - a: caesar-britain
+    b: britain-ireland
+    label: British context
+  - a: caesar-gallic-wars
+    b: caesar-britain
+    label: Expeditions during the campaigns
+  - a: sanchi-gateways
+    b: sanchi-early
+    label: Longer history of the sanctuary

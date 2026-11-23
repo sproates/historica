@@ -1,0 +1,407 @@
+order: 9
+entities:
+  - alcibiades
+  - pericles
+  - nicias
+  - sparta
+  - syracuse
+  - peloponnesian-war
+  - athens-plague
+  - potidaea-service
+  - delium
+  - peace-of-nicias
+  - sicilian-expedition
+  - herms-scandal
+  - alcibiades-sparta
+  - athens-four-hundred
+  - alcibiades-return
+  - arginusae-trial
+  - aegospotami
+  - athens-surrender
+  - thirty-athens
+  - athens-democracy-restored
+  - darius-ii-reign
+  - amyrtaeus-accession
+associations:
+  - subject: athens-plague
+    place: athens
+    startYear: -430
+    endYear: -426
+    point:
+      - 23.7257
+      - 37.9715
+    label: Acropolis reference for Athens, not the exact event location
+    source: https://pubmed.ncbi.nlm.nih.gov/21560771/
+    claimIds:
+      - alcibiades-era-athens-plague-history
+      - alcibiades-era-athens-plague-point
+    contextual: true
+  - subject: sicilian-expedition
+    place: syracuse
+    startYear: -415
+    endYear: -413
+    point:
+      - 15.293055555555556
+      - 37.059444444444445
+    label: UNESCO Ortygia reference for Syracuse, not a siege position
+    source: https://www.livius.org/articles/concept/peloponnesian-war/sicilian-expedition/
+    claimIds:
+      - alcibiades-era-sicilian-expedition-history
+      - alcibiades-era-sicilian-expedition-point
+    contextual: true
+  - subject: herms-scandal
+    place: athens
+    startYear: -415
+    endYear: -415
+    point:
+      - 23.7257
+      - 37.9715
+    label: Acropolis reference for Athens, not the exact event location
+    source: https://plato.stanford.edu/entries/socrates/
+    claimIds:
+      - alcibiades-era-herms-scandal-history
+      - alcibiades-era-herms-scandal-point
+    contextual: true
+  - subject: alcibiades-sparta
+    place: sparta
+    startYear: -415
+    endYear: -412
+    point:
+      - 22.4297
+      - 37.0733
+    label: Getty city reference for Sparta, not Spartan territory
+    source: https://www.livius.org/articles/person/alcibiades/
+    claimIds:
+      - alcibiades-era-alcibiades-sparta-history
+      - alcibiades-era-alcibiades-sparta-point
+    contextual: true
+  - subject: athens-four-hundred
+    place: athens
+    startYear: -411
+    endYear: -411
+    point:
+      - 23.7257
+      - 37.9715
+    label: Acropolis reference for Athens, not the exact event location
+    source: https://www.livius.org/articles/concept/peloponnesian-war/decelean-war/
+    claimIds:
+      - alcibiades-era-athens-four-hundred-history
+      - alcibiades-era-athens-four-hundred-point
+    contextual: true
+  - subject: alcibiades-return
+    place: athens
+    startYear: -407
+    endYear: -407
+    point:
+      - 23.7257
+      - 37.9715
+    label: Acropolis reference for Athens, not the exact event location
+    source: https://www.livius.org/articles/concept/peloponnesian-war/chronology/
+    claimIds:
+      - alcibiades-era-alcibiades-return-history
+      - alcibiades-era-alcibiades-return-point
+    contextual: true
+  - subject: arginusae-trial
+    place: athens
+    startYear: -406
+    endYear: -406
+    point:
+      - 23.7257
+      - 37.9715
+    label: Acropolis reference for Athens, not the exact event location
+    source: https://plato.stanford.edu/entries/socrates/
+    claimIds:
+      - alcibiades-era-arginusae-trial-history
+      - alcibiades-era-arginusae-trial-point
+    contextual: true
+  - subject: athens-surrender
+    place: athens
+    startYear: -404
+    endYear: -404
+    point:
+      - 23.7257
+      - 37.9715
+    label: Acropolis reference for Athens, not the exact event location
+    source: https://www.livius.org/articles/concept/peloponnesian-war/chronology/
+    claimIds:
+      - alcibiades-era-athens-surrender-history
+      - alcibiades-era-athens-surrender-point
+    contextual: true
+  - subject: thirty-athens
+    place: athens
+    startYear: -404
+    endYear: -403
+    point:
+      - 23.7257
+      - 37.9715
+    label: Acropolis reference for Athens, not the exact event location
+    source: https://www.livius.org/articles/concept/peloponnesian-war/aftermath/
+    claimIds:
+      - alcibiades-era-thirty-athens-history
+      - alcibiades-era-thirty-athens-point
+    contextual: true
+  - subject: athens-democracy-restored
+    place: athens
+    startYear: -403
+    endYear: -403
+    point:
+      - 23.7257
+      - 37.9715
+    label: Acropolis reference for Athens, not the exact event location
+    source: https://www.livius.org/articles/concept/peloponnesian-war/aftermath/
+    claimIds:
+      - alcibiades-era-athens-democracy-restored-history
+      - alcibiades-era-athens-democracy-restored-point
+    contextual: true
+  - subject: alcibiades
+    place: sparta
+    startYear: -415
+    endYear: -415
+    point:
+      - 22.4297
+      - 37.0733
+    label: Flight to Sparta in 415 BCE · city reference
+    source: https://www.livius.org/articles/concept/peloponnesian-war/chronology/
+    claimIds:
+      - alcibiades-era-alcibiades-association-sparta
+      - alcibiades-era-alcibiades-reference-sparta
+    contextual: true
+  - subject: alcibiades
+    place: athens
+    startYear: -407
+    endYear: -407
+    point:
+      - 23.7257
+      - 37.9715
+    label: Return to Athens in 407 BCE · city reference
+    source: https://www.livius.org/articles/concept/peloponnesian-war/chronology/
+    claimIds:
+      - alcibiades-era-alcibiades-association-athens
+      - alcibiades-era-alcibiades-reference-athens
+    contextual: true
+  - subject: nicias
+    place: syracuse
+    startYear: -414
+    endYear: -413
+    point:
+      - 15.293055555555556
+      - 37.059444444444445
+    label: Campaign against Syracuse · target city reference, not exact position
+    source: https://www.livius.org/articles/concept/peloponnesian-war/sicilian-expedition/
+    claimIds:
+      - alcibiades-era-nicias-association-syracuse
+      - alcibiades-era-nicias-reference-syracuse
+    contextual: true
+  - subject: pericles
+    place: athens
+    startYear: -431
+    endYear: -429
+    point:
+      - 23.7257
+      - 37.9715
+    label: Athenian leadership at the start of the war · city reference
+    source: https://pubmed.ncbi.nlm.nih.gov/21560771/
+    claimIds:
+      - alcibiades-era-pericles-association-athens
+      - alcibiades-era-pericles-reference-athens
+    contextual: true
+relationships:
+  - a: alcibiades
+    b: socrates
+    label: Teacher and close associate
+    labelFromA: Teacher and close associate
+    labelFromB: Associate and political figure
+  - a: alcibiades
+    b: pericles
+    label: Guardian
+    labelFromA: Guardian
+    labelFromB: Ward
+  - a: alcibiades
+    b: nicias
+    label: Fellow commander and political opponent
+  - a: alcibiades
+    b: athens
+    label: Home city
+  - a: alcibiades
+    b: sparta
+    label: Refuge and temporary ally
+  - a: alcibiades
+    b: peloponnesian-war
+    label: War that shaped his career
+    labelFromA: War that shaped his career
+    labelFromB: Commander and politician
+  - a: alcibiades
+    b: potidaea-service
+    label: Military service with Socrates
+    labelFromA: Military service with Socrates
+    labelFromB: Alcibiades
+  - a: alcibiades
+    b: delium
+    label: Campaign with Socrates
+    labelFromA: Campaign with Socrates
+    labelFromB: Alcibiades
+  - a: alcibiades
+    b: sicilian-expedition
+    label: Initial commander
+    labelFromA: Initial commander
+    labelFromB: Initial commander
+  - a: alcibiades
+    b: herms-scandal
+    label: Religious accusations
+    labelFromA: Religious accusations
+    labelFromB: Accused politician
+  - a: alcibiades
+    b: alcibiades-sparta
+    label: Spartan cooperation
+    labelFromA: Spartan cooperation
+    labelFromB: Alcibiades
+  - a: alcibiades
+    b: athens-four-hundred
+    label: Political manoeuvring
+    labelFromA: Political manoeuvring
+    labelFromB: Alcibiades
+  - a: alcibiades
+    b: alcibiades-return
+    label: Return to Athens
+    labelFromA: Return to Athens
+    labelFromB: Alcibiades
+  - a: socrates
+    b: potidaea-service
+    label: Military service
+    labelFromA: Military service
+    labelFromB: Socrates
+  - a: socrates
+    b: delium
+    label: Military service
+    labelFromA: Military service
+    labelFromB: Socrates
+  - a: socrates
+    b: arginusae-trial
+    label: Opposed collective proceedings
+    labelFromA: Opposed collective proceedings
+    labelFromB: Socrates
+  - a: socrates
+    b: peloponnesian-war
+    label: Wartime setting
+    labelFromA: Wartime setting
+    labelFromB: Soldier and philosopher
+  - a: pericles
+    b: athens-plague
+    label: Died during the epidemic
+    labelFromA: Died during the epidemic
+    labelFromB: Pericles
+  - a: pericles
+    b: athens
+    label: Political career
+  - a: nicias
+    b: peace-of-nicias
+    label: Peace negotiations
+    labelFromA: Peace negotiations
+    labelFromB: Nicias
+  - a: nicias
+    b: sicilian-expedition
+    label: Commander
+    labelFromA: Commander
+    labelFromB: Nicias
+  - a: nicias
+    b: syracuse
+    label: Final campaign
+  - a: syracuse
+    b: sicilian-expedition
+    label: Defence against Athens
+    labelFromA: Defence against Athens
+    labelFromB: Principal target
+  - a: sparta
+    b: peloponnesian-war
+    label: War against Athens
+    labelFromA: War against Athens
+    labelFromB: Sparta
+  - a: athens
+    b: peloponnesian-war
+    label: War against Sparta
+    labelFromA: War against Sparta
+    labelFromB: Athens
+  - a: darius-ii-reign
+    b: persia
+    label: Persian Empire
+  - a: darius-ii-reign
+    b: peloponnesian-war
+    label: Persian involvement
+    labelFromA: Persian involvement
+    labelFromB: Persian king’s reign
+  - a: darius-ii-reign
+    b: amyrtaeus-accession
+    label: Egyptian transition near the end of his reign
+    labelFromA: Egyptian transition near the end of his reign
+    labelFromB: Contemporary Persian reign
+  - a: amyrtaeus-accession
+    b: egypt
+    label: Egypt
+  - a: amyrtaeus-accession
+    b: late-period-egypt
+    label: Wider Egyptian period
+  - a: amyrtaeus-accession
+    b: persia
+    label: Challenge to Persian authority
+  - a: thirty-athens
+    b: athens-democracy-restored
+    label: Following settlement
+    labelFromA: Following settlement
+    labelFromB: Previous regime
+  - a: athens-democracy-restored
+    b: socrates-trial
+    label: Later event in the restored democracy
+    labelFromA: Later event in the restored democracy
+    labelFromB: Earlier political restoration
+  - a: thirty-athens
+    b: socrates
+    label: Contemporary philosopher
+  - a: peloponnesian-war
+    b: athens-plague
+    label: Wartime episode
+    labelFromA: Wartime episode
+    labelFromB: Peloponnesian War
+  - a: peloponnesian-war
+    b: peace-of-nicias
+    label: Wartime episode
+    labelFromA: Wartime episode
+    labelFromB: Peloponnesian War
+  - a: peloponnesian-war
+    b: sicilian-expedition
+    label: Wartime episode
+    labelFromA: Wartime episode
+    labelFromB: Peloponnesian War
+  - a: peloponnesian-war
+    b: athens-four-hundred
+    label: Wartime episode
+    labelFromA: Wartime episode
+    labelFromB: Peloponnesian War
+  - a: peloponnesian-war
+    b: arginusae-trial
+    label: Wartime episode
+    labelFromA: Wartime episode
+    labelFromB: Peloponnesian War
+  - a: peloponnesian-war
+    b: aegospotami
+    label: Wartime episode
+    labelFromA: Wartime episode
+    labelFromB: Peloponnesian War
+  - a: peloponnesian-war
+    b: athens-surrender
+    label: Wartime episode
+    labelFromA: Wartime episode
+    labelFromB: Peloponnesian War
+  - a: athens-surrender
+    b: thirty-athens
+    label: Political aftermath
+    labelFromA: Political aftermath
+    labelFromB: Following Athens’ defeat
+  - a: athens-surrender
+    b: sparta
+    label: Victorious opponent
+  - a: peace-of-nicias
+    b: sparta
+    label: Treaty participant
+  - a: peace-of-nicias
+    b: athens
+    label: Treaty participant
