@@ -27,11 +27,14 @@ test('CI restores only for site work and publishes verified caches only from mai
  assert.match(save.if,/success\(\)/);assert.match(save.if,/github.event_name == 'push'/);assert.match(save.if,/github.ref == 'refs\/heads\/main'/);
  assert.equal(save.with.path,'release/static-incremental/');
  const verify=steps.find(s=>s.name==='Generate and verify the site');
- assert.ok(verify.run.includes('node scripts/verify-static-incremental.mjs'));
+ const scripts=JSON.parse(fs.readFileSync('package.json')).scripts;
+ assert.ok(scripts.test.startsWith('npm run build:web'));
+ assert.ok(scripts['build:web'].includes('node scripts/verify-static-incremental.mjs'));
+ assert.ok(scripts['build:web'].indexOf('verify-static-incremental.mjs')<scripts['build:web'].indexOf('export-static-web.mjs'));
  assert.ok(verify.run.includes('npm test'));
  assert.ok(verify.run.includes('node scripts/build-pages.mjs --static-source release/static-incremental'));
  assert.ok(verify.run.includes('node scripts/verify-pages.mjs'));
- assert.ok(verify.run.indexOf('verify-static-incremental.mjs')<verify.run.indexOf('build-pages.mjs'));
+ assert.ok(verify.run.indexOf('npm test')<verify.run.indexOf('build-pages.mjs'));
  assert.ok(verify.run.indexOf('build-pages.mjs')<verify.run.indexOf('verify-pages.mjs'));
  assert.ok(steps.indexOf(save)>steps.indexOf(verify));
  assert.ok(steps.indexOf(restore)<steps.indexOf(verify));

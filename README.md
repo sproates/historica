@@ -34,13 +34,14 @@ On macOS, `npm run preview:install` installs the persistent preview service. Aft
 
 `src/browser/explorer.ts` coordinates the main explorer, with models, controllers and rendering under `src/`. `web/focus-app.js` is its browser entry point and `web/focus.css` supplies the styles. The earlier campaign prototype is still linked from the explorer; its retirement is separate from removing unused migration adapters.
 
-Edit source records and templates, then run the relevant generators. Don't edit `web/pages/` by hand: `scripts/build-metadata.mjs` generates those pages and their sharing metadata. The current data layout is transitional; the [sustainability plan](SUSTAINABILITY-PLAN.md) describes the intended replacement.
+Edit records under `content/` and page templates under `src/pages/`. `npm run build:web` builds and verifies Astro pages, then exports them to the paths used by the local server. Don't edit `web/pages/`, `web/index.html`, `web/about.html` or `web/coverage.html`: they are generated output. The current data layout is transitional; the [sustainability plan](SUSTAINABILITY-PLAN.md) describes the intended replacement.
 
 ```sh
 npm test                 # model, data, routing and build checks
 npm run build:evidence   # validate and generate reviewed evidence
 npm run build:coverage   # generate the coverage dashboard data
-npm run build:site       # complete verification and generated output in docs/
+npm run build:web        # verified Astro pages and assets for the local server
+npm run build:site       # complete verification and compatibility output in docs/
 npm run build:pages      # portable static export in release/pages-site/
 ```
 
@@ -52,14 +53,13 @@ The standard staging build uses Astro for all 230 histories, home, About and res
 
 ```sh
 npm run check:static     # strict checks for Astro templates and page models
-npm run test:static      # type-check, build and check the pilot HTML
-npm run preview:static   # refresh the existing Wi-Fi preview with the pilot
+npm run test:static      # type-check, build and check all Astro HTML
+npm run preview:sync    # refresh the existing Wi-Fi preview with verified Astro pages
 npm run build:static:incremental   # build and check changed history pages locally
-npm run preview:static:incremental # use the incremental output in the Wi-Fi preview
 npm run package:static   # alias for build:pages, output in release/pages-site/
 ```
 
-Open `/person/alexander`, `/person/socrates` or `/area/egypt` on the existing preview. `npm run preview:sync` restores the normal prototype pages. Neither command publishes. The Astro output in `release/static-pilot/` contains the history, home, About and research coverage pages. `npm run build:pages` (also `npm run package:static`) combines verified incremental pages with the styles, scripts and data in `release/pages-site/`. CI produces this same Astro package. It checks packaged file hashes, local links and assets, and static page markers. The package is mounted at `/historica/`, excludes indexing and does not publish. The older production builder remains separate during the refactor.
+Open `/person/alexander`, `/person/socrates` or `/area/egypt` on the existing preview. `npm run preview:sync` now uses the same verified Astro pages as the staging build; there is no separate prototype overlay. The older `preview:static` commands are aliases. None of these commands publishes. The Astro output in `release/static-pilot/` contains the history, home, About and research coverage pages. `npm run build:pages` (also `npm run package:static`) combines verified incremental pages with the styles, scripts and data in `release/pages-site/`. CI produces this same Astro package. It checks packaged file hashes, local links and assets, and static page markers. The package is mounted at `/historica/`, excludes indexing and does not publish. Compatibility packaging retains the existing server paths, using the same Astro-generated HTML.
 
 A typed browser coordinator enhances the static pages. Default pages retain their generated content when controls load; customised date, filter and comparison bookmarks still use the runtime renderer. Home search and the research coverage dashboard now use typed controllers; the static package now uses Astro for home, About and coverage as well as every history. Page models and Astro templates are now strictly checked before building. Static pages reuse their embedded world map and fetch only a small regional geometry file. The explorer loads evidence for the selected history, caches visited histories and uses a small shared chronology index for age comparisons. Full research records remain available to the build and coverage page. Local incremental builds and CI reuse verified static pages. Cold caches and shared code changes receive full static verification; content changes check affected pages. A unified runtime state and smaller history payloads remain to be completed. See [pilot notes](project/static-page-pilot.md).
 

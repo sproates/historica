@@ -51,7 +51,6 @@ jobs:
         if: steps.changes.outputs.scope == 'site'
         run: |
           npm test
-          node scripts/verify-static-incremental.mjs
           node scripts/build-pages.mjs --static-source release/static-incremental
           node scripts/verify-pages.mjs
       - name: Save verified main-branch static pages

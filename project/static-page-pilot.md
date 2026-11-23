@@ -193,3 +193,11 @@ Verification covered the static page's text, complete control IDs, styling, meta
 `npm run build:pages` now builds and verifies incremental Astro pages, then packages them with shared assets in `release/pages-site/`. `package:static` is an alias. CI follows the same sequence instead of verifying Astro and uploading the older pages. Production remains on its existing builder.
 
 The final package check verifies manifest inventory and checksums, history and ancillary page markers, staging indexing rules, mount paths, and local HTML links and asset references. Missing or corrupted files stop verification before the artifact is uploaded. This does not check runtime network requests or external source availability.
+
+## One source for published page HTML
+
+Home, About and coverage are now authored only in `src/pages/`; their `web/` copies are ignored build output. The old metadata builder no longer creates a second set of history pages. `build:content` generates data, routing and discovery metadata; `build:web` then verifies incremental Astro pages and exports them to the existing local/Apache addresses. Both packaging paths consume Astro HTML.
+
+The export reads and validates all pages before replacing output, keeps unrelated assets, and removes retired generated histories. It changes the cache's noindex metadata to the ordinary site's indexing policy; the staging packager independently enforces noindex. The original Astro cache remains untouched. Tests cover incomplete input, path safety, indexing and pruning.
+
+The persistent preview now uses this normal build. The separate overlay script has been removed and its npm commands alias `preview:sync`. No layout or wording change is intended. The empty focus shell and original campaign prototype remain for their existing runtime/compatibility uses; their retirement is separate.
