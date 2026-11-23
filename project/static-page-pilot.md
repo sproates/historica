@@ -104,7 +104,7 @@ A typed evidence store shares in-flight requests, caches successful downloads an
 
 `src/browser/explorer.ts` now owns loading, state snapshots, bookmarks, navigation, evidence selection and controller wiring. `web/focus-app.js` only supplies the mount path and generated prototype records. The assembled history is validated before use. Map coordinate extraction moved behind the map-data boundary, and the coordinator uses the shared geometry projection.
 
-The entry-point harness now executes the compiled coordinator. Tests cover default enhancement, custom bookmarks, browser history under `/historica/`, cached Back, failed navigation and retry, and whole-period navigation. The primary history explorer is now strict TypeScript end to end; ancillary home, coverage and legacy campaign scripts remain outside this migration. Static packaging and deployment remain separate work.
+The entry-point harness now executes the compiled coordinator. Tests cover default enhancement, custom bookmarks, browser history under `/historica/`, cached Back, failed navigation and retry, and whole-period navigation. The primary history explorer is now strict TypeScript end to end; ancillary home, coverage and legacy campaign scripts remain outside this migration. Standalone packaging is described below; production deployment remains separate work.
 
 ## Incremental local static builds
 
@@ -118,4 +118,10 @@ Verification included a no-change run (230 reused), a temporary Socrates evidenc
 
 CI now restores the incremental output and runs `scripts/verify-static-incremental.mjs`. It checks the build manifest against a separate successful-test record. Cold caches, shared code changes and static test changes run the full static suite. Content changes run tests for affected histories; unchanged pages retain their verified record. A failed test run cannot advance that record. Model, data and controller tests still run for every site change, and internal documentation changes still skip site work.
 
-Only successful main-branch push jobs save caches. PRs and manual runs may restore them but do not publish shared caches. Cache actions are pinned to a commit; missing or corrupt output falls back to rebuilding. Local verification covered a cold run (230 pages checked), a warm run (zero pages rechecked), and a temporary Socrates evidence change (one checked, 229 reused). End-to-end CI cache behaviour must also be checked after the first main-branch cache has been saved.
+Only successful main-branch push jobs save caches. PRs and manual runs may restore them but do not publish shared caches. Cache actions are pinned to a commit; missing or corrupt output falls back to rebuilding. Local verification covered a cold run (230 pages checked), a warm run (zero pages rechecked), and a temporary Socrates evidence change (one checked, 229 reused). End-to-end CI verification passed in run 45200730361 after the main-branch cache was saved: all 230 pages and their static test records were reused. The verify job took 49 seconds and deployment was skipped.
+
+## Standalone static package
+
+`npm run package:static` generates current content and coverage, builds and verifies affected Astro pages, then packages those pages with the existing shared assets and ancillary pages in `release/static-site/`. It defaults to the `/historica/` staging mount and disables indexing. No hosting configuration or deployment is changed. The existing CI artifact remains on the ordinary builder until the new package has been reviewed.
+
+The packager accepts `--static-source` for a complete Astro route tree. It reads and checks every expected history before replacing the previous package, omits duplicate legacy `pages/` HTML, and records the renderer and file checksums in the release manifest. Missing or mismatched history pages fail packaging instead of silently falling back to the prototype. Tests cover route mounting, shared assets, indexing, source/output separation and incomplete input. Home, About and coverage still use their existing generation.
