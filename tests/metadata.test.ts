@@ -22,12 +22,12 @@ test('every published history has unique crawler-visible metadata and canonical 
 test('main pages expose social images and the site identity without JavaScript',()=>{
  for(const name of ['index.html','about.html','coverage.html']){
   const html=read(name);
-  assert.match(html,/property="og:image" content="https:\/\/historica.online\/share-historica.png"/);
+  assert.match(html,/property="og:image" content="https:\/\/historica.online\/share-historica-chronology.png"/);
   assert.match(html,/name="twitter:card" content="summary_large_image"/);
   assert.equal((html.split('</head>')[0].match(/<title>/g)||[]).length,1);
  }
  const schema=JSON.parse(read('index.html').match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
  assert.equal(schema.name,'Historica');assert.equal(schema.creator.name,'Ian Sproates');
- const png=fs.readFileSync('web/share-historica.png');assert.equal(png.readUInt32BE(16),1200);assert.equal(png.readUInt32BE(20),630);
+ const png=fs.readFileSync('web/share-historica-chronology.png');assert.equal(png.readUInt32BE(16),1200);assert.equal(png.readUInt32BE(20),630);
  assert.ok(read('robots.txt').includes('https://historica.online/sitemap.xml'));
 });
