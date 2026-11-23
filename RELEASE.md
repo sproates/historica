@@ -84,8 +84,8 @@ local deployment configuration, backups or hosting notes.
 ## GitHub Pages preparation
 
 `npm run build:pages` writes a staging artifact under ignored `release/pages-site/`,
-with the `/historica/` mount point and noindex metadata. It does not upload anything.
-`node scripts/build-pages.mjs --production` prepares the custom-domain root version.
+using verified incremental Astro pages, with the `/historica/` mount point and noindex metadata. The final package is checked for file integrity, missing local links and assets, and static page markers. It does not upload anything.
+After verification, `node scripts/build-pages.mjs --static-source release/static-incremental --production` prepares the custom-domain root version.
 Both generate real directories for history routes and About; Apache is not required.
 
 The Verify Historica workflow checks site changes and retains a seven-day staging

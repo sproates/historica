@@ -187,3 +187,9 @@ The coverage page now uses Astro and the shared `SiteLayout`, with its existing 
 The authored legacy templates remain available to the ordinary production builder. Their content is compared with the Astro pages during static verification, and all three templates participate in shared cache invalidation so a change cannot bypass those comparisons. No wording or layout change is intended.
 
 Verification covered the static page's text, complete control IDs, styling, metadata and public address, plus the existing coverage model/controller tests. Packaging uses the Astro output. In the refreshed browser preview, a saved Egyptian selection and filters restored correctly, changing the workflow filter updated results, and the checked-statement total remained separate from package completion. Production is unchanged.
+
+## Standard Astro staging artifact
+
+`npm run build:pages` now builds and verifies incremental Astro pages, then packages them with shared assets in `release/pages-site/`. `package:static` is an alias. CI follows the same sequence instead of verifying Astro and uploading the older pages. Production remains on its existing builder.
+
+The final package check verifies manifest inventory and checksums, history and ancillary page markers, staging indexing rules, mount paths, and local HTML links and asset references. Missing or corrupted files stop verification before the artifact is uploaded. This does not check runtime network requests or external source availability.

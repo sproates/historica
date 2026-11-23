@@ -29,6 +29,10 @@ test('CI restores only for site work and publishes verified caches only from mai
  const verify=steps.find(s=>s.name==='Generate and verify the site');
  assert.ok(verify.run.includes('node scripts/verify-static-incremental.mjs'));
  assert.ok(verify.run.includes('npm test'));
+ assert.ok(verify.run.includes('node scripts/build-pages.mjs --static-source release/static-incremental'));
+ assert.ok(verify.run.includes('node scripts/verify-pages.mjs'));
+ assert.ok(verify.run.indexOf('verify-static-incremental.mjs')<verify.run.indexOf('build-pages.mjs'));
+ assert.ok(verify.run.indexOf('build-pages.mjs')<verify.run.indexOf('verify-pages.mjs'));
  assert.ok(steps.indexOf(save)>steps.indexOf(verify));
  assert.ok(steps.indexOf(restore)<steps.indexOf(verify));
 });
