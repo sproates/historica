@@ -1,14 +1,7 @@
 import fs from 'node:fs';
 import {buildFocusData} from '../web/focus-model.js';
-const origin='https://historica.online';
-const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const description=text=>{const plain=String(text||'').replace(/\s+/g,' ').trim();return plain.length<=170?plain:plain.slice(0,167).replace(/\s+\S*$/,'')+'…';};
-function head(title,desc,path,{noindex=false,website=false}={}){
- const url=origin+path,image=origin+'/share-historica.png';
- const tags=[`<title>${escape(title)}</title>`,`<meta name="description" content="${escape(desc)}">`,`<link rel="canonical" href="${escape(url)}">`,`<meta name="robots" content="${noindex?'noindex, follow':'index, follow, max-image-preview:large'}">`,...Object.entries({'og:type':'website','og:site_name':'Historica','og:locale':'en_GB','og:title':title,'og:description':desc,'og:url':url,'og:image':image,'og:image:type':'image/png','og:image:width':'1200','og:image:height':'630','og:image:alt':'Historica. Visualising history. A timeline of overlapping histories.'}).map(([property,value])=>`<meta property="${property}" content="${escape(value)}">`),...Object.entries({'twitter:card':'summary_large_image','twitter:title':title,'twitter:description':desc,'twitter:image':image,'twitter:image:alt':'Historica. Visualising history.'}).map(([name,value])=>`<meta name="${name}" content="${escape(value)}">`)];
- if(website)tags.push('<script type="application/ld+json">'+JSON.stringify({'@context':'https://schema.org','@type':'WebSite',name:'Historica',url:origin+'/',description:desc,inLanguage:'en-GB',creator:{'@type':'Person',name:'Ian Sproates',url:'https://sproates.net',sameAs:['https://www.linkedin.com/in/sproates/','https://github.com/sproates']}})+'</script>');
- return '<!-- metadata:start -->\n'+tags.join('\n')+'\n<!-- metadata:end -->';
-}
+import {origin,description,metadataHead as head} from '../web/generated/presentation/metadata.js';
+import {escapeHtml as escape} from '../web/generated/presentation/html.js';
 function inject(html,title,desc,path,options){
  return html.replace(/<!-- metadata:start -->[\s\S]*?<!-- metadata:end -->\s*/g,'').replace(/<title>[\s\S]*?<\/title>/g,'').replace(/<meta name="description"[^>]*>/g,'').replace('</head>',head(title,desc,path,options)+'\n</head>');
 }

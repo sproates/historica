@@ -1,0 +1,12 @@
+---
+import {metadataHead} from '../presentation/metadata';
+interface Props {
+ title: string;
+ description: string;
+ path: string;
+ noindex?: boolean;
+ website?: boolean;
+}
+const {title,description,path,noindex=false,website=false}=Astro.props;
+---
+<Fragment set:html={metadataHead(title,description,path,{noindex,website})} />
