@@ -146,6 +146,14 @@ Eight redundant browser adapters have been removed: comparison, coverage, explor
 
 `web/generated/` is ignored and no longer committed. `scripts/build-client.mjs` clears this owned output directory, compiles TypeScript, then generates the prototype module from authored content. The evidence builder uses the typed assembly function directly, removing its dependency on a pre-existing generated prototype module.
 
-Start commands, preview installation and coverage generation prepare browser output before using it. Existing test, preview and package commands already build it. CI builds from source; it no longer compares generated browser modules with Git. Other generated data and legacy HTML remain tracked for now. This change does not relocate public asset URLs or publish a release.
+Start commands, preview installation and coverage generation prepare browser output before using it. Existing test, preview and package commands already build it. CI builds from source; it no longer compares generated browser modules with Git. Generated research data remains tracked for now; generated history HTML is covered below. This change does not relocate public asset URLs or publish a release.
 
 Verification used a fresh temporary copy of the staged source with no generated browser files or dependencies. `npm ci`, all 183 tests, all 10 static checks across 230 histories and standalone packaging passed. A deliberately stale generated module was removed on rebuild while the prototype module was recreated. The persistent preview was refreshed without restarting its service.
+
+## Generated history pages and routes
+
+The 230 generated history pages, route registry, rewrite rules, sitemap and robots file are no longer tracked. `npm test` now runs the content build before tests so a clean checkout creates the HTML and routing metadata that verification needs. Existing preview and package commands already generate these files. Authored home, About, coverage and explorer templates remain tracked.
+
+The metadata generator prunes retired HTML after generating current pages. Preview synchronisation also prunes files removed from the owned `pages/` and `generated/` directories, so deleted output cannot linger in the persistent copy. Neither command publishes.
+
+A fresh source-only copy passed dependency installation, all existing tests, all 10 static checks and standalone packaging for 230 histories. A retired-page fixture was removed on metadata regeneration. Targeted tests verify the generated page inventory and preview pruning; the persistent preview was refreshed without restarting the service.

@@ -19,3 +19,10 @@ __pycache__/
 
 # Browser modules and prototype data are rebuilt from src/ and content/.
 /web/generated/
+
+# Generated history routes and discovery metadata.
+/web/pages/
+/web/data/routes.json
+/web/.htaccess
+/web/sitemap.xml
+/web/robots.txt

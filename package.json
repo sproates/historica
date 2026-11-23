@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "python3 scripts/preview-server.py",
-    "test": "npm run build:evidence && node scripts/validate-history.mjs && node --test tests/*.test.mjs",
+    "test": "npm run build:content && node scripts/validate-history.mjs && node --test tests/*.test.mjs",
     "start:lan": "python3 scripts/preview-server.py --bind 0.0.0.0",
     "validate:research": "node scripts/validate-evidence.mjs",
     "audit:prototype": "node scripts/audit-prototype.mjs",

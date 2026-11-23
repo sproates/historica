@@ -22,6 +22,9 @@ for(const e of data.entities){
  html=html.replace('<h1 id="focus-title"></h1>',`<h1 id="focus-title">${escape(e.title)}</h1>`).replace('<div id="focus-description"></div>',`<div id="focus-description"><p>${escape(e.description)}</p></div>`);
  fs.writeFileSync(`web/pages/${e.id}.html`,html);
 }
+// Remove retired generated pages only after current pages have been written.
+const currentPages=new Set(data.entities.map(e=>e.id+'.html'));
+for(const file of fs.readdirSync('web/pages'))if(file.endsWith('.html')&&!currentPages.has(file))fs.unlinkSync('web/pages/'+file);
 const urls=['/','/about','/coverage.html',...data.entities.map(e=>`/${e.type}/${e.id}`)];
 fs.writeFileSync('web/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(path=>`<url><loc>${escape(origin+path)}</loc></url>`).join('\n')+'\n</urlset>\n');
 fs.writeFileSync('web/robots.txt',`User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
