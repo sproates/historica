@@ -90,6 +90,6 @@ Both generate real directories for history routes and About; Apache is not requi
 
 The Verify Historica workflow checks site changes and retains a seven-day staging
 artifact. Explicitly allowlisted internal documentation changes skip the site build.
-The workflow has no deployment permissions or production secrets.
+Verification has read-only permissions and no production secrets. A separate staging job can publish only pushes to `feature/github-pages-preparation`; it refuses deployment if any custom domain is attached. It promotes the verified artifact without rebuilding.
 
 See [the cutover preparation record](project/github-pages-cutover.md) for status.
