@@ -28,3 +28,13 @@ Ian approved replacing the remote history on 23 November. A private recovery bun
 The remote main and staging branches, cleanup branch and v0.0.1 tag now match the sanitised copy. The push used exact expected previous references and was atomic. The working checkout was aligned only after confirming its files were unchanged. The repository remains private, Pages has no production custom domain, and the live ASO site returned HTTP 200 after the update.
 
 This does not yet remove every GitHub reference to the old history. The closed, merged PR #1 still has an old head reference under refs/pull/1/head. Treat that as a public-release blocker until its retained history is resolved. Do not claim that rewriting branches and tags purges GitHub pull-request references or cached commits. Historical CI artifacts and logs also need review before visibility changes. The private recovery bundle and original local objects must never be pushed with --mirror.
+
+## GitHub retention review
+
+Reviewed all 17 available workflow-log archives and 12 unexpired artifact archives on 23 November: 29 archives containing 6,125 files, including files inside the Pages tar archive. None matched the known hosting details or credential patterns checked. Copies and the machine-readable report remain under ignored release/github-retention-review/. No artifacts or runs were deleted. There are no Actions caches, GitHub release records, forks or open issues reported for this repository.
+
+PR #1 remains the unresolved reference. GitHub documents that refs/pull references are read-only and that Support does not remove non-sensitive data. Hosting connection metadata may not qualify for their sensitive-data removal process. Reference: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+
+Proposed resolution, pending Ian's approval: rename the existing repository to historica-private-archive and keep it private; create a fresh private historica repository; push only sanitised branches and tags, with the cleanup branch promoted to main after verification. Do not mirror-push original local references. Recreate and verify CI/Pages staging settings in the fresh repository. The old staging URL may change during the rename; production remains on ASO throughout. Keep the archive's workflows from deploying after the rename. Confirm the fresh repository has no inherited PR references and verify a remote clone before asking for public visibility approval. Preserve the old repository's PRs and logs privately rather than deleting them.
+
+This is a repository replacement proposal, not an executed rename or authorisation to make either repository public.
