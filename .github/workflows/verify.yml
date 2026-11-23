@@ -22,7 +22,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
-          node-version: '22'
+          node-version-file: '.node-version'
       - name: Classify changes
         id: changes
         env:
@@ -37,6 +37,14 @@ jobs:
           else
             git diff --check HEAD
           fi
+      - name: Install locked build tools
+        if: steps.changes.outputs.scope == 'site'
+        run: npm ci
+      - name: Compile TypeScript and check generated modules
+        if: steps.changes.outputs.scope == 'site'
+        run: |
+          npm run build:client
+          git diff --exit-code -- web/generated/
       - name: Generate and verify the site
         if: steps.changes.outputs.scope == 'site'
         run: |

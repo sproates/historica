@@ -34,3 +34,7 @@ Refresh the persistent preview after edits with `npm run preview:sync`. Files ar
 - All changes to main must arrive through a pull request. Never push directly to main, force-push it, or bypass its protection, including for documentation.
 - Require the GitHub Actions verify check to pass against an up-to-date branch before merging. Resolve review conversations. Protection applies to administrators too.
 - A separate human approval is not currently required by branch protection; PRs and passing verification are required.
+
+## Refactor before public release
+- Keep the repository private and production on ASO until the refactor is complete and Ian approves public release and cutover. Refactor work must not deploy to ASO.
+- Use Node.js 26, pinned in `.node-version`, and `npm ci` for locked build dependencies. Edit `src/` for migrated TypeScript; regenerate `web/generated/` with `npm run build:client`.

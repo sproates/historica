@@ -4,7 +4,7 @@ Draft for agreement, 23 November 2026. Baseline: `v0.0.1`.
 
 The prototype is live. We now need an app that is straightforward to maintain, inexpensive to host and quick to change. Routine content updates should touch only the records and outputs they affect. Structural changes should be possible without breaking the live site or turning every release into a large exercise.
 
-The proposed direction is GitHub Pages hosting, a strict TypeScript codebase, Astro static generation, structured files for historical content, and GitHub Actions for proportionate verification and deployment. Move hosting before the full refactor so that ASO storage is released early. Restyle once the page and interaction boundaries are established.
+The proposed direction is GitHub Pages hosting, a strict TypeScript codebase, Astro static generation, structured files for historical content, and GitHub Actions for proportionate verification and deployment. Complete the refactor while the repository stays private and production stays on ASO. Public release and hosting cutover follow explicit approval. Restyle once the page and interaction boundaries are established.
 
 This document authorises no infrastructure changes by itself. It proposes the sequence for enabling CI, moving hosting and making the repository public. The existing release rules apply until the corresponding phase is agreed. Design changes still go through the persistent Wi-Fi preview.
 
@@ -139,14 +139,14 @@ Content updates can use small commits directly to main if that remains the faste
 
 Move generated `docs/`, route HTML, bundles and release manifests out of tracked source once CI owns generation. Keep authored research, provenance and useful migration history. Remove dead scripts and adapters after their replacements are working. Consolidate the roadmap and release instructions, document the folder structure and contribution commands, and add dependency/update policy and licence notices. Put plans under `project/`, since `docs/` currently means deployable output.
 
-There is an existing uncommitted change in `tests/view-url.test.mjs`. Review and account for it at the baseline stage; don't silently discard it or claim the working tree is already clean.
+The baseline bookmark fixture change was reviewed and committed during Pages preparation. The cleaned repository now has protected main and mandatory PR verification.
 
 ## Delivery sequence
 
 | Stage | Deliverable and completion condition | Indicative size |
 | --- | --- | --- |
 | 1. Baseline and repository preparation | Preserve prototype, resolve outstanding changes, record behaviour and performance, audit publication readiness, agree updated workflow rules | 1–2 PRs |
-| 2. Hosting and release pipeline | Pages-compatible prototype, CI change classification, verified artifact deployment, rollback rehearsal, HTTPS cutover and ASO cleanup | 2–3 PRs plus cutover |
+| 2. Hosting and release pipeline | Private Pages rehearsal, CI change classification, verified artifact deployment and rollback rehearsal; production cutover remains deferred | 2–3 PRs plus cutover |
 | 3. Types and canonical data | Strict domain model, schema-checked records, lossless conversion and compatibility adapter | 2–3 PRs |
 | 4. Static application | Astro pages, isolated interactions, all current routes and bookmarks preserved, useful HTML before JavaScript | 2–3 PRs |
 | 5. Incremental content delivery | Dependency-aware generation, targeted verification, reproducible clean-build comparison, measured fast content release | 1–2 PRs |
@@ -165,4 +165,6 @@ The approved design works on phone and desktop in both themes, with no known rel
 
 ## Runtime decision
 
-Use Node.js 26 for the refactored application, as requested by Ian on 23 November 2026. Align local development, the build tooling and GitHub CI on that version during the refactor. This does not change the current prototype runtime.
+Use Node.js 26 for the refactored application, as requested by Ian on 23 November 2026. Align local development, the build tooling and GitHub CI on that version during the refactor. The refactor foundation pins local development and CI to Node.js 26.0.0. The deployed ASO site remains unchanged.
+
+Public visibility, the production HTTPS cutover and ASO cleanup occur after the refactor stages and explicit release approval, not during the hosting rehearsal.

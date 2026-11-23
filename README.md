@@ -8,7 +8,7 @@ Coverage is selective. Historical statements link to sources, but a sourced entr
 
 ## Run locally
 
-You need Node.js 22 and Python 3. There are currently no npm dependencies or API keys to install.
+Use Node.js 26 (the exact development and CI version is in `.node-version`) and Python 3. Run `npm ci` to install the locked TypeScript build tools. No API keys are needed.
 
 ```sh
 npm start
@@ -50,7 +50,9 @@ Production runs on ASO. GitHub Actions verifies changes and skips the site build
 
 Before switching production to GitHub Pages, we'll complete repository cleanup and obtain explicit approval to make the repository public. Cloudflare manages Historica's DNS; website traffic still goes directly to ASO. See the [cutover record](project/github-pages-cutover.md) and [release instructions](RELEASE.md).
 
-The current app uses JavaScript and generated static HTML with interactive browser rendering. TypeScript, fuller static generation, incremental verification and dark mode are planned, not implemented.
+The refactor has started with strict TypeScript in `src/domain/`. Timeline arithmetic now compiles to `web/generated/`, with the existing browser entry point preserved. The rest of the app still uses JavaScript and generated static HTML with interactive browser rendering. Fuller static generation, incremental verification and dark mode remain planned.
+
+Edit TypeScript source, then run `npm run build:client`. Generated browser modules remain tracked during migration so existing preview and generation tools can read them; CI rejects stale generated modules. `npm test`, `npm run build:pages` and `npm run preview:sync` compile them automatically. Strict checking applies to migrated TypeScript, not yet to all legacy JavaScript.
 
 ## Research and reuse
 
