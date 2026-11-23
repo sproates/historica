@@ -24,7 +24,7 @@ try{
   const built=path.resolve(work,'pages');
   const bin=JSON.parse(fs.readFileSync('node_modules/astro/package.json')).bin.astro;
   run(process.execPath,[path.join('node_modules/astro',bin),'build'],{HISTORICA_STATIC_SELECTION:selection,HISTORICA_STATIC_OUTPUT:built});
-  const required=[...fs.readFileSync('web/focus.html','web/index.html','web/about.html','web/coverage.html','utf8').matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
+  const required=[...fs.readFileSync('web/focus.html','utf8').matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   // Verify the staged pages before changing the last successful output or manifest.
   for(const entry of models.filter(e=>plan.changed.includes(e.id))){
    if(entry.id.startsWith('@')){
