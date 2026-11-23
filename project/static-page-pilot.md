@@ -179,3 +179,11 @@ Home and About now have Astro templates using a shared welcome layout and metada
 Both pages are included in the incremental manifest and verification records, bringing the static output to 232 pages. No-change builds reuse all 232. Missing or damaged home/About output is rebuilt and rechecked; history-only selections exclude the two auxiliary IDs. Coverage remains on its existing HTML template.
 
 Verification passed all 13 static checks across 232 pages. A no-change run reused all pages and test records; deleting the generated home page rebuilt that page and reused the other 231. Packaging tests confirmed the Astro home/About output is selected. The refreshed browser preview passed home search, About navigation and creator-link checks. Production remains unchanged.
+
+## Astro research coverage page
+
+The coverage page now uses Astro and the shared `SiteLayout`, with its existing research explanations and typed controller. The package and preview retain the public `/coverage.html` address. Its HTML is included in the incremental manifest, bringing the total to 233 pages. Browser-loaded research data still populates the interactive planning grid and totals.
+
+The authored legacy templates remain available to the ordinary production builder. Their content is compared with the Astro pages during static verification, and all three templates participate in shared cache invalidation so a change cannot bypass those comparisons. No wording or layout change is intended.
+
+Verification covered the static page's text, complete control IDs, styling, metadata and public address, plus the existing coverage model/controller tests. Packaging uses the Astro output. In the refreshed browser preview, a saved Egyptian selection and filters restored correctly, changing the workflow filter updated results, and the checked-statement total remained separate from package completion. Production is unchanged.

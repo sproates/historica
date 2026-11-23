@@ -18,7 +18,7 @@ export function buildPages({source='web', output='release/pages-site', base='/',
     if(staticRoot && !html.includes(`data-static-history="${id}"`))throw new Error(`Missing static history: ${route}`);
     return [route,html];
   }));
-  const welcomePages=staticRoot?new Map([['index.html','home'],['about/index.html','about']].map(([file,page])=>{
+  const sitePages=staticRoot?new Map([['index.html','home'],['about/index.html','about'],['coverage/index.html','coverage']].map(([file,page])=>{
     const html=fs.readFileSync(path.join(staticRoot,file),'utf8');
     if(!html.includes(`data-static-page="${page}"`))throw new Error(`Missing static page: ${page}`);
     return [file,html];
@@ -54,10 +54,11 @@ export function buildPages({source='web', output='release/pages-site', base='/',
     if(!/^\/(person|area|state|city|period|event)\/[a-z0-9-]+$/.test(route))throw new Error(`Unsafe route: ${route}`);
     write(`${route.slice(1)}/index.html`,transform(historyPages.get(route)));
   }
-  write('about/index.html',transform(welcomePages?.get('about/index.html')??fs.readFileSync(path.join(sourceRoot,'about.html'),'utf8')));
-  if(welcomePages){
-    write('index.html',transform(welcomePages.get('index.html')));
-    write('about.html',transform(welcomePages.get('about/index.html')));
+  write('about/index.html',transform(sitePages?.get('about/index.html')??fs.readFileSync(path.join(sourceRoot,'about.html'),'utf8')));
+  if(sitePages){
+    write('index.html',transform(sitePages.get('index.html')));
+    write('coverage.html',transform(sitePages.get('coverage/index.html')));
+    write('about.html',transform(sitePages.get('about/index.html')));
   }
   write('404.html',transform('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · Historica</title><link rel="stylesheet" href="focus.css"></head><body><main><h1>We couldn’t find that page</h1><p>The address may have changed.</p><p><a href="/">Search Historica</a></p><footer><p>Historica is an open source site on <a href="https://github.com/sproates/historica">GitHub</a>.</p></footer></main></body></html>'));
   if(!production)write('robots.txt','User-agent: *\nDisallow: /\n');

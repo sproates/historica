@@ -1,6 +1,6 @@
 ---
 import PageMetadata from '../components/PageMetadata.astro';
-interface Props {title: string; description: string; path: string; page: 'home'|'about'}
+interface Props {title: string; description: string; path: string; page: 'home'|'about'|'coverage'}
 const {title,description,path,page}=Astro.props;
 ---
 <!doctype html>
@@ -12,10 +12,11 @@ const {title,description,path,page}=Astro.props;
   <PageMetadata title={title} description={description} path={path} website={page==='home'} noindex />
   <link rel="stylesheet" href="focus.css" />
   <link rel="stylesheet" href="branding.css" />
-  <link rel="stylesheet" href="welcome.css" />
+  <link rel="stylesheet" href={page==='coverage'?'coverage.css':'welcome.css'} />
 </head>
 <body data-static-page={page}>
   <slot />
   {page==='home' && <script is:inline type="module" src="home.js"></script>}
+  {page==='coverage' && <script is:inline type="module" src="coverage-app.js"></script>}
 </body>
 </html>
