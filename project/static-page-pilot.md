@@ -140,4 +140,12 @@ The browser checks registry consistency before displaying totals. Existing model
 
 ## Removing migration adapters
 
-Eight redundant browser adapters have been removed: comparison, coverage, exploration, search, swimlane and timeline models, map controls and view URLs. Tests and build tools now import the compiled TypeScript modules directly. The campaign prototype also imports the compiled timeline model directly. The current browser entry points still derive their mount path through `site-path.js`. The campaign page remains linked and functional; removing it requires a separate navigation change. Generated output remains tracked while preview and release tooling still use it.
+Eight redundant browser adapters have been removed: comparison, coverage, exploration, search, swimlane and timeline models, map controls and view URLs. Tests and build tools now import the compiled TypeScript modules directly. The campaign prototype also imports the compiled timeline model directly. The current browser entry points still derive their mount path through `site-path.js`. The campaign page remains linked and functional; removing it requires a separate navigation change. Generated browser output is now untracked, as described below.
+
+## Generated browser output
+
+`web/generated/` is ignored and no longer committed. `scripts/build-client.mjs` clears this owned output directory, compiles TypeScript, then generates the prototype module from authored content. The evidence builder uses the typed assembly function directly, removing its dependency on a pre-existing generated prototype module.
+
+Start commands, preview installation and coverage generation prepare browser output before using it. Existing test, preview and package commands already build it. CI builds from source; it no longer compares generated browser modules with Git. Other generated data and legacy HTML remain tracked for now. This change does not relocate public asset URLs or publish a release.
+
+Verification used a fresh temporary copy of the staged source with no generated browser files or dependencies. `npm ci`, all 183 tests, all 10 static checks across 230 histories and standalone packaging passed. A deliberately stale generated module was removed on rebuild while the prototype module was recreated. The persistent preview was refreshed without restarting its service.

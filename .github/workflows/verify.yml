@@ -40,11 +40,9 @@ jobs:
       - name: Install locked build tools
         if: steps.changes.outputs.scope == 'site'
         run: npm ci
-      - name: Compile TypeScript and check generated modules
+      - name: Build browser modules from source
         if: steps.changes.outputs.scope == 'site'
-        run: |
-          npm run build:client
-          git diff --exit-code -- web/generated/
+        run: npm run build:client
       - name: Restore verified static pages
         if: steps.changes.outputs.scope == 'site'
         uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
@@ -62,7 +60,7 @@ jobs:
           npm test
           node scripts/verify-static-incremental.mjs
           npm run build:pages
-          git diff --exit-code -- research/evidence/\*-exploration.json web/data/reviewed-exploration.json web/data/map-regions.json web/data/browser-evidence.json web/data/evidence/ web/data/browser-chronology.json web/generated/content/prototype-data.js
+          git diff --exit-code -- research/evidence/\*-exploration.json web/data/reviewed-exploration.json web/data/map-regions.json web/data/browser-evidence.json web/data/evidence/ web/data/browser-chronology.json
       - name: Save verified main-branch static pages
         if: success() && steps.changes.outputs.scope == 'site' && github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4

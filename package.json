@@ -16,7 +16,7 @@
     "preview:install": "python3 scripts/install-preview-service.py",
     "package:static": "npm run build:content && npm run build:coverage && node scripts/verify-static-incremental.mjs && node scripts/build-pages.mjs --static-source release/static-incremental --output release/static-site",
     "build:pages": "npm run build:content && node scripts/build-pages.mjs",
-    "build:client": "tsc -p tsconfig.json",
+    "build:client": "node scripts/build-client.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "validate:history": "npm run build:client && node scripts/validate-history.mjs",
     "build:content": "npm run build:evidence && node scripts/build-routes.mjs && node scripts/build-metadata.mjs",
@@ -25,7 +25,11 @@
     "test:static": "npm run build:static && node --test tests/static/*.test.mjs",
     "check:static": "astro check --tsconfig tsconfig.astro.json",
     "build:static:incremental": "npm run build:evidence && node scripts/build-static-incremental.mjs",
-    "preview:static:incremental": "npm run build:static:incremental && npm run preview:sync && python3 scripts/sync-static-preview.py --incremental"
+    "preview:static:incremental": "npm run build:static:incremental && npm run preview:sync && python3 scripts/sync-static-preview.py --incremental",
+    "prestart": "npm run build:content",
+    "prestart:lan": "npm run build:content",
+    "prepreview:install": "npm run build:content",
+    "prebuild:coverage": "npm run build:client"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",

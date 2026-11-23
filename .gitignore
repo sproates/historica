@@ -16,3 +16,6 @@ __pycache__/
 
 # Astro local build state
 .astro/
+
+# Browser modules and prototype data are rebuilt from src/ and content/.
+/web/generated/
