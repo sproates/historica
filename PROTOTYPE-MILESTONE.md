@@ -8,7 +8,7 @@ The prototype is complete when these three additions have been checked on the pe
 2. Choose any two people for a full-lifespan comparison, including non-overlapping lives. Preserve the comparison in bookmarks.
 3. Distinguish lifespans, reigns, events, approximate dates, archaeological snapshots and editorial study windows. Do not imply exact ages or continuous activity where the evidence does not support them.
 
-Ian approved publication of all three features and the fitted initial map on 23 November 2026. Release is in progress. This milestone does not require completing worldwide data coverage or historical boundary geometry.
+Ian approved publication of all three features and the fitted initial map on 23 November 2026. Published and verified on historica.online. The prototype milestone is complete. This milestone does not require completing worldwide data coverage or historical boundary geometry.
 
 ## Following phase: sustainable application
 
