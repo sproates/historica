@@ -29,3 +29,8 @@ Refresh the persistent preview after edits with `npm run preview:sync`. Files ar
 
 ## Public release gate
 - Before moving production hosting to GitHub Pages, complete repository cleanup and obtain Ian’s explicit approval to make the repository public. Private Pages staging is a rehearsal only. Keep production on ASO until that gate is met.
+
+## Protected main
+- All changes to main must arrive through a pull request. Never push directly to main, force-push it, or bypass its protection, including for documentation.
+- Require the GitHub Actions verify check to pass against an up-to-date branch before merging. Resolve review conversations. Protection applies to administrators too.
+- A separate human approval is not currently required by branch protection; PRs and passing verification are required.
