@@ -63,3 +63,5 @@ In this session, pushes to the fresh repository did not produce visible push-tri
 An attempt to restore the manual verification artifact was correctly rejected because the restore workflow only accepts push-built releases. No deployment occurred from that attempt. The normal verification/staging workflow is being used instead.
 
 Fresh-repository staging passed: [verification and deployment run 45169154792](https://github.com/sproates/historica/actions/runs/45169154792). HTTPS checks returned 200 for home, About, a bookmarked Socrates route and the main app script; an unknown route returned 404. The query string was preserved. Pages has HTTPS enforced and no custom domain. Production continued to return 200 from ASO. The new repository is still private.
+
+Automatic event diagnosis: fresh-repository PR #1 started verification automatically and passed (run 45169564684). Its merge started a push-triggered run on main (45169712459). Workflow event keys now use explicit YAML mappings. This demonstrates GitHub-generated PR and merge events; a normal Git transport push is being checked separately before declaring the earlier trigger issue resolved.
