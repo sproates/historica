@@ -65,3 +65,11 @@ An attempt to restore the manual verification artifact was correctly rejected be
 Fresh-repository staging passed: [verification and deployment run 45169154792](https://github.com/sproates/historica/actions/runs/45169154792). HTTPS checks returned 200 for home, About, a bookmarked Socrates route and the main app script; an unknown route returned 404. The query string was preserved. Pages has HTTPS enforced and no custom domain. Production continued to return 200 from ASO. The new repository is still private.
 
 Automatic event diagnosis: fresh-repository PR #1 started verification automatically and passed (run 45169564684). Its merge started a push-triggered run on main (45169712459). Workflow event keys now use explicit YAML mappings. This demonstrates GitHub-generated PR and merge events; a normal Git transport push is being checked separately before declaring the earlier trigger issue resolved.
+
+## Automatic CI verified
+
+The earlier trigger limitation is resolved in observed tests following the explicit workflow event mapping change. PR verification passed automatically (45169564684), the merge produced a successful push run (45169712459), and a normal Git push to main produced a successful documentation-only run (45169755860). That documentation run skipped site generation, artifact upload and deployment as intended. The precise cause of the earlier missing events was not established, so this is behavioural verification rather than a claim about GitHub's parser internals.
+
+Automatic staging also passed after a normal push to the staging branch: [run 45169806778](https://github.com/sproates/historica/actions/runs/45169806778). Production remained on ASO.
+
+Main is now protected: all changes require a PR, the GitHub Actions verify check, an up-to-date branch and resolved conversations. Protection includes administrators; force pushes and branch deletion are disabled. A separate reviewer approval is not required for this solo workflow. All subsequent changes, including internal notes, follow the PR route.
