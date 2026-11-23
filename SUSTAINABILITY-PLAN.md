@@ -1,3 +1,5 @@
+> Historical architecture plan. Current completion and release gates are in [release readiness](project/release-readiness.md). Indicative PR counts and earlier implementation choices below are not an outstanding task list.
+
 # Historica application sustainability plan
 
 Draft for agreement, 23 November 2026. Baseline: `v0.0.1`.

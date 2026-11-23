@@ -1,0 +1,39 @@
+/* Shared visual tokens. All published layouts load this sheet last. */
+:root{color-scheme:light;--paper:#faf8f2;--ink:#263b38;--muted:#586b65;--line:#cbd2c8;--surface:#fffdf7;--surface-alt:#eeeee4;--gold:#94652b;--accent:#527864;--ochre:#896947;--cursor:#ae432d;--water:#e3edef;--land:#d5dfce;--map-border:#8da291;--grid:#b9c6b855;--selection:#aac59b66;--stripe:#ffffff66;--stripe-faint:#ffffff33;--on-accent:#fffdf7;--notice:#eee3cb;--notice-text:#624a26;--badge:#8c5b20;--success:#d2e4d5;--info:#dce8ee;--radius:4px;--space:8px}
+:root[data-theme=dark]{color-scheme:dark;--paper:#162220;--ink:#e6e9de;--muted:#b0bdb4;--line:#40534b;--surface:#1c2c28;--surface-alt:#23352f;--gold:#e0b677;--accent:#9fc4a8;--ochre:#ccaf83;--cursor:#ff9c80;--water:#172d34;--land:#344d40;--map-border:#6d8a77;--grid:#78978044;--selection:#8cbf7c33;--stripe:#16222066;--stripe-faint:#e6e9de22;--on-accent:#162220;--notice:#3b3528;--notice-text:#e5c58e;--badge:#d9ac6c;--success:#294737;--info:#273e49}
+body{background:var(--paper);color:var(--ink)}
+header{gap:20px;padding-block:18px;border-top:4px solid var(--gold)}
+header .brand{font-size:32px}header .beta-sash{clip-path:none;transform:none;border-radius:2px;font-size:9px;padding:3px 7px;letter-spacing:1.5px}
+header .brand-tagline{font-size:12px;letter-spacing:.04em}
+header .theme-control{display:inline-flex;align-items:center;justify-content:center;flex:none;width:40px;height:40px;min-height:40px;padding:8px;margin-left:0;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink)}
+header .theme-control:hover{background:var(--surface-alt)}
+header .theme-control[aria-pressed=true]{color:var(--gold)}
+.theme-control svg{display:block;pointer-events:none}
+button,select,input{border-radius:var(--radius);accent-color:var(--gold)}
+button,select{background:var(--surface)}
+input[type=search]{background:var(--surface);color:var(--ink)}
+button:hover{background:var(--surface-alt)}
+button:disabled{opacity:.6}
+h1,h2,h3{font-variant-numeric:lining-nums}
+.hero h1{max-width:24ch}.hero #focus-description{max-width:76ch;line-height:1.7}
+.opening-comparison{background:var(--surface-alt);border:0;border-left:3px solid var(--gold);border-radius:0;padding:18px 22px}
+.comparison-track,.home-track{border-radius:0}.comparison-track span,.home-track span{border-radius:0}
+.section-heading h2,.graphical-timeline h2,.geography h2{font-size:27px;letter-spacing:-.4px}
+.timeline-map-layout{margin-block:28px}.swim-scroll{border-radius:0}.swim-label{background:var(--paper)}
+.swim-axis,.home-axis,.date-display,.date-kind,.comparison-axis{font-variant-numeric:tabular-nums}
+#focus-map{background:var(--water);border:1px solid var(--line);border-radius:var(--radius)}
+.modern-land{fill:var(--land);stroke:var(--map-border)}
+.focus-region{fill:var(--accent)}
+#focus-map circle[fill=none]{stroke:var(--accent)}
+#focus-map path[stroke-dasharray]{stroke:var(--gold);fill:var(--selection)}
+.map-marker circle{fill:var(--gold)}.map-marker circle:first-of-type{fill:var(--selection)}.map-marker circle:last-of-type{stroke:var(--surface)}
+.map-marker:focus{outline:none}.map-marker:focus circle:last-of-type{stroke:var(--ink);stroke-width:3}
+.research-guide article,#package-detail,.findings-grid article{border-radius:var(--radius)}
+.welcome{max-width:1200px}.welcome-intro{padding-block:26px}.welcome-intro h1{font-size:clamp(32px,4vw,48px);letter-spacing:-1.2px}.welcome-intro>p:last-child{font-size:16px}
+.history-sheet{border-top:2px solid var(--gold);padding-top:24px}.sheet-heading h2{font-size:30px}.history-row{padding-top:20px}.history-row strong{font-family:Georgia,serif;font-size:21px}.history-row .home-track{height:25px}
+.featured-grid>a{grid-template-columns:160px 1fr}.featured-grid>a:hover h3{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}.card-action{color:var(--muted)}
+.home-search input{border-radius:var(--radius)}.about-page{max-width:850px}.about-page .about-lead{font-size:21px}
+footer{font-size:13px;line-height:1.7;color:var(--muted)}
+@media(min-width:1200px){.timeline-map-layout>.geography{position:sticky;top:18px}.timeline-map-layout{grid-template-columns:minmax(0,1.65fr) minmax(360px,1fr)}}
+@media(max-width:700px){header{gap:12px;flex-wrap:wrap;padding:14px 5%}header .brand{font-size:27px}header nav{gap:14px;font-size:13px}header .brand-tagline{display:none}header button{font-size:12px}main{padding-inline:5%}.welcome-intro{padding-block:16px 24px}.welcome-intro>p:last-child{font-size:15px}.sheet-heading h2{font-size:25px}.history-row strong{font-size:18px}.history-row small{font-size:11px}.hero h1{font-size:36px}.opening-comparison{padding:14px}.timeline-map-layout{margin-block:20px}.featured-grid>a{display:block}.about-page .about-lead{font-size:18px}button,summary{min-height:40px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

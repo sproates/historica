@@ -6,12 +6,12 @@ import {historyEntities,historyPage,dates} from './static/history-page.mjs';
 import {digest,planPages} from './lib/static-cache.mjs';
 const output='release/static-incremental',manifest=output+'/manifest.json';
 const walk=root=>fs.statSync(root).isDirectory()?fs.readdirSync(root).sort().flatMap(name=>walk(path.join(root,name))):[root];
-const files=['src','scripts/static','scripts/lib/static-cache.mjs','scripts/build-static-incremental.mjs','scripts/build-client.mjs','scripts/verify-static-incremental.mjs','tests/static','astro.config.mjs','package.json','package-lock.json','tsconfig.json','tsconfig.astro.json','web/focus.html','web/focus.css','web/branding.css',...fs.readdirSync('web').filter(f=>f.endsWith('.js')).map(f=>'web/'+f)].flatMap(walk);
+const files=['src','scripts/static','scripts/lib/static-cache.mjs','scripts/build-static-incremental.mjs','scripts/build-client.mjs','scripts/verify-static-incremental.mjs','tests/static','astro.config.mjs','package.json','package-lock.json','tsconfig.json','tsconfig.astro.json','web/focus.html','web/focus.css','web/branding.css',...fs.readdirSync('web').filter(f=>f.endsWith('.js')||f.endsWith('.css')).map(f=>'web/'+f)].flatMap(walk);
 const shared=digest([process.version,...files.map(file=>[file,digest(fs.readFileSync(file))]),digest(fs.readFileSync('web/data/ne_50m_admin_0_countries.json'))]);
 let previous;try{previous=JSON.parse(fs.readFileSync(manifest,'utf8'));}catch{}
 if(previous?.version!==1)previous=undefined;
 const models=historyEntities().map(e=>({id:e.id,route:`${e.type}/${e.id}`,model:historyPage(e.id,{geography:false})}));
-models.push({id:'@home',route:'',model:{page:'home'}},{id:'@about',route:'about',model:{page:'about'}},{id:'@coverage',route:'coverage',model:{page:'coverage'}});
+models.push({id:'@home',route:'',model:{page:'home'}},{id:'@about',route:'about',model:{page:'about'}},{id:'@coverage',route:'coverage',model:{page:'coverage'}},{id:'@privacy',route:'privacy',model:{page:'privacy'}});
 const htmlPath=(dir,route)=>path.join(dir,route,'index.html');
 const plan=planPages(models,previous,shared,route=>{try{return fs.readFileSync(htmlPath(output,route));}catch{return null;}});
 const run=(cmd,args,env={})=>{const result=spawnSync(cmd,args,{stdio:'inherit',env:{...process.env,...env}});if(result.status!==0)throw new Error(`${cmd} failed`);};

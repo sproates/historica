@@ -7,7 +7,7 @@ export function exportStaticWeb({source='release/static-incremental',output='web
  const sourceRoot=path.resolve(source),outputRoot=path.resolve(output);
  if(sourceRoot===outputRoot||sourceRoot.startsWith(outputRoot+path.sep)||outputRoot.startsWith(sourceRoot+path.sep))throw new Error('Output must be separate from static source');
  const routes=JSON.parse(fs.readFileSync(path.join(outputRoot,'data/routes.json'),'utf8'));
- const pages=[['index.html','index.html','data-static-page="home"'],['about/index.html','about.html','data-static-page="about"'],['coverage/index.html','coverage.html','data-static-page="coverage"']];
+ const pages=[['index.html','index.html','data-static-page="home"'],['about/index.html','about.html','data-static-page="about"'],['coverage/index.html','coverage.html','data-static-page="coverage"'],['privacy/index.html','privacy.html','data-static-page="privacy"']];
  for(const route of routes){
   if(!/^\/(person|area|state|city|period|event)\/[a-z0-9-]+$/.test(route))throw new Error('Unsafe route: '+route);
   const id=route.split('/').at(-1);

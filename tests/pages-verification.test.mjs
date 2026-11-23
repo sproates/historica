@@ -12,7 +12,7 @@ function fixture(t,base='/historica/'){
  const files={
   '.nojekyll':'', 'data/routes.json':'["/person/example"]', 'style.css':'body{}',
   'index.html':'data-static-page="home"', 'about/index.html':'data-static-page="about"',
-  'about.html':'data-static-page="about"', 'coverage.html':'data-static-page="coverage"',
+  'about.html':'data-static-page="about"', 'privacy/index.html':'data-static-page="privacy"', 'privacy.html':'data-static-page="privacy"', 'coverage.html':'data-static-page="coverage"',
   'person/example/index.html':'data-static-history="example"'
  };
  for(const [file,content] of Object.entries(files)){
@@ -27,7 +27,7 @@ function fixture(t,base='/historica/'){
 test('portable Astro artifact resolves root and repository-mounted links',t=>{
  for(const base of ['/','/historica/']){
   const {root}=fixture(t,base);
-  assert.deepEqual(verifyPages(root),{routes:1,files:8,links:15});
+  assert.deepEqual(verifyPages(root),{routes:1,files:10,links:21});
  }
 });
 test('changed, missing and unexpected files fail final package verification',t=>{

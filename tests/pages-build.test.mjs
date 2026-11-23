@@ -52,7 +52,7 @@ test('Astro packaging includes static histories and shared assets, with no legac
    fs.mkdirSync(path.dirname(target),{recursive:true});
    fs.writeFileSync(target,`<html><head><base href="/"><meta name="robots" content="noindex, follow"></head><body data-static-history="${route.split('/').at(-1)}"><a href="/person/socrates">Socrates</a><script src="focus-app.js"></script></body></html>`);
   }
-  for(const [file,page] of [['index.html','home'],['about/index.html','about'],['coverage/index.html','coverage']]){
+  for(const [file,page] of [['index.html','home'],['about/index.html','about'],['coverage/index.html','coverage'],['privacy/index.html','privacy']]){
    const target=path.join(staticSource,file);fs.mkdirSync(path.dirname(target),{recursive:true});
    fs.writeFileSync(target,`<html><head></head><body data-static-page="${page}"></body></html>`);
   }
@@ -78,5 +78,23 @@ test('Astro packaging includes static histories and shared assets, with no legac
   fs.rmSync(path.join(staticSource,'person/socrates/index.html'));
   assert.throws(()=>buildPages({output,staticSource}),/ENOENT/);
   assert.ok(fs.existsSync(path.join(output,'person/socrates/index.html')),'incomplete input leaves the previous package intact');
+ }finally{fs.rmSync(root,{recursive:true,force:true});}
+});
+
+test('analytics configuration is included only in explicitly configured production packages',()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'historica-analytics-'));
+ const source=path.join(root,'source'),output=path.join(root,'output');
+ fs.mkdirSync(path.join(source,'data'),{recursive:true});
+ fs.writeFileSync(path.join(source,'data/routes.json'),'[]');
+ for(const file of ['index.html','about.html','privacy.html'])fs.writeFileSync(path.join(source,file),'<html><head></head><body>Fixture</body></html>');
+ try{
+  const token='a'.repeat(32);
+  buildPages({source,output,analyticsToken:token});
+  assert.ok(!fs.readFileSync(path.join(output,'index.html'),'utf8').includes('name="historica-analytics"'));
+  buildPages({source,output,production:true,analyticsToken:token});
+  const html=fs.readFileSync(path.join(output,'index.html'),'utf8');
+  assert.equal((html.match(/name="historica-analytics"/g)||[]).length,1);
+  assert.ok(html.includes('src="generated/browser/analytics.js"'));
+  assert.throws(()=>buildPages({source,output,production:true,analyticsToken:'invalid'}),/Invalid Cloudflare/);
  }finally{fs.rmSync(root,{recursive:true,force:true});}
 });

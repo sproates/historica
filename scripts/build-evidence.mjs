@@ -1,3 +1,4 @@
+import {geometry} from '../web/generated/presentation/history-page.js';
 import {createSearchIndex} from '../web/generated/domain/search.js';
 import {browserEvidence,evidenceForFocus,browserChronology} from '../web/generated/content/browser-evidence.js';
 import fs from 'node:fs';
@@ -35,7 +36,10 @@ if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else{
  fs.writeFileSync('web/data/browser-chronology.json',JSON.stringify(browserChronology(pack))+'\n');
  const evidenceDir='web/data/evidence';
  fs.mkdirSync(evidenceDir,{recursive:true});
- const histories=assembleHistory(prototype,exploration,read('web/data/collection.json')).entities;
+ const collection=read('web/data/collection.json');
+ const assembled=assembleHistory(prototype,exploration,collection);
+ const {entities:histories,associations,relationships}=assembled;
+ fs.writeFileSync('web/data/browser-history.json',JSON.stringify({version:1,data:{entities:histories,associations,relationships},bactriaOutline:geometry(collection.historicalOverlays[0].geometry)})+'\n');
  fs.writeFileSync('web/data/search-index.json',JSON.stringify(createSearchIndex(histories))+'\n');
  const files=new Set(histories.map(e=>e.id+'.json'));
  for(const file of fs.readdirSync(evidenceDir))if(file.endsWith('.json')&&!files.has(file))fs.unlinkSync(`${evidenceDir}/${file}`);

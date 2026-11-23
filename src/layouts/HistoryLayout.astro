@@ -1,5 +1,7 @@
 ---
+import {styleUrl} from '../../scripts/static/assets.mjs';
 import type {HistoryEntity} from '../domain/history';
+import Appearance from '../components/Appearance.astro';
 import PageMetadata from '../components/PageMetadata.astro';
 import {description} from '../presentation/metadata';
 interface Props {focus: HistoryEntity}
@@ -13,12 +15,13 @@ const {focus}=Astro.props;
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <PageMetadata title={`${focus.title} · Historica`} description={description(focus.description)} path={`/${focus.type}/${focus.id}`} noindex />
-  <link rel="stylesheet" href="focus.css?v=exploration-1" />
-  <link rel="stylesheet" href="branding.css?v=1" />
+  <link rel="stylesheet" href={styleUrl('focus.css')} />
+  <link rel="stylesheet" href={styleUrl('branding.css')} />
+  <Appearance />
 </head>
 <body data-static-history={focus.id}>
   <slot />
-  <!-- Temporary bridge: the existing controller enhances the prerendered default. -->
-  <script is:inline type="module" src="focus-app.js?v=exploration-2"></script>
+  <!-- Typed controls enhance the prerendered default. -->
+  <script is:inline type="module" src="focus-app.js"></script>
 </body>
 </html>

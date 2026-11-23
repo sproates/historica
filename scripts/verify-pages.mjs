@@ -23,7 +23,7 @@ export function verifyPages(output='release/pages-site'){
   assert.match(route,/^\/(person|area|state|city|period|event)\/[a-z0-9-]+$/);
   assert.ok(read(route.slice(1)+'/index.html').includes(`data-static-history="${route.split('/').at(-1)}"`),route);
  }
- for(const [file,page] of [['index.html','home'],['about/index.html','about'],['about.html','about'],['coverage.html','coverage']])assert.ok(read(file).includes(`data-static-page="${page}"`),file);
+ for(const [file,page] of [['index.html','home'],['about/index.html','about'],['about.html','about'],['coverage.html','coverage'],['privacy/index.html','privacy'],['privacy.html','privacy']])assert.ok(read(file).includes(`data-static-page="${page}"`),file);
  let links=0;
  for(const file of files){
   if(!file.endsWith('.html'))continue;

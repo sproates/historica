@@ -11,7 +11,7 @@ test('Astro coverage preserves research explanations, controls and the public ad
  assert.equal(new Set(ids).size,ids.length);
  assert.match(html,/data-static-page="coverage"/);
  assert.match(html,/rel="canonical" href="https:\/\/historica.online\/coverage.html"/);
- assert.match(html,/href="coverage.css"/);assert.ok(!html.includes('href="welcome.css"'));
+ assert.match(html,/href="coverage.css\?v=[a-f0-9]+"/);assert.ok(!html.includes('href="welcome.css"'));
  assert.match(html,/src="coverage-app.js"/);assert.ok(!html.includes('src="home.js"'));
  assert.match(html,/name="robots" content="noindex, follow"/);
 });

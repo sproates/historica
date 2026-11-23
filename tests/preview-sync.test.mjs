@@ -11,6 +11,7 @@ test('preview refresh prunes retired generated files without touching other prev
  const runtime=path.join(home,'Library/Application Support/Historica/preview');
  const write=(file,value)=>{fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,value);};
  try{
+  write(path.join(project,'web/privacy.html'),'Privacy');
   write(path.join(project,'scripts/sync-preview.py'),fs.readFileSync('scripts/sync-preview.py'));
   write(path.join(project,'scripts/preview-server.py'),'# server fixture');
   for(const folder of ['pages','generated','data/evidence']){

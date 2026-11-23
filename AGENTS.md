@@ -3,6 +3,10 @@
 ## Branch names
 Never use `codex` in a Git branch name. Use descriptive `feature/…`, `fix/…` or `chore/…` names.
 
+## Consolidated delivery
+- Finish agreed refactor work as a coherent preview and PR, not a succession of optional micro-optimisations. Use `project/release-readiness.md` as the current finish line.
+- Preserve preview approval and the separate public-release/hosting gates. Do not introduce additional approval rounds.
+
 ## Speed from idea to deployment
 - Keep the path from request to preview or deployment short. The local preview is the only extra approval step Ian requested; do not add process around it.
 - For design or wording changes: edit, run checks proportionate to the change, refresh the existing Wi-Fi preview, and send Ian the link promptly. After approval, publish that version without another approval round or repeating completed checks unless something changed.

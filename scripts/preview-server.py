@@ -11,11 +11,15 @@ parser.add_argument('--port',type=int,default=4173)
 parser.add_argument('--directory',default='web')
 args=parser.parse_args()
 class Handler(http.server.SimpleHTTPRequestHandler):
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-cache, must-revalidate")
+        super().end_headers()
+
     def send_head(self):
         route=urlsplit(self.path).path.rstrip('/')
         routes=json.loads((Path(args.directory)/'data/routes.json').read_text())
         if route in routes:self.path='/pages/'+route.rsplit('/',1)[-1]+'.html'
-        if route=='/about':self.path='/about.html'
+        if route in ('/about','/privacy'):self.path=route+'.html'
         if urlsplit(self.path).path=='/.htaccess':
             self.send_error(403);return None
         return super().send_head()
