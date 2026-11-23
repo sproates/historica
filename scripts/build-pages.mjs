@@ -40,7 +40,7 @@ export function buildPages({source='web', output='release/pages-site', base='/',
     write(`${route.slice(1)}/index.html`,transform(fs.readFileSync(path.join(sourceRoot,`pages/${id}.html`),'utf8')));
   }
   write('about/index.html',transform(fs.readFileSync(path.join(sourceRoot,'about.html'),'utf8')));
-  write('404.html',transform('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · Historica</title><link rel="stylesheet" href="focus.css"></head><body><main><h1>We couldn’t find that page</h1><p>The address may have changed.</p><p><a href="/">Search Historica</a></p></main></body></html>'));
+  write('404.html',transform('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · Historica</title><link rel="stylesheet" href="focus.css"></head><body><main><h1>We couldn’t find that page</h1><p>The address may have changed.</p><p><a href="/">Search Historica</a></p><footer><p>Historica is an open source site on <a href="https://github.com/sproates/historica">GitHub</a>.</p></footer></main></body></html>'));
   if(!production)write('robots.txt','User-agent: *\nDisallow: /\n');
   write('.nojekyll','');
   const files=[];
