@@ -1,11 +1,14 @@
 name: Verify Historica
-"on":
+on:
   pull_request: {}
   push:
-    branches: [main, feature/github-pages-preparation]
+    branches:
+      - main
+      - feature/github-pages-preparation
   workflow_dispatch: {}
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: verify-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
@@ -16,13 +19,13 @@ jobs:
     outputs:
       scope: ${{ steps.changes.outputs.scope }}
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           fetch-depth: 0
           persist-credentials: false
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
-          node-version-file: '.node-version'
+          node-version-file: .node-version
       - name: Classify changes
         id: changes
         env:
@@ -37,68 +40,108 @@ jobs:
           else
             git diff --check HEAD
           fi
+      - name: Reuse the successful PR package for the identical source tree
+        id: reuse
+        if: steps.changes.outputs.scope != 'docs' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HISTORICA_ANALYTICS_TOKEN: ${{ vars.HISTORICA_ANALYTICS_TOKEN }}
+          TREE: ${{ steps.changes.outputs.tree }}
+        run: node scripts/restore-verified.ts tree "$TREE"
+      - name: Restore the verified baseline and incremental page cache
+        id: baseline
+        if: steps.changes.outputs.scope != 'docs' && steps.reuse.outputs.restored != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HISTORICA_ANALYTICS_TOKEN: ${{ vars.HISTORICA_ANALYTICS_TOKEN }}
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node scripts/restore-verified.ts base "$BASE"
+      - name: Choose proportionate verification
+        id: plan
+        env:
+          SCOPE: ${{ steps.changes.outputs.scope }}
+          REUSED: ${{ steps.reuse.outputs.restored }}
+          BASELINE: ${{ steps.baseline.outputs.restored }}
+        run: |-
+          if [ "$SCOPE" = docs ]; then MODE=docs
+          elif [ "$REUSED" = true ]; then MODE=reuse
+          elif [ "$SCOPE" = sharing ] && [ "$BASELINE" = true ]; then MODE=sharing
+          else MODE=full
+          fi
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "Verification: $MODE" >> "$GITHUB_STEP_SUMMARY"
       - name: Install locked build tools
-        if: steps.changes.outputs.scope == 'site'
+        if: steps.plan.outputs.mode == 'full'
         run: npm ci
-      - name: Restore verified static pages
-        if: steps.changes.outputs.scope == 'site'
-        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
-        with:
-          path: release/static-incremental/
-          key: ${{ runner.os }}-historica-static-v1-${{ github.sha }}
-          restore-keys: ${{ runner.os }}-historica-static-v1-
       - name: Generate and verify the site
-        if: steps.changes.outputs.scope == 'site'
-        run: |
-          npm test
-          node scripts/build-pages.ts --static-source release/static-incremental
-          node scripts/verify-pages.ts
+        if: steps.plan.outputs.mode == 'full'
+        run: npm test
       - name: Prepare production release
-        if: steps.changes.outputs.scope == 'site' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: steps.plan.outputs.mode == 'full'
         env:
           HISTORICA_ANALYTICS_TOKEN: ${{ vars.HISTORICA_ANALYTICS_TOKEN }}
         run: |
           test -n "$HISTORICA_ANALYTICS_TOKEN"
           node scripts/build-pages.ts --static-source release/static-incremental --production --base / --output release/production-site
           node scripts/verify-pages.ts release/production-site
+      - name: Update and verify sharing artwork only
+        if: steps.plan.outputs.mode == 'sharing'
+        run: node scripts/update-sharing-package.ts
+      - name: Compress the verified release and page cache together
+        if: steps.plan.outputs.mode != 'docs'
+        run: |-
+          mkdir -p release/retained
+          entries=(production-site)
+          if [ -d release/static-incremental ]; then entries+=(static-incremental); fi
+          tar -cf - -C release "${entries[@]}" | zstd -T2 -3 --long=27 -o release/retained/site.tar.zst
+      - name: Keep the verified PR package and incremental page cache
+        if: steps.plan.outputs.mode != 'docs' && github.event_name == 'pull_request'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: historica-verified-${{ steps.changes.outputs.tree }}
+          path: release/retained/site.tar.zst
+          include-hidden-files: true
+          compression-level: 0
+          retention-days: 7
       - name: Retain production release for deployment and recovery
-        if: steps.changes.outputs.scope == 'site' && github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: steps.plan.outputs.mode != 'docs' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: historica-production-${{ github.sha }}
-          path: release/production-site/
+          path: release/retained/site.tar.zst
           include-hidden-files: true
           retention-days: 90
-      - name: Save verified main-branch static pages
-        if: success() && steps.changes.outputs.scope == 'site' && github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
-        with:
-          path: release/static-incremental/
-          key: ${{ runner.os }}-historica-static-v1-${{ github.sha }}
+          compression-level: 0
+      - name: Prepare staging only when staging was requested
+        if: steps.plan.outputs.mode != 'docs' && github.ref == 'refs/heads/feature/github-pages-preparation'
+        run: |-
+          node scripts/build-pages.ts --static-source release/static-incremental
+          node scripts/verify-pages.ts
       - name: Keep the verified staging artifact
-        if: steps.changes.outputs.scope == 'site'
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: steps.plan.outputs.mode != 'docs' && github.ref == 'refs/heads/feature/github-pages-preparation'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: historica-pages-${{ github.sha }}
           path: release/pages-site/
           include-hidden-files: true
           retention-days: 7
+          compression-level: 1
       - name: Package staging for Pages
-        if: steps.changes.outputs.scope == 'site' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/feature/github-pages-preparation'
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        if: steps.plan.outputs.mode != 'docs' && github.ref == 'refs/heads/feature/github-pages-preparation'
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
         with:
           path: release/pages-site/
           retention-days: 7
       - name: Report scope
         env:
-          SCOPE: ${{ steps.changes.outputs.scope }}
-        run: |
-          if [ "$SCOPE" = docs ]; then
-            echo 'Internal documentation only: site build and deployment skipped.' >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo 'Site verified and staging artifact saved. Production DNS unchanged.' >> "$GITHUB_STEP_SUMMARY"
-          fi
-
+          MODE: ${{ steps.plan.outputs.mode }}
+        run: |-
+          case "$MODE" in
+           docs) echo 'Internal documentation only. No site build or app tests.' ;;
+           reuse) echo 'Reused the verified PR package. No dependency install, rebuild or repeated app tests.' ;;
+           sharing) echo 'Verified sharing images and metadata against the retained baseline. No dependency install, app build or app tests.' ;;
+           full) echo 'Built and verified changes that need application checks.' ;;
+          esac >> "$GITHUB_STEP_SUMMARY"
   staging:
     if: needs.verify.outputs.scope == 'site' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/feature/github-pages-preparation'
     needs: verify
@@ -122,4 +165,4 @@ jobs:
           node -e 'const p=require(process.env.RUNNER_TEMP+"/pages.json"); if(p.cname || p.html_url!=="https://sproates.github.io/historica/") process.exit(1);'
       - name: Deploy verified staging artifact
         id: deploy
-        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e

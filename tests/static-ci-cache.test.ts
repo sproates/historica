@@ -17,25 +17,18 @@ test('static tests run on cold caches, changed shared code and unverified page o
  delete previous.pages['person/a'];assert.deepEqual(pagesNeedingChecks(manifest,previous),['a','b']);
 });
 
-test('CI restores only for site work and publishes verified caches only from main pushes',()=>{
- const workflow=YAML.parse(fs.readFileSync('.github/workflows/verify.yml','utf8'));
- const steps=workflow.jobs.verify.steps;
- const restore=steps.find(s=>s.uses?.startsWith('actions/cache/restore@'));
- const save=steps.find(s=>s.uses?.startsWith('actions/cache/save@'));
- assert.match(restore.uses,/@[a-f0-9]{40}$/);
- assert.equal(restore.if,"steps.changes.outputs.scope == 'site'");
- assert.match(save.if,/success\(\)/);assert.match(save.if,/github.event_name == 'push'/);assert.match(save.if,/github.ref == 'refs\/heads\/main'/);
- assert.equal(save.with.path,'release/static-incremental/');
+test('CI checks PRs once, reuses matching packages on main and retains incremental caches',()=>{
+ const steps=YAML.parse(fs.readFileSync('.github/workflows/verify.yml','utf8')).jobs.verify.steps;
  const verify=steps.find(s=>s.name==='Generate and verify the site');
- const scripts=JSON.parse(fs.readFileSync('package.json')).scripts;
- assert.ok(scripts.test.startsWith('npm run build:web'));
- assert.ok(scripts['build:web'].includes('node scripts/verify-static-incremental.ts'));
- assert.ok(scripts['build:web'].indexOf('verify-static-incremental.ts')<scripts['build:web'].indexOf('export-static-web.ts'));
- assert.ok(verify.run.includes('npm test'));
- assert.ok(verify.run.includes('node scripts/build-pages.ts --static-source release/static-incremental'));
- assert.ok(verify.run.includes('node scripts/verify-pages.ts'));
- assert.ok(verify.run.indexOf('npm test')<verify.run.indexOf('build-pages.ts'));
- assert.ok(verify.run.indexOf('build-pages.ts')<verify.run.indexOf('verify-pages.ts'));
- assert.ok(steps.indexOf(save)>steps.indexOf(verify));
- assert.ok(steps.indexOf(restore)<steps.indexOf(verify));
+ assert.equal(verify.run,'npm test');
+ assert.equal(verify.if,"steps.plan.outputs.mode == 'full'");
+ for(const name of ['Install locked build tools','Prepare production release'])assert.equal(steps.find(s=>s.name===name).if,verify.if);
+ assert.ok(steps.find(s=>s.id==='reuse').if.includes("refs/heads/main"));
+ assert.ok(steps.find(s=>s.id==='baseline').if.includes("restored != 'true'"));
+ const bundle=steps.find(s=>s.name==='Compress the verified release and page cache together');
+ assert.ok(bundle.run.includes('static-incremental'));assert.ok(bundle.run.includes('--long=27'));
+ const retained=steps.find(s=>s.name==='Keep the verified PR package and incremental page cache');
+ assert.equal(retained.with.path,'release/retained/site.tar.zst');assert.equal(retained.with['compression-level'],0);
+ assert.ok(steps.indexOf(bundle)>steps.indexOf(verify));
+ assert.ok(steps.indexOf(steps.find(s=>s.id==='baseline'))<steps.indexOf(verify));
 });
