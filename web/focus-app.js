@@ -1,3 +1,5 @@
+import {bindTimelineControls} from './generated/controllers/timeline-controls.js';
+import {bindNavigationControls} from './generated/controllers/navigation-controls.js';
 import {bindExplorerControls} from './generated/controllers/explorer-controls.js';
 import {focusEnvelope} from './generated/state/focus.js';
 import {dateMeaning,ageAt,peopleAt,compareLives,clampMoment} from './exploration-model.js';
@@ -8,7 +10,7 @@ import {bindComparisonControls} from './generated/controllers/comparison-control
 import {encodeView,decodeView,bookmarkPanels} from './view-url.js?v=exploration-1';
 import {setupMap} from './focus-map.js?v=fit-initial-1';
 import {buildFocusData,temporalLabel,initialFocus,changeFocus,focusAssociations,rankedContext,relatedEntities,encodeFocus,decodeFocus} from './focus-model.js?v=egypt-1';
-import {ordinal,historical,position,overlaps} from './timeline-model.js';
+import {ordinal,position,overlaps} from './timeline-model.js';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const year=y=>`${Math.abs(y).toLocaleString()} ${y<0?'BCE':'CE'}`,dates=(a,b)=>a===b?year(a):`${year(a)} – ${year(b)}`;
 const load=async url=>{const r=await fetch(url);if(!r.ok)throw Error(url);return r.json();};
@@ -103,17 +105,9 @@ $('area').innerHTML='<option value="all">Everywhere</option>'+data.entities.filt
 $('focus-picker').innerHTML=['person','area','state','city','period','event'].map(type=>`<optgroup label="${type}">${data.entities.filter(e=>e.type===type).map(e=>`<option value="${esc(e.id)}">${esc(e.title)}</option>`).join('')}</optgroup>`).join('');
 bindComparisonControls(document,{getEntities:()=>data.entities,selectPeople(people,duplicate){comparedPeople=people;renderComparison(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));if(duplicate)$('comparison-intro').textContent='Choose two different people.';sync();},selectScale(mode){comparisonMode=mode;renderComparison(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));sync();},reset(){comparedPeople=[];render();}});
 bindExplorerControls(document,{getData:()=>data,getState:()=>state,getMoment:()=>selectedYear,setState(next,resizeEnvelope){state=next;if(resizeEnvelope)setEnvelope();render();},setMoment:selectYear});
-// A drag on the date axis selects a year; entry buttons keep their navigation behaviour.
-const selectFromAxis=e=>{const axis=e.target.closest('.swim-dates');if(!axis)return;const r=axis.getBoundingClientRect(),fraction=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width));selectYear(historical(Math.round(ordinal(state.start)+fraction*(ordinal(state.end)-ordinal(state.start)))));};
-$('swimlanes').addEventListener('pointerdown',e=>{if(!e.target.closest('.swim-dates'))return;e.preventDefault();$('swimlanes').setPointerCapture(e.pointerId);selectFromAxis(e);});
-$('swimlanes').addEventListener('pointermove',e=>{if(!e.buttons||!$('swimlanes').hasPointerCapture(e.pointerId))return;const axis=$('swimlanes').querySelector('.swim-dates'),r=axis.getBoundingClientRect(),fraction=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width));selectYear(historical(Math.round(ordinal(state.start)+fraction*(ordinal(state.end)-ordinal(state.start)))));});
+bindTimelineControls(document,{getWindow:()=>state,selectYear,toggleLane(key){if(expandedLanes.has(key))expandedLanes.delete(key);else expandedLanes.add(key);renderSwimlanes(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));sync();}});
 bindSearchControls(document,{getEntities:()=>data.entities,formatDates:dates,select(id){focus(id);$('focus-title').setAttribute('tabindex','-1');$('focus-title').focus({preventScroll:window.matchMedia('(max-width: 600px)').matches});}});
-$('swimlanes').addEventListener('click',event=>{const button=event.target.closest('[data-lane]');if(!button)return;const key=button.dataset.lane;if(expandedLanes.has(key))expandedLanes.delete(key);else expandedLanes.add(key);renderSwimlanes(data.entities.find(e=>e.id===state.focus),rankedContext(data,state));const replacement=[...$('swimlanes').querySelectorAll('[data-lane]')].find(b=>b.dataset.lane===key);replacement?.focus({preventScroll:true});sync();});
-$('jump-timeline').onclick=()=>{$('swim-heading').scrollIntoView({behavior:'smooth',block:'start'});$('swim-heading').setAttribute('tabindex','-1');$('swim-heading').focus({preventScroll:true});};
-$('focus-picker').onchange=e=>focus(e.target.value);document.querySelector('main').addEventListener('click',e=>{const button=e.target.closest('[data-focus],[data-filter]');if(!button||button.disabled)return;if(button.dataset.focus)focus(button.dataset.focus,button.dataset.kind||'all');else{state.area=button.dataset.filter;render();}});
-$('whole-period').onclick=()=>{focus('global-overview');state.start=-3000;state.end=200;setEnvelope();render();};
-$('more-context').onclick=()=>{showAllContext=!showAllContext;render();};
-$('back').onclick=()=>{if(stack.length){restore(stack.pop());render();}};
+bindNavigationControls(document,{focus,filter(area){state.area=area;render();},wholePeriod(){focus('global-overview');state.start=-3000;state.end=200;setEnvelope();render();},toggleContext(){showAllContext=!showAllContext;render();},back(){if(stack.length){restore(stack.pop());render();}}});
 $('share').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);$('share').textContent='Link copied';}catch{$('share').textContent='Copy the address bar URL';}};
 document.querySelector('.geography details').addEventListener('toggle',sync);
 for(const name of bookmarkPanels)document.querySelector(`.${name}`).addEventListener('toggle',sync);
