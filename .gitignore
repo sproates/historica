@@ -46,3 +46,5 @@ __pycache__/
 /web/data/search-index.json
 
 /web/data/browser-history.json
+
+/web/privacy.html

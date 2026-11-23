@@ -4,9 +4,9 @@ export const resolvedTheme=(preference: ThemePreference,darkSystem: boolean): 'l
 export function startTheme(root: Document, storage: Pick<Storage,'getItem'|'setItem'>, system: MediaQueryList): void {
  let preference: ThemePreference='system';
  try{preference=themePreference(storage.getItem('historica-theme'));}catch{}
- const controls=root.querySelectorAll<HTMLSelectElement>('[data-theme-picker]');
- const apply=()=>{root.documentElement.dataset['theme']=resolvedTheme(preference,system.matches);controls.forEach(control=>{control.value=preference;});};
- controls.forEach(control=>control.addEventListener('change',()=>{preference=themePreference(control.value);try{storage.setItem('historica-theme',preference);}catch{}apply();}));
+ const controls=root.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]');
+ const apply=()=>{const theme=resolvedTheme(preference,system.matches);root.documentElement.dataset['theme']=theme;controls.forEach(control=>{control.setAttribute('aria-pressed',String(theme==='dark'));control.title=theme==='dark'?'Switch to light mode':'Switch to dark mode';});};
+ controls.forEach(control=>control.addEventListener('click',()=>{preference=resolvedTheme(preference,system.matches)==='dark'?'light':'dark';try{storage.setItem('historica-theme',preference);}catch{}apply();}));
  system.addEventListener('change',apply);apply();
 }
 if(typeof document!=='undefined'){

@@ -5,7 +5,7 @@ This is the finish line for the current refactor, not a new optimisation backlog
 ## Implemented
 
 - Node 26, strict TypeScript application code and individual Markdown/YAML history records.
-- Astro-generated home, About, research coverage and 230 history pages; one source for published HTML.
+- Astro-generated home, About, privacy, research coverage and 230 history pages; one source for published HTML.
 - Incremental page generation and verification, documentation-only CI shortcut, checksummed portable staging packages.
 - Compact home search and assembled explorer data; evidence loaded by history and cached. Source records, dates, relationships and Bactria geometry preserved.
 - Shared focus transitions for navigation and bookmarks, with snapshot isolation for Back.
@@ -30,6 +30,8 @@ No further architecture rewrite is required before reviewing this version. Fix c
 
 ## Consolidated verification
 
-Local verification passed 202 application/build tests and 14 static checks across all 233 pages. The packaged artifact contains 539 files with 3,997 checked local references. Browser review covered 390px phone and desktop layouts, light/dark/system selection, the timeline beside the map, research-page contrast, Alexander → Egypt with retained dates, and browser Back. Stylesheet URLs include their content hash after the browser check exposed stale light-only CSS.
+Local verification passed 202 application/build tests and 15 static checks across all 234 pages. The packaged artifact contains 541 files with 4,259 checked local references. Browser review covered 390px phone and desktop layouts, light/dark/system selection, the timeline beside the map, research-page contrast, Alexander → Egypt with retained dates, and browser Back. Stylesheet URLs include their content hash after the browser check exposed stale light-only CSS.
 
 These checks establish a reviewable preview, not Ian's visual approval or a production deployment. The repository remains private and the current live site is untouched.
+
+The appearance dropdown is now a moon toggle. The privacy page distinguishes cookie-free analytics from the local storage used for appearance preferences and is linked beside research coverage in the footer. Both changes are included in the same preview PR.

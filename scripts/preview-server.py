@@ -19,7 +19,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         route=urlsplit(self.path).path.rstrip('/')
         routes=json.loads((Path(args.directory)/'data/routes.json').read_text())
         if route in routes:self.path='/pages/'+route.rsplit('/',1)[-1]+'.html'
-        if route=='/about':self.path='/about.html'
+        if route in ('/about','/privacy'):self.path=route+'.html'
         if urlsplit(self.path).path=='/.htaccess':
             self.send_error(403);return None
         return super().send_head()

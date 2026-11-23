@@ -19,7 +19,7 @@ export function buildPages({source='web', output='release/pages-site', base='/',
     if(staticRoot && !html.includes(`data-static-history="${id}"`))throw new Error(`Missing static history: ${route}`);
     return [route,html];
   }));
-  const sitePages=staticRoot?new Map([['index.html','home'],['about/index.html','about'],['coverage/index.html','coverage']].map(([file,page])=>{
+  const sitePages=staticRoot?new Map([['index.html','home'],['about/index.html','about'],['coverage/index.html','coverage'],['privacy/index.html','privacy']].map(([file,page])=>{
     const html=fs.readFileSync(path.join(staticRoot,file),'utf8');
     if(!html.includes(`data-static-page="${page}"`))throw new Error(`Missing static page: ${page}`);
     return [file,html];
@@ -57,12 +57,14 @@ export function buildPages({source='web', output='release/pages-site', base='/',
     write(`${route.slice(1)}/index.html`,transform(historyPages.get(route)));
   }
   write('about/index.html',transform(sitePages?.get('about/index.html')??fs.readFileSync(path.join(sourceRoot,'about.html'),'utf8')));
+  write('privacy/index.html',transform(sitePages?.get('privacy/index.html')??fs.readFileSync(path.join(sourceRoot,'privacy.html'),'utf8')));
   if(sitePages){
     write('index.html',transform(sitePages.get('index.html')));
+    write('privacy.html',transform(sitePages.get('privacy/index.html')));
     write('coverage.html',transform(sitePages.get('coverage/index.html')));
     write('about.html',transform(sitePages.get('about/index.html')));
   }
-  write('404.html',transform('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · Historica</title><link rel="stylesheet" href="focus.css"><link rel="stylesheet" href="appearance.css"></head><body><main><h1>We couldn’t find that page</h1><p>The address may have changed.</p><p><a href="/">Search Historica</a></p><footer><p>Historica is an open source site on <a href="https://github.com/sproates/historica">GitHub</a>.</p></footer></main></body></html>'));
+  write('404.html',transform('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · Historica</title><link rel="stylesheet" href="focus.css"><link rel="stylesheet" href="appearance.css"></head><body><main><h1>We couldn’t find that page</h1><p>The address may have changed.</p><p><a href="/">Search Historica</a></p><footer><p><a href="/coverage.html">Sources and research coverage</a> · <a href="/privacy">Privacy</a></p><p>Historica is an open source site on <a href="https://github.com/sproates/historica">GitHub</a>.</p></footer></main></body></html>'));
   if(!production)write('robots.txt','User-agent: *\nDisallow: /\n');
   write('.nojekyll','');
   const files=[];

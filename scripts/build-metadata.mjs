@@ -8,7 +8,7 @@ function inject(html,title,desc,path,options){
 const pages=[['campaign.html','Earlier campaign prototype · Historica','An earlier prototype exploring Alexander’s campaigns.','/campaign.html',{noindex:true}],['focus.html','Explore history · Historica','Explore connected lives, places and events.','/focus.html',{noindex:true}]];
 for(const [file,title,desc,path,options]of pages){const name='web/'+file;fs.writeFileSync(name,inject(fs.readFileSync(name,'utf8'),title,desc,path,options));}
 const data=buildFocusData(JSON.parse(fs.readFileSync('web/data/collection.json')),JSON.parse(fs.readFileSync('web/data/reviewed-exploration.json')));
-const urls=['/','/about','/coverage.html',...data.entities.map(e=>`/${e.type}/${e.id}`)];
+const urls=['/','/about','/privacy','/coverage.html',...data.entities.map(e=>`/${e.type}/${e.id}`)];
 fs.writeFileSync('web/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(path=>`<url><loc>${escape(origin+path)}</loc></url>`).join('\n')+'\n</urlset>\n');
 fs.writeFileSync('web/robots.txt',`User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
 console.log(`Built discovery metadata for ${data.entities.length} histories.`);

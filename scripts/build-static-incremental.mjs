@@ -11,7 +11,7 @@ const shared=digest([process.version,...files.map(file=>[file,digest(fs.readFile
 let previous;try{previous=JSON.parse(fs.readFileSync(manifest,'utf8'));}catch{}
 if(previous?.version!==1)previous=undefined;
 const models=historyEntities().map(e=>({id:e.id,route:`${e.type}/${e.id}`,model:historyPage(e.id,{geography:false})}));
-models.push({id:'@home',route:'',model:{page:'home'}},{id:'@about',route:'about',model:{page:'about'}},{id:'@coverage',route:'coverage',model:{page:'coverage'}});
+models.push({id:'@home',route:'',model:{page:'home'}},{id:'@about',route:'about',model:{page:'about'}},{id:'@coverage',route:'coverage',model:{page:'coverage'}},{id:'@privacy',route:'privacy',model:{page:'privacy'}});
 const htmlPath=(dir,route)=>path.join(dir,route,'index.html');
 const plan=planPages(models,previous,shared,route=>{try{return fs.readFileSync(htmlPath(output,route));}catch{return null;}});
 const run=(cmd,args,env={})=>{const result=spawnSync(cmd,args,{stdio:'inherit',env:{...process.env,...env}});if(result.status!==0)throw new Error(`${cmd} failed`);};

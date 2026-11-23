@@ -30,13 +30,13 @@ test('focus transitions preserve area dates and comparisons while isolating Back
  const world=nextFocus(data,original,'global-overview','all',{start:-3000,end:200});assert.equal(world.state.start,-3000);assert.equal(world.view.envelope.end,200);
 });
 test('theme follows the system until overridden, persists and tolerates blocked storage',()=>{
- class Control extends EventTarget {value='system';}
+ class Control extends EventTarget {attributes={};setAttribute(key,value){this.attributes[key]=value;}}
  const control=new Control(),system=new EventTarget();system.matches=true;
  const root={documentElement:{dataset:{}},querySelectorAll:()=>[control]};let saved=null;
  startTheme(root,{getItem:()=>saved,setItem:(_,value)=>{saved=value;}},system);
- assert.equal(root.documentElement.dataset.theme,'dark');control.value='light';control.dispatchEvent(new Event('change'));assert.equal(saved,'light');assert.equal(root.documentElement.dataset.theme,'light');
+ assert.equal(root.documentElement.dataset.theme,'dark');control.dispatchEvent(new Event('click'));assert.equal(saved,'light');assert.equal(root.documentElement.dataset.theme,'light');
  system.matches=false;system.dispatchEvent(new Event('change'));assert.equal(root.documentElement.dataset.theme,'light');
- control.value='system';control.dispatchEvent(new Event('change'));system.matches=true;system.dispatchEvent(new Event('change'));assert.equal(root.documentElement.dataset.theme,'dark');
+ control.dispatchEvent(new Event('click'));assert.equal(saved,'dark');assert.equal(control.attributes['aria-pressed'],'true');assert.equal(root.documentElement.dataset.theme,'dark');
  assert.equal(resolvedTheme('dark',false),'dark');
  assert.doesNotThrow(()=>startTheme(root,{getItem:()=>{throw Error();},setItem:()=>{throw Error();}},system));
 });

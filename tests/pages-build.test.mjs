@@ -52,7 +52,7 @@ test('Astro packaging includes static histories and shared assets, with no legac
    fs.mkdirSync(path.dirname(target),{recursive:true});
    fs.writeFileSync(target,`<html><head><base href="/"><meta name="robots" content="noindex, follow"></head><body data-static-history="${route.split('/').at(-1)}"><a href="/person/socrates">Socrates</a><script src="focus-app.js"></script></body></html>`);
   }
-  for(const [file,page] of [['index.html','home'],['about/index.html','about'],['coverage/index.html','coverage']]){
+  for(const [file,page] of [['index.html','home'],['about/index.html','about'],['coverage/index.html','coverage'],['privacy/index.html','privacy']]){
    const target=path.join(staticSource,file);fs.mkdirSync(path.dirname(target),{recursive:true});
    fs.writeFileSync(target,`<html><head></head><body data-static-page="${page}"></body></html>`);
   }
@@ -86,7 +86,7 @@ test('analytics configuration is included only in explicitly configured producti
  const source=path.join(root,'source'),output=path.join(root,'output');
  fs.mkdirSync(path.join(source,'data'),{recursive:true});
  fs.writeFileSync(path.join(source,'data/routes.json'),'[]');
- for(const file of ['index.html','about.html'])fs.writeFileSync(path.join(source,file),'<html><head></head><body>Fixture</body></html>');
+ for(const file of ['index.html','about.html','privacy.html'])fs.writeFileSync(path.join(source,file),'<html><head></head><body>Fixture</body></html>');
  try{
   const token='a'.repeat(32);
   buildPages({source,output,analyticsToken:token});

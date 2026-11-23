@@ -10,14 +10,14 @@ function fixture(t){
  const source=path.join(root,'static'),output=path.join(root,'web');
  const write=(dir,file,text)=>{fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.writeFileSync(path.join(dir,file),text);};
  write(output,'data/routes.json','["/person/example"]');
- for(const [file,marker] of [['index.html','data-static-page="home"'],['about/index.html','data-static-page="about"'],['coverage/index.html','data-static-page="coverage"'],['person/example/index.html','data-static-history="example"']])write(source,file,`<head><meta name="robots" content="noindex, follow"></head><body ${marker}>Readable page</body>`);
+ for(const [file,marker] of [['index.html','data-static-page="home"'],['about/index.html','data-static-page="about"'],['coverage/index.html','data-static-page="coverage"'],['privacy/index.html','data-static-page="privacy"'],['person/example/index.html','data-static-history="example"']])write(source,file,`<head><meta name="robots" content="noindex, follow"></head><body ${marker}>Readable page</body>`);
  write(output,'pages/retired.html','old');write(output,'pages/keep.txt','keep');write(output,'index.html','old home');write(output,'focus.html','runtime fallback');
  return {source,output};
 }
 test('Astro export supplies compatibility addresses, preserves assets and prunes retired pages',t=>{
  const options=fixture(t);
- assert.deepEqual(exportStaticWeb(options),{pages:4});
- for(const file of ['index.html','about.html','coverage.html','pages/example.html']){
+ assert.deepEqual(exportStaticWeb(options),{pages:5});
+ for(const file of ['index.html','about.html','coverage.html','privacy.html','pages/example.html']){
   const html=fs.readFileSync(path.join(options.output,file),'utf8');
   assert.ok(html.includes('Readable page'));assert.ok(html.includes('content="index, follow"'));
  }

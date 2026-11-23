@@ -36,7 +36,7 @@ Edit TypeScript under `src/`; compile it with `npm run build:client`. Generated 
 
 ## Build and verification
 
-`build:content` validates authored records and generates routing, discovery metadata and browser data. `build:web` then builds and verifies affected Astro pages and exports the existing server paths. Home, About, coverage and all 230 history pages come from Astro. Default histories contain their introduction, timeline, map and references before JavaScript runs.
+`build:content` validates authored records and generates routing, discovery metadata and browser data. `build:web` then builds and verifies affected Astro pages and exports the existing server paths. Home, About, privacy, coverage and all 230 history pages come from Astro. Default histories contain their introduction, timeline, map and references before JavaScript runs.
 
 Incremental builds track page inputs and output hashes. Unchanged pages reuse their verification; shared application changes trigger wider checks. CI follows the same build and retains a checksummed staging package. Allowlisted internal documentation skips site generation. Changes to content and unknown files do not take that shortcut.
 
@@ -44,7 +44,7 @@ Home search uses a compact index. The explorer loads assembled records plus evid
 
 ## Appearance and analytics
 
-`web/appearance.css` defines shared light/dark tokens and layout refinements. The appearance control supports system, light and dark; the preference is local to the browser and is applied before paint. Keep map, timeline, keyboard focus and uncertainty patterns legible in both modes.
+`web/appearance.css` defines shared light/dark tokens and layout refinements. The moon button toggles light and dark. Until a choice is saved, appearance follows the system; the preference is local to the browser and is applied before paint. Keep map, timeline, keyboard focus and uncertainty patterns legible in both modes.
 
 Analytics is optional and disabled in previews. A production Pages package can read `HISTORICA_ANALYTICS_TOKEN` for the Historica-specific Cloudflare Web Analytics site. The loader checks the exact production hostname and initializes once. Automatic SPA tracking is disabled: counts represent document visits, not every in-page focus change or slider movement. No custom search or comparison telemetry is added. See [release instructions](RELEASE.md) before enabling it.
 

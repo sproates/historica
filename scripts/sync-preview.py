@@ -5,6 +5,9 @@ root = Path(__file__).resolve().parent.parent
 runtime = Path.home() / 'Library/Application Support/Historica/preview'
 if runtime.exists():
     shutil.copytree(root / 'web', runtime / 'web', dirs_exist_ok=True)
+    privacy = runtime / 'web/privacy'
+    privacy.mkdir(exist_ok=True)
+    shutil.copy2(root / 'web/privacy.html', privacy / 'index.html')
     # These directories contain generated files only; do not retain retired output.
     for folder in ('pages', 'generated', 'data/evidence'):
         source = root / 'web' / folder
