@@ -21,3 +21,11 @@ The current interaction controller still fetches the full collection and rebuild
 The first slice includes static response checks and the existing model suite. Browser checks cover Alexander to Philip, browser Back, reload, comparison scale and a bookmarked date window, with phone and desktop layouts inspected. JavaScript-free reading is checked in generated HTML; native disclosure sections retain sources and caveats, and a noscript section provides links to connected histories.
 
 Next, introduce typed page view models and separate the interaction controllers from the rendering templates. Preserve bookmarks before extending the static route set. Remove duplicate template paths as that replacement lands. Customised bookmarks can still show the default state briefly while the existing controller loads, and this pilot makes no incremental-build claim.
+
+## Controls and bookmark extraction
+
+Focus selection, date windows and URL encoding now live in strict TypeScript under `src/state/`. The public browser modules remain small adapters so existing routes and import paths keep working, including the GitHub project prefix. A migration comparison confirmed identical results for 460 default and customised bookmarks across all 230 histories.
+
+The date, year and filter controls now attach through `src/controllers/explorer-controls.ts`. They read current state and report changes through callbacks; they don't render the page or write browser history. The main explorer still owns those responsibilities, plus search, comparison selection and map interaction. This is a first separation of controls, not a completed replacement of the controller.
+
+Control tests cover place-window preservation, filter and bookmark round trips, stepping from BCE to CE without year zero, zoom and detaching handlers. Browser checks cover zoom, fitting the lifespan, filtering, selecting a year and restoring those settings after reload.

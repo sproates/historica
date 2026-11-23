@@ -25,4 +25,4 @@ export function compareLives(a,b){
  const start=Math.max(a.startYear,b.startYear),end=Math.min(a.endYear,b.endYear);
  return start<=end?{overlap:true,start,end}:{overlap:false};
 }
-export function clampMoment(moment,state){return Number.isInteger(moment)&&moment!==0?Math.max(state.start,Math.min(state.end,moment)):null;}
+export {clampMoment} from './generated/state/focus.js';

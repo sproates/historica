@@ -4,8 +4,7 @@ import {overlaps} from './timeline-model.js';
 export function buildFocusData(collection, exploration={entities:[],associations:[],relationships:[]}, base=prototypeData){
  return assembleHistory(base,exploration,collection);
 }
-export function initialFocus(data,id='alexander'){const e=data.entities.find(e=>e.id===id)??data.entities.find(e=>e.id==='alexander')??data.entities[0];return {focus:e.id,start:e.startYear,end:e.endYear,kind:'all',area:'all'};}
-export function changeFocus(data,state,id){const next=initialFocus(data,id),entity=data.entities.find(e=>e.id===next.focus);return ['area','state','city'].includes(entity.type)?{...next,start:state.start,end:state.end}:next;}
+export {initialFocus,changeFocus,encodeFocus,decodeFocus} from './generated/state/focus.js';
 export function focusAssociations(data,state){const focus=data.entities.find(e=>e.id===state.focus);let list=data.associations.filter(a=>a.subject===state.focus||a.place===state.focus);
  if(focus.type==='area')list=data.associations.filter(a=>a.subject===state.focus||a.place===state.focus||data.entities.find(e=>e.id===a.subject)?.regionIds?.includes(state.focus));
  if(focus.type==='period'||focus.id==='global-overview')list=data.associations;
@@ -25,9 +24,6 @@ export function relatedEntities(data,state){const ids=new Map();for(const r of d
  if(['ptolemy-egypt','ptolemy-rule','ptolemy-king'].includes(state.focus)){ids.set('ptolemy','Ruler');ids.set('egypt','Associated area');}
  if(['philip-king','philip-reign','chaeronea'].includes(state.focus)){ids.set('philip','King of Macedonia');ids.set('macedonia','Associated kingdom');}
  return [...ids].map(([id,relation])=>{const e=data.entities.find(e=>e.id===id);return e?{...e,relation,inWindow:overlaps(e,state.start,state.end)}:null;}).filter(Boolean);}
-export function encodeFocus(s){return '#'+new URLSearchParams({focus:s.focus,from:s.start,to:s.end,kind:s.kind,area:s.area});}
-export function decodeFocus(hash,data){const p=new URLSearchParams(hash.replace(/^#/,''));const s=initialFocus(data,p.get('focus'));const a=Number(p.get('from')),b=Number(p.get('to'));if(p.has('focus')&&p.has('from')&&p.has('to')&&Number.isInteger(a)&&Number.isInteger(b)&&a<=b&&a>=-300000&&b<=2026&&a!==0&&b!==0){s.start=a;s.end=b;}if(['all','event','period','person'].includes(p.get('kind')))s.kind=p.get('kind');if((p.get('area')==='all'||data.entities.some(e=>e.id===p.get('area')&&['area','state','city'].includes(e.type))))s.area=p.get('area');return s;}
-
 // Bounds describe possible dates, not an event lasting for the entire dating range.
 export function temporalLabel(record, state) {
  if(record.temporalKind==='dated-evidence') return 'Date uncertain within this range';
