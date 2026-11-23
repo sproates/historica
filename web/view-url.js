@@ -11,6 +11,9 @@ export function encodeView(state,view,data){
  if(state.area!=='all')p.set('area',state.area);
  const defaults={x:0,y:0,w:720,borders:1};
  for(const k of Object.keys(defaults))if(view.map[k]!==defaults[k])p.set(k,String(view.map[k]));
+ if(Number.isInteger(view.moment)&&view.moment!==0&&view.moment>=state.start&&view.moment<=state.end)p.set('year',view.moment);
+ const people=unique(view.people||[]).filter(id=>data.entities.some(e=>e.id===id&&e.type==='person')).slice(0,2);
+ if(people.length===2)for(const id of people)p.append('person',id);
  if(view.comparison==='full')p.set('comparison','full');
  for(const name of laneNames(view.lanes||[]))p.append('lane',name);
  for(const name of bookmarkPanels)if((view.panels||[]).includes(name))p.append('panel',name);
@@ -33,5 +36,7 @@ export function decodeView(address,data){
  const valid=y=>Number.isInteger(y)&&y!==0&&y>=-300000&&y<=2026;
  const start=n('rangeFrom',Math.min(state.start,f.startYear)),end=n('rangeTo',Math.max(state.end,f.endYear));
  const envelope={start:valid(start)?Math.min(start,state.start):Math.min(state.start,f.startYear),end:valid(end)?Math.max(end,state.end):Math.max(state.end,f.endYear)};
- return {state,view:{map,envelope,lanes:laneNames(p.getAll('lane')),panels:bookmarkPanels.filter(name=>p.getAll('panel').includes(name)),comparison:p.get('comparison')==='full'?'full':'shared',expanded:p.get('expanded')==='1',evidence:p.get('evidence')==='1'}};
+ const selected=n('year',NaN);
+ const people=unique(p.getAll('person')).filter(id=>data.entities.some(e=>e.id===id&&e.type==='person')).slice(0,2);
+ return {state,view:{moment:valid(selected)?Math.max(state.start,Math.min(state.end,selected)):null,people:people.length===2?people:[],map,envelope,lanes:laneNames(p.getAll('lane')),panels:bookmarkPanels.filter(name=>p.getAll('panel').includes(name)),comparison:p.get('comparison')==='full'?'full':'shared',expanded:p.get('expanded')==='1',evidence:p.get('evidence')==='1'}};
 }

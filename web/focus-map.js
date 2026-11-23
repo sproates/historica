@@ -2,7 +2,7 @@
 export function setupMap(svg,onChange=()=>{}){
   const $=id=>document.getElementById(id);
   let camera={x:0,y:0,w:720},points=[],drag=null,suppressClick=false,pointers=new Map();
-  let silent=false;
+  let silent=false,fitPending=false;
   function draw(){
     const h=camera.w/2;
     camera.x=Math.max(0,Math.min(720-camera.w,camera.x));
@@ -16,13 +16,14 @@ export function setupMap(svg,onChange=()=>{}){
   $('map-in').onclick=()=>zoom(.7);
   $('map-out').onclick=()=>zoom(1/.7);
   $('map-world').onclick=()=>{camera={x:0,y:0,w:720};draw();};
-  $('map-fit').onclick=()=>{
+  function fit(){
     if(!points.length)return;
     const xs=points.map(p=>p[0]),ys=points.map(p=>p[1]);
     const left=Math.min(...xs),right=Math.max(...xs),top=Math.min(...ys),bottom=Math.max(...ys);
     const w=Math.min(720,Math.max(60,(right-left+30)*1.2,(bottom-top+30)*2.4));
     camera={x:(left+right-w)/2,y:(top+bottom-w/2)/2,w};draw();
-  };
+  }
+  $('map-fit').onclick=fit;
   const borders=()=>svg.style.setProperty('--border-opacity',$('map-borders').value);
   $('map-borders').oninput=()=>{borders();onChange();};
   // Convert screen coordinates through the SVG's centred, aspect-preserving viewport.
@@ -69,5 +70,5 @@ export function setupMap(svg,onChange=()=>{}){
     e.preventDefault();draw();
   });
   draw();borders();
-  return {getState(){return {...camera,borders:Number($('map-borders').value)};},restore(saved){silent=true;camera={x:saved.x,y:saved.y,w:saved.w};$('map-borders').value=saved.borders;draw();borders();silent=false;},update(next){points=next;$('map-fit').disabled=!points.length;silent=true;draw();silent=false;}};
+  return {getState(){return {...camera,borders:Number($('map-borders').value)};},restore(saved,fitInitially=false){fitPending=fitInitially;silent=true;camera={x:saved.x,y:saved.y,w:saved.w};$('map-borders').value=saved.borders;draw();borders();silent=false;},fitOnNextUpdate(){fitPending=true;},update(next){points=next;$('map-fit').disabled=!points.length;silent=true;if(fitPending&&points.length){fitPending=false;fit();}else draw();silent=false;}};
 }
