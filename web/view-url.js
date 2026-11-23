@@ -1,8 +1,9 @@
+import {siteBase,sitePath,unmountPath} from './site-path.js';
 import {decodeFocus} from './focus-model.js?v=egypt-1';
 export const bookmarkPanels=['timeline-options','connections-panel','browse-panel'];
 const unique=values=>[...new Set(values)];
 const laneNames=values=>unique(values.filter(v=>typeof v==='string'&&v.length>0&&v.length<=100&&!/[\u0000-\u001f]/.test(v))).slice(0,50);
-export function encodeView(state,view,data){
+export function encodeView(state,view,data,base=siteBase){
  const f=data.entities.find(e=>e.id===state.focus);
  if(!f)throw new Error('Unknown focus');
  const p=new URLSearchParams();
@@ -21,13 +22,13 @@ export function encodeView(state,view,data){
  if(view.evidence)p.set('evidence','1');
  if(view.envelope.start!==Math.min(state.start,f.startYear))p.set('rangeFrom',view.envelope.start);
  if(view.envelope.end!==Math.max(state.end,f.endYear))p.set('rangeTo',view.envelope.end);
- return `/${f.type}/${encodeURIComponent(f.id)}`+(p.size?'?'+p:'');
+ return sitePath(`/${f.type}/${encodeURIComponent(f.id)}`,base)+(p.size?'?'+p:'');
 }
-export function decodeView(address,data){
+export function decodeView(address,data,base=siteBase){
  const url=new URL(address||'/', 'https://historica.online');
  const legacy=url.hash.startsWith('#focus=');
  const p=new URLSearchParams(legacy?url.hash.slice(1):url.search);
- if(!legacy){const parts=url.pathname.split('/').filter(Boolean);const entity=data.entities.find(e=>e.type===parts[0]&&e.id===parts[1]);p.set('focus',entity?.id||'alexander');}
+ if(!legacy){const parts=unmountPath(url.pathname,base).split('/').filter(Boolean);const entity=data.entities.find(e=>e.type===parts[0]&&e.id===parts[1]);p.set('focus',entity?.id||'alexander');}
  const state=decodeFocus('#'+p,data);
  const n=(k,f)=>p.has(k)&&p.get(k).trim()!==''&&Number.isFinite(Number(p.get(k)))?Number(p.get(k)):f;
  const w=Math.max(30,Math.min(720,n('w',720)));

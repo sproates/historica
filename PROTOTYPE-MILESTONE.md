@@ -22,3 +22,5 @@ After accepting the prototype, change direction from incremental prototype expan
 - Refactor application state, rendering and data processing into maintainable components, preserving the accepted prototype behaviour.
 
 These are the next phase’s intended direction, not instructions to enable services now. The repository remains private; builds remain manual; ASO remains the production host until the relevant migration is agreed. Design and interaction changes still require preview approval before publication.
+
+The detailed proposal for this next phase is in [SUSTAINABILITY-PLAN.md](SUSTAINABILITY-PLAN.md). It covers hosting cutover, architecture, content storage, verification, deployment, design and repository housekeeping.

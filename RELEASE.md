@@ -1,8 +1,7 @@
 # Manual releases
 
 Historica is hosted on a separate document root at its hosting provider.
-Keep the repository private. Do not enable GitHub Pages or GitHub CI.
-Builds and verification run manually on the Mac.
+Keep the repository private. The sustainability phase permits GitHub CI and Pages staging preparation. Production remains on ASO until the cutover is explicitly released. Local verification remains available on the Mac.
 
 ## What can be published
 
@@ -81,3 +80,16 @@ Earlier commits contain hosting connection details. Removing them from the
 current files does not remove them from Git history. Review and clean that
 history before changing repository visibility. Never commit passwords,
 local deployment configuration, backups or hosting notes.
+
+## GitHub Pages preparation
+
+`npm run build:pages` writes a staging artifact under ignored `release/pages-site/`,
+with the `/historica/` mount point and noindex metadata. It does not upload anything.
+`node scripts/build-pages.mjs --production` prepares the custom-domain root version.
+Both generate real directories for history routes and About; Apache is not required.
+
+The Verify Historica workflow checks site changes and retains a seven-day staging
+artifact. Explicitly allowlisted internal documentation changes skip the site build.
+The workflow has no deployment permissions or production secrets.
+
+See [the cutover preparation record](project/github-pages-cutover.md) for status.

@@ -1,0 +1,63 @@
+name: Verify Historica
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: verify-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Classify changes
+        id: changes
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node scripts/change-scope.mjs "$BASE" HEAD
+      - name: Check patch formatting
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [ -n "$BASE" ] && git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            git diff --check "$BASE" HEAD
+          else
+            git diff --check HEAD
+          fi
+      - name: Generate and verify the site
+        if: steps.changes.outputs.scope == 'site'
+        run: |
+          npm run build:evidence
+          npm run build:coverage
+          node scripts/build-routes.mjs
+          node scripts/build-metadata.mjs
+          npm test
+          npm run build:pages
+      - name: Keep the verified staging artifact
+        if: steps.changes.outputs.scope == 'site'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: historica-pages-${{ github.sha }}
+          path: release/pages-site/
+          include-hidden-files: true
+          retention-days: 7
+      - name: Report scope
+        env:
+          SCOPE: ${{ steps.changes.outputs.scope }}
+        run: |
+          if [ "$SCOPE" = docs ]; then
+            echo 'Internal documentation only: site build and deployment skipped.' >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'Site verified and staging artifact saved. No deployment or DNS changes.' >> "$GITHUB_STEP_SUMMARY"
+          fi

@@ -14,7 +14,7 @@ test('empty and unknown focus links open Alexander while older explicit links su
 });
 test('bookmark round trip includes map, borders, expanded list, evidence and slider bounds',()=>{
  const state={focus:'socrates',start:-450,end:-410,kind:'person',area:'athens'};
- const view={lanes:['Athens','Persia'],panels:['timeline-options','connections-panel'],comparison:'full',map:{x:350.25,y:80.125,w:100,borders:.35},expanded:true,evidence:true,envelope:{start:-500,end:-350}};
+ const view={moment:null,people:[],lanes:['Athens','Persia'],panels:['timeline-options','connections-panel'],comparison:'full',map:{x:350.25,y:80.125,w:100,borders:.35},expanded:true,evidence:true,envelope:{start:-500,end:-350}};
  assert.deepEqual(decodeView(encodeView(state,view,data),data),{state,view});
 });
 test('malformed bookmarks fall back to safe dates and bounded camera',()=>{
@@ -55,3 +55,10 @@ test('comparison scale is bookmarked without changing the selected years',()=>{
  const defaults=decodeView('/person/socrates',data);
  assert.deepEqual(defaults.view.lanes,[]);assert.deepEqual(defaults.view.panels,[]);
  });
+
+test('bookmarks survive a GitHub project prefix and directory redirect',()=>{
+ const original=decodeView('https://historica.online/person/socrates?year=-420&person=socrates&person=plato',data);
+ const mounted=encodeView(original.state,original.view,data,'/historica/');
+ assert.ok(mounted.startsWith('/historica/person/socrates?'));
+ assert.deepEqual(decodeView('https://sproates.github.io'+mounted.replace('socrates?','socrates/?'),data,'/historica/'),original);
+});
