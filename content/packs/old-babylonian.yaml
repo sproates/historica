@@ -1,0 +1,63 @@
+order: 16
+entities:
+  - hammurabi-reign
+  - mari
+  - old-babylonian-schooling
+  - babylon
+  - nippur
+associations:
+  - subject: hammurabi-reign
+    place: babylon
+    startYear: -1792
+    endYear: -1750
+    point:
+      - 44.420833333333334
+      - 32.54196944444444
+    label: Babylon site reference; not an exact building or personal itinerary
+    source: https://www.metmuseum.org/toah/ht/03/wam
+    claimIds:
+      - old-babylonian-hammurabi-babylon
+      - old-babylonian-hammurabi-reign-point
+    contextual: true
+  - subject: old-babylonian-schooling
+    place: nippur
+    startYear: -1740
+    endYear: -1740
+    point:
+      - 45.220961111111116
+      - 32.13644444444444
+    label: Nippur site reference; not an exact building or personal itinerary
+    source: https://isac.uchicago.edu/publications/back-school-babylonia
+    claimIds:
+      - old-babylonian-school-nippur
+      - old-babylonian-school-dating
+      - old-babylonian-old-babylonian-schooling-point
+    contextual: true
+relationships:
+  - a: hammurabi-reign
+    b: babylon
+    label: King and city
+    labelFromA: City he ruled
+    labelFromB: Hammurabi’s reign
+    claimIds:
+      - old-babylonian-hammurabi-babylon
+    sourceUrls:
+      - https://www.metmuseum.org/toah/ht/03/wam
+  - a: hammurabi-reign
+    b: mari
+    label: Hammurabi and Mari
+    labelFromA: Palace destroyed by his forces
+    labelFromB: Ruler whose forces destroyed the palace
+    claimIds:
+      - old-babylonian-hammurabi-mari
+    sourceUrls:
+      - https://www.metmuseum.org/toah/ht/03/wam
+  - a: old-babylonian-schooling
+    b: nippur
+    label: School and city
+    labelFromA: City where House F stood
+    labelFromB: Scribal education at House F
+    claimIds:
+      - old-babylonian-school-nippur
+    sourceUrls:
+      - https://isac.uchicago.edu/publications/back-school-babylonia

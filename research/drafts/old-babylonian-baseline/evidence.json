@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "1.0",
+  "description": "Independent parent-model calibration draft, prepared before inspecting Luna output. Not accepted content.",
+  "entities": [
+    {
+      "id": "hammurabi-reign",
+      "name": "Hammurabi’s reign",
+      "type": "period"
+    },
+    {
+      "id": "mari",
+      "name": "Mari",
+      "type": "city"
+    },
+    {
+      "id": "old-babylonian-schooling",
+      "name": "Learning through a school tablet",
+      "type": "period"
+    }
+  ],
+  "sources": [
+    {
+      "id": "baseline-met",
+      "title": "Mesopotamia, 2000–1000 B.C.",
+      "url": "https://www.metmuseum.org/toah/ht/03/wam",
+      "creator": "The Metropolitan Museum of Art",
+      "locatorHint": "Named section or object heading in the evidence record",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrases and citation only; no images or full source text reproduced"
+    },
+    {
+      "id": "baseline-nyu",
+      "title": "School tablet with multiplication table: B6063",
+      "url": "https://isaw.nyu.edu/exhibitions/before-pythagoras/items/b-6063/",
+      "creator": "Institute for the Study of the Ancient World, New York University",
+      "locatorHint": "Named section or object heading in the evidence record",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrases and citation only; no images or full source text reproduced"
+    }
+  ],
+  "claims": [
+    {
+      "id": "baseline-hammurabi-reign-reign",
+      "subjectId": "hammurabi-reign",
+      "predicate": "reign",
+      "value": {
+        "type": "text",
+        "text": "The Met places Hammurabi’s rule at Babylon at about 1792–1750 BCE."
+      },
+      "statement": "The Met places Hammurabi’s rule at Babylon at about 1792–1750 BCE.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline-hammurabi-reign-reign-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline-hammurabi-reign-mari",
+      "subjectId": "hammurabi-reign",
+      "predicate": "mari",
+      "value": {
+        "type": "text",
+        "text": "The Met attributes the destruction of Mari’s royal palace to Hammurabi."
+      },
+      "statement": "The Met attributes the destruction of Mari’s royal palace to Hammurabi.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline-hammurabi-reign-mari-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline-mari-location",
+      "subjectId": "mari",
+      "predicate": "location",
+      "value": {
+        "type": "text",
+        "text": "Mari stood on the Euphrates in present-day Syria."
+      },
+      "statement": "Mari stood on the Euphrates in present-day Syria.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline-mari-location-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline-mari-archive",
+      "subjectId": "mari",
+      "predicate": "archive",
+      "value": {
+        "type": "text",
+        "text": "Its palace archive preserves information about contemporary political affairs."
+      },
+      "statement": "Its palace archive preserves information about contemporary political affairs.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline-mari-archive-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline-old-babylonian-schooling-date",
+      "subjectId": "old-babylonian-schooling",
+      "predicate": "date",
+      "value": {
+        "type": "text",
+        "text": "NYU dates school tablet B6063 to the nineteenth through seventeenth centuries BCE and tentatively associates it with Nippur."
+      },
+      "statement": "NYU dates school tablet B6063 to the nineteenth through seventeenth centuries BCE and tentatively associates it with Nippur.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline-old-babylonian-schooling-date-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline-old-babylonian-schooling-practice",
+      "subjectId": "old-babylonian-schooling",
+      "predicate": "practice",
+      "value": {
+        "type": "text",
+        "text": "The exhibition describes Old Babylonian school tablets as evidence of instruction in Sumerian and mathematics."
+      },
+      "statement": "The exhibition describes Old Babylonian school tablets as evidence of instruction in Sumerian and mathematics.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline-old-babylonian-schooling-practice-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "baseline-hammurabi-reign-reign-passage",
+      "claimId": "baseline-hammurabi-reign-reign",
+      "sourceId": "baseline-met",
+      "locator": "Overview, first paragraph",
+      "note": "The cited passage supports this narrowly phrased claim; it does not establish coordinates or a personal lifespan.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline-hammurabi-reign-mari-passage",
+      "claimId": "baseline-hammurabi-reign-mari",
+      "sourceId": "baseline-met",
+      "locator": "Key Events, ca. 1800–1600 BCE, first paragraph",
+      "note": "The cited passage supports this narrowly phrased claim; it does not establish coordinates or a personal lifespan.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline-mari-location-passage",
+      "claimId": "baseline-mari-location",
+      "sourceId": "baseline-met",
+      "locator": "Key Events, ca. 1800–1600 BCE, first paragraph",
+      "note": "The cited passage supports this narrowly phrased claim; it does not establish coordinates or a personal lifespan.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline-mari-archive-passage",
+      "claimId": "baseline-mari-archive",
+      "sourceId": "baseline-met",
+      "locator": "Key Events, ca. 1800–1600 BCE, second paragraph",
+      "note": "The cited passage supports this narrowly phrased claim; it does not establish coordinates or a personal lifespan.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline-old-babylonian-schooling-date-passage",
+      "claimId": "baseline-old-babylonian-schooling-date",
+      "sourceId": "baseline-nyu",
+      "locator": "University of Pennsylvania Museum B6063, catalogue heading and dating line",
+      "note": "The cited passage supports this narrowly phrased claim; it does not establish coordinates or a personal lifespan.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline-old-babylonian-schooling-practice-passage",
+      "claimId": "baseline-old-babylonian-schooling-practice",
+      "sourceId": "baseline-nyu",
+      "locator": "Description, first paragraph",
+      "note": "The cited passage supports this narrowly phrased claim; it does not establish coordinates or a personal lifespan.",
+      "relation": "supports",
+      "reviewId": null
+    }
+  ],
+  "reviews": [],
+  "accounts": []
+}
