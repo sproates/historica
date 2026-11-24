@@ -80,6 +80,26 @@
       "id": "italica",
       "name": "Itálica",
       "type": "city"
+    },
+    {
+      "id": "antequera-dolmens",
+      "name": "The dolmens of Antequera",
+      "type": "period"
+    },
+    {
+      "id": "menga-dolmen",
+      "name": "Building the Menga dolmen",
+      "type": "period"
+    },
+    {
+      "id": "viera-dolmen",
+      "name": "Building the Viera dolmen",
+      "type": "period"
+    },
+    {
+      "id": "el-romeral",
+      "name": "The tholos of El Romeral",
+      "type": "period"
     }
   ],
   "sources": [
@@ -226,6 +246,51 @@
       "locatorHint": "Description, origins and second-century expansion; coordinates and Andalusia location",
       "accessed": "2026-11-24",
       "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "antequera-unesco",
+      "title": "Antequera Dolmens Site",
+      "creator": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1501/",
+      "locatorHint": "Brief synthesis and criteria: monuments, architecture and landscape orientation",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "antequera-maps",
+      "title": "Antequera Dolmens Site: geographical data",
+      "creator": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1501/maps/",
+      "locatorHint": "Components 1501-001 (Menga and Viera) and 1501-002 (El Romeral)",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "antequera-menga",
+      "title": "Early science and colossal stone engineering in Menga, a Neolithic dolmen (Antequera, Spain)",
+      "creator": "José Antonio Lozano Rodríguez and colleagues, Science Advances 10, eadp1295 (2024)",
+      "url": "https://www.ugr.es/~grupo179/pdf/Lozano%202024.pdf",
+      "locatorHint": "Page 1, abstract and introduction: 3800–3600 BCE and capstone mass",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "antequera-icomos",
+      "title": "Report of evaluation: Antequera Dolmens Site",
+      "creator": "ICOMOS, 11 March 2016",
+      "url": "https://www.webgea.es/doc/ICOMOS.pdf",
+      "locatorHint": "Printed pages 23–24: Viera and El Romeral descriptions and chronology",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "antequera-stonehenge-comparison",
+      "title": "History of Stonehenge",
+      "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/",
+      "creator": "English Heritage",
+      "locatorHint": "Construction history",
+      "accessed": "2026-11-22",
+      "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
     }
   ],
   "claims": [
@@ -1486,6 +1551,273 @@
       ],
       "reviewId": "andalucia-italica-point-review",
       "disputeNote": null
+    },
+    {
+      "id": "antequera-antequera-dolmens-landscape",
+      "subjectId": "antequera-dolmens",
+      "predicate": "historical-context",
+      "statement": "Antequera’s Menga, Viera and El Romeral are mound-covered funerary and ritual monuments; Menga faces La Peña de los Enamorados and El Romeral faces El Torcal.",
+      "value": {
+        "type": "text",
+        "text": "Antequera’s Menga, Viera and El Romeral are mound-covered funerary and ritual monuments; Menga faces La Peña de los Enamorados and El Romeral faces El Torcal."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-antequera-dolmens-landscape-evidence"
+      ],
+      "reviewId": "antequera-antequera-dolmens-landscape-review",
+      "disputeNote": null
+    },
+    {
+      "id": "antequera-antequera-dolmens-menga-date",
+      "subjectId": "antequera-dolmens",
+      "predicate": "historical-context",
+      "statement": "Menga’s construction is dated approximately 3800–3600 BCE in the 2024 study.",
+      "value": {
+        "type": "text",
+        "text": "Menga’s construction is dated approximately 3800–3600 BCE in the 2024 study."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-antequera-dolmens-menga-date-evidence"
+      ],
+      "reviewId": "antequera-antequera-dolmens-menga-date-review",
+      "disputeNote": null
+    },
+    {
+      "id": "antequera-antequera-dolmens-romeral-date",
+      "subjectId": "antequera-dolmens",
+      "predicate": "historical-context",
+      "statement": "The 2016 ICOMOS assessment assigns El Romeral broadly to 3300–2200 BCE, with finer dating uncertain.",
+      "value": {
+        "type": "text",
+        "text": "The 2016 ICOMOS assessment assigns El Romeral broadly to 3300–2200 BCE, with finer dating uncertain."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-antequera-dolmens-romeral-date-evidence"
+      ],
+      "reviewId": "antequera-antequera-dolmens-romeral-date-review",
+      "disputeNote": null
+    },
+    {
+      "id": "antequera-menga-dolmen-construction",
+      "subjectId": "menga-dolmen",
+      "predicate": "historical-context",
+      "statement": "The 2024 study dates Menga to approximately 3800–3600 BCE, estimates capstone 5 at 150 tonnes and describes three surviving central pillars. Its construction model is an interpretation.",
+      "value": {
+        "type": "text",
+        "text": "The 2024 study dates Menga to approximately 3800–3600 BCE, estimates capstone 5 at 150 tonnes and describes three surviving central pillars. Its construction model is an interpretation."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-menga-dolmen-construction-evidence"
+      ],
+      "reviewId": "antequera-menga-dolmen-construction-review",
+      "disputeNote": null
+    },
+    {
+      "id": "antequera-menga-dolmen-point",
+      "subjectId": "menga-dolmen",
+      "predicate": "reference-location",
+      "statement": "UNESCO component 1501-001 gives a shared reference for Menga and Viera, not separate tomb centres.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -4.5489999999999995,
+          37.024
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-menga-dolmen-point-evidence"
+      ],
+      "reviewId": "antequera-menga-dolmen-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "antequera-viera-dolmen-form-date",
+      "subjectId": "viera-dolmen",
+      "predicate": "historical-context",
+      "statement": "ICOMOS describes Viera’s passage and chamber, construction in the last third of the fourth millennium BCE and possible later funerary or religious activity.",
+      "value": {
+        "type": "text",
+        "text": "ICOMOS describes Viera’s passage and chamber, construction in the last third of the fourth millennium BCE and possible later funerary or religious activity."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-viera-dolmen-form-date-evidence"
+      ],
+      "reviewId": "antequera-viera-dolmen-form-date-review",
+      "disputeNote": null
+    },
+    {
+      "id": "antequera-viera-dolmen-point",
+      "subjectId": "viera-dolmen",
+      "predicate": "reference-location",
+      "statement": "UNESCO component 1501-001 gives a shared reference for Menga and Viera, not separate tomb centres.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -4.5489999999999995,
+          37.024
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-viera-dolmen-point-evidence"
+      ],
+      "reviewId": "antequera-viera-dolmen-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "antequera-el-romeral-form-date",
+      "subjectId": "el-romeral",
+      "predicate": "historical-context",
+      "statement": "ICOMOS describes El Romeral’s corbelled chambers and attributes construction broadly to 3300–2200 BCE, while noting uncertainty in its detailed chronology.",
+      "value": {
+        "type": "text",
+        "text": "ICOMOS describes El Romeral’s corbelled chambers and attributes construction broadly to 3300–2200 BCE, while noting uncertainty in its detailed chronology."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-el-romeral-form-date-evidence"
+      ],
+      "reviewId": "antequera-el-romeral-form-date-review",
+      "disputeNote": null
+    },
+    {
+      "id": "antequera-el-romeral-point",
+      "subjectId": "el-romeral",
+      "predicate": "reference-location",
+      "statement": "UNESCO component 1501-002 locates El Romeral.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -4.534916666666667,
+          37.034388888888884
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-el-romeral-point-evidence"
+      ],
+      "reviewId": "antequera-el-romeral-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "antequera-menga-dolmen-before-stonehenge",
+      "subjectId": "menga-dolmen",
+      "predicate": "historical-context",
+      "statement": "Menga’s approximate 3800–3600 BCE construction interval precedes Stonehenge’s first earthwork around 3000 BCE.",
+      "value": {
+        "type": "text",
+        "text": "Menga’s approximate 3800–3600 BCE construction interval precedes Stonehenge’s first earthwork around 3000 BCE."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-menga-dolmen-before-stonehenge-evidence",
+        "antequera-menga-dolmen-before-stonehenge-stonehenge-evidence"
+      ],
+      "reviewId": "antequera-menga-dolmen-before-stonehenge-review",
+      "disputeNote": null
+    },
+    {
+      "id": "antequera-andalucia-antequera",
+      "subjectId": "andalucia",
+      "predicate": "historical-context",
+      "statement": "The Antequera dolmens lie in modern Andalucía and preserve prehistoric funerary and ritual architecture.",
+      "value": {
+        "type": "text",
+        "text": "The Antequera dolmens lie in modern Andalucía and preserve prehistoric funerary and ritual architecture."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "antequera-andalucia-antequera-evidence"
+      ],
+      "reviewId": "antequera-andalucia-antequera-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -1875,6 +2207,114 @@
       "note": "Published coordinate retained as a site reference, not a territorial boundary.",
       "relation": "supports",
       "reviewId": "andalucia-italica-point-review"
+    },
+    {
+      "id": "antequera-antequera-dolmens-landscape-evidence",
+      "claimId": "antequera-antequera-dolmens-landscape",
+      "sourceId": "antequera-unesco",
+      "locator": "Brief synthesis and criteria: monuments, architecture and landscape orientation",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "antequera-antequera-dolmens-landscape-review"
+    },
+    {
+      "id": "antequera-antequera-dolmens-menga-date-evidence",
+      "claimId": "antequera-antequera-dolmens-menga-date",
+      "sourceId": "antequera-menga",
+      "locator": "Page 1, abstract and introduction: 3800–3600 BCE and capstone mass",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "antequera-antequera-dolmens-menga-date-review"
+    },
+    {
+      "id": "antequera-antequera-dolmens-romeral-date-evidence",
+      "claimId": "antequera-antequera-dolmens-romeral-date",
+      "sourceId": "antequera-icomos",
+      "locator": "Printed pages 23–24: Viera and El Romeral descriptions and chronology",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "antequera-antequera-dolmens-romeral-date-review"
+    },
+    {
+      "id": "antequera-menga-dolmen-construction-evidence",
+      "claimId": "antequera-menga-dolmen-construction",
+      "sourceId": "antequera-menga",
+      "locator": "Page 1, abstract and introduction: 3800–3600 BCE and capstone mass",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "antequera-menga-dolmen-construction-review"
+    },
+    {
+      "id": "antequera-menga-dolmen-point-evidence",
+      "claimId": "antequera-menga-dolmen-point",
+      "sourceId": "antequera-maps",
+      "locator": "Components 1501-001 (Menga and Viera) and 1501-002 (El Romeral)",
+      "note": "Published coordinate retained as a site reference, not a territorial boundary.",
+      "relation": "supports",
+      "reviewId": "antequera-menga-dolmen-point-review"
+    },
+    {
+      "id": "antequera-viera-dolmen-form-date-evidence",
+      "claimId": "antequera-viera-dolmen-form-date",
+      "sourceId": "antequera-icomos",
+      "locator": "Printed pages 23–24: Viera and El Romeral descriptions and chronology",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "antequera-viera-dolmen-form-date-review"
+    },
+    {
+      "id": "antequera-viera-dolmen-point-evidence",
+      "claimId": "antequera-viera-dolmen-point",
+      "sourceId": "antequera-maps",
+      "locator": "Components 1501-001 (Menga and Viera) and 1501-002 (El Romeral)",
+      "note": "Published coordinate retained as a site reference, not a territorial boundary.",
+      "relation": "supports",
+      "reviewId": "antequera-viera-dolmen-point-review"
+    },
+    {
+      "id": "antequera-el-romeral-form-date-evidence",
+      "claimId": "antequera-el-romeral-form-date",
+      "sourceId": "antequera-icomos",
+      "locator": "Printed pages 23–24: Viera and El Romeral descriptions and chronology",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "antequera-el-romeral-form-date-review"
+    },
+    {
+      "id": "antequera-el-romeral-point-evidence",
+      "claimId": "antequera-el-romeral-point",
+      "sourceId": "antequera-maps",
+      "locator": "Components 1501-001 (Menga and Viera) and 1501-002 (El Romeral)",
+      "note": "Published coordinate retained as a site reference, not a territorial boundary.",
+      "relation": "supports",
+      "reviewId": "antequera-el-romeral-point-review"
+    },
+    {
+      "id": "antequera-menga-dolmen-before-stonehenge-evidence",
+      "claimId": "antequera-menga-dolmen-before-stonehenge",
+      "sourceId": "antequera-menga",
+      "locator": "Page 1, abstract and introduction: 3800–3600 BCE and capstone mass",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "antequera-menga-dolmen-before-stonehenge-review"
+    },
+    {
+      "id": "antequera-menga-dolmen-before-stonehenge-stonehenge-evidence",
+      "claimId": "antequera-menga-dolmen-before-stonehenge",
+      "sourceId": "antequera-stonehenge-comparison",
+      "locator": "The Earliest Monument and The Stone Settings",
+      "note": "Chronological comparison using Stonehenge’s first earthwork date; no cultural connection inferred.",
+      "relation": "supports",
+      "reviewId": "antequera-menga-dolmen-before-stonehenge-review"
+    },
+    {
+      "id": "antequera-andalucia-antequera-evidence",
+      "claimId": "antequera-andalucia-antequera",
+      "sourceId": "antequera-unesco",
+      "locator": "Brief synthesis and criteria: monuments, architecture and landscape orientation",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "antequera-andalucia-antequera-review"
     }
   ],
   "reviews": [
@@ -2174,6 +2614,83 @@
     },
     {
       "id": "andalucia-italica-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-antequera-dolmens-landscape-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-antequera-dolmens-menga-date-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-antequera-dolmens-romeral-date-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-menga-dolmen-construction-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-menga-dolmen-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-viera-dolmen-form-date-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-viera-dolmen-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-el-romeral-form-date-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-el-romeral-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-menga-dolmen-before-stonehenge-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "antequera-andalucia-antequera-review",
       "reviewer": "AI-assisted source inspection; not independent expert review",
       "date": "2026-11-24",
       "decision": "verified",

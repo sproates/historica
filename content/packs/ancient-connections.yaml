@@ -16,6 +16,10 @@ entities:
   - gadir
   - baelo-claudia
   - italica
+  - antequera-dolmens
+  - menga-dolmen
+  - viera-dolmen
+  - el-romeral
 associations:
   - subject: aksum-context
     place: aksum-context
@@ -189,6 +193,123 @@ associations:
       - andalucia-italica-point
     source: https://whc.unesco.org/en/tentativelists/6376/
     contextual: true
+  - subject: menga-dolmen
+    place: menga-dolmen
+    startYear: -3800
+    endYear: -3600
+    point:
+      - -4.5489999999999995
+      - 37.024
+    label: Menga and Viera · shared UNESCO component reference
+    claimIds:
+      - antequera-menga-dolmen-construction
+      - antequera-menga-dolmen-point
+    source: https://whc.unesco.org/en/list/1501/maps/
+    contextual: true
+  - subject: antequera-dolmens
+    place: menga-dolmen
+    startYear: -3800
+    endYear: -3600
+    point:
+      - -4.5489999999999995
+      - 37.024
+    label: Menga and Viera · shared UNESCO component reference
+    claimIds:
+      - antequera-menga-dolmen-construction
+      - antequera-menga-dolmen-point
+    source: https://whc.unesco.org/en/list/1501/maps/
+    contextual: true
+  - subject: andalucia
+    place: menga-dolmen
+    startYear: -3800
+    endYear: -3600
+    point:
+      - -4.5489999999999995
+      - 37.024
+    label: Menga and Viera · shared UNESCO component reference
+    claimIds:
+      - antequera-menga-dolmen-construction
+      - antequera-menga-dolmen-point
+    source: https://whc.unesco.org/en/list/1501/maps/
+    contextual: true
+  - subject: viera-dolmen
+    place: viera-dolmen
+    startYear: -3330
+    endYear: -3000
+    point:
+      - -4.5489999999999995
+      - 37.024
+    label: Menga and Viera · shared UNESCO component reference
+    claimIds:
+      - antequera-viera-dolmen-form-date
+      - antequera-viera-dolmen-point
+    source: https://whc.unesco.org/en/list/1501/maps/
+    contextual: true
+  - subject: antequera-dolmens
+    place: viera-dolmen
+    startYear: -3330
+    endYear: -3000
+    point:
+      - -4.5489999999999995
+      - 37.024
+    label: Menga and Viera · shared UNESCO component reference
+    claimIds:
+      - antequera-viera-dolmen-form-date
+      - antequera-viera-dolmen-point
+    source: https://whc.unesco.org/en/list/1501/maps/
+    contextual: true
+  - subject: andalucia
+    place: viera-dolmen
+    startYear: -3330
+    endYear: -3000
+    point:
+      - -4.5489999999999995
+      - 37.024
+    label: Menga and Viera · shared UNESCO component reference
+    claimIds:
+      - antequera-viera-dolmen-form-date
+      - antequera-viera-dolmen-point
+    source: https://whc.unesco.org/en/list/1501/maps/
+    contextual: true
+  - subject: el-romeral
+    place: el-romeral
+    startYear: -3300
+    endYear: -2200
+    point:
+      - -4.534916666666667
+      - 37.034388888888884
+    label: El Romeral · UNESCO component reference
+    claimIds:
+      - antequera-el-romeral-form-date
+      - antequera-el-romeral-point
+    source: https://whc.unesco.org/en/list/1501/maps/
+    contextual: true
+  - subject: antequera-dolmens
+    place: el-romeral
+    startYear: -3300
+    endYear: -2200
+    point:
+      - -4.534916666666667
+      - 37.034388888888884
+    label: El Romeral · UNESCO component reference
+    claimIds:
+      - antequera-el-romeral-form-date
+      - antequera-el-romeral-point
+    source: https://whc.unesco.org/en/list/1501/maps/
+    contextual: true
+  - subject: andalucia
+    place: el-romeral
+    startYear: -3300
+    endYear: -2200
+    point:
+      - -4.534916666666667
+      - 37.034388888888884
+    label: El Romeral · UNESCO component reference
+    claimIds:
+      - antequera-el-romeral-form-date
+      - antequera-el-romeral-point
+    source: https://whc.unesco.org/en/list/1501/maps/
+    contextual: true
 relationships:
   - a: global-overview
     b: villanovan-context
@@ -323,3 +444,84 @@ relationships:
       - andalucia-italica-expansion
     sourceUrls:
       - https://whc.unesco.org/en/tentativelists/6376/
+  - a: andalucia
+    b: antequera-dolmens
+    label: Prehistoric monument in Andalucía
+    claimIds:
+      - antequera-antequera-dolmens-landscape
+      - antequera-antequera-dolmens-menga-date
+      - antequera-antequera-dolmens-romeral-date
+      - antequera-antequera-dolmens-landscape
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1501/
+      - https://whc.unesco.org/en/list/1501/
+  - a: andalucia
+    b: menga-dolmen
+    label: Prehistoric monument in Andalucía
+    claimIds:
+      - antequera-menga-dolmen-construction
+      - antequera-menga-dolmen-point
+      - antequera-antequera-dolmens-landscape
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1501/
+      - https://www.ugr.es/~grupo179/pdf/Lozano%202024.pdf
+  - a: antequera-dolmens
+    b: menga-dolmen
+    label: Monument in the Antequera group
+    claimIds:
+      - antequera-menga-dolmen-construction
+      - antequera-menga-dolmen-point
+      - antequera-antequera-dolmens-landscape
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1501/
+      - https://www.ugr.es/~grupo179/pdf/Lozano%202024.pdf
+  - a: andalucia
+    b: viera-dolmen
+    label: Prehistoric monument in Andalucía
+    claimIds:
+      - antequera-viera-dolmen-form-date
+      - antequera-viera-dolmen-point
+      - antequera-antequera-dolmens-landscape
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1501/
+      - https://www.webgea.es/doc/ICOMOS.pdf
+  - a: antequera-dolmens
+    b: viera-dolmen
+    label: Monument in the Antequera group
+    claimIds:
+      - antequera-viera-dolmen-form-date
+      - antequera-viera-dolmen-point
+      - antequera-antequera-dolmens-landscape
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1501/
+      - https://www.webgea.es/doc/ICOMOS.pdf
+  - a: andalucia
+    b: el-romeral
+    label: Prehistoric monument in Andalucía
+    claimIds:
+      - antequera-el-romeral-form-date
+      - antequera-el-romeral-point
+      - antequera-antequera-dolmens-landscape
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1501/
+      - https://www.webgea.es/doc/ICOMOS.pdf
+  - a: antequera-dolmens
+    b: el-romeral
+    label: Monument in the Antequera group
+    claimIds:
+      - antequera-el-romeral-form-date
+      - antequera-el-romeral-point
+      - antequera-antequera-dolmens-landscape
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1501/
+      - https://www.webgea.es/doc/ICOMOS.pdf
+  - a: antequera-dolmens
+    b: stonehenge
+    label: Compare prehistoric monuments
+    claimIds:
+      - antequera-antequera-dolmens-landscape
+      - stonehenge-history
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1501/
+      - https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/
+    note: Comparison only; no direct contact or shared builders implied.
