@@ -130,6 +130,26 @@
       "id": "fourth-dynasty-egypt",
       "name": "Egypt’s Fourth Dynasty",
       "type": "period"
+    },
+    {
+      "id": "amenemhat-three-reign",
+      "name": "Amenemhat III’s reign",
+      "type": "period"
+    },
+    {
+      "id": "lahun",
+      "name": "Lahun",
+      "type": "city"
+    },
+    {
+      "id": "lahun-accounts",
+      "name": "Work and accounts at Lahun",
+      "type": "period"
+    },
+    {
+      "id": "abydos-middle-kingdom",
+      "name": "Abydos in the Middle Kingdom",
+      "type": "city"
     }
   ],
   "sources": [
@@ -267,6 +287,96 @@
       "locatorHint": "Component 087-001, Temple of Karnak: N25 43 08 E32 39 26.1",
       "accessed": "2026-11-23",
       "reuse": "Coordinate reference and linked attribution; no map image reproduced."
+    },
+    {
+      "id": "nile-expansion-egypt-mk",
+      "title": "Egypt in the Middle Kingdom (ca. 2030–1650 B.C.)",
+      "creator": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/essays/egypt-in-the-middle-kingdom-2030-1640-b-c",
+      "locatorHint": "Reunification and Dynasty 12, paragraphs beginning At the end of the Old Kingdom and The early Middle Kingdom revival",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-egypt-ministry",
+      "title": "Middle Kingdom",
+      "creator": "Egyptian Ministry of Tourism and Antiquities",
+      "url": "https://egymonuments.gov.eg/en/historical-periods/middle-kingdom",
+      "locatorHint": "Dates and historical overview",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-egypt-sen",
+      "title": "Senusret III",
+      "creator": "UCL Digital Egypt for Universities",
+      "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/senusretIII.html",
+      "locatorHint": "Opening account; burial place and further attestations",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-egypt-abydos",
+      "title": "Abydos",
+      "creator": "UCL Digital Egypt for Universities",
+      "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/abydos/index.html",
+      "locatorHint": "Coordinates and Middle Kingdom paragraph",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-egypt-rulers",
+      "title": "List of Rulers of Ancient Egypt and Nubia",
+      "creator": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/toah/hd/phar/hd_phar.htm",
+      "locatorHint": "Dynasty 12",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-egypt-amen",
+      "title": "Amenemhat III",
+      "creator": "UCL Digital Egypt for Universities",
+      "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/amenemhatIII.html",
+      "locatorHint": "Opening account and pyramid paragraph; header dates are not used",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-egypt-town",
+      "title": "Lahun, objects found at the site",
+      "creator": "UCL Digital Egypt for Universities",
+      "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/lahun/town/index.html",
+      "locatorHint": "Opening paragraph and object categories",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-egypt-lahun",
+      "title": "Lahun",
+      "creator": "UCL Digital Egypt for Universities",
+      "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/lahun/index.html",
+      "locatorHint": "Ancient-site coordinate line and introduction",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-egypt-papyri",
+      "title": "The Lahun Papyri",
+      "creator": "UCL Digital Egypt for Universities",
+      "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/lahun/papyri.html",
+      "locatorHint": "Two find groups and accounts catalogue",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-nubia-kerma-for-egypt-expansion",
+      "title": "History",
+      "creator": "Swiss Archaeological Mission at Kerma",
+      "url": "https://kerma.ch/en/history/",
+      "locatorHint": "Kingdom of Kerma section",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
     }
   ],
   "claims": [
@@ -1569,6 +1679,632 @@
       ],
       "reviewId": "connected-browsing-thebes-egypt-map-point-review",
       "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-middle-kingdom-renewal",
+      "subjectId": "middle-kingdom-egypt",
+      "predicate": "middle-kingdom-renewal",
+      "value": {
+        "type": "text",
+        "text": "Mentuhotep II reunified Egypt; Dynasty 12 established Itjtawi and resumed pyramid building."
+      },
+      "statement": "Mentuhotep II reunified Egypt; Dynasty 12 established Itjtawi and resumed pyramid building.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-middle-kingdom-renewal-evidence"
+      ],
+      "reviewId": "nile-expansion-middle-kingdom-renewal-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-middle-kingdom-frontier",
+      "subjectId": "middle-kingdom-egypt",
+      "predicate": "middle-kingdom-frontier",
+      "value": {
+        "type": "text",
+        "text": "Middle Kingdom forts regulated Nubian trade and supported mining and military operations."
+      },
+      "statement": "Middle Kingdom forts regulated Nubian trade and supported mining and military operations.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-middle-kingdom-frontier-evidence"
+      ],
+      "reviewId": "nile-expansion-middle-kingdom-frontier-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-senwosret-frontier",
+      "subjectId": "senwosret-three-reign",
+      "predicate": "senwosret-frontier",
+      "value": {
+        "type": "text",
+        "text": "Senwosret III campaigned in Nubia and fortified the frontier around Semna at the Second Cataract."
+      },
+      "statement": "Senwosret III campaigned in Nubia and fortified the frontier around Semna at the Second Cataract.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-senwosret-frontier-evidence"
+      ],
+      "reviewId": "nile-expansion-senwosret-frontier-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-senwosret-abydos",
+      "subjectId": "senwosret-three-reign",
+      "predicate": "senwosret-abydos",
+      "value": {
+        "type": "text",
+        "text": "Senwosret III had a tomb, temple and associated town at Abydos."
+      },
+      "statement": "Senwosret III had a tomb, temple and associated town at Abydos.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-senwosret-abydos-evidence"
+      ],
+      "reviewId": "nile-expansion-senwosret-abydos-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-senwosret-alternative-dates",
+      "subjectId": "senwosret-three-reign",
+      "predicate": "senwosret-alternative-dates",
+      "value": {
+        "type": "text",
+        "text": "UCL dates Senwosret III to 1872–1853 BCE, differing from the Met chronology used here."
+      },
+      "statement": "UCL dates Senwosret III to 1872–1853 BCE, differing from the Met chronology used here.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-senwosret-alternative-dates-evidence"
+      ],
+      "reviewId": "nile-expansion-senwosret-alternative-dates-review",
+      "disputeNote": "Alternative chronology retained visibly. Met display remains approximately 1878–1840 BCE; not a lifespan."
+    },
+    {
+      "id": "nile-expansion-senwosret-site-point",
+      "subjectId": "senwosret-three-reign",
+      "predicate": "map-reference",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          31.883333333333333,
+          26.183333333333334
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Abydos reference point for the royal complex; not its exact footprint or evidence of residence.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-senwosret-site-point-evidence"
+      ],
+      "reviewId": "nile-expansion-senwosret-site-point-review",
+      "disputeNote": "UCL gives 26°11′ N, 31°53′ E. Decimal conversion uses degrees + minutes/60; longitude first. Association with this ruler is supported separately."
+    },
+    {
+      "id": "nile-expansion-amenemhat-three-dates",
+      "subjectId": "amenemhat-three-reign",
+      "predicate": "amenemhat-three-dates",
+      "value": {
+        "type": "text",
+        "text": "Amenemhat III is a Dynasty 12 king, dated approximately 1859–1813 BCE by the Met."
+      },
+      "statement": "Amenemhat III is a Dynasty 12 king, dated approximately 1859–1813 BCE by the Met.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1859,
+          "latest": -1859,
+          "original": "Approximately 1859 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1813,
+          "latest": -1813,
+          "original": "Approximately 1813 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "nile-expansion-amenemhat-three-dates-evidence"
+      ],
+      "reviewId": "nile-expansion-amenemhat-three-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-amenemhat-three-building",
+      "subjectId": "amenemhat-three-reign",
+      "predicate": "amenemhat-three-building",
+      "value": {
+        "type": "text",
+        "text": "Amenemhat III built pyramids at Dahshur and Hawara, moving to the latter after ground problems at Dahshur; other projects stood in the Fayum."
+      },
+      "statement": "Amenemhat III built pyramids at Dahshur and Hawara, moving to the latter after ground problems at Dahshur; other projects stood in the Fayum.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-amenemhat-three-building-evidence"
+      ],
+      "reviewId": "nile-expansion-amenemhat-three-building-review",
+      "disputeNote": "Uses the building account only. This UCL page has an internally inconsistent heading date; it is not used for chronology."
+    },
+    {
+      "id": "nile-expansion-amenemhat-three-alternative",
+      "subjectId": "amenemhat-three-reign",
+      "predicate": "amenemhat-three-alternative",
+      "value": {
+        "type": "text",
+        "text": "The Egyptian ministry gives Amenemhat III approximately 1855–1808 BCE."
+      },
+      "statement": "The Egyptian ministry gives Amenemhat III approximately 1855–1808 BCE.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-amenemhat-three-alternative-evidence"
+      ],
+      "reviewId": "nile-expansion-amenemhat-three-alternative-review",
+      "disputeNote": "Alternative to the displayed Met chronology, not an additional reign."
+    },
+    {
+      "id": "nile-expansion-lahun-town-window",
+      "subjectId": "lahun",
+      "predicate": "lahun-town-window",
+      "value": {
+        "type": "text",
+        "text": "Lahun preserves a late Middle Kingdom town of about 1850–1700 BCE."
+      },
+      "statement": "Lahun preserves a late Middle Kingdom town of about 1850–1700 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1850,
+          "latest": -1850,
+          "original": "Approximately 1850 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1700,
+          "latest": -1700,
+          "original": "Approximately 1700 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "nile-expansion-lahun-town-window-evidence"
+      ],
+      "reviewId": "nile-expansion-lahun-town-window-review",
+      "disputeNote": "Editorial study window based on the dated town evidence; not settlement foundation and abandonment dates."
+    },
+    {
+      "id": "nile-expansion-lahun-town-finds",
+      "subjectId": "lahun",
+      "predicate": "lahun-town-finds",
+      "value": {
+        "type": "text",
+        "text": "Lahun yielded papyri, furniture and agricultural tools, but most individual findspots were poorly recorded in the 1889 clearance."
+      },
+      "statement": "Lahun yielded papyri, furniture and agricultural tools, but most individual findspots were poorly recorded in the 1889 clearance.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-lahun-town-finds-evidence"
+      ],
+      "reviewId": "nile-expansion-lahun-town-finds-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-lahun-point",
+      "subjectId": "lahun",
+      "predicate": "map-reference",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          30.966666666666665,
+          29.233333333333334
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Lahun ancient-site reference at the Fayum entrance, also known as Kahun.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-lahun-point-evidence"
+      ],
+      "reviewId": "nile-expansion-lahun-point-review",
+      "disputeNote": "UCL ancient-site coordinate 29°14′ N, 30°58′ E, converted by degrees + minutes/60. Minute precision does not identify a house."
+    },
+    {
+      "id": "nile-expansion-lahun-accounts-content",
+      "subjectId": "lahun-accounts",
+      "predicate": "lahun-accounts-content",
+      "value": {
+        "type": "text",
+        "text": "Lahun accounts record work lists, grain, animal produce and field-counting."
+      },
+      "statement": "Lahun accounts record work lists, grain, animal produce and field-counting.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-lahun-accounts-content-evidence"
+      ],
+      "reviewId": "nile-expansion-lahun-accounts-content-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-lahun-accounts-window",
+      "subjectId": "lahun-accounts",
+      "predicate": "lahun-accounts-window",
+      "value": {
+        "type": "text",
+        "text": "The approximately 1850–1700 BCE town interval is used as an editorial window for exploring its records."
+      },
+      "statement": "The approximately 1850–1700 BCE town interval is used as an editorial window for exploring its records.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1850,
+          "latest": -1850,
+          "original": "Approximately 1850 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1700,
+          "latest": -1700,
+          "original": "Approximately 1700 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "nile-expansion-lahun-accounts-window-evidence"
+      ],
+      "reviewId": "nile-expansion-lahun-accounts-window-review",
+      "disputeNote": "Editorial comparison window only. Individual papyri are not dated across this entire interval."
+    },
+    {
+      "id": "nile-expansion-lahun-archive-groups",
+      "subjectId": "lahun-accounts",
+      "predicate": "lahun-archive-groups",
+      "value": {
+        "type": "text",
+        "text": "Lahun has temple business papers for the cult of Senusret II, dated to Senusret III and Amenemhat III, and town manuscripts of the late Twelfth and early Thirteenth Dynasties."
+      },
+      "statement": "Lahun has temple business papers for the cult of Senusret II, dated to Senusret III and Amenemhat III, and town manuscripts of the late Twelfth and early Thirteenth Dynasties.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-lahun-archive-groups-evidence"
+      ],
+      "reviewId": "nile-expansion-lahun-archive-groups-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-lahun-accounts-point",
+      "subjectId": "lahun-accounts",
+      "predicate": "map-reference",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          30.966666666666665,
+          29.233333333333334
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Lahun site reference for the papyri, not an individual document findspot.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-lahun-accounts-point-evidence"
+      ],
+      "reviewId": "nile-expansion-lahun-accounts-point-review",
+      "disputeNote": "Same UCL minute-precision ancient-site coordinate as the Lahun entry."
+    },
+    {
+      "id": "nile-expansion-abydos-osiris",
+      "subjectId": "abydos-middle-kingdom",
+      "predicate": "abydos-osiris",
+      "value": {
+        "type": "text",
+        "text": "Middle Kingdom Abydos held annual Osiris processions; officials erected commemorative chapels and stelae near the cult route."
+      },
+      "statement": "Middle Kingdom Abydos held annual Osiris processions; officials erected commemorative chapels and stelae near the cult route.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-abydos-osiris-evidence"
+      ],
+      "reviewId": "nile-expansion-abydos-osiris-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-abydos-window",
+      "subjectId": "abydos-middle-kingdom",
+      "predicate": "abydos-window",
+      "value": {
+        "type": "text",
+        "text": "UCL places the Middle Kingdom activity described at Abydos around 2025–1700 BCE."
+      },
+      "statement": "UCL places the Middle Kingdom activity described at Abydos around 2025–1700 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2025,
+          "latest": -2025,
+          "original": "Approximately 2025 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1700,
+          "latest": -1700,
+          "original": "Approximately 1700 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "nile-expansion-abydos-window-evidence"
+      ],
+      "reviewId": "nile-expansion-abydos-window-review",
+      "disputeNote": "Editorial window for this city entry, not the whole lifespan of Abydos."
+    },
+    {
+      "id": "nile-expansion-abydos-point",
+      "subjectId": "abydos-middle-kingdom",
+      "predicate": "map-reference",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          31.883333333333333,
+          26.183333333333334
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Abydos site reference, not a particular chapel or tomb.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-abydos-point-evidence"
+      ],
+      "reviewId": "nile-expansion-abydos-point-review",
+      "disputeNote": "UCL coordinate 26°11′ N, 31°53′ E; degrees + minutes/60."
+    },
+    {
+      "id": "nile-expansion-lahun-town-window-context-middle-kingdom-egypt",
+      "subjectId": "middle-kingdom-egypt",
+      "predicate": "lahun-town-window",
+      "value": {
+        "type": "text",
+        "text": "Lahun preserves a late Middle Kingdom town of about 1850–1700 BCE."
+      },
+      "statement": "Lahun preserves a late Middle Kingdom town of about 1850–1700 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1850,
+          "latest": -1850,
+          "original": "Approximately 1850 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1700,
+          "latest": -1700,
+          "original": "Approximately 1700 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "nile-expansion-lahun-town-window-context-middle-kingdom-egypt-evidence"
+      ],
+      "reviewId": "nile-expansion-lahun-town-window-context-middle-kingdom-egypt-review",
+      "disputeNote": "Editorial study window based on the dated town evidence; not settlement foundation and abandonment dates."
+    },
+    {
+      "id": "nile-expansion-lahun-archive-groups-context-middle-kingdom-egypt",
+      "subjectId": "middle-kingdom-egypt",
+      "predicate": "lahun-archive-groups",
+      "value": {
+        "type": "text",
+        "text": "Lahun has temple business papers for the cult of Senusret II, dated to Senusret III and Amenemhat III, and town manuscripts of the late Twelfth and early Thirteenth Dynasties."
+      },
+      "statement": "Lahun has temple business papers for the cult of Senusret II, dated to Senusret III and Amenemhat III, and town manuscripts of the late Twelfth and early Thirteenth Dynasties.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-lahun-archive-groups-context-middle-kingdom-egypt-evidence"
+      ],
+      "reviewId": "nile-expansion-lahun-archive-groups-context-middle-kingdom-egypt-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-abydos-osiris-context-middle-kingdom-egypt",
+      "subjectId": "middle-kingdom-egypt",
+      "predicate": "abydos-osiris",
+      "value": {
+        "type": "text",
+        "text": "Middle Kingdom Abydos held annual Osiris processions; officials erected commemorative chapels and stelae near the cult route."
+      },
+      "statement": "Middle Kingdom Abydos held annual Osiris processions; officials erected commemorative chapels and stelae near the cult route.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-abydos-osiris-context-middle-kingdom-egypt-evidence"
+      ],
+      "reviewId": "nile-expansion-abydos-osiris-context-middle-kingdom-egypt-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-kerma-livelihoods-context-middle-kingdom-egypt",
+      "subjectId": "middle-kingdom-egypt",
+      "predicate": "kerma-livelihoods",
+      "value": {
+        "type": "text",
+        "text": "Kerma combined livestock keeping, plant resources, fishing and hunting with trade in cattle, gold, ivory and other goods."
+      },
+      "statement": "Kerma combined livestock keeping, plant resources, fishing and hunting with trade in cattle, gold, ivory and other goods.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-kerma-livelihoods-context-middle-kingdom-egypt-evidence"
+      ],
+      "reviewId": "nile-expansion-kerma-livelihoods-context-middle-kingdom-egypt-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-lahun-archive-groups-context-amenemhat-three-reign",
+      "subjectId": "amenemhat-three-reign",
+      "predicate": "lahun-archive-groups",
+      "value": {
+        "type": "text",
+        "text": "Lahun has temple business papers for the cult of Senusret II, dated to Senusret III and Amenemhat III, and town manuscripts of the late Twelfth and early Thirteenth Dynasties."
+      },
+      "statement": "Lahun has temple business papers for the cult of Senusret II, dated to Senusret III and Amenemhat III, and town manuscripts of the late Twelfth and early Thirteenth Dynasties.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-lahun-archive-groups-context-amenemhat-three-reign-evidence"
+      ],
+      "reviewId": "nile-expansion-lahun-archive-groups-context-amenemhat-three-reign-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-senwosret-abydos-context-abydos-middle-kingdom",
+      "subjectId": "abydos-middle-kingdom",
+      "predicate": "senwosret-abydos",
+      "value": {
+        "type": "text",
+        "text": "Senwosret III had a tomb, temple and associated town at Abydos."
+      },
+      "statement": "Senwosret III had a tomb, temple and associated town at Abydos.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-senwosret-abydos-context-abydos-middle-kingdom-evidence"
+      ],
+      "reviewId": "nile-expansion-senwosret-abydos-context-abydos-middle-kingdom-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -1913,6 +2649,231 @@
       "note": "Karnak reference within ancient Thebes",
       "relation": "supports",
       "reviewId": "connected-browsing-thebes-egypt-map-point-review"
+    },
+    {
+      "id": "nile-expansion-middle-kingdom-renewal-evidence",
+      "claimId": "nile-expansion-middle-kingdom-renewal",
+      "sourceId": "nile-expansion-egypt-mk",
+      "locator": "Reunification and Dynasty 12, paragraphs beginning At the end of the Old Kingdom and The early Middle Kingdom revival",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-middle-kingdom-renewal-review"
+    },
+    {
+      "id": "nile-expansion-middle-kingdom-frontier-evidence",
+      "claimId": "nile-expansion-middle-kingdom-frontier",
+      "sourceId": "nile-expansion-egypt-ministry",
+      "locator": "Dates and historical overview",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-middle-kingdom-frontier-review"
+    },
+    {
+      "id": "nile-expansion-senwosret-frontier-evidence",
+      "claimId": "nile-expansion-senwosret-frontier",
+      "sourceId": "nile-expansion-egypt-sen",
+      "locator": "Opening account; burial place and further attestations",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-senwosret-frontier-review"
+    },
+    {
+      "id": "nile-expansion-senwosret-abydos-evidence",
+      "claimId": "nile-expansion-senwosret-abydos",
+      "sourceId": "nile-expansion-egypt-sen",
+      "locator": "Opening account; burial place and further attestations",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-senwosret-abydos-review"
+    },
+    {
+      "id": "nile-expansion-senwosret-alternative-dates-evidence",
+      "claimId": "nile-expansion-senwosret-alternative-dates",
+      "sourceId": "nile-expansion-egypt-sen",
+      "locator": "Opening account; burial place and further attestations",
+      "note": "Alternative chronology retained visibly. Met display remains approximately 1878–1840 BCE; not a lifespan.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-senwosret-alternative-dates-review"
+    },
+    {
+      "id": "nile-expansion-senwosret-site-point-evidence",
+      "claimId": "nile-expansion-senwosret-site-point",
+      "sourceId": "nile-expansion-egypt-abydos",
+      "locator": "Coordinates and Middle Kingdom paragraph",
+      "note": "UCL gives 26°11′ N, 31°53′ E. Decimal conversion uses degrees + minutes/60; longitude first. Association with this ruler is supported separately.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-senwosret-site-point-review"
+    },
+    {
+      "id": "nile-expansion-amenemhat-three-dates-evidence",
+      "claimId": "nile-expansion-amenemhat-three-dates",
+      "sourceId": "nile-expansion-egypt-rulers",
+      "locator": "Dynasty 12",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-amenemhat-three-dates-review"
+    },
+    {
+      "id": "nile-expansion-amenemhat-three-building-evidence",
+      "claimId": "nile-expansion-amenemhat-three-building",
+      "sourceId": "nile-expansion-egypt-amen",
+      "locator": "Opening account and pyramid paragraph; header dates are not used",
+      "note": "Uses the building account only. This UCL page has an internally inconsistent heading date; it is not used for chronology.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-amenemhat-three-building-review"
+    },
+    {
+      "id": "nile-expansion-amenemhat-three-alternative-evidence",
+      "claimId": "nile-expansion-amenemhat-three-alternative",
+      "sourceId": "nile-expansion-egypt-ministry",
+      "locator": "Dates and historical overview",
+      "note": "Alternative to the displayed Met chronology, not an additional reign.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-amenemhat-three-alternative-review"
+    },
+    {
+      "id": "nile-expansion-lahun-town-window-evidence",
+      "claimId": "nile-expansion-lahun-town-window",
+      "sourceId": "nile-expansion-egypt-town",
+      "locator": "Opening paragraph and object categories",
+      "note": "Editorial study window based on the dated town evidence; not settlement foundation and abandonment dates.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-lahun-town-window-review"
+    },
+    {
+      "id": "nile-expansion-lahun-town-finds-evidence",
+      "claimId": "nile-expansion-lahun-town-finds",
+      "sourceId": "nile-expansion-egypt-town",
+      "locator": "Opening paragraph and object categories",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-lahun-town-finds-review"
+    },
+    {
+      "id": "nile-expansion-lahun-point-evidence",
+      "claimId": "nile-expansion-lahun-point",
+      "sourceId": "nile-expansion-egypt-lahun",
+      "locator": "Ancient-site coordinate line and introduction",
+      "note": "UCL ancient-site coordinate 29°14′ N, 30°58′ E, converted by degrees + minutes/60. Minute precision does not identify a house.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-lahun-point-review"
+    },
+    {
+      "id": "nile-expansion-lahun-accounts-content-evidence",
+      "claimId": "nile-expansion-lahun-accounts-content",
+      "sourceId": "nile-expansion-egypt-papyri",
+      "locator": "Two find groups and accounts catalogue",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-lahun-accounts-content-review"
+    },
+    {
+      "id": "nile-expansion-lahun-accounts-window-evidence",
+      "claimId": "nile-expansion-lahun-accounts-window",
+      "sourceId": "nile-expansion-egypt-town",
+      "locator": "Opening paragraph and object categories",
+      "note": "Editorial comparison window only. Individual papyri are not dated across this entire interval.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-lahun-accounts-window-review"
+    },
+    {
+      "id": "nile-expansion-lahun-archive-groups-evidence",
+      "claimId": "nile-expansion-lahun-archive-groups",
+      "sourceId": "nile-expansion-egypt-papyri",
+      "locator": "Two find groups and accounts catalogue",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-lahun-archive-groups-review"
+    },
+    {
+      "id": "nile-expansion-lahun-accounts-point-evidence",
+      "claimId": "nile-expansion-lahun-accounts-point",
+      "sourceId": "nile-expansion-egypt-lahun",
+      "locator": "Ancient-site coordinate line and introduction",
+      "note": "Same UCL minute-precision ancient-site coordinate as the Lahun entry.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-lahun-accounts-point-review"
+    },
+    {
+      "id": "nile-expansion-abydos-osiris-evidence",
+      "claimId": "nile-expansion-abydos-osiris",
+      "sourceId": "nile-expansion-egypt-abydos",
+      "locator": "Coordinates and Middle Kingdom paragraph",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-abydos-osiris-review"
+    },
+    {
+      "id": "nile-expansion-abydos-window-evidence",
+      "claimId": "nile-expansion-abydos-window",
+      "sourceId": "nile-expansion-egypt-abydos",
+      "locator": "Coordinates and Middle Kingdom paragraph",
+      "note": "Editorial window for this city entry, not the whole lifespan of Abydos.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-abydos-window-review"
+    },
+    {
+      "id": "nile-expansion-abydos-point-evidence",
+      "claimId": "nile-expansion-abydos-point",
+      "sourceId": "nile-expansion-egypt-abydos",
+      "locator": "Coordinates and Middle Kingdom paragraph",
+      "note": "UCL coordinate 26°11′ N, 31°53′ E; degrees + minutes/60.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-abydos-point-review"
+    },
+    {
+      "id": "nile-expansion-lahun-town-window-context-middle-kingdom-egypt-evidence",
+      "claimId": "nile-expansion-lahun-town-window-context-middle-kingdom-egypt",
+      "sourceId": "nile-expansion-egypt-town",
+      "locator": "Opening paragraph and object categories",
+      "note": "Editorial study window based on the dated town evidence; not settlement foundation and abandonment dates.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-lahun-town-window-context-middle-kingdom-egypt-review"
+    },
+    {
+      "id": "nile-expansion-lahun-archive-groups-context-middle-kingdom-egypt-evidence",
+      "claimId": "nile-expansion-lahun-archive-groups-context-middle-kingdom-egypt",
+      "sourceId": "nile-expansion-egypt-papyri",
+      "locator": "Two find groups and accounts catalogue",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-lahun-archive-groups-context-middle-kingdom-egypt-review"
+    },
+    {
+      "id": "nile-expansion-abydos-osiris-context-middle-kingdom-egypt-evidence",
+      "claimId": "nile-expansion-abydos-osiris-context-middle-kingdom-egypt",
+      "sourceId": "nile-expansion-egypt-abydos",
+      "locator": "Coordinates and Middle Kingdom paragraph",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-abydos-osiris-context-middle-kingdom-egypt-review"
+    },
+    {
+      "id": "nile-expansion-kerma-livelihoods-context-middle-kingdom-egypt-evidence",
+      "claimId": "nile-expansion-kerma-livelihoods-context-middle-kingdom-egypt",
+      "sourceId": "nile-expansion-nubia-kerma-for-egypt-expansion",
+      "locator": "Kingdom of Kerma section",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-kerma-livelihoods-context-middle-kingdom-egypt-review"
+    },
+    {
+      "id": "nile-expansion-lahun-archive-groups-context-amenemhat-three-reign-evidence",
+      "claimId": "nile-expansion-lahun-archive-groups-context-amenemhat-three-reign",
+      "sourceId": "nile-expansion-egypt-papyri",
+      "locator": "Two find groups and accounts catalogue",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-lahun-archive-groups-context-amenemhat-three-reign-review"
+    },
+    {
+      "id": "nile-expansion-senwosret-abydos-context-abydos-middle-kingdom-evidence",
+      "claimId": "nile-expansion-senwosret-abydos-context-abydos-middle-kingdom",
+      "sourceId": "nile-expansion-egypt-sen",
+      "locator": "Opening account; burial place and further attestations",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-senwosret-abydos-context-abydos-middle-kingdom-review"
     }
   ],
   "reviews": [
@@ -2181,6 +3142,181 @@
       "date": "2026-11-23",
       "decision": "verified",
       "reason": "Read the UNESCO component table and converted degrees, minutes and seconds to decimal longitude and latitude. Site reference, not a city boundary or personal itinerary."
+    },
+    {
+      "id": "nile-expansion-middle-kingdom-renewal-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-middle-kingdom-frontier-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-senwosret-frontier-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-senwosret-abydos-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-senwosret-alternative-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-senwosret-site-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. Converted the published coordinate arithmetically; this is a site reference, not a personal location."
+    },
+    {
+      "id": "nile-expansion-amenemhat-three-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-amenemhat-three-building-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-amenemhat-three-alternative-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-lahun-town-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-lahun-town-finds-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-lahun-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. Converted the published coordinate arithmetically; this is a site reference, not a personal location."
+    },
+    {
+      "id": "nile-expansion-lahun-accounts-content-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-lahun-accounts-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-lahun-archive-groups-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-lahun-accounts-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. Converted the published coordinate arithmetically; this is a site reference, not a personal location."
+    },
+    {
+      "id": "nile-expansion-abydos-osiris-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-abydos-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-abydos-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. Converted the published coordinate arithmetically; this is a site reference, not a personal location."
+    },
+    {
+      "id": "nile-expansion-lahun-town-window-context-middle-kingdom-egypt-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited context as used in this entry. Reuses the inspected source passage without claiming a new event or direct personal connection."
+    },
+    {
+      "id": "nile-expansion-lahun-archive-groups-context-middle-kingdom-egypt-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited context as used in this entry. Reuses the inspected source passage without claiming a new event or direct personal connection."
+    },
+    {
+      "id": "nile-expansion-abydos-osiris-context-middle-kingdom-egypt-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited context as used in this entry. Reuses the inspected source passage without claiming a new event or direct personal connection."
+    },
+    {
+      "id": "nile-expansion-kerma-livelihoods-context-middle-kingdom-egypt-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited context as used in this entry. Reuses the inspected source passage without claiming a new event or direct personal connection."
+    },
+    {
+      "id": "nile-expansion-lahun-archive-groups-context-amenemhat-three-reign-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited context as used in this entry. Reuses the inspected source passage without claiming a new event or direct personal connection."
+    },
+    {
+      "id": "nile-expansion-senwosret-abydos-context-abydos-middle-kingdom-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited context as used in this entry. Reuses the inspected source passage without claiming a new event or direct personal connection."
     }
   ],
   "accounts": []

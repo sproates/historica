@@ -65,6 +65,11 @@
       "id": "watson-brake",
       "name": "Watson Brake’s mound builders",
       "type": "period"
+    },
+    {
+      "id": "kerma-beaker-abydos",
+      "name": "A Kerma beaker in Egypt",
+      "type": "period"
     }
   ],
   "sources": [
@@ -229,6 +234,42 @@
       "locatorHint": "Property coordinates",
       "accessed": "2026-11-22",
       "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "nile-expansion-nubia-kerma",
+      "title": "History",
+      "creator": "Swiss Archaeological Mission at Kerma",
+      "url": "https://kerma.ch/en/history/",
+      "locatorHint": "Kingdom of Kerma section",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-nubia-kermaMap",
+      "title": "The Monuments of the Kingdom of Kerma and Dokki Geil",
+      "creator": "Sudanese National Commission for Education, Science and Culture; UNESCO Tentative Lists",
+      "url": "https://whc.unesco.org/en/tentativelists/6594/",
+      "locatorHint": "2022 submission; coordinate line and description",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-nubia-beaker",
+      "title": "Classic Kerma Beaker, 20.2.45",
+      "creator": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/545772",
+      "locatorHint": "Curatorial account and Artwork Details",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
+    },
+    {
+      "id": "nile-expansion-nubia-abydos",
+      "title": "Abydos",
+      "creator": "UCL Digital Egypt for Universities",
+      "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/abydos/index.html",
+      "locatorHint": "Coordinates and Middle Kingdom paragraph",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase with attribution; no images or source prose reproduced. Coordinates used as attributed reference data."
     }
   ],
   "claims": [
@@ -1343,6 +1384,245 @@
       ],
       "reviewId": "early-world-kuk-ditched-cultivation-point-review",
       "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-kerma-livelihoods",
+      "subjectId": "kerma-kingdom",
+      "predicate": "kerma-livelihoods",
+      "value": {
+        "type": "text",
+        "text": "Kerma combined livestock keeping, plant resources, fishing and hunting with trade in cattle, gold, ivory and other goods."
+      },
+      "statement": "Kerma combined livestock keeping, plant resources, fishing and hunting with trade in cattle, gold, ivory and other goods.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-kerma-livelihoods-evidence"
+      ],
+      "reviewId": "nile-expansion-kerma-livelihoods-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-kerma-city",
+      "subjectId": "kerma-kingdom",
+      "predicate": "kerma-city",
+      "value": {
+        "type": "text",
+        "text": "Kerma contained houses, stores and workshops around a religious quarter dominated by the Western Deffufa."
+      },
+      "statement": "Kerma contained houses, stores and workshops around a religious quarter dominated by the Western Deffufa.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-kerma-city-evidence"
+      ],
+      "reviewId": "nile-expansion-kerma-city-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-kerma-point",
+      "subjectId": "kerma-kingdom",
+      "predicate": "map-reference",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          30.409730555555555,
+          19.60080277777778
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Kerma capital-site reference from Sudan’s 2022 tentative-list submission; not the kingdom’s borders.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-kerma-point-evidence"
+      ],
+      "reviewId": "nile-expansion-kerma-point-review",
+      "disputeNote": "Published N19 36 2.89 E30 24 35.03 converted as degrees + minutes/60 + seconds/3600. A tentative-list submission is not World Heritage inscription."
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-dating",
+      "subjectId": "kerma-beaker-abydos",
+      "predicate": "kerma-beaker-dating",
+      "value": {
+        "type": "text",
+        "text": "Met object 20.2.45, a Classic Kerma beaker from Abydos Tomb 525, is dated approximately 1802–1640 BCE."
+      },
+      "statement": "Met object 20.2.45, a Classic Kerma beaker from Abydos Tomb 525, is dated approximately 1802–1640 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1802,
+          "latest": -1802,
+          "original": "Approximately 1802 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1640,
+          "latest": -1640,
+          "original": "Approximately 1640 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "nile-expansion-kerma-beaker-dating-evidence"
+      ],
+      "reviewId": "nile-expansion-kerma-beaker-dating-review",
+      "disputeNote": "Object dating range, not a production duration or proof of activity in each displayed year."
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-making",
+      "subjectId": "kerma-beaker-abydos",
+      "predicate": "kerma-beaker-making",
+      "value": {
+        "type": "text",
+        "text": "Kerma beakers were hand-shaped, polished and fired under controlled conditions to produce red bodies and black tops."
+      },
+      "statement": "Kerma beakers were hand-shaped, polished and fired under controlled conditions to produce red bodies and black tops.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-kerma-beaker-making-evidence"
+      ],
+      "reviewId": "nile-expansion-kerma-beaker-making-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-interpretation",
+      "subjectId": "kerma-beaker-abydos",
+      "predicate": "kerma-beaker-interpretation",
+      "value": {
+        "type": "text",
+        "text": "Kerma pottery occurs alongside Egyptian goods in Egyptian tombs; Nubian trader ownership is a possibility, not a demonstrated identity."
+      },
+      "statement": "Kerma pottery occurs alongside Egyptian goods in Egyptian tombs; Nubian trader ownership is a possibility, not a demonstrated identity.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-kerma-beaker-interpretation-evidence"
+      ],
+      "reviewId": "nile-expansion-kerma-beaker-interpretation-review",
+      "disputeNote": null
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-point",
+      "subjectId": "kerma-beaker-abydos",
+      "predicate": "map-reference",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          31.883333333333333,
+          26.183333333333334
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Abydos reference for the beaker’s find area, not the position of Tomb 525 or its place of manufacture.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-kerma-beaker-point-evidence"
+      ],
+      "reviewId": "nile-expansion-kerma-beaker-point-review",
+      "disputeNote": "UCL general site coordinate 26°11′ N, 31°53′ E; provenance is supported separately by the Met."
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-dating-context-kerma-kingdom",
+      "subjectId": "kerma-kingdom",
+      "predicate": "kerma-beaker-dating",
+      "value": {
+        "type": "text",
+        "text": "Met object 20.2.45, a Classic Kerma beaker from Abydos Tomb 525, is dated approximately 1802–1640 BCE."
+      },
+      "statement": "Met object 20.2.45, a Classic Kerma beaker from Abydos Tomb 525, is dated approximately 1802–1640 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1802,
+          "latest": -1802,
+          "original": "Approximately 1802 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1640,
+          "latest": -1640,
+          "original": "Approximately 1640 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "nile-expansion-kerma-beaker-dating-context-kerma-kingdom-evidence"
+      ],
+      "reviewId": "nile-expansion-kerma-beaker-dating-context-kerma-kingdom-review",
+      "disputeNote": "Object dating range, not a production duration or proof of activity in each displayed year."
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-interpretation-context-kerma-kingdom",
+      "subjectId": "kerma-kingdom",
+      "predicate": "kerma-beaker-interpretation",
+      "value": {
+        "type": "text",
+        "text": "Kerma pottery occurs alongside Egyptian goods in Egyptian tombs; Nubian trader ownership is a possibility, not a demonstrated identity."
+      },
+      "statement": "Kerma pottery occurs alongside Egyptian goods in Egyptian tombs; Nubian trader ownership is a possibility, not a demonstrated identity.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "nile-expansion-kerma-beaker-interpretation-context-kerma-kingdom-evidence"
+      ],
+      "reviewId": "nile-expansion-kerma-beaker-interpretation-context-kerma-kingdom-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -1633,6 +1913,87 @@
       "note": "Approximate chronology; broad context does not imply activity in every year.",
       "relation": "supports",
       "reviewId": "early-world-kuk-ditched-cultivation-point-review"
+    },
+    {
+      "id": "nile-expansion-kerma-livelihoods-evidence",
+      "claimId": "nile-expansion-kerma-livelihoods",
+      "sourceId": "nile-expansion-nubia-kerma",
+      "locator": "Kingdom of Kerma section",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-kerma-livelihoods-review"
+    },
+    {
+      "id": "nile-expansion-kerma-city-evidence",
+      "claimId": "nile-expansion-kerma-city",
+      "sourceId": "nile-expansion-nubia-kermaMap",
+      "locator": "2022 submission; coordinate line and description",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-kerma-city-review"
+    },
+    {
+      "id": "nile-expansion-kerma-point-evidence",
+      "claimId": "nile-expansion-kerma-point",
+      "sourceId": "nile-expansion-nubia-kermaMap",
+      "locator": "2022 submission; coordinate line and description",
+      "note": "Published N19 36 2.89 E30 24 35.03 converted as degrees + minutes/60 + seconds/3600. A tentative-list submission is not World Heritage inscription.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-kerma-point-review"
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-dating-evidence",
+      "claimId": "nile-expansion-kerma-beaker-dating",
+      "sourceId": "nile-expansion-nubia-beaker",
+      "locator": "Curatorial account and Artwork Details",
+      "note": "Object dating range, not a production duration or proof of activity in each displayed year.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-kerma-beaker-dating-review"
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-making-evidence",
+      "claimId": "nile-expansion-kerma-beaker-making",
+      "sourceId": "nile-expansion-nubia-beaker",
+      "locator": "Curatorial account and Artwork Details",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-kerma-beaker-making-review"
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-interpretation-evidence",
+      "claimId": "nile-expansion-kerma-beaker-interpretation",
+      "sourceId": "nile-expansion-nubia-beaker",
+      "locator": "Curatorial account and Artwork Details",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-kerma-beaker-interpretation-review"
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-point-evidence",
+      "claimId": "nile-expansion-kerma-beaker-point",
+      "sourceId": "nile-expansion-nubia-abydos",
+      "locator": "Coordinates and Middle Kingdom paragraph",
+      "note": "UCL general site coordinate 26°11′ N, 31°53′ E; provenance is supported separately by the Met.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-kerma-beaker-point-review"
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-dating-context-kerma-kingdom-evidence",
+      "claimId": "nile-expansion-kerma-beaker-dating-context-kerma-kingdom",
+      "sourceId": "nile-expansion-nubia-beaker",
+      "locator": "Curatorial account and Artwork Details",
+      "note": "Object dating range, not a production duration or proof of activity in each displayed year.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-kerma-beaker-dating-context-kerma-kingdom-review"
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-interpretation-context-kerma-kingdom-evidence",
+      "claimId": "nile-expansion-kerma-beaker-interpretation-context-kerma-kingdom",
+      "sourceId": "nile-expansion-nubia-beaker",
+      "locator": "Curatorial account and Artwork Details",
+      "note": "Inspected the named passage; supports the bounded statement above.",
+      "relation": "supports",
+      "reviewId": "nile-expansion-kerma-beaker-interpretation-context-kerma-kingdom-review"
     }
   ],
   "reviews": [
@@ -1859,6 +2220,69 @@
       "date": "2026-11-22",
       "decision": "verified",
       "reason": "Inspected the named passage and checked the paraphrase, chronological scope and any stated editorial conversion."
+    },
+    {
+      "id": "nile-expansion-kerma-livelihoods-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-kerma-city-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-kerma-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. Converted the published coordinate arithmetically; this is a site reference, not a personal location."
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-dating-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-making-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-interpretation-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. "
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the cited passage. Checked this statement against its wording and retained date and location qualifications. Converted the published coordinate arithmetically; this is a site reference, not a personal location."
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-dating-context-kerma-kingdom-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited context as used in this entry. Reuses the inspected source passage without claiming a new event or direct personal connection."
+    },
+    {
+      "id": "nile-expansion-kerma-beaker-interpretation-context-kerma-kingdom-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited context as used in this entry. Reuses the inspected source passage without claiming a new event or direct personal connection."
     }
   ],
   "accounts": []

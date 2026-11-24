@@ -26,6 +26,10 @@ entities:
   - deir-el-medina-artisans
   - djedefre-reign
   - fourth-dynasty-egypt
+  - amenemhat-three-reign
+  - lahun
+  - lahun-accounts
+  - abydos-middle-kingdom
 associations:
   - subject: memphis
     place: memphis
@@ -50,6 +54,60 @@ associations:
     source: https://whc.unesco.org/en/list/87/maps/
     claimIds:
       - connected-browsing-thebes-egypt-map-point
+    contextual: true
+  - subject: middle-kingdom-egypt
+    place: lahun
+    startYear: -1850
+    endYear: -1700
+    point:
+      - 30.966666666666665
+      - 29.233333333333334
+    label: Late Middle Kingdom town reference
+    claimIds:
+      - nile-expansion-lahun-town-window
+      - nile-expansion-lahun-point
+    source: https://www.ucl.ac.uk/museums-static/digitalegypt/lahun/town/index.html
+    contextual: true
+  - subject: middle-kingdom-egypt
+    place: abydos-middle-kingdom
+    startYear: -2025
+    endYear: -1700
+    point:
+      - 31.883333333333333
+      - 26.183333333333334
+    label: Middle Kingdom religious site reference
+    claimIds:
+      - nile-expansion-abydos-osiris
+      - nile-expansion-abydos-window
+      - nile-expansion-abydos-point
+    source: https://www.ucl.ac.uk/museums-static/digitalegypt/abydos/index.html
+    contextual: true
+  - subject: senwosret-three-reign
+    place: abydos-middle-kingdom
+    startYear: -1878
+    endYear: -1840
+    point:
+      - 31.883333333333333
+      - 26.183333333333334
+    label: Royal complex at Abydos; general site reference, not residence
+    claimIds:
+      - nile-expansion-senwosret-abydos
+      - nile-expansion-senwosret-site-point
+    source: https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/senusretIII.html
+    contextual: true
+  - subject: lahun-accounts
+    place: lahun
+    startYear: -1850
+    endYear: -1700
+    point:
+      - 30.966666666666665
+      - 29.233333333333334
+    label: Town reference for records; editorial study window
+    claimIds:
+      - nile-expansion-lahun-archive-groups
+      - nile-expansion-lahun-accounts-window
+      - nile-expansion-lahun-accounts-point
+    source: https://www.ucl.ac.uk/museums-static/digitalegypt/lahun/papyri.html
     contextual: true
 relationships:
   - a: global-overview
@@ -284,3 +342,82 @@ relationships:
     label: Fourth Dynasty
     labelFromA: Reign in this dynasty
     labelFromB: Dynasty
+  - a: middle-kingdom-egypt
+    b: lahun
+    label: Town in this period
+    claimIds:
+      - nile-expansion-lahun-town-window
+    sourceUrls:
+      - https://www.ucl.ac.uk/museums-static/digitalegypt/lahun/town/index.html
+  - a: middle-kingdom-egypt
+    b: abydos-middle-kingdom
+    label: Religious life in this period
+    claimIds:
+      - nile-expansion-abydos-osiris
+      - nile-expansion-abydos-window
+    sourceUrls:
+      - https://www.ucl.ac.uk/museums-static/digitalegypt/abydos/index.html
+  - a: middle-kingdom-egypt
+    b: amenemhat-three-reign
+    label: Twelfth Dynasty reign
+    claimIds:
+      - nile-expansion-amenemhat-three-dates
+    sourceUrls:
+      - https://www.metmuseum.org/toah/hd/phar/hd_phar.htm
+  - a: amenemhat-three-reign
+    b: senwosret-three-reign
+    label: Twelfth Dynasty rulers
+    claimIds:
+      - nile-expansion-amenemhat-three-dates
+      - egypt-expansion-senwosret-three-reign-1
+    sourceUrls:
+      - https://www.metmuseum.org/toah/hd/phar/hd_phar.htm
+  - a: lahun
+    b: lahun-accounts
+    label: Records from the town
+    claimIds:
+      - nile-expansion-lahun-archive-groups
+      - nile-expansion-lahun-accounts-content
+    sourceUrls:
+      - https://www.ucl.ac.uk/museums-static/digitalegypt/lahun/papyri.html
+  - a: lahun-accounts
+    b: amenemhat-three-reign
+    label: Temple documents dated to this reign
+    claimIds:
+      - nile-expansion-lahun-archive-groups
+    sourceUrls:
+      - https://www.ucl.ac.uk/museums-static/digitalegypt/lahun/papyri.html
+  - a: lahun-accounts
+    b: senwosret-three-reign
+    label: Temple documents dated to this reign
+    claimIds:
+      - nile-expansion-lahun-archive-groups
+    sourceUrls:
+      - https://www.ucl.ac.uk/museums-static/digitalegypt/lahun/papyri.html
+  - a: senwosret-three-reign
+    b: abydos-middle-kingdom
+    label: Royal tomb complex
+    claimIds:
+      - nile-expansion-senwosret-abydos
+    sourceUrls:
+      - https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/senusretIII.html
+  - a: middle-kingdom-egypt
+    b: kerma-kingdom
+    label: Compare Nile societies
+    claimIds:
+      - nile-expansion-middle-kingdom-frontier
+      - nile-expansion-kerma-livelihoods
+    sourceUrls:
+      - https://egymonuments.gov.eg/en/historical-periods/middle-kingdom
+      - https://kerma.ch/en/history/
+    note: Regional comparison, not a claim of a specific diplomatic encounter.
+  - a: lahun-accounts
+    b: hammurabi-reign
+    label: Overlapping periods
+    claimIds:
+      - nile-expansion-lahun-accounts-window
+      - old-babylonian-hammurabi-reign-dates
+    sourceUrls:
+      - https://www.ucl.ac.uk/museums-static/digitalegypt/lahun/town/index.html
+      - https://www.metmuseum.org/toah/ht/03/wam
+    note: Editorial comparison of overlapping dates, not evidence of contact.
