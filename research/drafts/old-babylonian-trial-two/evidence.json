@@ -90,16 +90,10 @@
       "subjectId": "samsu-iluna-reign",
       "predicate": "reign-dates",
       "value": {
-        "type": "date",
-        "date": {
-          "precision": "approximate",
-          "earliest": -1749,
-          "latest": -1749,
-          "original": "1749–1712 BCE (average chronology)",
-          "calendar": "BCE/CE"
-        }
+        "type": "text",
+        "text": "Samsu-iluna’s reign is approximately 1749–1712 BCE in the average chronology."
       },
-      "statement": "Samsu-iluna reigned from 1749 to 1712 BCE in the average chronology.",
+      "statement": "Samsu-iluna’s reign is approximately 1749–1712 BCE in the average chronology.",
       "validity": {
         "start": {
           "precision": "approximate",
@@ -118,7 +112,7 @@
       },
       "scopeIds": [],
       "status": "draft",
-      "certainty": "uncontested",
+      "certainty": "unknown",
       "evidenceIds": [
         "samsu-iluna-dates-passage"
       ],
@@ -137,7 +131,7 @@
       "validity": null,
       "scopeIds": [],
       "status": "draft",
-      "certainty": "uncontested",
+      "certainty": "unknown",
       "evidenceIds": [
         "samsu-iluna-succession-passage"
       ],
@@ -145,39 +139,39 @@
       "disputeNote": null
     },
     {
-      "id": "samsu-iluna-babylon-point",
-      "subjectId": "samsu-iluna-reign",
+      "id": "babylon-site-reference-point",
+      "subjectId": "babylon",
       "predicate": "map-reference",
       "value": {
         "type": "point",
         "coordinates": [
-          44.4208583,
-          32.5419694
+          44.420833333333334,
+          32.54196944444444
         ],
         "meaning": "reference"
       },
-      "statement": "Babylon reference point: 44.4208583° E, 32.5419694° N; this is a site reference, not evidence of personal residence.",
+      "statement": "UNESCO gives the Babylon site reference as N32 32 31.09 E44 25 15, equivalent to longitude 44.420833333333334 and latitude 32.54196944444444.",
       "validity": {
         "start": {
-          "precision": "approximate",
-          "earliest": -1749,
-          "latest": -1749,
-          "original": "Samsu-iluna reign, 1749–1712 BCE",
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Contemporary site reference; not dated in the inspected coordinate passage",
           "calendar": "BCE/CE"
         },
         "end": {
-          "precision": "approximate",
-          "earliest": -1712,
-          "latest": -1712,
-          "original": "Samsu-iluna reign, 1749–1712 BCE",
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Contemporary site reference; not dated in the inspected coordinate passage",
           "calendar": "BCE/CE"
         }
       },
       "scopeIds": [],
       "status": "draft",
-      "certainty": "uncontested",
+      "certainty": "unknown",
       "evidenceIds": [
-        "samsu-iluna-babylon-point-passage"
+        "babylon-site-reference-point-passage"
       ],
       "reviewId": null,
       "disputeNote": null
@@ -187,16 +181,10 @@
       "subjectId": "rim-sin-one-reign",
       "predicate": "reign-dates",
       "value": {
-        "type": "date",
-        "date": {
-          "precision": "approximate",
-          "earliest": -1822,
-          "latest": -1822,
-          "original": "Rîm-Sîn (1822–1763 BCE)",
-          "calendar": "BCE/CE"
-        }
+        "type": "text",
+        "text": "Rim-Sin I’s reign is approximately 1822–1763 BCE."
       },
-      "statement": "Rim-Sin I ruled Larsa approximately 1822–1763 BCE.",
+      "statement": "Rim-Sin I’s reign is approximately 1822–1763 BCE.",
       "validity": {
         "start": {
           "precision": "approximate",
@@ -215,7 +203,7 @@
       },
       "scopeIds": [],
       "status": "draft",
-      "certainty": "uncontested",
+      "certainty": "unknown",
       "evidenceIds": [
         "rim-sin-dates-passage"
       ],
@@ -234,7 +222,7 @@
       "validity": null,
       "scopeIds": [],
       "status": "draft",
-      "certainty": "uncontested",
+      "certainty": "unknown",
       "evidenceIds": [
         "rim-sin-rule-larsa-passage"
       ],
@@ -253,7 +241,7 @@
       "validity": null,
       "scopeIds": [],
       "status": "draft",
-      "certainty": "uncontested",
+      "certainty": "unknown",
       "evidenceIds": [
         "rim-sin-hammurabi-conflict-passage"
       ],
@@ -265,16 +253,10 @@
       "subjectId": "larsa",
       "predicate": "editorial-study-window",
       "value": {
-        "type": "date",
-        "date": {
-          "precision": "range",
-          "earliest": -2004,
-          "latest": -1595,
-          "original": "The Isin-Larsa and Old Babylonian periods (2004–1595 B.C.)",
-          "calendar": "BCE/CE"
-        }
+        "type": "text",
+        "text": "An editorial study window for Larsa, aligned to the Met’s Isin-Larsa and Old Babylonian period span, is 2004–1595 BCE; this is not the city’s lifespan."
       },
-      "statement": "The displayed interval is an editorial study window aligned to the Met’s Isin-Larsa and Old Babylonian period span, not Larsa’s lifespan.",
+      "statement": "An editorial study window for Larsa, aligned to the Met’s Isin-Larsa and Old Babylonian period span, is 2004–1595 BCE; this is not the city’s lifespan.",
       "validity": {
         "start": {
           "precision": "approximate",
@@ -293,7 +275,7 @@
       },
       "scopeIds": [],
       "status": "draft",
-      "certainty": "uncontested",
+      "certainty": "unknown",
       "evidenceIds": [
         "larsa-period-window-passage"
       ],
@@ -312,7 +294,7 @@
       "validity": null,
       "scopeIds": [],
       "status": "draft",
-      "certainty": "uncontested",
+      "certainty": "unknown",
       "evidenceIds": [
         "larsa-site-identification-passage"
       ],
@@ -325,13 +307,13 @@
       "predicate": "geographical-setting",
       "value": {
         "type": "text",
-        "text": "Tell es Senkereh is in the Lower Mesopotamian plain, between the Tigris and Euphrates; the tells are described as 14 km north of the Euphrates."
+        "text": "Tell es Senkereh, ancient Larsa, is in the Lower Mesopotamian plain between the Tigris and Euphrates."
       },
-      "statement": "Tell es Senkereh lies in the Lower Mesopotamian plain between the Tigris and Euphrates; the site page places the tells 14 km north of the Euphrates.",
+      "statement": "Tell es Senkereh, ancient Larsa, is in the Lower Mesopotamian plain between the Tigris and Euphrates.",
       "validity": null,
       "scopeIds": [],
       "status": "draft",
-      "certainty": "uncontested",
+      "certainty": "unknown",
       "evidenceIds": [
         "larsa-geography-passage"
       ],
@@ -350,7 +332,7 @@
       "validity": null,
       "scopeIds": [],
       "status": "draft",
-      "certainty": "uncontested",
+      "certainty": "unknown",
       "evidenceIds": [
         "larsa-rim-sin-relationship-passage"
       ],
@@ -378,11 +360,11 @@
       "reviewId": null
     },
     {
-      "id": "samsu-iluna-babylon-point-passage",
-      "claimId": "samsu-iluna-babylon-point",
+      "id": "babylon-site-reference-point-passage",
+      "claimId": "babylon-site-reference-point",
       "sourceId": "unesco-babylon",
       "locator": "Site coordinates: N32 32 31.09 E44 25 15",
-      "note": "Converted UNESCO degrees-minutes-seconds to decimal longitude/latitude. UNESCO locates the property at Babylon; point denotes the city reference, not presence or residence.",
+      "note": "UNESCO identifies these coordinates for the Babylon World Heritage property. Converted N32 32 31.09 E44 25 15 to decimal degrees; the passage does not establish a historical association between Babylon and Samsu-iluna.",
       "relation": "supports",
       "reviewId": null
     },
@@ -436,7 +418,7 @@
       "claimId": "larsa-geography",
       "sourceId": "fr-culture-lower-mesopotamia",
       "locator": "Opening paragraph",
-      "note": "The official site page places ancient Larsa between the Tigris and Euphrates in the Lower Mesopotamian plain. The separately inspected site-location page additionally says the tells lie 14 km north of the Euphrates; neither inspected page gives numeric coordinates.",
+      "note": "The French Ministry page identifies Tell es Senkereh as ancient Larsa and places it in the Lower Mesopotamian plain between the Tigris and Euphrates. No numeric coordinates are given.",
       "relation": "supports",
       "reviewId": null
     },

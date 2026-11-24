@@ -1,17 +1,14 @@
 [
   {
     "id": "samsu-iluna-reign",
-    "status": "draft",
+    "status": "blocked",
     "proposedType": "period",
     "title": "Samsu-iluna's reign",
     "displayStartYear": -1749,
     "displayEndYear": -1712,
     "dateNote": "Approximate reign dates in the average chronology; not a lifespan.",
-    "point": [
-      44.4208333,
-      32.5419694
-    ],
-    "region": "Mesopotamia",
+    "point": null,
+    "region": null,
     "sentences": [
       {
         "text": "Samsu-iluna reigned approximately 1749–1712 BCE in the average chronology.",
@@ -28,25 +25,9 @@
     ],
     "metadataClaimIds": [
       "samsu-iluna-dates",
-      "samsu-iluna-babylon-point"
+      "samsu-iluna-succession"
     ],
-    "associations": [
-      {
-        "subject": "samsu-iluna-reign",
-        "place": "babylon",
-        "label": "Babylon site reference",
-        "startYear": -1749,
-        "endYear": -1712,
-        "point": [
-          44.4208333,
-          32.5419694
-        ],
-        "source": "https://whc.unesco.org/en/list/278/",
-        "claimIds": [
-          "samsu-iluna-babylon-point"
-        ]
-      }
-    ],
+    "associations": [],
     "relationships": [
       {
         "a": "samsu-iluna-reign",
@@ -57,20 +38,10 @@
         ],
         "startYear": null,
         "endYear": null
-      },
-      {
-        "a": "samsu-iluna-reign",
-        "b": "babylon",
-        "label": "Babylon reference during reign; rule relationship requires direct corroboration",
-        "claimIds": [
-          "samsu-iluna-babylon-point"
-        ],
-        "startYear": -1749,
-        "endYear": -1712
       }
     ],
     "gaps": [
-      "A source directly stating Samsu-iluna ruled Babylon was not inspected within the page ceiling; the city association is a reference point only and does not establish personal presence or residence."
+      "The inspected pages do not directly establish the required rule-of-Babylon relationship or a dated association between Samsu-iluna’s reign and the Babylon site reference. The UNESCO coordinate claim is attached only to the Babylon city stub, not to this reign. Required point, rule connection and supported region remain unresolved."
     ]
   },
   {
@@ -99,7 +70,9 @@
       }
     ],
     "metadataClaimIds": [
-      "rim-sin-dates"
+      "rim-sin-dates",
+      "rim-sin-rule-larsa",
+      "larsa-geography"
     ],
     "associations": [],
     "relationships": [
@@ -140,7 +113,7 @@
     "region": "Mesopotamia",
     "sentences": [
       {
-        "text": "The French Ministry of Culture identifies Tell es Senkereh as ancient Larsa and places it in the Lower Mesopotamian plain between the Tigris and Euphrates.",
+        "text": "The French Ministry of Culture identifies Tell es Senkereh as ancient Larsa in the Lower Mesopotamian plain between the Tigris and Euphrates.",
         "claimIds": [
           "larsa-site-identification",
           "larsa-geography"
