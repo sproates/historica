@@ -17,8 +17,8 @@ claimIds:
   - nile-expansion-kerma-livelihoods
   - nile-expansion-kerma-city
   - nile-expansion-kerma-point
-  - nile-expansion-kerma-beaker-dating
-  - nile-expansion-kerma-beaker-interpretation
+  - nile-expansion-kerma-beaker-dating-context-kerma-kingdom
+  - nile-expansion-kerma-beaker-interpretation-context-kerma-kingdom
 dateLabel: Approximate chronology
 region: Nubia
 regionIds: []

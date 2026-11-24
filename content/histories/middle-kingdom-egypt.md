@@ -15,10 +15,10 @@ claimIds:
   - egypt-expansion-middle-kingdom-egypt-2
   - nile-expansion-middle-kingdom-renewal
   - nile-expansion-middle-kingdom-frontier
-  - nile-expansion-lahun-town-window
-  - nile-expansion-lahun-archive-groups
-  - nile-expansion-abydos-osiris
-  - nile-expansion-kerma-livelihoods
+  - nile-expansion-lahun-town-window-context-middle-kingdom-egypt
+  - nile-expansion-lahun-archive-groups-context-middle-kingdom-egypt
+  - nile-expansion-abydos-osiris-context-middle-kingdom-egypt
+  - nile-expansion-kerma-livelihoods-context-middle-kingdom-egypt
 dateLabel: Broad context · approximate chronology
 region: Egypt
 regionIds:

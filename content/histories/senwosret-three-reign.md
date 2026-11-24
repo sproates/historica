@@ -4,7 +4,7 @@ title: Senwosret III’s reign
 type: period
 startYear: -1878
 endYear: -1840
-note: "Approximate reign, not lifespan: the Met gives 1878–1840 BCE; UCL gives 1872–1853 BCE. The
+note: "Approximate reign, not a lifespan: the Met gives 1878–1840 BCE; UCL gives 1872–1853 BCE. The
   map marks Abydos as a reference for his royal complex, not its exact location."
 point:
   - 31.883333333333333

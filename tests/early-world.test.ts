@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import YAML from 'yaml';
 import {buildFocusData,initialFocus,rankedContext,relatedEntities,focusAssociations} from '../scripts/lib/focus-data.ts';
 import {timelineLayout} from '../web/generated/domain/swimlane.js';
 import {validateEvidence} from '../scripts/lib/evidence.ts';
@@ -10,7 +11,8 @@ const evidence=read('research/evidence/early-world-reviewed.json');
 const data=buildFocusData(read('web/data/collection.json'),read('web/data/reviewed-exploration.json'));
 test('early world records retain evidence, regional context, connections and verified map points',()=>{
  assert.deepEqual(validateEvidence(evidence,{release:true}),[]);
- assert.equal(adapter.entities.length,13);
+ const authored=YAML.parse(fs.readFileSync('content/packs/early-world.yaml','utf8'));
+ assert.deepEqual(adapter.entities.map(e=>e.id),authored.entities);
  for(const e of adapter.entities){
   assert.ok(e.region);assert.ok(e.description.includes('\n\n'));
   assert.ok(e.claimIds.every(id=>evidence.claims.some(c=>c.id===id&&c.subjectId===e.id)));

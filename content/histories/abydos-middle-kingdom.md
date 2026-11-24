@@ -13,7 +13,7 @@ claimIds:
   - nile-expansion-abydos-osiris
   - nile-expansion-abydos-window
   - nile-expansion-abydos-point
-  - nile-expansion-senwosret-abydos
+  - nile-expansion-senwosret-abydos-context-abydos-middle-kingdom
 dateLabel: Editorial study window
 region: Egypt
 regionIds:
