@@ -22,6 +22,13 @@ entities:
   - caral-context
   - kush-overview
   - global-overview
+  - harappa
+  - mohenjo-daro
+  - dholavira
+  - dholavira-water
+  - harappa-crafts
+  - indus-seals
+  - indus-trade
 associations:
   - subject: caral-context
     place: caral-context
@@ -36,6 +43,140 @@ associations:
       - global-caral-context-1
       - global-caral-context-2
       - global-caral-context-point
+    contextual: true
+  - subject: harappa
+    place: harappa
+    startYear: -2600
+    endYear: -1900
+    point:
+      - 72.8639
+      - 30.6361
+    label: Archaeological site reference within this study window
+    claimIds:
+      - indus-expansion-harappa-window
+      - indus-expansion-harappa-point
+    source: https://www.harappa.com/content/recent-indus-discoveries-and-highlights-excavations-harappa-1998-2000
+    contextual: true
+  - subject: indus-urban
+    place: harappa
+    startYear: -2600
+    endYear: -1900
+    point:
+      - 72.8639
+      - 30.6361
+    label: City reference during the urban-phase comparison
+    claimIds:
+      - indus-expansion-harappa-window
+      - indus-expansion-harappa-point
+    source: https://www.harappa.com/content/recent-indus-discoveries-and-highlights-excavations-harappa-1998-2000
+    contextual: true
+  - subject: mohenjo-daro
+    place: mohenjo-daro
+    startYear: -2600
+    endYear: -1900
+    point:
+      - 68.1388888888889
+      - 27.329166666666666
+    label: Archaeological site reference within this study window
+    claimIds:
+      - indus-expansion-mohenjo-window
+      - indus-expansion-mohenjo-point
+    source: https://www.metmuseum.org/toah/ht/02/ssa
+    contextual: true
+  - subject: indus-urban
+    place: mohenjo-daro
+    startYear: -2600
+    endYear: -1900
+    point:
+      - 68.1388888888889
+      - 27.329166666666666
+    label: City reference during the urban-phase comparison
+    claimIds:
+      - indus-expansion-mohenjo-window
+      - indus-expansion-mohenjo-point
+    source: https://www.metmuseum.org/toah/ht/02/ssa
+    contextual: true
+  - subject: dholavira
+    place: dholavira
+    startYear: -3000
+    endYear: -1500
+    point:
+      - 70.21330277777778
+      - 23.888408333333334
+    label: Archaeological site reference within this study window
+    claimIds:
+      - indus-expansion-dholavira-dates
+      - indus-expansion-dholavira-point
+    source: https://whc.unesco.org/en/list/1645/
+    contextual: true
+  - subject: indus-urban
+    place: dholavira
+    startYear: -2600
+    endYear: -1900
+    point:
+      - 70.21330277777778
+      - 23.888408333333334
+    label: City reference during the urban-phase comparison
+    claimIds:
+      - indus-expansion-dholavira-dates
+      - indus-expansion-dholavira-point
+    source: https://whc.unesco.org/en/list/1645/
+    contextual: true
+  - subject: harappa-crafts
+    place: harappa
+    startYear: -2600
+    endYear: -1900
+    point:
+      - 72.8639
+      - 30.6361
+    label: Craft evidence at Harappa; site reference
+    claimIds:
+      - indus-expansion-craft-window
+      - indus-expansion-craft-production
+      - indus-expansion-craft-point
+    source: https://www.harappa.com/content/trade-and-technology-indus-valley
+    contextual: true
+  - subject: indus-trade
+    place: harappa
+    startYear: -2600
+    endYear: -1900
+    point:
+      - 72.8639
+      - 30.6361
+    label: Weights at Harappa; not a trade route
+    claimIds:
+      - indus-expansion-trade-window
+      - indus-expansion-trade-weights
+      - indus-expansion-trade-point
+    source: https://www.harappa.com/indus/21.html
+    contextual: true
+  - subject: indus-seals
+    place: mohenjo-daro
+    startYear: -2600
+    endYear: -1900
+    point:
+      - 68.1388888888889
+      - 27.329166666666666
+    label: Seal find-area reference; broad study window
+    claimIds:
+      - indus-expansion-seal-window
+      - indus-expansion-seal-example
+      - indus-expansion-seal-point
+    source: https://www.harappa.com/slide/unicorn-seal-mohenjo-daro
+    contextual: true
+  - subject: dholavira-water
+    place: dholavira
+    startYear: -3000
+    endYear: -1500
+    point:
+      - 70.21330277777778
+      - 23.888408333333334
+    label: City water infrastructure; broad occupation window
+    claimIds:
+      - indus-expansion-dholavira-water-window
+      - indus-expansion-dholavira-water-system
+      - indus-expansion-dholavira-water-point
+    source: https://whc.unesco.org/en/list/1645/
     contextual: true
 relationships:
   - a: global-overview
@@ -62,3 +203,111 @@ relationships:
   - a: global-overview
     b: kush-overview
     label: Explore this period
+  - a: indus-urban
+    b: harappa
+    label: Explore the Indus world
+    claimIds:
+      - indus-expansion-harappa-window
+    sourceUrls:
+      - https://www.harappa.com/content/recent-indus-discoveries-and-highlights-excavations-harappa-1998-2000
+  - a: indus-urban
+    b: mohenjo-daro
+    label: Explore the Indus world
+    claimIds:
+      - indus-expansion-mohenjo-window
+    sourceUrls:
+      - https://www.metmuseum.org/toah/ht/02/ssa
+  - a: indus-urban
+    b: dholavira
+    label: Explore the Indus world
+    claimIds:
+      - indus-expansion-dholavira-dates
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1645/
+  - a: indus-urban
+    b: dholavira-water
+    label: Explore the Indus world
+    claimIds:
+      - indus-expansion-dholavira-water-window
+      - indus-expansion-dholavira-water-system
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1645/
+  - a: indus-urban
+    b: harappa-crafts
+    label: Explore the Indus world
+    claimIds:
+      - indus-expansion-craft-window
+      - indus-expansion-craft-production
+    sourceUrls:
+      - https://www.harappa.com/content/trade-and-technology-indus-valley
+  - a: indus-urban
+    b: indus-seals
+    label: Explore the Indus world
+    claimIds:
+      - indus-expansion-seal-window
+      - indus-expansion-seal-writing
+    sourceUrls:
+      - https://www.metmuseum.org/toah/ht/02/ssa
+  - a: indus-urban
+    b: indus-trade
+    label: Explore the Indus world
+    claimIds:
+      - indus-expansion-trade-window
+      - indus-expansion-trade-weights
+    sourceUrls:
+      - https://www.metmuseum.org/toah/ht/02/ssa
+  - a: harappa
+    b: mohenjo-daro
+    label: Cities of the same tradition
+    claimIds:
+      - indus-expansion-harappa-remains
+    sourceUrls:
+      - https://www.harappa.com/content/recent-indus-discoveries-and-highlights-excavations-harappa-1998-2000
+  - a: harappa
+    b: harappa-crafts
+    label: Craft evidence from the city
+    claimIds:
+      - indus-expansion-craft-production
+    sourceUrls:
+      - https://www.harappa.com/content/trade-and-technology-indus-valley
+  - a: harappa
+    b: indus-trade
+    label: Weights found at Harappa
+    claimIds:
+      - indus-expansion-trade-weights
+    sourceUrls:
+      - https://www.harappa.com/indus/21.html
+  - a: mohenjo-daro
+    b: indus-seals
+    label: Seal found in the city
+    claimIds:
+      - indus-expansion-seal-example
+    sourceUrls:
+      - https://www.harappa.com/slide/unicorn-seal-mohenjo-daro
+  - a: dholavira
+    b: dholavira-water
+    label: City water systems
+    claimIds:
+      - indus-expansion-dholavira-water-system
+    sourceUrls:
+      - https://whc.unesco.org/en/list/1645/
+  - a: harappa-crafts
+    b: indus-trade
+    label: Production and exchange
+    claimIds:
+      - indus-expansion-craft-production
+      - indus-expansion-trade-weights
+    sourceUrls:
+      - https://www.harappa.com/content/trade-and-technology-indus-valley
+      - https://www.harappa.com/indus/21.html
+    note: Thematic connection, not a documented transaction between named people.
+  - a: indus-urban
+    b: khufu-reign
+    label: Overlapping periods
+    claimIds:
+      - global-indus-urban-1
+      - global-khufu-reign-1
+    sourceUrls:
+      - https://www.metmuseum.org/toah/ht/02/ssa
+      - https://www.metmuseum.org/toah/hd/phar/hd_phar.htm
+    note: Chronological comparison only; no direct contact is asserted.
