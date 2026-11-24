@@ -6,5 +6,11 @@ import {styleUrl,explorerScriptUrl} from '../../scripts/static/assets.ts';
 <!doctype html>
 <html lang="en"><head><base href="/" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" /><meta name="referrer" content="strict-origin-when-cross-origin" />
 <PageMetadata title="Historica · Visualising history" description="Explore history through a map or browse people, places and events. Choose a period, discover what was happening nearby and follow connections around the world." path="/" website noindex />
+<script is:inline>
+// Select the layout before paint; the static Browse view remains the no-script fallback.
+const params = new URLSearchParams(location.search);
+document.documentElement.dataset.explorerView = params.get('view') === 'browse' ? 'browse' : 'map';
+if (params.get('q') || (params.get('type') && params.get('type') !== 'all') || params.get('dated') === '1') document.documentElement.dataset.browseFiltered = 'true';
+</script>
 <Appearance /><link rel="stylesheet" href="generated/explorer/leaflet.css" /><link rel="stylesheet" href={styleUrl('explorer.css')} />
 </head><body data-static-page="home"><slot /><script is:inline type="module" src={explorerScriptUrl()}></script></body></html>
