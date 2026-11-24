@@ -67,4 +67,3 @@ Parent recheck found two leftovers: the date statement still attributed reign da
 After those repairs, all nine retained claim statements have inspected source support. All review IDs remain null and claims remain draft: this report is not formal acceptance into the collection. The missing geography, two missing timeline intervals, regional metadata needing explicit provenance, and incomplete navigation remain integration work. No entry is approved for publication.
 
 Final targeted checks: both draft evidence packages validate; entry claim references and relationship endpoints resolve within each draft package. This does not establish that proposed dependencies exist in the live collection. No application build was necessary.
-
