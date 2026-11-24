@@ -1,0 +1,107 @@
+[
+  {
+    "id": "hammurabi-reign",
+    "status": "draft",
+    "proposedType": "period",
+    "title": "Hammurabi’s reign",
+    "displayStartYear": -1792,
+    "displayEndYear": -1750,
+    "dateNote": "Approximate reign dates following the Met, not a lifespan.",
+    "point": null,
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "The Met places Hammurabi’s rule at Babylon at about 1792–1750 BCE.",
+        "claimIds": [
+          "baseline-hammurabi-reign-reign"
+        ]
+      },
+      {
+        "text": "The Met attributes the destruction of Mari’s royal palace to Hammurabi.",
+        "claimIds": [
+          "baseline-hammurabi-reign-mari"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "baseline-hammurabi-reign-reign",
+      "baseline-hammurabi-reign-mari"
+    ],
+    "associations": [],
+    "relationships": [],
+    "gaps": [
+      "Coordinates not established.",
+      "Short calibration draft; broader context and structured navigation links remain to be researched."
+    ]
+  },
+  {
+    "id": "mari",
+    "status": "draft",
+    "proposedType": "city",
+    "title": "Mari",
+    "displayStartYear": -1800,
+    "displayEndYear": -1600,
+    "dateNote": "Editorial study window from the source section, not the city’s foundation or destruction dates.",
+    "point": null,
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "Mari stood on the Euphrates in present-day Syria.",
+        "claimIds": [
+          "baseline-mari-location"
+        ]
+      },
+      {
+        "text": "Its palace archive preserves information about contemporary political affairs.",
+        "claimIds": [
+          "baseline-mari-archive"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "baseline-mari-location",
+      "baseline-mari-archive"
+    ],
+    "associations": [],
+    "relationships": [],
+    "gaps": [
+      "Coordinates not established.",
+      "Short calibration draft; broader context and structured navigation links remain to be researched."
+    ]
+  },
+  {
+    "id": "old-babylonian-schooling",
+    "status": "draft",
+    "proposedType": "period",
+    "title": "Learning through a school tablet",
+    "displayStartYear": -1900,
+    "displayEndYear": -1600,
+    "dateNote": "Rounded editorial envelope for a tablet dated to the nineteenth through seventeenth centuries BCE; not continuous production or a school’s lifetime.",
+    "point": null,
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "NYU dates school tablet B6063 to the nineteenth through seventeenth centuries BCE and tentatively associates it with Nippur.",
+        "claimIds": [
+          "baseline-old-babylonian-schooling-date"
+        ]
+      },
+      {
+        "text": "The exhibition describes Old Babylonian school tablets as evidence of instruction in Sumerian and mathematics.",
+        "claimIds": [
+          "baseline-old-babylonian-schooling-practice"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "baseline-old-babylonian-schooling-date",
+      "baseline-old-babylonian-schooling-practice"
+    ],
+    "associations": [],
+    "relationships": [],
+    "gaps": [
+      "Coordinates not established.",
+      "Short calibration draft; broader context and structured navigation links remain to be researched."
+    ]
+  }
+]
