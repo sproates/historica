@@ -7,6 +7,7 @@ Keep contributions focused on something useful to a visitor or someone maintaini
 ## Choose the right starting point
 
 - For historical content, read [Adding facts](project/adding-facts.md). It covers research, evidence records, dates, geography and the files to change.
+- For a bounded experiment with a cheaper research model, use the [research-agent pilot](project/research-agent-pilot.md). Its output stays in drafts until separately reviewed.
 - For app structure and local setup, start with the [README](README.md).
 - For publishing and recovery, use [RELEASE.md](RELEASE.md).
 - For working rules, including preview approval, read [AGENTS.md](AGENTS.md). Earlier planning documents describe decisions at the time; the current release instructions describe the live hosting and pipeline.
