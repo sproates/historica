@@ -4,7 +4,7 @@ Brief revision 3, 24 November 2026. Applies to future runs; the original calibra
 
 ## Purpose and status
 
-Test whether a cheaper agent can expand Historica's content accurately and at a lower total cost, including review and corrections. This brief governs draft research, not accepted historical content. The three-item calibration and its single correction round are complete; see the [results and limitations](../research/drafts/old-babylonian-pilot/review.md). No content has been integrated. The remaining nine items have not been commissioned.
+Test whether a cheaper agent can expand Historica's content accurately and at a lower total cost, including review and corrections. This brief governs draft research, not accepted historical content. The three-item calibration and its single correction round are complete; see the [results and limitations](../research/drafts/old-babylonian-pilot/review.md). The first pilot was subsequently completed and published through separate parent-agent work. A second trial researched Samsu-iluna, Rim-Sin I and Larsa; see its [review](../research/drafts/old-babylonian-trial-two/review.md). The trial score is preserved separately from later content integration.
 
 Use [Adding facts](adding-facts.md) and the [evidence format](../research/evidence/FORMAT.md). This brief adds a bounded experiment, not another content system. The existing research programme remains the long-term coverage plan.
 

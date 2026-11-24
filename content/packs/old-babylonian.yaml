@@ -5,6 +5,9 @@ entities:
   - old-babylonian-schooling
   - babylon
   - nippur
+  - samsu-iluna-reign
+  - rim-sin-one-reign
+  - larsa
 associations:
   - subject: hammurabi-reign
     place: babylon
@@ -32,6 +35,32 @@ associations:
       - old-babylonian-school-nippur
       - old-babylonian-school-dating
       - old-babylonian-old-babylonian-schooling-point
+    contextual: true
+  - subject: samsu-iluna-reign
+    place: babylon
+    label: City reference, not residence
+    startYear: -1749
+    endYear: -1712
+    point:
+      - 44.420833333333334
+      - 32.54196944444444
+    claimIds:
+      - old-babylonian-expansion-samsu-babylon
+      - old-babylonian-expansion-samsu-iluna-reign-point
+    source: https://archeologie.culture.gouv.fr/babylone/fr/babylone-capitale-dun-royaume
+    contextual: true
+  - subject: rim-sin-one-reign
+    place: larsa
+    label: City reference, not residence
+    startYear: -1822
+    endYear: -1763
+    point:
+      - 45.8536
+      - 31.2858
+    claimIds:
+      - old-babylonian-expansion-rim-larsa
+      - old-babylonian-expansion-rim-sin-one-reign-point
+    source: https://www.metmuseum.org/essays/the-isin-larsa-and-old-babylonian-periods-2004-1595-b-c
     contextual: true
 relationships:
   - a: hammurabi-reign
@@ -61,3 +90,39 @@ relationships:
       - old-babylonian-school-nippur
     sourceUrls:
       - https://isac.uchicago.edu/publications/back-school-babylonia
+  - a: samsu-iluna-reign
+    b: hammurabi-reign
+    label: Predecessor
+    claimIds:
+      - old-babylonian-expansion-samsu-succession
+    labelFromA: Predecessor
+    labelFromB: Successor
+    sourceUrls:
+      - https://archeologie.culture.gouv.fr/babylone/fr/babylone-capitale-dun-royaume
+  - a: samsu-iluna-reign
+    b: babylon
+    label: City he ruled
+    claimIds:
+      - old-babylonian-expansion-samsu-babylon
+    labelFromA: City he ruled
+    labelFromB: Ruler during this study window
+    sourceUrls:
+      - https://archeologie.culture.gouv.fr/babylone/fr/babylone-capitale-dun-royaume
+  - a: rim-sin-one-reign
+    b: larsa
+    label: City he ruled
+    claimIds:
+      - old-babylonian-expansion-rim-larsa
+    labelFromA: City he ruled
+    labelFromB: Ruler during this study window
+    sourceUrls:
+      - https://www.metmuseum.org/essays/the-isin-larsa-and-old-babylonian-periods-2004-1595-b-c
+  - a: rim-sin-one-reign
+    b: hammurabi-reign
+    label: Ruler who took his territory
+    claimIds:
+      - old-babylonian-expansion-rim-hammurabi
+    labelFromA: Ruler who took his territory
+    labelFromB: Ruler whose territory he took
+    sourceUrls:
+      - https://www.metmuseum.org/essays/the-isin-larsa-and-old-babylonian-periods-2004-1595-b-c
