@@ -60,6 +60,26 @@
       "id": "gorhams-cave-offerings",
       "name": "Mediterranean offerings at Gorham’s Cave",
       "type": "period"
+    },
+    {
+      "id": "andalucia",
+      "name": "Andalucía",
+      "type": "area"
+    },
+    {
+      "id": "gadir",
+      "name": "Gadir: Phoenician Cádiz",
+      "type": "city"
+    },
+    {
+      "id": "baelo-claudia",
+      "name": "Baelo Claudia",
+      "type": "city"
+    },
+    {
+      "id": "italica",
+      "name": "Itálica",
+      "type": "city"
     }
   ],
   "sources": [
@@ -159,6 +179,51 @@
       "creator": "UNESCO World Heritage Centre",
       "url": "https://whc.unesco.org/en/list/1500/",
       "locatorHint": "Property 1500 coordinates: N36 7 21.61 W5 20 31.42",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "andalucia-gadir",
+      "title": "Yacimiento Arqueológico Gadir",
+      "creator": "Ayuntamiento de Cádiz",
+      "url": "https://turismo.cadiz.es/es/rutas-y-visitas-en-cadiz/yacimiento-gadir",
+      "locatorHint": "Site description, streets and houses, ninth-century levels and sixth-century fire",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "andalucia-gadir-map",
+      "title": "Yacimiento de Gadir en Cádiz",
+      "creator": "Turespaña",
+      "url": "https://www.spain.info/es/lugares-interes/yacimiento-gadir/",
+      "locatorHint": "Embedded map marker: 36.5321228, -6.297724300000027; address Calle San Miguel 15",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "andalucia-baelo",
+      "title": "Ciudad Romana Baelo Claudia",
+      "creator": "Turespaña",
+      "url": "https://www.spain.info/es/lugares-interes/ciudad-romana-baelo-claudia/",
+      "locatorHint": "Description: late second-century BCE origins, town plan and fish processing; Tarifa, Andalucía address",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "andalucia-baelo-map",
+      "title": "Factoría Romana de Salazones y Garum de Baelo Claudia (Cádiz)",
+      "creator": "Lorenzo Sevilla Hurtado, PATRIF, 22 March 2016",
+      "url": "https://www.sif-mes.org/patrif/wp-content/uploads/Ficha_Factoria-Garum-Baelo-Claudia.pdf",
+      "locatorHint": "Page 1, Información situación, published decimal coordinates",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "andalucia-italica",
+      "title": "The Hadrianic city of Italica",
+      "creator": "Ministry of Culture and Sports of Spain, UNESCO tentative-list submission 6376",
+      "url": "https://whc.unesco.org/en/tentativelists/6376/",
+      "locatorHint": "Description, origins and second-century expansion; coordinates and Andalusia location",
       "accessed": "2026-11-24",
       "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
     }
@@ -1117,6 +1182,310 @@
       ],
       "reviewId": "gibraltar-gorhams-cave-offerings-point-review",
       "disputeNote": null
+    },
+    {
+      "id": "andalucia-andalucia-places",
+      "subjectId": "andalucia",
+      "predicate": "historical-context",
+      "statement": "Itálica is located at Santiponce in modern Andalucía.",
+      "value": {
+        "type": "text",
+        "text": "Itálica is located at Santiponce in modern Andalucía."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-andalucia-places-evidence"
+      ],
+      "reviewId": "andalucia-andalucia-places-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-andalucia-gadir",
+      "subjectId": "andalucia",
+      "predicate": "historical-context",
+      "statement": "Gadir’s archaeological remains lie in modern Cádiz.",
+      "value": {
+        "type": "text",
+        "text": "Gadir’s archaeological remains lie in modern Cádiz."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-andalucia-gadir-evidence"
+      ],
+      "reviewId": "andalucia-andalucia-gadir-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-andalucia-baelo",
+      "subjectId": "andalucia",
+      "predicate": "historical-context",
+      "statement": "Baelo Claudia lies at Bolonia, Tarifa, in modern Andalucía.",
+      "value": {
+        "type": "text",
+        "text": "Baelo Claudia lies at Bolonia, Tarifa, in modern Andalucía."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-andalucia-baelo-evidence"
+      ],
+      "reviewId": "andalucia-andalucia-baelo-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-gadir-houses",
+      "subjectId": "gadir",
+      "predicate": "historical-context",
+      "statement": "The Gadir excavation preserves eight houses on two terraces and clay-surfaced streets, with early levels dated to the ninth century BCE.",
+      "value": {
+        "type": "text",
+        "text": "The Gadir excavation preserves eight houses on two terraces and clay-surfaced streets, with early levels dated to the ninth century BCE."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-gadir-houses-evidence"
+      ],
+      "reviewId": "andalucia-gadir-houses-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-gadir-streets",
+      "subjectId": "gadir",
+      "predicate": "historical-context",
+      "statement": "Cattle footprints survive in the street surfaces; the site account also describes a sixth-century BCE fire.",
+      "value": {
+        "type": "text",
+        "text": "Cattle footprints survive in the street surfaces; the site account also describes a sixth-century BCE fire."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-gadir-streets-evidence"
+      ],
+      "reviewId": "andalucia-gadir-streets-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-gadir-point",
+      "subjectId": "gadir",
+      "predicate": "reference-location",
+      "statement": "Published coordinates provide a modern archaeological-site reference, not an ancient boundary or a dated personal location.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -6.297724300000027,
+          36.5321228
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-gadir-point-evidence"
+      ],
+      "reviewId": "andalucia-gadir-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-gadir-gorham",
+      "subjectId": "gadir",
+      "predicate": "historical-context",
+      "statement": "The Gibraltar National Museum identifies pottery from Gadir and its surroundings among offerings at Gorham’s Cave.",
+      "value": {
+        "type": "text",
+        "text": "The Gibraltar National Museum identifies pottery from Gadir and its surroundings among offerings at Gorham’s Cave."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-gadir-gorham-evidence"
+      ],
+      "reviewId": "andalucia-gadir-gorham-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-baelo-claudia-origins",
+      "subjectId": "baelo-claudia",
+      "predicate": "historical-context",
+      "statement": "Baelo Claudia originated in the late second century BCE at Bolonia, Tarifa, in modern Andalucía.",
+      "value": {
+        "type": "text",
+        "text": "Baelo Claudia originated in the late second century BCE at Bolonia, Tarifa, in modern Andalucía."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-baelo-claudia-origins-evidence"
+      ],
+      "reviewId": "andalucia-baelo-claudia-origins-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-baelo-claudia-town",
+      "subjectId": "baelo-claudia",
+      "predicate": "historical-context",
+      "statement": "The surviving town includes a forum and administrative buildings, theatre, fish-salting installations, market, baths and an aqueduct.",
+      "value": {
+        "type": "text",
+        "text": "The surviving town includes a forum and administrative buildings, theatre, fish-salting installations, market, baths and an aqueduct."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-baelo-claudia-town-evidence"
+      ],
+      "reviewId": "andalucia-baelo-claudia-town-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-baelo-claudia-point",
+      "subjectId": "baelo-claudia",
+      "predicate": "reference-location",
+      "statement": "Published coordinates provide a modern archaeological-site reference, not an ancient boundary or a dated personal location.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -5.77485,
+          36.09029
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-baelo-claudia-point-evidence"
+      ],
+      "reviewId": "andalucia-baelo-claudia-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-italica-foundation",
+      "subjectId": "italica",
+      "predicate": "historical-context",
+      "statement": "Spain’s heritage submission dates Itálica’s Roman foundation to 206 BCE, when Scipio settled veterans beside an existing Turdetanian settlement after Ilipa.",
+      "value": {
+        "type": "text",
+        "text": "Spain’s heritage submission dates Itálica’s Roman foundation to 206 BCE, when Scipio settled veterans beside an existing Turdetanian settlement after Ilipa."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-italica-foundation-evidence"
+      ],
+      "reviewId": "andalucia-italica-foundation-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-italica-expansion",
+      "subjectId": "italica",
+      "predicate": "historical-context",
+      "statement": "Itálica expanded substantially in the second century CE, particularly under Hadrian, with a new northern urban sector. Trajan was born there and Hadrian’s family came from the city.",
+      "value": {
+        "type": "text",
+        "text": "Itálica expanded substantially in the second century CE, particularly under Hadrian, with a new northern urban sector. Trajan was born there and Hadrian’s family came from the city."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-italica-expansion-evidence"
+      ],
+      "reviewId": "andalucia-italica-expansion-review",
+      "disputeNote": null
+    },
+    {
+      "id": "andalucia-italica-point",
+      "subjectId": "italica",
+      "predicate": "reference-location",
+      "statement": "Published coordinates provide a modern archaeological-site reference, not an ancient boundary or a dated personal location.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -6.044606,
+          37.440291
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "andalucia-italica-point-evidence"
+      ],
+      "reviewId": "andalucia-italica-point-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -1389,6 +1758,123 @@
       "note": "Coordinate conversion to decimal degrees. Complex reference, not an individual findspot.",
       "relation": "supports",
       "reviewId": "gibraltar-gorhams-cave-offerings-point-review"
+    },
+    {
+      "id": "andalucia-andalucia-places-evidence",
+      "claimId": "andalucia-andalucia-places",
+      "sourceId": "andalucia-italica",
+      "locator": "Description, origins and second-century expansion; coordinates and Andalusia location",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "andalucia-andalucia-places-review"
+    },
+    {
+      "id": "andalucia-andalucia-gadir-evidence",
+      "claimId": "andalucia-andalucia-gadir",
+      "sourceId": "andalucia-gadir-map",
+      "locator": "Embedded map marker: 36.5321228, -6.297724300000027; address Calle San Miguel 15",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "andalucia-andalucia-gadir-review"
+    },
+    {
+      "id": "andalucia-andalucia-baelo-evidence",
+      "claimId": "andalucia-andalucia-baelo",
+      "sourceId": "andalucia-baelo",
+      "locator": "Description: late second-century BCE origins, town plan and fish processing; Tarifa, Andalucía address",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "andalucia-andalucia-baelo-review"
+    },
+    {
+      "id": "andalucia-gadir-houses-evidence",
+      "claimId": "andalucia-gadir-houses",
+      "sourceId": "andalucia-gadir",
+      "locator": "Site description, streets and houses, ninth-century levels and sixth-century fire",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "andalucia-gadir-houses-review"
+    },
+    {
+      "id": "andalucia-gadir-streets-evidence",
+      "claimId": "andalucia-gadir-streets",
+      "sourceId": "andalucia-gadir",
+      "locator": "Site description, streets and houses, ninth-century levels and sixth-century fire",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "andalucia-gadir-streets-review"
+    },
+    {
+      "id": "andalucia-gadir-point-evidence",
+      "claimId": "andalucia-gadir-point",
+      "sourceId": "andalucia-gadir-map",
+      "locator": "Embedded map marker: 36.5321228, -6.297724300000027; address Calle San Miguel 15",
+      "note": "Published coordinate retained as a site reference, not a territorial boundary.",
+      "relation": "supports",
+      "reviewId": "andalucia-gadir-point-review"
+    },
+    {
+      "id": "andalucia-gadir-gorham-evidence",
+      "claimId": "andalucia-gadir-gorham",
+      "sourceId": "gibraltar-offerings",
+      "locator": "Provenance list and discussion of trade routes and visitors",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "andalucia-gadir-gorham-review"
+    },
+    {
+      "id": "andalucia-baelo-claudia-origins-evidence",
+      "claimId": "andalucia-baelo-claudia-origins",
+      "sourceId": "andalucia-baelo",
+      "locator": "Description: late second-century BCE origins, town plan and fish processing; Tarifa, Andalucía address",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "andalucia-baelo-claudia-origins-review"
+    },
+    {
+      "id": "andalucia-baelo-claudia-town-evidence",
+      "claimId": "andalucia-baelo-claudia-town",
+      "sourceId": "andalucia-baelo",
+      "locator": "Description: late second-century BCE origins, town plan and fish processing; Tarifa, Andalucía address",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "andalucia-baelo-claudia-town-review"
+    },
+    {
+      "id": "andalucia-baelo-claudia-point-evidence",
+      "claimId": "andalucia-baelo-claudia-point",
+      "sourceId": "andalucia-baelo-map",
+      "locator": "Page 1, Información situación, published decimal coordinates",
+      "note": "Published coordinate retained as a site reference, not a territorial boundary.",
+      "relation": "supports",
+      "reviewId": "andalucia-baelo-claudia-point-review"
+    },
+    {
+      "id": "andalucia-italica-foundation-evidence",
+      "claimId": "andalucia-italica-foundation",
+      "sourceId": "andalucia-italica",
+      "locator": "Description, origins and second-century expansion; coordinates and Andalusia location",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "andalucia-italica-foundation-review"
+    },
+    {
+      "id": "andalucia-italica-expansion-evidence",
+      "claimId": "andalucia-italica-expansion",
+      "sourceId": "andalucia-italica",
+      "locator": "Description, origins and second-century expansion; coordinates and Andalusia location",
+      "note": "Source passage inspected. Study-window limits are disclosed separately from historical dates.",
+      "relation": "supports",
+      "reviewId": "andalucia-italica-expansion-review"
+    },
+    {
+      "id": "andalucia-italica-point-evidence",
+      "claimId": "andalucia-italica-point",
+      "sourceId": "andalucia-italica",
+      "locator": "Description, origins and second-century expansion; coordinates and Andalusia location",
+      "note": "Published coordinate retained as a site reference, not a territorial boundary.",
+      "relation": "supports",
+      "reviewId": "andalucia-italica-point-review"
     }
   ],
   "reviews": [
@@ -1601,6 +2087,97 @@
       "date": "2026-11-24",
       "decision": "verified",
       "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "andalucia-andalucia-places-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-andalucia-gadir-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-andalucia-baelo-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-gadir-houses-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-gadir-streets-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-gadir-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-gadir-gorham-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "andalucia-baelo-claudia-origins-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-baelo-claudia-town-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-baelo-claudia-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-italica-foundation-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-italica-expansion-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
+    },
+    {
+      "id": "andalucia-italica-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Checked the cited passage and its limits. No exact foundation year inferred from a century; editorial end dates are not abandonment dates."
     }
   ],
   "accounts": []
