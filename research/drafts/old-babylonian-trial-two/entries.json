@@ -1,0 +1,178 @@
+[
+  {
+    "id": "samsu-iluna-reign",
+    "status": "draft",
+    "proposedType": "period",
+    "title": "Samsu-iluna's reign",
+    "displayStartYear": -1749,
+    "displayEndYear": -1712,
+    "dateNote": "Approximate reign dates in the average chronology; not a lifespan.",
+    "point": [
+      44.4208333,
+      32.5419694
+    ],
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "Samsu-iluna reigned approximately 1749–1712 BCE in the average chronology.",
+        "claimIds": [
+          "samsu-iluna-dates"
+        ]
+      },
+      {
+        "text": "He was one of Hammu-rabi’s successors.",
+        "claimIds": [
+          "samsu-iluna-succession"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "samsu-iluna-dates",
+      "samsu-iluna-babylon-point"
+    ],
+    "associations": [
+      {
+        "subject": "samsu-iluna-reign",
+        "place": "babylon",
+        "label": "Babylon site reference",
+        "startYear": -1749,
+        "endYear": -1712,
+        "point": [
+          44.4208333,
+          32.5419694
+        ],
+        "source": "https://whc.unesco.org/en/list/278/",
+        "claimIds": [
+          "samsu-iluna-babylon-point"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "a": "samsu-iluna-reign",
+        "b": "hammurabi-reign",
+        "label": "successor of",
+        "claimIds": [
+          "samsu-iluna-succession"
+        ],
+        "startYear": null,
+        "endYear": null
+      },
+      {
+        "a": "samsu-iluna-reign",
+        "b": "babylon",
+        "label": "Babylon reference during reign; rule relationship requires direct corroboration",
+        "claimIds": [
+          "samsu-iluna-babylon-point"
+        ],
+        "startYear": -1749,
+        "endYear": -1712
+      }
+    ],
+    "gaps": [
+      "A source directly stating Samsu-iluna ruled Babylon was not inspected within the page ceiling; the city association is a reference point only and does not establish personal presence or residence."
+    ]
+  },
+  {
+    "id": "rim-sin-one-reign",
+    "status": "blocked",
+    "proposedType": "period",
+    "title": "Rim-Sin I's reign",
+    "displayStartYear": -1822,
+    "displayEndYear": -1763,
+    "dateNote": "Approximate reign dates as given by the French Ministry of Culture; identified as Rim-Sin I from the Larsa dynasty and early second-millennium context. The inspected page does not separately discuss Rim-Sin II.",
+    "point": null,
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "Rim-Sin I ruled Larsa approximately 1822–1763 BCE.",
+        "claimIds": [
+          "rim-sin-dates",
+          "rim-sin-rule-larsa"
+        ]
+      },
+      {
+        "text": "Babylon under Hammurabi took Larsa in 1763 BCE, ending his rule there.",
+        "claimIds": [
+          "rim-sin-hammurabi-conflict"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "rim-sin-dates"
+    ],
+    "associations": [],
+    "relationships": [
+      {
+        "a": "rim-sin-one-reign",
+        "b": "larsa",
+        "label": "ruled Larsa",
+        "claimIds": [
+          "rim-sin-rule-larsa"
+        ],
+        "startYear": -1822,
+        "endYear": -1763
+      },
+      {
+        "a": "rim-sin-one-reign",
+        "b": "hammurabi-reign",
+        "label": "political conflict: Babylon took Larsa",
+        "claimIds": [
+          "rim-sin-hammurabi-conflict"
+        ],
+        "startYear": -1763,
+        "endYear": -1763
+      }
+    ],
+    "gaps": [
+      "Required Larsa reference coordinates are missing: the inspected geographical source identifies Tell es Senkereh and its relative setting but has no numeric coordinates. A numeric point cannot be added without inspecting an appropriate coordinate source."
+    ]
+  },
+  {
+    "id": "larsa",
+    "status": "blocked",
+    "proposedType": "city",
+    "title": "Larsa",
+    "displayStartYear": -2004,
+    "displayEndYear": -1595,
+    "dateNote": "Editorial research window aligned to the Met’s title span for the Isin-Larsa and Old Babylonian periods; it is not a city lifespan or sourced continuous occupation interval.",
+    "point": null,
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "The French Ministry of Culture identifies Tell es Senkereh as ancient Larsa and places it in the Lower Mesopotamian plain between the Tigris and Euphrates.",
+        "claimIds": [
+          "larsa-site-identification",
+          "larsa-geography"
+        ]
+      },
+      {
+        "text": "The Met period dates are used only as an explicitly editorial study window for this entry.",
+        "claimIds": [
+          "larsa-period-window"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "larsa-period-window",
+      "larsa-site-identification",
+      "larsa-geography"
+    ],
+    "associations": [],
+    "relationships": [
+      {
+        "a": "larsa",
+        "b": "rim-sin-one-reign",
+        "label": "Rim-Sin I ruled Larsa",
+        "claimIds": [
+          "larsa-rim-sin-relationship"
+        ],
+        "startYear": -1822,
+        "endYear": -1763
+      }
+    ],
+    "gaps": [
+      "Required numeric site-reference coordinates are absent from the inspected French Ministry descriptions. The assignment’s required map point is therefore missing; no location was inferred from the place name."
+    ]
+  }
+]
