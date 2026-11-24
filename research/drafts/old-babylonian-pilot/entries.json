@@ -1,11 +1,130 @@
 [
   {
-    "id":"hammurabi-reign","status":"draft","proposedType":"period","title":"Hammurabi's reign","displayStartYear":-1792,"displayEndYear":-1750,"dateNote":"The Met gives ca. 1792–1750 BCE; Louvre and the French Ministry of Culture give 1792–1750. These are conventional dates; the sources inspected here do not compare alternate absolute chronologies.","point":null,"region":"Mesopotamia","sentences":[{"text":"Hammurabi ruled Babylon in the conventionally dated period ca. 1792–1750 BCE.","claimIds":["hammurabi-dates","hammurabi-king-babylon"]},{"text":"The Met says he expanded Babylonian control in the south and unified much of Mesopotamia.","claimIds":["hammurabi-expansion"]},{"text":"During his expansion, Hammurabi destroyed King Zimri-Lim's palace at Mari; the exact chronology and scale of destruction need closer specialist review.","claimIds":["hammurabi-destroys-mari-palace"]}],"metadataClaimIds":["hammurabi-dates"],"associations":[],"relationships":[{"a":"hammurabi-reign","b":"mari","label":"Hammurabi's expansion and destruction of Zimri-Lim's palace","claimIds":["hammurabi-destroys-mari-palace"],"startYear":null,"endYear":null}],"gaps":["The cited pages do not compare chronological systems; keep the conventional dating qualifier and seek specialist chronology review.","No personal birth or death dates are inferred."]
+    "id": "hammurabi-reign",
+    "status": "draft",
+    "proposedType": "period",
+    "title": "Hammurabi's reign",
+    "displayStartYear": -1792,
+    "displayEndYear": -1750,
+    "dateNote": "The Met gives ca. 1792–1750 BCE; the French Ministry gives 1792–1750. Treat these as conventional approximate endpoints; alternate absolute chronologies were not examined.",
+    "point": null,
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "Hammurabi ruled Babylon in the conventionally dated period ca. 1792–1750 BCE.",
+        "claimIds": [
+          "hammurabi-dates",
+          "hammurabi-king-babylon"
+        ]
+      },
+      {
+        "text": "The Met says he expanded Babylonian control in the south and unified much of Mesopotamia.",
+        "claimIds": [
+          "hammurabi-expansion"
+        ]
+      },
+      {
+        "text": "During his expansion, Hammurabi destroyed King Zimri-Lim's palace at Mari; the exact chronology and scale of destruction need closer specialist review.",
+        "claimIds": [
+          "hammurabi-destroys-mari-palace"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "hammurabi-dates",
+      "hammurabi-expansion"
+    ],
+    "associations": [],
+    "relationships": [
+      {
+        "a": "hammurabi-reign",
+        "b": "mari",
+        "label": "Hammurabi's expansion and destruction of Zimri-Lim's palace",
+        "claimIds": [
+          "hammurabi-destroys-mari-palace"
+        ],
+        "startYear": null,
+        "endYear": null
+      }
+    ],
+    "gaps": [
+      "The cited pages do not compare chronological systems; keep the conventional dating qualifier and seek specialist chronology review.",
+      "No personal birth or death dates are inferred.",
+      "Babylon is a proposed dependency endpoint in this draft, not a confirmed existing collection record."
+    ]
   },
   {
-    "id":"mari","status":"draft","proposedType":"city","title":"Mari","displayStartYear":null,"displayEndYear":null,"dateNote":"A long-lived city; this calibration draft does not assert its founding or end dates. The cited archaeological mission describes a first city around 2900 BCE and material from the 3rd to early 2nd millennium BCE, beyond the narrow claims retained here.","point":null,"region":"Mesopotamia","sentences":[{"text":"The French archaeological mission identifies Tell Hariri in the middle valley of the Syrian Euphrates as the site of ancient Mari.","claimIds":["mari-site-identification"]},{"text":"Excavations found thousands of tablets in the Great Royal Palace, and the Met describes the palace archive as a source for contemporary political events.","claimIds":["mari-palace-tablets","mari-palace-record"]}],"metadataClaimIds":[],"associations":[],"relationships":[],"gaps":["No coordinates are proposed because an appropriately inspected coordinate source was not consulted.","Specific Mari archive texts, their dates and their contents were not examined; the general archive claim is limited.","The exact timing and effects of Hammurabi's attack on the city as a whole need closer review."]
+    "id": "mari",
+    "status": "draft",
+    "proposedType": "city",
+    "title": "Mari",
+    "displayStartYear": null,
+    "displayEndYear": null,
+    "dateNote": "No founding or end date is asserted in this calibration draft.",
+    "point": null,
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "The French archaeological mission identifies Tell Hariri in the middle valley of the Syrian Euphrates as the site of ancient Mari.",
+        "claimIds": [
+          "mari-site-identification"
+        ]
+      },
+      {
+        "text": "Excavations found thousands of tablets in the Great Royal Palace, and the Met describes the palace archive as a source for contemporary political events.",
+        "claimIds": [
+          "mari-palace-tablets",
+          "mari-palace-record"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "mari-site-identification"
+    ],
+    "associations": [],
+    "relationships": [],
+    "gaps": [
+      "No coordinates are proposed because an appropriately inspected coordinate source was not consulted.",
+      "Specific Mari archive texts, their dates and their contents were not examined; the general archive claim is limited.",
+      "The exact timing and effects of Hammurabi's attack on the city as a whole need closer review.",
+      "Null date bounds and point mean this city draft is not integration-ready."
+    ]
   },
   {
-    "id":"old-babylonian-schooling","status":"draft","proposedType":"period","title":"Scribal education at Nippur","displayStartYear":null,"displayEndYear":null,"dateNote":"The consulted University of Chicago page places the publication's subject in the Old Babylonian period but does not date House F's school activity more narrowly; no timeline interval is asserted.","point":null,"region":"Mesopotamia","sentences":[{"text":"A University of Chicago publication studies Old Babylonian education through House F at Nippur, which is widely believed to have been a scribal school.","claimIds":["nippur-school-evidence"]},{"text":"The tablets found there document an educational curriculum, although the source page does not give a narrower date range for the activity discussed.","claimIds":["nippur-school-evidence","nippur-school-period"]}],"metadataClaimIds":[],"associations":[],"relationships":[],"gaps":["The exact dating and nature of House F's educational use need examination in the underlying excavation and specialist studies.","No point is asserted because coordinates were not researched and tied to a source claim."]
+    "id": "old-babylonian-schooling",
+    "status": "draft",
+    "proposedType": "period",
+    "title": "Scribal education at Nippur",
+    "displayStartYear": null,
+    "displayEndYear": null,
+    "dateNote": "The consulted University of Chicago page places the publication's subject in the Old Babylonian period but does not date House F's school activity more narrowly; no timeline interval is asserted.",
+    "point": null,
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "A University of Chicago publication studies Old Babylonian education through House F at Nippur, which is widely believed to have been a scribal school.",
+        "claimIds": [
+          "nippur-school-evidence"
+        ]
+      },
+      {
+        "text": "The tablets found there document an educational curriculum, although the source page does not give a narrower date range for the activity discussed.",
+        "claimIds": [
+          "nippur-school-evidence",
+          "nippur-school-period"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "nippur-school-evidence",
+      "nippur-school-period"
+    ],
+    "associations": [],
+    "relationships": [],
+    "gaps": [
+      "The exact dating and nature of House F's educational use need examination in the underlying excavation and specialist studies.",
+      "No point is asserted because coordinates were not researched and tied to a source claim.",
+      "Nippur is a proposed dependency endpoint in this draft, not a confirmed existing collection record. Null date bounds and point mean this draft is not integration-ready."
+    ]
   }
 ]

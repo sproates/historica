@@ -2,7 +2,7 @@
 
 ## Purpose and status
 
-Test whether a cheaper agent can expand Historica's content accurately and at a lower total cost, including review and corrections. This is a proposed research brief, not accepted historical content. No research worker has been launched. This experiment produces reviewed drafts before any content integration.
+Test whether a cheaper agent can expand Historica's content accurately and at a lower total cost, including review and corrections. This brief governs draft research, not accepted historical content. The three-item calibration and its single correction round are complete; see the [results and limitations](../research/drafts/old-babylonian-pilot/review.md). No content has been integrated. The remaining nine items have not been commissioned.
 
 Use [Adding facts](adding-facts.md) and the [evidence format](../research/evidence/FORMAT.md). This brief adds a bounded experiment, not another content system. The existing research programme remains the long-term coverage plan.
 
@@ -75,7 +75,7 @@ For the complete pilot, cap scope at 12 entries, 60 atomic claims and 12 distinc
 
 Allow at most two focused discovery searches for an unresolved item before marking it blocked. Allow one correction round after review. No recursive agents or repeated self-review loops. Set a hard token/spend limit only when the runner supports it and Ian has specified one; these work limits don't pretend to enforce a monetary budget.
 
-The proposed runner is `gpt-6.1-luna` with low reasoning, the available cheap Luna option in this session. There isn't an exposed model literally called “Luna Light”. Record the exact choice before execution and don't silently substitute another model. The next execution step is the three-item calibration run, not the full batch.
+The proposed runner is `gpt-6.1-luna` with low reasoning, the available cheap Luna option in this session. There isn't an exposed model literally called “Luna Light”. Record the exact choice before execution and don't silently substitute another model. Any new run should use a revised brief addressing the calibration findings, not automatically start the full batch.
 
 ## Review and decision
 

@@ -2,9 +2,9 @@
 
 - Model: gpt-6-luna (low reasoning). The requested gpt-6.1-luna was unavailable and rejected; this substitution was disclosed before the run.
 - Brief: `project/research-agent-pilot.md`, commit `d7e9a7a1771938d7152fdd509419e5396cc796a3`.
-- Started: 2026-11-24 14:39 UTC (approximate, based on first workspace inspection).
-- Finished: 2026-11-24 14:45 UTC (approximate).
-- Scope: three requested calibration items only; nine atomic claims; six distinct source pages.
+- Original run start/finish: unavailable. The earlier approximate timestamps were unreliable and are withdrawn.
+- Correction round completed: 2026-11-24 14:45:26 UTC. Time spent on correction: not reliably measured.
+- Scope: three requested calibration items only; nine claim records; six distinct source pages.
 
 ## Pages inspected
 
@@ -19,14 +19,15 @@ The Louvre catalogue page was directly opened and inspected. Some pages on the U
 
 ## Gaps and status
 
-- `hammurabi-reign`: conventional dates are supported by three institutional pages, but the consulted pages do not explain alternate absolute chronologies. Military expansion is summarized at broad scale only.
-- `mari`: the archaeological mission and Met support the site identification and palace archive summary. No coordinates were researched. The relationship between palace destruction and destruction of the city needs specialist review.
-- `old-babylonian-schooling`: the University of Chicago publication page supports the bounded House F summary and describes the school identification as “widely believed.” It does not provide narrower dates for the activity; entry date bounds remain null.
-- All claims and evidence remain drafts with null review references; reviews and accounts are empty.
+- `hammurabi-reign`: conventional approximate start and end dates are carried as separate validity endpoints. Met and Ministry pages support the reign dating; Louvre’s stele date is retained as context only. Alternate absolute chronologies were not examined. Military expansion is summarized at broad scale only.
+- `mari`: the archaeological mission and Met support the site identification and palace archive summary. No coordinates or founding/end dates are asserted. Ministry evidence for the city’s defeat/destruction is context for the Met’s palace-specific claim. The city entry is not integration-ready.
+- `old-babylonian-schooling`: the University of Chicago publication page supports the bounded House F summary and describes the school identification as “widely believed.” It does not provide narrower dates for the activity; entry date bounds and point remain null, so it is not integration-ready.
+- Babylon and Nippur are explicitly proposed dependency stubs, not confirmed existing collection records. No Hammurabi-person record is required by this draft.
+- Null entry dates or coordinates mean the draft is not integration-ready. All claims and evidence remain drafts with null review references; reviews and accounts are empty.
 
 ## Checks and usage
 
 - Draft validator: passed — `node scripts/validate-evidence.ts research/drafts/old-babylonian-pilot/evidence.json` reported structurally valid draft research. This checks structure, not historical truth.
-- Calls recorded from this run: web tool 8 total (3 search batches, 5 open batches); workspace command tool 5 total. The open batches included pages that failed to load as noted above. This count excludes messages and internal reasoning.
+- Calls recorded from this run: web tool 8 total (3 search batches, 5 open batches); workspace command tool 8 total (including correction edits and validator). The open batches included pages that failed to load as noted above. This count excludes messages and internal reasoning.
 - Provider input/output/cached tokens and monetary cost: unavailable from the runner. No cost or token saving is claimed.
-- Output: 3 entries, 9 atomic claims, 6 distinct source pages. First submission only; no review or correction round performed.
+- Output: 3 entries, 9 claim records, 6 distinct source pages. One correction round completed at the parent reviewer’s request; no new research or sources added. The frozen original is commit `6b1faaf`.
