@@ -1,27 +1,44 @@
 ---
-import Brand from "../components/Brand.astro";
+import Brand from '../components/Brand.astro';
 import ThemeControl from '../components/ThemeControl.astro';
-import SiteLayout from '../layouts/SiteLayout.astro';
+import ExplorerLayout from '../layouts/ExplorerLayout.astro';
+import {historyEntities,dates} from '../../scripts/static/history-page.ts';
+const histories=historyEntities().sort((a,b)=>a.title.localeCompare(b.title));
 ---
-<SiteLayout title="Historica · Visualising history" description="Explore people, places and events on a shared timeline. See what was happening elsewhere, follow connections and compare histories across the world." path="/" page="home">
+<ExplorerLayout>
 
-<header><Brand /><span class="beta-sash">BETA</span><nav aria-label="Main navigation"><a href="#journeys">Explore</a><a href="/about">About</a></nav><ThemeControl /></header>
-<main class="welcome">
-<section class="welcome-intro"><h1>Visualising history</h1><p>Choose something on the timeline to see its connections and what was happening elsewhere.</p></section>
-<section class="history-sheet" aria-labelledby="sheet-title"><div class="sheet-heading"><h2 id="sheet-title">Building the ancient world</h2><span>3300–1500 BCE</span></div><p>Stonehenge in Britain, a pyramid in Egypt, cities in China and Peru. These histories overlap.</p><div class="home-axis"><span>3300 BCE</span><span>2400 BCE</span><span>1500 BCE</span></div>
-<a class="history-row" href="/period/stonehenge"><span class="row-region">Britain</span><strong>Stonehenge</strong><small>c. 3000–1500 BCE</small><div class="home-track"><span style="left:16.667%;width:83.333%"></span></div></a>
-<a class="history-row" href="/period/khufu-reign"><span class="row-region">Egypt</span><strong>Khufu and the Great Pyramid</strong><small>c. 2551–2528 BCE · reign</small><div class="home-track"><span class="khufu-bar" style="left:41.611%;width:1.278%"></span></div></a>
-<a class="history-row" href="/period/liangzhu-city"><span class="row-region">China</span><strong>Liangzhu’s city and waterworks</strong><small>c. 3300–2300 BCE</small><div class="home-track"><span style="left:0;width:55.556%"></span></div></a>
-<a class="history-row" href="/period/caral-context"><span class="row-region">Peru</span><strong>Caral and the Supe Valley</strong><small>c. 3000–1800 BCE</small><div class="home-track"><span style="left:16.667%;width:66.667%"></span></div></a>
-<p class="chart-note">All four rows use the same scale. Dates are approximate. Khufu’s bar shows his reign, not construction dates. Each entry links to its sources.</p><a class="journey-cta" href="/period/stonehenge">Open the wider timeline →</a></section>
-<section class="home-search" aria-label="Search history"><label for="home-query">Search history</label><input id="home-query" type="search" placeholder="Search a person, place or event…" autocomplete="off" aria-controls="home-results" aria-describedby="home-search-status"><p id="home-search-status" role="status">Search the collection, from early Egypt to the Roman world.</p><ul id="home-results" hidden></ul><noscript><p>Search needs JavaScript. You can still explore the featured histories below.</p></noscript></section>
-<section id="journeys" class="featured"><h2>Other starting points</h2><div class="featured-grid">
-<a href="/person/alexander"><span class="card-era">356–323 BCE</span><h3>Alexander’s world</h3><p>Follow his life, explore the places connected to it, and look further afield.</p><span class="card-action">Explore Alexander →</span></a>
-<a href="/person/socrates"><span class="card-era">469–399 BCE</span><h3>Socrates and a city at war</h3><p>See how his life overlapped the Peloponnesian War, and meet the people around him.</p><span class="card-action">Explore Socrates →</span></a>
-<a href="/person/julius-caesar?kind=person"><span class="card-era">100–44 BCE</span><h3>Caesar, Cleopatra and their contemporaries</h3><p>Compare their lifetimes and follow the connections between Rome and Egypt.</p><span class="card-action">Explore Caesar →</span></a>
-<a href="/period/predynastic-egypt"><span class="card-era">BEFORE THE DYNASTIES</span><h3>Egypt before the pyramids</h3><p>Begin with predynastic Egypt, then see what the collection records elsewhere.</p><span class="card-action">Explore early Egypt →</span></a>
-</div></section>
-<section class="how-to" aria-labelledby="how-title"><h2 id="how-title">Using Historica</h2><ol><li><h3>Choose a focus</h3><p>Start with a person, place, period or event. Each page gathers its connections and contemporary histories.</p></li><li><h3>Change the years</h3><p>Widen the timeline for the bigger picture, or narrow it to a few years. Compare regions side by side.</p></li><li><h3>Follow what interests you</h3><p>Select a timeline entry or connected place to move on. Copy the view’s link to return to it later.</p></li></ol></section>
-<footer><p>Historica is a beta. The collection currently concentrates on the ancient world, with uneven coverage. Missing entries mean missing research, not that nothing happened.</p><a href="/about">About Historica</a> · <a href="/coverage.html">Sources and research coverage</a> · <a href="/privacy">Privacy</a><p>Historica is an open source site on <a href="https://github.com/sproates/historica">GitHub</a>.</p></footer>
+<header class="topbar"><Brand /><span class="page-name">Visualising history <small>BETA</small></span><a class="about-link" href="/about">About</a><ThemeControl /></header>
+<nav class="view-switch" aria-label="Explore history"><button id="view-map" aria-pressed="false" aria-controls="explorer">Map</button><button id="view-browse" aria-pressed="true" aria-controls="browse">Browse</button></nav>
+<main id="explorer" hidden>
+ <div id="map" aria-label="Explore historical places on the map"></div>
+ <div class="search-wrap"><div class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><input id="search" type="search" autocomplete="off" placeholder="Find a country or historical place" aria-label="Find a country or historical place" aria-controls="search-results" aria-expanded="false"><button id="clear-search" aria-label="Clear search" hidden>×</button></div><div id="search-results" hidden></div></div>
+ <div class="date-strip"><button id="dates-button" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16M8 3v6M16 9v6M10 15v6"/></svg><span id="date-label">All available dates</span><span class="chevron">⌄</span></button><span class="modern-note">Modern map · historical places</span></div>
+ <div id="loading" role="status">Loading historical places…</div><div id="map-warning" role="status" hidden>Map background unavailable. Historical places still work.</div>
+ <div class="map-tools"><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button><span></span><button id="reset-map" aria-label="Return to your starting place" title="Return to your starting place">⌖</button><button id="world" aria-label="Show the world" title="Show the world">◎</button></div>
+ <aside id="sheet" aria-label="History in this area" data-snap="middle">
+  <div id="sheet-grab">
+  <button id="sheet-handle" aria-label="Expand history panel" aria-expanded="false"><span class="grab-bar"></span><span id="sheet-hint">Pull up for more</span></button>
+  <div class="sheet-heading"><div><p id="context">HISTORY AROUND YOU</p><h1 id="place-title">Explore the map</h1></div><button id="close-place" class="icon-button" aria-label="Show all places in this map area" hidden>×</button></div>
+  <div class="sheet-summary"><span id="result-count" role="status">Finding entries…</span><button id="sheet-toggle">See timeline ↑</button></div>
+  </div>
+  <div id="sheet-scroll"><div id="intro-hint" hidden><p>Move around the map. Tap a numbered place to see its histories, or search for somewhere.</p><button id="dismiss-hint">Got it</button></div><div id="selection-actions" hidden><button id="zoom-place">Zoom to these places</button><button id="clear-place">All places in view</button></div><div id="axis" aria-hidden="true"></div><div id="results"></div><p class="coverage-note">A selection from our collection, not a complete history. Locations and dates can be approximate. Open an entry for its sources.</p><footer class="explorer-footer"><a href="/about">About</a> · <a href="/coverage.html">Sources and coverage</a> · <a href="/privacy">Privacy</a><p>Historica is an open source site on <a href="https://github.com/sproates/historica">GitHub</a>.</p></footer></div>
+ </aside>
+ <div class="map-credit">Map © <a id="tile-credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a></div>
 </main>
-</SiteLayout>
+<main id="browse">
+ <div class="browse-inner"><h1>Find your way into history</h1><p class="browse-lead">Start with a person, a place or a question.</p>
+ <label for="browse-query" class="browse-label">Search the collection</label><div class="browse-search"><input id="browse-query" type="search" placeholder="Try Socrates, Egypt or Stonehenge…" autocomplete="off" aria-controls="browse-results"><button id="browse-clear" aria-label="Clear collection search" hidden>×</button></div>
+ <div class="browse-controls"><label>Show <select id="browse-kind"><option value="all">Everything</option><option value="person">People</option><option value="place">Places and states</option><option value="period">Periods</option><option value="event">Events</option></select></label><label class="period-check"><input id="browse-dated" type="checkbox"> Within selected dates</label><button id="browse-dates" aria-haspopup="dialog">Change dates</button></div>
+ <section id="starting-points" aria-labelledby="starting-title"><h2 id="starting-title">Other starting points</h2><div class="journey-list">
+ <a href="/person/alexander"><span>Alexander’s world</span><p>Follow his life and the places connected to it.</p><b aria-hidden="true">→</b></a>
+ <a href="/person/socrates"><span>Socrates and a city at war</span><p>Explore his life alongside the Peloponnesian War.</p><b aria-hidden="true">→</b></a>
+ <a href="/person/julius-caesar?kind=person"><span>Caesar and his contemporaries</span><p>Compare his lifetime with Cleopatra’s and follow their connections.</p><b aria-hidden="true">→</b></a>
+ <a href="/period/stonehenge"><span>While Stonehenge was being built</span><p>See what was happening elsewhere across those centuries.</p><b aria-hidden="true">→</b></a>
+ <a href="/period/predynastic-egypt"><span>Egypt before the pyramids</span><p>Begin before the dynasties and explore the wider world.</p><b aria-hidden="true">→</b></a>
+ </div></section>
+ <section aria-labelledby="browse-results-heading"><h2 id="browse-results-heading">Browse the collection</h2><p id="browse-status" role="status">Choose an entry below, or use search when it is ready.</p><div id="browse-results">{histories.map(e=><a class="browse-entry" href={`/${e.type}/${e.id}`}><strong>{e.title}</strong><small>{e.type} · {dates(e.startYear,e.endYear)}</small></a>)}</div><button id="browse-more" hidden>Show more</button></section>
+ <footer class="explorer-footer"><a href="/about">About</a> · <a href="/coverage.html">Sources and coverage</a> · <a href="/privacy">Privacy</a><p>Historica is an open source site on <a href="https://github.com/sproates/historica">GitHub</a>.</p></footer></div>
+</main>
+<dialog id="dates-dialog" aria-labelledby="dates-title"><form method="dialog"><div class="dialog-heading"><h2 id="dates-title">Choose your period</h2><button class="icon-button" aria-label="Close date controls" value="cancel">×</button></div><p>See the same places at a different time.</p><div class="date-presets"><button type="button" data-range="-5500,200">All dates</button><button type="button" data-range="-3500,-1500">Early civilisations</button><button type="button" data-range="-600,-300">600–300 BCE</button><button type="button" data-range="-100,200">100 BCE–200 CE</button></div><div class="date-zoom"><button type="button" id="wider-period">− Wider period</button><button type="button" id="closer-period">+ Closer period</button></div><div class="date-fields"><label>From<span><input id="start-number" type="number" min="1" max="5500" value="3500" inputmode="numeric"><select id="start-era" aria-label="Start era"><option>BCE</option><option>CE</option></select></span></label><label>To<span><input id="end-number" type="number" min="1" max="5500" value="200" inputmode="numeric"><select id="end-era" aria-label="End era"><option>BCE</option><option selected>CE</option></select></span></label></div><p id="date-error" role="alert"></p><button id="apply-dates" class="primary" type="button">Show this period</button></form></dialog>
+
+</ExplorerLayout>

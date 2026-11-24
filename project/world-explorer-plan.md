@@ -66,3 +66,11 @@ The local preview now serves the map at `/`, uses the Mediterranean opening boun
 ## Browse alongside the map
 
 The local homepage now has Map and Browse navigation. Browse searches every record, including those without locations, and offers people, places/states, periods and events. It searches all dates by default, with an explicit option to restrict results to the shared date window. Alexander, Socrates, Caesar, Stonehenge and early Egypt provide direct starting points. History pages return to the originating view with its search retained. Map position and dates are preserved when changing views. Production integration should retain this equally usable route through the collection.
+
+## Production integration — 24 November 2026
+
+The approved Map/Browse homepage now runs in Astro. Leaflet is bundled locally and only the homepage loads it. Browse includes generated links to all histories before JavaScript runs. The existing theme control is shared, and history pages return to the originating map or Browse search. The geographic model uses the existing dated associations and reference points; it does not need a second content index.
+
+The initial release uses OpenStreetMap standard tiles under its normal interactive-use policy, with visible attribution, normal browser caching and no prefetch or offline downloads. It is a best-effort service without a capacity guarantee. The provider is configured in `web/data/map-service.json` so it can be replaced if traffic requires it. Privacy describes the external tile requests. Browse does not load background tiles. The approved dark-mode colour treatment remains for this release; a dedicated dark basemap is not a release requirement.
+
+Verification covers geographic grouping, dates, mainland and date-line framing, safe return URLs, generated pages and the portable release package. Local browser checks cover Browse search, return links, map selection and mobile panel behaviour. The prototype has also been reviewed on Ian’s phone. Production integration is prepared on the feature branch; merging and deployment remain separate release actions.

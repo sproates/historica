@@ -4,7 +4,7 @@
 
 Who was alive during Alexander’s lifetime? What was happening in Britain while Socrates was alive? Where was Bactria, and how does it relate to the countries we know today? These are the sorts of questions Historica is intended to help you explore.
 
-Choose a person, place, event or period as your focus, then change the dates or follow a connection. The map shows related places. Hover over a marker to identify it, or select it and choose Explore to move there. You can bookmark a view and return to the same focus and settings.
+Start with the map to see which histories are available in an area, or use Browse to search the collection without using the map. Choose a person, place, event or period, then change the dates or follow a connection. You can bookmark a view and return to the same place and settings.
 
 Historica is still a beta. The collection concentrates on the ancient world and coverage is uneven. Entries link to their sources, with notes where dates or locations are uncertain. A gap in the timeline means we haven't covered something yet, not that nothing happened there.
 
@@ -33,6 +33,7 @@ The app uses TypeScript and Astro. Pages are generated as HTML, so a history's i
 | `src/pages/`, `src/layouts/`, `src/components/` | Astro pages and shared HTML |
 | `src/domain/`, `src/state/` | History calculations, focus changes and bookmarks |
 | `src/browser/`, `src/controllers/` | Browser interactions |
+| `src/explorer/` | Homepage map, Browse, results panel and saved view |
 | `src/presentation/`, `src/content/` | Rendering, validation and data preparation |
 | `src/entrypoints/` | Browser startup modules |
 | `web/` | Shared styles, assets and generated site files |

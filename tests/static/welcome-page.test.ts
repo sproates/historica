@@ -14,8 +14,12 @@ for(const [id,route] of [['home','index.html'],['about','about/index.html']]){
   assert.match(actual,/name="robots" content="noindex, follow"/);
   assert.match(actual,/property="og:image:width" content="1200"/);
   if(id==='home'){
-   for(const hook of ['home-query','home-results','home-search-status'])assert.ok(actual.includes(`id="${hook}"`));
-   assert.match(actual,/src="generated\/entrypoints\/home.js"/);
+   for(const hook of ['browse-query','browse-results','browse-status','view-map','view-browse','map','sheet'])assert.ok(actual.includes(`id="${hook}"`));
+   assert.match(actual,/src="generated\/explorer\/home-[A-Z0-9]+\.js"/);
+   assert.ok(actual.includes('data-theme-toggle'));
+   assert.ok(actual.includes('/period/predynastic-egypt'));
+   assert.ok(!actual.includes('design-preview/'));
+   assert.ok(actual.includes('id="browse-results"><a'), 'Static browsing works before JavaScript');
    const structured=actual.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1];
    assert.equal(JSON.parse(structured).name,'Historica');
    for(const route of ['/period/stonehenge','/person/socrates','/person/alexander','/person/julius-caesar?kind=person'])assert.ok(actual.includes(`href="${route}"`));
