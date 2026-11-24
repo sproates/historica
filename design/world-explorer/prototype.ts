@@ -18,7 +18,13 @@ const map=L.map('map',{zoomControl:false,attributionControl:false,inertia:true,i
 const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,keepBuffer:3,updateWhenIdle:true,referrerPolicy:'strict-origin-when-cross-origin'}).addTo(map);
 let tileErrors=0;tiles.on('tileerror',()=>{if(++tileErrors>=3)el('map-warning').hidden=false;});tiles.on('tileload',()=>{tileErrors=0;el('map-warning').hidden=true;});
 markers.addTo(map);
-function sizeSheet(snap:typeof sheetSnap){sheetSnap=snap;const height=el('explorer').clientHeight;const value=snap==='peek'?126:snap==='middle'?Math.min(320,height*.42):height-118;document.documentElement.style.setProperty('--sheet-height',`${Math.max(126,value)}px`);el('sheet').dataset.snap=snap;el('sheet-handle').setAttribute('aria-expanded',String(snap==='full'));el('sheet-handle').setAttribute('aria-label',snap==='full'?'Collapse history panel':'Expand history panel');el('sheet-toggle').textContent=snap==='full'?'More map ↓':'See timeline ↑';}
+function sheetHeight(snap:typeof sheetSnap){const height=el('explorer').clientHeight;return snap==='peek'?150:snap==='middle'?Math.min(selected?430:340,height*(selected ? .52 : .44)):Math.max(150,height-118);}
+function sizeSheet(snap:typeof sheetSnap){
+ sheetSnap=snap;document.documentElement.style.setProperty('--sheet-height',`${sheetHeight(snap)}px`);el('sheet').dataset.snap=snap;
+ const expanded=snap==='full';el('sheet-handle').setAttribute('aria-expanded',String(expanded));el('sheet-handle').setAttribute('aria-label',expanded?'Collapse history panel':'Expand history panel');
+ el('sheet-hint').textContent=expanded?'Pull down for more map':'Pull up for more';el('sheet-toggle').textContent=expanded?'More map ↓':'Expand list ↑';
+}
+
 function save(){if(!ready)return;const center=map.getCenter();const p=new URLSearchParams({from:String(from),to:String(to),lat:center.lat.toFixed(5),lng:center.lng.toFixed(5),zoom:map.getZoom().toFixed(2)});if(homeBounds)p.set('home',homeBounds.toBBoxString());if(selected)p.set('places',selected.map(p=>p.key).join(';'));window.history.replaceState(null,'','?'+p);}
 function dateUI(){el('date-label').textContent=from===-5500&&to===200?'All dates · 5500 BCE–200 CE':`${year(from)} – ${year(to)}`;el('axis').replaceChildren();for(const n of [from,to]){const label=document.createElement('span');label.textContent=year(n);el('axis').append(label);}}
 function openRoute(e:Entry){return `/${e.type}/${e.id}?from=${from}&to=${to}`;}
@@ -63,7 +69,7 @@ function updateMap(){
 function updateMarkerSelection(){// Rebuild only after a completed gesture or explicit selection, never during dragging.
  updateMap();
 }
-function padding():L.FitBoundsOptions{return {paddingTopLeft:mobile()?[40,125]:[420,90],paddingBottomRight:mobile()?[40,Math.min(320,el('explorer').clientHeight*.42)+35]:[65,45],maxZoom:11,animate:!reduced,duration:.65};}
+function padding():L.FitBoundsOptions{return {paddingTopLeft:mobile()?[40,125]:[420,90],paddingBottomRight:mobile()?[40,sheetHeight('middle')+35]:[65,45],maxZoom:11,animate:!reduced,duration:.65};}
 function fitPlaces(points:Place[]){if(!points.length)return;const bounds=L.latLngBounds(points.map(p=>[p.point[1],p.point[0]] as L.LatLngTuple));map.flyToBounds(bounds,padding());}
 function fitCountry(c:Country){const [lon,lat]=[c.properties.LABEL_X,c.properties.LABEL_Y];const polygons=(c.geometry.type==='Polygon'?[c.geometry.coordinates]:c.geometry.coordinates) as number[][][][];const ring=polygons.map(p=>p[0]!).find(r=>inside([lon,lat],r))||polygons[0]![0]!;const bounds=L.latLngBounds(ring.map(p=>[p[1]!,p[0]!] as L.LatLngTuple));homeBounds=bounds;selected=null;sizeSheet('middle');map.flyToBounds(bounds,{...padding(),maxZoom:8});}
 function inside(p:number[],ring:number[][]){let value=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i]!,b=ring[j]!;if((a[1]!>p[1]!)!==(b[1]!>p[1]!)&&p[0]!<(b[0]!-a[0]!)*(p[1]!-a[1]!)/(b[1]!-a[1]!)+a[0]!)value=!value;}return value;}
@@ -86,8 +92,31 @@ el('wider-period').onclick=()=>zoomPeriod(2);el('closer-period').onclick=()=>zoo
 function dateFields(){for(const [prefix,value]of [['start',from],['end',to]]as const){el<HTMLInputElement>(prefix+'-number').value=String(Math.abs(value));el<HTMLSelectElement>(prefix+'-era').value=value<0?'BCE':'CE';}el('date-error').textContent='';}
 el('dates-button').onclick=()=>{dateFields();el<HTMLDialogElement>('dates-dialog').showModal();};for(const button of document.querySelectorAll<HTMLButtonElement>('[data-range]'))button.onclick=()=>{const [a,b]=button.dataset.range!.split(',').map(Number);applyPeriod(a!,b!);};el('apply-dates').onclick=()=>{const a=Number(el<HTMLInputElement>('start-number').value)*(el<HTMLSelectElement>('start-era').value==='BCE'?-1:1),b=Number(el<HTMLInputElement>('end-number').value)*(el<HTMLSelectElement>('end-era').value==='BCE'?-1:1);if(!Number.isInteger(a)||!Number.isInteger(b)||!a||!b||a>b||a< -5500||b>200){el('date-error').textContent='Choose a period between 5500 BCE and 200 CE, with the start before the end.';return;}applyPeriod(a,b);};
 el('theme').onclick=()=>{const dark=document.documentElement.classList.toggle('dark');el('theme').textContent=dark?'☀':'☾';el('theme').setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');};
-let dragStart:number|null=null,initialHeight=0,dragged=false,dragTime=0;
-const handle=el('sheet-handle');handle.addEventListener('pointerdown',e=>{dragStart=e.clientY;initialHeight=el('sheet').getBoundingClientRect().height;dragged=false;dragTime=performance.now();handle.setPointerCapture(e.pointerId);el('sheet').classList.add('dragging');});handle.addEventListener('pointermove',e=>{if(dragStart===null)return;const delta=dragStart-e.clientY;if(Math.abs(delta)>4)dragged=true;document.documentElement.style.setProperty('--sheet-height',`${Math.max(126,Math.min(el('explorer').clientHeight-118,initialHeight+delta))}px`);});function endDrag(e:PointerEvent){if(dragStart===null)return;const delta=dragStart-e.clientY,velocity=delta/Math.max(1,performance.now()-dragTime);dragStart=null;el('sheet').classList.remove('dragging');const height=el('sheet').getBoundingClientRect().height,full=el('explorer').clientHeight-118,middle=Math.min(320,el('explorer').clientHeight*.42);const snap=Math.abs(velocity)>.45?(velocity>0?'full':'peek'):height>(full+middle)/2?'full':height<(126+middle)/2?'peek':'middle';if(dragged)sizeSheet(snap);else sizeSheet(sheetSnap==='full'?'middle':'full');}handle.addEventListener('pointerup',endDrag);handle.addEventListener('pointercancel',()=>{dragStart=null;el('sheet').classList.remove('dragging');sizeSheet(sheetSnap);});handle.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','Enter',' '].includes(e.key)){e.preventDefault();sizeSheet(e.key==='ArrowDown'?'peek':sheetSnap==='full'?'middle':'full');}});el('sheet-toggle').onclick=()=>sizeSheet(sheetSnap==='full'?'middle':'full');
+let dragStart:number|null=null,initialHeight=0,dragged=false,dragTime=0,tappedHandle=false;
+const handle=el('sheet-handle'),grab=el('sheet-grab');
+grab.addEventListener('pointerdown',e=>{
+ if(!mobile()||!e.isPrimary||e.button!==0)return;
+ const target=e.target as Element;
+ if(target.closest('button,a,input,select')&&!target.closest('#sheet-handle'))return;
+ dragStart=e.clientY;initialHeight=el('sheet').getBoundingClientRect().height;dragged=false;dragTime=performance.now();tappedHandle=!!target.closest('#sheet-handle');
+ grab.setPointerCapture(e.pointerId);el('sheet').classList.add('dragging');e.preventDefault();
+});
+grab.addEventListener('pointermove',e=>{
+ if(dragStart===null)return;const delta=dragStart-e.clientY;if(Math.abs(delta)>4)dragged=true;
+ document.documentElement.style.setProperty('--sheet-height',`${Math.max(sheetHeight('peek'),Math.min(sheetHeight('full'),initialHeight+delta))}px`);
+});
+grab.addEventListener('pointerup',e=>{
+ if(dragStart===null)return;
+ const delta=dragStart-e.clientY,velocity=delta/Math.max(1,performance.now()-dragTime);dragStart=null;el('sheet').classList.remove('dragging');
+ if(!dragged){sizeSheet(tappedHandle?(sheetSnap==='full'?'middle':'full'):sheetSnap);return;}
+ const height=el('sheet').getBoundingClientRect().height,full=sheetHeight('full'),middle=sheetHeight('middle');
+ const snap=Math.abs(velocity)>.45?(velocity>0?'full':'peek'):height>(full+middle)/2?'full':height<(sheetHeight('peek')+middle)/2?'peek':'middle';
+ sizeSheet(snap);
+});
+grab.addEventListener('pointercancel',()=>{dragStart=null;el('sheet').classList.remove('dragging');sizeSheet(sheetSnap);});
+handle.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','Enter',' '].includes(e.key)){e.preventDefault();sizeSheet(e.key==='ArrowDown'?'peek':sheetSnap==='full'?'middle':'full');}});
+el('sheet-toggle').onclick=()=>sizeSheet(sheetSnap==='full'?'middle':'full');
+
 window.addEventListener('resize',()=>{sizeSheet(sheetSnap);map.invalidateSize({pan:true,animate:false});if(!settling)updateMap();});
 sizeSheet('middle');dateUI();
 try{

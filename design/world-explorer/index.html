@@ -9,9 +9,11 @@
  <div id="loading" role="status">Loading historical places…</div><div id="map-warning" role="status" hidden>Map background unavailable. Historical places still work.</div>
  <div class="map-tools"><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button><span></span><button id="reset-map" aria-label="Return to your starting place" title="Return to your starting place">⌖</button><button id="world" aria-label="Show the world" title="Show the world">◎</button></div>
  <aside id="sheet" aria-label="History in this area" data-snap="middle">
-  <button id="sheet-handle" aria-label="Expand history panel" aria-expanded="false"><span></span></button>
+  <div id="sheet-grab">
+  <button id="sheet-handle" aria-label="Expand history panel" aria-expanded="false"><span class="grab-bar"></span><span id="sheet-hint">Pull up for more</span></button>
   <div class="sheet-heading"><div><p id="context">HISTORY AROUND YOU</p><h1 id="place-title">Explore the map</h1></div><button id="close-place" class="icon-button" aria-label="Show all places in this map area" hidden>×</button></div>
   <div class="sheet-summary"><span id="result-count" role="status">Finding entries…</span><button id="sheet-toggle">See timeline ↑</button></div>
+  </div>
   <div id="sheet-scroll"><div id="selection-actions" hidden><button id="zoom-place">Zoom to these places</button><button id="clear-place">All places in view</button></div><div id="axis" aria-hidden="true"></div><div id="results"></div><p class="coverage-note">A selection from our collection, not a complete history. Locations and dates can be approximate. Open an entry for its sources.</p></div>
  </aside>
  <div class="map-credit">Map © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a></div>
