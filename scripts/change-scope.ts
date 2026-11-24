@@ -2,7 +2,7 @@ import {execFileSync} from 'node:child_process';
 import fs from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
-const internalFiles=new Set(['AGENTS.md','README.md','RELEASE.md','PLAN.md','PROTOTYPE-MILESTONE.md','SUSTAINABILITY-PLAN.md','CONTRIBUTION.md','CONTRIBUTORS.md','content/README.md','research/evidence/FORMAT.md']);
+const internalFiles=new Set(['AGENTS.md','ARCHITECTURE.md','README.md','RELEASE.md','PLAN.md','PROTOTYPE-MILESTONE.md','SUSTAINABILITY-PLAN.md','CONTRIBUTION.md','CONTRIBUTORS.md','content/README.md','research/evidence/FORMAT.md']);
 const internal=(file:string)=>internalFiles.has(file)||/^project\/.*\.md$/.test(file);
 export const sharingImage=(file:string)=>/^share-historica(?:-[a-z0-9-]+)?\.png$/.test(file);
 const imageReferences=(text:string)=>text.replace(/share-historica(?:-[a-z0-9-]+)?\.png/g,'SHARING_IMAGE');

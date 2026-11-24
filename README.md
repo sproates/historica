@@ -23,6 +23,8 @@ On a Mac, `npm run preview:install` installs a persistent preview service. Refre
 
 ## How the app is organised
 
+[ARCHITECTURE.md](ARCHITECTURE.md) describes the application, data flow and release process, with diagrams.
+
 The app uses TypeScript and Astro. Pages are generated as HTML, so a history's introduction, timeline, map and references are available before JavaScript runs. Browser code adds search, date controls, comparisons and navigation between histories.
 
 | Location | What belongs here |
