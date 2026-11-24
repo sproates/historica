@@ -12,7 +12,7 @@ The original cutover used [verified run 45242603802](https://github.com/sproates
 
 ## HTTPS and recovery
 
-GitHub’s own custom-domain certificate was still absent when checked on 24 November 2026. Its Enforce HTTPS option is off. Public HTTPS is provided and enforced by Cloudflare; this is not a reason to disable proxying. Direct GitHub TLS with the `github.io` hostname and Historica Host header was validated during cutover.
+GitHub’s own custom-domain certificate was still absent when checked on 24 November 2026. Its Enforce HTTPS option is off. Public HTTPS is provided and enforced by Cloudflare. On 24 November Ian chose to retain this arrangement and leave the GitHub certificate setting alone. No certificate transition or DNS change is planned. Direct GitHub TLS with the `github.io` hostname and Historica Host header was validated during cutover.
 
 The Historica-only transition Worker remains attached as a 503 splash fallback for origin failures. It does not replace successful responses or bypass TLS validation. Its configuration and DNS rollback values are retained locally under ignored `release/cutover/`. Do not change other Cloudflare projects or account-wide settings.
 
