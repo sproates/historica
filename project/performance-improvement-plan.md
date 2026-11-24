@@ -177,3 +177,22 @@ These gzip figures are local estimates, not measured production transfers. The h
 Three sequential mobile Lighthouse audits of the final preview's `/person/alexander/` scored 100, with LCP between 1.354 and 1.356 seconds and CLS 0 in every run. No audit warnings were reported. The local server sends uncompressed assets, and the network differs from production, so compare these with the earlier live results cautiously. Reports are retained in `release/performance-2026-11-24/compact-maps/`.
 
 The static build checks passed for all 234 pages. Runtime and packaging tests were run; two expectations still required the old unsuffixed URL and passed after correction. Browser checks covered the shared map after zooming, Britain and Ireland's highlight, country search and Russia's framing, and the mobile map in dark mode. No production, DNS or cache configuration was changed.
+
+
+## Production release and follow-up measurements
+
+Both implementation PRs were approved and published on 24 November as `ad5f3c552b33d096e3b3258abd3e112b28981e4e`. Main verification [45404855830](https://github.com/sproates/historica/actions/runs/45404855830) reused the verified package; deployment [45404953505](https://github.com/sproates/historica/actions/runs/45404953505) succeeded without a rebuild. Earlier preview sections above describe the state before this release.
+
+Seven sequential production mobile Lighthouse audits used the same version and simulated settings as the baseline: three homepage, three Alexander and one Browse run. There were no audit warnings. Each repeated result below is a median; ranges expose variation.
+
+| Page | Score before → after | LCP before → after | CLS after | Transfer before → after |
+| --- | --- | --- | --- | --- |
+| Map homepage | 53 → **96** (94–96) | 6.58 s → **2.62 s** (2.43–3.00) | 0.015 median; 0–0.078 | 1,001 → **196 KiB** |
+| Alexander | 67 → **100** (all three) | 5.28 s → **1.09 s** (1.07–1.30) | 0 in every run | 1,028 → **607 KiB** |
+| Browse | 76 → **100** (one run each) | 1.27 s → **1.10 s** | 0 | 952 → **147 KiB** |
+
+Alexander's HTML now transfers about 15.5 KiB, compared with roughly 883 KiB in the baseline. Its new audit uses the suffixed URL emitted by the application; the old audit used the unsuffixed internal-link destination. The improvement therefore includes removal of that redirect, as intended. The shared SVG remains the largest history-page asset on a first visit.
+
+All three homepage runs met the CLS target of 0.1. Its median LCP remains slightly above 2.5 seconds, so this isn't a claim that every performance target is met. Tile-service variability and the remaining shared-map download are still worth observing, but the measured changes justify stopping this optimisation pass here.
+
+These are same-day laboratory comparisons, not proof of real-visitor improvement. Cloudflare needs a new post-release sample before we can assess that. Audits and our live browser checks can contribute analytics observations; exclude this validation window when comparing field data. Raw reports and a JSON summary are retained in ignored `release/performance-2026-11-24/production/`.
