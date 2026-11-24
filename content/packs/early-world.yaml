@@ -13,6 +13,7 @@ entities:
   - kuk-mound-cultivation
   - kuk-ditched-cultivation
   - watson-brake
+  - kerma-beaker-abydos
 associations:
   - subject: avebury-building
     place: avebury-building
@@ -98,6 +99,32 @@ associations:
       - early-world-kuk-ditched-cultivation-context
       - early-world-kuk-ditched-cultivation-point
     contextual: true
+  - subject: kerma-kingdom
+    place: kerma-kingdom
+    startYear: -2500
+    endYear: -1500
+    point:
+      - 30.409730555555555
+      - 19.60080277777778
+    label: Capital site reference, not kingdom boundaries
+    claimIds:
+      - nile-expansion-kerma-city
+      - nile-expansion-kerma-point
+    source: https://whc.unesco.org/en/tentativelists/6594/
+    contextual: true
+  - subject: kerma-beaker-abydos
+    place: abydos-middle-kingdom
+    startYear: -1802
+    endYear: -1640
+    point:
+      - 31.883333333333333
+      - 26.183333333333334
+    label: Find-area reference; approximate object dating
+    claimIds:
+      - nile-expansion-kerma-beaker-dating
+      - nile-expansion-kerma-beaker-point
+    source: https://www.metmuseum.org/art/collection/search/545772
+    contextual: true
 relationships:
   - a: ubaid-communities
     b: uruk-period
@@ -147,3 +174,18 @@ relationships:
   - a: boyne-passage-tombs
     b: britain-ireland
     label: Explore Britain and Ireland
+  - a: kerma-kingdom
+    b: kerma-beaker-abydos
+    label: Kerma pottery found in Egypt
+    claimIds:
+      - nile-expansion-kerma-beaker-dating
+      - nile-expansion-kerma-beaker-interpretation
+    sourceUrls:
+      - https://www.metmuseum.org/art/collection/search/545772
+  - a: kerma-beaker-abydos
+    b: abydos-middle-kingdom
+    label: Found at Abydos
+    claimIds:
+      - nile-expansion-kerma-beaker-dating
+    sourceUrls:
+      - https://www.metmuseum.org/art/collection/search/545772
