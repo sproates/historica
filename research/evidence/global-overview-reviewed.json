@@ -110,6 +110,41 @@
       "id": "global-overview",
       "name": "Ancient world overview",
       "type": "area"
+    },
+    {
+      "id": "harappa",
+      "name": "Harappa",
+      "type": "city"
+    },
+    {
+      "id": "mohenjo-daro",
+      "name": "Mohenjo-daro",
+      "type": "city"
+    },
+    {
+      "id": "dholavira",
+      "name": "Dholavira",
+      "type": "city"
+    },
+    {
+      "id": "dholavira-water",
+      "name": "Storing water at Dholavira",
+      "type": "period"
+    },
+    {
+      "id": "harappa-crafts",
+      "name": "Making beads and objects at Harappa",
+      "type": "period"
+    },
+    {
+      "id": "indus-seals",
+      "name": "Seals and undeciphered writing",
+      "type": "period"
+    },
+    {
+      "id": "indus-trade",
+      "name": "Weighing and trading at Harappa",
+      "type": "period"
     }
   ],
   "sources": [
@@ -202,6 +237,87 @@
       "locatorHint": "English description, first two paragraphs",
       "accessed": "2026-11-22",
       "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "indus-expansion-source-met",
+      "title": "South Asia, 8000–2000 B.C.",
+      "creator": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/toah/ht/02/ssa",
+      "locatorHint": "Timeline; Overview; Key Events, 2600–1900 BCE",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed factual references only; no images or copied source prose."
+    },
+    {
+      "id": "indus-expansion-source-harappa",
+      "title": "Recent Indus Discoveries and Highlights from Excavations at Harappa 1998–2000",
+      "creator": "Harappa Archaeological Research Project",
+      "url": "https://www.harappa.com/content/recent-indus-discoveries-and-highlights-excavations-harappa-1998-2000",
+      "locatorHint": "Introduction and Table 1, Harappa Chronology",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed factual references only; no images or copied source prose."
+    },
+    {
+      "id": "indus-expansion-source-getty",
+      "title": "Harappa, TGN 8039784",
+      "creator": "Getty Research Institute",
+      "url": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&find=&nation=&place=&subjectid=8039784",
+      "locatorHint": "Coordinates, place types and geographic hierarchy",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed factual references only; no images or copied source prose."
+    },
+    {
+      "id": "indus-expansion-source-mohenjo",
+      "title": "Archaeological Ruins at Moenjodaro",
+      "creator": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/138/",
+      "locatorHint": "Brief synthesis, city layout and drainage; property coordinate",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed factual references only; no images or copied source prose."
+    },
+    {
+      "id": "indus-expansion-source-dhol",
+      "title": "Dholavira: a Harappan City",
+      "creator": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1645/",
+      "locatorHint": "Description; Brief synthesis; Criteria (iii) and (iv); coordinate",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed factual references only; no images or copied source prose."
+    },
+    {
+      "id": "indus-expansion-source-dholmap",
+      "title": "Dholavira: a Harappan City, Maps",
+      "creator": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1645/maps/",
+      "locatorHint": "Property 1645 geographical data",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed factual references only; no images or copied source prose."
+    },
+    {
+      "id": "indus-expansion-source-craft",
+      "title": "Trade and Technology of the Indus Valley",
+      "creator": "Jonathan Mark Kenoyer",
+      "url": "https://www.harappa.com/content/trade-and-technology-indus-valley",
+      "locatorHint": "Research summary, first two paragraphs and drill illustration caption",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed factual references only; no images or copied source prose."
+    },
+    {
+      "id": "indus-expansion-source-weights",
+      "title": "Weights, Harappa",
+      "creator": "Harappa Archaeological Research Project; Jonathan Mark Kenoyer",
+      "url": "https://www.harappa.com/indus/21.html",
+      "locatorHint": "Slide 21, description and interpretation",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed factual references only; no images or copied source prose."
+    },
+    {
+      "id": "indus-expansion-source-seal",
+      "title": "Unicorn Seal, Mohenjo-daro",
+      "creator": "Harappa.com; Jonathan Mark Kenoyer",
+      "url": "https://www.harappa.com/slide/unicorn-seal-mohenjo-daro",
+      "locatorHint": "Slide 25, inscription, material and catalogue identification",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed factual references only; no images or copied source prose."
     }
   ],
   "claims": [
@@ -1738,6 +1854,757 @@
       ],
       "reviewId": "global-khufu-reign-4-review",
       "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-overview-cities",
+      "subjectId": "indus-urban",
+      "predicate": "overview-cities",
+      "value": {
+        "type": "text",
+        "text": "Harappa and Mohenjo-daro belonged to the urban Indus tradition of present-day Pakistan and northwestern India, with crafts and western trading contacts."
+      },
+      "statement": "Harappa and Mohenjo-daro belonged to the urban Indus tradition of present-day Pakistan and northwestern India, with crafts and western trading contacts.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-overview-cities-evidence"
+      ],
+      "reviewId": "indus-expansion-overview-cities-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-overview-dholavira",
+      "subjectId": "indus-urban",
+      "predicate": "overview-dholavira",
+      "value": {
+        "type": "text",
+        "text": "Dholavira was a Harappan city in Gujarat with a distinctive approach to storing water."
+      },
+      "statement": "Dholavira was a Harappan city in Gujarat with a distinctive approach to storing water.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-overview-dholavira-evidence"
+      ],
+      "reviewId": "indus-expansion-overview-dholavira-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-harappa-window",
+      "subjectId": "harappa",
+      "predicate": "harappa-window",
+      "value": {
+        "type": "text",
+        "text": "Harappa’s urban phase is approximately 2600–1900 BCE; occupation also preceded and followed it."
+      },
+      "statement": "Harappa’s urban phase is approximately 2600–1900 BCE; occupation also preceded and followed it.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2600,
+          "latest": -2600,
+          "original": "Approximately 2600 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1900,
+          "latest": -1900,
+          "original": "Approximately 1900 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "indus-expansion-harappa-window-evidence"
+      ],
+      "reviewId": "indus-expansion-harappa-window-review",
+      "disputeNote": "Table 1, Periods 3A–3C. Editorial city study window, not the lifespan of the settlement."
+    },
+    {
+      "id": "indus-expansion-harappa-remains",
+      "subjectId": "harappa",
+      "predicate": "harappa-remains",
+      "value": {
+        "type": "text",
+        "text": "Harappa retains fragmentary walls and mounds affected by brick removal; its architecture and artefacts link it to the same cultural tradition as Mohenjo-daro."
+      },
+      "statement": "Harappa retains fragmentary walls and mounds affected by brick removal; its architecture and artefacts link it to the same cultural tradition as Mohenjo-daro.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-harappa-remains-evidence"
+      ],
+      "reviewId": "indus-expansion-harappa-remains-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-harappa-craft-context",
+      "subjectId": "harappa",
+      "predicate": "harappa-craft-context",
+      "value": {
+        "type": "text",
+        "text": "Harappa preserves evidence of shell working, pottery and stone-bead production."
+      },
+      "statement": "Harappa preserves evidence of shell working, pottery and stone-bead production.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-harappa-craft-context-evidence"
+      ],
+      "reviewId": "indus-expansion-harappa-craft-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-harappa-point",
+      "subjectId": "harappa",
+      "predicate": "harappa-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          72.8639,
+          30.6361
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Archaeological site reference for orientation, not a precise house, workshop or territorial outline.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-harappa-point-evidence"
+      ],
+      "reviewId": "indus-expansion-harappa-point-review",
+      "disputeNote": "Getty TGN 8039784 is the archaeological site, distinct from modern Harappa. Published decimal longitude 72.8639 and latitude 30.6361. The conflicting coordinate in UNESCO tentative list 1878 is not used."
+    },
+    {
+      "id": "indus-expansion-mohenjo-window",
+      "subjectId": "mohenjo-daro",
+      "predicate": "mohenjo-window",
+      "value": {
+        "type": "text",
+        "text": "The Met places Mohenjo-daro among the cities flourishing in the approximately 2600–1900 BCE urban phase."
+      },
+      "statement": "The Met places Mohenjo-daro among the cities flourishing in the approximately 2600–1900 BCE urban phase.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2600,
+          "latest": -2600,
+          "original": "Approximately 2600 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1900,
+          "latest": -1900,
+          "original": "Approximately 1900 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "indus-expansion-mohenjo-window-evidence"
+      ],
+      "reviewId": "indus-expansion-mohenjo-window-review",
+      "disputeNote": "Editorial comparison window. UNESCO uses a broader chronology; this is not an exact founding or abandonment date."
+    },
+    {
+      "id": "indus-expansion-mohenjo-city",
+      "subjectId": "mohenjo-daro",
+      "predicate": "mohenjo-city",
+      "value": {
+        "type": "text",
+        "text": "Mohenjo-daro had baked-brick buildings, wells, drains and streets meeting at right angles; its western raised area lay beside a lower city."
+      },
+      "statement": "Mohenjo-daro had baked-brick buildings, wells, drains and streets meeting at right angles; its western raised area lay beside a lower city.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-mohenjo-city-evidence"
+      ],
+      "reviewId": "indus-expansion-mohenjo-city-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-mohenjo-seal-context",
+      "subjectId": "mohenjo-daro",
+      "predicate": "mohenjo-seal-context",
+      "value": {
+        "type": "text",
+        "text": "Seal HR 743 from Mohenjo-daro has an animal motif and eight signs."
+      },
+      "statement": "Seal HR 743 from Mohenjo-daro has an animal motif and eight signs.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-mohenjo-seal-context-evidence"
+      ],
+      "reviewId": "indus-expansion-mohenjo-seal-context-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-mohenjo-point",
+      "subjectId": "mohenjo-daro",
+      "predicate": "mohenjo-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          68.1388888888889,
+          27.329166666666666
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Archaeological site reference for orientation, not a precise house, workshop or territorial outline.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-mohenjo-point-evidence"
+      ],
+      "reviewId": "indus-expansion-mohenjo-point-review",
+      "disputeNote": "UNESCO gives N27 19 45 E68 8 20. Converted as degrees + minutes/60 + seconds/3600, longitude first."
+    },
+    {
+      "id": "indus-expansion-dholavira-dates",
+      "subjectId": "dholavira",
+      "predicate": "dholavira-dates",
+      "value": {
+        "type": "text",
+        "text": "Dholavira was occupied approximately 3000–1500 BCE."
+      },
+      "statement": "Dholavira was occupied approximately 3000–1500 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "Approximately 3000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "Approximately 1500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "indus-expansion-dholavira-dates-evidence"
+      ],
+      "reviewId": "indus-expansion-dholavira-dates-review",
+      "disputeNote": "Source-specific broad occupation range; individual structures changed through time."
+    },
+    {
+      "id": "indus-expansion-dholavira-city",
+      "subjectId": "dholavira",
+      "predicate": "dholavira-city",
+      "value": {
+        "type": "text",
+        "text": "Dholavira on Khadir island contained a walled settlement, cemetery, residential areas and workshops, with extensive stone construction."
+      },
+      "statement": "Dholavira on Khadir island contained a walled settlement, cemetery, residential areas and workshops, with extensive stone construction.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-dholavira-city-evidence"
+      ],
+      "reviewId": "indus-expansion-dholavira-city-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-dholavira-point",
+      "subjectId": "dholavira",
+      "predicate": "dholavira-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          70.21330277777778,
+          23.888408333333334
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Archaeological site reference for orientation, not a precise house, workshop or territorial outline.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-dholavira-point-evidence"
+      ],
+      "reviewId": "indus-expansion-dholavira-point-review",
+      "disputeNote": "UNESCO property 1645 gives N23 53 18.27 E70 12 47.89. Converted as degrees + minutes/60 + seconds/3600, longitude first."
+    },
+    {
+      "id": "indus-expansion-dholavira-water-window",
+      "subjectId": "dholavira-water",
+      "predicate": "dholavira-water-window",
+      "value": {
+        "type": "text",
+        "text": "Dholavira’s approximately 3000–1500 BCE occupation provides the editorial window for its changing water systems."
+      },
+      "statement": "Dholavira’s approximately 3000–1500 BCE occupation provides the editorial window for its changing water systems.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -3000,
+          "latest": -3000,
+          "original": "Approximately 3000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1500,
+          "latest": -1500,
+          "original": "Approximately 1500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "indus-expansion-dholavira-water-window-evidence"
+      ],
+      "reviewId": "indus-expansion-dholavira-water-window-review",
+      "disputeNote": "Not a construction interval for every reservoir, nor continuous operation of an unchanged system."
+    },
+    {
+      "id": "indus-expansion-dholavira-water-system",
+      "subjectId": "dholavira-water",
+      "predicate": "dholavira-water-system",
+      "value": {
+        "type": "text",
+        "text": "Dholavira drew on two seasonal streams and had reservoirs east and south of its citadel, alongside drainage infrastructure."
+      },
+      "statement": "Dholavira drew on two seasonal streams and had reservoirs east and south of its citadel, alongside drainage infrastructure.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-dholavira-water-system-evidence"
+      ],
+      "reviewId": "indus-expansion-dholavira-water-system-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-dholavira-water-point",
+      "subjectId": "dholavira-water",
+      "predicate": "dholavira-water-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          70.21330277777778,
+          23.888408333333334
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Archaeological site reference for orientation, not a precise house, workshop or territorial outline.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-dholavira-water-point-evidence"
+      ],
+      "reviewId": "indus-expansion-dholavira-water-point-review",
+      "disputeNote": "UNESCO property 1645 gives N23 53 18.27 E70 12 47.89. Converted as degrees + minutes/60 + seconds/3600, longitude first."
+    },
+    {
+      "id": "indus-expansion-craft-window",
+      "subjectId": "harappa-crafts",
+      "predicate": "craft-window",
+      "value": {
+        "type": "text",
+        "text": "The Harappan urban period, approximately 2600–1900 BCE, is used to explore craft evidence at Harappa."
+      },
+      "statement": "The Harappan urban period, approximately 2600–1900 BCE, is used to explore craft evidence at Harappa.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2600,
+          "latest": -2600,
+          "original": "Approximately 2600 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1900,
+          "latest": -1900,
+          "original": "Approximately 1900 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "indus-expansion-craft-window-evidence"
+      ],
+      "reviewId": "indus-expansion-craft-window-review",
+      "disputeNote": "Editorial window; the source describes craft continuities before and after the urban phase."
+    },
+    {
+      "id": "indus-expansion-craft-production",
+      "subjectId": "harappa-crafts",
+      "predicate": "craft-production",
+      "value": {
+        "type": "text",
+        "text": "Harappa’s crafts included shell working, ceramics, agate beads and glazed steatite beads, with different drilling technologies."
+      },
+      "statement": "Harappa’s crafts included shell working, ceramics, agate beads and glazed steatite beads, with different drilling technologies.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-craft-production-evidence"
+      ],
+      "reviewId": "indus-expansion-craft-production-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-craft-point",
+      "subjectId": "harappa-crafts",
+      "predicate": "craft-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          72.8639,
+          30.6361
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Archaeological site reference for orientation, not a precise house, workshop or territorial outline.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-craft-point-evidence"
+      ],
+      "reviewId": "indus-expansion-craft-point-review",
+      "disputeNote": "Getty TGN 8039784 is the archaeological site, distinct from modern Harappa. Published decimal longitude 72.8639 and latitude 30.6361. The conflicting coordinate in UNESCO tentative list 1878 is not used."
+    },
+    {
+      "id": "indus-expansion-seal-window",
+      "subjectId": "indus-seals",
+      "predicate": "seal-window",
+      "value": {
+        "type": "text",
+        "text": "The approximately 2600–1900 BCE urban phase supplies a study window for Indus seals and their undeciphered writing."
+      },
+      "statement": "The approximately 2600–1900 BCE urban phase supplies a study window for Indus seals and their undeciphered writing.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2600,
+          "latest": -2600,
+          "original": "Approximately 2600 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1900,
+          "latest": -1900,
+          "original": "Approximately 1900 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "indus-expansion-seal-window-evidence"
+      ],
+      "reviewId": "indus-expansion-seal-window-review",
+      "disputeNote": "Broad research window, not the precise date of seal HR 743."
+    },
+    {
+      "id": "indus-expansion-seal-writing",
+      "subjectId": "indus-seals",
+      "predicate": "seal-writing",
+      "value": {
+        "type": "text",
+        "text": "Indus seals carry a writing system that remains undeciphered."
+      },
+      "statement": "Indus seals carry a writing system that remains undeciphered.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-seal-writing-evidence"
+      ],
+      "reviewId": "indus-expansion-seal-writing-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-seal-example",
+      "subjectId": "indus-seals",
+      "predicate": "seal-example",
+      "value": {
+        "type": "text",
+        "text": "Mohenjo-daro seal HR 743 is glazed steatite with eight signs above a one-horned animal and a perforated boss on the reverse."
+      },
+      "statement": "Mohenjo-daro seal HR 743 is glazed steatite with eight signs above a one-horned animal and a perforated boss on the reverse.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-seal-example-evidence"
+      ],
+      "reviewId": "indus-expansion-seal-example-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-seal-point",
+      "subjectId": "indus-seals",
+      "predicate": "seal-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          68.1388888888889,
+          27.329166666666666
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Archaeological site reference for orientation, not a precise house, workshop or territorial outline.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-seal-point-evidence"
+      ],
+      "reviewId": "indus-expansion-seal-point-review",
+      "disputeNote": "UNESCO gives N27 19 45 E68 8 20. Converted as degrees + minutes/60 + seconds/3600, longitude first."
+    },
+    {
+      "id": "indus-expansion-trade-window",
+      "subjectId": "indus-trade",
+      "predicate": "trade-window",
+      "value": {
+        "type": "text",
+        "text": "The approximately 2600–1900 BCE urban phase includes western trading connections of Harappa and Mohenjo-daro."
+      },
+      "statement": "The approximately 2600–1900 BCE urban phase includes western trading connections of Harappa and Mohenjo-daro.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2600,
+          "latest": -2600,
+          "original": "Approximately 2600 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1900,
+          "latest": -1900,
+          "original": "Approximately 1900 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "indus-expansion-trade-window-evidence"
+      ],
+      "reviewId": "indus-expansion-trade-window-review",
+      "disputeNote": "Editorial window, not dates of a particular journey or of the individual weights."
+    },
+    {
+      "id": "indus-expansion-trade-weights",
+      "subjectId": "indus-trade",
+      "predicate": "trade-weights",
+      "value": {
+        "type": "text",
+        "text": "Excavated Harappa weights follow graduated standards; their use in trade regulation is an interpretation and tax collection is only a possibility."
+      },
+      "statement": "Excavated Harappa weights follow graduated standards; their use in trade regulation is an interpretation and tax collection is only a possibility.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-trade-weights-evidence"
+      ],
+      "reviewId": "indus-expansion-trade-weights-review",
+      "disputeNote": null
+    },
+    {
+      "id": "indus-expansion-trade-point",
+      "subjectId": "indus-trade",
+      "predicate": "trade-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          72.8639,
+          30.6361
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Archaeological site reference for orientation, not a precise house, workshop or territorial outline.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern archaeological site reference; not a dated personal location",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-trade-point-evidence"
+      ],
+      "reviewId": "indus-expansion-trade-point-review",
+      "disputeNote": "Getty TGN 8039784 is the archaeological site, distinct from modern Harappa. Published decimal longitude 72.8639 and latitude 30.6361. The conflicting coordinate in UNESCO tentative list 1878 is not used."
+    },
+    {
+      "id": "indus-expansion-mohenjo-writing",
+      "subjectId": "mohenjo-daro",
+      "predicate": "seal-writing",
+      "value": {
+        "type": "text",
+        "text": "Indus seals carry a writing system that remains undeciphered."
+      },
+      "statement": "Indus seals carry a writing system that remains undeciphered.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "indus-expansion-mohenjo-writing-evidence"
+      ],
+      "reviewId": "indus-expansion-mohenjo-writing-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -2145,6 +3012,249 @@
       "note": "Context for Khufu’s reign; Snefru’s building projects preceded it. This does not date individual construction stages.",
       "relation": "supports",
       "reviewId": "global-khufu-reign-4-review"
+    },
+    {
+      "id": "indus-expansion-overview-cities-evidence",
+      "claimId": "indus-expansion-overview-cities",
+      "sourceId": "indus-expansion-source-met",
+      "locator": "Timeline; Overview; Key Events, 2600–1900 BCE",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-overview-cities-review"
+    },
+    {
+      "id": "indus-expansion-overview-dholavira-evidence",
+      "claimId": "indus-expansion-overview-dholavira",
+      "sourceId": "indus-expansion-source-dhol",
+      "locator": "Description; Brief synthesis; Criteria (iii) and (iv); coordinate",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-overview-dholavira-review"
+    },
+    {
+      "id": "indus-expansion-harappa-window-evidence",
+      "claimId": "indus-expansion-harappa-window",
+      "sourceId": "indus-expansion-source-harappa",
+      "locator": "Introduction and Table 1, Harappa Chronology",
+      "note": "Table 1, Periods 3A–3C. Editorial city study window, not the lifespan of the settlement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-harappa-window-review"
+    },
+    {
+      "id": "indus-expansion-harappa-remains-evidence",
+      "claimId": "indus-expansion-harappa-remains",
+      "sourceId": "indus-expansion-source-harappa",
+      "locator": "Introduction and Table 1, Harappa Chronology",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-harappa-remains-review"
+    },
+    {
+      "id": "indus-expansion-harappa-craft-context-evidence",
+      "claimId": "indus-expansion-harappa-craft-context",
+      "sourceId": "indus-expansion-source-craft",
+      "locator": "Research summary, first two paragraphs and drill illustration caption",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-harappa-craft-context-review"
+    },
+    {
+      "id": "indus-expansion-harappa-point-evidence",
+      "claimId": "indus-expansion-harappa-point",
+      "sourceId": "indus-expansion-source-getty",
+      "locator": "Coordinates, place types and geographic hierarchy",
+      "note": "Getty TGN 8039784 is the archaeological site, distinct from modern Harappa. Published decimal longitude 72.8639 and latitude 30.6361. The conflicting coordinate in UNESCO tentative list 1878 is not used.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-harappa-point-review"
+    },
+    {
+      "id": "indus-expansion-mohenjo-window-evidence",
+      "claimId": "indus-expansion-mohenjo-window",
+      "sourceId": "indus-expansion-source-met",
+      "locator": "Timeline; Overview; Key Events, 2600–1900 BCE",
+      "note": "Editorial comparison window. UNESCO uses a broader chronology; this is not an exact founding or abandonment date.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-mohenjo-window-review"
+    },
+    {
+      "id": "indus-expansion-mohenjo-city-evidence",
+      "claimId": "indus-expansion-mohenjo-city",
+      "sourceId": "indus-expansion-source-mohenjo",
+      "locator": "Brief synthesis, city layout and drainage; property coordinate",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-mohenjo-city-review"
+    },
+    {
+      "id": "indus-expansion-mohenjo-seal-context-evidence",
+      "claimId": "indus-expansion-mohenjo-seal-context",
+      "sourceId": "indus-expansion-source-seal",
+      "locator": "Slide 25, inscription, material and catalogue identification",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-mohenjo-seal-context-review"
+    },
+    {
+      "id": "indus-expansion-mohenjo-point-evidence",
+      "claimId": "indus-expansion-mohenjo-point",
+      "sourceId": "indus-expansion-source-mohenjo",
+      "locator": "Brief synthesis, city layout and drainage; property coordinate",
+      "note": "UNESCO gives N27 19 45 E68 8 20. Converted as degrees + minutes/60 + seconds/3600, longitude first.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-mohenjo-point-review"
+    },
+    {
+      "id": "indus-expansion-dholavira-dates-evidence",
+      "claimId": "indus-expansion-dholavira-dates",
+      "sourceId": "indus-expansion-source-dhol",
+      "locator": "Description; Brief synthesis; Criteria (iii) and (iv); coordinate",
+      "note": "Source-specific broad occupation range; individual structures changed through time.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-dholavira-dates-review"
+    },
+    {
+      "id": "indus-expansion-dholavira-city-evidence",
+      "claimId": "indus-expansion-dholavira-city",
+      "sourceId": "indus-expansion-source-dhol",
+      "locator": "Description; Brief synthesis; Criteria (iii) and (iv); coordinate",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-dholavira-city-review"
+    },
+    {
+      "id": "indus-expansion-dholavira-point-evidence",
+      "claimId": "indus-expansion-dholavira-point",
+      "sourceId": "indus-expansion-source-dholmap",
+      "locator": "Property 1645 geographical data",
+      "note": "UNESCO property 1645 gives N23 53 18.27 E70 12 47.89. Converted as degrees + minutes/60 + seconds/3600, longitude first.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-dholavira-point-review"
+    },
+    {
+      "id": "indus-expansion-dholavira-water-window-evidence",
+      "claimId": "indus-expansion-dholavira-water-window",
+      "sourceId": "indus-expansion-source-dhol",
+      "locator": "Description; Brief synthesis; Criteria (iii) and (iv); coordinate",
+      "note": "Not a construction interval for every reservoir, nor continuous operation of an unchanged system.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-dholavira-water-window-review"
+    },
+    {
+      "id": "indus-expansion-dholavira-water-system-evidence",
+      "claimId": "indus-expansion-dholavira-water-system",
+      "sourceId": "indus-expansion-source-dhol",
+      "locator": "Description; Brief synthesis; Criteria (iii) and (iv); coordinate",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-dholavira-water-system-review"
+    },
+    {
+      "id": "indus-expansion-dholavira-water-point-evidence",
+      "claimId": "indus-expansion-dholavira-water-point",
+      "sourceId": "indus-expansion-source-dholmap",
+      "locator": "Property 1645 geographical data",
+      "note": "UNESCO property 1645 gives N23 53 18.27 E70 12 47.89. Converted as degrees + minutes/60 + seconds/3600, longitude first.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-dholavira-water-point-review"
+    },
+    {
+      "id": "indus-expansion-craft-window-evidence",
+      "claimId": "indus-expansion-craft-window",
+      "sourceId": "indus-expansion-source-craft",
+      "locator": "Research summary, first two paragraphs and drill illustration caption",
+      "note": "Editorial window; the source describes craft continuities before and after the urban phase.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-craft-window-review"
+    },
+    {
+      "id": "indus-expansion-craft-production-evidence",
+      "claimId": "indus-expansion-craft-production",
+      "sourceId": "indus-expansion-source-craft",
+      "locator": "Research summary, first two paragraphs and drill illustration caption",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-craft-production-review"
+    },
+    {
+      "id": "indus-expansion-craft-point-evidence",
+      "claimId": "indus-expansion-craft-point",
+      "sourceId": "indus-expansion-source-getty",
+      "locator": "Coordinates, place types and geographic hierarchy",
+      "note": "Getty TGN 8039784 is the archaeological site, distinct from modern Harappa. Published decimal longitude 72.8639 and latitude 30.6361. The conflicting coordinate in UNESCO tentative list 1878 is not used.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-craft-point-review"
+    },
+    {
+      "id": "indus-expansion-seal-window-evidence",
+      "claimId": "indus-expansion-seal-window",
+      "sourceId": "indus-expansion-source-met",
+      "locator": "Timeline; Overview; Key Events, 2600–1900 BCE",
+      "note": "Broad research window, not the precise date of seal HR 743.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-seal-window-review"
+    },
+    {
+      "id": "indus-expansion-seal-writing-evidence",
+      "claimId": "indus-expansion-seal-writing",
+      "sourceId": "indus-expansion-source-met",
+      "locator": "Timeline; Overview; Key Events, 2600–1900 BCE",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-seal-writing-review"
+    },
+    {
+      "id": "indus-expansion-seal-example-evidence",
+      "claimId": "indus-expansion-seal-example",
+      "sourceId": "indus-expansion-source-seal",
+      "locator": "Slide 25, inscription, material and catalogue identification",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-seal-example-review"
+    },
+    {
+      "id": "indus-expansion-seal-point-evidence",
+      "claimId": "indus-expansion-seal-point",
+      "sourceId": "indus-expansion-source-mohenjo",
+      "locator": "Brief synthesis, city layout and drainage; property coordinate",
+      "note": "UNESCO gives N27 19 45 E68 8 20. Converted as degrees + minutes/60 + seconds/3600, longitude first.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-seal-point-review"
+    },
+    {
+      "id": "indus-expansion-trade-window-evidence",
+      "claimId": "indus-expansion-trade-window",
+      "sourceId": "indus-expansion-source-met",
+      "locator": "Timeline; Overview; Key Events, 2600–1900 BCE",
+      "note": "Editorial window, not dates of a particular journey or of the individual weights.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-trade-window-review"
+    },
+    {
+      "id": "indus-expansion-trade-weights-evidence",
+      "claimId": "indus-expansion-trade-weights",
+      "sourceId": "indus-expansion-source-weights",
+      "locator": "Slide 21, description and interpretation",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-trade-weights-review"
+    },
+    {
+      "id": "indus-expansion-trade-point-evidence",
+      "claimId": "indus-expansion-trade-point",
+      "sourceId": "indus-expansion-source-getty",
+      "locator": "Coordinates, place types and geographic hierarchy",
+      "note": "Getty TGN 8039784 is the archaeological site, distinct from modern Harappa. Published decimal longitude 72.8639 and latitude 30.6361. The conflicting coordinate in UNESCO tentative list 1878 is not used.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-trade-point-review"
+    },
+    {
+      "id": "indus-expansion-mohenjo-writing-evidence",
+      "claimId": "indus-expansion-mohenjo-writing",
+      "sourceId": "indus-expansion-source-met",
+      "locator": "Timeline; Overview; Key Events, 2600–1900 BCE",
+      "note": "Inspected the cited passage; supports the bounded statement.",
+      "relation": "supports",
+      "reviewId": "indus-expansion-mohenjo-writing-review"
     }
   ],
   "reviews": [
@@ -2462,6 +3572,195 @@
       "date": "2026-11-22",
       "decision": "verified",
       "reason": "Checked the Dynasty 4 section against the expanded reader-facing account, including succession, pyramid development and royal administration."
+    },
+    {
+      "id": "indus-expansion-overview-cities-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-overview-dholavira-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-harappa-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-harappa-remains-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-harappa-craft-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-harappa-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Checked site identity and coordinate order; converted DMS arithmetically where required."
+    },
+    {
+      "id": "indus-expansion-mohenjo-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-mohenjo-city-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-mohenjo-seal-context-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-mohenjo-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Checked site identity and coordinate order; converted DMS arithmetically where required."
+    },
+    {
+      "id": "indus-expansion-dholavira-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-dholavira-city-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-dholavira-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Checked site identity and coordinate order; converted DMS arithmetically where required."
+    },
+    {
+      "id": "indus-expansion-dholavira-water-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-dholavira-water-system-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-dholavira-water-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Checked site identity and coordinate order; converted DMS arithmetically where required."
+    },
+    {
+      "id": "indus-expansion-craft-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-craft-production-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-craft-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Checked site identity and coordinate order; converted DMS arithmetically where required."
+    },
+    {
+      "id": "indus-expansion-seal-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-seal-writing-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-seal-example-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-seal-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Checked site identity and coordinate order; converted DMS arithmetically where required."
+    },
+    {
+      "id": "indus-expansion-trade-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-trade-weights-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
+    },
+    {
+      "id": "indus-expansion-trade-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Checked site identity and coordinate order; converted DMS arithmetically where required."
+    },
+    {
+      "id": "indus-expansion-mohenjo-writing-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Opened and inspected the named passage. Checked the entry wording and preserved uncertainty. Display windows do not imply continuous activity in each year."
     }
   ],
   "accounts": []
