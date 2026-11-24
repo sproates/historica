@@ -19,7 +19,7 @@ pageTest('alexander','Alexander ships readable history, comparisons, timeline an
   for(const lane of page.timeline.lanes)assert.ok(html.includes(`aria-label="${lane.name}"`),lane.name);
   for(const source of page.references)assert.ok(html.includes(source.replaceAll('&','&amp;')),source);
   assert.match(html,/<noscript>/);
-  assert.match(html,/href="\/person\/philip"/);
+  assert.match(html,/href="\/person\/philip\/"/);
   assert.match(html,/name="robots" content="noindex, follow"/);
   assert.match(html,/Historica is an open source site on/);
 });
@@ -29,7 +29,11 @@ pageTest('alexander','static map fits the actual associated points and contains 
   assert.ok(camera.w<720);
   assert.ok(html.includes(`viewBox="${camera.x} ${camera.y} ${camera.w} ${camera.w/2}"`));
   assert.equal((html.match(/class="map-marker"/g)||[]).length,page.places.length);
-  assert.ok((html.match(/<path /g)||[]).length>=page.land.length);
+  const asset=JSON.parse(fs.readFileSync('web/data/map-assets.json','utf8')).land;
+  assert.ok(html.includes(`href="${asset}"`));
+  const svg=fs.readFileSync('web/'+asset.split('#')[0],'utf8');
+  assert.equal((svg.match(/<path /g)||[]).length,page.land.length);
+  assert.ok(Buffer.byteLength(html)<200_000,'History HTML must not embed the full world map');
   for(const a of page.places)assert.ok(html.includes(a.label),a.label);
 });
 
@@ -52,7 +56,7 @@ pageTest('socrates','Socrates is a static page with the war comparison and check
   assert.ok(html.includes(dates(-469,-399)));
   assert.ok(page.checked.length>0);
   for(const claim of page.checked)for(const source of claim.citations)assert.ok(html.includes(source.url.replaceAll('&','&amp;')),source.url);
-  assert.match(html,/href="https:\/\/historica.online\/person\/socrates"/);
+  assert.match(html,/href="https:\/\/historica.online\/person\/socrates\/"/);
 });
 
 pageTest('egypt','Egypt renders a study window and a fitted geographical reference rather than a lifespan',()=>{
@@ -67,7 +71,7 @@ pageTest('egypt','Egypt renders a study window and a fitted geographical referen
   const camera=fitMapCamera([...page.places.map(a=>xy(a.point)),xy(page.focusPoint)]);
   assert.ok(camera.w<720);
   assert.ok(html.includes(`viewBox="${camera.x} ${camera.y} ${camera.w} ${camera.w/2}"`));
-  assert.match(html,/href="https:\/\/historica.online\/area\/egypt"/);
+  assert.match(html,/href="https:\/\/historica.online\/area\/egypt\/"/);
 });
 
 test('every history route retains the controller hooks exactly once',()=>{
@@ -92,7 +96,7 @@ test('all published histories have static routes, readable dates and canonical m
     const html=fs.readFileSync(`${output}${route}/index.html`,'utf8');
     assert.ok(html.includes(`data-static-history="${e.id}"`),route);
     assert.ok(html.includes(dates(e.startYear,e.endYear)),route);
-    assert.ok(html.includes(`href="https://historica.online${route}"`),route);
+    assert.ok(html.includes(`href="https://historica.online${route}/"`),route);
     assert.doesNotMatch(html,/(?:NaN|Infinity)(?:%|px|;|\s)/,route);
   }
 });

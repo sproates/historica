@@ -1,15 +1,17 @@
 ---
+import fs from 'node:fs';
 import {dates,xy} from '../../scripts/static/history-page.ts';
 import {fitMapCamera} from '../domain/map-camera';
 import type {HistoryPage} from '../presentation/history-page';
 interface Props {page: HistoryPage}
 const {page}=Astro.props;
-const {focus:f,places,land,state}=page;
+const {focus:f,places,state}=page;
+const landAsset=JSON.parse(fs.readFileSync('web/data/map-assets.json','utf8')).land;
 const camera=fitMapCamera(page.regionPoints.length?page.regionPoints.map(xy):[...places.map(a=>xy(a.point)),...(page.focusPoint?[xy(page.focusPoint)]:[])]);
 ---
 <svg tabindex="0" id="focus-map" viewBox={`${camera.x} ${camera.y} ${camera.w} ${camera.w/2}`} role="group" aria-label="Interactive map. Drag to pan, use plus and minus to zoom, or arrow keys to move.">
   <title>Places associated with {f.title} in {dates(state.start,state.end)}</title>
-  <g fill="#dfe6d8" class="modern-land" stroke="#a6b8aa" stroke-width=".35" fill-rule="evenodd">{land.map(d=><path d={d}/>)}</g>
+  <g fill="#dfe6d8" class="modern-land" stroke="#a6b8aa" stroke-width=".35" fill-rule="evenodd"><use href={landAsset}/></g>
   {page.bactriaOutline&&<path d={page.bactriaOutline} fill="#c49a4440" stroke="#a77527" stroke-dasharray="4 3" stroke-width="1.3"/>}
   {page.regionPaths.length>0&&<g class="focus-region" fill="#60957d" stroke="none" fill-rule="evenodd"><title>Britain and Ireland · present-day land outline for orientation, not ancient borders</title>{page.regionPaths.map(d=><path d={d}/>)}</g>}
   {page.focusPoint&&<circle cx={xy(page.focusPoint)[0]} cy={xy(page.focusPoint)[1]} r="15" fill="none" stroke="#285b4d" stroke-width="2"><title>Focus area reference: {f.title}</title></circle>}

@@ -14,7 +14,7 @@ const {focus}=Astro.props;
   <base href="/" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <PageMetadata title={`${focus.title} · Historica`} description={description(focus.description)} path={`/${focus.type}/${focus.id}`} noindex />
+  <PageMetadata title={`${focus.title} · Historica`} description={description(focus.description)} path={`/${focus.type}/${focus.id}/`} noindex />
   <link rel="stylesheet" href={styleUrl('focus.css')} />
   <link rel="stylesheet" href={styleUrl('branding.css')} />
   <Appearance />

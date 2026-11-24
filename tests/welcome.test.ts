@@ -6,7 +6,7 @@ import {once} from 'node:events';
 const read=path=>fs.readFileSync(path,'utf8');
 test('front page and About links point to published histories and creator profiles',()=>{
  const home=read('web/index.html'),about=read('web/about.html'),routes=JSON.parse(read('web/data/routes.json'));
- for(const match of home.matchAll(/href="(\/(?:person|period|area|event|state|city)\/[^"?]+)(?:\?[^\"]*)?"/g))assert.ok(routes.includes(match[1]),match[1]);
+ for(const match of home.matchAll(/href="(\/(?:person|period|area|event|state|city)\/[^"?]+)(?:\?[^\"]*)?"/g))assert.ok(routes.includes(match[1].replace(/\/$/,'')),match[1]);
  for(const url of ['https://sproates.net','https://www.linkedin.com/in/sproates/','https://github.com/sproates'])assert.ok(about.includes(`href="${url}"`));
  assert.match(home,/generated\/explorer\/home-[A-Z0-9]+\.js/);assert.ok(!home.includes('generated/entrypoints/focus-app.js'));
  assert.ok(read('web/focus.html').includes('generated/entrypoints/focus-app.js'));

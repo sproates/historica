@@ -40,7 +40,7 @@ export function encodeView(state: FocusState, view: ViewState, data: FocusData, 
   if (view.evidence) p.set('evidence','1');
   if (view.envelope.start !== Math.min(state.start,f.startYear)) p.set('rangeFrom',String(view.envelope.start));
   if (view.envelope.end !== Math.max(state.end,f.endYear)) p.set('rangeTo',String(view.envelope.end));
-  return base + `${f.type}/${encodeURIComponent(f.id)}` + (p.size ? '?' + p : '');
+  return base + `${f.type}/${encodeURIComponent(f.id)}/` + (p.size ? '?' + p : '');
 }
 
 export function decodeView(address: string, data: FocusData, base = '/'): ExplorerSnapshot {

@@ -23,7 +23,7 @@ test('date labels distinguish reigns, lives, archaeological snapshots and editor
 });
 test('year and two-person selection survive canonical bookmarks; malformed values are rejected',()=>{
  const decoded=decodeView('/person/a?year=1&person=a&person=b',data);
- assert.equal(decoded.view.moment,1);assert.deepEqual(decoded.view.people,['a','b']);assert.equal(encodeView(decoded.state,decoded.view,data),'/person/a?year=1&person=a&person=b');
+ assert.equal(decoded.view.moment,1);assert.deepEqual(decoded.view.people,['a','b']);assert.equal(encodeView(decoded.state,decoded.view,data),'/person/a/?year=1&person=a&person=b');
  assert.equal(decodeView('/person/a?year=0',data).view.moment,null);
  assert.deepEqual(decodeView('/person/a?person=a&person=a',data).view.people,[]);
  assert.equal(decodeView('/person/a?year=100',data).view.moment,10);

@@ -156,3 +156,24 @@ Browse request lists contain neither country geometry nor tiles. Normal map entr
 The application records `historica-map-first-tile`, `historica-map-results-ready` and `historica-browse-ready` performance marks. The first marks a successful tile load, not complete map coverage. Lighthouse reports retain the marks, but their observed local timings mustn't be compared directly with simulated LCP.
 
 Reports and the mobile preview screenshot are in ignored `release/performance-2026-11-24/startup/`. The initial exploratory map run predates the final sheet-sizing adjustment; the final map mobile comparison uses runs 2–4. Targeted explorer and static-page tests pass, as does the preview build. After preview approval and release, repeat the production measurements and review Cloudflare once it has enough new observations.
+
+## Shared-map implementation preview, 24 November
+
+The second part is on `perf/compact-history-maps`, based on the startup branch. The Wi-Fi preview includes both changes; neither has been published.
+
+History pages reference one content-hashed SVG for modern borders instead of embedding the world geometry in every document. It uses the same vertices and rings, with projected coordinates rounded to two decimal places. The maximum rounding error per coordinate is 0.0025 degree. Historical overlays, markers and area highlights remain in the document. The shared SVG works without JavaScript and is reused when the interactive renderer updates the map.
+
+Country search now uses generated names and mainland bounds. The build uses the existing component-selection and date-line logic, and tests compare every generated country's bounds with the original geometry. Country geometry is no longer downloaded for search. Internal history links, bookmark output, canonical metadata and sitemap entries use the served trailing-slash path; decoding still accepts old links.
+
+| Asset | Before, uncompressed | Preview, uncompressed | Preview gzip estimate |
+| --- | ---: | ---: | ---: |
+| Alexander HTML | 2,469,121 bytes | 78,845 bytes | 13,591 bytes |
+| Britain and Ireland HTML | 2,515,381 bytes | 113,858 bytes | 23,457 bytes |
+| Country search | 2,294,670 bytes of full geography | 24,448 bytes | 9,208 bytes |
+| Shared modern borders | Embedded separately in every history page | 1,324,899 bytes, reusable SVG | 457,712 bytes |
+
+These gzip figures are local estimates, not measured production transfers. The history-document budget is met. The provisional 150 KiB initial-geography budget isn't: the first history visit still downloads about 447 KiB of compressed world geometry. This version preserves every island and border vertex rather than introducing unverified simplification. The main improvement is that this download no longer delays the initial history text and isn't repeated as part of each page's HTML. Smaller shared geography remains an opportunity if production measurements justify it.
+
+Three sequential mobile Lighthouse audits of the final preview's `/person/alexander/` scored 100, with LCP between 1.354 and 1.356 seconds and CLS 0 in every run. No audit warnings were reported. The local server sends uncompressed assets, and the network differs from production, so compare these with the earlier live results cautiously. Reports are retained in `release/performance-2026-11-24/compact-maps/`.
+
+The static build checks passed for all 234 pages. Runtime and packaging tests were run; two expectations still required the old unsuffixed URL and passed after correction. Browser checks covered the shared map after zooming, Britain and Ireland's highlight, country search and Russia's framing, and the mobile map in dark mode. No production, DNS or cache configuration was changed.

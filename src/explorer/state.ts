@@ -14,3 +14,5 @@ export function mainCountryRing(country:Country):[number,number][]{
  const rings=polygons.map(p=>p[0]!.map(unwrap));
  return rings.find(ring=>inside([lon,lat],ring))||rings[0]||[];
 }
+
+export interface CountrySearch {name:string;code:string;bounds:[number,number,number,number]}
