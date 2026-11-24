@@ -33,7 +33,7 @@ test('Pages build serves every current route without Apache and confines staging
  } finally {fs.rmSync(root,{recursive:true,force:true});}
 });
 test('internal documentation is the only shortcut; content and unknown changes run site checks',()=>{
- assert.equal(changeScope(['project/roadmap.md','README.md']),'docs');
+ assert.equal(changeScope(['project/roadmap.md','README.md','ARCHITECTURE.md']),'docs');
  for(const files of [[],['content/people/alexander.md'],['research/sources/a.md'],['README.md','web/generated/entrypoints/home.js'],['.github/workflows/verify.yml']])assert.equal(changeScope(files),'site');
 });
 test('mounted paths keep root deployment and GitHub project deployment consistent',()=>{
