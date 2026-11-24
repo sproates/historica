@@ -19,7 +19,11 @@ for(const [id,route] of [['home','index.html'],['about','about/index.html']]){
    assert.ok(actual.includes('data-theme-toggle'));
    assert.ok(actual.includes('/period/predynastic-egypt'));
    assert.ok(!actual.includes('design-preview/'));
-   assert.ok(actual.includes('id="browse-results"><a'), 'Static browsing works before JavaScript');
+   assert.ok(actual.includes('id="browse-results" data-initial><a'), 'Static browsing works before JavaScript');
+   assert.ok(actual.indexOf('dataset.explorerView') < actual.indexOf('<body'), 'Requested view is selected before body paint');
+   assert.ok(!actual.includes('id="explorer" hidden'), 'Map mode is not hidden until the history request completes');
+   const initialEntries=actual.match(/class="browse-entry"[^>]*><strong>.*?<\/strong><small>.*?<\/small><p>.*?<\/p><\/a>/g)||[];
+   assert.ok(initialEntries.length>24,'Static fallback includes descriptions beyond the enhanced first page');
    const structured=actual.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1];
    assert.equal(JSON.parse(structured).name,'Historica');
    for(const route of ['/period/stonehenge','/person/socrates','/person/alexander','/person/julius-caesar?kind=person'])assert.ok(actual.includes(`href="${route}"`));

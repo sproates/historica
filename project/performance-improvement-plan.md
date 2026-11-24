@@ -133,3 +133,26 @@ npm exec --yes --package=lighthouse@13.6.0 -- lighthouse https://historica.onlin
 ```
 
 Use `--preset=desktop` for desktop. Run audits sequentially so they don't compete for CPU. Preserve each repeat's report rather than overwriting it.
+
+## Startup implementation preview, 24 November
+
+The first part is implemented on `perf/explorer-startup` and available on the persistent Wi-Fi preview. It hasn't been published. The requested Map or Browse layout is selected before the body paints. Browse's generated entries now include the same summaries as the interactive list, while the complete collection remains available without JavaScript.
+
+The basemap and history requests start independently. Country geometry is fetched when country search is opened, or when restoring an old country-only bookmark. Browse doesn't initialise the map camera or fetch tiles or country geometry. A country-data failure no longer rejects the history request. Saved filters, map framing and the mobile sheet were checked in the browser, in light and dark modes.
+
+### Preview measurements
+
+The same Lighthouse version and simulated device settings were used against the Wi-Fi preview. This is a different server from production: it serves uncompressed local files and has different connection latency. These results verify layout stability and request behaviour; they aren't a forecast of production LCP or transfer size.
+
+| Preview | Runs | CLS | LCP |
+| --- | ---: | ---: | ---: |
+| Map, mobile | 3, final build | 0.074 in every run | Approximately 4.2 s |
+| Map, desktop | 1 | 0.031 | 0.94 s |
+| Browse, mobile | 3 | 0 in every run | Median 1.35 s; range 1.35–2.30 s |
+| Browse, desktop | 1 | 0 | 0.36 s |
+
+Browse request lists contain neither country geometry nor tiles. Normal map entry also avoids country geometry. The large country file is still used for country search; shrinking it and the inline geography on history pages remains the second part of this plan.
+
+The application records `historica-map-first-tile`, `historica-map-results-ready` and `historica-browse-ready` performance marks. The first marks a successful tile load, not complete map coverage. Lighthouse reports retain the marks, but their observed local timings mustn't be compared directly with simulated LCP.
+
+Reports and the mobile preview screenshot are in ignored `release/performance-2026-11-24/startup/`. The initial exploratory map run predates the final sheet-sizing adjustment; the final map mobile comparison uses runs 2–4. Targeted explorer and static-page tests pass, as does the preview build. After preview approval and release, repeat the production measurements and review Cloudflare once it has enough new observations.

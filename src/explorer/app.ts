@@ -16,10 +16,21 @@ let browseLimit=24;
 let entries:Entry[]=[],associations:Association[]=[],places:Place[]=[];
 
 let countries:Country[]=[];
+let countryRequest:Promise<void>|undefined,countryFailed=false;
+function loadCountries(){
+ if(countryRequest)return countryRequest;
+ countryRequest=(async()=>{
+  try{const response=await fetch(sitePath('data/ne_50m_admin_0_countries.json'));if(!response.ok)throw Error('Countries unavailable');countries=(await response.json()).features;}
+  catch{countryFailed=true;}
+  if(document.activeElement===el('search'))search(el<HTMLInputElement>('search').value);
+ })();
+ return countryRequest;
+}
 let selected:Place[]|null=null,selectionTitle='',currentPlaces:Place[]=[];
 let markers=L.layerGroup(),homeBounds:L.LatLngBounds|null=null;
 let sheetSnap:'peek'|'middle'|'full'='middle';
-let settling=false,ready=false;
+let settling=false,ready=false,cameraReady=false;
+const markOnce=(name:string)=>{if(!performance.getEntriesByName(name).length)performance.mark(name);};
 const map=L.map('map',{zoomControl:false,attributionControl:false,inertia:true,inertiaDeceleration:2200,inertiaMaxSpeed:1800,touchZoom:true,zoomSnap:.25,zoomDelta:.75,worldCopyJump:true,minZoom:2,maxZoom:17,zoomAnimation:!reduced,fadeAnimation:!reduced,markerZoomAnimation:!reduced});
 let tiles:L.TileLayer|undefined,providerRequest:Promise<void>|undefined;
 function loadBasemap(){
@@ -34,6 +45,7 @@ function loadBasemap(){
    if(typeof tileUrl!=='string'||!tileUrl.startsWith('https://')||typeof credit!=='string'||typeof creditUrl!=='string'||!creditUrl.startsWith('https://'))throw Error('Invalid map service');
    const attribution=el<HTMLAnchorElement>('tile-credit');attribution.textContent=credit;attribution.href=creditUrl;
    tiles=L.tileLayer(tileUrl,{maxZoom:typeof maxZoom==='number'?Math.max(2,Math.min(19,maxZoom)):19,keepBuffer:2,updateWhenIdle:true,referrerPolicy:'strict-origin-when-cross-origin'});
+   tiles.once('tileload',()=>markOnce('historica-map-first-tile'));
    let errors=0;tiles.on('tileerror',()=>{if(++errors>=3)el('map-warning').hidden=false;});tiles.on('tileload',()=>{errors=0;el('map-warning').hidden=true;});
    if(mode==='map')tiles.addTo(map);
   }catch{el('map-warning').hidden=false;}
@@ -47,7 +59,7 @@ function sizeSheet(snap:typeof sheetSnap){
  el('sheet-hint').textContent=expanded?'Pull down for more map':'Pull up for more';el('sheet-toggle').textContent=expanded?'More map ↓':'Expand list ↑';
 }
 
-function save(){if(!ready)return;const center=map.getCenter().wrap();const p=new URLSearchParams({from:String(from),to:String(to),lat:center.lat.toFixed(5),lng:center.lng.toFixed(5),zoom:map.getZoom().toFixed(2)});if(mode==='browse')p.set('view','browse');const bq=el<HTMLInputElement>('browse-query').value;if(bq)p.set('q',bq);const kind=el<HTMLSelectElement>('browse-kind').value;if(kind!=='all')p.set('type',kind);if(el<HTMLInputElement>('browse-dated').checked)p.set('dated','1');if(homeBounds)p.set('home',homeBounds.toBBoxString());if(selected)p.set('places',selected.map(p=>p.key).join(';'));window.history.replaceState(null,'','?'+p);rememberExplorer(base+'?'+p);}
+function save(){if(!ready)return;const p=new URLSearchParams({from:String(from),to:String(to)});if(cameraReady){const center=map.getCenter().wrap();p.set('lat',center.lat.toFixed(5));p.set('lng',center.lng.toFixed(5));p.set('zoom',map.getZoom().toFixed(2));}else for(const key of ['lat','lng','zoom'])if(query.has(key))p.set(key,query.get(key)!);if(mode==='browse')p.set('view','browse');const bq=el<HTMLInputElement>('browse-query').value;if(bq)p.set('q',bq);const kind=el<HTMLSelectElement>('browse-kind').value;if(kind!=='all')p.set('type',kind);if(el<HTMLInputElement>('browse-dated').checked)p.set('dated','1');if(homeBounds)p.set('home',homeBounds.toBBoxString());if(selected)p.set('places',selected.map(p=>p.key).join(';'));window.history.replaceState(null,'','?'+p);rememberExplorer(base+'?'+p);}
 function dateUI(){el('date-label').textContent=from===-5500&&to===200?'All dates · 5500 BCE–200 CE':`${year(from)} – ${year(to)}`;el('browse-dates').textContent=`${year(from)} – ${year(to)}`;el('axis').replaceChildren();for(const n of [from,to]){const label=document.createElement('span');label.textContent=year(n);el('axis').append(label);}}
 function openRoute(e:Entry){return sitePath(`/${e.type}/${e.id}?from=${from}&to=${to}`);}
 function listEntry(e:Entry){
@@ -86,7 +98,7 @@ function updateMap(){
   const choose=()=>{selected=cluster.places;selectionTitle=name;sizeSheet('middle');el('sheet-scroll').scrollTop=0;renderList();updateMarkerSelection();};
   marker.on('click',choose);const element=marker.getElement();element?.setAttribute('aria-label',`${name}, ${list.length} entries. Show histories.`);element?.addEventListener('keydown',e=>{if(e.key===' '){e.preventDefault();choose();}});
  }
- renderList();
+ renderList();markOnce('historica-map-results-ready');
 }
 function updateMarkerSelection(){// Rebuild only after a completed gesture or explicit selection, never during dragging.
  updateMap();
@@ -102,9 +114,10 @@ function search(term:string){const box=el('search-results');box.replaceChildren(
  function add(title:string,subtitle:string,action:()=>void){const button=document.createElement('button');button.className='search-result';const symbol=document.createElement('span');symbol.className='search-symbol';symbol.textContent='⌖';const text=document.createElement('span');const name=document.createElement('strong');name.textContent=title;const detail=document.createElement('small');detail.textContent=subtitle;text.append(name,detail);button.append(symbol,text);button.onclick=()=>{el<HTMLInputElement>('search').value='';el('clear-search').hidden=true;closeSearch();action();};box.append(button);}
  for(const c of countryMatches)add(c.properties.NAME,'Present-day country',()=>fitCountry(c));
  for(const p of matches){const dated=places.find(x=>x.key===p.key);add(p.name,`${p.entries.length} ${p.entries.length===1?'entry':'entries'}${dated?'':' · outside these dates'}`,()=>{if(!dated)applyPeriod(-5500,200);const match=places.find(x=>x.key===p.key)!;selected=[match];selectionTitle=match.name;sizeSheet('middle');homeBounds=L.latLngBounds([match.point[1],match.point[0]],[match.point[1],match.point[0]]);fitPlaces([match]);renderList();});}
+ if(!countries.length){const note=document.createElement('p');note.className='search-empty';note.textContent=countryFailed?'Country search is unavailable. Historical places are still searchable.':'Loading countries…';box.append(note);}
  if(!box.childElementCount){const note=document.createElement('p');note.className='search-empty';note.textContent='No matching country or recorded place.';box.append(note);}
 }
-el<HTMLInputElement>('search').addEventListener('input',e=>{const value=(e.target as HTMLInputElement).value;el('clear-search').hidden=!value;search(value);});el('search').addEventListener('focus',()=>{if(ready)search(el<HTMLInputElement>('search').value);});el('search').addEventListener('keydown',e=>{if(e.key==='Escape')closeSearch();if(e.key==='ArrowDown'){e.preventDefault();el('search-results').querySelector('button')?.focus();}});el('search-results').addEventListener('keydown',e=>{const buttons=[...el('search-results').querySelectorAll('button')],index=buttons.indexOf(document.activeElement as HTMLButtonElement);if(e.key==='Escape')closeSearch();if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();buttons[(index+(e.key==='ArrowDown'?1:-1)+buttons.length)%buttons.length]?.focus();}});el('clear-search').onclick=()=>{el<HTMLInputElement>('search').value='';search('');el<HTMLInputElement>('search').focus();};document.addEventListener('pointerdown',e=>{if(!(e.target as Element).closest('.search-wrap'))closeSearch();});
+el<HTMLInputElement>('search').addEventListener('input',e=>{const value=(e.target as HTMLInputElement).value;el('clear-search').hidden=!value;search(value);});el('search').addEventListener('focus',()=>{void loadCountries();search(el<HTMLInputElement>('search').value);});el('search').addEventListener('keydown',e=>{if(e.key==='Escape')closeSearch();if(e.key==='ArrowDown'){e.preventDefault();el('search-results').querySelector('button')?.focus();}});el('search-results').addEventListener('keydown',e=>{const buttons=[...el('search-results').querySelectorAll('button')],index=buttons.indexOf(document.activeElement as HTMLButtonElement);if(e.key==='Escape')closeSearch();if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();buttons[(index+(e.key==='ArrowDown'?1:-1)+buttons.length)%buttons.length]?.focus();}});el('clear-search').onclick=()=>{el<HTMLInputElement>('search').value='';search('');el<HTMLInputElement>('search').focus();};document.addEventListener('pointerdown',e=>{if(!(e.target as Element).closest('.search-wrap'))closeSearch();});
 function clearSelection(){selected=null;updateMap();}el('close-place').onclick=clearSelection;el('clear-place').onclick=clearSelection;el('zoom-place').onclick=()=>{if(selected)fitPlaces(selected);};
 el('zoom-in').onclick=()=>map.zoomIn();el('zoom-out').onclick=()=>map.zoomOut();el('reset-map').onclick=()=>{selected=null;sizeSheet('middle');if(homeBounds)map.flyToBounds(homeBounds,padding());};el('world').onclick=()=>{selected=null;sizeSheet('peek');map.flyTo([25,15],2,{animate:!reduced,duration:.8});};
 map.on('dragstart',()=>{selected=null;settling=true;closeSearch();if(mobile()&&sheetSnap==='full')sizeSheet('middle');el('result-count').textContent='Looking around…';});map.on('zoomstart',()=>{settling=true;});map.on('moveend',()=>{settling=false;updateMap();});map.on('click',()=>{if(selected)clearSelection();});
@@ -124,13 +137,13 @@ function renderBrowse(){
  el('browse-clear').hidden=!term;el('starting-points').hidden=!!term||kind!=='all'||dated;
  el('browse-results-heading').textContent=term?'Search results':'Browse the collection';
  el('browse-status').textContent=`${matches.length} ${matches.length===1?'entry':'entries'}${dated?' within these dates':' across the collection'}`;
- const list=el('browse-results');list.replaceChildren();
+ const list=el('browse-results');list.removeAttribute('data-initial');delete document.documentElement.dataset.browseFiltered;list.replaceChildren();
  for(const e of matches.slice(0,browseLimit)){const a=document.createElement('a');a.className='browse-entry';a.href=dated?openRoute(e):sitePath(`/${e.type}/${e.id}`);const title=document.createElement('strong');title.textContent=e.title;const dates=document.createElement('small');dates.textContent=`${e.type} · ${year(e.startYear)} – ${year(e.endYear)}`;const summary=document.createElement('p');const text=e.description?.split('\n')[0]||'';summary.textContent=text.length>190?text.slice(0,187)+'…':text;a.append(title,dates,summary);list.append(a);}
  if(!matches.length){const p=document.createElement('p');p.textContent='No matching entries. Try another name, or turn off the date filter.';list.append(p);}
- el('browse-more').hidden=matches.length<=browseLimit;save();
+ el('browse-more').hidden=matches.length<=browseLimit;markOnce('historica-browse-ready');save();
 }
 function switchView(next:string){
- mode=next;closeSearch();map.stop();if(mode==='map')loadBasemap();else if(tiles)map.removeLayer(tiles);el('explorer').hidden=mode==='browse';el('browse').hidden=mode==='map';
+ mode=next;document.documentElement.dataset.explorerView=mode;closeSearch();map.stop();el('explorer').hidden=mode==='browse';el('browse').hidden=mode==='map';if(mode==='map'){sizeSheet(sheetSnap);ensureCamera();loadBasemap();}else if(tiles)map.removeLayer(tiles);
  el('view-map').setAttribute('aria-pressed',String(mode==='map'));el('view-browse').setAttribute('aria-pressed',String(mode==='browse'));
  if(mode==='map'){map.invalidateSize({pan:true,animate:false});updateMap();}else renderBrowse();save();
 }
@@ -142,18 +155,24 @@ for(const id of ['browse-query','browse-kind','browse-dated'])el(id).addEventLis
 el('browse-clear').onclick=()=>{el<HTMLInputElement>('browse-query').value='';browseLimit=24;renderBrowse();el('browse-query').focus();};
 el('browse-more').onclick=()=>{browseLimit+=24;renderBrowse();};
 el('browse-dates').onclick=()=>{dateFields();el<HTMLDialogElement>('dates-dialog').showModal();};
-el('explorer').hidden=false;sizeSheet('middle');dateUI();
+homeBounds=L.latLngBounds([26,-6],[47,44]);
+const savedHome=query.get('home')?.split(',').map(Number);if(savedHome?.length===4&&savedHome.every(Number.isFinite)&&Math.abs(savedHome[0]!)<=540&&Math.abs(savedHome[2]!)<=540&&savedHome[2]!-savedHome[0]!<=360&&Math.abs(savedHome[1]!)<=85&&Math.abs(savedHome[3]!)<=85&&savedHome[0]!<=savedHome[2]!&&savedHome[1]!<=savedHome[3]!)homeBounds=L.latLngBounds([savedHome[1]!,savedHome[0]!],[savedHome[3]!,savedHome[2]!]);
+function ensureCamera(){
+ if(cameraReady)return;
+ map.invalidateSize({pan:false,animate:false});
+ if(query.has('lat')&&query.has('lng'))map.setView([Math.max(-80,Math.min(80,numeric('lat',54))),Math.max(-180,Math.min(180,numeric('lng',-3)))],Math.max(2,Math.min(17,numeric('zoom',5))),{animate:false});else map.fitBounds(homeBounds!,{...padding(),animate:false});
+ cameraReady=true;
+ // Legacy country-only bookmarks load geography on demand; ordinary entry never waits for it.
+ if(query.has('country')&&!query.has('lat')&&!query.has('home'))void loadCountries().then(()=>{const country=countries.find(c=>c.properties.ADM0_A3===query.get('country'));if(country&&mode==='map')fitCountry(country);});
+}
+sizeSheet('middle');dateUI();
 try{el('intro-hint').hidden=localStorage.getItem('historica-map-intro')==='seen';}catch{el('intro-hint').hidden=false;}
 el('dismiss-hint').onclick=()=>{el('intro-hint').hidden=true;try{localStorage.setItem('historica-map-intro','seen');}catch{}};
+switchView(mode);
 try{
- const [history,geography]=await Promise.all([fetch(sitePath('/data/browser-history.json')).then(r=>{if(!r.ok)throw Error('History unavailable');return r.json();}),fetch(sitePath('/data/ne_50m_admin_0_countries.json')).then(r=>{if(!r.ok)throw Error('Countries unavailable');return r.json();})]);
- entries=history.data.entities;associations=history.data.associations;countries=geography.features;places=placesFor(entries,associations,from,to);ready=true;el('loading').hidden=true;
- const initial=countries.find(c=>c.properties.ADM0_A3===(query.get('country')||'GBR'))||countries.find(c=>c.properties.ADM0_A3==='GBR')!;
- // fit without animation on first paint; old prototype URLs retain country and dates.
- const ring=mainCountryRing(initial);
- homeBounds=query.has('country')?L.latLngBounds(ring.map(p=>[p[1]!,p[0]!] as L.LatLngTuple)):L.latLngBounds([26,-6],[47,44]);
- const savedHome=query.get('home')?.split(',').map(Number);if(savedHome?.length===4&&savedHome.every(Number.isFinite)&&Math.abs(savedHome[0]!)<=540&&Math.abs(savedHome[2]!)<=540&&savedHome[2]!-savedHome[0]!<=360&&Math.abs(savedHome[1]!)<=85&&Math.abs(savedHome[3]!)<=85&&savedHome[0]!<=savedHome[2]!&&savedHome[1]!<=savedHome[3]!)homeBounds=L.latLngBounds([savedHome[1]!,savedHome[0]!],[savedHome[3]!,savedHome[2]!]);
- if(query.has('lat')&&query.has('lng'))map.setView([Math.max(-80,Math.min(80,numeric('lat',54))),Math.max(-180,Math.min(180,numeric('lng',-3)))],Math.max(2,Math.min(17,numeric('zoom',5))),{animate:false});else map.fitBounds(homeBounds,{...padding(),animate:false});
+ const response=await fetch(sitePath('data/browser-history.json'));if(!response.ok)throw Error('History unavailable');const history=await response.json();
+ entries=history.data.entities;associations=history.data.associations;places=placesFor(entries,associations,from,to);ready=true;el('loading').hidden=true;
  if(query.has('places')){const keys=query.get('places')!.split(';');selected=places.filter(p=>keys.includes(p.key));if(!selected.length)selected=null;else {const primary=[...selected].sort((a,b)=>b.entries.length-a.entries.length)[0]!;selectionTitle=selected.length===1?primary.name:`${primary.name} + ${selected.length-1}`;}}
- switchView(mode);
-}catch(error){el('loading').textContent='Could not load the history collection. Reload to try again.';el('explorer').hidden=true;el('browse').hidden=false;el('view-map').setAttribute('aria-pressed','false');el('view-browse').setAttribute('aria-pressed','true');el('result-count').textContent='History unavailable';el('browse-status').textContent='Could not load the collection. Reload to try again.';console.error(error);}
+ if(mode==='map'){sizeSheet(sheetSnap);updateMap();}else renderBrowse();
+ if(document.activeElement===el('search'))search(el<HTMLInputElement>('search').value);
+}catch(error){mode='browse';document.documentElement.dataset.explorerView='browse';delete document.documentElement.dataset.browseFiltered;el('browse-results').removeAttribute('data-initial');el('loading').textContent='Could not load the history collection. Reload to try again.';el('explorer').hidden=true;el('browse').hidden=false;el('view-map').setAttribute('aria-pressed','false');el('view-browse').setAttribute('aria-pressed','true');el('result-count').textContent='History unavailable';el('browse-status').textContent='Could not load the collection. Reload to try again.';console.error(error);}
