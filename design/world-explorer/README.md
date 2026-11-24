@@ -2,7 +2,7 @@
 
 Local branch: `feature/world-explorer-prototype`. This is an interaction prototype, outside the production build.
 
-Open http://ians-macbook-pro.local:4173/design-preview/world-explorer/ on the Mac or a phone on the same Wi-Fi. The Mac must stay awake. The existing preview service runs independently of the agent session.
+Open http://ians-macbook-pro.local:4173/ on the Mac or a phone on the same Wi-Fi. The Mac must stay awake. The existing preview service runs independently of the agent session.
 
 ## What to try
 
@@ -30,7 +30,7 @@ python3 design/world-explorer/preview.py
 node --test design/world-explorer/model.test.ts
 ```
 
-The refresh compiles TypeScript, copies Leaflet and its licence to the ignored output directory, and updates only the prototype folder in the existing preview. Content-hashed asset URLs prevent stale phone caches. This does not rebuild or publish Historica. A normal site preview sync may remove this isolated folder; repeat the refresh afterwards.
+The refresh compiles TypeScript, copies Leaflet and its licence to the ignored output directory, and makes the prototype the existing preview’s home page. It also adds a return-to-map link to the preview’s generated history pages and usage instructions to its About page. Content-hashed asset URLs prevent stale phone caches. This does not rebuild or publish Historica. A normal site preview sync restores the normal homepage and history pages; repeat the prototype refresh afterwards. The original preview homepage is backed up outside the served web folder.
 
 ## Data and services
 
@@ -47,3 +47,5 @@ This is not complete geographic coverage. Point-based matching misses unlocated 
 Clustering is intentionally small and local to the existing collection. Production should use a spatial index as volume grows. Map position, selected results and the return-to-place shortcut are restored from the URL.
 
 Desktop and phone-width browser checks are recorded in the plan. Physical iPhone pinch/inertia feel still requires Ian's review; browser automation cannot substitute for that.
+
+The default opening area is the Mediterranean and neighbouring regions. A dismissible first-visit hint introduces map exploration. Existing history URLs are unchanged; a same-tab return link restores the latest map state from session storage. Production Astro source remains unchanged until the prototype is approved for integration.

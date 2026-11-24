@@ -25,7 +25,7 @@ function sizeSheet(snap:typeof sheetSnap){
  el('sheet-hint').textContent=expanded?'Pull down for more map':'Pull up for more';el('sheet-toggle').textContent=expanded?'More map ↓':'Expand list ↑';
 }
 
-function save(){if(!ready)return;const center=map.getCenter();const p=new URLSearchParams({from:String(from),to:String(to),lat:center.lat.toFixed(5),lng:center.lng.toFixed(5),zoom:map.getZoom().toFixed(2)});if(homeBounds)p.set('home',homeBounds.toBBoxString());if(selected)p.set('places',selected.map(p=>p.key).join(';'));window.history.replaceState(null,'','?'+p);}
+function save(){if(!ready)return;const center=map.getCenter();const p=new URLSearchParams({from:String(from),to:String(to),lat:center.lat.toFixed(5),lng:center.lng.toFixed(5),zoom:map.getZoom().toFixed(2)});if(homeBounds)p.set('home',homeBounds.toBBoxString());if(selected)p.set('places',selected.map(p=>p.key).join(';'));window.history.replaceState(null,'','?'+p);try{sessionStorage.setItem('historica-explorer-return','/?'+p);}catch{}}
 function dateUI(){el('date-label').textContent=from===-5500&&to===200?'All dates · 5500 BCE–200 CE':`${year(from)} – ${year(to)}`;el('axis').replaceChildren();for(const n of [from,to]){const label=document.createElement('span');label.textContent=year(n);el('axis').append(label);}}
 function openRoute(e:Entry){return `/${e.type}/${e.id}?from=${from}&to=${to}`;}
 function listEntry(e:Entry){
@@ -119,6 +119,8 @@ el('sheet-toggle').onclick=()=>sizeSheet(sheetSnap==='full'?'middle':'full');
 
 window.addEventListener('resize',()=>{sizeSheet(sheetSnap);map.invalidateSize({pan:true,animate:false});if(!settling)updateMap();});
 sizeSheet('middle');dateUI();
+try{el('intro-hint').hidden=localStorage.getItem('historica-map-intro')==='seen';}catch{el('intro-hint').hidden=false;}
+el('dismiss-hint').onclick=()=>{el('intro-hint').hidden=true;try{localStorage.setItem('historica-map-intro','seen');}catch{}};
 try{
  const [history,geography]=await Promise.all([fetch('/data/browser-history.json').then(r=>{if(!r.ok)throw Error('History unavailable');return r.json();}),fetch('/data/ne_50m_admin_0_countries.json').then(r=>{if(!r.ok)throw Error('Countries unavailable');return r.json();})]);
  entries=history.data.entities;associations=history.data.associations;countries=geography.features;places=placesFor(entries,associations,from,to);ready=true;el('loading').hidden=true;
@@ -126,7 +128,7 @@ try{
  // fit without animation on first paint; old prototype URLs retain country and dates.
  const polys=(initial.geometry.type==='Polygon'?[initial.geometry.coordinates]:initial.geometry.coordinates) as number[][][][];
  const ring=polys.map(p=>p[0]!).find(r=>inside([initial.properties.LABEL_X,initial.properties.LABEL_Y],r))||polys[0]![0]!;
- homeBounds=L.latLngBounds(ring.map(p=>[p[1]!,p[0]!] as L.LatLngTuple));
+ homeBounds=query.has('country')?L.latLngBounds(ring.map(p=>[p[1]!,p[0]!] as L.LatLngTuple)):L.latLngBounds([26,-6],[47,44]);
  const savedHome=query.get('home')?.split(',').map(Number);if(savedHome?.length===4&&savedHome.every(Number.isFinite)&&Math.abs(savedHome[0]!)<=180&&Math.abs(savedHome[2]!)<=180&&Math.abs(savedHome[1]!)<=85&&Math.abs(savedHome[3]!)<=85&&savedHome[0]!<=savedHome[2]!&&savedHome[1]!<=savedHome[3]!)homeBounds=L.latLngBounds([savedHome[1]!,savedHome[0]!],[savedHome[3]!,savedHome[2]!]);
  if(query.has('lat')&&query.has('lng'))map.setView([Math.max(-80,Math.min(80,numeric('lat',54))),Math.max(-180,Math.min(180,numeric('lng',-3)))],Math.max(2,Math.min(17,numeric('zoom',5))),{animate:false});else map.fitBounds(homeBounds,{...padding(),animate:false});
  if(query.has('places')){const keys=query.get('places')!.split(';');selected=places.filter(p=>keys.includes(p.key));if(!selected.length)selected=null;else {const primary=[...selected].sort((a,b)=>b.entries.length-a.entries.length)[0]!;selectionTitle=selected.length===1?primary.name:`${primary.name} + ${selected.length-1}`;}}

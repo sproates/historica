@@ -24,7 +24,7 @@ The first prototype made visitors manage a selected country, a map rectangle and
 
 ## Where it sits in Historica
 
-Add **Explore the world** to the main navigation and a small home-page entry. Integrate the screen at `/explore/`. Existing history pages retain their own focus; the explorer provides another route into them, with a visible return link preserving the geographic context.
+Make the map the home page at `/`, opening around the Mediterranean and neighbouring regions with the results panel partly open. Keep the introduction and usage guide in About, with a dismissible first-visit hint on the map. Existing history pages retain their own focus; the explorer provides another route into them, with a visible return link preserving the geographic context.
 
 Keep the Chronology typography and colours. This is an interaction change, not a site-wide restyle.
 
@@ -58,3 +58,7 @@ The prototype's strict TypeScript build passes. Five targeted data tests cover f
 ## Outside this release
 
 New global historical coverage, reconstructed ancient borders, user-drawn polygons and unrelated site refactoring. The feature should make the existing collection easy to explore without overstating what it knows.
+
+## Homepage prototype
+
+The local preview now serves the map at `/`, uses the Mediterranean opening bounds, includes an About link and the existing source/privacy/GitHub links, and adds a return-to-map link to generated history pages. The return journey restores map position and dates. These changes are confined to the persistent preview by the prototype refresh script; production page source and live hosting are untouched.

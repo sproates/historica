@@ -11,3 +11,5 @@
  #sheet-handle #sheet-hint{width:auto;height:auto;margin:0;background:none;font-size:11px;line-height:16px;color:var(--muted);font-weight:500}
  body:has(#sheet.dragging) .map-credit{transition:none}
 }
+
+.about-link{margin-left:auto;font-size:13px;text-decoration:none}.about-link+#theme{margin-left:0}.explorer-footer{font-size:11px;line-height:1.6;color:var(--muted);padding-bottom:12px}#intro-hint{display:flex;gap:10px;align-items:center;background:var(--wash);border-radius:8px;padding:10px 12px;margin:12px 0 4px}#intro-hint p{font-size:12px;line-height:1.45;margin:0}#dismiss-hint{font-size:12px;font-weight:600;color:var(--accent);white-space:nowrap;min-height:36px}@media(max-width:720px){.page-name{display:none}.about-link{font-size:13px}}
