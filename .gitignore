@@ -48,3 +48,7 @@ __pycache__/
 /web/data/browser-history.json
 
 /web/privacy.html
+
+/web/data/world-map-*.svg
+/web/data/map-assets.json
+/web/data/country-search.json

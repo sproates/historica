@@ -27,23 +27,23 @@ test('malformed bookmarks fall back to safe dates and bounded camera',()=>{
 test('canonical paths omit every default and preserve changed dates',()=>{
  const original=decodeView('/person/alexander',data);
  assert.equal(original.state.focus,'alexander');
- assert.equal(encodeView(original.state,original.view,data),'/person/alexander');
+ assert.equal(encodeView(original.state,original.view,data),'/person/alexander/');
  const changed=decodeView('/person/alexander?from=-340&to=-330',data);
  assert.deepEqual([changed.state.start,changed.state.end],[-340,-330]);
- assert.equal(encodeView(changed.state,changed.view,data),'/person/alexander?from=-340&to=-330');
- for(const e of data.entities){const path=`/${e.type}/${e.id}`;const decoded=decodeView(path,data);assert.equal(decoded.state.focus,e.id);assert.equal(encodeView(decoded.state,decoded.view,data),path);}
+ assert.equal(encodeView(changed.state,changed.view,data),'/person/alexander/?from=-340&to=-330');
+ for(const e of data.entities){const path=`/${e.type}/${e.id}/`;const decoded=decodeView(path,data);assert.equal(decoded.state.focus,e.id);assert.equal(encodeView(decoded.state,decoded.view,data),path);}
 });
 
 test('reported Khufu fragment becomes a clean path without losing its time window',()=>{
  const complete=buildFocusData(JSON.parse(fs.readFileSync('web/data/collection.json')),JSON.parse(fs.readFileSync('web/data/reviewed-exploration.json')));
  const old=decodeView('http://historica.online/#focus=khufu-reign&from=-2551&to=-2528&kind=all&area=all&v=1&x=0&y=0&w=720&borders=1&expanded=0&evidence=0&rangeFrom=-2551&rangeTo=-2528',complete);
- assert.equal(encodeView(old.state,old.view,complete),'/period/khufu-reign');
+ assert.equal(encodeView(old.state,old.view,complete),'/period/khufu-reign/');
 });
 
 test('comparison scale is bookmarked without changing the selected years',()=>{
  const original=decodeView('/person/alexander?comparison=full',data);
  assert.equal(original.view.comparison,'full');assert.equal(original.state.start,-356);assert.equal(original.state.end,-323);
- assert.equal(encodeView(original.state,original.view,data),'/person/alexander?comparison=full');
+ assert.equal(encodeView(original.state,original.view,data),'/person/alexander/?comparison=full');
  assert.equal(decodeView('/person/alexander?comparison=invalid',data).view.comparison,'shared');
 });
 
@@ -51,7 +51,7 @@ test('comparison scale is bookmarked without changing the selected years',()=>{
  const restored=decodeView('/person/socrates?lane=Athens&lane=Athens&lane=&lane='+ 'x'.repeat(101)+'&panel=unknown&panel=connections-panel&panel=connections-panel',data);
  assert.deepEqual(restored.view.lanes,['Athens']);
  assert.deepEqual(restored.view.panels,['connections-panel']);
- assert.equal(encodeView(restored.state,restored.view,data),'/person/socrates?lane=Athens&panel=connections-panel');
+ assert.equal(encodeView(restored.state,restored.view,data),'/person/socrates/?lane=Athens&panel=connections-panel');
  const defaults=decodeView('/person/socrates',data);
  assert.deepEqual(defaults.view.lanes,[]);assert.deepEqual(defaults.view.panels,[]);
  });
@@ -59,6 +59,6 @@ test('comparison scale is bookmarked without changing the selected years',()=>{
 test('bookmarks survive a GitHub project prefix and directory redirect',()=>{
  const original=decodeView('https://historica.online/person/socrates?year=-420&person=socrates&person=plato',data);
  const mounted=encodeView(original.state,original.view,data,'/historica/');
- assert.ok(mounted.startsWith('/historica/person/socrates?'));
+ assert.ok(mounted.startsWith('/historica/person/socrates/?'));
  assert.deepEqual(decodeView('https://sproates.github.io'+mounted.replace('socrates?','socrates/?'),data,'/historica/'),original);
 });

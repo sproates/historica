@@ -38,7 +38,7 @@ try{
    assert.equal(new Set(ids).size,ids.length,entry.route+' duplicate IDs');
    assert.deepEqual(new Set(ids),new Set(required),entry.route+' controller hooks');
    assert.ok(html.includes(`data-static-history="${entry.id}"`),entry.route);
-   assert.ok(html.includes(`href="https://historica.online/${entry.route}"`),entry.route);
+   assert.ok(html.includes(`href="https://historica.online/${entry.route}/"`),entry.route);
    assert.ok(html.includes(dates(entry.model.state.start,entry.model.state.end)),entry.route);
    assert.ok(!/(?:NaN|Infinity)(?:%|px)/.test(html),entry.route);
    for(const statement of entry.model.checked)for(const source of statement.citations)assert.ok(html.includes(source.url.replaceAll('&','&amp;')),entry.route+' source');

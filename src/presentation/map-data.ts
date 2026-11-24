@@ -1,7 +1,7 @@
 import type {GeoPoint} from '../domain/history.js';
 import {geometry} from './history-page.js';
 export interface MapData {land: string; focusGeography: unknown[]; regionPoints: GeoPoint[]}
-/** Static pages already carry the complete base map. Legacy pages need the original fallback. */
+/** Static pages already reference the shared base map. Legacy pages need the original fallback. */
 export async function loadMapData(root: Pick<Document,'querySelector'>, load: (url: string)=>Promise<unknown>): Promise<MapData> {
   const land=root.querySelector('#focus-map .modern-land');
   if(land?.childElementCount){

@@ -26,7 +26,7 @@ for(const [id,route] of [['home','index.html'],['about','about/index.html']]){
    assert.ok(initialEntries.length>24,'Static fallback includes descriptions beyond the enhanced first page');
    const structured=actual.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1];
    assert.equal(JSON.parse(structured).name,'Historica');
-   for(const route of ['/period/stonehenge','/person/socrates','/person/alexander','/person/julius-caesar?kind=person'])assert.ok(actual.includes(`href="${route}"`));
+   for(const route of ['/period/stonehenge/','/person/socrates/','/person/alexander/','/person/julius-caesar/?kind=person'])assert.ok(actual.includes(`href="${route}"`));
   }else {
    assert.ok(!actual.includes('src="generated/entrypoints/home.js"'));
    assert.ok(actual.includes('Created by Ian Sproates'));

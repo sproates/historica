@@ -10,11 +10,11 @@ test('every published history has unique crawler-visible metadata and canonical 
   const html=read('pages/'+route.split('/').at(-1)+'.html');
   assert.equal((html.split('</head>')[0].match(/<title>/g)||[]).length,1,route);
   assert.equal((html.match(/name="description"/g)||[]).length,1,route);
-  assert.ok(html.includes(`rel="canonical" href="https://historica.online${route}"`),route);
-  assert.ok(html.includes(`property="og:url" content="https://historica.online${route}"`),route);
+  assert.ok(html.includes(`rel="canonical" href="https://historica.online${route}/"`),route);
+  assert.ok(html.includes(`property="og:url" content="https://historica.online${route}/"`),route);
   assert.ok(!html.includes('content="noindex, follow"'),route);
   assert.match(html,/<h1 id="focus-title">[^<]+<\/h1>/);
-  assert.ok(sitemap.includes(`<loc>https://historica.online${route}</loc>`));
+  assert.ok(sitemap.includes(`<loc>https://historica.online${route}/</loc>`));
  }
  assert.match(read('pages/socrates.html'),/<title>Socrates · Historica<\/title>/);
  assert.match(read('pages/khufu-reign.html'),/<title>Khufu and the Great Pyramid · Historica<\/title>/);

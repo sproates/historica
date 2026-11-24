@@ -32,7 +32,7 @@ export interface HistoryPage {
 }
 export const year=(y: number): string=>`${Math.abs(y).toLocaleString('en-GB')} ${y<0?'BCE':'CE'}`;
 export const dates=(a: number,b: number): string=>a===b?year(a):`${year(a)} – ${year(b)}`;
-export const href=(e: Pick<HistoryEntity,'type'|'id'>): string=>`/${e.type}/${e.id}`;
+export const href=(e: Pick<HistoryEntity,'type'|'id'>): string=>`/${e.type}/${e.id}/`;
 export const xy=(p: GeoPoint): [number,number]=>[(p[0]+180)*2,180-p[1]*2];
 
 function object(value: unknown, label: string): Record<string,unknown> {
@@ -56,7 +56,7 @@ export function geometry(value: unknown): string {
     const point=array(value,'coordinate');
     const x=point[0],y=point[1];
     if(typeof x!=='number'||typeof y!=='number'||!Number.isFinite(x)||!Number.isFinite(y))throw new Error('Invalid coordinate');
-    return `${i?'L':'M'}${xy([x,y]).join(',')}`;
+    return `${i?'L':'M'}${xy([x,y]).map(n=>Number(n.toFixed(2))).join(',')}`;
   }).join('')+'Z';
   if(g['type']==='Polygon')return array(g['coordinates'],'polygon').map(ring).join('');
   if(g['type']==='MultiPolygon')return array(g['coordinates'],'multipolygon').flatMap(p=>array(p,'polygon').map(ring)).join('');

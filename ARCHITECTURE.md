@@ -73,15 +73,15 @@ Use [Adding facts](project/adding-facts.md) for the authoring workflow and [the 
 
 The homepage uses Leaflet for map movement and zooming. `model.ts` groups histories at shared or nearby locations, `state.ts` validates periods and chooses a country's main geographic component, and `sheet.ts` handles the draggable phone panel. Results update after map movement settles. Resizing the sheet preserves the current results.
 
-Country search frames a modern country; the results still describe the visible map area. It isn't an exact country-membership query. Dated associations are used where available, without substituting a timeless reference location when those dates don't match.
+Country search loads a small generated index of names and mainland bounds; the results still describe the visible map area. It isn't an exact country-membership query. Dated associations are used where available, without substituting a timeless reference location when those dates don't match.
 
 The basemap provider is configured in `web/data/map-service.json`. Background tiles load in Map mode; Browse doesn't need them. Leaflet itself is bundled with the site rather than downloaded from a script CDN.
 
 ### History pages
 
-`src/pages/[type]/[id].astro` generates routes such as `/person/alexander` and `/area/egypt`. Each page contains its initial introduction, comparisons, timeline, map and evidence. `src/entrypoints/focus-app.ts` starts `src/browser/explorer.ts`, which connects the domain queries, state, controllers and rendering modules.
+`src/pages/[type]/[id].astro` generates routes such as `/person/alexander/` and `/area/egypt/`. Each page contains its initial introduction, comparisons, timeline, map and evidence. `src/entrypoints/focus-app.ts` starts `src/browser/explorer.ts`, which connects the domain queries, state, controllers and rendering modules.
 
-The history-page map is the existing SVG-based related-places view. It doesn't use the homepage's Leaflet map. The two views share historical data and date conventions but have separate interaction code.
+The history-page map is the SVG-based related-places view. A content-hashed SVG holds the shared modern borders, referenced by each page with `<use>`. Historical overlays and focus highlights remain in the page. `scripts/build-map-regions.ts` generates the shared SVG, regional geometry and country-search index from Natural Earth data. It doesn't use the homepage's Leaflet map. The two views share historical data and date conventions but have separate interaction code.
 
 There is one focus at a time. Selecting a person or event normally uses that record's interval; moving to an area, state or city retains the current period. The shared navigation code applies these rules rather than leaving individual controls to invent them.
 
