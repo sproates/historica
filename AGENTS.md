@@ -23,7 +23,7 @@ Never use `codex` in a Git branch name. Use descriptive `feature/…`, `fix/…`
 - Treat mixed data/design changes as requiring preview approval. If publishing data while design work awaits approval, build a separate clean release containing only approved production code and the data changes. Never deploy pending design changes accidentally through a full-folder upload.
 - Committing or pushing is not permission to deploy unapproved design changes.
 - Keep the preview running beyond the agent session. Use the macOS LaunchAgent installed by `scripts/install-preview-service.py`, serving a refreshed copy of `web/` on port 4173 over the same Wi-Fi as the Mac. The Mac must be awake and connected. Provide a LAN or `.local` URL, never a 127.0.0.1 link for phone review.
-- The sustainability phase now permits GitHub CI and preparation of GitHub Pages staging alongside the live ASO site. Keep manual local checks proportionate. Do not change production DNS, attach the production domain to Pages, remove ASO files or make the repository public as part of staging preparation. Keep the repository private until explicitly instructed otherwise.
+- The repository is public and production runs on GitHub Pages through Cloudflare. Follow `RELEASE.md`: verify PRs, reuse eligible verified packages after merge, and publish through the production workflow. Internal documentation changes do not need a site build or deployment. Keep Cloudflare proxying in place; Ian has chosen to leave the GitHub certificate setting alone.
 - Production FTPS operations must remain confined to the confirmed Historica document root in the ignored local deployment configuration. Never store credentials in Git or project files.
 
 Refresh the persistent preview after edits with `npm run preview:sync`. Files are copied to `~/Library/Application Support/Historica/preview/` so the background service does not depend on access to the Documents folder. This command never changes production.
@@ -31,14 +31,10 @@ Refresh the persistent preview after edits with `npm run preview:sync`. Files ar
 ## Cloudflare scope
 - Ian uses Cloudflare for other projects. Limit work to the `historica.online` zone and explicitly Historica-specific resources. Never change other zones, projects or account-wide settings. Check for existing Historica resources before creating any.
 
-## Public release gate
-- Before moving production hosting to GitHub Pages, complete repository cleanup and obtain Ian’s explicit approval to make the repository public. Private Pages staging is a rehearsal only. Keep production on ASO until that gate is met.
-
 ## Protected main
 - All changes to main must arrive through a pull request. Never push directly to main, force-push it, or bypass its protection, including for documentation.
 - Require the GitHub Actions verify check to pass against an up-to-date branch before merging. Resolve review conversations. Protection applies to administrators too.
 - A separate human approval is not currently required by branch protection; PRs and passing verification are required.
 
-## Refactor before public release
-- Keep the repository private and production on ASO until the refactor is complete and Ian approves public release and cutover. Refactor work must not deploy to ASO.
+## Application code
 - Use Node.js 26, pinned in `.node-version`, and `npm ci` for locked build dependencies. Edit `src/` for migrated TypeScript; regenerate `web/generated/` with `npm run build:client`.

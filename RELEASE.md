@@ -38,7 +38,7 @@ The old staging workflows refuse to deploy while a custom production domain is a
 
 Both web DNS records point to `sproates.github.io` through Cloudflare. Full (strict) is enabled, along with Always Use HTTPS. GitHub's own custom-domain certificate wasn't yet available at cutover; public HTTPS is provided by Cloudflare. Keep proxying enabled unless the replacement certificate has been checked.
 
-A Historica-only transition Worker passes successful requests through and returns a non-cacheable 503 splash if the origin fails. It has no application data bindings or request logging. Its source, configuration and pre-cutover DNS values are retained locally in ignored `release/cutover/`. Review removal after the certificate transition has settled.
+A Historica-only transition Worker passes successful requests through and returns a non-cacheable 503 splash if the origin fails. It has no application data bindings or request logging. Its source, configuration and pre-cutover DNS values are retained locally in ignored `release/cutover/`. Ian chose to retain the Cloudflare arrangement on 24 November; no certificate transition is planned. Any removal of the fallback is a separate hosting change.
 
 The previous hosting files remain untouched for recovery. Reclaim that storage only after acceptance and an off-host recovery copy. Never touch another site's document root. The [release record](project/release-readiness.md) contains the current state; older cutover documents are historical records.
 
