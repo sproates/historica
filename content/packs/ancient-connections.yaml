@@ -12,6 +12,10 @@ entities:
   - gorhams-cave-sanctuary
   - gorhams-cave-scarabs
   - gorhams-cave-offerings
+  - andalucia
+  - gadir
+  - baelo-claudia
+  - italica
 associations:
   - subject: aksum-context
     place: aksum-context
@@ -98,6 +102,92 @@ associations:
       - gibraltar-gorhams-cave-offerings-window
       - gibraltar-gorhams-cave-offerings-point
     source: https://whc.unesco.org/en/list/1500/
+    contextual: true
+  - subject: gadir
+    place: gadir
+    startYear: -900
+    endYear: -500
+    point:
+      - -6.297724300000027
+      - 36.5321228
+    label: "Gadir: Phoenician Cádiz · archaeological site reference"
+    claimIds:
+      - andalucia-gadir-houses
+      - andalucia-gadir-streets
+      - andalucia-gadir-point
+      - andalucia-gadir-gorham
+    source: https://www.spain.info/es/lugares-interes/yacimiento-gadir/
+    contextual: true
+  - subject: andalucia
+    place: gadir
+    startYear: -900
+    endYear: -500
+    point:
+      - -6.297724300000027
+      - 36.5321228
+    label: "Gadir: Phoenician Cádiz · archaeological site reference"
+    claimIds:
+      - andalucia-gadir-houses
+      - andalucia-gadir-streets
+      - andalucia-gadir-point
+      - andalucia-gadir-gorham
+    source: https://www.spain.info/es/lugares-interes/yacimiento-gadir/
+    contextual: true
+  - subject: baelo-claudia
+    place: baelo-claudia
+    startYear: -125
+    endYear: 200
+    point:
+      - -5.77485
+      - 36.09029
+    label: Baelo Claudia · archaeological site reference
+    claimIds:
+      - andalucia-baelo-claudia-origins
+      - andalucia-baelo-claudia-town
+      - andalucia-baelo-claudia-point
+    source: https://www.sif-mes.org/patrif/wp-content/uploads/Ficha_Factoria-Garum-Baelo-Claudia.pdf
+    contextual: true
+  - subject: andalucia
+    place: baelo-claudia
+    startYear: -125
+    endYear: 200
+    point:
+      - -5.77485
+      - 36.09029
+    label: Baelo Claudia · archaeological site reference
+    claimIds:
+      - andalucia-baelo-claudia-origins
+      - andalucia-baelo-claudia-town
+      - andalucia-baelo-claudia-point
+    source: https://www.sif-mes.org/patrif/wp-content/uploads/Ficha_Factoria-Garum-Baelo-Claudia.pdf
+    contextual: true
+  - subject: italica
+    place: italica
+    startYear: -206
+    endYear: 200
+    point:
+      - -6.044606
+      - 37.440291
+    label: Itálica · archaeological site reference
+    claimIds:
+      - andalucia-italica-foundation
+      - andalucia-italica-expansion
+      - andalucia-italica-point
+    source: https://whc.unesco.org/en/tentativelists/6376/
+    contextual: true
+  - subject: andalucia
+    place: italica
+    startYear: -206
+    endYear: 200
+    point:
+      - -6.044606
+      - 37.440291
+    label: Itálica · archaeological site reference
+    claimIds:
+      - andalucia-italica-foundation
+      - andalucia-italica-expansion
+      - andalucia-italica-point
+    source: https://whc.unesco.org/en/tentativelists/6376/
     contextual: true
 relationships:
   - a: global-overview
@@ -189,3 +279,47 @@ relationships:
       - gibraltar-gorhams-cave-offerings-point
     sourceUrls:
       - https://www.gibmuseum.gi/news/an-international-shrine-at-gorhams-cave-68
+  - a: andalucia
+    b: gadir
+    label: In present-day Andalucía
+    claimIds:
+      - andalucia-gadir-houses
+      - andalucia-gadir-streets
+      - andalucia-gadir-point
+      - andalucia-gadir-gorham
+    sourceUrls:
+      - https://turismo.cadiz.es/es/rutas-y-visitas-en-cadiz/yacimiento-gadir
+  - a: andalucia
+    b: baelo-claudia
+    label: In present-day Andalucía
+    claimIds:
+      - andalucia-baelo-claudia-origins
+      - andalucia-baelo-claudia-town
+      - andalucia-baelo-claudia-point
+    sourceUrls:
+      - https://www.spain.info/es/lugares-interes/ciudad-romana-baelo-claudia/
+  - a: andalucia
+    b: italica
+    label: In present-day Andalucía
+    claimIds:
+      - andalucia-italica-foundation
+      - andalucia-italica-expansion
+      - andalucia-italica-point
+    sourceUrls:
+      - https://whc.unesco.org/en/tentativelists/6376/
+  - a: gadir
+    b: gorhams-cave-offerings
+    label: Pottery from Gadir found at Gorham’s Cave
+    claimIds:
+      - andalucia-gadir-gorham
+    sourceUrls:
+      - https://www.gibmuseum.gi/news/an-international-shrine-at-gorhams-cave-68
+    note: Object provenance does not establish a direct journey or donor identity.
+  - a: italica
+    b: rome
+    label: Roman settlement and imperial connections
+    claimIds:
+      - andalucia-italica-foundation
+      - andalucia-italica-expansion
+    sourceUrls:
+      - https://whc.unesco.org/en/tentativelists/6376/
