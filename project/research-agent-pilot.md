@@ -1,6 +1,6 @@
 # Research-agent pilot
 
-Brief revision 2, 24 November 2026. Applies to future runs; the original calibration remains scored against its original brief.
+Brief revision 3, 24 November 2026. Applies to future runs; the original calibration remains scored against its original brief.
 
 ## Purpose and status
 
@@ -34,6 +34,24 @@ These are questions to investigate, not predetermined answers. Keep each reign s
 Include supported edges among the candidate entries. Treat each relationship and dated place association as a claim. Compare supported date ranges with existing `middle-kingdom-egypt` and `indus-urban` entries to demonstrate contemporary history; overlap alone doesn't establish contact. Don't expand those existing entries or infer that every activity in a broad period happened in every year.
 
 Out of scope: reconstructed borders, exhaustive campaigns, translations of whole ancient texts, new images, application changes and coverage outside this batch. No automatic substitutions or extra entries to fill a quota.
+
+## What the next worker is expected to deliver
+
+The purpose is usable historical content, not a collection of plausible paragraphs. Before starting, the coordinator supplies the exact candidate IDs, existing-ID inventory, draft directory and limits. For each candidate, specify whether the visitor needs a timeline interval, map location and particular connection. The worker must not start without this assignment. No further Luna run is authorised by this document update.
+
+An entry counts as usable for review only when:
+
+- Its prose and factual metadata have inspected supporting passages, with source identity and passage locators.
+- Its display dates have a stated meaning: lifespan, reign, phase, approximate occurrence or explicitly editorial study window. Uncertain occurrence dates must not become an invented duration.
+- Any required map point has a coordinate source, longitude/latitude order checked and a clear meaning. Check that it matches the named site and the source's geographical description. A reputable catalogue can still contain a wrong coordinate; investigate contradictions rather than copying it. Do not infer coordinates from a place name.
+- Required connections have supported claims and real endpoints. New dependencies must be identified, with enough information for the coordinator to resolve them; do not silently enlarge the research assignment.
+- All references resolve within the draft and the handoff states what still prevents integration.
+
+Use a compact completion table in `run.md`: candidate, date basis, map basis, connections/dependencies, ready for review or blocked, and remaining work. A valid JSON file is not a completed entry. A missing required date, point or endpoint counts as incomplete coverage even if the prose is accurate. Where a field is genuinely inapplicable, explain why rather than filling it for the sake of a score.
+
+Research the required dates, geography and connections before spending the remaining allowance on extra narrative. Reuse one source table. If a required fact cannot be supported within the search or page limit, preserve the supported work and report the precise blocker. Never guess to meet the completeness target. Report both the number of usable entries and the number of supported claims; neither substitutes for the other.
+
+After the single correction round, the reviewer records any remaining errors and their own repairs separately. Do not call an entry complete while leaving the reviewer to discover missing work. We will not scale the workflow until it meets the evidence standard and produces useful entries without an open-ended repair task. Cost savings remain unproven without comparable total usage, including review and repair.
 
 ## Source starting points
 
@@ -93,7 +111,7 @@ The integration step later converts accepted drafts to the existing Markdown/YAM
 
 Use one worker with a fresh context: this brief, the evidence format, the relevant parts of Adding facts and a compact inventory of existing IDs. Don't inherit the project chat, runtime code or the full research archive.
 
-The original calibration covered Hammurabi's reign, Mari and schooling. For revision 2, the coordinator must assign a fresh sample of at most three items and a new directory under `research/drafts/`, with a ceiling of 15 atomic claims and six distinct source pages. Do not overwrite the original drafts or results. This brief update does not launch that sample. Review it before commissioning the remaining batch. A critical failure stops the run early; count any prompt changes as a new brief version and don't conceal the failed attempt.
+The original calibration covered Hammurabi's reign, Mari and schooling. For revision 3, the coordinator must assign a fresh sample of at most three items and a new directory under `research/drafts/`, with a ceiling of 15 atomic claims and six distinct source pages. Do not overwrite the original drafts or results. This brief update does not launch that sample. Review it before commissioning the remaining batch. A critical failure stops the run early; count any prompt changes as a new brief version and don't conceal the failed attempt.
 
 For the complete pilot, cap scope at 12 entries, 60 atomic claims and 12 distinct source pages. These are ceilings, not targets. Keep a shared source table and reuse inspected passages by ID instead of repeatedly fetching and reproducing them. If a claim would exceed the limit, omit it and explain the gap. Don't bundle unrelated assertions into one claim to evade the ceiling.
 
@@ -117,7 +135,7 @@ Before handoff, make one bounded check of entry-to-claim references, duplicate I
 | --- | --- |
 | Critical errors | Zero invented sources/passages, falsely claimed inspection, self-approved evidence or unauthorised publication. Any occurrence fails this brief/model combination. |
 | First-pass support | At least 90% of submitted atomic claims fully supported as written. Record unsupported, contradicted, overstated and unreviewable claims separately; all count as not fully supported. |
-| Useful coverage | At least 10 of the 12 candidates become supportable after at most one correction round. Report blocked and duplicate items separately. Abstaining is preferable to fabrication, but a nearly empty batch doesn't pass. |
+| Useful coverage | At least 10 of the 12 candidates satisfy the usable-entry requirements above after at most one correction round. For a three-item calibration, report the count out of three; do not claim the full-batch threshold has passed. Report blocked and duplicate items separately. Abstaining is preferable to fabrication, but a nearly empty batch doesn't pass. |
 | Dates, geography and relationships | Review 100%, including nulls and chronology caveats. Report substantive errors separately from writing or formatting edits. |
 | Publication | No unresolved factual errors in retained claims. Remove or explicitly qualify unsupported material before integration. Passing the batch threshold never permits publishing the remaining errors. |
 | Cost | Record worker, reviewer and correction usage separately, plus source retrieval and integration effort. Compare total cost per accepted entry and claim, including failed work. |
@@ -128,4 +146,4 @@ A successful first batch authorises a recommendation for a larger, different-reg
 
 ## Worker instruction
 
-> Follow revision 2 of `project/research-agent-pilot.md`. Research only the assigned items and write only the three output files in the assigned new draft directory. If either assignment is missing, ask the coordinator before starting. Inspect supporting passages, separate duration from date uncertainty, map metadata and classify dependencies. Keep every claim draft and every review reference null. Stay within the assigned ceilings, complete the bounded handoff check and record only observed usage and times. Stop with the files and a concise completion message. Do not overwrite earlier runs, edit the live collection or publish.
+> Follow revision 3 of `project/research-agent-pilot.md`. Research only the assigned items and write only the three output files in the assigned new draft directory. If either assignment is missing, ask the coordinator before starting. Inspect supporting passages, separate duration from date uncertainty, map metadata and classify dependencies. Keep every claim draft and every review reference null. Stay within the assigned ceilings, complete the bounded handoff check and record only observed usage and times. Stop with the files and a concise completion message. Do not overwrite earlier runs, edit the live collection or publish.

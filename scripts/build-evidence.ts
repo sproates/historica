@@ -9,7 +9,7 @@ import {parseHistory} from '../web/generated/content/validate-history.js';
 import {assembleHistory} from '../web/generated/domain/assemble-history.js';
 import {validateEvidence} from './lib/evidence.ts';
 const read=(path: string)=>JSON.parse(fs.readFileSync(path,'utf8'));
-const packs: EvidencePack[]=['socrates','britain-ireland','global-overview','world-lifeways','ancient-connections','egypt-expansion','stonehenge','early-world','caesar-era','alcibiades-era','maurya-era','qin-han-era','connected-lives','everyday-evidence'].map(name=>read(`research/evidence/${name}-reviewed.json`));
+const packs: EvidencePack[]=['socrates','britain-ireland','global-overview','world-lifeways','ancient-connections','egypt-expansion','stonehenge','early-world','caesar-era','alcibiades-era','maurya-era','qin-han-era','connected-lives','everyday-evidence','old-babylonian'].map(name=>read(`research/evidence/${name}-reviewed.json`));
 const pack: EvidencePack={schemaVersion:'1.0',entities:packs.flatMap(p=>p.entities),sources:packs.flatMap(p=>p.sources),claims:packs.flatMap(p=>p.claims),evidence:packs.flatMap(p=>p.evidence),reviews:packs.flatMap(p=>p.reviews),accounts:packs.flatMap(p=>p.accounts)};
 const contentPacks=readHistoryPacks();
 const prototype=readPrototypeData(contentPacks);

@@ -1,0 +1,1136 @@
+{
+  "entities": [
+    {
+      "id": "hammurabi-reign",
+      "name": "Hammurabi's reign",
+      "type": "period"
+    },
+    {
+      "id": "mari",
+      "name": "Mari",
+      "type": "city"
+    },
+    {
+      "id": "old-babylonian-schooling",
+      "name": "Scribal education at Nippur",
+      "type": "period"
+    },
+    {
+      "id": "babylon",
+      "name": "Babylon",
+      "type": "city"
+    },
+    {
+      "id": "nippur",
+      "name": "Nippur",
+      "type": "city"
+    }
+  ],
+  "sources": [
+    {
+      "id": "old-babylonian-met-mesopotamia-2000-1000",
+      "title": "Mesopotamia, 2000–1000 B.C.",
+      "creator": "The Metropolitan Museum of Art, Heilbrunn Timeline of Art History",
+      "url": "https://www.metmuseum.org/toah/ht/03/wam",
+      "locatorHint": "Overview; Key Events, ca. 1800–1600 B.C.",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and original summary only; source text not redistributed"
+    },
+    {
+      "id": "old-babylonian-fr-ministry-mari-excavation",
+      "title": "Excavation history",
+      "creator": "French Ministry of Culture, Mari archaeological mission",
+      "url": "https://archeologie.culture.gouv.fr/mari/en/excavation-history",
+      "locatorHint": "Opening paragraph and paragraphs on André Parrot's excavations",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and original summary only; source text not redistributed"
+    },
+    {
+      "id": "old-babylonian-uchicago-back-school",
+      "title": "Back to School in Babylonia",
+      "creator": "Susanne Paulus, editor; Institute for the Study of Ancient Cultures, University of Chicago",
+      "url": "https://isac.uchicago.edu/publications/back-school-babylonia",
+      "locatorHint": "Book description and table of contents",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and original summary only; source text not redistributed"
+    },
+    {
+      "id": "old-babylonian-mari-phases",
+      "title": "Urban stratigraphy",
+      "creator": "Pascal Butterlin; French Ministry of Culture",
+      "url": "https://archeologie.culture.gouv.fr/mari/en/urban-stratigraphy",
+      "locatorHint": "City III (circa 2250–1760 BCE)",
+      "accessed": "2026-11-24",
+      "reuse": "Citation, factual coordinates and original paraphrase only; no source images or full text reproduced."
+    },
+    {
+      "id": "old-babylonian-mari-palace",
+      "title": "Discovery and excavation",
+      "creator": "French Ministry of Culture; Mari archaeological mission",
+      "url": "https://archeologie.culture.gouv.fr/mari/en/discovery-and-excavation",
+      "locatorHint": "Evidence of palace life in the early 2nd millennium BCE",
+      "accessed": "2026-11-24",
+      "reuse": "Citation, factual coordinates and original paraphrase only; no source images or full text reproduced."
+    },
+    {
+      "id": "old-babylonian-mari-location",
+      "title": "Mari (Tell Hariri)",
+      "creator": "Interactive Archaeological Map, biblical-archaeology.org",
+      "url": "https://biblical-archaeology.org/en/locations/mari-tell-hariri/",
+      "locatorHint": "Key facts: Coordinates; Location. Coordinate reference only, not chronology.",
+      "accessed": "2026-11-24",
+      "reuse": "Citation, factual coordinates and original paraphrase only; no source images or full text reproduced."
+    },
+    {
+      "id": "old-babylonian-babylon-site",
+      "title": "Babylon",
+      "creator": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/278/",
+      "locatorHint": "Brief synthesis; Criterion (iii); coordinate reference N32 32 31.09 E44 25 15",
+      "accessed": "2026-11-24",
+      "reuse": "Citation, factual coordinates and original paraphrase only; no source images or full text reproduced."
+    },
+    {
+      "id": "old-babylonian-nippur-site",
+      "title": "Nippur",
+      "creator": "Permanent Delegation of Iraq to UNESCO",
+      "url": "https://whc.unesco.org/en/tentativelists/6173/",
+      "locatorHint": "Coordinates N32 8 11.2 E45 13 15.46; Description: Introduction. State Party tentative-list submission, not UNESCO endorsement.",
+      "accessed": "2026-11-24",
+      "reuse": "Citation, factual coordinates and original paraphrase only; no source images or full text reproduced."
+    },
+    {
+      "id": "old-babylonian-school-date",
+      "title": "60. Susanne Paulus: Back to School in Babylonia",
+      "creator": "Susanne Paulus, interviewed by Jon Taylor; Thin End of the Wedge",
+      "url": "https://www.buzzsprout.com/1338718/episodes/13761716-60-susanne-paulus-back-to-school-in-babylonia",
+      "locatorHint": "Transcript, Susanne Paulus at 2:25: House F, approximately 1740 BCE",
+      "accessed": "2026-11-24",
+      "reuse": "Citation, factual coordinates and original paraphrase only; no source images or full text reproduced."
+    }
+  ],
+  "claims": [
+    {
+      "id": "old-babylonian-hammurabi-reign-dates",
+      "subjectId": "hammurabi-reign",
+      "predicate": "hammurabi-reign-dates",
+      "value": {
+        "type": "text",
+        "text": "Hammurabi ruled Babylon approximately 1792–1750 BCE."
+      },
+      "statement": "Hammurabi ruled Babylon approximately 1792–1750 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1792,
+          "latest": -1792,
+          "original": "Approximately 1792 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1750,
+          "latest": -1750,
+          "original": "Approximately 1750 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-hammurabi-reign-dates-source"
+      ],
+      "reviewId": "old-babylonian-hammurabi-reign-dates-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-hammurabi-babylon",
+      "subjectId": "hammurabi-reign",
+      "predicate": "hammurabi-babylon",
+      "value": {
+        "type": "entity",
+        "entityId": "babylon"
+      },
+      "statement": "Hammurabi was king of Babylon.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1792,
+          "latest": -1792,
+          "original": "Approximately 1792 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1750,
+          "latest": -1750,
+          "original": "Approximately 1750 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-hammurabi-babylon-source"
+      ],
+      "reviewId": "old-babylonian-hammurabi-babylon-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-hammurabi-expansion",
+      "subjectId": "hammurabi-reign",
+      "predicate": "hammurabi-expansion",
+      "value": {
+        "type": "text",
+        "text": "Hammurabi expanded his control in southern Mesopotamia."
+      },
+      "statement": "Hammurabi expanded his control in southern Mesopotamia.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-hammurabi-expansion-source"
+      ],
+      "reviewId": "old-babylonian-hammurabi-expansion-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-hammurabi-mari",
+      "subjectId": "hammurabi-reign",
+      "predicate": "hammurabi-mari",
+      "value": {
+        "type": "entity",
+        "entityId": "mari"
+      },
+      "statement": "Hammurabi destroyed King Zimri-Lim's palace at Mari.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-hammurabi-mari-source"
+      ],
+      "reviewId": "old-babylonian-hammurabi-mari-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-mari-identification",
+      "subjectId": "mari",
+      "predicate": "mari-identification",
+      "value": {
+        "type": "text",
+        "text": "Tell Hariri in the Syrian Euphrates valley is the site of ancient Mari."
+      },
+      "statement": "Tell Hariri in the Syrian Euphrates valley is the site of ancient Mari.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-mari-identification-source"
+      ],
+      "reviewId": "old-babylonian-mari-identification-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-mari-phase",
+      "subjectId": "mari",
+      "predicate": "mari-phase",
+      "value": {
+        "type": "text",
+        "text": "Mari's City III phase is dated approximately 2250–1760 BCE by the archaeological mission."
+      },
+      "statement": "Mari's City III phase is dated approximately 2250–1760 BCE by the archaeological mission.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2250,
+          "latest": -2250,
+          "original": "Approximately 2250 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1760,
+          "latest": -1760,
+          "original": "Approximately 1760 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-mari-phase-source"
+      ],
+      "reviewId": "old-babylonian-mari-phase-review",
+      "disputeNote": "Phase boundaries, not the entire lifespan of Mari. Other chronological conventions may differ."
+    },
+    {
+      "id": "old-babylonian-mari-tablets",
+      "subjectId": "mari",
+      "predicate": "mari-tablets",
+      "value": {
+        "type": "text",
+        "text": "Thousands of tablets were found in the Great Royal Palace."
+      },
+      "statement": "Thousands of tablets were found in the Great Royal Palace.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-mari-tablets-source"
+      ],
+      "reviewId": "old-babylonian-mari-tablets-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-mari-archive",
+      "subjectId": "mari",
+      "predicate": "mari-archive",
+      "value": {
+        "type": "text",
+        "text": "The palace tablets include administrative texts and royal correspondence."
+      },
+      "statement": "The palace tablets include administrative texts and royal correspondence.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-mari-archive-source"
+      ],
+      "reviewId": "old-babylonian-mari-archive-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-school-identification",
+      "subjectId": "old-babylonian-schooling",
+      "predicate": "school-identification",
+      "value": {
+        "type": "text",
+        "text": "House F at Nippur is widely interpreted as a scribal school."
+      },
+      "statement": "House F at Nippur is widely interpreted as a scribal school.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-school-identification-source"
+      ],
+      "reviewId": "old-babylonian-school-identification-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-school-curriculum",
+      "subjectId": "old-babylonian-schooling",
+      "predicate": "school-curriculum",
+      "value": {
+        "type": "text",
+        "text": "Tablets found in House F document an educational curriculum."
+      },
+      "statement": "Tablets found in House F document an educational curriculum.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-school-curriculum-source"
+      ],
+      "reviewId": "old-babylonian-school-curriculum-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-school-dating",
+      "subjectId": "old-babylonian-schooling",
+      "predicate": "school-dating",
+      "value": {
+        "type": "date",
+        "date": {
+          "precision": "approximate",
+          "earliest": -1740,
+          "latest": -1740,
+          "original": "roughly timewise around 1740 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "statement": "Curator Susanne Paulus places the House F school around 1740 BCE.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-school-dating-source"
+      ],
+      "reviewId": "old-babylonian-school-dating-review",
+      "disputeNote": "Approximate reference year; neither an exact event year nor the duration of the school."
+    },
+    {
+      "id": "old-babylonian-school-nippur",
+      "subjectId": "old-babylonian-schooling",
+      "predicate": "school-nippur",
+      "value": {
+        "type": "entity",
+        "entityId": "nippur"
+      },
+      "statement": "House F is at Nippur.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-school-nippur-source"
+      ],
+      "reviewId": "old-babylonian-school-nippur-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-babylon-setting",
+      "subjectId": "babylon",
+      "predicate": "babylon-setting",
+      "value": {
+        "type": "text",
+        "text": "Babylon was a Mesopotamian city ruled by Hammurabi."
+      },
+      "statement": "Babylon was a Mesopotamian city ruled by Hammurabi.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-babylon-setting-source"
+      ],
+      "reviewId": "old-babylonian-babylon-setting-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-nippur-setting",
+      "subjectId": "nippur",
+      "predicate": "nippur-setting",
+      "value": {
+        "type": "text",
+        "text": "Nippur is an archaeological site in the Middle Euphrates region of Iraq."
+      },
+      "statement": "Nippur is an archaeological site in the Middle Euphrates region of Iraq.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-nippur-setting-source"
+      ],
+      "reviewId": "old-babylonian-nippur-setting-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-nippur-enlil",
+      "subjectId": "nippur",
+      "predicate": "nippur-enlil",
+      "value": {
+        "type": "text",
+        "text": "Nippur was a centre of the worship of Enlil in the third and second millennia BCE."
+      },
+      "statement": "Nippur was a centre of the worship of Enlil in the third and second millennia BCE.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-nippur-enlil-source"
+      ],
+      "reviewId": "old-babylonian-nippur-enlil-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-babylon-window",
+      "subjectId": "babylon",
+      "predicate": "babylon-window",
+      "value": {
+        "type": "text",
+        "text": "The Met places the Old Babylonian period at approximately 2000–1600 BCE."
+      },
+      "statement": "The Met places the Old Babylonian period at approximately 2000–1600 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2000,
+          "latest": -2000,
+          "original": "Approximately 2000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1600,
+          "latest": -1600,
+          "original": "Approximately 1600 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-babylon-window-source"
+      ],
+      "reviewId": "old-babylonian-babylon-window-review",
+      "disputeNote": "Used as an editorial study window for this city entry, not founding or abandonment dates."
+    },
+    {
+      "id": "old-babylonian-nippur-window",
+      "subjectId": "nippur",
+      "predicate": "nippur-window",
+      "value": {
+        "type": "text",
+        "text": "The Old Babylonian study window used here follows the Met: approximately 2000–1600 BCE."
+      },
+      "statement": "The Old Babylonian study window used here follows the Met: approximately 2000–1600 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2000,
+          "latest": -2000,
+          "original": "Approximately 2000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1600,
+          "latest": -1600,
+          "original": "Approximately 1600 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-nippur-window-source"
+      ],
+      "reviewId": "old-babylonian-nippur-window-review",
+      "disputeNote": "Editorial comparison window for the Nippur school context, not the lifespan of the city."
+    },
+    {
+      "id": "old-babylonian-hammurabi-reign-point",
+      "subjectId": "hammurabi-reign",
+      "predicate": "hammurabi-reign-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          44.420833333333334,
+          32.54196944444444
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Babylon site reference point; not an exact building location or evidence of personal presence.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1792,
+          "latest": -1792,
+          "original": "Approximately 1792 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1750,
+          "latest": -1750,
+          "original": "Approximately 1750 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-hammurabi-reign-point-source"
+      ],
+      "reviewId": "old-babylonian-hammurabi-reign-point-review",
+      "disputeNote": "Validity controls display in the entry window; it does not assert continuous personal residence."
+    },
+    {
+      "id": "old-babylonian-mari-point",
+      "subjectId": "mari",
+      "predicate": "mari-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          40.89,
+          34.5494
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Mari site reference point; not an exact building location or evidence of personal presence.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2250,
+          "latest": -2250,
+          "original": "Approximately 2250 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1760,
+          "latest": -1760,
+          "original": "Approximately 1760 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-mari-point-source"
+      ],
+      "reviewId": "old-babylonian-mari-point-review",
+      "disputeNote": "Validity controls display in the entry window; it does not assert continuous personal residence."
+    },
+    {
+      "id": "old-babylonian-old-babylonian-schooling-point",
+      "subjectId": "old-babylonian-schooling",
+      "predicate": "old-babylonian-schooling-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          45.220961111111116,
+          32.13644444444444
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Nippur site reference point; not an exact building location or evidence of personal presence.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1740,
+          "latest": -1740,
+          "original": "Approximately 1740 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1740,
+          "latest": -1740,
+          "original": "Approximately 1740 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-old-babylonian-schooling-point-source"
+      ],
+      "reviewId": "old-babylonian-old-babylonian-schooling-point-review",
+      "disputeNote": "Validity controls display in the entry window; it does not assert continuous personal residence."
+    },
+    {
+      "id": "old-babylonian-babylon-point",
+      "subjectId": "babylon",
+      "predicate": "babylon-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          44.420833333333334,
+          32.54196944444444
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Babylon site reference point; not an exact building location or evidence of personal presence.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2000,
+          "latest": -2000,
+          "original": "Approximately 2000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1600,
+          "latest": -1600,
+          "original": "Approximately 1600 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-babylon-point-source"
+      ],
+      "reviewId": "old-babylonian-babylon-point-review",
+      "disputeNote": "Validity controls display in the entry window; it does not assert continuous personal residence."
+    },
+    {
+      "id": "old-babylonian-nippur-point",
+      "subjectId": "nippur",
+      "predicate": "nippur-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          45.220961111111116,
+          32.13644444444444
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Nippur site reference point; not an exact building location or evidence of personal presence.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2000,
+          "latest": -2000,
+          "original": "Approximately 2000 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1600,
+          "latest": -1600,
+          "original": "Approximately 1600 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-nippur-point-source"
+      ],
+      "reviewId": "old-babylonian-nippur-point-review",
+      "disputeNote": "Validity controls display in the entry window; it does not assert continuous personal residence."
+    },
+    {
+      "id": "old-babylonian-mari-earlier-later",
+      "subjectId": "mari",
+      "predicate": "mari-earlier-later",
+      "value": {
+        "type": "text",
+        "text": "Mari had earlier city phases and the tell was occupied on occasion after antiquity."
+      },
+      "statement": "Mari had earlier city phases and the tell was occupied on occasion after antiquity.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-mari-earlier-later-source"
+      ],
+      "reviewId": "old-babylonian-mari-earlier-later-review",
+      "disputeNote": null
+    },
+    {
+      "id": "old-babylonian-school-period",
+      "subjectId": "old-babylonian-schooling",
+      "predicate": "school-period",
+      "value": {
+        "type": "text",
+        "text": "House F is studied as evidence for Old Babylonian education."
+      },
+      "statement": "House F is studied as evidence for Old Babylonian education.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "old-babylonian-school-period-source"
+      ],
+      "reviewId": "old-babylonian-school-period-review",
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "old-babylonian-hammurabi-reign-dates-source",
+      "claimId": "old-babylonian-hammurabi-reign-dates",
+      "sourceId": "old-babylonian-met-mesopotamia-2000-1000",
+      "locator": "Overview",
+      "note": "Hammurabi ruled Babylon approximately 1792–1750 BCE.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-hammurabi-reign-dates-review"
+    },
+    {
+      "id": "old-babylonian-hammurabi-babylon-source",
+      "claimId": "old-babylonian-hammurabi-babylon",
+      "sourceId": "old-babylonian-met-mesopotamia-2000-1000",
+      "locator": "Overview",
+      "note": "Hammurabi was king of Babylon.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-hammurabi-babylon-review"
+    },
+    {
+      "id": "old-babylonian-hammurabi-expansion-source",
+      "claimId": "old-babylonian-hammurabi-expansion",
+      "sourceId": "old-babylonian-met-mesopotamia-2000-1000",
+      "locator": "Overview",
+      "note": "Hammurabi expanded his control in southern Mesopotamia.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-hammurabi-expansion-review"
+    },
+    {
+      "id": "old-babylonian-hammurabi-mari-source",
+      "claimId": "old-babylonian-hammurabi-mari",
+      "sourceId": "old-babylonian-met-mesopotamia-2000-1000",
+      "locator": "Key Events, ca. 1800–1600 BCE",
+      "note": "Hammurabi destroyed King Zimri-Lim's palace at Mari.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-hammurabi-mari-review"
+    },
+    {
+      "id": "old-babylonian-mari-identification-source",
+      "claimId": "old-babylonian-mari-identification",
+      "sourceId": "old-babylonian-fr-ministry-mari-excavation",
+      "locator": "Opening paragraph",
+      "note": "Tell Hariri in the Syrian Euphrates valley is the site of ancient Mari.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-mari-identification-review"
+    },
+    {
+      "id": "old-babylonian-mari-phase-source",
+      "claimId": "old-babylonian-mari-phase",
+      "sourceId": "old-babylonian-mari-phases",
+      "locator": "City III heading",
+      "note": "Mari's City III phase is dated approximately 2250–1760 BCE by the archaeological mission.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-mari-phase-review"
+    },
+    {
+      "id": "old-babylonian-mari-tablets-source",
+      "claimId": "old-babylonian-mari-tablets",
+      "sourceId": "old-babylonian-fr-ministry-mari-excavation",
+      "locator": "Excavations by André Parrot",
+      "note": "Thousands of tablets were found in the Great Royal Palace.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-mari-tablets-review"
+    },
+    {
+      "id": "old-babylonian-mari-archive-source",
+      "claimId": "old-babylonian-mari-archive",
+      "sourceId": "old-babylonian-mari-palace",
+      "locator": "Evidence of palace life in the early 2nd millennium BCE",
+      "note": "The palace tablets include administrative texts and royal correspondence.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-mari-archive-review"
+    },
+    {
+      "id": "old-babylonian-school-identification-source",
+      "claimId": "old-babylonian-school-identification",
+      "sourceId": "old-babylonian-uchicago-back-school",
+      "locator": "Book description, first paragraph",
+      "note": "House F at Nippur is widely interpreted as a scribal school.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-school-identification-review"
+    },
+    {
+      "id": "old-babylonian-school-curriculum-source",
+      "claimId": "old-babylonian-school-curriculum",
+      "sourceId": "old-babylonian-uchicago-back-school",
+      "locator": "Book description, second paragraph",
+      "note": "Tablets found in House F document an educational curriculum.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-school-curriculum-review"
+    },
+    {
+      "id": "old-babylonian-school-dating-source",
+      "claimId": "old-babylonian-school-dating",
+      "sourceId": "old-babylonian-school-date",
+      "locator": "Transcript 2:25",
+      "note": "Curator Susanne Paulus places the House F school around 1740 BCE.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-school-dating-review"
+    },
+    {
+      "id": "old-babylonian-school-nippur-source",
+      "claimId": "old-babylonian-school-nippur",
+      "sourceId": "old-babylonian-uchicago-back-school",
+      "locator": "Book description, first paragraph",
+      "note": "House F is at Nippur.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-school-nippur-review"
+    },
+    {
+      "id": "old-babylonian-babylon-setting-source",
+      "claimId": "old-babylonian-babylon-setting",
+      "sourceId": "old-babylonian-babylon-site",
+      "locator": "Brief synthesis",
+      "note": "Babylon was a Mesopotamian city ruled by Hammurabi.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-babylon-setting-review"
+    },
+    {
+      "id": "old-babylonian-nippur-setting-source",
+      "claimId": "old-babylonian-nippur-setting",
+      "sourceId": "old-babylonian-nippur-site",
+      "locator": "Description: Introduction",
+      "note": "Nippur is an archaeological site in the Middle Euphrates region of Iraq.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-nippur-setting-review"
+    },
+    {
+      "id": "old-babylonian-nippur-enlil-source",
+      "claimId": "old-babylonian-nippur-enlil",
+      "sourceId": "old-babylonian-nippur-site",
+      "locator": "Description: Introduction",
+      "note": "Nippur was a centre of the worship of Enlil in the third and second millennia BCE.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-nippur-enlil-review"
+    },
+    {
+      "id": "old-babylonian-babylon-window-source",
+      "claimId": "old-babylonian-babylon-window",
+      "sourceId": "old-babylonian-met-mesopotamia-2000-1000",
+      "locator": "Timeline: South, Old Babylonian period",
+      "note": "The Met places the Old Babylonian period at approximately 2000–1600 BCE.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-babylon-window-review"
+    },
+    {
+      "id": "old-babylonian-nippur-window-source",
+      "claimId": "old-babylonian-nippur-window",
+      "sourceId": "old-babylonian-met-mesopotamia-2000-1000",
+      "locator": "Timeline: South, Old Babylonian period",
+      "note": "The Old Babylonian study window used here follows the Met: approximately 2000–1600 BCE.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-nippur-window-review"
+    },
+    {
+      "id": "old-babylonian-hammurabi-reign-point-source",
+      "claimId": "old-babylonian-hammurabi-reign-point",
+      "sourceId": "old-babylonian-babylon-site",
+      "locator": "Published coordinate reference; longitude first. UNESCO degrees/minutes/seconds converted arithmetically where applicable.",
+      "note": "Babylon site reference point; not an exact building location or evidence of personal presence.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-hammurabi-reign-point-review"
+    },
+    {
+      "id": "old-babylonian-mari-point-source",
+      "claimId": "old-babylonian-mari-point",
+      "sourceId": "old-babylonian-mari-location",
+      "locator": "Published coordinate reference; longitude first. UNESCO degrees/minutes/seconds converted arithmetically where applicable.",
+      "note": "Mari site reference point; not an exact building location or evidence of personal presence.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-mari-point-review"
+    },
+    {
+      "id": "old-babylonian-old-babylonian-schooling-point-source",
+      "claimId": "old-babylonian-old-babylonian-schooling-point",
+      "sourceId": "old-babylonian-nippur-site",
+      "locator": "Published coordinate reference; longitude first. UNESCO degrees/minutes/seconds converted arithmetically where applicable.",
+      "note": "Nippur site reference point; not an exact building location or evidence of personal presence.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-old-babylonian-schooling-point-review"
+    },
+    {
+      "id": "old-babylonian-babylon-point-source",
+      "claimId": "old-babylonian-babylon-point",
+      "sourceId": "old-babylonian-babylon-site",
+      "locator": "Published coordinate reference; longitude first. UNESCO degrees/minutes/seconds converted arithmetically where applicable.",
+      "note": "Babylon site reference point; not an exact building location or evidence of personal presence.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-babylon-point-review"
+    },
+    {
+      "id": "old-babylonian-nippur-point-source",
+      "claimId": "old-babylonian-nippur-point",
+      "sourceId": "old-babylonian-nippur-site",
+      "locator": "Published coordinate reference; longitude first. UNESCO degrees/minutes/seconds converted arithmetically where applicable.",
+      "note": "Nippur site reference point; not an exact building location or evidence of personal presence.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-nippur-point-review"
+    },
+    {
+      "id": "old-babylonian-mari-earlier-later-source",
+      "claimId": "old-babylonian-mari-earlier-later",
+      "sourceId": "old-babylonian-mari-phases",
+      "locator": "City I and City II headings; closing paragraph",
+      "note": "Mari had earlier city phases and the tell was occupied on occasion after antiquity.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-mari-earlier-later-review"
+    },
+    {
+      "id": "old-babylonian-school-period-source",
+      "claimId": "old-babylonian-school-period",
+      "sourceId": "old-babylonian-uchicago-back-school",
+      "locator": "Book description, first paragraph",
+      "note": "House F is studied as evidence for Old Babylonian education.",
+      "relation": "supports",
+      "reviewId": "old-babylonian-school-period-review"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "old-babylonian-hammurabi-reign-dates-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-hammurabi-babylon-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-hammurabi-expansion-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-hammurabi-mari-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-mari-identification-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-mari-phase-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-mari-tablets-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-mari-archive-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-school-identification-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-school-curriculum-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-school-dating-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-school-nippur-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-babylon-setting-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-nippur-setting-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-nippur-enlil-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-babylon-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-nippur-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-hammurabi-reign-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-mari-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-old-babylonian-schooling-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-babylon-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-nippur-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-mari-earlier-later-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    },
+    {
+      "id": "old-babylonian-school-period-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and checked the stated claim, qualification and structured value. Reference points indicate sites, not exact buildings or personal presence. Editorial windows are identified separately."
+    }
+  ],
+  "accounts": [],
+  "schemaVersion": "1.0"
+}
