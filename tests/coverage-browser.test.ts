@@ -11,17 +11,17 @@ class Node extends EventTarget {
  closest(){return this.dataset.package?this:null;}
  setAttribute(){}
 }
-async function startup(search='',fail=''){
+async function startup(search='',fail='',evidenceFixture=null){
  const nodes=new Map();const node=id=>{if(!nodes.has(id))nodes.set(id,new Node());return nodes.get(id);};
  const plan=node('plan'),document=new EventTarget(),urls=[];
  Object.assign(document,{getElementById:node,querySelector:()=>plan,querySelectorAll:()=>[]});
- const scope={...model,esc:escapeHtml,document,location:{pathname:'/coverage.html',search,hash:''},history:{replaceState:(_a,_b,url)=>urls.push(url)},Element:Node,Option:class{constructor(text,value){this.text=text;this.value=value;}},fetch:async url=>({ok:url!==fail,json:async()=>JSON.parse(fs.readFileSync('web/'+url))})};
+ const scope={...model,esc:escapeHtml,document,location:{pathname:'/coverage.html',search,hash:''},history:{replaceState:(_a,_b,url)=>urls.push(url)},Element:Node,Option:class{constructor(text,value){this.text=text;this.value=value;}},fetch:async url=>({ok:url!==fail,json:async()=>url==='data/reviewed-evidence.json'&&evidenceFixture!==null?evidenceFixture:JSON.parse(fs.readFileSync('web/'+url))})};
  await new AsyncFunction(...Object.keys(scope),source)(...Object.values(scope));
  return {node,plan,urls,select(id,value){node(id).value=value;node(id).dispatchEvent(new Event('change'));},choose(id){const event=new Event('click');const target=new Node();target.dataset.package=id;Object.defineProperty(event,'target',{value:target});document.dispatchEvent(event);}};
 }
 test('coverage startup keeps checked statements distinct from complete research packages',async()=>{
- const app=await startup();
- assert.match(app.node('checked-total').textContent,/333 statements/);
+ const app=await startup('','',{claims:[{status:'accepted'},{status:'draft'},{status:'accepted'}]});
+ assert.equal(app.node('checked-total').textContent,'2 statements currently have recorded source checks.');
  assert.match(app.node('revision').textContent,/0 \/ 364/);
  assert.match(app.node('match-count').textContent,/364 of 364/);
  assert.match(app.node('research-findings').innerHTML,/13 candidate statements/);
