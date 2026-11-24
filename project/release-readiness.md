@@ -14,11 +14,11 @@ Updated 24 November 2026. The sustainable application and the map/Browse homepag
 
 ## Latest release
 
-Ian approved the integrated preview before [PR #48](https://github.com/sproates/historica/pull/48) was merged as `2a2d53837c9bf574dd11a68de49fd5f916782df3`. [Main verification](https://github.com/sproates/historica/actions/runs/45350942545) reused the successful PR package without rebuilding or rerunning the tests.
+Ian approved the performance preview on 24 November. [PR #53](https://github.com/sproates/historica/pull/53) stabilises Map/Browse startup and starts the basemap independently of history data. [PR #54](https://github.com/sproates/historica/pull/54) shares world-map geometry between history pages, replaces full country geometry with a small search index and removes redirects from internal history links.
 
-[Production deployment](https://github.com/sproates/historica/actions/runs/45351006640) succeeded on its second attempt. The first attempt could not find the just-uploaded Pages artifact; the artifact was subsequently visible and retrying the deployment succeeded. This was a deployment lookup failure, not a build or test failure. No application change was needed.
+The deployed application is `ad5f3c552b33d096e3b3258abd3e112b28981e4e`. [Main verification](https://github.com/sproates/historica/actions/runs/45404855830) reused the successful PR package without rebuilding or rerunning the suite. [Production deployment](https://github.com/sproates/historica/actions/runs/45404953505) succeeded on its first attempt.
 
-Local verification passed 199 application tests and 15 static-page tests. The packaged release verified 230 history routes and 4,710 local links. Browser checks covered Browse search, return links, country search, grouped markers, mobile sheet dragging and dark mode. Ian also reviewed the prototype on his phone. After deployment, HTTPS checks verified the public homepage, map bundle, provider configuration, Stonehenge return link and updated privacy page.
+Live checks confirmed the homepage, Alexander and Britain and Ireland pages, shared SVG, country index, analytics configuration and old bookmarks with date queries. Browser checks confirmed map rendering, Browse search and country selection. Repeated production mobile Lighthouse runs returned median scores of 96 for the homepage and 100 for Alexander, compared with 53 and 67 before the changes. The [performance report](performance-improvement-plan.md) records the full measurements and limitations.
 
 ## Remaining follow-ups
 
