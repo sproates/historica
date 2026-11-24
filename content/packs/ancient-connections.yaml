@@ -8,6 +8,10 @@ entities:
   - aksum-context
   - sanchi-early
   - scythian-black-sea
+  - gibraltar
+  - gorhams-cave-sanctuary
+  - gorhams-cave-scarabs
+  - gorhams-cave-offerings
 associations:
   - subject: aksum-context
     place: aksum-context
@@ -36,6 +40,64 @@ associations:
       - connections-sanchi-early-1
       - connections-sanchi-early-2
       - connections-sanchi-early-point
+    contextual: true
+  - subject: gibraltar
+    place: gibraltar
+    startYear: -900
+    endYear: -200
+    point:
+      - -5.342061111111111
+      - 36.12266944444445
+    label: Gorham’s Cave Complex · approximate site reference
+    claimIds:
+      - gibraltar-gibraltar-sanctuary
+      - gibraltar-gibraltar-window
+      - gibraltar-gibraltar-point
+    source: https://whc.unesco.org/en/list/1500/
+    contextual: true
+  - subject: gorhams-cave-sanctuary
+    place: gibraltar
+    startYear: -900
+    endYear: -200
+    point:
+      - -5.342061111111111
+      - 36.12266944444445
+    label: Gorham’s Cave Complex · approximate site reference
+    claimIds:
+      - gibraltar-gorhams-cave-sanctuary-use
+      - gibraltar-gorhams-cave-sanctuary-writing
+      - gibraltar-gorhams-cave-sanctuary-window
+      - gibraltar-gorhams-cave-sanctuary-point
+    source: https://whc.unesco.org/en/list/1500/
+    contextual: true
+  - subject: gorhams-cave-scarabs
+    place: gibraltar
+    startYear: -900
+    endYear: -500
+    point:
+      - -5.342061111111111
+      - 36.12266944444445
+    label: Gorham’s Cave Complex · approximate site reference
+    claimIds:
+      - gibraltar-gorhams-cave-scarabs-objects
+      - gibraltar-gorhams-cave-scarabs-imitations
+      - gibraltar-gorhams-cave-scarabs-window
+      - gibraltar-gorhams-cave-scarabs-point
+    source: https://whc.unesco.org/en/list/1500/
+    contextual: true
+  - subject: gorhams-cave-offerings
+    place: gibraltar
+    startYear: -900
+    endYear: -200
+    point:
+      - -5.342061111111111
+      - 36.12266944444445
+    label: Gorham’s Cave Complex · approximate site reference
+    claimIds:
+      - gibraltar-gorhams-cave-offerings-origins
+      - gibraltar-gorhams-cave-offerings-window
+      - gibraltar-gorhams-cave-offerings-point
+    source: https://whc.unesco.org/en/list/1500/
     contextual: true
 relationships:
   - a: global-overview
@@ -68,3 +130,62 @@ relationships:
   - a: parthian-context
     b: mithridates-one-reign
     label: Explore a ruler’s reign
+  - a: gibraltar
+    b: gorhams-cave-sanctuary
+    label: Gorham’s Cave in Gibraltar
+    claimIds:
+      - gibraltar-gorhams-cave-sanctuary-use
+      - gibraltar-gorhams-cave-sanctuary-writing
+      - gibraltar-gorhams-cave-sanctuary-window
+      - gibraltar-gorhams-cave-sanctuary-point
+    sourceUrls:
+      - https://www.ministryforheritage.gi/heritage-and-antiquities/gorhams-cave-palaeolithic-occupation-site-also-neolithic-and-phoeniciancarthaginian-site-1009
+      - https://whc.unesco.org/en/list/1500/
+  - a: gibraltar
+    b: gorhams-cave-scarabs
+    label: Gorham’s Cave in Gibraltar
+    claimIds:
+      - gibraltar-gorhams-cave-scarabs-objects
+      - gibraltar-gorhams-cave-scarabs-imitations
+      - gibraltar-gorhams-cave-scarabs-window
+      - gibraltar-gorhams-cave-scarabs-point
+    sourceUrls:
+      - https://www.gibmuseum.gi/news/scarabs-51
+      - https://whc.unesco.org/en/list/1500/
+  - a: gorhams-cave-sanctuary
+    b: gorhams-cave-scarabs
+    label: Offerings at the sanctuary
+    claimIds:
+      - gibraltar-gorhams-cave-scarabs-objects
+      - gibraltar-gorhams-cave-scarabs-imitations
+      - gibraltar-gorhams-cave-scarabs-window
+      - gibraltar-gorhams-cave-scarabs-point
+    sourceUrls:
+      - https://www.gibmuseum.gi/news/scarabs-51
+  - a: gorhams-cave-scarabs
+    b: egypt
+    label: Egyptian objects found at Gorham’s Cave
+    claimIds:
+      - gibraltar-gorhams-cave-scarabs-objects
+    sourceUrls:
+      - https://www.gibmuseum.gi/news/scarabs-51
+    note: Object provenance, not proof of direct travel or the identity of a donor.
+  - a: gibraltar
+    b: gorhams-cave-offerings
+    label: Gorham’s Cave in Gibraltar
+    claimIds:
+      - gibraltar-gorhams-cave-offerings-origins
+      - gibraltar-gorhams-cave-offerings-window
+      - gibraltar-gorhams-cave-offerings-point
+    sourceUrls:
+      - https://www.gibmuseum.gi/news/an-international-shrine-at-gorhams-cave-68
+      - https://whc.unesco.org/en/list/1500/
+  - a: gorhams-cave-sanctuary
+    b: gorhams-cave-offerings
+    label: Offerings at the sanctuary
+    claimIds:
+      - gibraltar-gorhams-cave-offerings-origins
+      - gibraltar-gorhams-cave-offerings-window
+      - gibraltar-gorhams-cave-offerings-point
+    sourceUrls:
+      - https://www.gibmuseum.gi/news/an-international-shrine-at-gorhams-cave-68

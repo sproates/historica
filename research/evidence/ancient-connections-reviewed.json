@@ -40,6 +40,26 @@
       "id": "scythian-black-sea",
       "name": "Scythian communities around the Black Sea",
       "type": "period"
+    },
+    {
+      "id": "gibraltar",
+      "name": "Gibraltar",
+      "type": "area"
+    },
+    {
+      "id": "gorhams-cave-sanctuary",
+      "name": "The sanctuary at Gorham’s Cave",
+      "type": "period"
+    },
+    {
+      "id": "gorhams-cave-scarabs",
+      "name": "Egyptian scarabs at Gorham’s Cave",
+      "type": "period"
+    },
+    {
+      "id": "gorhams-cave-offerings",
+      "name": "Mediterranean offerings at Gorham’s Cave",
+      "type": "period"
     }
   ],
   "sources": [
@@ -96,6 +116,51 @@
       "locatorHint": "Brief synthesis and criterion (iii); site coordinate listing",
       "accessed": "2026-11-22",
       "reuse": "Original brief paraphrases with linked attribution; source text and images are not redistributed."
+    },
+    {
+      "id": "gibraltar-heritage",
+      "title": "Gorham’s Cave: archaeological occupation and sanctuary",
+      "creator": "HM Government of Gibraltar, Ministry for Heritage",
+      "url": "https://www.ministryforheritage.gi/heritage-and-antiquities/gorhams-cave-palaeolithic-occupation-site-also-neolithic-and-phoeniciancarthaginian-site-1009",
+      "locatorHint": "Paragraph on the upper level, ninth to third centuries BCE",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "gibraltar-scarabs",
+      "title": "Scarabs",
+      "creator": "Gibraltar National Museum",
+      "url": "https://www.gibmuseum.gi/news/scarabs-51",
+      "locatorHint": "Final paragraph: Egyptian and pseudo-Egyptian scarabs",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "gibraltar-offerings",
+      "title": "An international shrine at Gorham’s cave",
+      "creator": "Gibraltar National Museum",
+      "url": "https://www.gibmuseum.gi/news/an-international-shrine-at-gorhams-cave-68",
+      "locatorHint": "Provenance list and discussion of trade routes and visitors",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "gibraltar-inscriptions",
+      "title": "Culto y culturas en la cueva de Gorham (Gibraltar)",
+      "creator": "José Ángel Zamora López and colleagues, Complutum 24(1), 2013",
+      "url": "https://revistas.ucm.es/index.php/CMPL/en/article/view/42327",
+      "locatorHint": "Abstract; full paper not used for detailed object dating",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
+    },
+    {
+      "id": "gibraltar-point",
+      "title": "Gorham’s Cave Complex",
+      "creator": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1500/",
+      "locatorHint": "Property 1500 coordinates: N36 7 21.61 W5 20 31.42",
+      "accessed": "2026-11-24",
+      "reuse": "Original paraphrase and attributed reference data; no images or source prose reproduced."
     }
   ],
   "claims": [
@@ -650,6 +715,408 @@
       ],
       "reviewId": "connections-scythian-black-sea-2-review",
       "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gibraltar-sanctuary",
+      "subjectId": "gibraltar",
+      "predicate": "historical-context",
+      "statement": "Gorham’s Cave in Gibraltar preserves a coastal sanctuary associated with Phoenician and Carthaginian use between the ninth and third centuries BCE.",
+      "value": {
+        "type": "text",
+        "text": "Gorham’s Cave in Gibraltar preserves a coastal sanctuary associated with Phoenician and Carthaginian use between the ninth and third centuries BCE."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gibraltar-sanctuary-evidence"
+      ],
+      "reviewId": "gibraltar-gibraltar-sanctuary-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gibraltar-window",
+      "subjectId": "gibraltar",
+      "predicate": "historical-context",
+      "statement": "The ninth to third centuries BCE provide a broad study window for the sanctuary, not exact opening and closing dates or individual object dates.",
+      "value": {
+        "type": "text",
+        "text": "The ninth to third centuries BCE provide a broad study window for the sanctuary, not exact opening and closing dates or individual object dates."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -900,
+          "latest": -900,
+          "original": "Approximately 900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -200,
+          "latest": -200,
+          "original": "Approximately 200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gibraltar-window-evidence"
+      ],
+      "reviewId": "gibraltar-gibraltar-window-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gibraltar-point",
+      "subjectId": "gibraltar",
+      "predicate": "reference-location",
+      "statement": "UNESCO’s Gorham’s Cave Complex coordinate supplies a map reference on the eastern side of Gibraltar, not a precise offering findspot.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -5.342061111111111,
+          36.12266944444445
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern complex reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern complex reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gibraltar-point-evidence"
+      ],
+      "reviewId": "gibraltar-gibraltar-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-use",
+      "subjectId": "gorhams-cave-sanctuary",
+      "predicate": "historical-context",
+      "statement": "The Ministry for Heritage dates the upper-level sanctuary to the ninth through third centuries BCE and interprets offerings as requests for safe passage.",
+      "value": {
+        "type": "text",
+        "text": "The Ministry for Heritage dates the upper-level sanctuary to the ninth through third centuries BCE and interprets offerings as requests for safe passage."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-sanctuary-use-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-sanctuary-use-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-writing",
+      "subjectId": "gorhams-cave-sanctuary",
+      "predicate": "historical-context",
+      "statement": "The published study identifies Phoenician and Graeco-Iberian inscriptions and marks on pottery, possibly associated with votive offerings from Archaic to Hellenistic times.",
+      "value": {
+        "type": "text",
+        "text": "The published study identifies Phoenician and Graeco-Iberian inscriptions and marks on pottery, possibly associated with votive offerings from Archaic to Hellenistic times."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-sanctuary-writing-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-sanctuary-writing-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-window",
+      "subjectId": "gorhams-cave-sanctuary",
+      "predicate": "historical-context",
+      "statement": "The ninth to third centuries BCE provide a broad study window for the sanctuary, not exact opening and closing dates or individual object dates.",
+      "value": {
+        "type": "text",
+        "text": "The ninth to third centuries BCE provide a broad study window for the sanctuary, not exact opening and closing dates or individual object dates."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -900,
+          "latest": -900,
+          "original": "Approximately 900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -200,
+          "latest": -200,
+          "original": "Approximately 200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-sanctuary-window-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-sanctuary-window-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-point",
+      "subjectId": "gorhams-cave-sanctuary",
+      "predicate": "reference-location",
+      "statement": "UNESCO’s Gorham’s Cave Complex coordinate supplies a map reference on the eastern side of Gibraltar, not a precise offering findspot.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -5.342061111111111,
+          36.12266944444445
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern complex reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern complex reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-sanctuary-point-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-sanctuary-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-objects",
+      "subjectId": "gorhams-cave-scarabs",
+      "predicate": "historical-context",
+      "statement": "The museum identifies two illustrated hieroglyph-bearing scarabs as Egyptian and assigns them to the shrine’s ninth- to sixth-century BCE phases.",
+      "value": {
+        "type": "text",
+        "text": "The museum identifies two illustrated hieroglyph-bearing scarabs as Egyptian and assigns them to the shrine’s ninth- to sixth-century BCE phases."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-scarabs-objects-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-scarabs-objects-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-imitations",
+      "subjectId": "gorhams-cave-scarabs",
+      "predicate": "historical-context",
+      "statement": "Later pseudo-Egyptian scarabs from the cave imitate Egyptian forms but did not originate in Egypt.",
+      "value": {
+        "type": "text",
+        "text": "Later pseudo-Egyptian scarabs from the cave imitate Egyptian forms but did not originate in Egypt."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-scarabs-imitations-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-scarabs-imitations-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-window",
+      "subjectId": "gorhams-cave-scarabs",
+      "predicate": "historical-context",
+      "statement": "The ninth to sixth centuries BCE are the museum’s phase dating for the Egyptian examples, not the date range of all scarabs from the cave.",
+      "value": {
+        "type": "text",
+        "text": "The ninth to sixth centuries BCE are the museum’s phase dating for the Egyptian examples, not the date range of all scarabs from the cave."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -900,
+          "latest": -900,
+          "original": "Approximately 900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -500,
+          "latest": -500,
+          "original": "Approximately 500 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-scarabs-window-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-scarabs-window-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-point",
+      "subjectId": "gorhams-cave-scarabs",
+      "predicate": "reference-location",
+      "statement": "UNESCO’s Gorham’s Cave Complex coordinate supplies a map reference on the eastern side of Gibraltar, not a precise offering findspot.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -5.342061111111111,
+          36.12266944444445
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern complex reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern complex reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-scarabs-point-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-scarabs-point-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-offerings-origins",
+      "subjectId": "gorhams-cave-offerings",
+      "predicate": "historical-context",
+      "statement": "The museum identifies offerings from Carthage, the Tangier peninsula, Gadir, Andalusian workshops and the eastern Mediterranean through ceramic forms and clays.",
+      "value": {
+        "type": "text",
+        "text": "The museum identifies offerings from Carthage, the Tangier peninsula, Gadir, Andalusian workshops and the eastern Mediterranean through ceramic forms and clays."
+      },
+      "validity": null,
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-offerings-origins-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-offerings-origins-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-offerings-window",
+      "subjectId": "gorhams-cave-offerings",
+      "predicate": "historical-context",
+      "statement": "The ninth to third centuries BCE provide a broad study window for the sanctuary, not exact opening and closing dates or individual object dates.",
+      "value": {
+        "type": "text",
+        "text": "The ninth to third centuries BCE provide a broad study window for the sanctuary, not exact opening and closing dates or individual object dates."
+      },
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -900,
+          "latest": -900,
+          "original": "Approximately 900 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -200,
+          "latest": -200,
+          "original": "Approximately 200 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-offerings-window-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-offerings-window-review",
+      "disputeNote": null
+    },
+    {
+      "id": "gibraltar-gorhams-cave-offerings-point",
+      "subjectId": "gorhams-cave-offerings",
+      "predicate": "reference-location",
+      "statement": "UNESCO’s Gorham’s Cave Complex coordinate supplies a map reference on the eastern side of Gibraltar, not a precise offering findspot.",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          -5.342061111111111,
+          36.12266944444445
+        ],
+        "meaning": "reference"
+      },
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern complex reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Modern complex reference, not dated personal presence",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "accepted",
+      "certainty": "uncontested",
+      "evidenceIds": [
+        "gibraltar-gorhams-cave-offerings-point-evidence"
+      ],
+      "reviewId": "gibraltar-gorhams-cave-offerings-point-review",
+      "disputeNote": null
     }
   ],
   "evidence": [
@@ -796,6 +1263,132 @@
       "note": "750–100 BCE is a rounded editorial envelope for the source’s late-century boundaries. It is not a precise migration date or the end of all Scythian communities. A mobile, diverse population is not represented by one point or a single state border.",
       "relation": "supports",
       "reviewId": "connections-scythian-black-sea-2-review"
+    },
+    {
+      "id": "gibraltar-gibraltar-sanctuary-evidence",
+      "claimId": "gibraltar-gibraltar-sanctuary",
+      "sourceId": "gibraltar-heritage",
+      "locator": "Paragraph on the upper level, ninth to third centuries BCE",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gibraltar-sanctuary-review"
+    },
+    {
+      "id": "gibraltar-gibraltar-window-evidence",
+      "claimId": "gibraltar-gibraltar-window",
+      "sourceId": "gibraltar-heritage",
+      "locator": "Paragraph on the upper level, ninth to third centuries BCE",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gibraltar-window-review"
+    },
+    {
+      "id": "gibraltar-gibraltar-point-evidence",
+      "claimId": "gibraltar-gibraltar-point",
+      "sourceId": "gibraltar-point",
+      "locator": "Property 1500 coordinates: N36 7 21.61 W5 20 31.42",
+      "note": "Coordinate conversion to decimal degrees. Complex reference, not an individual findspot.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gibraltar-point-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-use-evidence",
+      "claimId": "gibraltar-gorhams-cave-sanctuary-use",
+      "sourceId": "gibraltar-heritage",
+      "locator": "Paragraph on the upper level, ninth to third centuries BCE",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-sanctuary-use-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-writing-evidence",
+      "claimId": "gibraltar-gorhams-cave-sanctuary-writing",
+      "sourceId": "gibraltar-inscriptions",
+      "locator": "Abstract; full paper not used for detailed object dating",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-sanctuary-writing-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-window-evidence",
+      "claimId": "gibraltar-gorhams-cave-sanctuary-window",
+      "sourceId": "gibraltar-heritage",
+      "locator": "Paragraph on the upper level, ninth to third centuries BCE",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-sanctuary-window-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-point-evidence",
+      "claimId": "gibraltar-gorhams-cave-sanctuary-point",
+      "sourceId": "gibraltar-point",
+      "locator": "Property 1500 coordinates: N36 7 21.61 W5 20 31.42",
+      "note": "Coordinate conversion to decimal degrees. Complex reference, not an individual findspot.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-sanctuary-point-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-objects-evidence",
+      "claimId": "gibraltar-gorhams-cave-scarabs-objects",
+      "sourceId": "gibraltar-scarabs",
+      "locator": "Final paragraph: Egyptian and pseudo-Egyptian scarabs",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-scarabs-objects-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-imitations-evidence",
+      "claimId": "gibraltar-gorhams-cave-scarabs-imitations",
+      "sourceId": "gibraltar-scarabs",
+      "locator": "Final paragraph: Egyptian and pseudo-Egyptian scarabs",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-scarabs-imitations-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-window-evidence",
+      "claimId": "gibraltar-gorhams-cave-scarabs-window",
+      "sourceId": "gibraltar-scarabs",
+      "locator": "Final paragraph: Egyptian and pseudo-Egyptian scarabs",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-scarabs-window-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-point-evidence",
+      "claimId": "gibraltar-gorhams-cave-scarabs-point",
+      "sourceId": "gibraltar-point",
+      "locator": "Property 1500 coordinates: N36 7 21.61 W5 20 31.42",
+      "note": "Coordinate conversion to decimal degrees. Complex reference, not an individual findspot.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-scarabs-point-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-offerings-origins-evidence",
+      "claimId": "gibraltar-gorhams-cave-offerings-origins",
+      "sourceId": "gibraltar-offerings",
+      "locator": "Provenance list and discussion of trade routes and visitors",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-offerings-origins-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-offerings-window-evidence",
+      "claimId": "gibraltar-gorhams-cave-offerings-window",
+      "sourceId": "gibraltar-heritage",
+      "locator": "Paragraph on the upper level, ninth to third centuries BCE",
+      "note": "Source passage inspected; broad dating does not establish activity in every year.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-offerings-window-review"
+    },
+    {
+      "id": "gibraltar-gorhams-cave-offerings-point-evidence",
+      "claimId": "gibraltar-gorhams-cave-offerings-point",
+      "sourceId": "gibraltar-point",
+      "locator": "Property 1500 coordinates: N36 7 21.61 W5 20 31.42",
+      "note": "Coordinate conversion to decimal degrees. Complex reference, not an individual findspot.",
+      "relation": "supports",
+      "reviewId": "gibraltar-gorhams-cave-offerings-point-review"
     }
   ],
   "reviews": [
@@ -910,6 +1503,104 @@
       "date": "2026-11-22",
       "decision": "verified",
       "reason": "Read the specified source passage and checked this paraphrase. Period scope and editorial clipping are disclosed; this does not establish annual activity or complete regional coverage."
+    },
+    {
+      "id": "gibraltar-gibraltar-sanctuary-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gibraltar-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gibraltar-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-use-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-writing-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-sanctuary-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-objects-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-imitations-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-scarabs-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-offerings-origins-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-offerings-window-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
+    },
+    {
+      "id": "gibraltar-gorhams-cave-offerings-point-review",
+      "reviewer": "AI-assisted source inspection; not independent expert review",
+      "date": "2026-11-24",
+      "decision": "verified",
+      "reason": "Inspected the cited passage and retained its limits. No exact journey, named visitor or annual activity inferred."
     }
   ],
   "accounts": []
