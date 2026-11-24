@@ -1,0 +1,200 @@
+[
+  {
+    "id": "samsu-iluna-reign",
+    "status": "draft",
+    "proposedType": "period",
+    "title": "Samsu-iluna’s reign",
+    "displayStartYear": -1749,
+    "displayEndYear": -1712,
+    "dateNote": "Approximate reign chronology.",
+    "point": [
+      44.420833333333334,
+      32.54196944444444
+    ],
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "Samsu-iluna ruled at Babylon in the conventionally dated reign of 1749–1712 BCE.",
+        "claimIds": [
+          "baseline2-samsu-dates",
+          "baseline2-samsu-babylon"
+        ]
+      },
+      {
+        "text": "He succeeded Hammurabi.",
+        "claimIds": [
+          "baseline2-samsu-succession"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "baseline2-samsu-dates",
+      "baseline2-samsu-babylon",
+      "baseline2-samsu-iluna-reign-point"
+    ],
+    "associations": [
+      {
+        "subject": "samsu-iluna-reign",
+        "place": "babylon",
+        "label": "City reference, not residence",
+        "startYear": -1749,
+        "endYear": -1712,
+        "point": [
+          44.420833333333334,
+          32.54196944444444
+        ],
+        "claimIds": [
+          "baseline2-samsu-babylon",
+          "baseline2-samsu-iluna-reign-point"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "a": "samsu-iluna-reign",
+        "b": "hammurabi-reign",
+        "label": "Predecessor",
+        "claimIds": [
+          "baseline2-samsu-succession"
+        ],
+        "startYear": null,
+        "endYear": null
+      },
+      {
+        "a": "samsu-iluna-reign",
+        "b": "babylon",
+        "label": "City he ruled",
+        "claimIds": [
+          "baseline2-samsu-babylon"
+        ],
+        "startYear": null,
+        "endYear": null
+      }
+    ],
+    "gaps": []
+  },
+  {
+    "id": "rim-sin-one-reign",
+    "status": "draft",
+    "proposedType": "period",
+    "title": "Rim-Sin I’s reign",
+    "displayStartYear": -1822,
+    "displayEndYear": -1763,
+    "dateNote": "Approximate reign chronology.",
+    "point": [
+      45.8536,
+      31.2858
+    ],
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "Rim-Sin ruled Larsa around 1822–1763 BCE.",
+        "claimIds": [
+          "baseline2-rim-dates",
+          "baseline2-rim-larsa"
+        ]
+      },
+      {
+        "text": "Hammurabi later took control of his southern territory.",
+        "claimIds": [
+          "baseline2-rim-hammurabi"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "baseline2-rim-dates",
+      "baseline2-rim-larsa",
+      "baseline2-rim-sin-one-reign-point"
+    ],
+    "associations": [
+      {
+        "subject": "rim-sin-one-reign",
+        "place": "larsa",
+        "label": "City reference, not residence",
+        "startYear": -1822,
+        "endYear": -1763,
+        "point": [
+          45.8536,
+          31.2858
+        ],
+        "claimIds": [
+          "baseline2-rim-larsa",
+          "baseline2-rim-sin-one-reign-point"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "a": "rim-sin-one-reign",
+        "b": "larsa",
+        "label": "City he ruled",
+        "claimIds": [
+          "baseline2-rim-larsa"
+        ],
+        "startYear": null,
+        "endYear": null
+      },
+      {
+        "a": "rim-sin-one-reign",
+        "b": "hammurabi-reign",
+        "label": "Ruler who took his territory",
+        "claimIds": [
+          "baseline2-rim-hammurabi"
+        ],
+        "startYear": null,
+        "endYear": null
+      }
+    ],
+    "gaps": [
+      "Rim-Sin I is identified by the dated reign in the Met; source does not print the ordinal."
+    ]
+  },
+  {
+    "id": "larsa",
+    "status": "draft",
+    "proposedType": "city",
+    "title": "Larsa",
+    "displayStartYear": -1822,
+    "displayEndYear": -1763,
+    "dateNote": "Editorial reign-based study window, not the city’s lifespan.",
+    "point": [
+      45.8536,
+      31.2858
+    ],
+    "region": "Mesopotamia",
+    "sentences": [
+      {
+        "text": "Larsa is identified with Şankarah in present-day Iraq.",
+        "claimIds": [
+          "baseline2-larsa-identification"
+        ]
+      },
+      {
+        "text": "This entry follows the city during Rim-Sin’s reign.",
+        "claimIds": [
+          "baseline2-rim-larsa",
+          "baseline2-larsa-window"
+        ]
+      }
+    ],
+    "metadataClaimIds": [
+      "baseline2-larsa-identification",
+      "baseline2-larsa-window",
+      "baseline2-larsa-point"
+    ],
+    "associations": [],
+    "relationships": [
+      {
+        "a": "larsa",
+        "b": "rim-sin-one-reign",
+        "label": "Ruler during this study window",
+        "claimIds": [
+          "baseline2-rim-larsa"
+        ],
+        "startYear": null,
+        "endYear": null
+      }
+    ],
+    "gaps": []
+  }
+]

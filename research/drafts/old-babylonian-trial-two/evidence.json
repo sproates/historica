@@ -1,0 +1,437 @@
+{
+  "schemaVersion": "1.0",
+  "description": "Draft-only bounded trial; no evidence or claims are reviewed or accepted.",
+  "entities": [
+    {
+      "id": "samsu-iluna-reign",
+      "name": "Samsu-iluna's reign",
+      "type": "period"
+    },
+    {
+      "id": "rim-sin-one-reign",
+      "name": "Rim-Sin I's reign",
+      "type": "period"
+    },
+    {
+      "id": "larsa",
+      "name": "Larsa",
+      "type": "city"
+    },
+    {
+      "id": "hammurabi-reign",
+      "name": "Hammurabi's reign",
+      "type": "period"
+    },
+    {
+      "id": "babylon",
+      "name": "Babylon",
+      "type": "city"
+    }
+  ],
+  "sources": [
+    {
+      "id": "met-isin-larsa-old-babylonian",
+      "title": "The Isin-Larsa and Old Babylonian Periods (2004–1595 B.C.)",
+      "creator": "Elizabeth Knott, The Metropolitan Museum of Art, Heilbrunn Timeline of Art History",
+      "url": "https://www.metmuseum.org/fr/essays/the-isin-larsa-and-old-babylonian-periods-2004-1595-b-c",
+      "locatorHint": "Paragraphs beginning “In the early nineteenth century B.C.” and “Just one year after Rim-Sin’s conquest of Isin”; lines 166–173 in inspected page",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and paraphrase only; no source text redistributed"
+    },
+    {
+      "id": "fr-culture-larsa-apogee",
+      "title": "L’apogée de la ville",
+      "creator": "French Ministry of Culture, Archaeology in Larsa",
+      "url": "https://archeologie.culture.gouv.fr/larsa/fr/lapogee-de-la-ville",
+      "locatorHint": "“Le triomphe de Larsa” and “La chute” sections; paragraphs on Rîm-Sîn and Hammurabi",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and paraphrase only; no source text redistributed"
+    },
+    {
+      "id": "fr-culture-larsa-location",
+      "title": "Tell es Senkereh",
+      "creator": "French Ministry of Culture, Archaeology in Larsa",
+      "url": "https://archeologie.culture.gouv.fr/larsa/fr/tell-es-senkereh-1",
+      "locatorHint": "“Localisation” section and site description",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and paraphrase only; no source text redistributed"
+    },
+    {
+      "id": "unesco-babylon",
+      "title": "Babylon",
+      "creator": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/278/",
+      "locatorHint": "Site coordinates line 94: N32 32 31.09 E44 25 15; site description lines 4–5, inspected page",
+      "accessed": "2026-11-24",
+      "reuse": "Coordinate citation and paraphrase; UNESCO description is CC-BY-SA IGO 3.0"
+    },
+    {
+      "id": "college-france-samsu-iluna",
+      "title": "Mesopotamia under Hammu-rabi's successors",
+      "creator": "Dominique Charpin, Collège de France",
+      "url": "https://www.college-de-france.fr/en/agenda/lecture/mesopotamia-under-hammu-rabi-successors",
+      "locatorHint": "Opening paragraph identifies Samsu-iluna among Hammu-rabi’s successors and gives his reign as 1749–1712; note on average chronology",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and paraphrase only; automatic English translation noted by page"
+    },
+    {
+      "id": "fr-culture-lower-mesopotamia",
+      "title": "La plaine alluviale mésopotamienne",
+      "creator": "French Ministry of Culture, Archaeology in Larsa",
+      "url": "https://archeologie.culture.gouv.fr/larsa/fr/la-plaine-alluviale-mesopotamienne",
+      "locatorHint": "Opening paragraph identifies Tell es Senkereh (ancient Larsa) in the Lower Mesopotamian plain between the Tigris and Euphrates",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and paraphrase only; no source text redistributed"
+    }
+  ],
+  "claims": [
+    {
+      "id": "samsu-iluna-dates",
+      "subjectId": "samsu-iluna-reign",
+      "predicate": "reign-dates",
+      "value": {
+        "type": "text",
+        "text": "Samsu-iluna’s reign is approximately 1749–1712 BCE in the average chronology."
+      },
+      "statement": "Samsu-iluna’s reign is approximately 1749–1712 BCE in the average chronology.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1749,
+          "latest": -1749,
+          "original": "1749–1712 BCE (average chronology)",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1712,
+          "latest": -1712,
+          "original": "1749–1712 BCE (average chronology)",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "samsu-iluna-dates-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "samsu-iluna-succession",
+      "subjectId": "samsu-iluna-reign",
+      "predicate": "succession",
+      "value": {
+        "type": "entity",
+        "entityId": "hammurabi-reign"
+      },
+      "statement": "Samsu-iluna was one of Hammu-rabi’s successors.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "samsu-iluna-succession-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "babylon-site-reference-point",
+      "subjectId": "babylon",
+      "predicate": "map-reference",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          44.420833333333334,
+          32.54196944444444
+        ],
+        "meaning": "reference"
+      },
+      "statement": "UNESCO gives the Babylon site reference as N32 32 31.09 E44 25 15, equivalent to longitude 44.420833333333334 and latitude 32.54196944444444.",
+      "validity": {
+        "start": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Contemporary site reference; not dated in the inspected coordinate passage",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "unknown",
+          "earliest": null,
+          "latest": null,
+          "original": "Contemporary site reference; not dated in the inspected coordinate passage",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "babylon-site-reference-point-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "rim-sin-dates",
+      "subjectId": "rim-sin-one-reign",
+      "predicate": "reign-dates",
+      "value": {
+        "type": "text",
+        "text": "Rim-Sin I’s reign is approximately 1822–1763 BCE."
+      },
+      "statement": "Rim-Sin I’s reign is approximately 1822–1763 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1822,
+          "latest": -1822,
+          "original": "Rîm-Sîn (1822–1763 BCE)",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1763,
+          "latest": -1763,
+          "original": "Rîm-Sîn (1822–1763 BCE)",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "rim-sin-dates-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "rim-sin-rule-larsa",
+      "subjectId": "rim-sin-one-reign",
+      "predicate": "rule-of",
+      "value": {
+        "type": "entity",
+        "entityId": "larsa"
+      },
+      "statement": "Rim-Sin I’s reign marked the apogee of Larsa.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "rim-sin-rule-larsa-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "rim-sin-hammurabi-conflict",
+      "subjectId": "rim-sin-one-reign",
+      "predicate": "political-conflict-with",
+      "value": {
+        "type": "entity",
+        "entityId": "hammurabi-reign"
+      },
+      "statement": "Hammurabi’s Babylon took Larsa in 1763 BCE, ending Rim-Sin I’s rule there.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "rim-sin-hammurabi-conflict-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "larsa-period-window",
+      "subjectId": "larsa",
+      "predicate": "editorial-study-window",
+      "value": {
+        "type": "text",
+        "text": "An editorial study window for Larsa, aligned to the Met’s Isin-Larsa and Old Babylonian period span, is 2004–1595 BCE; this is not the city’s lifespan."
+      },
+      "statement": "An editorial study window for Larsa, aligned to the Met’s Isin-Larsa and Old Babylonian period span, is 2004–1595 BCE; this is not the city’s lifespan.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -2004,
+          "latest": -2004,
+          "original": "The Met’s period title: 2004–1595 B.C.",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1595,
+          "latest": -1595,
+          "original": "The Met’s period title: 2004–1595 B.C.",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "larsa-period-window-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "larsa-site-identification",
+      "subjectId": "larsa",
+      "predicate": "site-identification",
+      "value": {
+        "type": "text",
+        "text": "Ancient Larsa is identified with Tell es Senkereh."
+      },
+      "statement": "The French Ministry of Culture identifies Tell es Senkereh as ancient Larsa.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "larsa-site-identification-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "larsa-geography",
+      "subjectId": "larsa",
+      "predicate": "geographical-setting",
+      "value": {
+        "type": "text",
+        "text": "Tell es Senkereh, ancient Larsa, is in the Lower Mesopotamian plain between the Tigris and Euphrates."
+      },
+      "statement": "Tell es Senkereh, ancient Larsa, is in the Lower Mesopotamian plain between the Tigris and Euphrates.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "larsa-geography-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "larsa-rim-sin-relationship",
+      "subjectId": "larsa",
+      "predicate": "ruled-by",
+      "value": {
+        "type": "entity",
+        "entityId": "rim-sin-one-reign"
+      },
+      "statement": "Rim-Sin I ruled Larsa, whose apogee is associated with his reign.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "larsa-rim-sin-relationship-passage"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "samsu-iluna-dates-passage",
+      "claimId": "samsu-iluna-dates",
+      "sourceId": "college-france-samsu-iluna",
+      "locator": "Opening paragraph and reference [2]",
+      "note": "The page states 38 years, 1749–1712, and says Hammu-rabi dates follow the average chronology.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "samsu-iluna-succession-passage",
+      "claimId": "samsu-iluna-succession",
+      "sourceId": "college-france-samsu-iluna",
+      "locator": "Opening paragraph",
+      "note": "The lecture series is explicitly about Hammu-rabi’s successors and names Samsu-iluna among them.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "babylon-site-reference-point-passage",
+      "claimId": "babylon-site-reference-point",
+      "sourceId": "unesco-babylon",
+      "locator": "Site coordinates: N32 32 31.09 E44 25 15",
+      "note": "UNESCO identifies these coordinates for the Babylon World Heritage property. Converted N32 32 31.09 E44 25 15 to decimal degrees; the passage does not establish a historical association between Babylon and Samsu-iluna.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "rim-sin-dates-passage",
+      "claimId": "rim-sin-dates",
+      "sourceId": "fr-culture-larsa-apogee",
+      "locator": "“Le triomphe de Larsa”",
+      "note": "The ministry page identifies Rîm-Sîn and gives his reign; in this early second-millennium Larsa context this is Rim-Sin I. The page does not discuss Rim-Sin II.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "rim-sin-rule-larsa-passage",
+      "claimId": "rim-sin-rule-larsa",
+      "sourceId": "fr-culture-larsa-apogee",
+      "locator": "“Le triomphe de Larsa”",
+      "note": "The ministry directly links Rîm-Sîn’s reign with Larsa’s apogee.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "rim-sin-hammurabi-conflict-passage",
+      "claimId": "rim-sin-hammurabi-conflict",
+      "sourceId": "fr-culture-larsa-apogee",
+      "locator": "“La chute”",
+      "note": "The page says Babylon under Hammurabi took Larsa in 1763; this is a political connection, not a claim of personal meeting.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "larsa-period-window-passage",
+      "claimId": "larsa-period-window",
+      "sourceId": "met-isin-larsa-old-babylonian",
+      "locator": "Title and paragraph 1",
+      "note": "The Met’s title supplies a broad regional period span; using it for the city is explicitly editorial, and does not claim continuous occupation.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "larsa-site-identification-passage",
+      "claimId": "larsa-site-identification",
+      "sourceId": "fr-culture-larsa-location",
+      "locator": "Opening description",
+      "note": "The source explicitly names the ruins of ancient Larsa as Tell es Senkereh.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "larsa-geography-passage",
+      "claimId": "larsa-geography",
+      "sourceId": "fr-culture-lower-mesopotamia",
+      "locator": "Opening paragraph",
+      "note": "The French Ministry page identifies Tell es Senkereh as ancient Larsa and places it in the Lower Mesopotamian plain between the Tigris and Euphrates. No numeric coordinates are given.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "larsa-rim-sin-relationship-passage",
+      "claimId": "larsa-rim-sin-relationship",
+      "sourceId": "fr-culture-larsa-apogee",
+      "locator": "“Le triomphe de Larsa”",
+      "note": "The ministry directly associates Rim-Sin’s reign with Larsa’s apogee.",
+      "relation": "supports",
+      "reviewId": null
+    }
+  ],
+  "reviews": [],
+  "accounts": []
+}

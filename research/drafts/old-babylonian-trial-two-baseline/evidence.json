@@ -1,0 +1,484 @@
+{
+  "entities": [
+    {
+      "id": "samsu-iluna-reign",
+      "name": "Samsu-iluna’s reign",
+      "type": "period"
+    },
+    {
+      "id": "rim-sin-one-reign",
+      "name": "Rim-Sin I’s reign",
+      "type": "period"
+    },
+    {
+      "id": "larsa",
+      "name": "Larsa",
+      "type": "city"
+    },
+    {
+      "id": "babylon",
+      "name": "Babylon",
+      "type": "city"
+    },
+    {
+      "id": "hammurabi-reign",
+      "name": "Hammurabi’s reign",
+      "type": "period"
+    }
+  ],
+  "sources": [
+    {
+      "id": "baseline2-met",
+      "title": "The Isin-Larsa and Old Babylonian Periods",
+      "creator": "Department of Ancient Near Eastern Art, Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/essays/the-isin-larsa-and-old-babylonian-periods-2004-1595-b-c",
+      "locatorHint": "Historical overview, Rim-Sin and Hammurabi paragraphs",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and original paraphrase; factual coordinate reference, no images or full text."
+    },
+    {
+      "id": "baseline2-ministry",
+      "title": "Babylone, capitale d’un royaume",
+      "creator": "Laura Cousin; French Ministry of Culture",
+      "url": "https://archeologie.culture.gouv.fr/babylone/fr/babylone-capitale-dun-royaume",
+      "locatorHint": "Babylone aux XIXe et XVIIIe siècles, paragraph on royal palaces",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and original paraphrase; factual coordinate reference, no images or full text."
+    },
+    {
+      "id": "baseline2-getty",
+      "title": "TGN 6003327: Şankarah",
+      "creator": "Getty Research Institute",
+      "url": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&find=rodi&nation=&place=island&subjectid=6003327",
+      "locatorHint": "Coordinates, names and hierarchy",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and original paraphrase; factual coordinate reference, no images or full text."
+    },
+    {
+      "id": "baseline2-unesco",
+      "title": "Babylon",
+      "creator": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/278/",
+      "locatorHint": "Coordinate reference N32 32 31.09 E44 25 15",
+      "accessed": "2026-11-24",
+      "reuse": "Citation and original paraphrase; factual coordinate reference, no images or full text."
+    }
+  ],
+  "claims": [
+    {
+      "id": "baseline2-samsu-dates",
+      "subjectId": "samsu-iluna-reign",
+      "predicate": "baseline2-samsu-dates",
+      "value": {
+        "type": "text",
+        "text": "The Ministry dates Samsu-iluna to 1749–1712 BCE."
+      },
+      "statement": "The Ministry dates Samsu-iluna to 1749–1712 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1749,
+          "latest": -1749,
+          "original": "Approximately 1749 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1712,
+          "latest": -1712,
+          "original": "Approximately 1712 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-samsu-dates-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": "Reign endpoints, not lifespan; chronology alternatives not investigated."
+    },
+    {
+      "id": "baseline2-samsu-succession",
+      "subjectId": "samsu-iluna-reign",
+      "predicate": "baseline2-samsu-succession",
+      "value": {
+        "type": "entity",
+        "entityId": "hammurabi-reign"
+      },
+      "statement": "Samsu-iluna succeeded Hammurabi.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-samsu-succession-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline2-samsu-babylon",
+      "subjectId": "samsu-iluna-reign",
+      "predicate": "baseline2-samsu-babylon",
+      "value": {
+        "type": "entity",
+        "entityId": "babylon"
+      },
+      "statement": "Samsu-iluna ruled at Babylon.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-samsu-babylon-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline2-rim-dates",
+      "subjectId": "rim-sin-one-reign",
+      "predicate": "baseline2-rim-dates",
+      "value": {
+        "type": "text",
+        "text": "The Met dates Rim-Sin’s reign to approximately 1822–1763 BCE."
+      },
+      "statement": "The Met dates Rim-Sin’s reign to approximately 1822–1763 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1822,
+          "latest": -1822,
+          "original": "Approximately 1822 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1763,
+          "latest": -1763,
+          "original": "Approximately 1763 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-rim-dates-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline2-rim-larsa",
+      "subjectId": "rim-sin-one-reign",
+      "predicate": "baseline2-rim-larsa",
+      "value": {
+        "type": "entity",
+        "entityId": "larsa"
+      },
+      "statement": "Rim-Sin ruled Larsa.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-rim-larsa-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline2-rim-hammurabi",
+      "subjectId": "rim-sin-one-reign",
+      "predicate": "baseline2-rim-hammurabi",
+      "value": {
+        "type": "entity",
+        "entityId": "hammurabi-reign"
+      },
+      "statement": "Hammurabi took control of Rim-Sin’s southern territory.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-rim-hammurabi-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline2-larsa-identification",
+      "subjectId": "larsa",
+      "predicate": "baseline2-larsa-identification",
+      "value": {
+        "type": "text",
+        "text": "Larsa is identified with Şankarah in Iraq’s Dhi Qar governorate."
+      },
+      "statement": "Larsa is identified with Şankarah in Iraq’s Dhi Qar governorate.",
+      "validity": null,
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-larsa-identification-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": null
+    },
+    {
+      "id": "baseline2-larsa-window",
+      "subjectId": "larsa",
+      "predicate": "baseline2-larsa-window",
+      "value": {
+        "type": "text",
+        "text": "The selected Larsa study window follows Rim-Sin’s approximate reign of 1822–1763 BCE."
+      },
+      "statement": "The selected Larsa study window follows Rim-Sin’s approximate reign of 1822–1763 BCE.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1822,
+          "latest": -1822,
+          "original": "Approximately 1822 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1763,
+          "latest": -1763,
+          "original": "Approximately 1763 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-larsa-window-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": "Editorial window, not the lifespan of Larsa."
+    },
+    {
+      "id": "baseline2-samsu-iluna-reign-point",
+      "subjectId": "samsu-iluna-reign",
+      "predicate": "baseline2-samsu-iluna-reign-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          44.420833333333334,
+          32.54196944444444
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Babylon site reference for orientation, not a palace or personal residence.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1749,
+          "latest": -1749,
+          "original": "Approximately 1749 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1712,
+          "latest": -1712,
+          "original": "Approximately 1712 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-samsu-iluna-reign-point-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": "Validity is the editorial display window. Published coordinate, longitude first; UNESCO DMS converted arithmetically."
+    },
+    {
+      "id": "baseline2-rim-sin-one-reign-point",
+      "subjectId": "rim-sin-one-reign",
+      "predicate": "baseline2-rim-sin-one-reign-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          45.8536,
+          31.2858
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Larsa site reference for orientation, not a palace or personal residence.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1822,
+          "latest": -1822,
+          "original": "Approximately 1822 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1763,
+          "latest": -1763,
+          "original": "Approximately 1763 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-rim-sin-one-reign-point-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": "Validity is the editorial display window. Published coordinate, longitude first; UNESCO DMS converted arithmetically."
+    },
+    {
+      "id": "baseline2-larsa-point",
+      "subjectId": "larsa",
+      "predicate": "baseline2-larsa-point",
+      "value": {
+        "type": "point",
+        "coordinates": [
+          45.8536,
+          31.2858
+        ],
+        "meaning": "reference"
+      },
+      "statement": "Larsa site reference for orientation, not a palace or personal residence.",
+      "validity": {
+        "start": {
+          "precision": "approximate",
+          "earliest": -1822,
+          "latest": -1822,
+          "original": "Approximately 1822 BCE",
+          "calendar": "BCE/CE"
+        },
+        "end": {
+          "precision": "approximate",
+          "earliest": -1763,
+          "latest": -1763,
+          "original": "Approximately 1763 BCE",
+          "calendar": "BCE/CE"
+        }
+      },
+      "scopeIds": [],
+      "status": "draft",
+      "certainty": "unknown",
+      "evidenceIds": [
+        "baseline2-larsa-point-evidence"
+      ],
+      "reviewId": null,
+      "disputeNote": "Validity is the editorial display window. Published coordinate, longitude first; UNESCO DMS converted arithmetically."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "baseline2-samsu-dates-evidence",
+      "claimId": "baseline2-samsu-dates",
+      "sourceId": "baseline2-ministry",
+      "locator": "Babylone aux XIXe et XVIIIe siècles, paragraph on royal palaces",
+      "note": "The Ministry dates Samsu-iluna to 1749–1712 BCE.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline2-samsu-succession-evidence",
+      "claimId": "baseline2-samsu-succession",
+      "sourceId": "baseline2-ministry",
+      "locator": "Babylone aux XIXe et XVIIIe siècles, paragraph on royal palaces",
+      "note": "Samsu-iluna succeeded Hammurabi.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline2-samsu-babylon-evidence",
+      "claimId": "baseline2-samsu-babylon",
+      "sourceId": "baseline2-ministry",
+      "locator": "Babylone aux XIXe et XVIIIe siècles, paragraph on royal palaces",
+      "note": "Samsu-iluna ruled at Babylon.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline2-rim-dates-evidence",
+      "claimId": "baseline2-rim-dates",
+      "sourceId": "baseline2-met",
+      "locator": "Historical overview, Rim-Sin and Hammurabi paragraphs",
+      "note": "The Met dates Rim-Sin’s reign to approximately 1822–1763 BCE.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline2-rim-larsa-evidence",
+      "claimId": "baseline2-rim-larsa",
+      "sourceId": "baseline2-met",
+      "locator": "Historical overview, Rim-Sin and Hammurabi paragraphs",
+      "note": "Rim-Sin ruled Larsa.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline2-rim-hammurabi-evidence",
+      "claimId": "baseline2-rim-hammurabi",
+      "sourceId": "baseline2-met",
+      "locator": "Historical overview, Rim-Sin and Hammurabi paragraphs",
+      "note": "Hammurabi took control of Rim-Sin’s southern territory.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline2-larsa-identification-evidence",
+      "claimId": "baseline2-larsa-identification",
+      "sourceId": "baseline2-getty",
+      "locator": "Coordinates, names and hierarchy",
+      "note": "Larsa is identified with Şankarah in Iraq’s Dhi Qar governorate.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline2-larsa-window-evidence",
+      "claimId": "baseline2-larsa-window",
+      "sourceId": "baseline2-met",
+      "locator": "Historical overview, Rim-Sin and Hammurabi paragraphs",
+      "note": "The selected Larsa study window follows Rim-Sin’s approximate reign of 1822–1763 BCE.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline2-samsu-iluna-reign-point-evidence",
+      "claimId": "baseline2-samsu-iluna-reign-point",
+      "sourceId": "baseline2-unesco",
+      "locator": "Coordinate reference N32 32 31.09 E44 25 15",
+      "note": "Babylon site reference for orientation, not a palace or personal residence.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline2-rim-sin-one-reign-point-evidence",
+      "claimId": "baseline2-rim-sin-one-reign-point",
+      "sourceId": "baseline2-getty",
+      "locator": "Coordinates, names and hierarchy",
+      "note": "Larsa site reference for orientation, not a palace or personal residence.",
+      "relation": "supports",
+      "reviewId": null
+    },
+    {
+      "id": "baseline2-larsa-point-evidence",
+      "claimId": "baseline2-larsa-point",
+      "sourceId": "baseline2-getty",
+      "locator": "Coordinates, names and hierarchy",
+      "note": "Larsa site reference for orientation, not a palace or personal residence.",
+      "relation": "supports",
+      "reviewId": null
+    }
+  ],
+  "reviews": [],
+  "accounts": [],
+  "schemaVersion": "1.0"
+}
