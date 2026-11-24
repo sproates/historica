@@ -7,6 +7,8 @@ const query=new URLSearchParams(location.search);
 const numeric=(key:string,fallback:number)=>{const value=Number(query.get(key));return query.has(key)&&Number.isFinite(value)?value:fallback;};
 let from=Math.max(-5500,Math.min(199,numeric('from',-5500)))||-1;
 let to=Math.max(from,Math.min(200,numeric('to',200)))||1;
+let mode=query.get('view')==='browse'?'browse':'map';
+let browseLimit=24;
 let entries:Entry[]=[],associations:Association[]=[],places:Place[]=[];
 interface Country {properties:{NAME:string;ADM0_A3:string;LABEL_X:number;LABEL_Y:number};geometry:{type:string;coordinates:number[][][]|number[][][][]}}
 let countries:Country[]=[];
@@ -25,8 +27,8 @@ function sizeSheet(snap:typeof sheetSnap){
  el('sheet-hint').textContent=expanded?'Pull down for more map':'Pull up for more';el('sheet-toggle').textContent=expanded?'More map ↓':'Expand list ↑';
 }
 
-function save(){if(!ready)return;const center=map.getCenter();const p=new URLSearchParams({from:String(from),to:String(to),lat:center.lat.toFixed(5),lng:center.lng.toFixed(5),zoom:map.getZoom().toFixed(2)});if(homeBounds)p.set('home',homeBounds.toBBoxString());if(selected)p.set('places',selected.map(p=>p.key).join(';'));window.history.replaceState(null,'','?'+p);try{sessionStorage.setItem('historica-explorer-return','/?'+p);}catch{}}
-function dateUI(){el('date-label').textContent=from===-5500&&to===200?'All dates · 5500 BCE–200 CE':`${year(from)} – ${year(to)}`;el('axis').replaceChildren();for(const n of [from,to]){const label=document.createElement('span');label.textContent=year(n);el('axis').append(label);}}
+function save(){if(!ready)return;const center=map.getCenter();const p=new URLSearchParams({from:String(from),to:String(to),lat:center.lat.toFixed(5),lng:center.lng.toFixed(5),zoom:map.getZoom().toFixed(2)});if(mode==='browse')p.set('view','browse');const bq=el<HTMLInputElement>('browse-query').value;if(bq)p.set('q',bq);const kind=el<HTMLSelectElement>('browse-kind').value;if(kind!=='all')p.set('type',kind);if(el<HTMLInputElement>('browse-dated').checked)p.set('dated','1');if(homeBounds)p.set('home',homeBounds.toBBoxString());if(selected)p.set('places',selected.map(p=>p.key).join(';'));window.history.replaceState(null,'','?'+p);try{sessionStorage.setItem('historica-explorer-return','/?'+p);}catch{}}
+function dateUI(){el('date-label').textContent=from===-5500&&to===200?'All dates · 5500 BCE–200 CE':`${year(from)} – ${year(to)}`;el('browse-dates').textContent=`${year(from)} – ${year(to)}`;el('axis').replaceChildren();for(const n of [from,to]){const label=document.createElement('span');label.textContent=year(n);el('axis').append(label);}}
 function openRoute(e:Entry){return `/${e.type}/${e.id}?from=${from}&to=${to}`;}
 function listEntry(e:Entry){
  const article=document.createElement('article');article.className='entry';
@@ -50,7 +52,7 @@ function renderList(){
 }
 interface Cluster {places:Place[];x:number;y:number;latlng:L.LatLng}
 function updateMap(){
- if(!ready)return;
+ if(!ready||mode==='browse')return;
  const bounds=map.getBounds();currentPlaces=places.filter(p=>bounds.contains([p.point[1],p.point[0]]));
  const clusters:Cluster[]=[];
  for(const place of currentPlaces){const ll=L.latLng(place.point[1],place.point[0]),point=map.latLngToContainerPoint(ll);const cluster=clusters.find(c=>Math.hypot(c.x-point.x,c.y-point.y)<(mobile()?58:48));if(cluster){cluster.places.push(place);}else clusters.push({places:[place],x:point.x,y:point.y,latlng:ll});}
@@ -86,7 +88,7 @@ el<HTMLInputElement>('search').addEventListener('input',e=>{const value=(e.targe
 function clearSelection(){selected=null;updateMap();}el('close-place').onclick=clearSelection;el('clear-place').onclick=clearSelection;el('zoom-place').onclick=()=>{if(selected)fitPlaces(selected);};
 el('zoom-in').onclick=()=>map.zoomIn();el('zoom-out').onclick=()=>map.zoomOut();el('reset-map').onclick=()=>{selected=null;sizeSheet('middle');if(homeBounds)map.flyToBounds(homeBounds,padding());};el('world').onclick=()=>{selected=null;sizeSheet('peek');map.flyTo([25,15],2,{animate:!reduced,duration:.8});};
 map.on('dragstart',()=>{selected=null;settling=true;closeSearch();if(mobile()&&sheetSnap==='full')sizeSheet('middle');el('result-count').textContent='Looking around…';});map.on('zoomstart',()=>{settling=true;});map.on('moveend',()=>{settling=false;updateMap();});map.on('click',()=>{if(selected)clearSelection();});
-function applyPeriod(a:number,b:number){from=a;to=b;selected=null;places=placesFor(entries,associations,from,to);el<HTMLDialogElement>('dates-dialog').close();updateMap();}
+function applyPeriod(a:number,b:number){from=a;to=b;selected=null;places=placesFor(entries,associations,from,to);el<HTMLDialogElement>('dates-dialog').close();dateUI();if(mode==='browse')renderBrowse();else updateMap();}
 function zoomPeriod(factor:number){const a=ordinal(from),b=ordinal(to),width=Math.min(5699,Math.max(10,(b-a)*factor)),start=Math.max(-5499,Math.min((a+b-width)/2,200-width));applyPeriod(calendar(Math.round(start)),calendar(Math.round(start+width)));}
 el('wider-period').onclick=()=>zoomPeriod(2);el('closer-period').onclick=()=>zoomPeriod(.5);
 function dateFields(){for(const [prefix,value]of [['start',from],['end',to]]as const){el<HTMLInputElement>(prefix+'-number').value=String(Math.abs(value));el<HTMLSelectElement>(prefix+'-era').value=value<0?'BCE':'CE';}el('date-error').textContent='';}
@@ -117,7 +119,32 @@ grab.addEventListener('pointercancel',()=>{dragStart=null;el('sheet').classList.
 handle.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','Enter',' '].includes(e.key)){e.preventDefault();sizeSheet(e.key==='ArrowDown'?'peek':sheetSnap==='full'?'middle':'full');}});
 el('sheet-toggle').onclick=()=>sizeSheet(sheetSnap==='full'?'middle':'full');
 
-window.addEventListener('resize',()=>{sizeSheet(sheetSnap);map.invalidateSize({pan:true,animate:false});if(!settling)updateMap();});
+window.addEventListener('resize',()=>{sizeSheet(sheetSnap);if(mode==='map'){map.invalidateSize({pan:true,animate:false});if(!settling)updateMap();}});
+function renderBrowse(){
+ if(!ready)return;
+ const term=el<HTMLInputElement>('browse-query').value.trim().toLocaleLowerCase(),kind=el<HTMLSelectElement>('browse-kind').value,dated=el<HTMLInputElement>('browse-dated').checked;
+ const matches=entries.filter(e=>(kind==='all'||(kind==='place'?['area','city','state','country'].includes(e.type):e.type===kind))&&(!dated||(e.startYear<=to&&e.endYear>=from))&&(!term||`${e.title} ${e.description||''}`.toLocaleLowerCase().includes(term))).sort((a,b)=>Number(b.title.toLocaleLowerCase().includes(term))-Number(a.title.toLocaleLowerCase().includes(term))||a.title.localeCompare(b.title));
+ el('browse-clear').hidden=!term;el('starting-points').hidden=!!term||kind!=='all'||dated;
+ el('browse-results-heading').textContent=term?'Search results':'Browse the collection';
+ el('browse-status').textContent=`${matches.length} ${matches.length===1?'entry':'entries'}${dated?' within these dates':' across the collection'}`;
+ const list=el('browse-results');list.replaceChildren();
+ for(const e of matches.slice(0,browseLimit)){const a=document.createElement('a');a.className='browse-entry';a.href=dated?openRoute(e):`/${e.type}/${e.id}`;const title=document.createElement('strong');title.textContent=e.title;const dates=document.createElement('small');dates.textContent=`${e.type} · ${year(e.startYear)} – ${year(e.endYear)}`;const summary=document.createElement('p');const text=e.description?.split('\n')[0]||'';summary.textContent=text.length>190?text.slice(0,187)+'…':text;a.append(title,dates,summary);list.append(a);}
+ if(!matches.length){const p=document.createElement('p');p.textContent='No matching entries. Try another name, or turn off the date filter.';list.append(p);}
+ el('browse-more').hidden=matches.length<=browseLimit;save();
+}
+function switchView(next:string){
+ mode=next;closeSearch();map.stop();el('explorer').hidden=mode==='browse';el('browse').hidden=mode==='map';
+ el('view-map').setAttribute('aria-pressed',String(mode==='map'));el('view-browse').setAttribute('aria-pressed',String(mode==='browse'));
+ if(mode==='map'){map.invalidateSize({pan:true,animate:false});updateMap();}else renderBrowse();save();
+}
+el('view-map').onclick=()=>switchView('map');el('view-browse').onclick=()=>switchView('browse');
+el<HTMLInputElement>('browse-query').value=query.get('q')||'';
+const initialKind=query.get('type')||'all';if(['all','person','place','period','event'].includes(initialKind))el<HTMLSelectElement>('browse-kind').value=initialKind;
+el<HTMLInputElement>('browse-dated').checked=query.get('dated')==='1';
+for(const id of ['browse-query','browse-kind','browse-dated'])el(id).addEventListener(id==='browse-query'?'input':'change',()=>{browseLimit=24;renderBrowse();});
+el('browse-clear').onclick=()=>{el<HTMLInputElement>('browse-query').value='';browseLimit=24;renderBrowse();el('browse-query').focus();};
+el('browse-more').onclick=()=>{browseLimit+=24;renderBrowse();};
+el('browse-dates').onclick=()=>{dateFields();el<HTMLDialogElement>('dates-dialog').showModal();};
 sizeSheet('middle');dateUI();
 try{el('intro-hint').hidden=localStorage.getItem('historica-map-intro')==='seen';}catch{el('intro-hint').hidden=false;}
 el('dismiss-hint').onclick=()=>{el('intro-hint').hidden=true;try{localStorage.setItem('historica-map-intro','seen');}catch{}};
@@ -132,5 +159,5 @@ try{
  const savedHome=query.get('home')?.split(',').map(Number);if(savedHome?.length===4&&savedHome.every(Number.isFinite)&&Math.abs(savedHome[0]!)<=180&&Math.abs(savedHome[2]!)<=180&&Math.abs(savedHome[1]!)<=85&&Math.abs(savedHome[3]!)<=85&&savedHome[0]!<=savedHome[2]!&&savedHome[1]!<=savedHome[3]!)homeBounds=L.latLngBounds([savedHome[1]!,savedHome[0]!],[savedHome[3]!,savedHome[2]!]);
  if(query.has('lat')&&query.has('lng'))map.setView([Math.max(-80,Math.min(80,numeric('lat',54))),Math.max(-180,Math.min(180,numeric('lng',-3)))],Math.max(2,Math.min(17,numeric('zoom',5))),{animate:false});else map.fitBounds(homeBounds,{...padding(),animate:false});
  if(query.has('places')){const keys=query.get('places')!.split(';');selected=places.filter(p=>keys.includes(p.key));if(!selected.length)selected=null;else {const primary=[...selected].sort((a,b)=>b.entries.length-a.entries.length)[0]!;selectionTitle=selected.length===1?primary.name:`${primary.name} + ${selected.length-1}`;}}
- updateMap();
-}catch(error){el('loading').textContent='Could not load the history collection. Reload to try again.';el('result-count').textContent='History unavailable';console.error(error);}
+ switchView(mode);
+}catch(error){el('loading').textContent='Could not load the history collection. Reload to try again.';el('result-count').textContent='History unavailable';el('browse-status').textContent='Could not load the collection. Reload to try again.';console.error(error);}

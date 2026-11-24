@@ -62,3 +62,7 @@ New global historical coverage, reconstructed ancient borders, user-drawn polygo
 ## Homepage prototype
 
 The local preview now serves the map at `/`, uses the Mediterranean opening bounds, includes an About link and the existing source/privacy/GitHub links, and adds a return-to-map link to generated history pages. The return journey restores map position and dates. These changes are confined to the persistent preview by the prototype refresh script; production page source and live hosting are untouched.
+
+## Browse alongside the map
+
+The local homepage now has Map and Browse navigation. Browse searches every record, including those without locations, and offers people, places/states, periods and events. It searches all dates by default, with an explicit option to restrict results to the shared date window. Alexander, Socrates, Caesar, Stonehenge and early Egypt provide direct starting points. History pages return to the originating view with its search retained. Map position and dates are preserved when changing views. Production integration should retain this equally usable route through the collection.

@@ -49,3 +49,7 @@ Clustering is intentionally small and local to the existing collection. Producti
 Desktop and phone-width browser checks are recorded in the plan. Physical iPhone pinch/inertia feel still requires Ian's review; browser automation cannot substitute for that.
 
 The default opening area is the Mediterranean and neighbouring regions. A dismissible first-visit hint introduces map exploration. Existing history URLs are unchanged; a same-tab return link restores the latest map state from session storage. Production Astro source remains unchanged until the prototype is approved for integration.
+
+## Browse without the map
+
+Use Map / Browse beneath the header. Browse searches all entities, including records without geographic points, with type and optional date filters. The five starting journeys open existing history pages directly. The view, search and filters are bookmarkable; history pages offer Back to Browse when appropriate. Switching to Map retains its camera and dates.
