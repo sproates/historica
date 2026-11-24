@@ -22,7 +22,7 @@ Local verification passed 199 application tests and 15 static-page tests. The pa
 
 ## Remaining follow-ups
 
-- Confirm that visits appear in the Cloudflare analytics dashboard. Loading the live beacon has been verified; dashboard reporting has not.
+- Cloudflare dashboard reporting was confirmed on 24 November. The measured loading and layout issues, sample limitations and proposed work are recorded in the [performance improvement plan](performance-improvement-plan.md).
 - Keep the existing Cloudflare hosting arrangement. On 24 November Ian chose to leave the GitHub certificate setting alone. It is not pending certificate migration work; see the [hosting record](github-pages-cutover.md).
 - Historica’s former ASO files and the Historica-only fallback remain available for recovery. Reclaiming that storage is a separate housekeeping action, with an off-host recovery copy retained.
 
