@@ -1,38 +1,35 @@
-# Sustainable version: released
+# Historica release status
 
-This is the finish line for the current refactor, not a new optimisation backlog. The consolidated preview replaces the sequence of small migration PRs.
+Updated 24 November 2026. The sustainable application and the map/Browse homepage are live at [historica.online](https://historica.online/). There is no remaining release gate for either change.
 
-## Implemented
+## What is live
 
-- Node 26, strict TypeScript application code and individual Markdown/YAML history records.
-- Astro-generated home, About, privacy, research coverage and 230 history pages; one source for published HTML.
-- Incremental page generation and verification, documentation-only CI shortcut, checksummed portable staging packages.
-- Compact home search and assembled explorer data; evidence loaded by history and cached. Source records, dates, relationships and Bactria geometry preserved.
-- Shared focus transitions for navigation and bookmarks, with snapshot isolation for Back.
-- Shared visual tokens, timeline-led desktop/phone layout and persistent light/dark/system appearance.
-- Production-only optional analytics loader, excluded from local and staging hosts.
-- Protected main, PR checks and an existing retained-artifact staging restore workflow.
+- Node 26, a TypeScript application and individual Markdown/YAML history records.
+- Astro-generated pages for the homepage, About, privacy, research coverage and 230 histories.
+- Map and Browse navigation, country and place search, grouped map markers and a draggable results sheet on phones. Browse includes entries without recorded locations.
+- History timelines, related places, sources, connections and bookmarked dates. History pages can return to the originating explorer view.
+- Chronology styling, a shared moon toggle and persistent light/dark appearance.
+- Cloudflare analytics on production, with the map service and local preferences described in Privacy.
+- A public repository, protected main and changes through PRs. Incremental verification and documentation-only checks keep routine releases short.
 
-## Release status
+## Latest release
 
-1. Ian approved Chronology and the hosting cutover. The repository is public and main remains protected. The original archive remains private.
-2. The production package from successful verification run `45242603802`, commit `8ef34471fa815619a4b0d2595b12e62b870769db`, was published without rebuilding by production deployment run `45244078415` on 23 November 2026.
-3. `historica.online` and `www.historica.online` now use proxied CNAME records pointing to `sproates.github.io`. Other DNS records and Cloudflare projects were unchanged. Cloudflare Full (strict) and Always Use HTTPS are enabled. The old hosting files remain intact for recovery.
-4. Live checks passed for the homepage, history routes, map identification and explicit navigation, retained bookmark dates, privacy, HTTPS redirects and 404 responses. The Cloudflare analytics beacon loads in the live browser; reporting is checked separately from script loading.
-5. GitHub's own custom-domain certificate is not issued yet, so its Enforce HTTPS setting is unavailable. Public HTTPS is provided and enforced by Cloudflare. Keep the web records proxied. Direct GitHub TLS with the `github.io` hostname and Historica Host header was validated. The Historica-only transition Worker remains attached as a 503 splash fallback for origin failures; it does not replace successful responses or bypass TLS validation. Its configuration and DNS rollback values are retained locally under ignored `release/cutover/`.
+Ian approved the integrated preview before [PR #48](https://github.com/sproates/historica/pull/48) was merged as `2a2d53837c9bf574dd11a68de49fd5f916782df3`. [Main verification](https://github.com/sproates/historica/actions/runs/45350942545) reused the successful PR package without rebuilding or rerunning the tests.
 
-## Deliberate boundaries
+[Production deployment](https://github.com/sproates/historica/actions/runs/45351006640) succeeded on its second attempt. The first attempt could not find the just-uploaded Pages artifact; the artifact was subsequently visible and retrying the deployment succeeded. This was a deployment lookup failure, not a build or test failure. No application change was needed.
 
-The browser still loads the full assembled history graph to compare any place or date immediately. Per-region loading is optional future work, not a release requirement. Evidence is already loaded on demand. Customised bookmarks can briefly show the static default while controls initialize; default routes do not depend on JavaScript to show their content.
+Local verification passed 199 application tests and 15 static-page tests. The packaged release verified 230 history routes and 4,710 local links. Browser checks covered Browse search, return links, country search, grouped markers, mobile sheet dragging and dark mode. Ian also reviewed the prototype on his phone. After deployment, HTTPS checks verified the public homepage, map bundle, provider configuration, Stonehenge return link and updated privacy page.
 
-Earlier campaign links retain a small isolated compatibility view and its tests. Build utilities use JavaScript and the preview service uses Python; the TypeScript requirement applies to the application, not every maintenance script. Evidence authoring remains in reviewed source packs; it is not a database migration requirement.
+## Remaining follow-ups
 
-No further architecture rewrite is required before reviewing this version. Fix concrete defects found during review; defer optional enhancements until after release.
+- Confirm that visits appear in the Cloudflare analytics dashboard. Loading the live beacon has been verified; dashboard reporting has not.
+- GitHub’s custom-domain certificate was still absent when checked on 24 November, with its Enforce HTTPS option off. Public HTTPS is provided and enforced by Cloudflare. Keep the web records proxied; see the [hosting record](github-pages-cutover.md).
+- Historica’s former ASO files and the Historica-only fallback remain available for recovery. Reclaiming that storage is a separate housekeeping action, with an off-host recovery copy retained.
 
-## Consolidated verification
+## Deliberate limits
 
-Local verification passed 202 application/build tests and 15 static checks across all 234 pages. The packaged artifact contains 541 files with 4,259 checked local references. Browser review covered 390px phone and desktop layouts, light/dark/system selection, the timeline beside the map, research-page contrast, Alexander → Egypt with retained dates, and browser Back. Stylesheet URLs include their content hash after the browser check exposed stale light-only CSS.
+The browser loads the assembled history graph so it can compare places and dates immediately. Evidence is loaded on demand. Per-region data loading is optional future work. Customised history bookmarks can briefly show the static default while controls initialise.
 
-These checks establish a reviewable preview, not Ian's visual approval or a production deployment. The repository is public and the reviewed version is live on GitHub Pages through Cloudflare.
+The homepage uses OpenStreetMap’s standard tile service with visible attribution and normal browser caching. It is a best-effort service. The provider can be changed through configuration if traffic requires it. Browse works without loading background map tiles.
 
-The appearance dropdown is now a moon toggle. The privacy page distinguishes cookie-free analytics from the local storage used for appearance preferences and is linked beside research coverage in the footer. Both changes are included in the same preview PR.
+Historical coverage remains uneven. Expanding it is ongoing content work, not unfinished refactoring.
